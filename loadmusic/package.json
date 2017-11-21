@@ -1,0 +1,5 @@
+{
+	"name": "Custom Music Loader",
+	"description" : "Add your own music",
+	"main": "mod.js"
+}
