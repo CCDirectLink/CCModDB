@@ -6,6 +6,38 @@
             "archive_link" : "https://github.com/CCDirectLink/loadmusic/archive/0.01.zip",
             "hash" : { "sha256" : "3dffffdccd3914c14c7276555772c51556fc6534cfd2e80f5a97ff161fd77c87" },
             "version" : "0.0.1"
+        },
+        "CCTimeWalker" : {
+            "name" : "timewalker",
+            "description" : "",
+            "license" : "MIT",
+            "archive_link" : "https://github.com/CCDirectLink/CCTimeWalker/archive/0.1.zip",
+            "hash" : { "sha256" : "9ea4b8487f47cbcd569c1537274972bdd97633c4f9de1c03f85a7e55341758fd" },
+            "version" : "0.1.0"
+        },
+        "CCTimer" : {
+            "name" : "timer",
+            "description" : "",
+            "license" : null,
+            "archive_link" : "https://github.com/CCDirectLink/CCTimer/archive/0.1.zip",
+            "hash" : { "sha256" : "902bfce5e62b846a4e406350b937b3ad41dc076ee6ca1618dd963fcf78b5fb10" },
+            "version" : "0.1.0"
+        },
+        "CCSlowmotion" : {
+            "name" : "slowmotion",
+            "description" : "",
+            "license" : "MIT",
+            "archive_link" : "https://github.com/CCDirectLink/CCSlowmotion/archive/0.1.zip",
+            "hash" : { "sha256" : "8f3d170080c814769d71e318512b3671a44ed4c0c09c8f82129aa8f5e7e24c82" },
+            "version" : "0.1.0"
+        },
+        "CCJetpack" : {
+            "name" : "jetpack",
+            "description" : "",
+            "license" : "MIT",
+            "archive_link" : "https://github.com/CCDirectLink/CCJetpack/archive/0.1.zip",
+            "hash" : { "sha256" : "57ba6eb0d9482bc4b17cff5cc8617d195a25b6c3a82b373c57bd4629463e02d3" },
+            "version" : "0.1.0"
         }
     }
 }
