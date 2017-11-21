@@ -1,10 +1,9 @@
 {
-   "mods" : {
-	   "loadmusic" : {
-			  "name" : "Custom Music Loader",
-			  "description" : "Make, name, and load your music into the game",
-			  "archive_link" : "https://github.com/CCDirectLink/loadmusic/archive/master.zip",
-			  "version" : "1"
-		}
-   }
+    "loadmusic" : {
+        "name" : "Custom Music Loader",
+        "description" : "Make, name, and load your music into the game",
+        "archive_link" : "https://github.com/CCDirectLink/loadmusic/archive/0.01.zip",
+        "hash" : { "sha256" : "3dffffdccd3914c14c7276555772c51556fc6534cfd2e80f5a97ff161fd77c87" },
+        "version" : "0.0.1"
+    }
 }
