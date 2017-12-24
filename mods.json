@@ -8,6 +8,14 @@
             "hash" : { "sha256" : "3dffffdccd3914c14c7276555772c51556fc6534cfd2e80f5a97ff161fd77c87" },
             "version" : "0.0.1"
         },
+        "CCdiscord" : {
+            "name" : "Rich Presence for Discord",
+            "description" : "Show off your CrossCode skills in Discord",
+            "page" : [{ "name" : "GitHub", "url" : "https://github.com/CCDirectLink/CCdiscord" }],
+            "archive_link" : "https://github.com/CCDirectLink/CCdiscord/archive/v0.1.zip",
+            "hash" : { "sha256" : "1a1afa1e3bb7a4bac63219bf7916e291a763477c6bdae12a86dd4a498226a6cb" },
+            "version" : "0.0.1"
+        },
         "CCTimeWalker" : {
             "name" : "timewalker",
             "description" : "",
