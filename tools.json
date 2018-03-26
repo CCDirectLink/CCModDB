@@ -3,6 +3,7 @@
         "SpericalViewer" : {
             "name" : "SpericalViewer",
             "description" : "Viewer for CrossCode content",
+            "license" : "MIT",
             "page" : [{ "name" : "GitHub", "url" : "https://github.com/CCDirectLink/SpericalViewer" }],
             "archive_link" : "https://github.com/CCDirectLink/SpericalViewer/archive/v0.3.7.zip",
             "hash" : { "sha256" : "AAC16A0C9169BAAE554783CA89A5A890329334E992343A7735313AE076099F2C" },
