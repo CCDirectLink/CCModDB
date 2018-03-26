@@ -5,7 +5,7 @@
             "description" : "Viewer for CrossCode content",
             "page" : [{ "name" : "GitHub", "url" : "https://github.com/CCDirectLink/SpericalViewer" }],
             "archive_link" : "https://github.com/CCDirectLink/SpericalViewer/archive/v0.3.7.zip",
-            "hash" : { "sha256" : "014DB38E9F1EE6B5CB8553A2D2A63B8CEE7BAE05B5B4CEF8F0E9D29C5085C6C0" },
+            "hash" : { "sha256" : "AAC16A0C9169BAAE554783CA89A5A890329334E992343A7735313AE076099F2C" },
             "version" : "0.3.7"
         }
     }
