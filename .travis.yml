@@ -1,0 +1,7 @@
+language: node_js
+node_js:
+- "stable"
+install:
+  npm install chai mocha eslint eslint-config-strongloop
+script: npm test
+sudo: false
