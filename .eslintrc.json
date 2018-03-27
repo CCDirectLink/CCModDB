@@ -1,0 +1,14 @@
+{
+	"extends": [
+        "strongloop"
+    ],
+	"env": {
+		"browser": true,
+		"es6": true,
+		"node": true
+	},
+	"rules": {
+		"indent": [2, "tab"],
+		"max-len": ["error", {"tabWidth": 4}]
+	}
+}
