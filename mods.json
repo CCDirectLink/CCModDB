@@ -52,6 +52,15 @@
             "archive_link" : "https://github.com/CCDirectLink/CCJetpack/archive/0.1.zip",
             "hash" : { "sha256" : "57ba6eb0d9482bc4b17cff5cc8617d195a25b6c3a82b373c57bd4629463e02d3" },
             "version" : "0.1.0"
+        },
+        "Qine" : {
+            "name" : "Qine",
+            "description" : "",
+            "license" : null,
+            "page" : [{ "name" : "GitHub", "url" : "https://github.com/sgrunt/qine" }],
+            "archive_link" : "https://github.com/sgrunt/qine/archive/0.0.4.2.zip",
+            "hash" : { "sha256" : "1ad3d4d35d0017100e925989167e2dd57e0b398e5475698c43a0d8f245a86a9b" },
+            "version" : "0.0.4.2"
         }
     }
 }
