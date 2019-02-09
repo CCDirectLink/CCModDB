@@ -61,6 +61,15 @@
             "archive_link" : "https://github.com/sgrunt/qine/archive/0.0.4.2.zip",
             "hash" : { "sha256" : "1ad3d4d35d0017100e925989167e2dd57e0b398e5475698c43a0d8f245a86a9b" },
             "version" : "0.0.4.2"
+        },
+        "CCRestartButton" : {
+            "name" : "Restart Button",
+            "description" : "Restart the game without memory leaks",
+            "license" : "MIT",
+            "page" : [{ "name" : "GitHub", "url" : "https://github.com/bluecheetah001/CCRestartButton" }],
+            "archive_link" : "https://github.com/bluecheetah001/CCRestartButton/archive/v1.0.2.zip",
+            "hash" : { "sha256" : "541ff8c8f9ca51fb38b47d492d760ffc741079d633e01c57e89173592b2c3788" },
+            "version" : "1.0.2"
         }
     }
 }
