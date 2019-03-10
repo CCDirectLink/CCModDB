@@ -58,9 +58,9 @@
             "description" : "",
             "license" : null,
             "page" : [{ "name" : "GitHub", "url" : "https://github.com/sgrunt/qine" }],
-            "archive_link" : "https://github.com/sgrunt/qine/archive/0.0.4.2.zip",
-            "hash" : { "sha256" : "1ad3d4d35d0017100e925989167e2dd57e0b398e5475698c43a0d8f245a86a9b" },
-            "version" : "0.0.4.2"
+            "archive_link" : "https://github.com/sgrunt/qine/archive/0.0.5.zip",
+            "hash" : { "sha256" : "8d7a9a57fca9aae0bb2989c0c2124185221b7bb136e9e3fa00fbda64213ff871" },
+            "version" : "0.0.5"
         }
     }
 }
