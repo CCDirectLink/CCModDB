@@ -61,6 +61,15 @@
             "archive_link" : "https://github.com/sgrunt/qine/archive/0.2.0.zip",
             "hash" : { "sha256" : "61f3e6dfc207bb11deeedafecd480aa26c382ccf56ace4c1a2709b53e498d429" },
             "version" : "0.2.0"
+        },
+        "cc-element-boss" : {
+            "name" : "Element Boss",
+            "description" : "",
+            "license" : null,
+            "page" : [{ "name" : "GitHub", "url" : "https://github.com/sgrunt/cc-element-boss" }],
+            "archive_link" : "https://github.com/sgrunt/cc-element-boss/archive/0.1.1.zip",
+            "hash" : { "sha256" : "c870446618238fe453782e219f635f91f31158d959e7324472f31a8a630322b8" },
+            "version" : "0.1.1"
         }
     }
 }
