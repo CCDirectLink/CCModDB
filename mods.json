@@ -31,9 +31,9 @@
             "description" : "",
             "license" : null,
             "page" : [{ "name" : "GitHub", "url" : "https://github.com/CCDirectLink/CCTimer" }],
-            "archive_link" : "https://github.com/CCDirectLink/CCTimer/archive/0.1.zip",
-            "hash" : { "sha256" : "902bfce5e62b846a4e406350b937b3ad41dc076ee6ca1618dd963fcf78b5fb10" },
-            "version" : "0.1.0"
+            "archive_link" : "https://github.com/CCDirectLink/CCTimer/archive/v2.0.0.zip",
+            "hash" : { "sha256" : "fe4253552618ea30e1a5e5c7c5b5b0653b82cda539bfc55dc1b1d2d48f78c146" },
+            "version" : "2.0.0"
         },
         "CCSlowmotion" : {
             "name" : "slowmotion",
@@ -53,15 +53,6 @@
             "hash" : { "sha256" : "57ba6eb0d9482bc4b17cff5cc8617d195a25b6c3a82b373c57bd4629463e02d3" },
             "version" : "0.1.0"
         },
-        "Qine" : {
-            "name" : "Qine",
-            "description" : "",
-            "license" : null,
-            "page" : [{ "name" : "GitHub", "url" : "https://github.com/sgrunt/qine" }],
-            "archive_link" : "https://github.com/sgrunt/qine/archive/0.0.4.2.zip",
-            "hash" : { "sha256" : "1ad3d4d35d0017100e925989167e2dd57e0b398e5475698c43a0d8f245a86a9b" },
-            "version" : "0.0.4.2"
-        },
         "CCRestartButton" : {
             "name" : "Restart Button",
             "description" : "Restart the game without memory leaks",
@@ -70,6 +61,24 @@
             "archive_link" : "https://github.com/bluecheetah001/CCRestartButton/archive/v1.0.2.zip",
             "hash" : { "sha256" : "541ff8c8f9ca51fb38b47d492d760ffc741079d633e01c57e89173592b2c3788" },
             "version" : "1.0.2"
+        },
+        "Qine" : {
+            "name" : "Qine",
+            "description" : "",
+            "license" : null,
+            "page" : [{ "name" : "GitHub", "url" : "https://github.com/sgrunt/qine" }],
+            "archive_link" : "https://github.com/sgrunt/qine/archive/0.2.0.zip",
+            "hash" : { "sha256" : "61f3e6dfc207bb11deeedafecd480aa26c382ccf56ace4c1a2709b53e498d429" },
+            "version" : "0.2.0"
+        },
+        "cc-element-boss" : {
+            "name" : "Element Boss",
+            "description" : "",
+            "license" : null,
+            "page" : [{ "name" : "GitHub", "url" : "https://github.com/sgrunt/cc-element-boss" }],
+            "archive_link" : "https://github.com/sgrunt/cc-element-boss/archive/0.1.1.zip",
+            "hash" : { "sha256" : "c870446618238fe453782e219f635f91f31158d959e7324472f31a8a630322b8" },
+            "version" : "0.1.1"
         }
     }
 }
