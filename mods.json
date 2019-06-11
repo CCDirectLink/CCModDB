@@ -70,6 +70,15 @@
             "archive_link" : "https://github.com/sgrunt/cc-element-boss/archive/0.1.1.zip",
             "hash" : { "sha256" : "c870446618238fe453782e219f635f91f31158d959e7324472f31a8a630322b8" },
             "version" : "0.1.1"
+        },
+        "Localize-me" : {
+            "name" : "Localize Me",
+            "description" : "Add support for more locales, languages and translations",
+            "license": "MIT",
+            "page" : [{ "name" : "GitHub", "url" : "https://github.com/L-Sherry/Localize-me" }],
+            "archive_link" : "https://github.com/L-Sherry/Localize-me/archive/v0.2.0.zip",
+            "hash" : { "sha256" : "c4691d6adb04cbec2ad828de8e19db6e7286c876f12141765b82e67ba84f5a8a" },
+            "version" : "0.2.0"
         }
     }
 }
