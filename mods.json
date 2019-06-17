@@ -19,7 +19,7 @@
         },
         "CCTimeWalker" : {
             "name" : "timewalker",
-            "description" : "",
+            "description" : "Lets you control time.",
             "license" : "MIT",
             "page" : [{ "name" : "GitHub", "url" : "https://github.com/CCDirectLink/CCTimeWalker" }],
             "archive_link" : "https://github.com/CCDirectLink/CCTimeWalker/archive/0.1.zip",
@@ -28,7 +28,7 @@
         },
         "CCTimer" : {
             "name" : "timer",
-            "description" : "",
+            "description" : "A speedrun timer for CrossCode.",
             "license" : null,
             "page" : [{ "name" : "GitHub", "url" : "https://github.com/CCDirectLink/CCTimer" }],
             "archive_link" : "https://github.com/CCDirectLink/CCTimer/archive/v2.0.0.zip",
@@ -37,7 +37,7 @@
         },
         "CCSlowmotion" : {
             "name" : "slowmotion",
-            "description" : "",
+            "description" : "Turns your C key into a slowmotion controller.",
             "license" : "MIT",
             "page" : [{ "name" : "GitHub", "url" : "https://github.com/CCDirectLink/CCSlowmotion" }],
             "archive_link" : "https://github.com/CCDirectLink/CCSlowmotion/archive/0.1.zip",
@@ -46,7 +46,7 @@
         },
         "CCJetpack" : {
             "name" : "jetpack",
-            "description" : "",
+            "description" : "Turns your CTRL key into a jetpack.",
             "license" : "MIT",
             "page" : [{ "name" : "GitHub", "url" : "https://github.com/CCDirectLink/CCJetpack" }],
             "archive_link" : "https://github.com/CCDirectLink/CCJetpack/archive/0.1.zip",
@@ -55,7 +55,7 @@
         },
         "Qine" : {
             "name" : "Qine",
-            "description" : "",
+            "description" : "Adds a new custom character to your contacts list.",
             "license" : null,
             "page" : [{ "name" : "GitHub", "url" : "https://github.com/sgrunt/qine" }],
             "archive_link" : "https://github.com/sgrunt/qine/archive/0.2.0.zip",
@@ -64,7 +64,7 @@
         },
         "cc-element-boss" : {
             "name" : "Element Boss",
-            "description" : "",
+            "description" : "Adds a new boss battle to the game.",
             "license" : null,
             "page" : [{ "name" : "GitHub", "url" : "https://github.com/sgrunt/cc-element-boss" }],
             "archive_link" : "https://github.com/sgrunt/cc-element-boss/archive/0.1.1.zip",
