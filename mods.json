@@ -95,6 +95,7 @@
             "license": null,
             "page" : [{ "name" : "GitHub", "url" : "https://github.com/BountyXSnipe/kitplayer" }],
             "archive_link" : "https://github.com/BountyXSnipe/kitplayer/archive/v0.1.0.zip",
+            "hash" : { "sha256" : "598cbec78b234ceed5316e32663eebb1b1d47ad8fbdf93111a825b92fa02fe90" },
             "version" : "0.1.0"
         }
     }
