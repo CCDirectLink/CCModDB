@@ -88,6 +88,15 @@
             "archive_link" : "https://github.com/L-Sherry/French-CC/archive/v0.1.0.zip",
             "hash" : { "sha256" : "f40efb4c28173b26cccb3db0655fd8089475a1baab2d782700a7d165f8d840df" },
             "version" : "0.1.0"
+        },
+        "Kit Player" : {
+            "name" : "Kit Player",
+            "description" : "Swaps Lea's sprites to play as Kit. A sphereomancer fox.",
+            "license": null,
+            "page" : [{ "name" : "GitHub", "url" : "https://github.com/BountyXSnipe/kitplayer" }],
+            "archive_link" : "https://github.com/BountyXSnipe/kitplayer/archive/v0.1.0.zip",
+            "hash" : { "sha256" : "1fd36264126b0cb0d5dd719deaf2bc0ace06941e3d3d0376d2ab7eb4314b8074" },
+            "version" : "0.1.0"
         }
     }
 }
