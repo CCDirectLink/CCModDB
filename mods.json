@@ -5,7 +5,8 @@
             "description" : "Make, name, and load your music into the game",
             "page" : [{ "name" : "GitHub", "url" : "https://github.com/CCDirectLink/loadmusic" }],
             "archive_link" : "https://github.com/CCDirectLink/loadmusic/archive/0.01.zip",
-            "hash" : { "sha256" : "3dffffdccd3914c14c7276555772c51556fc6534cfd2e80f5a97ff161fd77c87" },
+			"hash" : { "sha256" : "3dffffdccd3914c14c7276555772c51556fc6534cfd2e80f5a97ff161fd77c87" },
+			"tags" : ["ccloader", "mod"],
             "version" : "0.0.1"
         },
         "CCdiscord" : {
@@ -14,9 +15,10 @@
             "dir" : { "any" : "root" },
             "page" : [{ "name" : "GitHub", "url" : "https://github.com/CCDirectLink/CCdiscord" }],
             "archive_link" : "https://github.com/CCDirectLink/CCdiscord/archive/v0.1.zip",
-            "hash" : { "sha256" : "1a1afa1e3bb7a4bac63219bf7916e291a763477c6bdae12a86dd4a498226a6cb" },
+			"hash" : { "sha256" : "1a1afa1e3bb7a4bac63219bf7916e291a763477c6bdae12a86dd4a498226a6cb" },
+			"tags" : ["ccloader", "mod"],
             "version" : "0.0.1"
-        },
+		},
         "CCTimeWalker" : {
             "name" : "timewalker",
             "description" : "Lets you control time.",
