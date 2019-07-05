@@ -8,6 +8,15 @@
             "archive_link" : "https://github.com/CCDirectLink/SpericalViewer/archive/v0.3.7.zip",
             "hash" : { "sha256" : "AAC16A0C9169BAAE554783CA89A5A890329334E992343A7735313AE076099F2C" },
             "version" : "0.3.7"
+        },
+        "CCUpdaterCLI" : {
+            "name" : "CCUpdaterCLI",
+            "description" : "A simple tool to install, update and remove CCLoader mods",
+            "license" : null,
+            "page" : [{ "name" : "GitHub", "url" : "https://github.com/CCDirectLink/CCUpdaterCLI" }],
+            "archive_link" : "https://github.com/CCDirectLink/CCUpdaterCLI/releases/download/v1.1.0/ccmu.exe",
+            "hash" : { "sha256" : "87DA1A0BA2463A107AA07EA8A1B3E9B59CD6748CFA087CA495D250942CED517D" },
+            "version" : "1.1.0"
         }
     }
 }
