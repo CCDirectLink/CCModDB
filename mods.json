@@ -97,6 +97,15 @@
             "archive_link" : "https://github.com/BountyXSnipe/kitplayer/archive/v0.1.0.zip",
             "hash" : { "sha256" : "1fd36264126b0cb0d5dd719deaf2bc0ace06941e3d3d0376d2ab7eb4314b8074" },
             "version" : "0.1.0"
+        },
+        "Palicat" : {
+            "name" : "Palicat",
+            "description" : "A mod that implement the palico from monster hunter world into the game.",
+            "license": null,
+            "page" : [{ "name" : "GitHub", "url" : "https://github.com/rioreur/palicat" }],
+            "archive_link" : "https://github.com/rioreur/palicat/archive/1.0.1.zip",
+            "hash" : { "sha256" : "334490dd79e18f39e71f8e53b5285cc5bc286295b5aaa348893a0391a80f34a5" },
+            "version" : "1.0.1"
         }
     }
 }
