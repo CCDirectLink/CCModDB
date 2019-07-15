@@ -59,7 +59,7 @@
             "license" : null,
             "page" : [{ "name" : "GitHub", "url" : "https://github.com/sgrunt/qine" }],
             "archive_link" : "https://github.com/sgrunt/qine/archive/0.2.3.zip",
-            "hash" : { "sha256" : "3113ebf7398a15571d09595d6bfee321f7eeb6d40243e857435c7e42d453da69" },
+            "hash" : { "sha256" : "6cd627c45143bec8ef2a1b86cf6b0dd51fb2f7ff9a364799a3a1ae9abb21b5d2" },
             "version" : "0.2.3"
         },
         "cc-element-boss" : {
