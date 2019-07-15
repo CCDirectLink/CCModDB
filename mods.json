@@ -22,9 +22,9 @@
             "description" : "Lets you control time.",
             "license" : "MIT",
             "page" : [{ "name" : "GitHub", "url" : "https://github.com/CCDirectLink/CCTimeWalker" }],
-            "archive_link" : "https://github.com/CCDirectLink/CCTimeWalker/archive/0.1.zip",
-            "hash" : { "sha256" : "9ea4b8487f47cbcd569c1537274972bdd97633c4f9de1c03f85a7e55341758fd" },
-            "version" : "0.1.0"
+            "archive_link" : "https://github.com/CCDirectLink/CCTimeWalker/archive/v0.2.0.zip",
+            "hash" : { "sha256" : "954b6c10f76c1fe0cf25caadf097c147d440fca5f7b092d6b38de5e827905018" },
+            "version" : "0.2.0"
         },
         "CCTimer" : {
             "name" : "timer",
