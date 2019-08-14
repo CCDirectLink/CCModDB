@@ -76,9 +76,9 @@
             "description" : "Add support for more locales, languages and translations",
             "license": "MIT",
             "page" : [{ "name" : "GitHub", "url" : "https://github.com/L-Sherry/Localize-me" }],
-            "archive_link" : "https://github.com/L-Sherry/Localize-me/archive/v0.4.1.zip",
-            "hash" : { "sha256" : "0cb2f1fa07e62512582ca0f25bd2126dce611c295eb42018eca8784431c89c0d" },
-            "version" : "0.4.1"
+            "archive_link" : "https://github.com/L-Sherry/Localize-me/archive/v0.4.2.zip",
+            "hash" : { "sha256" : "28ec5f7c4b53e09561b7325361cfcc0ae8d1658379e809c04bd01d40145d1c85" },
+            "version" : "0.4.2"
         },
         "French" : {
             "name" : "French",
