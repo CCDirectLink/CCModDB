@@ -60,7 +60,7 @@
             "page" : [{ "name" : "GitHub", "url" : "https://github.com/sgrunt/qine" }],
             "archive_link" : "https://github.com/sgrunt/qine/archive/0.2.5.zip",
             "hash" : { "sha256" : "619e576348b00513b909eb1666946813756ac7e4557d8ea5b45e8885a4730653" },
-            "version" : "0.2.4"
+            "version" : "0.2.5"
         },
         "cc-element-boss" : {
             "name" : "Element Boss",
