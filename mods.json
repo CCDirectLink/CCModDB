@@ -58,7 +58,7 @@
             "description" : "Adds a new custom character to your contacts list.",
             "license" : null,
             "page" : [{ "name" : "GitHub", "url" : "https://github.com/sgrunt/qine" }],
-            "archive_link" : "https://github.com/sgrunt/qine/archive/0.2.4.zip",
+            "archive_link" : "https://github.com/sgrunt/qine/archive/0.2.5.zip",
             "hash" : { "sha256" : "ea8da2506ad6863fa43d74fbfe07b61fc7a7da61cba87a5078ef4adde4545aa6" },
             "version" : "0.2.4"
         },
