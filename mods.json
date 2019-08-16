@@ -4,9 +4,9 @@
             "name" : "Custom Music Loader",
             "description" : "Make, name, and load your music into the game",
             "page" : [{ "name" : "GitHub", "url" : "https://github.com/CCDirectLink/loadmusic" }],
-            "archive_link" : "https://github.com/CCDirectLink/loadmusic/archive/0.01.zip",
-            "hash" : { "sha256" : "3dffffdccd3914c14c7276555772c51556fc6534cfd2e80f5a97ff161fd77c87" },
-            "version" : "0.0.1"
+            "archive_link" : "https://github.com/CCDirectLink/loadmusic/archive/v2.0.0.zip",
+            "hash" : { "sha256" : "7edc3e889a2b5684ba60e50a28e906ce667aaea25dbed4abc2fa8e10bc886d54" },
+            "version" : "2.0.0"
         },
         "CCdiscord" : {
             "name" : "Rich Presence for Discord",
