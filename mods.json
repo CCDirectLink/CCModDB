@@ -53,6 +53,15 @@
             "hash" : { "sha256" : "57ba6eb0d9482bc4b17cff5cc8617d195a25b6c3a82b373c57bd4629463e02d3" },
             "version" : "0.1.0"
         },
+        "CCRestartButton" : {
+            "name" : "Restart Button",
+            "description" : "Restart the game without memory leaks",
+            "license" : "MIT",
+            "page" : [{ "name" : "GitHub", "url" : "https://github.com/bluecheetah001/CCRestartButton" }],
+            "archive_link" : "https://github.com/bluecheetah001/CCRestartButton/archive/v1.0.2.zip",
+            "hash" : { "sha256" : "541ff8c8f9ca51fb38b47d492d760ffc741079d633e01c57e89173592b2c3788" },
+            "version" : "1.0.2"
+        },
         "Qine" : {
             "name" : "Qine",
             "description" : "Adds a new custom character to your contacts list.",
