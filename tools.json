@@ -18,7 +18,7 @@
             "hash" : { "sha256" : "87DA1A0BA2463A107AA07EA8A1B3E9B59CD6748CFA087CA495D250942CED517D" },
             "version" : "1.1.0"
         },
-        "CCLoader : {
+        "CCLoader" : {
             "name" : "CCLoader",
             "description" : "A modloader for CrossCode",
             "licence" : "MIT",
