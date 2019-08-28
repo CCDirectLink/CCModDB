@@ -10,7 +10,7 @@
         },
         "hardcoded-config-injector" : {
             "name" : "Hardcoded Config Injector",
-            "description" : "The mod will look for a config folder in your root mod directory.",
+            "description" : "Allows you to change hardcoded objects inside a json file.",
             "page" : [{ "name" : "GitHub", "url" : "https://github.com/CCDirectLink/hardcoded-config-injector" }],
             "archive_link" : "https://github.com/CCDirectLink/hardcoded-config-injector/archive/master.zip",
             "hash" : { "sha256" : "674186444840cda641d9720b681ba254777b2625f4333b320454ad116be0b9b3" },
