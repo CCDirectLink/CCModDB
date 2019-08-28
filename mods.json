@@ -1,5 +1,13 @@
 {
     "mods" : {
+        "hardcoded-config-injector" : {
+            "name" : "Hardcoded Config Injector",
+            "description" : "Allows you to change hardcoded objects inside a json file.",
+            "page" : [{ "name" : "GitHub", "url" : "https://github.com/CCDirectLink/hardcoded-config-injector" }],
+            "archive_link" : "https://github.com/CCDirectLink/hardcoded-config-injector/archive/master.zip",
+            "hash" : { "sha256" : "674186444840cda641d9720b681ba254777b2625f4333b320454ad116be0b9b3" },
+            "version" : "0.5.0"
+        },
         "CCdiscord" : {
             "name" : "Rich Presence for Discord",
             "description" : "Show off your CrossCode skills in Discord",
