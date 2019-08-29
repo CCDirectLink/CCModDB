@@ -2,7 +2,7 @@
     "tools" : {
         "SpericalViewer" : {
             "name" : "SpericalViewer",
-            "description" : "Viewer for CrossCode content",
+            "description" : "Viewer for CrossCode content.",
             "license" : "MIT",
             "page" : [{ "name" : "GitHub", "url" : "https://github.com/CCDirectLink/SpericalViewer" }],
             "archive_link" : "https://github.com/CCDirectLink/SpericalViewer/archive/v0.3.7.zip",
@@ -11,7 +11,7 @@
         },
         "CCUpdaterCLI" : {
             "name" : "CCUpdaterCLI",
-            "description" : "A simple tool to install, update and remove CCLoader mods",
+            "description" : "A simple tool to install, update and remove CCLoader mods.",
             "license" : null,
             "page" : [{ "name" : "GitHub", "url" : "https://github.com/CCDirectLink/CCUpdaterCLI" }],
             "archive_link" : "https://github.com/CCDirectLink/CCUpdaterCLI/releases/download/v1.1.0/ccmu.exe",
@@ -20,13 +20,22 @@
         },
         "CCLoader" : {
             "name" : "CCLoader",
-            "description" : "A modloader for CrossCode",
+            "description" : "A modloader for CrossCode.",
             "licence" : "MIT",
             "page" : [{ "name" : "GitHub", "url" : "https://github.com/CCDirectLink/CCLoader" }],
             "archive_link" : "https://github.com/CCDirectLink/CCLoader/archive/v2.14.4/v2.8.0.zip",
             "hash" : { "sha256" : "536F84BB6BE11AE590C9164BC4CEE104F6495C73AF88A9BE54DF876C7178592F" },
             "version" : "2.14.4",
             "subVersion" : "2.8.0"
+        },
+        "CCAnimationEditor" : {
+            "name" : "CCAnimationEditor",
+            "description" : "Animation editor for CrossCode.",
+            "licence" : "ISC",
+            "page" : [{ "name" : "GitHub", "url" : "https://github.com/gregnk/ccanimationeditor" }],
+            "archive_link" : "https://github.com/gregnk/CCAnimationEditor/archive/master.zip",
+            "hash" : { "sha256" : "b2401eea822290a96ea04e88e72c6a8b3126a6551dfd4578074d41e588a013e1" },
+            "version" : "0.2.0"
         }
     }
 }
