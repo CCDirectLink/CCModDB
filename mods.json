@@ -1,5 +1,13 @@
 {
     "mods" : {
+        "ccpreset" : {
+            "name" : "Preset Revival",
+            "description" : "This brings back the preset menu, which allows you to start the game at a specific point.",
+            "page" : [{ "name" : "GitHub", "url" : "https://github.com/CCDirectLink/CCPresetRevival" }],
+            "archive_link" : "https://github.com/CCDirectLink/CCPresetRevival/archive/master.zip",
+            "hash" : { "sha256" : "b140da004846a75c859d0f44de1fff56d917fe43c8955f4d2564c79aa5ce84a8" },
+            "version" : "1.0.0"
+        },
         "hardcoded-config-injector" : {
             "name" : "Hardcoded Config Injector",
             "description" : "Allows you to change hardcoded objects inside a json file.",
