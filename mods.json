@@ -40,9 +40,9 @@
             "description" : "A speedrun timer for CrossCode.",
             "license" : null,
             "page" : [{ "name" : "GitHub", "url" : "https://github.com/CCDirectLink/CCTimer" }],
-            "archive_link" : "https://github.com/CCDirectLink/CCTimer/archive/v2.2.0.zip",
-            "hash" : { "sha256" : "377e37a019ffb237812dbb5ef0c17cbf37bdc84f896de1782e0be78a69de08ce" },
-            "version" : "2.2.0"
+            "archive_link" : "https://github.com/CCDirectLink/CCTimer/archive/v2.2.1.zip",
+            "hash" : { "sha256" : "13ef2dcec89c952231ddbe6f3e2800afb0af25ef967a371e9c6892fe7fae8940" },
+            "version" : "2.2.1"
         },
         "CCSlowmotion" : {
             "name" : "slowmotion",
