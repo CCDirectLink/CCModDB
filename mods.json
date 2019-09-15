@@ -1,7 +1,7 @@
 {
     "mods" : {
-        "ccpreset" : {
-            "name" : "Preset Revival",
+        "CCPresetRevival" : {
+            "name" : "CCPresetRevival",
             "description" : "This brings back the preset menu, which allows you to start the game at a specific point.",
             "page" : [{ "name" : "GitHub", "url" : "https://github.com/CCDirectLink/CCPresetRevival" }],
             "archive_link" : "https://github.com/CCDirectLink/CCPresetRevival/archive/1.0.1.zip",
