@@ -6,7 +6,7 @@
             "page" : [{ "name" : "GitHub", "url" : "https://github.com/CCDirectLink/CCPresetRevival" }],
             "archive_link" : "https://github.com/CCDirectLink/CCPresetRevival/archive/1.0.0.zip",
             "hash" : { "sha256" : "cb54a26d3e2da736b205dff1ca112a80f4727ed8a179bfc4fa2fdab36c4085c2" },
-            "version" : "1.0.0"
+            "version" : "1.0.1"
         },
         "hardcoded-config-injector" : {
             "name" : "Hardcoded Config Injector",
