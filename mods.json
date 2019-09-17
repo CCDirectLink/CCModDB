@@ -75,9 +75,9 @@
             "description" : "Restart the game without memory leaks",
             "license" : "MIT",
             "page" : [{ "name" : "GitHub", "url" : "https://github.com/bluecheetah001/CCRestartButton" }],
-            "archive_link" : "https://github.com/bluecheetah001/CCRestartButton/archive/v1.0.2.zip",
-            "hash" : { "sha256" : "541ff8c8f9ca51fb38b47d492d760ffc741079d633e01c57e89173592b2c3788" },
-            "version" : "1.0.2"
+            "archive_link" : "https://github.com/bluecheetah001/CCRestartButton/archive/v1.1.1.zip",
+            "hash" : { "sha256" : "b8e27bf0a35b63459a09c246638666ddfbf73c13d9e7ccf2029f7b8214d39255" },
+            "version" : "1.1.1"
         },
         "Qine" : {
             "name" : "Qine",
