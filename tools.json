@@ -5,18 +5,36 @@
             "description" : "Viewer for CrossCode content.",
             "license" : "MIT",
             "page" : [{ "name" : "GitHub", "url" : "https://github.com/CCDirectLink/SpericalViewer" }],
-            "archive_link" : "https://github.com/CCDirectLink/SpericalViewer/archive/v0.3.7.zip",
-            "hash" : { "sha256" : "AAC16A0C9169BAAE554783CA89A5A890329334E992343A7735313AE076099F2C" },
-            "version" : "0.3.7"
+            "archive_link" : "https://github.com/CCDirectLink/SpericalViewer/archive/v0.3.13.zip",
+            "hash" : { "sha256" : "f44101ab0f043c4319d758d1b90769529cbad31d24ef1b8e2df69c54b65df626" },
+            "version" : "0.3.13"
         },
-        "CCUpdaterCLI" : {
-            "name" : "CCUpdaterCLI",
-            "description" : "A simple tool to install, update and remove CCLoader mods.",
+        "CCUpdaterCLIwin" : {
+            "name" : "CCUpdaterCLI Windows",
+            "description" : "A simple tool to install, update and remove CCLoader mods. (Windows)",
             "license" : null,
             "page" : [{ "name" : "GitHub", "url" : "https://github.com/CCDirectLink/CCUpdaterCLI" }],
-            "archive_link" : "https://github.com/CCDirectLink/CCUpdaterCLI/releases/download/v1.1.0/ccmu.exe",
-            "hash" : { "sha256" : "87DA1A0BA2463A107AA07EA8A1B3E9B59CD6748CFA087CA495D250942CED517D" },
-            "version" : "1.1.0"
+            "archive_link" : "https://github.com/CCDirectLink/CCUpdaterCLI/releases/download/v1.2.0/ccmu.exe",
+            "hash" : { "sha256" : "8e83ef7076ace23099c4f9513e1ed9dd1a4e30a47571eb66825c0084aeebb8ed" },
+            "version" : "1.2.0"
+        },
+        "CCUpdaterCLImac" : {
+            "name" : "CCUpdaterCLI Mac",
+            "description" : "A simple tool to install, update and remove CCLoader mods. (Mac)",
+            "license" : null,
+            "page" : [{ "name" : "GitHub", "url" : "https://github.com/CCDirectLink/CCUpdaterCLI" }],
+            "archive_link" : "https://github.com/CCDirectLink/CCUpdaterCLI/releases/download/v1.2.0/ccmu-mac",
+            "hash" : { "sha256" : "68a61f5b80371e60bacc78560ae23b9081f3125ed916421e3f92569106303fb5" },
+            "version" : "1.2.0"
+        },
+        "CCUpdaterCLIlinux" : {
+            "name" : "CCUpdaterCLI Linux",
+            "description" : "A simple tool to install, update and remove CCLoader mods. (Linux)",
+            "license" : null,
+            "page" : [{ "name" : "GitHub", "url" : "https://github.com/CCDirectLink/CCUpdaterCLI" }],
+            "archive_link" : "https://github.com/CCDirectLink/CCUpdaterCLI/releases/download/v1.2.0/ccmu",
+            "hash" : { "sha256" : "6a9e994fcc04f4d5cd5da9a32f265d7388862dfdff17eda20bddd0104eed4064" },
+            "version" : "1.2.0"
         },
         "CCLoader" : {
             "name" : "CCLoader",
