@@ -1,5 +1,13 @@
 {
     "mods" : {
+        "CCRandomEvents" : {
+            "name" : "CCRandomEvents",
+            "description" : "This adds all kinds of events to the game.",
+            "page" : [{ "name" : "GitHub", "url" : "https://github.com/keanuplayz/CCRandomEvents" }],
+            "archive_link" : "https://github.com/keanuplayz/CCRandomEvents/archive/0.0.6.zip",
+            "hash" : { "sha256" : "df543da46a7e12ba41c9de101a662846f4b11040146ffd0dba9bb86c6e9757cd" },
+            "version" : "0.0.6"
+        },
         "CCPresetRevival" : {
             "name" : "CCPresetRevival",
             "description" : "This brings back the preset menu, which allows you to start the game at a specific point.",
