@@ -116,12 +116,12 @@
         },
         "French" : {
             "name" : "French",
-            "description" : "CrossCode en français ! (59% complete)",
+            "description" : "CrossCode en français ! (90% complete)",
             "license": null,
             "page" : [{ "name" : "GitHub", "url" : "https://github.com/L-Sherry/French-CC" }],
-            "archive_link" : "https://github.com/L-Sherry/French-CC/archive/v0.3.0.zip",
-            "hash" : { "sha256" : "67e7eca436587441c29aa24b4aab881e786e2c8be19769c0cea664d55c33bce8" },
-            "version" : "0.3.0"
+            "archive_link" : "https://github.com/L-Sherry/French-CC/archive/v0.5.0.zip",
+            "hash" : { "sha256" : "019a2e2189ee854568973bc1bf38889c92cd5e0b10643d4ca1d542459e5b7df7" },
+            "version" : "0.5.0"
         },
         "Kit Player" : {
             "name" : "Kit Player",
