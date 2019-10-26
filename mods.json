@@ -1,5 +1,13 @@
 {
     "mods" : {
+        "LeaTriblader" : {
+            "name" : "LeaTriblader",
+            "description" : "This mod changes Lea's class to Triblader.",
+            "page" : [{ "name" : "GitHub", "url" : "https://github.com/keanuplayz/LeaTriblader" }],
+            "archive_link" : "https://github.com/keanuplayz/LeaTriblader/archive/1.0.0.zip",
+            "hash" : { "sha256" : "e8f13a129749a46d7978f032ae71de497126d9f33cb8e0d90afca0d2a01db928" },
+            "version" : "1.0.0"
+        },
         "CCPresetRevival" : {
             "name" : "CCPresetRevival",
             "description" : "This brings back the preset menu, which allows you to start the game at a specific point.",
