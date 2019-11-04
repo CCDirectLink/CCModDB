@@ -140,7 +140,7 @@
             "archive_link" : "https://github.com/rioreur/palicat/archive/1.0.3.zip",
             "hash" : { "sha256" : "5ac431d47148afee3cfab8744a69b06723af52444151e686cd9d514fbe401a24" },
             "version" : "1.0.3"
-        }
+        },
         "CharSwap" : {
             "name": "Character Swap",
             "description" : "Play as previously unplayable characters.",
