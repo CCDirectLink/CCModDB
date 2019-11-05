@@ -140,6 +140,15 @@
             "archive_link" : "https://github.com/rioreur/palicat/archive/1.0.3.zip",
             "hash" : { "sha256" : "5ac431d47148afee3cfab8744a69b06723af52444151e686cd9d514fbe401a24" },
             "version" : "1.0.3"
+        },
+        "CharSwap" : {
+            "name": "Character Swap",
+            "description" : "Play as previously unplayable characters.",
+            "license": null,
+            "page" : [{ "name" : "GitHub", "url" : "https://github.com/asmdev/CharSwap" }],
+            "archive_link" : "https://github.com/asmdev/CharSwap/archive/v1.0.0.zip",
+            "hash" : { "sha256" : "233b8df5071e57d4f6bea6879957e3d43f622e9ef1cd625ad4ec4c509b58220b" },
+            "version" : "1.0.0"
         }
     }
 }
