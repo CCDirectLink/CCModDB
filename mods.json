@@ -17,14 +17,14 @@
             "version" : "1.0.1"
         },
         "hardcoded-config-injector" : {
-			"name": "hardcoded-config-injector",
-			"description": "Inject into hardcoded CrossCode code values.",
-			"license": null,
-			"page": [{ "name" : "GitHub", "url" : "https://github.com/CCDirectLink/hardcoded-config-injector/"}],
-			"archive_link": "https://github.com/CCDirectLink/hardcoded-config-injector/archive/v0.1.0.zip",
-			"hash": { "sha256" : "5c85fb567cf381ceb03548eb49fc074634f5f425836422525926f46610dc1c9f" },
-			"version": "0.1.0"
-		},
+		"name": "hardcoded-config-injector",
+		"description": "Inject into hardcoded CrossCode code values.",
+		"license": null,
+		"page": [{ "name" : "GitHub", "url" : "https://github.com/CCDirectLink/hardcoded-config-injector/"}],
+		"archive_link": "https://github.com/CCDirectLink/hardcoded-config-injector/archive/v0.1.0.zip",
+		"hash": { "sha256" : "5c85fb567cf381ceb03548eb49fc074634f5f425836422525926f46610dc1c9f" },
+		"version": "0.1.0"
+	},
         "New game++" : {
             "name" : "New game++",
             "description" : "A small collection of addons to CrossCode's NG+.",
