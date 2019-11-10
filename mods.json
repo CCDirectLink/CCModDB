@@ -17,13 +17,14 @@
             "version" : "1.0.1"
         },
         "hardcoded-config-injector" : {
-            "name" : "Hardcoded Config Injector",
-            "description" : "Allows you to change hardcoded objects inside a json file.",
-            "page" : [{ "name" : "GitHub", "url" : "https://github.com/CCDirectLink/hardcoded-config-injector" }],
-            "archive_link" : "https://github.com/CCDirectLink/hardcoded-config-injector/archive/master.zip",
-            "hash" : { "sha256" : "674186444840cda641d9720b681ba254777b2625f4333b320454ad116be0b9b3" },
-            "version" : "0.5.0"
-        },
+			"name": "hardcoded-config-injector",
+			"description": "Inject into hardcoded CrossCode code values.",
+			"license": null,
+			"page": [{ "name" : "GitHub", "url" : "https://github.com/CCDirectLink/hardcoded-config-injector/"}],
+			"archive_link": "https://github.com/CCDirectLink/hardcoded-config-injector/archive/v0.1.0.zip",
+			"hash": { "sha256" : "130c01fa70effe96ca4ff92dfd89ea5eb0cd134516dc7c5e6dbb6a79e2272c3f" },
+			"version": "0.1.0"
+		},
         "New game++" : {
             "name" : "New game++",
             "description" : "A small collection of addons to CrossCode's NG+.",
@@ -149,6 +150,6 @@
             "archive_link" : "https://github.com/asmdev/CharSwap/archive/v1.0.0.zip",
             "hash" : { "sha256" : "233b8df5071e57d4f6bea6879957e3d43f622e9ef1cd625ad4ec4c509b58220b" },
             "version" : "1.0.0"
-        }
+		}
     }
 }
