@@ -22,7 +22,7 @@
 			"license": null,
 			"page": [{ "name" : "GitHub", "url" : "https://github.com/CCDirectLink/hardcoded-config-injector/"}],
 			"archive_link": "https://github.com/CCDirectLink/hardcoded-config-injector/archive/v0.1.0.zip",
-			"hash": { "sha256" : "130c01fa70effe96ca4ff92dfd89ea5eb0cd134516dc7c5e6dbb6a79e2272c3f" },
+			"hash": { "sha256" : "5c85fb567cf381ceb03548eb49fc074634f5f425836422525926f46610dc1c9f" },
 			"version": "0.1.0"
 		},
         "New game++" : {
