@@ -1,0 +1,472 @@
+{
+    "ccloader": {
+        "metadata": {
+            "name": "ccloader",
+            "ccmodHumanName": "CCLoader",
+            "ccmodType": "base",
+            "description": "Modloader for CrossCode. This or a similar modloader is needed for most mods.",
+            "version": "2.15.2"
+        },
+        "installation": [
+            {
+                "type": "modZip",
+                "url": "https://github.com/CCDirectLink/CCLoader/archive/b48b54aecdcd129f70f73bd84629ce1d614f6a05.zip",
+                "source": "CCLoader-b48b54aecdcd129f70f73bd84629ce1d614f6a05",
+                "hash": {
+                    "sha256": "a274066712e4f30f52ab58ed561620913a62cc2d63de24662032c0693a705e04"
+                }
+            }
+        ]
+    },
+    "LeaTriblader": {
+        "metadata": {
+            "name": "LeaTriblader",
+            "main": "mod.js",
+            "version": "1.0.1",
+            "homepage": "https://github.com/keanuplayz/LeaTriblader",
+            "description": "This mod changes Lea's class to Triblader."
+        },
+        "installation": [
+            {
+                "type": "modZip",
+                "url": "https://github.com/keanuplayz/LeaTriblader/archive/1.0.1.zip",
+                "source": "LeaTriblader-1.0.1",
+                "hash": {
+                    "sha256": "b0a23ca05f65c09e52aebc3ce3c836ec326a972531ef4a373fdf4876494b022b"
+                }
+            }
+        ]
+    },
+    "CCPresetRevival": {
+        "metadata": {
+            "name": "CCPresetRevival",
+            "version": "1.0.2",
+            "plugin": "plugin.js",
+            "homepage": "https://github.com/CCDirectLink/CCPresetRevival",
+            "description": "This brings back the preset menu, which allows you to start the game at a specific point."
+        },
+        "installation": [
+            {
+                "type": "modZip",
+                "url": "https://github.com/CCDirectLink/CCPresetRevival/archive/1.0.2.zip",
+                "source": "CCPresetRevival-1.0.2",
+                "hash": {
+                    "sha256": "5b846b896ab01aec326fd9b71e7d77e3e7ff18473eef15b6f900844cdcc4ba46"
+                }
+            }
+        ]
+    },
+    "hardcoded-config-injector": {
+        "metadata": {
+            "name": "hardcoded-config-injector",
+            "version": "0.1.0",
+            "plugin": "plugin.js",
+            "ccmodDependencies": {}
+        },
+        "installation": [
+            {
+                "type": "modZip",
+                "url": "https://github.com/CCDirectLink/hardcoded-config-injector/archive/1647cdf09f9f9b4743a534c8c72ecb52641964fa.zip",
+                "source": "hardcoded-config-injector-1647cdf09f9f9b4743a534c8c72ecb52641964fa",
+                "hash": {
+                    "sha256": "d3f3045c0b1bc3967ac32478d9f8fd574e48d40d5ae9e2e5d3fa9737c24eca1e"
+                }
+            }
+        ]
+    },
+    "New game++": {
+        "metadata": {
+            "name": "New game++",
+            "module": true,
+            "plugin": "plugin.js",
+            "version": "1.0.1",
+            "homepage": "https://github.com/CCDirectLink/CCNewGamePP",
+            "description": "A small collection of addons to CrossCode's NG+.",
+            "ccmodDependencies": {
+                "crosscode": "^1.2.0",
+                "ccloader": "^2.14.3"
+            }
+        },
+        "installation": [
+            {
+                "type": "modZip",
+                "url": "https://github.com/CCDirectLink/CCNewGamePP/archive/v1.0.1.zip",
+                "source": "CCNewGamePP-1.0.1",
+                "hash": {
+                    "sha256": "452ddfeeb0473ffd7d58d76b3d43a63bca42f127b2989a0f9f31b964b475d085"
+                }
+            }
+        ]
+    },
+    "Discord": {
+        "metadata": {
+            "name": "Discord",
+            "prestart": "mod.js",
+            "ccmodHumanName": "Rich Presence for Discord",
+            "version": "0.1.1",
+            "homepage": "https://github.com/CCDirectLink/CCdiscord",
+            "description": "Show off your CrossCode skills in Discord",
+            "ccmodDependencies": {
+                "mod-require-fix": "^1.0.0"
+            }
+        },
+        "installation": [
+            {
+                "type": "modZip",
+                "url": "https://github.com/CCDirectLink/CCdiscord/archive/8c5dce9653b170ecb4d4a1ba5b170629539c2644.zip",
+                "source": "CCdiscord-8c5dce9653b170ecb4d4a1ba5b170629539c2644/discord",
+                "hash": {
+                    "sha256": "4de61fb32ebc3282238bdafa3069f8a1462c7d0ad10d85b1e02c4439597cb04c"
+                }
+            }
+        ]
+    },
+    "mod-require-fix": {
+        "metadata": {
+            "name": "mod-require-fix",
+            "version": "1.0.1",
+            "description": "Assists in the usage of NPM packages from CrossCode mods.",
+            "homepage": "https://github.com/CCDirectLink/CCdiscord",
+            "preload": "preload.js",
+            "module": true
+        },
+        "installation": [
+            {
+                "type": "modZip",
+                "url": "https://github.com/CCDirectLink/CCdiscord/archive/8c5dce9653b170ecb4d4a1ba5b170629539c2644.zip",
+                "source": "CCdiscord-8c5dce9653b170ecb4d4a1ba5b170629539c2644/mod-require-fix",
+                "hash": {
+                    "sha256": "4de61fb32ebc3282238bdafa3069f8a1462c7d0ad10d85b1e02c4439597cb04c"
+                }
+            }
+        ]
+    },
+    "timewalker": {
+        "metadata": {
+            "name": "timewalker",
+            "license": "MIT",
+            "homepage": "https://github.com/CCDirectLink/CCTimeWalker",
+            "description": "Lets you control time.",
+            "main": "mod.js",
+            "module": true,
+            "version": "0.2.1",
+            "ccmodDependencies": {
+                "Simplify": "^2.0.0",
+                "crosscode": "^1.1.0"
+            }
+        },
+        "installation": [
+            {
+                "type": "modZip",
+                "url": "https://github.com/CCDirectLink/CCTimeWalker/archive/v0.2.1.zip",
+                "source": "CCTimeWalker-0.2.1/timewalker",
+                "hash": {
+                    "sha256": "837399583b65d452e9c3bf1924db2429e56f4ab71442d4d20d3b3ca265ca94e7"
+                }
+            }
+        ]
+    },
+    "timer": {
+        "metadata": {
+            "name": "timer",
+            "main": "mod.js",
+            "homepage": "https://github.com/CCDirectLink/CCTimer",
+            "description": "A speedrun timer for CrossCode.",
+            "module": true,
+            "version": "2.2.2",
+            "ccmodDependencies": {
+                "ccloader": "^2.7.7",
+                "Simplify": "^2.0.3"
+            }
+        },
+        "installation": [
+            {
+                "type": "modZip",
+                "url": "https://github.com/CCDirectLink/CCTimer/archive/v2.2.2.zip",
+                "source": "CCTimer-2.2.2/timer",
+                "hash": {
+                    "sha256": "8b2788dcb192fbb6d8e64f7e73c0fc9cb621f7ba332bd27d051d180225b0811e"
+                }
+            }
+        ]
+    },
+    "slowmotion": {
+        "metadata": {
+            "name": "slowmotion",
+            "version": "0.1.1",
+            "license": "MIT",
+            "homepage": "https://github.com/CCDirectLink/CCSlowmotion",
+            "description": "Turns your C key into a slowmotion controller.",
+            "main": "mod.js"
+        },
+        "installation": [
+            {
+                "type": "modZip",
+                "url": "https://github.com/CCDirectLink/CCSlowmotion/archive/v0.1.1.zip",
+                "source": "CCSlowmotion-0.1.1/slowmotion",
+                "hash": {
+                    "sha256": "95ffe20f8f611cd7a18b5b8f77c0437b60101badb11aefcd64597ef3b7ecdc6a"
+                }
+            }
+        ]
+    },
+    "jetpack": {
+        "metadata": {
+            "name": "jetpack",
+            "main": "mod.js",
+            "version": "0.1.1",
+            "license": "MIT",
+            "homepage": "https://github.com/CCDirectLink/CCJetpack",
+            "description": "Turns your CTRL key into a jetpack."
+        },
+        "installation": [
+            {
+                "type": "modZip",
+                "url": "https://github.com/CCDirectLink/CCJetpack/archive/v0.1.1.zip",
+                "source": "CCJetpack-0.1.1/jetpack",
+                "hash": {
+                    "sha256": "7ec33de49ea11684e28e7d49e2099571a236ebefb7552ca1b828c7b92a225612"
+                }
+            }
+        ]
+    },
+    "Restart Button": {
+        "metadata": {
+            "name": "Restart Button",
+            "version": "1.1.2",
+            "description": "Adds a button to restart the game without memory leaks",
+            "license": "MIT",
+            "homepage": "https://github.com/bluecheetah001/CCRestartButton",
+            "main": "mod.js",
+            "module": true,
+            "ccmodDependencies": {
+                "Simplify": "^2.2.0"
+            }
+        },
+        "installation": [
+            {
+                "type": "modZip",
+                "url": "https://github.com/bluecheetah001/CCRestartButton/archive/v1.1.2.zip",
+                "source": "CCRestartButton-1.1.2",
+                "hash": {
+                    "sha256": "120c9aeae9ce30b8d9c3acc21d8614f507ca7db9eb6a696ca6c1c5075f63e5bf"
+                }
+            }
+        ]
+    },
+    "Qine": {
+        "metadata": {
+            "name": "Qine",
+            "description": "Adds the character Qine as a party member and PvP duel.",
+            "homepage": "https://github.com/sgrunt/qine",
+            "prestart": "mod.js",
+            "version": "0.2.7",
+            "ccmodDependencies": {
+                "ccloader": "^2.14.1",
+                "hardcoded-config-injector": "^0.1.0",
+                "extendable-severed-heads": "^1.0.0"
+            }
+        },
+        "installation": [
+            {
+                "type": "modZip",
+                "url": "https://github.com/sgrunt/qine/archive/0.2.7.zip",
+                "source": "qine-0.2.7/qine",
+                "hash": {
+                    "sha256": "73bec599fdb63f6b0504d1ea6b549904daf97f00c8667f6bd6378c91560d8c29"
+                }
+            }
+        ]
+    },
+    "Element Boss": {
+        "metadata": {
+            "name": "Element Boss",
+            "main": "mod.js",
+            "homepage": "https://github.com/sgrunt/cc-element-boss",
+            "description": "Adds a new boss battle to the game.",
+            "version": "0.1.2",
+            "ccmodDependencies": {
+                "ccloader": "^2.7.3",
+                "Simplify": "^2.1.0"
+            }
+        },
+        "installation": [
+            {
+                "type": "modZip",
+                "url": "https://github.com/sgrunt/cc-element-boss/archive/0.1.2.zip",
+                "source": "cc-element-boss-0.1.2/cc-element-boss",
+                "hash": {
+                    "sha256": "e0bdc31b640bd7a00bd7c69dcb7a8cef87130f0cb349b44874ba440c67f02922"
+                }
+            }
+        ]
+    },
+    "Localize Me": {
+        "metadata": {
+            "name": "Localize Me",
+            "license": "MIT",
+            "homepage": "https://github.com/L-Sherry/Localize-me",
+            "description": "Add support for more locales, languages and translations",
+            "postload": "mod.js",
+            "version": "0.4.3"
+        },
+        "installation": [
+            {
+                "type": "modZip",
+                "url": "https://github.com/L-Sherry/Localize-me/archive/v0.4.3.zip",
+                "source": "Localize-me-0.4.3",
+                "hash": {
+                    "sha256": "fb08dd95de63af3b057000161f74c6770012f94cc4d5718b8c73aba9055cfc0a"
+                }
+            }
+        ]
+    },
+    "French": {
+        "metadata": {
+            "name": "French",
+            "description": "CrossCode en français !",
+            "postload": "mod.js",
+            "version": "0.5.0",
+            "dependencies": {
+                "Localize Me": ">=0.4 <1"
+            }
+        },
+        "installation": [
+            {
+                "type": "modZip",
+                "url": "https://github.com/L-Sherry/French-CC/archive/v0.5.0.zip",
+                "source": "French-CC-0.5.0",
+                "hash": {
+                    "sha256": "019a2e2189ee854568973bc1bf38889c92cd5e0b10643d4ca1d542459e5b7df7"
+                }
+            }
+        ]
+    },
+    "Kit Player": {
+        "metadata": {
+            "name": "Kit Player",
+            "main": "mod.js"
+        },
+        "installation": [
+            {
+                "type": "modZip",
+                "url": "https://github.com/BountyXSnipe/kitplayer/archive/v0.1.0.zip",
+                "source": "kitplayer-0.1.0/kitplayer",
+                "hash": {
+                    "sha256": "1fd36264126b0cb0d5dd719deaf2bc0ace06941e3d3d0376d2ab7eb4314b8074"
+                }
+            }
+        ]
+    },
+    "Palicat": {
+        "metadata": {
+            "name": "Palicat",
+            "prestart": "prestart.js",
+            "homepage": "https://github.com/rioreur/palicat",
+            "description": "A mod that implement the palico from monster hunter world into the game.",
+            "version": "1.0.4",
+            "ccmodDependencies": {
+                "crosscode": "^1.1.0",
+                "item-api": "^0.*"
+            }
+        },
+        "installation": [
+            {
+                "type": "modZip",
+                "url": "https://github.com/rioreur/palicat/archive/1.0.4.zip",
+                "source": "palicat-1.0.4",
+                "hash": {
+                    "sha256": "75d84d8a190bece945d20f2fda3518c06cdbdd57f209b91471f9815feffb4b70"
+                }
+            }
+        ]
+    },
+    "Character Swap": {
+        "metadata": {
+            "name": "Character Swap",
+            "version": "1.0.0",
+            "description": "Play as a variety of characters previously unavailable.",
+            "plugin": "mod.js",
+            "module": false,
+            "ccmodDependencies": {
+                "crosscode": "^1.2.0",
+                "ccloader": "^2.14.3"
+            }
+        },
+        "installation": [
+            {
+                "type": "modZip",
+                "url": "https://github.com/asmdev/CharSwap/archive/v1.0.0.zip",
+                "source": "CharSwap-1.0.0",
+                "hash": {
+                    "sha256": "233b8df5071e57d4f6bea6879957e3d43f622e9ef1cd625ad4ec4c509b58220b"
+                }
+            }
+        ]
+    },
+    "item-api": {
+        "metadata": {
+            "name": "item-api",
+            "description": "Allows custom items to be prepared in such a way that they 'just work'.",
+            "homepage": "https://gitlab.com/20kdc/ccprestartapi",
+            "version": "0.2.1",
+            "ccmodDependencies": {
+                "templating-api": "^0.*"
+            },
+            "postload": "postload.js",
+            "prestart": "prestart.js",
+            "module": true
+        },
+        "installation": [
+            {
+                "type": "modZip",
+                "url": "https://gitlab.com/20kdc/ccprestartapi/-/archive/v3/ccprestartapi-v3.zip",
+                "source": "ccprestartapi-v3/item-api",
+                "hash": {
+                    "sha256": "00081eef3d234586460b3832732ea10f6daf91c84ea211718ab9c6d7b29fde87"
+                }
+            }
+        ]
+    },
+    "menu-api": {
+        "metadata": {
+            "name": "menu-api",
+            "description": "Adds a menu to which mods can add their own buttons.",
+            "homepage": "https://gitlab.com/20kdc/ccprestartapi",
+            "version": "0.1.1",
+            "postload": "postload.js",
+            "prestart": "prestart.js",
+            "module": true
+        },
+        "installation": [
+            {
+                "type": "modZip",
+                "url": "https://gitlab.com/20kdc/ccprestartapi/-/archive/v3/ccprestartapi-v3.zip",
+                "source": "ccprestartapi-v3/menu-api",
+                "hash": {
+                    "sha256": "00081eef3d234586460b3832732ea10f6daf91c84ea211718ab9c6d7b29fde87"
+                }
+            }
+        ]
+    },
+    "templating-api": {
+        "metadata": {
+            "name": "templating-api",
+            "description": "Get your JSON templating additions here.",
+            "homepage": "https://gitlab.com/20kdc/ccprestartapi",
+            "version": "0.1.1",
+            "prestart": "prestart.js",
+            "module": true
+        },
+        "installation": [
+            {
+                "type": "modZip",
+                "url": "https://gitlab.com/20kdc/ccprestartapi/-/archive/v3/ccprestartapi-v3.zip",
+                "source": "ccprestartapi-v3/templating-api",
+                "hash": {
+                    "sha256": "00081eef3d234586460b3832732ea10f6daf91c84ea211718ab9c6d7b29fde87"
+                }
+            }
+        ]
+    }
+}

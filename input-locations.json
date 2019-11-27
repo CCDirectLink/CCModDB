@@ -1,0 +1,114 @@
+[
+	{
+		"type": "modZip",
+		"urlZip": "https://github.com/CCDirectLink/CCLoader/archive/b48b54aecdcd129f70f73bd84629ce1d614f6a05.zip",
+		"source": "CCLoader-b48b54aecdcd129f70f73bd84629ce1d614f6a05",
+		"packageJSONPath": "CCLoader-b48b54aecdcd129f70f73bd84629ce1d614f6a05/ccloader/package.json"
+	},
+	{
+		"type": "modZip",
+		"urlZip": "https://github.com/keanuplayz/LeaTriblader/archive/1.0.1.zip",
+		"source": "LeaTriblader-1.0.1"
+	},
+	{
+		"type": "modZip",
+		"urlZip": "https://github.com/CCDirectLink/CCPresetRevival/archive/1.0.2.zip",
+		"source": "CCPresetRevival-1.0.2"
+	},
+	{
+		"type": "modZip",
+		"urlZip": "https://github.com/CCDirectLink/hardcoded-config-injector/archive/1647cdf09f9f9b4743a534c8c72ecb52641964fa.zip",
+		"source": "hardcoded-config-injector-1647cdf09f9f9b4743a534c8c72ecb52641964fa"
+	},
+	{
+		"type": "modZip",
+		"urlZip": "https://github.com/CCDirectLink/CCNewGamePP/archive/v1.0.1.zip",
+		"source": "CCNewGamePP-1.0.1"
+	},
+	{
+		"type": "modZip",
+		"urlZip": "https://github.com/CCDirectLink/CCdiscord/archive/8c5dce9653b170ecb4d4a1ba5b170629539c2644.zip",
+		"source": "CCdiscord-8c5dce9653b170ecb4d4a1ba5b170629539c2644/discord"
+	},
+	{
+		"type": "modZip",
+		"urlZip": "https://github.com/CCDirectLink/CCdiscord/archive/8c5dce9653b170ecb4d4a1ba5b170629539c2644.zip",
+		"source": "CCdiscord-8c5dce9653b170ecb4d4a1ba5b170629539c2644/mod-require-fix"
+	},
+	{
+		"type": "modZip",
+		"urlZip": "https://github.com/CCDirectLink/CCTimeWalker/archive/v0.2.1.zip",
+		"source": "CCTimeWalker-0.2.1/timewalker"
+	},
+	{
+		"type": "modZip",
+		"urlZip": "https://github.com/CCDirectLink/CCTimer/archive/v2.2.2.zip",
+		"source": "CCTimer-2.2.2/timer"
+	},
+	{
+		"type": "modZip",
+		"urlZip": "https://github.com/CCDirectLink/CCSlowmotion/archive/v0.1.1.zip",
+		"source": "CCSlowmotion-0.1.1/slowmotion"
+	},
+	{
+		"type": "modZip",
+		"urlZip": "https://github.com/CCDirectLink/CCJetpack/archive/v0.1.1.zip",
+		"source": "CCJetpack-0.1.1/jetpack"
+	},
+	{
+		"type": "modZip",
+		"urlZip": "https://github.com/bluecheetah001/CCRestartButton/archive/v1.1.2.zip",
+		"source": "CCRestartButton-1.1.2"
+	},
+	{
+		"type": "modZip",
+		"urlZip": "https://github.com/sgrunt/qine/archive/0.2.7.zip",
+		"source": "qine-0.2.7/qine"
+	},
+	{
+		"type": "modZip",
+		"urlZip": "https://github.com/sgrunt/cc-element-boss/archive/0.1.2.zip",
+		"source": "cc-element-boss-0.1.2/cc-element-boss"
+	},
+	{
+		"type": "modZip",
+		"urlZip": "https://github.com/L-Sherry/Localize-me/archive/v0.4.3.zip",
+		"source": "Localize-me-0.4.3"
+	},
+	{
+		"type": "modZip",
+		"urlZip": "https://github.com/L-Sherry/French-CC/archive/v0.5.0.zip",
+		"source": "French-CC-0.5.0"
+	},
+	{
+		"type": "modZip",
+		"urlZip": "https://github.com/BountyXSnipe/kitplayer/archive/v0.1.0.zip",
+		"source": "kitplayer-0.1.0/kitplayer"
+	},
+	{
+		"type": "modZip",
+		"urlZip": "https://github.com/rioreur/palicat/archive/1.0.4.zip",
+		"source": "palicat-1.0.4"
+	},
+	{
+		"type": "modZip",
+		"urlZip": "https://github.com/asmdev/CharSwap/archive/v1.0.0.zip",
+		"source": "CharSwap-1.0.0"
+	},
+	{
+		"type": "modZip",
+		"urlZip": "https://gitlab.com/20kdc/ccprestartapi/-/archive/v3/ccprestartapi-v3.zip",
+		"source": "ccprestartapi-v3/item-api"
+	},
+	{
+		"type": "modZip",
+		"urlZip": "https://gitlab.com/20kdc/ccprestartapi/-/archive/v3/ccprestartapi-v3.zip",
+		"source": "ccprestartapi-v3/menu-api"
+	},
+	{
+		"type": "modZip",
+		"urlZip": "https://gitlab.com/20kdc/ccprestartapi/-/archive/v3/ccprestartapi-v3.zip",
+		"source": "ccprestartapi-v3/templating-api"
+	}
+]
+
