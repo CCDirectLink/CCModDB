@@ -155,9 +155,9 @@
             "description": "Adds element switching to L3 and R3 (stick buttons) on controllers.",
             "license": null,
             "page": [{ "name": "GitHub", "url": "https://github.com/tylercamp/CCJoystickExt" }],
-            "archive_link": "https://github.com/tylercamp/CCJoystickExt/archive/1.0.0.zip",
-            "hash": { "sha256": "3e37ac6ad060ae87c5285591c006197437a1a08aad5c18562be11cec84e94a3c" },
-            "version": "1.0.0"
+            "archive_link": "https://github.com/tylercamp/CCJoystickExt/archive/1.0.1.zip",
+            "hash": { "sha256": "5cde5d183c4e8998be0a39f542f68a625bbf7c26e74263892f978f789ea2a3c1" },
+            "version": "1.0.1"
         }
     }
 }
