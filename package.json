@@ -8,6 +8,7 @@
 	},
 	"author": "CCDirectLink",
 	"scripts": {
+		"build": "node scripts/build.js",
 		"pretest": "eslint .",
 		"unit": "mocha --recursive scripts/tests",
 		"test": "mocha --recursive scripts/tests",
@@ -16,7 +17,8 @@
 	},
 	"devDependencies": {
 		"chai": "^4.2.0",
-		"eslint": "^5.16.0",
+		"eslint": "^6.7.2",
+		"semver": "^6.3.0",
 		"eslint-config-strongloop": "^2.1.0",
 		"eslint-plugin-es-beautifier": "^1.0.1",
 		"mocha": "^6.1.4"

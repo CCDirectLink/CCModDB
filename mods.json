@@ -1,154 +1,309 @@
 {
-    "mods" : {
-        "LeaTriblader" : {
-            "name" : "LeaTriblader",
-            "description" : "This mod changes Lea's class to Triblader.",
-            "page" : [{ "name" : "GitHub", "url" : "https://github.com/keanuplayz/LeaTriblader" }],
-            "archive_link" : "https://github.com/keanuplayz/LeaTriblader/archive/1.0.0.zip",
-            "hash" : { "sha256" : "e8f13a129749a46d7978f032ae71de497126d9f33cb8e0d90afca0d2a01db928" },
-            "version" : "1.0.0"
+    "mods": {
+        "LeaTriblader": {
+            "name": "LeaTriblader",
+            "description": "This mod changes Lea's class to Triblader.",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/keanuplayz/LeaTriblader"
+                }
+            ],
+            "archive_link": "https://github.com/keanuplayz/LeaTriblader/archive/1.0.1.zip",
+            "hash": {
+                "sha256": "b0a23ca05f65c09e52aebc3ce3c836ec326a972531ef4a373fdf4876494b022b"
+            },
+            "version": "1.0.1"
         },
-        "CCPresetRevival" : {
-            "name" : "CCPresetRevival",
-            "description" : "This brings back the preset menu, which allows you to start the game at a specific point.",
-            "page" : [{ "name" : "GitHub", "url" : "https://github.com/CCDirectLink/CCPresetRevival" }],
-            "archive_link" : "https://github.com/CCDirectLink/CCPresetRevival/archive/1.0.1.zip",
-            "hash" : { "sha256" : "a634cd4bdcd38f8af0d2c9a6e827bea28a372585f23773514dcd8eb94b1c9251" },
-            "version" : "1.0.1"
+        "CCPresetRevival": {
+            "name": "CCPresetRevival",
+            "description": "This brings back the preset menu, which allows you to start the game at a specific point.",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/CCDirectLink/CCPresetRevival"
+                }
+            ],
+            "archive_link": "https://github.com/CCDirectLink/CCPresetRevival/archive/1.0.2.zip",
+            "hash": {
+                "sha256": "5b846b896ab01aec326fd9b71e7d77e3e7ff18473eef15b6f900844cdcc4ba46"
+            },
+            "version": "1.0.2"
         },
-        "hardcoded-config-injector" : {
-            "name" : "Hardcoded Config Injector",
-            "description" : "Allows you to change hardcoded objects inside a json file.",
-            "page" : [{ "name" : "GitHub", "url" : "https://github.com/CCDirectLink/hardcoded-config-injector" }],
-            "archive_link" : "https://github.com/CCDirectLink/hardcoded-config-injector/archive/master.zip",
-            "hash" : { "sha256" : "674186444840cda641d9720b681ba254777b2625f4333b320454ad116be0b9b3" },
-            "version" : "0.5.0"
+        "hardcoded-config-injector": {
+            "name": "hardcoded-config-injector",
+            "description": "A mod. (Description not available; contact mod author and have them add a description to their package.json file)",
+            "page": [],
+            "archive_link": "https://github.com/CCDirectLink/hardcoded-config-injector/archive/1647cdf09f9f9b4743a534c8c72ecb52641964fa.zip",
+            "hash": {
+                "sha256": "d3f3045c0b1bc3967ac32478d9f8fd574e48d40d5ae9e2e5d3fa9737c24eca1e"
+            },
+            "version": "0.1.0"
         },
-        "New game++" : {
-            "name" : "New game++",
-            "description" : "A small collection of addons to CrossCode's NG+.",
-            "license": null,
-            "page" : [{ "name" : "GitHub", "url" : "https://github.com/CCDirectLink/CCNewGamePP" }],
-            "archive_link" : "https://github.com/CCDirectLink/CCNewGamePP/archive/v1.0.0.zip",
-            "hash" : { "sha256" : "90066c85309d88f61157a9eb7505d8a77f174baaf39d059df755c1d5adc34c01" },
-            "version" : "1.0.0"
+        "New game++": {
+            "name": "New game++",
+            "description": "A small collection of addons to CrossCode's NG+.",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/CCDirectLink/CCNewGamePP"
+                }
+            ],
+            "archive_link": "https://github.com/CCDirectLink/CCNewGamePP/archive/v1.0.1.zip",
+            "hash": {
+                "sha256": "452ddfeeb0473ffd7d58d76b3d43a63bca42f127b2989a0f9f31b964b475d085"
+            },
+            "version": "1.0.1"
         },
-        "CCdiscord" : {
-            "name" : "Rich Presence for Discord",
-            "description" : "Show off your CrossCode skills in Discord",
-            "dir" : { "any" : "root" },
-            "page" : [{ "name" : "GitHub", "url" : "https://github.com/CCDirectLink/CCdiscord" }],
-            "archive_link" : "https://github.com/CCDirectLink/CCdiscord/archive/v0.1.zip",
-            "hash" : { "sha256" : "1a1afa1e3bb7a4bac63219bf7916e291a763477c6bdae12a86dd4a498226a6cb" },
-            "version" : "0.0.1"
+        "Discord": {
+            "name": "Rich Presence for Discord",
+            "description": "Show off your CrossCode skills in Discord",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/CCDirectLink/CCdiscord"
+                }
+            ],
+            "archive_link": "https://github.com/CCDirectLink/CCdiscord/archive/8c5dce9653b170ecb4d4a1ba5b170629539c2644.zip",
+            "hash": {
+                "sha256": "4de61fb32ebc3282238bdafa3069f8a1462c7d0ad10d85b1e02c4439597cb04c"
+            },
+            "version": "0.1.1"
         },
-        "CCTimeWalker" : {
-            "name" : "timewalker",
-            "description" : "Lets you control time.",
-            "license" : "MIT",
-            "page" : [{ "name" : "GitHub", "url" : "https://github.com/CCDirectLink/CCTimeWalker" }],
-            "archive_link" : "https://github.com/CCDirectLink/CCTimeWalker/archive/v0.2.0.zip",
-            "hash" : { "sha256" : "954b6c10f76c1fe0cf25caadf097c147d440fca5f7b092d6b38de5e827905018" },
-            "version" : "0.2.0"
+        "mod-require-fix": {
+            "name": "mod-require-fix",
+            "description": "Assists in the usage of NPM packages from CrossCode mods.",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/CCDirectLink/CCdiscord"
+                }
+            ],
+            "archive_link": "https://github.com/CCDirectLink/CCdiscord/archive/8c5dce9653b170ecb4d4a1ba5b170629539c2644.zip",
+            "hash": {
+                "sha256": "4de61fb32ebc3282238bdafa3069f8a1462c7d0ad10d85b1e02c4439597cb04c"
+            },
+            "version": "1.0.1"
         },
-        "CCTimer" : {
-            "name" : "timer",
-            "description" : "A speedrun timer for CrossCode.",
-            "license" : null,
-            "page" : [{ "name" : "GitHub", "url" : "https://github.com/CCDirectLink/CCTimer" }],
-            "archive_link" : "https://github.com/CCDirectLink/CCTimer/archive/v2.2.1.zip",
-            "hash" : { "sha256" : "13ef2dcec89c952231ddbe6f3e2800afb0af25ef967a371e9c6892fe7fae8940" },
-            "version" : "2.2.1"
-        },
-        "CCSlowmotion" : {
-            "name" : "slowmotion",
-            "description" : "Turns your C key into a slowmotion controller.",
-            "license" : "MIT",
-            "page" : [{ "name" : "GitHub", "url" : "https://github.com/CCDirectLink/CCSlowmotion" }],
-            "archive_link" : "https://github.com/CCDirectLink/CCSlowmotion/archive/0.1.zip",
-            "hash" : { "sha256" : "8f3d170080c814769d71e318512b3671a44ed4c0c09c8f82129aa8f5e7e24c82" },
-            "version" : "0.1.0"
-        },
-        "CCJetpack" : {
-            "name" : "jetpack",
-            "description" : "Turns your CTRL key into a jetpack.",
-            "license" : "MIT",
-            "page" : [{ "name" : "GitHub", "url" : "https://github.com/CCDirectLink/CCJetpack" }],
-            "archive_link" : "https://github.com/CCDirectLink/CCJetpack/archive/0.1.zip",
-            "hash" : { "sha256" : "57ba6eb0d9482bc4b17cff5cc8617d195a25b6c3a82b373c57bd4629463e02d3" },
-            "version" : "0.1.0"
-        },
-        "CCRestartButton" : {
-            "name" : "Restart Button",
-            "description" : "Restart the game without memory leaks",
-            "license" : "MIT",
-            "page" : [{ "name" : "GitHub", "url" : "https://github.com/bluecheetah001/CCRestartButton" }],
-            "archive_link" : "https://github.com/bluecheetah001/CCRestartButton/archive/v1.1.1.zip",
-            "hash" : { "sha256" : "b8e27bf0a35b63459a09c246638666ddfbf73c13d9e7ccf2029f7b8214d39255" },
-            "version" : "1.1.1"
-        },
-        "Qine" : {
-            "name" : "Qine",
-            "description" : "Adds a new custom character to your contacts list.",
-            "license" : null,
-            "page" : [{ "name" : "GitHub", "url" : "https://github.com/sgrunt/qine" }],
-            "archive_link" : "https://github.com/sgrunt/qine/archive/0.2.5.zip",
-            "hash" : { "sha256" : "619e576348b00513b909eb1666946813756ac7e4557d8ea5b45e8885a4730653" },
-            "version" : "0.2.5"
-        },
-        "cc-element-boss" : {
-            "name" : "Element Boss",
-            "description" : "Adds a new boss battle to the game.",
-            "license" : null,
-            "page" : [{ "name" : "GitHub", "url" : "https://github.com/sgrunt/cc-element-boss" }],
-            "archive_link" : "https://github.com/sgrunt/cc-element-boss/archive/0.1.1.zip",
-            "hash" : { "sha256" : "c870446618238fe453782e219f635f91f31158d959e7324472f31a8a630322b8" },
-            "version" : "0.1.1"
-        },
-        "Localize-me" : {
-            "name" : "Localize Me",
-            "description" : "Add support for more locales, languages and translations",
+        "timewalker": {
+            "name": "timewalker",
+            "description": "Lets you control time.",
             "license": "MIT",
-            "page" : [{ "name" : "GitHub", "url" : "https://github.com/L-Sherry/Localize-me" }],
-            "archive_link" : "https://github.com/L-Sherry/Localize-me/archive/v0.4.2.zip",
-            "hash" : { "sha256" : "28ec5f7c4b53e09561b7325361cfcc0ae8d1658379e809c04bd01d40145d1c85" },
-            "version" : "0.4.2"
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/CCDirectLink/CCTimeWalker"
+                }
+            ],
+            "archive_link": "https://github.com/CCDirectLink/CCTimeWalker/archive/v0.2.1.zip",
+            "hash": {
+                "sha256": "837399583b65d452e9c3bf1924db2429e56f4ab71442d4d20d3b3ca265ca94e7"
+            },
+            "version": "0.2.1"
         },
-        "French" : {
-            "name" : "French",
-            "description" : "CrossCode en français ! (90% complete)",
-            "license": null,
-            "page" : [{ "name" : "GitHub", "url" : "https://github.com/L-Sherry/French-CC" }],
-            "archive_link" : "https://github.com/L-Sherry/French-CC/archive/v0.5.0.zip",
-            "hash" : { "sha256" : "019a2e2189ee854568973bc1bf38889c92cd5e0b10643d4ca1d542459e5b7df7" },
-            "version" : "0.5.0"
+        "timer": {
+            "name": "timer",
+            "description": "A speedrun timer for CrossCode.",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/CCDirectLink/CCTimer"
+                }
+            ],
+            "archive_link": "https://github.com/CCDirectLink/CCTimer/archive/v2.2.2.zip",
+            "hash": {
+                "sha256": "8b2788dcb192fbb6d8e64f7e73c0fc9cb621f7ba332bd27d051d180225b0811e"
+            },
+            "version": "2.2.2"
         },
-        "Kit Player" : {
-            "name" : "Kit Player",
-            "description" : "Swaps Lea's sprites to play as Kit. A sphereomancer fox.",
-            "license": null,
-            "page" : [{ "name" : "GitHub", "url" : "https://github.com/BountyXSnipe/kitplayer" }],
-            "archive_link" : "https://github.com/BountyXSnipe/kitplayer/archive/v0.1.0.zip",
-            "hash" : { "sha256" : "1fd36264126b0cb0d5dd719deaf2bc0ace06941e3d3d0376d2ab7eb4314b8074" },
-            "version" : "0.1.0"
+        "slowmotion": {
+            "name": "slowmotion",
+            "description": "Turns your C key into a slowmotion controller.",
+            "license": "MIT",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/CCDirectLink/CCSlowmotion"
+                }
+            ],
+            "archive_link": "https://github.com/CCDirectLink/CCSlowmotion/archive/v0.1.1.zip",
+            "hash": {
+                "sha256": "95ffe20f8f611cd7a18b5b8f77c0437b60101badb11aefcd64597ef3b7ecdc6a"
+            },
+            "version": "0.1.1"
         },
-        "Palicat" : {
-            "name" : "Palicat",
-            "description" : "A mod that implement the palico from monster hunter world into the game.",
-            "license": null,
-            "page" : [{ "name" : "GitHub", "url" : "https://github.com/rioreur/palicat" }],
-            "archive_link" : "https://github.com/rioreur/palicat/archive/1.0.3.zip",
-            "hash" : { "sha256" : "5ac431d47148afee3cfab8744a69b06723af52444151e686cd9d514fbe401a24" },
-            "version" : "1.0.3"
+        "jetpack": {
+            "name": "jetpack",
+            "description": "Turns your CTRL key into a jetpack.",
+            "license": "MIT",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/CCDirectLink/CCJetpack"
+                }
+            ],
+            "archive_link": "https://github.com/CCDirectLink/CCJetpack/archive/v0.1.1.zip",
+            "hash": {
+                "sha256": "7ec33de49ea11684e28e7d49e2099571a236ebefb7552ca1b828c7b92a225612"
+            },
+            "version": "0.1.1"
         },
-        "CharSwap" : {
+        "Restart Button": {
+            "name": "Restart Button",
+            "description": "Adds a button to restart the game without memory leaks",
+            "license": "MIT",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/bluecheetah001/CCRestartButton"
+                }
+            ],
+            "archive_link": "https://github.com/bluecheetah001/CCRestartButton/archive/v1.1.2.zip",
+            "hash": {
+                "sha256": "120c9aeae9ce30b8d9c3acc21d8614f507ca7db9eb6a696ca6c1c5075f63e5bf"
+            },
+            "version": "1.1.2"
+        },
+        "Qine": {
+            "name": "Qine",
+            "description": "Adds the character Qine as a party member and PvP duel.",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/sgrunt/qine"
+                }
+            ],
+            "archive_link": "https://github.com/sgrunt/qine/archive/0.2.7.zip",
+            "hash": {
+                "sha256": "73bec599fdb63f6b0504d1ea6b549904daf97f00c8667f6bd6378c91560d8c29"
+            },
+            "version": "0.2.7"
+        },
+        "Element Boss": {
+            "name": "Element Boss",
+            "description": "Adds a new boss battle to the game.",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/sgrunt/cc-element-boss"
+                }
+            ],
+            "archive_link": "https://github.com/sgrunt/cc-element-boss/archive/0.1.2.zip",
+            "hash": {
+                "sha256": "e0bdc31b640bd7a00bd7c69dcb7a8cef87130f0cb349b44874ba440c67f02922"
+            },
+            "version": "0.1.2"
+        },
+        "Localize Me": {
+            "name": "Localize Me",
+            "description": "Add support for more locales, languages and translations",
+            "license": "MIT",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/L-Sherry/Localize-me"
+                }
+            ],
+            "archive_link": "https://github.com/L-Sherry/Localize-me/archive/v0.4.3.zip",
+            "hash": {
+                "sha256": "fb08dd95de63af3b057000161f74c6770012f94cc4d5718b8c73aba9055cfc0a"
+            },
+            "version": "0.4.3"
+        },
+        "French": {
+            "name": "French",
+            "description": "CrossCode en français !",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/L-Sherry/French-CC"
+                }
+            ],
+            "archive_link": "https://github.com/L-Sherry/French-CC/archive/v0.6.0.zip",
+            "hash": {
+                "sha256": "767e2edd91c41e292e6c9cf2632cb64a8109b423155386f3c031bef14ba78d1e"
+            },
+            "version": "0.6.0"
+        },
+        "Kit Player": {
+            "name": "Kit Player",
+            "description": "A mod. (Description not available; contact mod author and have them add a description to their package.json file)",
+            "page": [],
+            "archive_link": "https://github.com/BountyXSnipe/kitplayer/archive/v0.1.0.zip",
+            "hash": {
+                "sha256": "1fd36264126b0cb0d5dd719deaf2bc0ace06941e3d3d0376d2ab7eb4314b8074"
+            },
+            "version": "0.1.0"
+        },
+        "Palicat": {
+            "name": "Palicat",
+            "description": "A mod that implement the palico from monster hunter world into the game.",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/rioreur/palicat"
+                }
+            ],
+            "archive_link": "https://github.com/rioreur/palicat/archive/1.0.4.zip",
+            "hash": {
+                "sha256": "75d84d8a190bece945d20f2fda3518c06cdbdd57f209b91471f9815feffb4b70"
+            },
+            "version": "1.0.4"
+        },
+        "Character Swap": {
             "name": "Character Swap",
-            "description" : "Play as previously unplayable characters.",
-            "license": null,
-            "page" : [{ "name" : "GitHub", "url" : "https://github.com/asmdev/CharSwap" }],
-            "archive_link" : "https://github.com/asmdev/CharSwap/archive/v1.0.0.zip",
-            "hash" : { "sha256" : "233b8df5071e57d4f6bea6879957e3d43f622e9ef1cd625ad4ec4c509b58220b" },
-            "version" : "1.0.0"
+            "description": "Play as a variety of characters previously unavailable.",
+            "page": [],
+            "archive_link": "https://github.com/asmdev/CharSwap/archive/v1.0.0.zip",
+            "hash": {
+                "sha256": "233b8df5071e57d4f6bea6879957e3d43f622e9ef1cd625ad4ec4c509b58220b"
+            },
+            "version": "1.0.0"
+        },
+        "item-api": {
+            "name": "item-api",
+            "description": "Allows custom items to be prepared in such a way that they 'just work'.",
+            "page": [
+                {
+                    "name": "GitLab",
+                    "url": "https://gitlab.com/20kdc/ccprestartapi"
+                }
+            ],
+            "archive_link": "https://gitlab.com/20kdc/ccprestartapi/-/archive/v3/ccprestartapi-v3.zip",
+            "hash": {
+                "sha256": "00081eef3d234586460b3832732ea10f6daf91c84ea211718ab9c6d7b29fde87"
+            },
+            "version": "0.2.1"
+        },
+        "menu-api": {
+            "name": "menu-api",
+            "description": "Adds a menu to which mods can add their own buttons.",
+            "page": [
+                {
+                    "name": "GitLab",
+                    "url": "https://gitlab.com/20kdc/ccprestartapi"
+                }
+            ],
+            "archive_link": "https://gitlab.com/20kdc/ccprestartapi/-/archive/v3/ccprestartapi-v3.zip",
+            "hash": {
+                "sha256": "00081eef3d234586460b3832732ea10f6daf91c84ea211718ab9c6d7b29fde87"
+            },
+            "version": "0.1.1"
+        },
+        "templating-api": {
+            "name": "templating-api",
+            "description": "Get your JSON templating additions here.",
+            "page": [
+                {
+                    "name": "GitLab",
+                    "url": "https://gitlab.com/20kdc/ccprestartapi"
+                }
+            ],
+            "archive_link": "https://gitlab.com/20kdc/ccprestartapi/-/archive/v3/ccprestartapi-v3.zip",
+            "hash": {
+                "sha256": "00081eef3d234586460b3832732ea10f6daf91c84ea211718ab9c6d7b29fde87"
+            },
+            "version": "0.1.1"
         }
     }
 }
