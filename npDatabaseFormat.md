@@ -153,11 +153,30 @@ declare type PackageDB = Record<string, PackageDBPackage>;
 
 ## Known "base" Packages
 
-`crosscode`: Detected by checking for `assets/data/changelog.json`, version extracted from there; implementations may fail if this package is not available in order to show a more coherent error about why CrossCode did not exist rather than simply showing non-existence. Must never ever ever ever have a remote version or a removal method.
+`crosscode`:
+Detected by checking for `assets/data/changelog.json`, version extracted from there.
+implementations may fail if this package is not available in order to show a more coherent error about why CrossCode did not exist rather than showing non-existence.
+Must never ever ever ever have a remote version or a removal method.
 
-`ccloader`: Detected by checking for `ccloader`; if present, has version `1.0.0`. Remote version should always be `1.0.1` until CCLoader has a defined version query method. Removal method is to delete `assets/mods/simplify` and `ccloader`, and then restore the CrossCode `package.json`.
+`ccloader`:
+Detected by checking for `ccloader/package.json`, which is a valid package metadata file.
+The remote version also has such a file, so this all lines up.
+Older CCLoader versions do not have this file, and will not be detected; this is intended behavior to convince a user to update CCLoader.
+Removal method is to restore the CrossCode `package.json`, and then delete the following:
+Vital to success (failure to remove means aborting):
+`ccloader`
+`assets/mods/simplify`
+Non-vital:
+`assets/mods/ccloader-version-display`
+`assets/mods/openDevTools`
 
-`nwjs-dev`: Detected by checking for `nwjc`; if present, has version `1.0.0`, which should match the remote version. No removal method.
+`Simplify`, `CCLoader display version`, and `OpenDevTools`:
+These are "CCLoader attached mods"; detected as part of standard mod scanning.
+They should be handled internally, for the most part, like normal mods.
+However, because they get updated with CCLoader, things would seem broken if we didn't hide them. As such:
++ As they don't exist, their dependencies metadata should be outright considered non-existent. (Things can depend ON them, but shouldn't)
++ As they are attached to CCLoader they have no remote versions.
++ They should be displayed like Base packages (i.e. not at all) & should not be touched by users. Users MAY enable/disable `CCLoader display version` & `OpenDevTools`.
 
 ## Compatibility
 
