@@ -327,7 +327,7 @@
             "description": "CrossCode en français !",
             "homepage": "https://github.com/L-Sherry/French-CC",
             "postload": "mod.js",
-            "version": "0.6.0",
+            "version": "0.7.0",
             "ccmodDependencies": {
                 "Localize Me": ">=0.4 <1"
             }
@@ -335,10 +335,10 @@
         "installation": [
             {
                 "type": "modZip",
-                "url": "https://github.com/L-Sherry/French-CC/archive/v0.6.0.zip",
-                "source": "French-CC-0.6.0",
+                "url": "https://github.com/L-Sherry/French-CC/archive/v0.7.0.zip",
+                "source": "French-CC-0.7.0",
                 "hash": {
-                    "sha256": "767e2edd91c41e292e6c9cf2632cb64a8109b423155386f3c031bef14ba78d1e"
+                    "sha256": "6ee8419a23b0b8a66f945abd66e800127c6dadbc1160ad1c4a99c360dcf36563"
                 }
             }
         ]
