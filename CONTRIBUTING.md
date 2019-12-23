@@ -29,11 +29,7 @@ An example mod would be:
 	{
 		"type": "modZip",
 		"urlZip": "https://github.com/keanuplayz/LeaTriblader/archive/1.0.0.zip",
-		"source": "LeaTriblader-1.0.0",
-		"packagePatch": [
-			{"type": "SET_KEY", "index": "ccmodPages", "content": [{"name": "GitHub", "url": "https://github.com/keanuplayz/LeaTriblader"}]},
-			{"type": "SET_KEY", "index": "description", "content": "This mod changes Lea's class to Triblader."}
-		]
+		"source": "LeaTriblader-1.0.0"
 	}
 ```
 
