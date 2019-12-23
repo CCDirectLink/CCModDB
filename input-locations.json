@@ -109,6 +109,11 @@
 		"type": "modZip",
 		"urlZip": "https://gitlab.com/20kdc/ccprestartapi/-/archive/v3/ccprestartapi-v3.zip",
 		"source": "ccprestartapi-v3/templating-api"
+	},
+	{
+		"type": "modZip",
+		"urlZip": "https://github.com/CCDirectLink/hardcoded-config-injector/releases/download/v0.1.0/hardcoded-config-injector.zip",
+		"source": "hardcoded-config-injector-0.1.0"
 	}
 ]
 
