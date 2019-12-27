@@ -9,7 +9,8 @@
 
 ## Mod structure
 
-- Mods must contain a `package.json` file somewhere.
+- Mods **must** have releases as compressed container (zip)
+- Mods **must** contain a `package.json` file and be located in the root directory of the repository. (See [basic-mod](https://github.com/CCDirectLink/basic-mod) template for an example.)
 
 ## Database workflow
 
