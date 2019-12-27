@@ -15,6 +15,16 @@
             },
             "version": "1.0.1"
         },
+        "CCRandomEvents": {
+            "name": "CCRandomEvents",
+            "description": "A mod. (Description not available; contact mod author and have them add a description to their package.json file)",
+            "page": [],
+            "archive_link": "https://github.com/keanuplayz/CCRandomEvents/archive/0.0.7.zip",
+            "hash": {
+                "sha256": "5836f512c3ef5cc7a533d662c79c088ab0a6a03dddf565b2cf329a4b89c45765"
+            },
+            "version": "0.0.7"
+        },
         "CCPresetRevival": {
             "name": "CCPresetRevival",
             "description": "This brings back the preset menu, which allows you to start the game at a specific point.",

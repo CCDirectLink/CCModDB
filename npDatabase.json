@@ -37,6 +37,23 @@
             }
         ]
     },
+    "CCRandomEvents": {
+        "metadata": {
+            "name": "CCRandomEvents",
+            "main": "mod.js",
+            "version": "0.0.7"
+        },
+        "installation": [
+            {
+                "type": "modZip",
+                "url": "https://github.com/keanuplayz/CCRandomEvents/archive/0.0.7.zip",
+                "source": "CCRandomEvents-0.0.7",
+                "hash": {
+                    "sha256": "5836f512c3ef5cc7a533d662c79c088ab0a6a03dddf565b2cf329a4b89c45765"
+                }
+            }
+        ]
+    },
     "CCPresetRevival": {
         "metadata": {
             "name": "CCPresetRevival",
