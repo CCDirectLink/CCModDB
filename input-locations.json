@@ -109,6 +109,11 @@
 		"type": "modZip",
 		"urlZip": "https://gitlab.com/20kdc/ccprestartapi/-/archive/v3/ccprestartapi-v3.zip",
 		"source": "ccprestartapi-v3/templating-api"
+	},
+	{
+		"type": "modZip",
+		"urlZip": "https://github.com/CCDirectLink/extendable-severed-heads/archive/v1.0.0.zip",
+		"source": "extendable-severed-heads-1.0.0"
 	}
 ]
 
