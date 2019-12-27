@@ -9,7 +9,8 @@
 
 ## Mod structure
 
-- Mods must contain a `package.json` file somewhere.
+- Mods **must** have releases as compressed container (zip)
+- Mods **must** contain a `package.json` file and be located in the root directory of the repository. (See [basic-mod](https://github.com/CCDirectLink/basic-mod) template for an example.)
 
 ## Database workflow
 
@@ -29,11 +30,7 @@ An example mod would be:
 	{
 		"type": "modZip",
 		"urlZip": "https://github.com/keanuplayz/LeaTriblader/archive/1.0.0.zip",
-		"source": "LeaTriblader-1.0.0",
-		"packagePatch": [
-			{"type": "SET_KEY", "index": "ccmodPages", "content": [{"name": "GitHub", "url": "https://github.com/keanuplayz/LeaTriblader"}]},
-			{"type": "SET_KEY", "index": "description", "content": "This mod changes Lea's class to Triblader."}
-		]
+		"source": "LeaTriblader-1.0.0"
 	}
 ```
 

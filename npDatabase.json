@@ -327,7 +327,7 @@
             "description": "CrossCode en français !",
             "homepage": "https://github.com/L-Sherry/French-CC",
             "postload": "mod.js",
-            "version": "0.6.0",
+            "version": "0.7.0",
             "ccmodDependencies": {
                 "Localize Me": ">=0.4 <1"
             }
@@ -335,10 +335,10 @@
         "installation": [
             {
                 "type": "modZip",
-                "url": "https://github.com/L-Sherry/French-CC/archive/v0.6.0.zip",
-                "source": "French-CC-0.6.0",
+                "url": "https://github.com/L-Sherry/French-CC/archive/v0.7.0.zip",
+                "source": "French-CC-0.7.0",
                 "hash": {
-                    "sha256": "767e2edd91c41e292e6c9cf2632cb64a8109b423155386f3c031bef14ba78d1e"
+                    "sha256": "6ee8419a23b0b8a66f945abd66e800127c6dadbc1160ad1c4a99c360dcf36563"
                 }
             }
         ]
@@ -486,6 +486,24 @@
                 "source": "CCJoystickExt-1.0.1",
                 "hash": {
                     "sha256": "5cde5d183c4e8998be0a39f542f68a625bbf7c26e74263892f978f789ea2a3c1"
+                }
+            }
+        ]
+    },
+    "extendable-severed-heads": {
+        "metadata": {
+            "name": "extendable-severed-heads",
+            "hidden": true,
+            "version": "1.0.0",
+            "plugin": "plugin.js"
+        },
+        "installation": [
+            {
+                "type": "modZip",
+                "url": "https://github.com/CCDirectLink/extendable-severed-heads/archive/v1.0.0.zip",
+                "source": "extendable-severed-heads-1.0.0",
+                "hash": {
+                    "sha256": "2fd7991bc70000ade0af06d585c64d1458adee6769b00cbccbbc748be487549e"
                 }
             }
         ]
