@@ -40,16 +40,18 @@
     "CCRandomEvents": {
         "metadata": {
             "name": "CCRandomEvents",
+            "description": "A mod that adds various new events to the game. These are triggered by talking to NPCs, and walking around maps.",
             "main": "mod.js",
-            "version": "0.0.7"
+            "version": "0.0.8",
+            "homepage": "https://github.com/keanuplayz/CCRandomEvents"
         },
         "installation": [
             {
                 "type": "modZip",
-                "url": "https://github.com/keanuplayz/CCRandomEvents/archive/0.0.7.zip",
-                "source": "CCRandomEvents-0.0.7",
+                "url": "https://github.com/keanuplayz/CCRandomEvents/archive/0.0.8.zip",
+                "source": "CCRandomEvents-0.0.8",
                 "hash": {
-                    "sha256": "5836f512c3ef5cc7a533d662c79c088ab0a6a03dddf565b2cf329a4b89c45765"
+                    "sha256": "67ff4803a1e5f240187aad81a8101a66b1c4316f110d6ef5f6527b2b472c064e"
                 }
             }
         ]

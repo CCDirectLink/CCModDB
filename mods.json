@@ -17,13 +17,18 @@
         },
         "CCRandomEvents": {
             "name": "CCRandomEvents",
-            "description": "A mod. (Description not available; contact mod author and have them add a description to their package.json file)",
-            "page": [],
-            "archive_link": "https://github.com/keanuplayz/CCRandomEvents/archive/0.0.7.zip",
+            "description": "A mod that adds various new events to the game. These are triggered by talking to NPCs, and walking around maps.",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/keanuplayz/CCRandomEvents"
+                }
+            ],
+            "archive_link": "https://github.com/keanuplayz/CCRandomEvents/archive/0.0.8.zip",
             "hash": {
-                "sha256": "5836f512c3ef5cc7a533d662c79c088ab0a6a03dddf565b2cf329a4b89c45765"
+                "sha256": "67ff4803a1e5f240187aad81a8101a66b1c4316f110d6ef5f6527b2b472c064e"
             },
-            "version": "0.0.7"
+            "version": "0.0.8"
         },
         "CCPresetRevival": {
             "name": "CCPresetRevival",
