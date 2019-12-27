@@ -12,6 +12,11 @@
 	},
 	{
 		"type": "modZip",
+		"urlZip": "https://github.com/keanuplayz/CCRandomEvents/archive/0.0.7.zip",
+		"source": "CCRandomEvents-0.0.6"
+	},
+	{
+		"type": "modZip",
 		"urlZip": "https://github.com/CCDirectLink/CCPresetRevival/archive/1.0.2.zip",
 		"source": "CCPresetRevival-1.0.2"
 	},
