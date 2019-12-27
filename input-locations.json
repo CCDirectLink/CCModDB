@@ -112,6 +112,11 @@
 	},
 	{
 		"type": "modZip",
+		"urlZip": "https://github.com/tylercamp/CCJoystickExt/archive/1.0.1.zip",
+		"source": "CCJoystickExt-1.0.1"
+	},
+	{
+		"type": "modZip",
 		"urlZip": "https://github.com/CCDirectLink/extendable-severed-heads/archive/v1.0.0.zip",
 		"source": "extendable-severed-heads-1.0.0"
 	}

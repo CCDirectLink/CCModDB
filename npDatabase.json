@@ -470,6 +470,26 @@
             }
         ]
     },
+    "CCJoystickExt": {
+        "metadata": {
+            "name": "CCJoystickExt",
+            "version": "1.0.1",
+            "description": "Adds gamepad bindings on L3 and R3 to easily swap elements",
+            "module": false,
+            "prestart": "mod.js",
+            "ccmodDependencies": {}
+        },
+        "installation": [
+            {
+                "type": "modZip",
+                "url": "https://github.com/tylercamp/CCJoystickExt/archive/1.0.1.zip",
+                "source": "CCJoystickExt-1.0.1",
+                "hash": {
+                    "sha256": "5cde5d183c4e8998be0a39f542f68a625bbf7c26e74263892f978f789ea2a3c1"
+                }
+            }
+        ]
+    },
     "extendable-severed-heads": {
         "metadata": {
             "name": "extendable-severed-heads",
