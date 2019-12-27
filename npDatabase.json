@@ -469,5 +469,23 @@
                 }
             }
         ]
+    },
+    "extendable-severed-heads": {
+        "metadata": {
+            "name": "extendable-severed-heads",
+            "hidden": true,
+            "version": "1.0.0",
+            "plugin": "plugin.js"
+        },
+        "installation": [
+            {
+                "type": "modZip",
+                "url": "https://github.com/CCDirectLink/extendable-severed-heads/archive/v1.0.0.zip",
+                "source": "extendable-severed-heads-1.0.0",
+                "hash": {
+                    "sha256": "2fd7991bc70000ade0af06d585c64d1458adee6769b00cbccbbc748be487549e"
+                }
+            }
+        ]
     }
 }
