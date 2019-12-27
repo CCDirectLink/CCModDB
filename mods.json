@@ -304,6 +304,16 @@
                 "sha256": "00081eef3d234586460b3832732ea10f6daf91c84ea211718ab9c6d7b29fde87"
             },
             "version": "0.1.1"
+        },
+        "extendable-severed-heads": {
+            "name": "extendable-severed-heads",
+            "description": "A mod. (Description not available; contact mod author and have them add a description to their package.json file)",
+            "page": [],
+            "archive_link": "https://github.com/CCDirectLink/extendable-severed-heads/archive/v1.0.0.zip",
+            "hash": {
+                "sha256": "2fd7991bc70000ade0af06d585c64d1458adee6769b00cbccbbc748be487549e"
+            },
+            "version": "1.0.0"
         }
     }
 }
