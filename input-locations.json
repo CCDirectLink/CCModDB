@@ -124,6 +124,11 @@
 		"type": "modZip",
 		"urlZip": "https://github.com/CCDirectLink/extendable-severed-heads/archive/v1.0.0.zip",
 		"source": "extendable-severed-heads-1.0.0"
+	},
+	{
+		"type": "modZip",
+		"urlZip": "https://github.com/CCDirectLink/cc-menu-ui-replacement/archive/v1.0.1.zip",
+		"source": "cc-menu-ui-replacement-1.0.1/cc-menu-ui-replacement"
 	}
 ]
 

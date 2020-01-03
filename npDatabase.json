@@ -526,5 +526,23 @@
                 }
             }
         ]
+    },
+    "menu-ui-replacer": {
+        "metadata": {
+            "name": "menu-ui-replacer",
+            "version": "1.0.1",
+            "description": "Replace Lea with the character of your choice in the menu!",
+            "prestart": "mod.js"
+        },
+        "installation": [
+            {
+                "type": "modZip",
+                "url": "https://github.com/CCDirectLink/cc-menu-ui-replacement/archive/v1.0.1.zip",
+                "source": "cc-menu-ui-replacement-1.0.1/cc-menu-ui-replacement",
+                "hash": {
+                    "sha256": "9912a0b41617ab81a06398bdaa4997102cb9e0fdf380db2a70b8327d91c96da7"
+                }
+            }
+        ]
     }
 }
