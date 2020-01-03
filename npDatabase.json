@@ -440,10 +440,10 @@
         "installation": [
             {
                 "type": "modZip",
-                "url": "https://gitlab.com/20kdc/ccprestartapi/-/archive/v3/ccprestartapi-v3.zip",
-                "source": "ccprestartapi-v3/item-api",
+                "url": "https://github.com/CCDirectLink/item-api/archive/v0.2.1.zip",
+                "source": "item-api-0.2.1",
                 "hash": {
-                    "sha256": "00081eef3d234586460b3832732ea10f6daf91c84ea211718ab9c6d7b29fde87"
+                    "sha256": "02d579898f684c6d84b6cf5d807764208be42c31b05a6b9dd1546de66a45fd91"
                 }
             }
         ]
@@ -461,10 +461,10 @@
         "installation": [
             {
                 "type": "modZip",
-                "url": "https://gitlab.com/20kdc/ccprestartapi/-/archive/v3/ccprestartapi-v3.zip",
-                "source": "ccprestartapi-v3/menu-api",
+                "url": "https://github.com/CCDirectLink/menu-api/archive/v0.1.1.zip",
+                "source": "menu-api-0.1.1",
                 "hash": {
-                    "sha256": "00081eef3d234586460b3832732ea10f6daf91c84ea211718ab9c6d7b29fde87"
+                    "sha256": "d52de73fbb2dd8406d971c201075b5942ee03540588dcd1fb857007cdf6266c0"
                 }
             }
         ]
@@ -481,10 +481,10 @@
         "installation": [
             {
                 "type": "modZip",
-                "url": "https://gitlab.com/20kdc/ccprestartapi/-/archive/v3/ccprestartapi-v3.zip",
-                "source": "ccprestartapi-v3/templating-api",
+                "url": "https://github.com/CCDirectLink/templating-api/archive/v0.1.1.zip",
+                "source": "templating-api-0.1.1",
                 "hash": {
-                    "sha256": "00081eef3d234586460b3832732ea10f6daf91c84ea211718ab9c6d7b29fde87"
+                    "sha256": "7e0d08afae2e4b85c8b4ae1ab2f43b5f0d1004be374965eb5125b7d11cf59aeb"
                 }
             }
         ]
