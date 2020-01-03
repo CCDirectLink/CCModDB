@@ -344,11 +344,11 @@
             "name": "menu-ui-replacer",
             "description": "Replace Lea with the character of your choice in the menu!",
             "page": [],
-            "archive_link": "https://github.com/CCDirectLink/cc-menu-ui-replacement/archive/v1.0.1.zip",
+            "archive_link": "https://github.com/CCDirectLink/cc-menu-ui-replacement/archive/v1.0.2.zip",
             "hash": {
-                "sha256": "9912a0b41617ab81a06398bdaa4997102cb9e0fdf380db2a70b8327d91c96da7"
+                "sha256": "80c342a466c6997f9fe54b0a8a866e0af80259412940d302f2d705de858843b0"
             },
-            "version": "1.0.1"
+            "version": "1.0.2"
         }
     }
 }
