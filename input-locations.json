@@ -129,6 +129,11 @@
 		"type": "modZip",
 		"urlZip": "https://github.com/CCDirectLink/hardcoded-config-injector/archive/v0.1.0.zip",
 		"source": "hardcoded-config-injector-0.1.0"
+	},
+	{
+		"type": "modZip",
+		"urlZip": "https://github.com/CCDirectLink/cc-menu-ui-replacement/archive/v1.0.1.zip",
+		"source": "cc-menu-ui-replacement-1.0.1/cc-menu-ui-replacement"
 	}
 ]
 
