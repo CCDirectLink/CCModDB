@@ -102,18 +102,18 @@
 	},
 	{
 		"type": "modZip",
-		"urlZip": "https://gitlab.com/20kdc/ccprestartapi/-/archive/v3/ccprestartapi-v3.zip",
-		"source": "ccprestartapi-v3/item-api"
+		"urlZip": "https://github.com/CCDirectLink/item-api/archive/v0.2.1.zip",
+		"source": "item-api-0.2.1"
 	},
 	{
 		"type": "modZip",
-		"urlZip": "https://gitlab.com/20kdc/ccprestartapi/-/archive/v3/ccprestartapi-v3.zip",
-		"source": "ccprestartapi-v3/menu-api"
+		"urlZip": "https://github.com/CCDirectLink/menu-api/archive/v0.1.1.zip",
+		"source": "menu-api-0.1.1"
 	},
 	{
 		"type": "modZip",
-		"urlZip": "https://gitlab.com/20kdc/ccprestartapi/-/archive/v3/ccprestartapi-v3.zip",
-		"source": "ccprestartapi-v3/templating-api"
+		"urlZip": "https://github.com/CCDirectLink/templating-api/archive/v0.1.1.zip",
+		"source": "templating-api-0.1.1"
 	},
 	{
 		"type": "modZip",
@@ -124,6 +124,11 @@
 		"type": "modZip",
 		"urlZip": "https://github.com/CCDirectLink/extendable-severed-heads/archive/v1.0.0.zip",
 		"source": "extendable-severed-heads-1.0.0"
+	},
+	{
+		"type": "modZip",
+		"urlZip": "https://github.com/CCDirectLink/cc-menu-ui-replacement/archive/v1.0.2.zip",
+		"source": "cc-menu-ui-replacement-1.0.2/cc-menu-ui-replacement"
 	}
 ]
 
