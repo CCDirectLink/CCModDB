@@ -21,7 +21,7 @@
     "blades": {
         "metadata": {
             "name": "blades",
-            "version": "1.5.2",
+            "version": "1.5.0",
             "description": "Asset which replaces balls with blades, now for all classes!",
             "module": false,
             "ccmodDependencies": {}
@@ -29,10 +29,10 @@
         "installation": [
             {
                 "type": "modZip",
-                "url": "https://github.com/xAutumn1337/Blades/archive/1.5.2.zip",
-                "source": "Blades-1.5.2",
+                "url": "https://github.com/CCDirectLink/Blades/archive/1.5.0.zip",
+                "source": "Blades-1.5.0",
                 "hash": {
-                    "sha256": "09997b36c710f83fba6701271e52898730b69f5a0609bc8203e3791467fb9bc6"
+                    "sha256": "aa1fe7bdc217a8c27d91496b48f2642cea243ed158dafe32251834536666a25a"
                 }
             }
         ]
