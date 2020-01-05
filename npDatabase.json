@@ -1,23 +1,4 @@
 {
-    "ccloader": {
-        "metadata": {
-            "name": "ccloader",
-            "ccmodHumanName": "CCLoader",
-            "ccmodType": "base",
-            "description": "Modloader for CrossCode. This or a similar modloader is needed for most mods.",
-            "version": "2.15.2"
-        },
-        "installation": [
-            {
-                "type": "modZip",
-                "url": "https://github.com/CCDirectLink/CCLoader/archive/b48b54aecdcd129f70f73bd84629ce1d614f6a05.zip",
-                "source": "CCLoader-b48b54aecdcd129f70f73bd84629ce1d614f6a05",
-                "hash": {
-                    "sha256": "a274066712e4f30f52ab58ed561620913a62cc2d63de24662032c0693a705e04"
-                }
-            }
-        ]
-    },
     "blades": {
         "metadata": {
             "name": "blades",
@@ -560,6 +541,51 @@
                 "source": "cc-menu-ui-replacement-1.0.2/cc-menu-ui-replacement",
                 "hash": {
                     "sha256": "80c342a466c6997f9fe54b0a8a866e0af80259412940d302f2d705de858843b0"
+                }
+            }
+        ]
+    },
+    "ccloader": {
+        "metadata": {
+            "name": "ccloader",
+            "ccmodHumanName": "CCLoader",
+            "ccmodType": "base",
+            "description": "Modloader for CrossCode. This or a similar modloader is needed for most mods.",
+            "version": "2.15.2"
+        },
+        "installation": [
+            {
+                "type": "modZip",
+                "url": "https://github.com/CCDirectLink/CCLoader/archive/v2.15.2/v2.8.2.zip",
+                "source": "CCLoader-2.15.2-v2.8.2",
+                "hash": {
+                    "sha256": "baeaa9920930ccc906ddfce3f0666deb1cc2050a941eaeaf0771803cead5c273"
+                }
+            }
+        ]
+    },
+    "Simplify": {
+        "metadata": {
+            "name": "Simplify",
+            "main": "mod.js",
+            "preload": "preload.js",
+            "postload": "postload.js",
+            "prestart": "prestart.js",
+            "plugin": "plugin.js",
+            "hidden": true,
+            "version": "2.8.2",
+            "ccmodDependencies": {
+                "ccloader": "^2.11.0",
+                "crosscode": "^1.0.0"
+            }
+        },
+        "installation": [
+            {
+                "type": "modZip",
+                "url": "https://github.com/CCDirectLink/CCLoader/archive/v2.15.2/v2.8.2.zip",
+                "source": "CCLoader-2.15.2-v2.8.2/assets/mods/simplify",
+                "hash": {
+                    "sha256": "baeaa9920930ccc906ddfce3f0666deb1cc2050a941eaeaf0771803cead5c273"
                 }
             }
         ]

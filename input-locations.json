@@ -1,12 +1,6 @@
 [
 	{
 		"type": "modZip",
-		"urlZip": "https://github.com/CCDirectLink/CCLoader/archive/b48b54aecdcd129f70f73bd84629ce1d614f6a05.zip",
-		"source": "CCLoader-b48b54aecdcd129f70f73bd84629ce1d614f6a05",
-		"packageJSONPath": "CCLoader-b48b54aecdcd129f70f73bd84629ce1d614f6a05/ccloader/package.json"
-	},
-	{
-		"type": "modZip",
 		"urlZip": "https://github.com/CCDirectLink/Blades/archive/1.5.0.zip",
 		"source": "Blades-1.5.0"
 	},
@@ -134,6 +128,17 @@
 		"type": "modZip",
 		"urlZip": "https://github.com/CCDirectLink/cc-menu-ui-replacement/archive/v1.0.2.zip",
 		"source": "cc-menu-ui-replacement-1.0.2/cc-menu-ui-replacement"
+	},
+	{
+		"type": "modZip",
+		"urlZip": "https://github.com/CCDirectLink/CCLoader/archive/v2.15.2/v2.8.2.zip",
+		"source": "CCLoader-2.15.2-v2.8.2",
+		"packageJSONPath": "CCLoader-2.15.2-v2.8.2/ccloader/package.json"
+	},
+	{
+		"type": "modZip",
+		"urlZip": "https://github.com/CCDirectLink/CCLoader/archive/v2.15.2/v2.8.2.zip",
+		"source": "CCLoader-2.15.2-v2.8.2/assets/mods/simplify"
 	}
 ]
 
