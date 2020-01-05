@@ -359,6 +359,16 @@
                 "sha256": "80c342a466c6997f9fe54b0a8a866e0af80259412940d302f2d705de858843b0"
             },
             "version": "1.0.2"
+        },
+        "Simplify": {
+            "name": "Simplify",
+            "description": "A mod. (Description not available; contact mod author and have them add a description to their package.json file)",
+            "page": [],
+            "archive_link": "https://github.com/CCDirectLink/CCLoader/archive/v2.15.2/v2.8.2.zip",
+            "hash": {
+                "sha256": "baeaa9920930ccc906ddfce3f0666deb1cc2050a941eaeaf0771803cead5c273"
+            },
+            "version": "2.8.2"
         }
     }
 }
