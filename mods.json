@@ -1,5 +1,15 @@
 {
     "mods": {
+        "blades": {
+            "name": "blades",
+            "description": "Asset which replaces balls with blades, now for all classes!",
+            "page": [],
+            "archive_link": "https://github.com/xAutumn1337/Blades/archive/1.5.2.zip",
+            "hash": {
+                "sha256": "09997b36c710f83fba6701271e52898730b69f5a0609bc8203e3791467fb9bc6"
+            },
+            "version": "1.5.2"
+        },
         "LeaTriblader": {
             "name": "LeaTriblader",
             "description": "This mod changes Lea's class to Triblader.",

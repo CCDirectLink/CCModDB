@@ -18,6 +18,25 @@
             }
         ]
     },
+    "blades": {
+        "metadata": {
+            "name": "blades",
+            "version": "1.5.2",
+            "description": "Asset which replaces balls with blades, now for all classes!",
+            "module": false,
+            "ccmodDependencies": {}
+        },
+        "installation": [
+            {
+                "type": "modZip",
+                "url": "https://github.com/xAutumn1337/Blades/archive/1.5.2.zip",
+                "source": "Blades-1.5.2",
+                "hash": {
+                    "sha256": "09997b36c710f83fba6701271e52898730b69f5a0609bc8203e3791467fb9bc6"
+                }
+            }
+        ]
+    },
     "LeaTriblader": {
         "metadata": {
             "name": "LeaTriblader",
