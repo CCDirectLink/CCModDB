@@ -131,14 +131,14 @@
 	},
 	{
 		"type": "modZip",
-		"urlZip": "https://github.com/CCDirectLink/CCLoader/archive/v2.15.2/v2.8.2.zip",
-		"source": "CCLoader-2.15.2-v2.8.2",
-		"packageJSONPath": "CCLoader-2.15.2-v2.8.2/ccloader/package.json"
+		"urlZip": "https://github.com/CCDirectLink/CCLoader/archive/v2.16.0/v2.8.2.zip",
+		"source": "CCLoader-2.16.0-v2.8.2",
+		"packageJSONPath": "CCLoader-2.16.0-v2.8.2/ccloader/package.json"
 	},
 	{
 		"type": "modZip",
-		"urlZip": "https://github.com/CCDirectLink/CCLoader/archive/v2.15.2/v2.8.2.zip",
-		"source": "CCLoader-2.15.2-v2.8.2/assets/mods/simplify"
+		"urlZip": "https://github.com/CCDirectLink/CCLoader/archive/v2.16.0/v2.8.2.zip",
+		"source": "CCLoader-2.16.0-v2.8.2/assets/mods/simplify"
 	}
 ]
 
