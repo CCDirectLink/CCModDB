@@ -364,9 +364,9 @@
             "name": "Simplify",
             "description": "A mod. (Description not available; contact mod author and have them add a description to their package.json file)",
             "page": [],
-            "archive_link": "https://github.com/CCDirectLink/CCLoader/archive/v2.15.2/v2.8.2.zip",
+            "archive_link": "https://github.com/CCDirectLink/CCLoader/archive/v2.16.0/v2.8.2.zip",
             "hash": {
-                "sha256": "baeaa9920930ccc906ddfce3f0666deb1cc2050a941eaeaf0771803cead5c273"
+                "sha256": "a62928ec3588c82392c90519c9054c66802700aba961a2058285b89bb65ff649"
             },
             "version": "2.8.2"
         }
