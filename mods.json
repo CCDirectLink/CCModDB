@@ -135,11 +135,11 @@
                     "url": "https://github.com/CCDirectLink/CCTimer"
                 }
             ],
-            "archive_link": "https://github.com/CCDirectLink/CCTimer/archive/v2.2.2.zip",
+            "archive_link": "https://github.com/CCDirectLink/CCTimer/archive/v2.2.3.zip",
             "hash": {
-                "sha256": "8b2788dcb192fbb6d8e64f7e73c0fc9cb621f7ba332bd27d051d180225b0811e"
+                "sha256": "824a447f0e60f86d1c124c9ab35510dad37c4def63da9535fde0b06e78606bd4"
             },
-            "version": "2.2.2"
+            "version": "2.2.3"
         },
         "slowmotion": {
             "name": "slowmotion",
