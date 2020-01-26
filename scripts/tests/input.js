@@ -37,7 +37,7 @@ describe('ModDB', () => {
 							.to.not.throw;
 						break;
 					}
-				});
+				}).timeout(10000);
 			});
 		}
 	});

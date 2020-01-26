@@ -1,6 +1,11 @@
 [
 	{
 		"type": "modZip",
+		"urlZip": "https://github.com/ZeikJT/CrossCodeCheats/archive/1.0.0.zip",
+		"source": "CrossCodeCheats-1.0.0"
+	},
+	{
+		"type": "modZip",
 		"urlZip": "https://github.com/CCDirectLink/Blades/archive/1.5.0.zip",
 		"source": "Blades-1.5.0"
 	},
