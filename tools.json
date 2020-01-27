@@ -23,9 +23,9 @@
             "description" : "A modloader for CrossCode.",
             "licence" : "MIT",
             "page" : [{ "name" : "GitHub", "url" : "https://github.com/CCDirectLink/CCLoader" }],
-            "archive_link" : "https://github.com/CCDirectLink/CCLoader/archive/v2.15.1/v2.8.1.zip",
-            "hash" : { "sha256" : "e8a4c141e55d3b234fa87d1744c727562f8d7fc3f51f4d0ba35e8e0f1cc2ba41" },
-            "version" : "2.15.1",
+            "archive_link" : "https://github.com/CCDirectLink/CCLoader/archive/v2.17.0/v2.8.1.zip",
+            "hash" : { "sha256" : "8daa4fb8d53af4454dff5d2fb4e01ed7bd33c2fdf223a2a7811bccf26ff06bc6" },
+            "version" : "2.17.0",
             "subVersion" : "2.8.1"
         },
         "CCAnimationEditor" : {
