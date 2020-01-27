@@ -574,15 +574,15 @@
             "ccmodHumanName": "CCLoader",
             "ccmodType": "base",
             "description": "Modloader for CrossCode. This or a similar modloader is needed for most mods.",
-            "version": "2.16.1"
+            "version": "2.17.0"
         },
         "installation": [
             {
                 "type": "modZip",
-                "url": "https://github.com/CCDirectLink/CCLoader/archive/v2.16.1/v2.8.2.zip",
-                "source": "CCLoader-2.16.1-v2.8.2",
+                "url": "https://github.com/CCDirectLink/CCLoader/archive/v2.17.0/v2.8.2.zip",
+                "source": "CCLoader-2.17.0-v2.8.2",
                 "hash": {
-                    "sha256": "0380568512dde3141aab05ac2de8200ea03b9a52a1fc2c3efea3a75c299c82aa"
+                    "sha256": "8daa4fb8d53af4454dff5d2fb4e01ed7bd33c2fdf223a2a7811bccf26ff06bc6"
                 }
             }
         ]
@@ -605,10 +605,10 @@
         "installation": [
             {
                 "type": "modZip",
-                "url": "https://github.com/CCDirectLink/CCLoader/archive/v2.16.1/v2.8.2.zip",
-                "source": "CCLoader-2.16.1-v2.8.2/assets/mods/simplify",
+                "url": "https://github.com/CCDirectLink/CCLoader/archive/v2.17.0/v2.8.2.zip",
+                "source": "CCLoader-2.17.0-v2.8.2/assets/mods/simplify",
                 "hash": {
-                    "sha256": "0380568512dde3141aab05ac2de8200ea03b9a52a1fc2c3efea3a75c299c82aa"
+                    "sha256": "8daa4fb8d53af4454dff5d2fb4e01ed7bd33c2fdf223a2a7811bccf26ff06bc6"
                 }
             }
         ]
