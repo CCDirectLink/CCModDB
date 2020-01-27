@@ -9,11 +9,11 @@
                     "url": "https://github.com/ZeikJT/CrossCodeCheats"
                 }
             ],
-            "archive_link": "https://github.com/ZeikJT/CrossCodeCheats/archive/1.0.0.zip",
+            "archive_link": "https://github.com/ZeikJT/CrossCodeCheats/archive/1.0.1.zip",
             "hash": {
-                "sha256": "dbb2e4d3069d2828e5efa96f46b9f48260ea32c039626da2dc6c7a0cf4a90e2e"
+                "sha256": "e05453f70e9b66c40a05559f54bffe92269aa7e89b4701223080ea54e71ef177"
             },
-            "version": "1.0.0"
+            "version": "1.0.1"
         },
         "blades": {
             "name": "blades",
