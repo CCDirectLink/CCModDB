@@ -1,4 +1,23 @@
 {
+    "ChargedBalls": {
+        "metadata": {
+            "name": "ChargedBalls",
+            "description": "Replaces normal VRPs with charged VRPs.",
+            "plugin": "mod.js",
+            "version": "1.0.0",
+            "ccmodDependencies": {}
+        },
+        "installation": [
+            {
+                "type": "modZip",
+                "url": "https://github.com/CCDirectLink/CC-ChargedBalls/archive/1.0.0.zip",
+                "source": "CC-ChargedBalls-1.0.0",
+                "hash": {
+                    "sha256": "bb8d8a7dfb505358d64d31a1e7e92a1efd2120866b34a923b007b0a537ac8e52"
+                }
+            }
+        ]
+    },
     "Cheats": {
         "metadata": {
             "name": "Cheats",
