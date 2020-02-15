@@ -1,5 +1,15 @@
 {
     "mods": {
+        "ChargedBalls": {
+            "name": "ChargedBalls",
+            "description": "Replaces normal VRPs with charged VRPs.",
+            "page": [],
+            "archive_link": "https://github.com/CCDirectLink/CC-ChargedBalls/archive/1.0.0.zip",
+            "hash": {
+                "sha256": "bb8d8a7dfb505358d64d31a1e7e92a1efd2120866b34a923b007b0a537ac8e52"
+            },
+            "version": "1.0.0"
+        },
         "Cheats": {
             "name": "Cheats",
             "description": "This mod adds cheats to CrossCode.",
