@@ -1,19 +1,23 @@
 {
-    "ccloader": {
+    "Cheats": {
         "metadata": {
-            "name": "ccloader",
-            "ccmodHumanName": "CCLoader",
-            "ccmodType": "base",
-            "description": "Modloader for CrossCode. This or a similar modloader is needed for most mods.",
-            "version": "2.15.2"
+            "name": "Cheats",
+            "postload": "cheats.js",
+            "version": "1.3.2",
+            "homepage": "https://github.com/ZeikJT/CrossCodeCheats",
+            "description": "This mod adds cheats to CrossCode.",
+            "ccmodDependencies": {
+                "ccloader": "^2.11.0",
+                "crosscode": "1.2.X"
+            }
         },
         "installation": [
             {
                 "type": "modZip",
-                "url": "https://github.com/CCDirectLink/CCLoader/archive/b48b54aecdcd129f70f73bd84629ce1d614f6a05.zip",
-                "source": "CCLoader-b48b54aecdcd129f70f73bd84629ce1d614f6a05",
+                "url": "https://github.com/ZeikJT/CrossCodeCheats/archive/1.3.2.zip",
+                "source": "CrossCodeCheats-1.3.2",
                 "hash": {
-                    "sha256": "a274066712e4f30f52ab58ed561620913a62cc2d63de24662032c0693a705e04"
+                    "sha256": "5cbd1f03bec3128eeb1c40beff5b76b0730f7ff0a370a4f04b61c246885aa1a6"
                 }
             }
         ]
@@ -211,7 +215,7 @@
             "homepage": "https://github.com/CCDirectLink/CCTimer",
             "description": "A speedrun timer for CrossCode.",
             "module": true,
-            "version": "2.2.2",
+            "version": "2.2.3",
             "ccmodDependencies": {
                 "ccloader": "^2.7.7",
                 "Simplify": "^2.0.3"
@@ -220,10 +224,10 @@
         "installation": [
             {
                 "type": "modZip",
-                "url": "https://github.com/CCDirectLink/CCTimer/archive/v2.2.2.zip",
-                "source": "CCTimer-2.2.2/timer",
+                "url": "https://github.com/CCDirectLink/CCTimer/archive/v2.2.3.zip",
+                "source": "CCTimer-2.2.3/timer",
                 "hash": {
-                    "sha256": "8b2788dcb192fbb6d8e64f7e73c0fc9cb621f7ba332bd27d051d180225b0811e"
+                    "sha256": "824a447f0e60f86d1c124c9ab35510dad37c4def63da9535fde0b06e78606bd4"
                 }
             }
         ]
@@ -560,6 +564,51 @@
                 "source": "cc-menu-ui-replacement-1.0.2/cc-menu-ui-replacement",
                 "hash": {
                     "sha256": "80c342a466c6997f9fe54b0a8a866e0af80259412940d302f2d705de858843b0"
+                }
+            }
+        ]
+    },
+    "ccloader": {
+        "metadata": {
+            "name": "ccloader",
+            "ccmodHumanName": "CCLoader",
+            "ccmodType": "base",
+            "description": "Modloader for CrossCode. This or a similar modloader is needed for most mods.",
+            "version": "2.17.0"
+        },
+        "installation": [
+            {
+                "type": "modZip",
+                "url": "https://github.com/CCDirectLink/CCLoader/archive/v2.17.0/v2.8.2.zip",
+                "source": "CCLoader-2.17.0-v2.8.2",
+                "hash": {
+                    "sha256": "8daa4fb8d53af4454dff5d2fb4e01ed7bd33c2fdf223a2a7811bccf26ff06bc6"
+                }
+            }
+        ]
+    },
+    "Simplify": {
+        "metadata": {
+            "name": "Simplify",
+            "main": "mod.js",
+            "preload": "preload.js",
+            "postload": "postload.js",
+            "prestart": "prestart.js",
+            "plugin": "plugin.js",
+            "hidden": true,
+            "version": "2.8.2",
+            "ccmodDependencies": {
+                "ccloader": "^2.11.0",
+                "crosscode": "^1.0.0"
+            }
+        },
+        "installation": [
+            {
+                "type": "modZip",
+                "url": "https://github.com/CCDirectLink/CCLoader/archive/v2.17.0/v2.8.2.zip",
+                "source": "CCLoader-2.17.0-v2.8.2/assets/mods/simplify",
+                "hash": {
+                    "sha256": "8daa4fb8d53af4454dff5d2fb4e01ed7bd33c2fdf223a2a7811bccf26ff06bc6"
                 }
             }
         ]
