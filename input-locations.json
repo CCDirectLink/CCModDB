@@ -1,6 +1,11 @@
 [
 	{
 		"type": "modZip",
+		"urlZip": "https://github.com/CCDirectLink/CC-ChargedBalls/archive/1.0.0.zip",
+		"source": "CC-ChargedBalls-1.0.0"
+	},
+	{
+		"type": "modZip",
 		"urlZip": "https://github.com/ZeikJT/CrossCodeCheats/archive/1.3.2.zip",
 		"source": "CrossCodeCheats-1.3.2"
 	},
