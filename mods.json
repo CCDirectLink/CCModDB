@@ -394,6 +394,16 @@
                 "sha256": "8daa4fb8d53af4454dff5d2fb4e01ed7bd33c2fdf223a2a7811bccf26ff06bc6"
             },
             "version": "2.8.2"
+        },
+        "Lea sits on the Title": {
+            "name": "Lea sits on the Title",
+            "description": "Replaces default Lea's pose on the title screen.",
+            "page": [],
+            "archive_link": "https://github.com/Swanderrr/CCleasitstitle/raw/master/archive/titlescreenlea.zip",
+            "hash": {
+                "sha256": "077f24e1c8d44d86e1cb05197d7831f167bdae79c3077d820c09bbe748dba068"
+            },
+            "version": "1.0.0"
         }
     }
 }
