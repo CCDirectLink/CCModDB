@@ -631,5 +631,22 @@
                 }
             }
         ]
+    },
+    "Lea sits on the Title": {
+        "metadata": {
+            "name": "Lea sits on the Title",
+            "version": "1.0.0",
+            "description": "Replaces default Lea's pose on the title screen.",
+            "ccmodDependencies": {}
+        },
+        "installation": [
+            {
+                "type": "modZip",
+                "url": "https://github.com/Swanderrr/CCleasitstitle/raw/master/archive/titlescreenlea.zip",
+                "hash": {
+                    "sha256": "077f24e1c8d44d86e1cb05197d7831f167bdae79c3077d820c09bbe748dba068"
+                }
+            }
+        ]
     }
 }
