@@ -254,11 +254,11 @@
                     "url": "https://github.com/L-Sherry/Localize-me"
                 }
             ],
-            "archive_link": "https://github.com/L-Sherry/Localize-me/archive/v0.4.3.zip",
+            "archive_link": "https://github.com/L-Sherry/Localize-me/archive/0.5.1.zip",
             "hash": {
-                "sha256": "fb08dd95de63af3b057000161f74c6770012f94cc4d5718b8c73aba9055cfc0a"
+                "sha256": "02f058f2574c233e98e5f450b20683a5133dceef59fba8decf6e04b736f89f02"
             },
-            "version": "0.4.3"
+            "version": "0.5.1"
         },
         "French": {
             "name": "French",
@@ -394,6 +394,16 @@
                 "sha256": "8daa4fb8d53af4454dff5d2fb4e01ed7bd33c2fdf223a2a7811bccf26ff06bc6"
             },
             "version": "2.8.2"
+        },
+        "Lea sits on the Title": {
+            "name": "Lea sits on the Title",
+            "description": "Replaces default Lea's pose on the title screen.",
+            "page": [],
+            "archive_link": "https://github.com/Swanderrr/CCleasitstitle/raw/master/archive/titlescreenlea.zip",
+            "hash": {
+                "sha256": "077f24e1c8d44d86e1cb05197d7831f167bdae79c3077d820c09bbe748dba068"
+            },
+            "version": "1.0.0"
         }
     }
 }
