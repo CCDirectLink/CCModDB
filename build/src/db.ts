@@ -3,6 +3,23 @@ import crypto from 'crypto';
 import fs from 'fs';
 import { download, streamToBuffer } from './download';
 
+interface ModDb {
+	[name: string]: {
+		name: string,
+		description: string,
+		licence: string,
+		page: Array<{
+			name: string,
+			url: string,
+		}>,
+		archive_link: string,
+		hash: {
+			sha256: string,
+		},
+		version: string,
+	}
+}
+
 export async function build(packages: [PackageDBPackageMetadata, InputLocation][]): Promise<PackageDB> {
 	const result: PackageDB = {};
 	const promises: Promise<void>[] = [];
@@ -29,6 +46,76 @@ export async function write(db: PackageDB): Promise<void> {
 			resolve();
 		});
 	});
+}
+
+export async function writeMods(db: PackageDB): Promise<void> {
+	const mods: ModDb = {};
+
+	for (const name of Object.keys(db)) {
+		const pkg = db[name];
+
+		if (pkg.metadata.ccmodType === 'base' || pkg.metadata.ccmodType === 'tool') {
+			continue;
+		}
+
+		const install = getInstallation(pkg.installation);
+		if (!install) {
+			continue;
+		}
+
+		mods[name] = {
+			name: pkg.metadata.ccmodHumanName || name,
+			description: pkg.metadata.description!,
+			licence: pkg.metadata.license!,
+			page: getHomepage(pkg.metadata.homepage),
+			archive_link: install.url,
+			hash: install.hash,
+			version: pkg.metadata.version || '0.1.0',
+		};
+	}
+
+	return new Promise<void>((resolve, reject) => {
+		fs.writeFile('../mods.json', JSON.stringify({mods}, null, 4), err => {
+			if (err) {
+				return reject(err);
+			}
+			resolve();
+		});
+	});
+}
+
+function getHomepage(url?: string): Array<{name: string, url: string}> {
+	if (!url) {
+		return [];
+	}
+
+	let name: string;
+	switch (new URL(url).hostname) {
+	case 'github.com':
+		name = 'GitHub';
+		break;
+	case 'gitlab.com':
+		name = 'GitLab';
+		break;
+	default:
+		name = 'mod\'s homepage';
+	}
+
+	return [{name, url}];
+}
+
+function getInstallation(installations: PackageDBInstallationMethod[]): {url: string, hash: {sha256: string}} | undefined {
+	const zip = installations.find(i => i.type === 'ccmod');
+	if (zip) {
+		return; // TODO: Return url, hash for ccmod
+	}
+
+	const modZip = installations.find(i => i.type === 'modZip') as PackageDBInstallationMethodModZip;
+	if (modZip) {
+		return {url: modZip.url, hash: modZip.hash};
+	}
+
+	return undefined;
 }
 
 async function buildEntry(result: PackageDB, pkg: PackageDBPackageMetadata, inputs: InputLocation[]): Promise<void> {

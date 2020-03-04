@@ -10,7 +10,9 @@ async function main() {
 	}
 	const packages = await Promise.all(promises);
 
-	await db.write(await db.build(packages));
+	const pkgDb = await db.build(packages);
+	await db.write(pkgDb);
+	await db.writeMods(pkgDb);
 }
 
 main().catch(err => console.error('error: ', err));
