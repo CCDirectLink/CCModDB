@@ -62,7 +62,7 @@ export async function writeMods(db: PackageDB): Promise<void> {
 
 		mods[name] = {
 			name: pkg.metadata.ccmodHumanName || name,
-			description: pkg.metadata.description!,
+			description: pkg.metadata.description || 'A mod. (Description not available; contact mod author and have them add a description to their package.json file)',
 			licence: pkg.metadata.license!,
 			page: getHomepage(pkg.metadata.homepage),
 			archive_link: install.url,
