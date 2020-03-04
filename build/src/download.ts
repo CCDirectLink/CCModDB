@@ -37,8 +37,10 @@ async function follow(url: string): Promise<[http.IncomingMessage, string]> {
 	let result = await head(url);
 	while (result.statusCode === 302) {
 		url = result.headers.location!;
+		result.destroy();
 		result = await head(url);
 	}
+	result.destroy();
 	return [result, url];
 }
 
