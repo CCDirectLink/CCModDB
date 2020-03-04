@@ -7,7 +7,7 @@
     "build": "tsc",
     "watch": "tsc -w",
     "start": "npm run build && node dist/main.js",
-    "test": "mocha --recursive tests/"
+    "test": "npm run build && mocha --recursive tests/"
   },
   "repository": {
     "type": "git",
