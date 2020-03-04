@@ -102,9 +102,9 @@ function getHomepage(url?: string): Page[] {
 }
 
 function getInstallation(installations: InstallMethod[]): {url: string, hash: {sha256: string}} | undefined {
-	const zip = installations.find(i => i.type === 'ccmod');
+	const zip = installations.find(i => i.type === 'ccmod') as InstallMethodCCMod;
 	if (zip) {
-		return; // TODO: Return url, hash for ccmod
+		return {url: zip.url, hash: zip.hash};
 	}
 
 	const modZip = installations.find(i => i.type === 'modZip') as InstallMethodModZip;
@@ -180,6 +180,17 @@ async function generateInstallation(input: InputLocation): Promise<InstallMethod
 			type: 'modZip',
 			url: input.urlZip,
 			source: input.source,
+			hash: {
+				sha256: crypto.createHash('sha256').update(data).digest('hex'),
+			},
+		};
+	}
+	case 'ccmod': {
+		const data = await streamToBuffer(await download(input.url));
+
+		return {
+			type: 'ccmod',
+			url: input.url,
 			hash: {
 				sha256: crypto.createHash('sha256').update(data).digest('hex'),
 			},

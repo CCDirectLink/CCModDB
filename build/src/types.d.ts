@@ -1,4 +1,4 @@
-declare type InputLocation = InjectedInputLocation | ModZipInputLocation;
+declare type InputLocation = InjectedInputLocation | ModZipInputLocation | CCModInputLocation;
 
 // Represents a raw input location to put more or less directly into npDatabase.json
 declare type InjectedInputLocation = {
@@ -17,6 +17,12 @@ declare type ModZipInputLocation = {
 	// This must pretty much only be used for base packages.
 	packageJSONPath?: string;
 };
+
+declare type CCModInputLocation = {
+	type: 'ccmod';
+	// The URL of the ccmod file.
+	url: string;
+}
 
 // The content of the input-locations.json file.
 declare type InputLocations = InputLocation[];
@@ -111,6 +117,14 @@ declare type InstallMethodModZip = InstallMethodCommon & {
 	// If provided, the subdirectory of the ZIP that is the root of the extraction (example: "CCLoader-master")
 	source?: string;
 };
+
+declare type InstallMethodCCMod = InstallMethodCommon & {
+	type: 'ccmod';
+	// The URL of the ccmod to download. (example: "https://github.com/CCDirectLink/CC-ChargedBalls/releases/download/1.0.0/ChargedBalls.ccmod")
+	url: string;
+	// The hash of the file at url.
+	hash: PkgHash;
+}
 
 /*
  * Represents a package in the database.

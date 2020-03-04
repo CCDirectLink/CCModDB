@@ -6,6 +6,8 @@ export async function get(input: InputLocation): Promise<[PkgMetadata, InputLoca
 	switch (input.type) {
 	case 'modZip':
 		return [await getModZip(input), input];
+	case 'ccmod':
+		return [await getCCMod(input), input];
 	default:
 		throw new Error(`Unknown location type '${input.type}'`);
 	}
@@ -19,6 +21,21 @@ async function getModZip(zip: ModZipInputLocation): Promise<PkgMetadata> {
 	}
 	const archive = await open(buf);
 	const stream = await openFile(archive, modZipPath(zip));
+	const rawPkg = await streamToBuffer(stream);
+
+	archive.close();
+
+	return JSON.parse(rawPkg as unknown as string) as PkgMetadata;
+}
+
+async function getCCMod(ccmod: CCModInputLocation): Promise<PkgMetadata> {
+	const file = await download(ccmod.url);
+	const buf = await streamToBuffer(file);
+	if (buf.length === 0) {
+		throw new Error();
+	}
+	const archive = await open(buf);
+	const stream = await openFile(archive, 'package.json');
 	const rawPkg = await streamToBuffer(stream);
 
 	archive.close();
