@@ -123,16 +123,6 @@ async function buildEntry(result: PackageDB, pkg: PkgMetadata, inputs: InputLoca
 }
 
 function check(pkg: PkgMetadata): boolean {
-	if (!pkg.version) {
-		console.warn(`Package is missing version: ${pkg.name}; correct ASAP`);
-		return false;
-	}
-
-	if (semver.parse(pkg.version) == null) {
-		console.warn(`Package version invalid: ${pkg.name}`);
-		return false;
-	}
-
 	if (pkg.dependencies) {
 		console.warn(`Package has 'dependencies', not 'ccmodDependencies': ${pkg.name}; correct ASAP`);
 		return false;
@@ -151,6 +141,17 @@ function check(pkg: PkgMetadata): boolean {
 			}
 		}
 	}
+
+	if (!pkg.version) {
+		console.warn(`Package is missing version: ${pkg.name}; correct ASAP`);
+		return true;
+	}
+
+	if (semver.parse(pkg.version) == null) {
+		console.warn(`Package version invalid: ${pkg.name}`);
+		return false;
+	}
+
 	return true;
 }
 
