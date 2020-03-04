@@ -150,7 +150,7 @@ function testInstallation(mod) {
 				await testModZip(inst);
 				break;
 			}
-		});
+		}).timeout(10000);
 	}
 }
 
