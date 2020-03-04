@@ -4,7 +4,7 @@ import * as db from './db';
 
 async function main() {
 	const locations = await inputLocations.parse();
-	const promises: Promise<[PackageDBPackageMetadata, InputLocation]>[] = [];
+	const promises: Promise<[PkgMetadata, InputLocation]>[] = [];
 	for (const loc of locations) {
 		promises.push(source.get(loc));
 	}

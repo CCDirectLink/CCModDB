@@ -3,7 +3,7 @@ declare type InputLocation = InjectedInputLocation | ModZipInputLocation;
 // Represents a raw input location to put more or less directly into npDatabase.json
 declare type InjectedInputLocation = {
 	type: 'injected';
-} & PackageDBPackage;
+} & Package;
 
 declare type ModZipInputLocation = {
 	type: 'modZip';
@@ -36,12 +36,12 @@ declare type SemverConstraint = string;
  *  and special-case UI to be user-friendly, such as CCLoader and NWJS upgrades.
  * (In particular, CrossCode, CCLoader and NWJS upgrades require custom detection methods for their local copies.)
  */
-declare type PackageDBPackageType = 'mod' | 'tool' | 'base';
+declare type PackageType = 'mod' | 'tool' | 'base';
 
 /*
  * A page relating to the mod.
  */
-declare type PackageDBMetadataPage = {
+declare type Page = {
 	// The name of the page. For the canonical GitHub or GitLab page, this must be "GitHub" / "GitLab".
 	name: string;
 	url: string;
@@ -55,11 +55,11 @@ declare type PackageDBMetadataPage = {
  * So it's very important to keep the package metadata format safe for NPM to read,
  *  and that means ensuring all package metadata is either avoided by NPM or understood by it.
  */
-declare type PackageDBPackageMetadata = {
+declare type PkgMetadata = {
 	// This is the unique ID for this package, used for dependency handling. Note that this DOES NOT have to avoid collision with the NPM registry.
 	name: string;
 	// If not provided, defaults to "mod".
-	ccmodType?: PackageDBPackageType;
+	ccmodType?: PackageType;
 	// This is the version of the package for dependency purposes. (see https://docs.npmjs.com/files/package.json )
 	// If not present, assumed to be "0.0.0". NEW MODS WITHOUT VERSIONS WILL NOT BE ACCEPTED.
 	version?: Semver;
@@ -82,7 +82,7 @@ declare type PackageDBPackageMetadata = {
 };
 
 // Represents some set of hashes for something.
-declare type PackageDBHash = {
+declare type PkgHash = {
 	// Lowercase hexadecimal-encoded SHA-256 hash of the data.
 	sha256: string;
 };
@@ -90,24 +90,24 @@ declare type PackageDBHash = {
 /*
  * Represents a method of installing the package.
  */
-declare type PackageDBInstallationMethod = PackageDBInstallationMethodCommon | PackageDBInstallationMethodModZip;
+declare type InstallMethod = InstallMethodCommon | InstallMethodModZip;
 
 /*
  * The common fields between all PackageDBInstallationMethods.
  */
-declare type PackageDBInstallationMethodCommon = {
+declare type InstallMethodCommon = {
 	// Declares the type of installation method. ALWAYS CHECK THIS.
 	type: string;
 	// If present, constrains the platform this method may be used for.
 	platform?: NodeOSPlatform;
 }
 
-declare type PackageDBInstallationMethodModZip = PackageDBInstallationMethodCommon & {
+declare type InstallMethodModZip = InstallMethodCommon & {
 	type: 'modZip';
 	// The URL of the ZIP to download. (example: "https://github.com/CCDirectLink/CCLoader/archive/master.zip")
 	url: string;
 	// The hash of the file at url.
-	hash: PackageDBHash;
+	hash: PkgHash;
 	// If provided, the subdirectory of the ZIP that is the root of the extraction (example: "CCLoader-master")
 	source?: string;
 };
@@ -115,14 +115,14 @@ declare type PackageDBInstallationMethodModZip = PackageDBInstallationMethodComm
 /*
  * Represents a package in the database.
  */
-declare type PackageDBPackage = {
+declare type Package = {
 	// Metadata for the package.
-	metadata: PackageDBPackageMetadata;
+	metadata: PkgMetadata;
 	// Installation methods (try in order)
-	installation: PackageDBInstallationMethod[];
+	installation: InstallMethod[];
 };
 
 /*
  * Represents the database. Keys in this Record MUST match their respective `value.metadata.name`
  */
-declare type PackageDB = Record<string, PackageDBPackage>;
+declare type PackageDB = Record<string, Package>;

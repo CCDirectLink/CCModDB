@@ -2,7 +2,7 @@ import stream from 'stream';
 import yauzl from 'yauzl';
 import { download, streamToBuffer } from './download';
 
-export async function get(input: InputLocation): Promise<[PackageDBPackageMetadata, InputLocation]> {
+export async function get(input: InputLocation): Promise<[PkgMetadata, InputLocation]> {
 	switch (input.type) {
 	case 'modZip':
 		return [await getModZip(input), input];
@@ -11,7 +11,7 @@ export async function get(input: InputLocation): Promise<[PackageDBPackageMetada
 	}
 }
 
-async function getModZip(zip: ModZipInputLocation): Promise<PackageDBPackageMetadata> {
+async function getModZip(zip: ModZipInputLocation): Promise<PkgMetadata> {
 	const file = await download(zip.urlZip);
 	const buf = await streamToBuffer(file);
 	if (buf.length === 0) {
@@ -23,7 +23,7 @@ async function getModZip(zip: ModZipInputLocation): Promise<PackageDBPackageMeta
 
 	archive.close();
 
-	return JSON.parse(rawPkg as unknown as string) as PackageDBPackageMetadata;
+	return JSON.parse(rawPkg as unknown as string) as PkgMetadata;
 }
 
 function modZipPath(zip: ModZipInputLocation): string {

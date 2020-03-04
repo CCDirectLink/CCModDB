@@ -8,10 +8,7 @@ interface ModDb {
 		name: string,
 		description: string,
 		licence: string,
-		page: Array<{
-			name: string,
-			url: string,
-		}>,
+		page: Page[],
 		archive_link: string,
 		hash: {
 			sha256: string,
@@ -20,7 +17,7 @@ interface ModDb {
 	}
 }
 
-export async function build(packages: [PackageDBPackageMetadata, InputLocation][]): Promise<PackageDB> {
+export async function build(packages: [PkgMetadata, InputLocation][]): Promise<PackageDB> {
 	const result: PackageDB = {};
 	const promises: Promise<void>[] = [];
 
@@ -84,7 +81,7 @@ export async function writeMods(db: PackageDB): Promise<void> {
 	});
 }
 
-function getHomepage(url?: string): Array<{name: string, url: string}> {
+function getHomepage(url?: string): Page[] {
 	if (!url) {
 		return [];
 	}
@@ -104,13 +101,13 @@ function getHomepage(url?: string): Array<{name: string, url: string}> {
 	return [{name, url}];
 }
 
-function getInstallation(installations: PackageDBInstallationMethod[]): {url: string, hash: {sha256: string}} | undefined {
+function getInstallation(installations: InstallMethod[]): {url: string, hash: {sha256: string}} | undefined {
 	const zip = installations.find(i => i.type === 'ccmod');
 	if (zip) {
 		return; // TODO: Return url, hash for ccmod
 	}
 
-	const modZip = installations.find(i => i.type === 'modZip') as PackageDBInstallationMethodModZip;
+	const modZip = installations.find(i => i.type === 'modZip') as InstallMethodModZip;
 	if (modZip) {
 		return {url: modZip.url, hash: modZip.hash};
 	}
@@ -118,14 +115,14 @@ function getInstallation(installations: PackageDBInstallationMethod[]): {url: st
 	return undefined;
 }
 
-async function buildEntry(result: PackageDB, pkg: PackageDBPackageMetadata, inputs: InputLocation[]): Promise<void> {
+async function buildEntry(result: PackageDB, pkg: PkgMetadata, inputs: InputLocation[]): Promise<void> {
 	result[pkg.name] = {
 		metadata: pkg,
 		installation: await generateInstallations(inputs),
 	};
 }
 
-function check(pkg: PackageDBPackageMetadata): boolean {
+function check(pkg: PkgMetadata): boolean {
 	if (!pkg.version) {
 		console.warn(`Package is missing version: ${pkg.name}; correct ASAP`);
 		return false;
@@ -157,7 +154,7 @@ function check(pkg: PackageDBPackageMetadata): boolean {
 	return true;
 }
 
-async function generateInstallations(inputs: InputLocation[]): Promise<PackageDBInstallationMethod[]> {
+async function generateInstallations(inputs: InputLocation[]): Promise<InstallMethod[]> {
 	const result = [];
 
 	for (const input of inputs) {
@@ -174,7 +171,7 @@ async function generateInstallations(inputs: InputLocation[]): Promise<PackageDB
 	return result;
 }
 
-async function generateInstallation(input: InputLocation): Promise<PackageDBInstallationMethod[] | PackageDBInstallationMethod | undefined> {
+async function generateInstallation(input: InputLocation): Promise<InstallMethod[] | InstallMethod | undefined> {
 	switch (input.type) {
 	case 'modZip': {
 		const data = await streamToBuffer(await download(input.urlZip));
@@ -193,8 +190,8 @@ async function generateInstallation(input: InputLocation): Promise<PackageDBInst
 	}
 }
 
-function groupByName(packages: [PackageDBPackageMetadata, InputLocation][]) : Map<string, [PackageDBPackageMetadata, InputLocation[]]> {
-	const result = new Map<string, [PackageDBPackageMetadata, InputLocation[]]>();
+function groupByName(packages: [PkgMetadata, InputLocation][]) : Map<string, [PkgMetadata, InputLocation[]]> {
+	const result = new Map<string, [PkgMetadata, InputLocation[]]>();
 
 	for (const [pkg, input] of packages) {
 		if (result.has(pkg.name)) {
