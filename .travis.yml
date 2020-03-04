@@ -3,5 +3,5 @@ node_js:
 - "stable"
 install:
   npm install chai mocha eslint eslint-config-strongloop semver
-script: npm test
+script: cd build && npm test
 sudo: false

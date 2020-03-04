@@ -1,5 +1,3 @@
-'use strict';
-
 // call with mocha
 // require chai
 
@@ -7,11 +5,11 @@ const { expect } = require('chai');
 const fs = require('fs');
 const semver = require('semver');
 const crypto = require('crypto');
-const getFile = require('../../lib/get.js');
+const {download, streamToBuffer} = require('../dist/download');
 
 describe('NpDatabase', () => {
 
-	const FILE_PATH = 'npDatabase.json';
+	const FILE_PATH = '../npDatabase.json';
 	const jsonData = JSON.parse(fs.readFileSync(FILE_PATH, 'utf8'));
 
 	it('Check json structure', () => {
@@ -136,7 +134,7 @@ function testInstallation(mod) {
 				'installation (type: object) must be an object')
 				.to.be.true;
 
-			expect(['modZip'].includes(inst.type),
+			expect(['modZip', 'ccmod'].includes(inst.type),
 				'installation.type (type: string) must be one of: ["modZip"]')
 				.to.be.true;
 
@@ -182,7 +180,8 @@ async function testModZip(modzip) {
 }
 
 async function getHash(url) {
-	const file = await getFile(url);
-	return crypto.createHash('sha256').update(file).digest('hex');
+	const file = await download(url);
+	const buf = await streamToBuffer(file);
+	return crypto.createHash('sha256').update(buf).digest('hex');
 }
 

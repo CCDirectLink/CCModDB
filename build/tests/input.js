@@ -1,14 +1,12 @@
-'use strict';
-
 // call with mocha
 // require chai
 
 const { expect } = require('chai');
 const fs = require('fs');
-const getFile = require('../../lib/get.js');
+const {download, streamToBuffer} = require('../dist/download');
 
-describe('ModDB', () => {
-	const FILE_PATH = 'input-locations.json';
+describe('InputLocations', () => {
+	const FILE_PATH = '../input-locations.json';
 	const jsonData = JSON.parse(fs.readFileSync(FILE_PATH, 'utf8'));
 
 	it('Check json structure', () => {
@@ -22,9 +20,9 @@ describe('ModDB', () => {
 
 	describe('mods', () => {
 		for (const mod of Object.keys(jsonData)) {
-			describe(mod, () => {
+			describe(jsonData[mod].urlZip || jsonData[mod].url || mod, () => {
 				it('Check for required elements', async() => {
-					expect(jsonData[mod].type).to.be.oneOf(['modZip'],
+					expect(jsonData[mod].type).to.be.oneOf(['modZip', 'ccmod'],
 						'type (type: string) must be one of: ["modZip"]');
 
 					switch (jsonData[mod].type) {
@@ -33,7 +31,7 @@ describe('ModDB', () => {
 						expect(jsonData[mod].source === undefined
                            || typeof jsonData[mod].source === 'string')
 							.to.be.true;
-						expect(await getFile(jsonData[mod].urlZip))
+						expect(await streamToBuffer(await download(jsonData[mod].urlZip)))
 							.to.not.throw;
 						break;
 					}
