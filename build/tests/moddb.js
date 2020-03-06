@@ -1,5 +1,3 @@
-'use strict';
-
 // call with mocha
 // require chai
 
@@ -8,7 +6,7 @@ const fs = require('fs');
 
 describe('ModDB', () => {
 
-	const FILE_PATH = 'mods.json';
+	const FILE_PATH = '../mods.json';
 	const jsonData = JSON.parse(fs.readFileSync(FILE_PATH, 'utf8'));
 
 	it('Check json structure', () => {
@@ -27,7 +25,7 @@ describe('ModDB', () => {
 
 		for (let mod in jsonData.mods) {
 
-			describe(mod, () => {
+			describe(jsonData.mods[mod].name || mod, () => {
 
 				it('Check for required elements', () => {
 					expect(typeof jsonData.mods[mod].name === 'string',
