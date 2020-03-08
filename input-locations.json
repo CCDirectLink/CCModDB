@@ -35,6 +35,10 @@
 		"source": "hardcoded-config-injector-1647cdf09f9f9b4743a534c8c72ecb52641964fa"
 	},
 	{
+		"type": "ccmod",
+		"url": "https://github.com/CCDirectLink/CCNewGamePP/releases/download/v1.0.1/CCNewGamePP.ccmod"
+	},
+	{
 		"type": "modZip",
 		"urlZip": "https://github.com/CCDirectLink/CCNewGamePP/archive/v1.0.1.zip",
 		"source": "CCNewGamePP-1.0.1"
@@ -50,6 +54,10 @@
 		"source": "CCdiscord-8c5dce9653b170ecb4d4a1ba5b170629539c2644/mod-require-fix"
 	},
 	{
+		"type": "ccmod",
+		"url": "https://github.com/CCDirectLink/CCTimeWalker/releases/download/v0.2.1/timewalker.ccmod"
+	},
+	{
 		"type": "modZip",
 		"urlZip": "https://github.com/CCDirectLink/CCTimeWalker/archive/v0.2.1.zip",
 		"source": "CCTimeWalker-0.2.1/timewalker"
@@ -60,9 +68,17 @@
 		"source": "CCTimer-2.2.3/timer"
 	},
 	{
+		"type": "ccmod",
+		"url": "https://github.com/CCDirectLink/CCSlowmotion/releases/download/v0.1.1/slowmotion.ccmod"
+	},
+	{
 		"type": "modZip",
 		"urlZip": "https://github.com/CCDirectLink/CCSlowmotion/archive/v0.1.1.zip",
 		"source": "CCSlowmotion-0.1.1/slowmotion"
+	},
+	{
+		"type": "ccmod",
+		"url": "https://github.com/CCDirectLink/CCJetpack/releases/download/v0.1.1/jetpack.ccmod"
 	},
 	{
 		"type": "modZip",
