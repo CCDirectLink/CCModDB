@@ -268,7 +268,7 @@
             "name": "New game++",
             "module": true,
             "plugin": "plugin.js",
-            "version": "1.0.1",
+            "version": "1.1.0",
             "homepage": "https://github.com/CCDirectLink/CCNewGamePP",
             "description": "A small collection of addons to CrossCode's NG+.",
             "ccmodDependencies": {
@@ -278,11 +278,18 @@
         },
         "installation": [
             {
-                "type": "modZip",
-                "url": "https://github.com/CCDirectLink/CCNewGamePP/archive/v1.0.1.zip",
-                "source": "CCNewGamePP-1.0.1",
+                "type": "ccmod",
+                "url": "https://github.com/CCDirectLink/CCNewGamePP/releases/download/v1.1.0/CCNewGamePP.ccmod",
                 "hash": {
-                    "sha256": "452ddfeeb0473ffd7d58d76b3d43a63bca42f127b2989a0f9f31b964b475d085"
+                    "sha256": "3bfc2ba50bc0dd05966878b380a5ac69f23fdf42f189b15d51fe3cca910e0878"
+                }
+            },
+            {
+                "type": "modZip",
+                "url": "https://github.com/CCDirectLink/CCNewGamePP/archive/v1.1.0.zip",
+                "source": "CCNewGamePP-1.1.0",
+                "hash": {
+                    "sha256": "5044a397834bf993d63ef0f7c0b534c12bfddaab41a7f849924e3c45140fe6ee"
                 }
             }
         ]
@@ -493,6 +500,13 @@
         },
         "installation": [
             {
+                "type": "ccmod",
+                "url": "https://github.com/CCDirectLink/CCJetpack/releases/download/v0.1.1/jetpack.ccmod",
+                "hash": {
+                    "sha256": "653c6a0ce52637c2793534fc247a40e2cbe9daa593da57ee50905ff8a935dfa7"
+                }
+            },
+            {
                 "type": "modZip",
                 "url": "https://github.com/CCDirectLink/CCJetpack/archive/v0.1.1.zip",
                 "source": "CCJetpack-0.1.1/jetpack",
@@ -572,6 +586,13 @@
         },
         "installation": [
             {
+                "type": "ccmod",
+                "url": "https://github.com/CCDirectLink/CCSlowmotion/releases/download/v0.1.1/slowmotion.ccmod",
+                "hash": {
+                    "sha256": "4f06f16fb6f42991e1ad7792bb6a3cdc61b38937939ca9ea9780528a76f6f2ee"
+                }
+            },
+            {
                 "type": "modZip",
                 "url": "https://github.com/CCDirectLink/CCSlowmotion/archive/v0.1.1.zip",
                 "source": "CCSlowmotion-0.1.1/slowmotion",
@@ -640,6 +661,13 @@
             }
         },
         "installation": [
+            {
+                "type": "ccmod",
+                "url": "https://github.com/CCDirectLink/CCTimeWalker/releases/download/v0.2.1/timewalker.ccmod",
+                "hash": {
+                    "sha256": "1056fc0b17b79ebfe420bd3c54819a108d5e5eb033167f08f90dc17cdf022bd1"
+                }
+            },
             {
                 "type": "modZip",
                 "url": "https://github.com/CCDirectLink/CCTimeWalker/archive/v0.2.1.zip",

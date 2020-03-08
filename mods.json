@@ -180,11 +180,11 @@
                     "url": "https://github.com/CCDirectLink/CCNewGamePP"
                 }
             ],
-            "archive_link": "https://github.com/CCDirectLink/CCNewGamePP/archive/v1.0.1.zip",
+            "archive_link": "https://github.com/CCDirectLink/CCNewGamePP/releases/download/v1.1.0/CCNewGamePP.ccmod",
             "hash": {
-                "sha256": "452ddfeeb0473ffd7d58d76b3d43a63bca42f127b2989a0f9f31b964b475d085"
+                "sha256": "3bfc2ba50bc0dd05966878b380a5ac69f23fdf42f189b15d51fe3cca910e0878"
             },
-            "version": "1.0.1"
+            "version": "1.1.0"
         },
         "Palicat": {
             "name": "Palicat",
@@ -297,9 +297,9 @@
                     "url": "https://github.com/CCDirectLink/CCJetpack"
                 }
             ],
-            "archive_link": "https://github.com/CCDirectLink/CCJetpack/archive/v0.1.1.zip",
+            "archive_link": "https://github.com/CCDirectLink/CCJetpack/releases/download/v0.1.1/jetpack.ccmod",
             "hash": {
-                "sha256": "7ec33de49ea11684e28e7d49e2099571a236ebefb7552ca1b828c7b92a225612"
+                "sha256": "653c6a0ce52637c2793534fc247a40e2cbe9daa593da57ee50905ff8a935dfa7"
             },
             "version": "0.1.1"
         },
@@ -353,9 +353,9 @@
                     "url": "https://github.com/CCDirectLink/CCSlowmotion"
                 }
             ],
-            "archive_link": "https://github.com/CCDirectLink/CCSlowmotion/archive/v0.1.1.zip",
+            "archive_link": "https://github.com/CCDirectLink/CCSlowmotion/releases/download/v0.1.1/slowmotion.ccmod",
             "hash": {
-                "sha256": "95ffe20f8f611cd7a18b5b8f77c0437b60101badb11aefcd64597ef3b7ecdc6a"
+                "sha256": "4f06f16fb6f42991e1ad7792bb6a3cdc61b38937939ca9ea9780528a76f6f2ee"
             },
             "version": "0.1.1"
         },
@@ -399,9 +399,9 @@
                     "url": "https://github.com/CCDirectLink/CCTimeWalker"
                 }
             ],
-            "archive_link": "https://github.com/CCDirectLink/CCTimeWalker/archive/v0.2.1.zip",
+            "archive_link": "https://github.com/CCDirectLink/CCTimeWalker/releases/download/v0.2.1/timewalker.ccmod",
             "hash": {
-                "sha256": "837399583b65d452e9c3bf1924db2429e56f4ab71442d4d20d3b3ca265ca94e7"
+                "sha256": "1056fc0b17b79ebfe420bd3c54819a108d5e5eb033167f08f90dc17cdf022bd1"
             },
             "version": "0.2.1"
         }
