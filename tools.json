@@ -36,6 +36,15 @@
             "archive_link" : "https://github.com/gregnk/CCAnimationEditor/releases/download/v0.2.2/CCAnimationEditor-v0.2.2.zip",
             "hash" : { "sha256" : "bae01beaeb13f8ff25dee275f0e6cc6db428e6096a8976ef38ab2a3b83b80ae6" },
             "version" : "0.2.2"
+        },
+        "ToolLauncher": {
+            "name": "ToolLauncher",
+            "description": "A middleware to load tools with your CrossCode installation.",
+            "licence": "MIT",
+            "page": [{"name": "GitHub", "url": "https://github.com/CCDirectLink/tool-launcher"}],
+            "archive_link": "",
+            "hash": { "sha256": ""},
+            "version": "1.0.0"
         }
     }
 }
