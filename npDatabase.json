@@ -1,4 +1,26 @@
 {
+    "Bob-Rank": {
+        "metadata": {
+            "name": "Bob-Rank",
+            "description": "Adds unforgettable special effects on S-Rank",
+            "plugin": "plugin.js",
+            "version": "1.0.0",
+            "assets": [
+                "assets/data/more-tile-infos.json",
+                "assets/data/map-fixes.json"
+            ]
+        },
+        "installation": [
+            {
+                "type": "modZip",
+                "url": "https://github.com/L-Sherry/Bob-Rank/releases/download/v1.0.0/Bob-Rank-v1.0.0.zip",
+                "source": "Bob-Rank-v1.0.0",
+                "hash": {
+                    "sha256": "c403561d1d334a5fc58a2affac431aa2ebe3dbc03a1a42968a52facb6f8f7d6d"
+                }
+            }
+        ]
+    },
     "CCJoystickExt": {
         "metadata": {
             "name": "CCJoystickExt",

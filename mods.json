@@ -1,5 +1,15 @@
 {
     "mods": {
+        "Bob-Rank": {
+            "name": "Bob-Rank",
+            "description": "Adds unforgettable special effects on S-Rank",
+            "page": [],
+            "archive_link": "https://github.com/L-Sherry/Bob-Rank/releases/download/v1.0.0/Bob-Rank-v1.0.0.zip",
+            "hash": {
+                "sha256": "c403561d1d334a5fc58a2affac431aa2ebe3dbc03a1a42968a52facb6f8f7d6d"
+            },
+            "version": "1.0.0"
+        },
         "CCJoystickExt": {
             "name": "CCJoystickExt",
             "description": "Adds gamepad bindings on L3 and R3 to easily swap elements",
