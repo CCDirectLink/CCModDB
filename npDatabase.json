@@ -1,4 +1,31 @@
 {
+    "AMCS-wdeps": {
+        "metadata": {
+            "name": "AMCS-wdeps",
+            "version": "1.0.0",
+            "description": "A mini keybind cheat sheet for your convinience.",
+            "module": true,
+            "main": "mod.js",
+            "ccmodDependencies": {}
+        },
+        "installation": [
+            {
+                "type": "ccmod",
+                "url": "https://github.com/CCDirectLink/AMCS-wdeps/releases/download/1.0.0/AMCS-wdeps.ccmod",
+                "hash": {
+                    "sha256": "77f8b025791c68f9457ca1941192257c2496de0273245e6f3b8e73bedc8bb85c"
+                }
+            },
+            {
+                "type": "modZip",
+                "url": "https://github.com/CCDirectLink/AMCS-wdeps/archive/1.0.0.zip",
+                "source": "AMCS-wdeps-1.0.0",
+                "hash": {
+                    "sha256": "c1cdb3c832942e49f7bde22c5c7025415bda3fa6c3d1474f96994d21d3985fa1"
+                }
+            }
+        ]
+    },
     "Bob-Rank": {
         "metadata": {
             "name": "Bob-Rank",
