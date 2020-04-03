@@ -96,7 +96,7 @@ declare type PkgHash = {
 /*
  * Represents a method of installing the package.
  */
-declare type InstallMethod = InstallMethodCommon | InstallMethodModZip;
+declare type InstallMethod = InstallMethodCommon | InstallMethodModZip | InstallMethodCCMod;
 
 /*
  * The common fields between all PackageDBInstallationMethods.
