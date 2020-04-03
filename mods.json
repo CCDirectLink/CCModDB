@@ -1,5 +1,15 @@
 {
     "mods": {
+        "AMCS-wdeps": {
+            "name": "AMCS-wdeps",
+            "description": "A mini keybind cheat sheet for your convinience.",
+            "page": [],
+            "archive_link": "https://github.com/CCDirectLink/AMCS-wdeps/releases/download/1.0.0/AMCS-wdeps.ccmod",
+            "hash": {
+                "sha256": "77f8b025791c68f9457ca1941192257c2496de0273245e6f3b8e73bedc8bb85c"
+            },
+            "version": "1.0.0"
+        },
         "CCJoystickExt": {
             "name": "CCJoystickExt",
             "description": "Adds gamepad bindings on L3 and R3 to easily swap elements",

@@ -1,5 +1,14 @@
 [
 	{
+		"type": "ccmod",
+		"url": "https://github.com/CCDirectLink/AMCS-wdeps/releases/download/1.0.0/AMCS-wdeps.ccmod"
+	},
+	{
+		"type": "modZip",
+		"urlZip": "https://github.com/CCDirectLink/AMCS-wdeps/archive/1.0.0.zip",
+		"source": "AMCS-wdeps-1.0.0"
+	},
+	{
 		"type": "modZip",
 		"urlZip": "https://github.com/CCDirectLink/CC-ChargedBalls/archive/1.0.0.zip",
 		"source": "CC-ChargedBalls-1.0.0"
