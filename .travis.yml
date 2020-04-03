@@ -2,6 +2,6 @@ language: node_js
 node_js:
 - "stable"
 install:
-  cd build && npm install && cd ..
+  cd build && npm ci && cd ..
 script: cd build && npm test
 sudo: false
