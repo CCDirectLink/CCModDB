@@ -323,6 +323,16 @@
             },
             "version": "0.1.1"
         },
+        "map-watch": {
+            "name": "Map Watcher",
+            "description": "A mod that automatically loads a map when changes are detected",
+            "page": [],
+            "archive_link": "https://github.com/CCDirectLink/map-watch/releases/download/v1.0.0/map-watch.ccmod",
+            "hash": {
+                "sha256": "64ea4c411c7ffebf672626b5909c18dac510d1f4d0b420a39fc2e4977fad281b"
+            },
+            "version": "1.0.0"
+        },
         "menu-api": {
             "name": "menu-api",
             "description": "Adds a menu to which mods can add their own buttons.",
