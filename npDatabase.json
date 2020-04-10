@@ -565,6 +565,32 @@
             }
         ]
     },
+    "map-watch": {
+        "metadata": {
+            "name": "map-watch",
+            "ccmodHumanName": "Map Watcher",
+            "description": "A mod that automatically loads a map when changes are detected",
+            "version": "1.0.0",
+            "plugin": "plugin.js"
+        },
+        "installation": [
+            {
+                "type": "ccmod",
+                "url": "https://github.com/CCDirectLink/map-watch/releases/download/v1.0.0/map-watch.ccmod",
+                "hash": {
+                    "sha256": "64ea4c411c7ffebf672626b5909c18dac510d1f4d0b420a39fc2e4977fad281b"
+                }
+            },
+            {
+                "type": "modZip",
+                "url": "https://github.com/CCDirectLink/map-watch/archive/v1.0.0.zip",
+                "source": "map-watch-1.0.0",
+                "hash": {
+                    "sha256": "1a0b318e7cba4a1990d83084742f0f8e23bee13e8da617f16c7dd7bc67ab81c2"
+                }
+            }
+        ]
+    },
     "menu-api": {
         "metadata": {
             "name": "menu-api",

@@ -184,6 +184,15 @@
 		"type": "modZip",
 		"urlZip": "https://github.com/L-Sherry/Bob-Rank/releases/download/v1.0.0/Bob-Rank-v1.0.0.zip",
 		"source": "Bob-Rank-v1.0.0"
+	},
+	{
+		"type": "ccmod",
+		"url": "https://github.com/CCDirectLink/map-watch/releases/download/v1.0.0/map-watch.ccmod"
+	},
+	{
+		"type": "modZip",
+		"urlZip": "https://github.com/CCDirectLink/map-watch/archive/v1.0.0.zip",
+		"source": "map-watch-1.0.0"
 	}
 ]
 
