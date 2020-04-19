@@ -187,12 +187,12 @@
 	},
 	{
 		"type": "ccmod",
-		"url": "https://github.com/CCDirectLink/map-watch/releases/download/v1.0.0/map-watch.ccmod"
+		"url": "https://github.com/CCDirectLink/map-watch/releases/download/v1.0.1/map-watch.ccmod"
 	},
 	{
 		"type": "modZip",
-		"urlZip": "https://github.com/CCDirectLink/map-watch/archive/v1.0.0.zip",
-		"source": "map-watch-1.0.0"
+		"urlZip": "https://github.com/CCDirectLink/map-watch/archive/v1.0.1.zip",
+		"source": "map-watch-1.0.1"
 	}
 ]
 
