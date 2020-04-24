@@ -7,7 +7,7 @@ interface ModDb {
 	[name: string]: {
 		name: string,
 		description: string,
-		licence: string,
+		license: string,
 		page: Page[],
 		archive_link: string,
 		hash: {
@@ -63,7 +63,7 @@ export async function writeMods(db: PackageDB): Promise<void> {
 		mods[name] = {
 			name: pkg.metadata.ccmodHumanName || name,
 			description: pkg.metadata.description || 'A mod. (Description not available; contact mod author and have them add a description to their package.json file)',
-			licence: pkg.metadata.license!,
+			license: pkg.metadata.license!,
 			page: getHomepage(pkg.metadata.homepage),
 			archive_link: install.url,
 			hash: install.hash,
