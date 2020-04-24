@@ -670,17 +670,17 @@
         "installation": [
             {
                 "type": "ccmod",
-                "url": "https://github.com/CCDirectLink/map-watch/releases/download/v1.0.0/map-watch.ccmod",
+                "url": "https://github.com/CCDirectLink/map-watch/releases/download/v1.0.1/map-watch.ccmod",
                 "hash": {
-                    "sha256": "64ea4c411c7ffebf672626b5909c18dac510d1f4d0b420a39fc2e4977fad281b"
+                    "sha256": "3aaed6cdb1fcacbdd9462a8929cb7cdc6cb2dd318abdc731279aede81b6a9107"
                 }
             },
             {
                 "type": "modZip",
-                "url": "https://github.com/CCDirectLink/map-watch/archive/v1.0.0.zip",
-                "source": "map-watch-1.0.0",
+                "url": "https://github.com/CCDirectLink/map-watch/archive/v1.0.1.zip",
+                "source": "map-watch-1.0.1",
                 "hash": {
-                    "sha256": "1a0b318e7cba4a1990d83084742f0f8e23bee13e8da617f16c7dd7bc67ab81c2"
+                    "sha256": "d1418de1c414bd6e51d7f2a8a0ee8c29f5a9055bad1c074f25724707750ce2f1"
                 }
             }
         ]
