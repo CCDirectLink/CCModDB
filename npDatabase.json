@@ -459,6 +459,25 @@
             }
         ]
     },
+    "cc-world-map-overhaul": {
+        "metadata": {
+            "name": "cc-world-map-overhaul",
+            "description": "A better world map",
+            "homepage": "https://github.com/dmitmel/cc-world-map-overhaul",
+            "version": "1.0.0",
+            "prestart": "prestart.js"
+        },
+        "installation": [
+            {
+                "type": "modZip",
+                "url": "https://github.com/dmitmel/cc-world-map-overhaul/releases/download/v1.0.0/cc-world-map-overhaul_v1.0.0.zip",
+                "source": "cc-world-map-overhaul",
+                "hash": {
+                    "sha256": "ee8997b301236df0120e42836a774674967afd2587bf9e447a7a3d245a2434fe"
+                }
+            }
+        ]
+    },
     "ccloader": {
         "metadata": {
             "name": "ccloader",
@@ -474,6 +493,81 @@
                 "source": "CCLoader-2.18.2-v2.8.4",
                 "hash": {
                     "sha256": "0409ca296b5824edbabeb301cda611aae2f07eb4ade0fac5aecbfae434e5992d"
+                }
+            }
+        ]
+    },
+    "crosscode-ru": {
+        "metadata": {
+            "private": true,
+            "name": "crosscode-ru",
+            "version": "1.0.3",
+            "license": "(MIT AND CC-BY-4.0)",
+            "description": "Russian translation for CrossCode",
+            "homepage": "https://github.com/dmitmel/crosscode-ru",
+            "engines": {
+                "node": ">=11.0.0"
+            },
+            "module": true,
+            "postload": "dist/postload.js",
+            "ccmodDependencies": {
+                "crosscode": ">=1.2.0-5",
+                "Localize Me": "^0.5.2",
+                "enhanced-ui": "^0.1.0"
+            },
+            "devDependencies": {
+                "@typescript-eslint/eslint-plugin": "^2.24.0",
+                "@typescript-eslint/parser": "^2.24.0",
+                "eslint": "^6.8.0",
+                "eslint-config-dmitmel": "dmitmel/eslint-config-dmitmel",
+                "eslint-plugin-node": "^11.0.0",
+                "typescript": "^3.8.3"
+            },
+            "scripts": {
+                "build": "tsc --build",
+                "watch": "tsc --build --watch",
+                "lint": "eslint . --ext .js,.ts --ignore-path .gitignore"
+            }
+        },
+        "installation": [
+            {
+                "type": "modZip",
+                "url": "https://github.com/dmitmel/crosscode-ru/releases/download/v1.0.3/crosscode-ru_v1.0.3.zip",
+                "source": "crosscode-ru",
+                "hash": {
+                    "sha256": "6e13d54519984d6a82000e8c00279210955814f1851df57aa879806f459be91c"
+                }
+            }
+        ]
+    },
+    "enhanced-ui": {
+        "metadata": {
+            "private": true,
+            "name": "enhanced-ui",
+            "ccmodHumanName": "Enhanced UI",
+            "version": "0.1.1",
+            "license": "MIT",
+            "description": "Various GUI enchancments and fixes",
+            "homepage": "https://github.com/dmitmel/crosscode-ru/tree/master/enhanced-ui",
+            "engines": {
+                "node": ">=11.0.0"
+            },
+            "module": true,
+            "postload": "dist/postload.js",
+            "ccmodDependencies": {},
+            "devDependencies": {},
+            "scripts": {
+                "build": "../node_modules/.bin/tsc --build",
+                "watch": "../node_modules/.bin/tsc --build --watch"
+            }
+        },
+        "installation": [
+            {
+                "type": "modZip",
+                "url": "https://github.com/dmitmel/crosscode-ru/releases/download/v1.0.3/enhanced-ui_v0.1.1.zip",
+                "source": "enhanced-ui",
+                "hash": {
+                    "sha256": "2869fb8a5fe2dbb62efb115b44c1d8fcb3758999590ea81ffadc7e8e8ec1f590"
                 }
             }
         ]

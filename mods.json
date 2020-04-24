@@ -272,6 +272,53 @@
             },
             "version": "1.5.0"
         },
+        "cc-world-map-overhaul": {
+            "name": "cc-world-map-overhaul",
+            "description": "A better world map",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/dmitmel/cc-world-map-overhaul"
+                }
+            ],
+            "archive_link": "https://github.com/dmitmel/cc-world-map-overhaul/releases/download/v1.0.0/cc-world-map-overhaul_v1.0.0.zip",
+            "hash": {
+                "sha256": "ee8997b301236df0120e42836a774674967afd2587bf9e447a7a3d245a2434fe"
+            },
+            "version": "1.0.0"
+        },
+        "crosscode-ru": {
+            "name": "crosscode-ru",
+            "description": "Russian translation for CrossCode",
+            "licence": "(MIT AND CC-BY-4.0)",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/dmitmel/crosscode-ru"
+                }
+            ],
+            "archive_link": "https://github.com/dmitmel/crosscode-ru/releases/download/v1.0.3/crosscode-ru_v1.0.3.zip",
+            "hash": {
+                "sha256": "6e13d54519984d6a82000e8c00279210955814f1851df57aa879806f459be91c"
+            },
+            "version": "1.0.3"
+        },
+        "enhanced-ui": {
+            "name": "Enhanced UI",
+            "description": "Various GUI enchancments and fixes",
+            "licence": "MIT",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/dmitmel/crosscode-ru/tree/master/enhanced-ui"
+                }
+            ],
+            "archive_link": "https://github.com/dmitmel/crosscode-ru/releases/download/v1.0.3/enhanced-ui_v0.1.1.zip",
+            "hash": {
+                "sha256": "2869fb8a5fe2dbb62efb115b44c1d8fcb3758999590ea81ffadc7e8e8ec1f590"
+            },
+            "version": "0.1.1"
+        },
         "extendable-severed-heads": {
             "name": "extendable-severed-heads",
             "description": "A mod. (Description not available; contact mod author and have them add a description to their package.json file)",
