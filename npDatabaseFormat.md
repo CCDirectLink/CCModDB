@@ -84,8 +84,7 @@ declare type PackageDBPackageMetadata = {
 	// If not provided, defaults to "mod".
 	ccmodType?: PackageDBPackageType;
 	// This is the version of the package for dependency purposes. (see https://docs.npmjs.com/files/package.json )
-	// If not present, assumed to be "0.0.0". NEW MODS WITHOUT VERSIONS WILL NOT BE ACCEPTED.
-	version?: Semver;
+	version: Semver;
 	// This is the dependencies of the package, if any. If not present, `dependencies` is checked.
 	// If `dependencies` contains NPM packages, you must supply at least an empty object here to prevent issues.
 	ccmodDependencies?: Record<string, SemverConstraint>;

@@ -183,7 +183,7 @@
         "Localize Me": {
             "name": "Localize Me",
             "description": "Add support for more locales, languages and translations",
-            "licence": "MIT",
+            "license": "MIT",
             "page": [
                 {
                     "name": "GitHub",
@@ -244,7 +244,7 @@
         "Restart Button": {
             "name": "Restart Button",
             "description": "Adds a button to restart the game without memory leaks",
-            "licence": "MIT",
+            "license": "MIT",
             "page": [
                 {
                     "name": "GitHub",
@@ -295,7 +295,7 @@
         "crosscode-ru": {
             "name": "crosscode-ru",
             "description": "Russian translation for CrossCode",
-            "licence": "(MIT AND CC-BY-4.0)",
+            "license": "(MIT AND CC-BY-4.0)",
             "page": [
                 {
                     "name": "GitHub",
@@ -311,7 +311,7 @@
         "enhanced-ui": {
             "name": "Enhanced UI",
             "description": "Various GUI enchancments and fixes",
-            "licence": "MIT",
+            "license": "MIT",
             "page": [
                 {
                     "name": "GitHub",
@@ -362,7 +362,7 @@
         "jetpack": {
             "name": "jetpack",
             "description": "Turns your CTRL key into a jetpack.",
-            "licence": "MIT",
+            "license": "MIT",
             "page": [
                 {
                     "name": "GitHub",
@@ -428,7 +428,7 @@
         "slowmotion": {
             "name": "slowmotion",
             "description": "Turns your C key into a slowmotion controller.",
-            "licence": "MIT",
+            "license": "MIT",
             "page": [
                 {
                     "name": "GitHub",
@@ -474,7 +474,7 @@
         "timewalker": {
             "name": "timewalker",
             "description": "Lets you control time.",
-            "licence": "MIT",
+            "license": "MIT",
             "page": [
                 {
                     "name": "GitHub",
