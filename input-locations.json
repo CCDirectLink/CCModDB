@@ -193,6 +193,21 @@
 		"type": "modZip",
 		"urlZip": "https://github.com/CCDirectLink/map-watch/archive/v1.0.0.zip",
 		"source": "map-watch-1.0.0"
+	},
+	{
+		"type": "modZip",
+		"urlZip": "https://github.com/dmitmel/cc-world-map-overhaul/releases/download/v1.0.0/cc-world-map-overhaul_v1.0.0.zip",
+		"source": "cc-world-map-overhaul"
+	},
+	{
+		"type": "modZip",
+		"urlZip": "https://github.com/dmitmel/crosscode-ru/releases/download/v1.0.3/enhanced-ui_v0.1.1.zip",
+		"source": "enhanced-ui"
+	},
+	{
+		"type": "modZip",
+		"urlZip": "https://github.com/dmitmel/crosscode-ru/releases/download/v1.0.3/crosscode-ru_v1.0.3.zip",
+		"source": "crosscode-ru"
 	}
 ]
 
