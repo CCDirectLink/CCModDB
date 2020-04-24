@@ -242,15 +242,17 @@
     "Kit Player": {
         "metadata": {
             "name": "Kit Player",
-            "main": "mod.js"
+            "version": "0.1.1",
+            "description": "Swaps Lea's sprites to play as Kit. A sphereomancer fox.",
+            "homepage": "https://github.com/BountyXSnipe/kitplayer"
         },
         "installation": [
             {
                 "type": "modZip",
-                "url": "https://github.com/BountyXSnipe/kitplayer/archive/v0.1.0.zip",
-                "source": "kitplayer-0.1.0/kitplayer",
+                "url": "https://github.com/CCDirectLink/kitplayer/archive/v0.1.1.zip",
+                "source": "kitplayer-0.1.1/kitplayer",
                 "hash": {
-                    "sha256": "1fd36264126b0cb0d5dd719deaf2bc0ace06941e3d3d0376d2ab7eb4314b8074"
+                    "sha256": "bef7447b66e411292493bde5d0fd312d0f4ca13a4c4ab215d02f9472eb291968"
                 }
             }
         ]
