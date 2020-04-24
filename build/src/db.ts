@@ -7,7 +7,7 @@ interface ModDb {
 	[name: string]: {
 		name: string,
 		description: string,
-		licence: string,
+		license?: string,
 		page: Page[],
 		archive_link: string,
 		hash: {
@@ -63,11 +63,11 @@ export async function writeMods(db: PackageDB): Promise<void> {
 		mods[name] = {
 			name: pkg.metadata.ccmodHumanName || name,
 			description: pkg.metadata.description || 'A mod. (Description not available; contact mod author and have them add a description to their package.json file)',
-			licence: pkg.metadata.license!,
+			license: pkg.metadata.license,
 			page: getHomepage(pkg.metadata.homepage),
 			archive_link: install.url,
 			hash: install.hash,
-			version: pkg.metadata.version || '0.1.0',
+			version: pkg.metadata.version,
 		};
 	}
 
@@ -143,8 +143,8 @@ function check(pkg: PkgMetadata): boolean {
 	}
 
 	if (!pkg.version) {
-		console.warn(`Package is missing version: ${pkg.name}; correct ASAP`);
-		return true;
+		console.warn(`Package is missing version: ${pkg.name}`);
+		return false;
 	}
 
 	if (semver.parse(pkg.version) == null) {
