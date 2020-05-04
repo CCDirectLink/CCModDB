@@ -503,7 +503,7 @@
         "metadata": {
             "private": true,
             "name": "crosscode-ru",
-            "version": "1.0.3",
+            "version": "1.0.4",
             "license": "(MIT AND CC-BY-4.0)",
             "description": "Russian translation for CrossCode",
             "homepage": "https://github.com/dmitmel/crosscode-ru",
@@ -513,7 +513,7 @@
             "module": true,
             "postload": "dist/postload.js",
             "ccmodDependencies": {
-                "crosscode": ">=1.2.0-5",
+                "crosscode": ">=1.2.0",
                 "Localize Me": "^0.5.2",
                 "enhanced-ui": "^0.1.0"
             },
@@ -534,10 +534,10 @@
         "installation": [
             {
                 "type": "modZip",
-                "url": "https://github.com/dmitmel/crosscode-ru/releases/download/v1.0.3/crosscode-ru_v1.0.3.zip",
+                "url": "https://github.com/dmitmel/crosscode-ru/releases/download/v1.0.4/crosscode-ru_v1.0.4.zip",
                 "source": "crosscode-ru",
                 "hash": {
-                    "sha256": "6e13d54519984d6a82000e8c00279210955814f1851df57aa879806f459be91c"
+                    "sha256": "a19e90947470c859695edc5aff72f3880af3afe61dd6a03b3dbd122c00defca7"
                 }
             }
         ]
@@ -547,16 +547,18 @@
             "private": true,
             "name": "enhanced-ui",
             "ccmodHumanName": "Enhanced UI",
-            "version": "0.1.1",
+            "version": "0.1.2",
             "license": "MIT",
-            "description": "Various GUI enchancments and fixes",
+            "description": "Various GUI enhancments and fixes",
             "homepage": "https://github.com/dmitmel/crosscode-ru/tree/master/enhanced-ui",
             "engines": {
                 "node": ">=11.0.0"
             },
             "module": true,
             "postload": "dist/postload.js",
-            "ccmodDependencies": {},
+            "ccmodDependencies": {
+                "crosscode": ">=1.2.0"
+            },
             "devDependencies": {},
             "scripts": {
                 "build": "../node_modules/.bin/tsc --build",
@@ -566,10 +568,10 @@
         "installation": [
             {
                 "type": "modZip",
-                "url": "https://github.com/dmitmel/crosscode-ru/releases/download/v1.0.3/enhanced-ui_v0.1.1.zip",
+                "url": "https://github.com/dmitmel/crosscode-ru/releases/download/v1.0.4/enhanced-ui_v0.1.2.zip",
                 "source": "enhanced-ui",
                 "hash": {
-                    "sha256": "2869fb8a5fe2dbb62efb115b44c1d8fcb3758999590ea81ffadc7e8e8ec1f590"
+                    "sha256": "56186263aab57608026dcf734b4c5f3794b2f122c49819e978805efb8f38f216"
                 }
             }
         ]
