@@ -425,6 +425,22 @@
             },
             "version": "1.0.1"
         },
+        "readable-saves": {
+            "name": "Readable saves",
+            "description": "Unencrypts the save file and adds an additional save format suitable for editing by hand",
+            "license": "MIT",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/dmitmel/crosscode-readable-saves"
+                }
+            ],
+            "archive_link": "https://github.com/dmitmel/crosscode-readable-saves/releases/download/v1.0.0/crosscode-readable-saves_v1.0.0.zip",
+            "hash": {
+                "sha256": "fe5e848e8c0468155803fd5a1763279f268e1c564b4b194d4ca6b1fd8850e371"
+            },
+            "version": "1.0.0"
+        },
         "slowmotion": {
             "name": "slowmotion",
             "description": "Turns your C key into a slowmotion controller.",
