@@ -278,7 +278,7 @@
             "version": "1.5.0"
         },
         "cc-world-map-overhaul": {
-            "name": "cc-world-map-overhaul",
+            "name": "World map overhaul",
             "description": "A better world map",
             "page": [
                 {
@@ -286,11 +286,11 @@
                     "url": "https://github.com/dmitmel/cc-world-map-overhaul"
                 }
             ],
-            "archive_link": "https://github.com/dmitmel/cc-world-map-overhaul/releases/download/v1.0.0/cc-world-map-overhaul_v1.0.0.zip",
+            "archive_link": "https://github.com/dmitmel/cc-world-map-overhaul/releases/download/v1.0.1/cc-world-map-overhaul_v1.0.1.zip",
             "hash": {
-                "sha256": "ee8997b301236df0120e42836a774674967afd2587bf9e447a7a3d245a2434fe"
+                "sha256": "830689aa2ac17ddf4589f8454be2cf6adb9bd14f419baa473f9d7b19b0ebda5e"
             },
-            "version": "1.0.0"
+            "version": "1.0.1"
         },
         "crosscode-ru": {
             "name": "crosscode-ru",
@@ -424,6 +424,22 @@
                 "sha256": "4de61fb32ebc3282238bdafa3069f8a1462c7d0ad10d85b1e02c4439597cb04c"
             },
             "version": "1.0.1"
+        },
+        "readable-saves": {
+            "name": "Readable saves",
+            "description": "Unencrypts the save file and adds an additional save format suitable for editing by hand",
+            "license": "MIT",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/dmitmel/crosscode-readable-saves"
+                }
+            ],
+            "archive_link": "https://github.com/dmitmel/crosscode-readable-saves/releases/download/v1.0.0/crosscode-readable-saves_v1.0.0.zip",
+            "hash": {
+                "sha256": "6900f8314a3cd425138d42a057f6da235f41349f19e195a8fa7e9633b0eb1464"
+            },
+            "version": "1.0.0"
         },
         "slowmotion": {
             "name": "slowmotion",
