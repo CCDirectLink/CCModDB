@@ -425,7 +425,7 @@
             "prestart": "prestart.js",
             "plugin": "plugin.js",
             "hidden": true,
-            "version": "2.8.4",
+            "version": "2.8.5",
             "ccmodDependencies": {
                 "ccloader": "^2.11.0",
                 "crosscode": "^1.0.0"
@@ -434,10 +434,10 @@
         "installation": [
             {
                 "type": "modZip",
-                "url": "https://github.com/CCDirectLink/CCLoader/archive/v2.18.2/v2.8.4.zip",
-                "source": "CCLoader-2.18.2-v2.8.4/assets/mods/simplify",
+                "url": "https://github.com/CCDirectLink/CCLoader/archive/v2.18.3/v2.8.5.zip",
+                "source": "CCLoader-2.18.3-v2.8.5/assets/mods/simplify",
                 "hash": {
-                    "sha256": "0409ca296b5824edbabeb301cda611aae2f07eb4ade0fac5aecbfae434e5992d"
+                    "sha256": "fa2db4c62cb1daedca855eff64c108456fa9f937178ddc82ccfdb99016c3f0e1"
                 }
             }
         ]
@@ -491,10 +491,10 @@
         "installation": [
             {
                 "type": "modZip",
-                "url": "https://github.com/CCDirectLink/CCLoader/archive/v2.18.2/v2.8.4.zip",
-                "source": "CCLoader-2.18.2-v2.8.4",
+                "url": "https://github.com/CCDirectLink/CCLoader/archive/v2.18.3/v2.8.5.zip",
+                "source": "CCLoader-2.18.3-v2.8.5",
                 "hash": {
-                    "sha256": "0409ca296b5824edbabeb301cda611aae2f07eb4ade0fac5aecbfae434e5992d"
+                    "sha256": "fa2db4c62cb1daedca855eff64c108456fa9f937178ddc82ccfdb99016c3f0e1"
                 }
             }
         ]
