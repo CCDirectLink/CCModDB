@@ -261,11 +261,11 @@
             "name": "Simplify",
             "description": "A mod. (Description not available; contact mod author and have them add a description to their package.json file)",
             "page": [],
-            "archive_link": "https://github.com/CCDirectLink/CCLoader/archive/v2.18.2/v2.8.4.zip",
+            "archive_link": "https://github.com/CCDirectLink/CCLoader/archive/v2.18.3/v2.8.5.zip",
             "hash": {
-                "sha256": "0409ca296b5824edbabeb301cda611aae2f07eb4ade0fac5aecbfae434e5992d"
+                "sha256": "fa2db4c62cb1daedca855eff64c108456fa9f937178ddc82ccfdb99016c3f0e1"
             },
-            "version": "2.8.4"
+            "version": "2.8.5"
         },
         "blades": {
             "name": "blades",
