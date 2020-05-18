@@ -64,7 +64,7 @@
             "name": "Character Swap",
             "description": "Play as a variety of characters previously unavailable.",
             "page": [],
-            "archive_link": "https://github.com/asmdev/CharSwap/archive/v1.0.0.zip",
+            "archive_link": "https://github.com/prismskey/CharSwap/archive/v1.0.0.zip",
             "hash": {
                 "sha256": "233b8df5071e57d4f6bea6879957e3d43f622e9ef1cd625ad4ec4c509b58220b"
             },
@@ -437,7 +437,7 @@
             ],
             "archive_link": "https://github.com/dmitmel/crosscode-readable-saves/releases/download/v1.0.0/crosscode-readable-saves_v1.0.0.zip",
             "hash": {
-                "sha256": "6900f8314a3cd425138d42a057f6da235f41349f19e195a8fa7e9633b0eb1464"
+                "sha256": "d05d18d8923e7a62c35b6a9be97775b173710372ac5fac8a21507321a4284cfc"
             },
             "version": "1.0.0"
         },
