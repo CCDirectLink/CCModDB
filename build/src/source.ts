@@ -3,13 +3,18 @@ import yauzl from 'yauzl';
 import { download, streamToBuffer } from './download';
 
 export async function get(input: InputLocation): Promise<[PkgMetadata, InputLocation]> {
-	switch (input.type) {
-	case 'modZip':
-		return [await getModZip(input), input];
-	case 'ccmod':
-		return [await getCCMod(input), input];
-	default:
-		throw new Error(`Unknown location type '${input.type}'`);
+	try {
+		switch (input.type) {
+			case 'modZip':
+				return [await getModZip(input), input];
+			case 'ccmod':
+				return [await getCCMod(input), input];
+			default:
+				throw new Error(`Unknown location type '${input.type}'`);
+			}
+	} catch (e) {
+		console.log('Error while extracting', input);
+		throw e;
 	}
 }
 
