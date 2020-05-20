@@ -190,11 +190,11 @@
                     "url": "https://github.com/L-Sherry/Localize-me"
                 }
             ],
-            "archive_link": "https://github.com/L-Sherry/Localize-me/archive/0.5.1.zip",
+            "archive_link": "https://github.com/L-Sherry/Localize-me/archive/v0.5.3.zip",
             "hash": {
-                "sha256": "02f058f2574c233e98e5f450b20683a5133dceef59fba8decf6e04b736f89f02"
+                "sha256": "0981941e3bedba70f6ac06c51172515d6c271605751db5f5f2882cdd8ec2ecbb"
             },
-            "version": "0.5.1"
+            "version": "0.5.3"
         },
         "New game++": {
             "name": "New game++",
