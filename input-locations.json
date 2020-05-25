@@ -87,12 +87,12 @@
 	},
 	{
 		"type": "ccmod",
-		"url": "https://github.com/CCDirectLink/CCJetpack/releases/download/v0.1.1/jetpack.ccmod"
+		"url": "https://github.com/CCDirectLink/CCJetpack/releases/download/v0.2.0/CCJetpack.ccmod"
 	},
 	{
 		"type": "modZip",
-		"urlZip": "https://github.com/CCDirectLink/CCJetpack/archive/v0.1.1.zip",
-		"source": "CCJetpack-0.1.1/jetpack"
+		"urlZip": "https://github.com/CCDirectLink/CCJetpack/archive/v0.2.0.zip",
+		"source": "CCJetpack-0.2.0"
 	},
 	{
 		"type": "modZip",
@@ -201,12 +201,12 @@
 	},
 	{
 		"type": "modZip",
-		"urlZip": "https://github.com/dmitmel/crosscode-ru/releases/download/v1.0.4/enhanced-ui_v0.1.2.zip",
+		"urlZip": "https://github.com/dmitmel/crosscode-ru/releases/download/v1.0.5/enhanced-ui_v0.1.3.zip",
 		"source": "enhanced-ui"
 	},
 	{
 		"type": "modZip",
-		"urlZip": "https://github.com/dmitmel/crosscode-ru/releases/download/v1.0.4/crosscode-ru_v1.0.4.zip",
+		"urlZip": "https://github.com/dmitmel/crosscode-ru/releases/download/v1.0.5/crosscode-ru_v1.0.5.zip",
 		"source": "crosscode-ru"
 	},
 	{
