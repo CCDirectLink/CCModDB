@@ -304,7 +304,7 @@
             ],
             "archive_link": "https://github.com/dmitmel/crosscode-ru/releases/download/v1.0.5/crosscode-ru_v1.0.5.zip",
             "hash": {
-                "sha256": "ca473c1a7372aa707f8e5363c1190f711f8d85d73c7f2e218bc3cb61ca3fcea2"
+                "sha256": "844339a7850b41297b387808f9c994acfe0dbe62500040ca203b3575cad41181"
             },
             "version": "1.0.5"
         },
@@ -320,7 +320,7 @@
             ],
             "archive_link": "https://github.com/dmitmel/crosscode-ru/releases/download/v1.0.5/enhanced-ui_v0.1.3.zip",
             "hash": {
-                "sha256": "5808748926ec19259dfd403cbc43cf9981da75f3a2ad45b7340cf88931ec3913"
+                "sha256": "950f541677aa1c9138beb5f709299d6fe71659f35335464314fa1d93badbec51"
             },
             "version": "0.1.3"
         },
