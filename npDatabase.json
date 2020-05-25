@@ -504,7 +504,7 @@
         "metadata": {
             "private": true,
             "name": "crosscode-ru",
-            "version": "1.0.4",
+            "version": "1.0.5",
             "license": "(MIT AND CC-BY-4.0)",
             "description": "Russian translation for CrossCode",
             "homepage": "https://github.com/dmitmel/crosscode-ru",
@@ -512,7 +512,9 @@
                 "node": ">=11.0.0"
             },
             "module": true,
+            "plugin": "dist/plugin.js",
             "postload": "dist/postload.js",
+            "prestart": "dist/prestart.js",
             "ccmodDependencies": {
                 "crosscode": ">=1.2.0",
                 "Localize Me": "^0.5.2",
@@ -524,7 +526,10 @@
                 "eslint": "^6.8.0",
                 "eslint-config-dmitmel": "dmitmel/eslint-config-dmitmel",
                 "eslint-plugin-node": "^11.0.0",
-                "typescript": "^3.8.3"
+                "eslint-plugin-prettier": "^3.1.3",
+                "prettier": "^2.0.5",
+                "typescript": "~3.8.3",
+                "ultimate-crosscode-typedefs": "dmitmel/ultimate-crosscode-typedefs"
             },
             "scripts": {
                 "build": "tsc --build",
@@ -535,10 +540,10 @@
         "installation": [
             {
                 "type": "modZip",
-                "url": "https://github.com/dmitmel/crosscode-ru/releases/download/v1.0.4/crosscode-ru_v1.0.4.zip",
+                "url": "https://github.com/dmitmel/crosscode-ru/releases/download/v1.0.5/crosscode-ru_v1.0.5.zip",
                 "source": "crosscode-ru",
                 "hash": {
-                    "sha256": "a19e90947470c859695edc5aff72f3880af3afe61dd6a03b3dbd122c00defca7"
+                    "sha256": "ca473c1a7372aa707f8e5363c1190f711f8d85d73c7f2e218bc3cb61ca3fcea2"
                 }
             }
         ]
@@ -548,7 +553,7 @@
             "private": true,
             "name": "enhanced-ui",
             "ccmodHumanName": "Enhanced UI",
-            "version": "0.1.2",
+            "version": "0.1.3",
             "license": "MIT",
             "description": "Various GUI enhancments and fixes",
             "homepage": "https://github.com/dmitmel/crosscode-ru/tree/master/enhanced-ui",
@@ -569,10 +574,10 @@
         "installation": [
             {
                 "type": "modZip",
-                "url": "https://github.com/dmitmel/crosscode-ru/releases/download/v1.0.4/enhanced-ui_v0.1.2.zip",
+                "url": "https://github.com/dmitmel/crosscode-ru/releases/download/v1.0.5/enhanced-ui_v0.1.3.zip",
                 "source": "enhanced-ui",
                 "hash": {
-                    "sha256": "56186263aab57608026dcf734b4c5f3794b2f122c49819e978805efb8f38f216"
+                    "sha256": "5808748926ec19259dfd403cbc43cf9981da75f3a2ad45b7340cf88931ec3913"
                 }
             }
         ]
@@ -640,26 +645,31 @@
     "jetpack": {
         "metadata": {
             "name": "jetpack",
-            "main": "mod.js",
-            "version": "0.1.1",
+            "version": "0.2.0",
             "license": "MIT",
             "homepage": "https://github.com/CCDirectLink/CCJetpack",
-            "description": "Turns your CTRL key into a jetpack."
+            "description": "Turns your CTRL key into a jetpack",
+            "module": true,
+            "prestart": "prestart.js",
+            "main": "poststart.js",
+            "ccmodDependencies": {
+                "crosscode": "^1.1.0"
+            }
         },
         "installation": [
             {
                 "type": "ccmod",
-                "url": "https://github.com/CCDirectLink/CCJetpack/releases/download/v0.1.1/jetpack.ccmod",
+                "url": "https://github.com/CCDirectLink/CCJetpack/releases/download/v0.2.0/CCJetpack.ccmod",
                 "hash": {
-                    "sha256": "653c6a0ce52637c2793534fc247a40e2cbe9daa593da57ee50905ff8a935dfa7"
+                    "sha256": "68932f3747b9cddc473c090d1f30fc1595354e6262cb1074590bf71c27f86fbb"
                 }
             },
             {
                 "type": "modZip",
-                "url": "https://github.com/CCDirectLink/CCJetpack/archive/v0.1.1.zip",
-                "source": "CCJetpack-0.1.1/jetpack",
+                "url": "https://github.com/CCDirectLink/CCJetpack/archive/v0.2.0.zip",
+                "source": "CCJetpack-0.2.0",
                 "hash": {
-                    "sha256": "7ec33de49ea11684e28e7d49e2099571a236ebefb7552ca1b828c7b92a225612"
+                    "sha256": "49841feae2ddf8e42bce5dec6d712e2fb714ac66e8d8b3d8f0b94eaa47674a71"
                 }
             }
         ]
