@@ -30,6 +30,16 @@
             },
             "version": "1.0.1"
         },
+        "CCLoader display version": {
+            "name": "CCLoader display version",
+            "description": "A mod. (Description not available; contact mod author and have them add a description to their package.json file)",
+            "page": [],
+            "archive_link": "https://github.com/CCDirectLink/CCLoader/archive/v2.18.3/v2.8.5.zip",
+            "hash": {
+                "sha256": "fa2db4c62cb1daedca855eff64c108456fa9f937178ddc82ccfdb99016c3f0e1"
+            },
+            "version": "1.1.2"
+        },
         "CCPresetRevival": {
             "name": "CCPresetRevival",
             "description": "This brings back the preset menu, which allows you to start the game at a specific point.",

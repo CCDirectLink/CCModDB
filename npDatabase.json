@@ -68,6 +68,27 @@
             }
         ]
     },
+    "CCLoader display version": {
+        "metadata": {
+            "name": "CCLoader display version",
+            "module": true,
+            "prestart": "prestart.js",
+            "version": "1.1.2",
+            "ccmodDependencies": {
+                "crosscode": "^1.1.0"
+            }
+        },
+        "installation": [
+            {
+                "type": "modZip",
+                "url": "https://github.com/CCDirectLink/CCLoader/archive/v2.18.3/v2.8.5.zip",
+                "source": "CCLoader-2.18.3-v2.8.5/assets/mods/ccloader-version-display",
+                "hash": {
+                    "sha256": "fa2db4c62cb1daedca855eff64c108456fa9f937178ddc82ccfdb99016c3f0e1"
+                }
+            }
+        ]
+    },
     "CCPresetRevival": {
         "metadata": {
             "name": "CCPresetRevival",
