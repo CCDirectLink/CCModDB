@@ -81,10 +81,10 @@
         "installation": [
             {
                 "type": "modZip",
-                "url": "https://github.com/CCDirectLink/CCLoader/archive/v2.18.3/v2.8.5.zip",
-                "source": "CCLoader-2.18.3-v2.8.5/assets/mods/ccloader-version-display",
+                "url": "https://github.com/CCDirectLink/CCLoader/archive/v2.18.5/v2.8.5.zip",
+                "source": "CCLoader-2.18.5-v2.8.5/assets/mods/ccloader-version-display",
                 "hash": {
-                    "sha256": "fa2db4c62cb1daedca855eff64c108456fa9f937178ddc82ccfdb99016c3f0e1"
+                    "sha256": "ff8faf572f723924570ef72a5a762a7aa58bee3b066da47eaaac185328591ac7"
                 }
             }
         ]
@@ -455,10 +455,10 @@
         "installation": [
             {
                 "type": "modZip",
-                "url": "https://github.com/CCDirectLink/CCLoader/archive/v2.18.3/v2.8.5.zip",
-                "source": "CCLoader-2.18.3-v2.8.5/assets/mods/simplify",
+                "url": "https://github.com/CCDirectLink/CCLoader/archive/v2.18.5/v2.8.5.zip",
+                "source": "CCLoader-2.18.5-v2.8.5/assets/mods/simplify",
                 "hash": {
-                    "sha256": "fa2db4c62cb1daedca855eff64c108456fa9f937178ddc82ccfdb99016c3f0e1"
+                    "sha256": "ff8faf572f723924570ef72a5a762a7aa58bee3b066da47eaaac185328591ac7"
                 }
             }
         ]
@@ -508,15 +508,15 @@
             "ccmodHumanName": "CCLoader",
             "ccmodType": "base",
             "description": "Modloader for CrossCode. This or a similar modloader is needed for most mods.",
-            "version": "2.18.2"
+            "version": "2.18.5"
         },
         "installation": [
             {
                 "type": "modZip",
-                "url": "https://github.com/CCDirectLink/CCLoader/archive/v2.18.3/v2.8.5.zip",
-                "source": "CCLoader-2.18.3-v2.8.5",
+                "url": "https://github.com/CCDirectLink/CCLoader/archive/v2.18.5/v2.8.5.zip",
+                "source": "CCLoader-2.18.5-v2.8.5",
                 "hash": {
-                    "sha256": "fa2db4c62cb1daedca855eff64c108456fa9f937178ddc82ccfdb99016c3f0e1"
+                    "sha256": "ff8faf572f723924570ef72a5a762a7aa58bee3b066da47eaaac185328591ac7"
                 }
             }
         ]
