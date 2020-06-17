@@ -34,9 +34,9 @@
             "name": "CCLoader display version",
             "description": "A mod. (Description not available; contact mod author and have them add a description to their package.json file)",
             "page": [],
-            "archive_link": "https://github.com/CCDirectLink/CCLoader/archive/v2.18.3/v2.8.5.zip",
+            "archive_link": "https://github.com/CCDirectLink/CCLoader/archive/v2.18.5/v2.8.5.zip",
             "hash": {
-                "sha256": "fa2db4c62cb1daedca855eff64c108456fa9f937178ddc82ccfdb99016c3f0e1"
+                "sha256": "ff8faf572f723924570ef72a5a762a7aa58bee3b066da47eaaac185328591ac7"
             },
             "version": "1.1.2"
         },
@@ -271,9 +271,9 @@
             "name": "Simplify",
             "description": "A mod. (Description not available; contact mod author and have them add a description to their package.json file)",
             "page": [],
-            "archive_link": "https://github.com/CCDirectLink/CCLoader/archive/v2.18.3/v2.8.5.zip",
+            "archive_link": "https://github.com/CCDirectLink/CCLoader/archive/v2.18.5/v2.8.5.zip",
             "hash": {
-                "sha256": "fa2db4c62cb1daedca855eff64c108456fa9f937178ddc82ccfdb99016c3f0e1"
+                "sha256": "ff8faf572f723924570ef72a5a762a7aa58bee3b066da47eaaac185328591ac7"
             },
             "version": "2.8.5"
         },
