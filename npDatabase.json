@@ -322,15 +322,15 @@
             "homepage": "https://github.com/L-Sherry/Localize-me",
             "description": "Add support for more locales, languages and translations",
             "postload": "mod.js",
-            "version": "0.5.3"
+            "version": "0.6.0"
         },
         "installation": [
             {
                 "type": "modZip",
-                "url": "https://github.com/L-Sherry/Localize-me/archive/v0.5.3.zip",
-                "source": "Localize-me-0.5.3",
+                "url": "https://github.com/L-Sherry/Localize-me/archive/v0.6.0.zip",
+                "source": "Localize-me-0.6.0",
                 "hash": {
-                    "sha256": "0981941e3bedba70f6ac06c51172515d6c271605751db5f5f2882cdd8ec2ecbb"
+                    "sha256": "98da8afe115cb453331ba96a70711bf22453703a921d1578b239aff14084702b"
                 }
             }
         ]
