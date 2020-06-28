@@ -244,9 +244,10 @@
             "description": "CrossCode en français !",
             "homepage": "https://github.com/L-Sherry/French-CC",
             "postload": "mod.js",
+            "module": true,
             "version": "0.8.0",
             "ccmodDependencies": {
-                "Localize Me": ">=0.4 <1"
+                "Localize Me": ">=0.5 <1"
             }
         },
         "installation": [
@@ -322,6 +323,7 @@
             "homepage": "https://github.com/L-Sherry/Localize-me",
             "description": "Add support for more locales, languages and translations",
             "postload": "mod.js",
+            "module": true,
             "version": "0.6.0"
         },
         "installation": [
