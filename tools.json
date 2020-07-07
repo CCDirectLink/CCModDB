@@ -36,6 +36,15 @@
             "archive_link" : "https://github.com/gregnk/CCAnimationEditor/releases/download/v0.2.2/CCAnimationEditor-v0.2.2.zip",
             "hash" : { "sha256" : "bae01beaeb13f8ff25dee275f0e6cc6db428e6096a8976ef38ab2a3b83b80ae6" },
             "version" : "0.2.2"
+        },
+        "crosscode-map-editor" : {
+            "name" : "CrossCode Map Editor",
+            "description" : "A Map Editor for CrossCode.",
+            "licence" : "MIT",
+            "page" : [{ "name" : "GitHub", "url" : "https://github.com/CCDirectLink/crosscode-map-editor" }],
+            "archive_link" : "https://github.com/CCDirectLink/crosscode-map-editor/releases/download/v0.7.0/cc-map-editor-0.7.0-win.exe",
+            "hash" : { "sha256" : "9fd98ecfbdbf500ba4ec5288e7b5052d20ce0e13b5ebf1c3a371396aa69b721b" },
+            "version" : "0.7.0"
         }
     }
 }
