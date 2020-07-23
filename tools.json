@@ -33,9 +33,9 @@
             "description" : "Animation editor for CrossCode.",
             "licence" : "ISC",
             "page" : [{ "name" : "GitHub", "url" : "https://github.com/gregnk/ccanimationeditor" }],
-            "archive_link" : "https://github.com/gregnk/CCAnimationEditor/releases/download/v0.2.2/CCAnimationEditor-v0.2.2.zip",
-            "hash" : { "sha256" : "bae01beaeb13f8ff25dee275f0e6cc6db428e6096a8976ef38ab2a3b83b80ae6" },
-            "version" : "0.2.2"
+            "archive_link" : "https://github.com/gregnk/CCAnimationEditor/releases/download/v0.2.7/CCAnimationEditor-v0.2.7.zip",
+            "hash" : { "sha256" : "3cb01c6427c31bb78db5d7b076a8a0b9d058345fdb6a23771c38f83afcbb6bbd" },
+            "version" : "0.2.7"
         },
         "crosscode-map-editor" : {
             "name" : "CrossCode Map Editor",
