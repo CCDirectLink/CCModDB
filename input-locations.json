@@ -40,8 +40,8 @@
 	},
 	{
 		"type": "modZip",
-		"urlZip": "https://github.com/CCDirectLink/hardcoded-config-injector/archive/1647cdf09f9f9b4743a534c8c72ecb52641964fa.zip",
-		"source": "hardcoded-config-injector-1647cdf09f9f9b4743a534c8c72ecb52641964fa"
+		"urlZip": "https://github.com/CCDirectLink/hardcoded-config-injector/archive/v0.1.1.zip",
+		"source": "hardcoded-config-injector-0.1.1"
 	},
 	{
 		"type": "ccmod",
@@ -64,12 +64,12 @@
 	},
 	{
 		"type": "ccmod",
-		"url": "https://github.com/CCDirectLink/CCTimeWalker/releases/download/v0.2.1/timewalker.ccmod"
+		"url": "https://github.com/CCDirectLink/CCTimeWalker/releases/download/v0.3.0/CCTimeWalker.ccmod"
 	},
 	{
 		"type": "modZip",
-		"urlZip": "https://github.com/CCDirectLink/CCTimeWalker/archive/v0.2.1.zip",
-		"source": "CCTimeWalker-0.2.1/timewalker"
+		"urlZip": "https://github.com/CCDirectLink/CCTimeWalker/archive/v0.3.0.zip",
+		"source": "CCTimeWalker-0.3.0"
 	},
 	{
 		"type": "modZip",
@@ -182,7 +182,7 @@
 	},
 	{
 		"type": "modZip",
-		"urlZip": "https://github.com/Swanderrr/CCleasitstitle/raw/master/archive/titlescreenlea.zip",
+		"urlZip": "https://github.com/Swanderrr/CCleasitstitle/raw/faba8504ef285f73cb3774e2118987ba74329c87/archive/titlescreenlea.zip",
 		"source": ""
 	},
 	{
