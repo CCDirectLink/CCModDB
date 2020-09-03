@@ -169,7 +169,7 @@
             "name": "Lea sits on the Title",
             "description": "Replaces default Lea's pose on the title screen.",
             "page": [],
-            "archive_link": "https://github.com/Swanderrr/CCleasitstitle/raw/master/archive/titlescreenlea.zip",
+            "archive_link": "https://github.com/Swanderrr/CCleasitstitle/raw/faba8504ef285f73cb3774e2118987ba74329c87/archive/titlescreenlea.zip",
             "hash": {
                 "sha256": "077f24e1c8d44d86e1cb05197d7831f167bdae79c3077d820c09bbe748dba068"
             },
@@ -348,11 +348,11 @@
             "name": "hardcoded-config-injector",
             "description": "A mod. (Description not available; contact mod author and have them add a description to their package.json file)",
             "page": [],
-            "archive_link": "https://github.com/CCDirectLink/hardcoded-config-injector/archive/1647cdf09f9f9b4743a534c8c72ecb52641964fa.zip",
+            "archive_link": "https://github.com/CCDirectLink/hardcoded-config-injector/archive/v0.1.1.zip",
             "hash": {
-                "sha256": "d3f3045c0b1bc3967ac32478d9f8fd574e48d40d5ae9e2e5d3fa9737c24eca1e"
+                "sha256": "7376094f6fa1d8c077a918017405134c88d681bef0f8ce570b169af76b9a803f"
             },
-            "version": "0.1.0"
+            "version": "0.1.1"
         },
         "item-api": {
             "name": "item-api",
@@ -507,11 +507,11 @@
                     "url": "https://github.com/CCDirectLink/CCTimeWalker"
                 }
             ],
-            "archive_link": "https://github.com/CCDirectLink/CCTimeWalker/releases/download/v0.2.1/timewalker.ccmod",
+            "archive_link": "https://github.com/CCDirectLink/CCTimeWalker/releases/download/v0.3.0/CCTimeWalker.ccmod",
             "hash": {
-                "sha256": "1056fc0b17b79ebfe420bd3c54819a108d5e5eb033167f08f90dc17cdf022bd1"
+                "sha256": "61da7efea85cdcd39c5bb297cea54dd57b2cccdb0dcb48d807c0eb7b66eaffbf"
             },
-            "version": "0.2.1"
+            "version": "0.3.0"
         }
     }
 }

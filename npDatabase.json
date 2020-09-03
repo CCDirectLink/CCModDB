@@ -289,7 +289,7 @@
         "installation": [
             {
                 "type": "modZip",
-                "url": "https://github.com/Swanderrr/CCleasitstitle/raw/master/archive/titlescreenlea.zip",
+                "url": "https://github.com/Swanderrr/CCleasitstitle/raw/faba8504ef285f73cb3774e2118987ba74329c87/archive/titlescreenlea.zip",
                 "source": "",
                 "hash": {
                     "sha256": "077f24e1c8d44d86e1cb05197d7831f167bdae79c3077d820c09bbe748dba068"
@@ -627,17 +627,17 @@
     "hardcoded-config-injector": {
         "metadata": {
             "name": "hardcoded-config-injector",
-            "version": "0.1.0",
+            "version": "0.1.1",
             "plugin": "plugin.js",
             "ccmodDependencies": {}
         },
         "installation": [
             {
                 "type": "modZip",
-                "url": "https://github.com/CCDirectLink/hardcoded-config-injector/archive/1647cdf09f9f9b4743a534c8c72ecb52641964fa.zip",
-                "source": "hardcoded-config-injector-1647cdf09f9f9b4743a534c8c72ecb52641964fa",
+                "url": "https://github.com/CCDirectLink/hardcoded-config-injector/archive/v0.1.1.zip",
+                "source": "hardcoded-config-injector-0.1.1",
                 "hash": {
-                    "sha256": "d3f3045c0b1bc3967ac32478d9f8fd574e48d40d5ae9e2e5d3fa9737c24eca1e"
+                    "sha256": "7376094f6fa1d8c077a918017405134c88d681bef0f8ce570b169af76b9a803f"
                 }
             }
         ]
@@ -893,28 +893,26 @@
             "license": "MIT",
             "homepage": "https://github.com/CCDirectLink/CCTimeWalker",
             "description": "Lets you control time.",
-            "main": "mod.js",
-            "module": true,
-            "version": "0.2.1",
+            "plugin": "walker.js",
+            "version": "0.3.0",
             "ccmodDependencies": {
-                "Simplify": "^2.0.0",
                 "crosscode": "^1.1.0"
             }
         },
         "installation": [
             {
                 "type": "ccmod",
-                "url": "https://github.com/CCDirectLink/CCTimeWalker/releases/download/v0.2.1/timewalker.ccmod",
+                "url": "https://github.com/CCDirectLink/CCTimeWalker/releases/download/v0.3.0/CCTimeWalker.ccmod",
                 "hash": {
-                    "sha256": "1056fc0b17b79ebfe420bd3c54819a108d5e5eb033167f08f90dc17cdf022bd1"
+                    "sha256": "61da7efea85cdcd39c5bb297cea54dd57b2cccdb0dcb48d807c0eb7b66eaffbf"
                 }
             },
             {
                 "type": "modZip",
-                "url": "https://github.com/CCDirectLink/CCTimeWalker/archive/v0.2.1.zip",
-                "source": "CCTimeWalker-0.2.1/timewalker",
+                "url": "https://github.com/CCDirectLink/CCTimeWalker/archive/v0.3.0.zip",
+                "source": "CCTimeWalker-0.3.0",
                 "hash": {
-                    "sha256": "837399583b65d452e9c3bf1924db2429e56f4ab71442d4d20d3b3ca265ca94e7"
+                    "sha256": "a7e80ba0478803b52b26ec3d8ba7041fa3396b8aba049e11c2511ac9ed0d0fc0"
                 }
             }
         ]
