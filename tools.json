@@ -42,9 +42,9 @@
             "description" : "A Map Editor for CrossCode.",
             "licence" : "MIT",
             "page" : [{ "name" : "GitHub", "url" : "https://github.com/CCDirectLink/crosscode-map-editor" }],
-            "archive_link" : "https://github.com/CCDirectLink/crosscode-map-editor/releases/download/v0.7.0/cc-map-editor-0.7.0-win.exe",
-            "hash" : { "sha256" : "9fd98ecfbdbf500ba4ec5288e7b5052d20ce0e13b5ebf1c3a371396aa69b721b" },
-            "version" : "0.7.0"
+            "archive_link" : "https://github.com/CCDirectLink/crosscode-map-editor/releases/download/v0.8.0/cc-map-editor-0.8.0-win.exe",
+            "hash" : { "sha256" : "52a85d244cfcd3428b03835422cc74882254b6a66700540650a252a832665106" },
+            "version" : "0.8.0"
         }
     }
 }
