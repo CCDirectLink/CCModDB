@@ -362,7 +362,7 @@
             "name": "New game++",
             "module": true,
             "plugin": "plugin.js",
-            "version": "1.1.0",
+            "version": "1.1.1",
             "homepage": "https://github.com/CCDirectLink/CCNewGamePP",
             "description": "A small collection of addons to CrossCode's NG+.",
             "ccmodDependencies": {
@@ -373,17 +373,17 @@
         "installation": [
             {
                 "type": "ccmod",
-                "url": "https://github.com/CCDirectLink/CCNewGamePP/releases/download/v1.1.0/CCNewGamePP.ccmod",
+                "url": "https://github.com/CCDirectLink/CCNewGamePP/releases/download/v1.1.1/CCNewGamePP.ccmod",
                 "hash": {
-                    "sha256": "3bfc2ba50bc0dd05966878b380a5ac69f23fdf42f189b15d51fe3cca910e0878"
+                    "sha256": "44942ca4ff4afb37c3ef34d14d298d47eaa7f1a5a4c37b702dfc6bcf66481c48"
                 }
             },
             {
                 "type": "modZip",
-                "url": "https://github.com/CCDirectLink/CCNewGamePP/archive/v1.1.0.zip",
-                "source": "CCNewGamePP-1.1.0",
+                "url": "https://github.com/CCDirectLink/CCNewGamePP/archive/v1.1.1.zip",
+                "source": "CCNewGamePP-1.1.1",
                 "hash": {
-                    "sha256": "5044a397834bf993d63ef0f7c0b534c12bfddaab41a7f849924e3c45140fe6ee"
+                    "sha256": "557cba156d3a38e750082cc73d5c0ff507d06eb10f15451554f9d8d117e48d79"
                 }
             }
         ]
