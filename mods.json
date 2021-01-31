@@ -154,11 +154,11 @@
                     "url": "https://github.com/L-Sherry/French-CC"
                 }
             ],
-            "archive_link": "https://github.com/L-Sherry/French-CC/archive/v0.9.0.zip",
+            "archive_link": "https://github.com/L-Sherry/French-CC/archive/v0.10.0.zip",
             "hash": {
-                "sha256": "a0299c17bf1a91e07aed691f437f3b1c4bb6b05f3c7e3ad3fe8af1c1c62fab25"
+                "sha256": "ea0c2f3f9cd4f3ad7fa4288f44223591056d72015003a87e2e691f5fd9559b61"
             },
-            "version": "0.9.0"
+            "version": "0.10.0"
         },
         "Kit Player": {
             "name": "Kit Player",

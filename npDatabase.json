@@ -265,7 +265,7 @@
             "homepage": "https://github.com/L-Sherry/French-CC",
             "postload": "mod.js",
             "module": true,
-            "version": "0.9.0",
+            "version": "0.10.0",
             "ccmodDependencies": {
                 "Localize Me": ">=0.5 <1"
             }
@@ -273,10 +273,10 @@
         "installation": [
             {
                 "type": "modZip",
-                "url": "https://github.com/L-Sherry/French-CC/archive/v0.9.0.zip",
-                "source": "French-CC-0.9.0",
+                "url": "https://github.com/L-Sherry/French-CC/archive/v0.10.0.zip",
+                "source": "French-CC-0.10.0",
                 "hash": {
-                    "sha256": "a0299c17bf1a91e07aed691f437f3b1c4bb6b05f3c7e3ad3fe8af1c1c62fab25"
+                    "sha256": "ea0c2f3f9cd4f3ad7fa4288f44223591056d72015003a87e2e691f5fd9559b61"
                 }
             }
         ]
