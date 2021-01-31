@@ -35,7 +35,7 @@ export function streamToBuffer(readable: stream.Readable): Promise<Buffer> {
 
 async function follow(url: string): Promise<[http.IncomingMessage, string]> {
 	let result = await head(url);
-	while (result.statusCode === 302) {
+	while (result.statusCode === 302 || result.statusCode === 301) {
 		url = result.headers.location!;
 		result.destroy();
 		result = await head(url);
