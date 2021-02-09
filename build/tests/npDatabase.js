@@ -149,6 +149,9 @@ function testInstallation(mod) {
 			case 'modZip':
 				await testModZip(inst);
 				break;
+			case 'ccmod':
+				await testCCMod(inst);
+				break;
 			}
 		}).timeout(10000);
 	}
@@ -178,6 +181,32 @@ async function testModZip(modzip) {
 			.to.equal(hash, 'hash must match');
 	}
 }
+
+async function testCCMod(ccmod) {
+	expect(typeof ccmod.hash === 'object',
+		'modzip.hash (type: object) must be an object')
+		.to.be.true;
+	expect(Array.isArray(ccmod.hash),
+		'modzip.hash (type: object) must be an object')
+		.to.be.false;
+	expect(ccmod.hash !== null,
+		'modzip.hash (type: object) must be an object')
+		.to.be.true;
+	expect(typeof ccmod.hash.sha256 === 'string',
+		'modzip.hash.sha256 (type: string) must be a string').to.be.true;
+
+	expect(typeof ccmod.url === 'string',
+		'modzip.url (type: string) must be a string').to.be.true;
+	expect(ccmod.source,
+		'modzip.source (type: undefined) must not exist').to.be.undefined;
+
+	if (ccmod.url) {
+		const hash = await getHash(ccmod.url);
+		expect(ccmod.hash.sha256.toLowerCase())
+			.to.equal(hash, 'hash must match');
+	}
+}
+
 
 async function getHash(url) {
 	const file = await download(url);
