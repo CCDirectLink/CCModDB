@@ -1,0 +1,17 @@
+name: CI
+on: [push, pull_request, workflow_dispatch]
+
+jobs:
+  check_database:
+    name: Check database
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v1
+      with:
+        node-version: 15.x
+    - working-directory: build/
+      run: npm ci
+    - working-directory: build/
+      run: npm test
