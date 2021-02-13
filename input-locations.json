@@ -136,18 +136,13 @@
 	},
 	{
 		"type": "modZip",
-		"urlZip": "https://github.com/CCDirectLink/item-api/archive/v0.3.0.zip",
-		"source": "item-api-0.3.0"
+		"urlZip": "https://github.com/CCDirectLink/item-api/archive/v0.4.0.zip",
+		"source": "item-api-0.4.0"
 	},
 	{
 		"type": "modZip",
 		"urlZip": "https://github.com/CCDirectLink/menu-api/archive/v0.1.1.zip",
 		"source": "menu-api-0.1.1"
-	},
-	{
-		"type": "modZip",
-		"urlZip": "https://github.com/CCDirectLink/templating-api/archive/v0.1.1.zip",
-		"source": "templating-api-0.1.1"
 	},
 	{
 		"type": "modZip",
