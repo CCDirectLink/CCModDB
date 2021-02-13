@@ -1,4 +1,4 @@
-[![Json test (build)](https://travis-ci.com/CCDirectLink/CCModDB.svg?branch=master)](https://travis-ci.com/CCDirectLink/CCModDB)
+[![CI Status](https://github.com/CCDirectLink/CCModDB/workflows/CI/badge.svg)](https://github.com/CCDirectLink/CCModDB/actions?query=workflow:CI)
 [![Discord Server](https://img.shields.io/discord/382339402338402315.svg?label=Discord%20Server)](https://discord.gg/TFs6n5v)
 # CCModDB
 Mod database for CrossCode.
