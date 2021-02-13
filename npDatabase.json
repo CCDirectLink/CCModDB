@@ -667,10 +667,7 @@
             "name": "item-api",
             "description": "Allows custom items to be prepared in such a way that they 'just work'.",
             "homepage": "https://gitlab.com/20kdc/ccprestartapi",
-            "version": "0.3.0",
-            "ccmodDependencies": {
-                "templating-api": "^0.*"
-            },
+            "version": "0.4.0",
             "postload": "postload.js",
             "prestart": "prestart.js",
             "module": true
@@ -678,10 +675,10 @@
         "installation": [
             {
                 "type": "modZip",
-                "url": "https://github.com/CCDirectLink/item-api/archive/v0.3.0.zip",
-                "source": "item-api-0.3.0",
+                "url": "https://github.com/CCDirectLink/item-api/archive/v0.4.0.zip",
+                "source": "item-api-0.4.0",
                 "hash": {
-                    "sha256": "ec05891593aff7cb504171c243357bb883f50e09f6d8224ef36aff9cb93a7f91"
+                    "sha256": "6d3e599c6bf6421a0ab9b847aab8154fc9a36d5756ee69bcd315eb9e078be30a"
                 }
             }
         ]
@@ -859,26 +856,6 @@
                 "source": "CCSlowmotion-0.1.1/slowmotion",
                 "hash": {
                     "sha256": "95ffe20f8f611cd7a18b5b8f77c0437b60101badb11aefcd64597ef3b7ecdc6a"
-                }
-            }
-        ]
-    },
-    "templating-api": {
-        "metadata": {
-            "name": "templating-api",
-            "description": "Get your JSON templating additions here.",
-            "homepage": "https://gitlab.com/20kdc/ccprestartapi",
-            "version": "0.1.1",
-            "prestart": "prestart.js",
-            "module": true
-        },
-        "installation": [
-            {
-                "type": "modZip",
-                "url": "https://github.com/CCDirectLink/templating-api/archive/v0.1.1.zip",
-                "source": "templating-api-0.1.1",
-                "hash": {
-                    "sha256": "7e0d08afae2e4b85c8b4ae1ab2f43b5f0d1004be374965eb5125b7d11cf59aeb"
                 }
             }
         ]
