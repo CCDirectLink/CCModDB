@@ -493,6 +493,34 @@
             }
         ]
     },
+    "Uncapped Stats": {
+        "metadata": {
+            "name": "Uncapped Stats",
+            "version": "1.0.0",
+            "description": "Removes the visual stat caps - see your stats for what they really are!",
+            "homepage": "https://github.com/EL20202/cc-uncapped-stats",
+            "module": true,
+            "prestart": "prestart.js",
+            "ccmodDependencies": {}
+        },
+        "installation": [
+            {
+                "type": "ccmod",
+                "url": "https://github.com/EL20202/cc-uncapped-stats/releases/download/v1.0.0/cc-uncapped-stats.ccmod",
+                "hash": {
+                    "sha256": "257e74afc15af10a723bf3f36ac6ec3e3da08b24d233b85be2bca1f7301742bf"
+                }
+            },
+            {
+                "type": "modZip",
+                "url": "https://github.com/EL20202/cc-uncapped-stats/archive/v1.0.0.zip",
+                "source": "cc-uncapped-stats-1.0.0",
+                "hash": {
+                    "sha256": "a3715a39d2a0886348b161391a2449435d594d172dab32f2934fedc4976783f0"
+                }
+            }
+        ]
+    },
     "blades": {
         "metadata": {
             "name": "blades",

@@ -287,6 +287,21 @@
             },
             "version": "2.9.0"
         },
+        "Uncapped Stats": {
+            "name": "Uncapped Stats",
+            "description": "Removes the visual stat caps - see your stats for what they really are!",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/EL20202/cc-uncapped-stats"
+                }
+            ],
+            "archive_link": "https://github.com/EL20202/cc-uncapped-stats/releases/download/v1.0.0/cc-uncapped-stats.ccmod",
+            "hash": {
+                "sha256": "257e74afc15af10a723bf3f36ac6ec3e3da08b24d233b85be2bca1f7301742bf"
+            },
+            "version": "1.0.0"
+        },
         "blades": {
             "name": "blades",
             "description": "Asset which replaces balls with blades, now for all classes!",
