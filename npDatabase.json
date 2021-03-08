@@ -200,6 +200,32 @@
             }
         ]
     },
+    "CrossCode C Edition": {
+        "metadata": {
+            "name": "CrossCode C Edition",
+            "module": false,
+            "version": "1.0.0",
+            "homepage": "",
+            "description": "The worst mod to ever be created."
+        },
+        "installation": [
+            {
+                "type": "ccmod",
+                "url": "https://github.com/EL20202/cc-c-edition/releases/download/1.0.0/crosscode-c-edition.ccmod",
+                "hash": {
+                    "sha256": "b2a4339cb9bef28d7c3d53c790ee1707a888a42b5dcd891c0b4dc79a6c89d851"
+                }
+            },
+            {
+                "type": "modZip",
+                "url": "https://github.com/EL20202/cc-c-edition/archive/1.0.0.zip",
+                "source": "cc-c-edition-1.0.0",
+                "hash": {
+                    "sha256": "2298c9f159fec87963442e5fd8b6f983353a78acc2cb42128989cc98f9a21e63"
+                }
+            }
+        ]
+    },
     "Discord": {
         "metadata": {
             "name": "Discord",
@@ -489,6 +515,34 @@
                 "source": "CCLoader-2.19.0-v2.9.0/assets/mods/simplify",
                 "hash": {
                     "sha256": "d02811a12703634fa0cc1b6da7168a02b0f237c7137233124ab2112f6055db8d"
+                }
+            }
+        ]
+    },
+    "Uncapped Stats": {
+        "metadata": {
+            "name": "Uncapped Stats",
+            "version": "1.0.0",
+            "description": "Removes the visual stat caps - see your stats for what they really are!",
+            "homepage": "https://github.com/EL20202/cc-uncapped-stats",
+            "module": true,
+            "prestart": "prestart.js",
+            "ccmodDependencies": {}
+        },
+        "installation": [
+            {
+                "type": "ccmod",
+                "url": "https://github.com/EL20202/cc-uncapped-stats/releases/download/v1.0.0/cc-uncapped-stats.ccmod",
+                "hash": {
+                    "sha256": "257e74afc15af10a723bf3f36ac6ec3e3da08b24d233b85be2bca1f7301742bf"
+                }
+            },
+            {
+                "type": "modZip",
+                "url": "https://github.com/EL20202/cc-uncapped-stats/archive/v1.0.0.zip",
+                "source": "cc-uncapped-stats-1.0.0",
+                "hash": {
+                    "sha256": "a3715a39d2a0886348b161391a2449435d594d172dab32f2934fedc4976783f0"
                 }
             }
         ]

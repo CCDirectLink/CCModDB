@@ -105,6 +105,16 @@
             },
             "version": "1.3.5"
         },
+        "CrossCode C Edition": {
+            "name": "CrossCode C Edition",
+            "description": "The worst mod to ever be created.",
+            "page": [],
+            "archive_link": "https://github.com/EL20202/cc-c-edition/releases/download/1.0.0/crosscode-c-edition.ccmod",
+            "hash": {
+                "sha256": "b2a4339cb9bef28d7c3d53c790ee1707a888a42b5dcd891c0b4dc79a6c89d851"
+            },
+            "version": "1.0.0"
+        },
         "Discord": {
             "name": "Rich Presence for Discord",
             "description": "Show off your CrossCode skills in Discord",
@@ -286,6 +296,21 @@
                 "sha256": "d02811a12703634fa0cc1b6da7168a02b0f237c7137233124ab2112f6055db8d"
             },
             "version": "2.9.0"
+        },
+        "Uncapped Stats": {
+            "name": "Uncapped Stats",
+            "description": "Removes the visual stat caps - see your stats for what they really are!",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/EL20202/cc-uncapped-stats"
+                }
+            ],
+            "archive_link": "https://github.com/EL20202/cc-uncapped-stats/releases/download/v1.0.0/cc-uncapped-stats.ccmod",
+            "hash": {
+                "sha256": "257e74afc15af10a723bf3f36ac6ec3e3da08b24d233b85be2bca1f7301742bf"
+            },
+            "version": "1.0.0"
         },
         "blades": {
             "name": "blades",
