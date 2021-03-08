@@ -200,6 +200,32 @@
             }
         ]
     },
+    "CrossCode C Edition": {
+        "metadata": {
+            "name": "CrossCode C Edition",
+            "module": false,
+            "version": "1.0.0",
+            "homepage": "",
+            "description": "The worst mod to ever be created."
+        },
+        "installation": [
+            {
+                "type": "ccmod",
+                "url": "https://github.com/EL20202/cc-c-edition/releases/download/1.0.0/crosscode-c-edition.ccmod",
+                "hash": {
+                    "sha256": "b2a4339cb9bef28d7c3d53c790ee1707a888a42b5dcd891c0b4dc79a6c89d851"
+                }
+            },
+            {
+                "type": "modZip",
+                "url": "https://github.com/EL20202/cc-c-edition/archive/1.0.0.zip",
+                "source": "cc-c-edition-1.0.0",
+                "hash": {
+                    "sha256": "2298c9f159fec87963442e5fd8b6f983353a78acc2cb42128989cc98f9a21e63"
+                }
+            }
+        ]
+    },
     "Discord": {
         "metadata": {
             "name": "Discord",

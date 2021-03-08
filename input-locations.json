@@ -18,6 +18,15 @@
 		"source": "cc-uncapped-stats-1.0.0"
 	},
 	{
+		"type": "ccmod",
+		"url": "https://github.com/EL20202/cc-c-edition/releases/download/1.0.0/crosscode-c-edition.ccmod"
+	},
+	{
+		"type": "modZip",
+		"urlZip": "https://github.com/EL20202/cc-c-edition/archive/1.0.0.zip",
+		"source": "cc-c-edition-1.0.0"
+	},
+	{
 		"type": "modZip",
 		"urlZip": "https://github.com/CCDirectLink/CC-ChargedBalls/archive/1.0.0.zip",
 		"source": "CC-ChargedBalls-1.0.0"

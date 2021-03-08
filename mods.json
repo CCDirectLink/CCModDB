@@ -105,6 +105,16 @@
             },
             "version": "1.3.5"
         },
+        "CrossCode C Edition": {
+            "name": "CrossCode C Edition",
+            "description": "The worst mod to ever be created.",
+            "page": [],
+            "archive_link": "https://github.com/EL20202/cc-c-edition/releases/download/1.0.0/crosscode-c-edition.ccmod",
+            "hash": {
+                "sha256": "b2a4339cb9bef28d7c3d53c790ee1707a888a42b5dcd891c0b4dc79a6c89d851"
+            },
+            "version": "1.0.0"
+        },
         "Discord": {
             "name": "Rich Presence for Discord",
             "description": "Show off your CrossCode skills in Discord",
