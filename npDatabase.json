@@ -522,7 +522,7 @@
     "Uncapped Stats": {
         "metadata": {
             "name": "Uncapped Stats",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "description": "Removes the visual stat caps - see your stats for what they really are!",
             "homepage": "https://github.com/EL20202/cc-uncapped-stats",
             "module": true,
@@ -532,17 +532,17 @@
         "installation": [
             {
                 "type": "ccmod",
-                "url": "https://github.com/EL20202/cc-uncapped-stats/releases/download/v1.0.0/cc-uncapped-stats.ccmod",
+                "url": "https://github.com/EL20202/cc-uncapped-stats/releases/download/v1.0.1/cc-uncapped-stats.ccmod",
                 "hash": {
-                    "sha256": "257e74afc15af10a723bf3f36ac6ec3e3da08b24d233b85be2bca1f7301742bf"
+                    "sha256": "5e2153d4944f7184b65bb778c05a8be48771e3c1d548093fb441c26b8706c109"
                 }
             },
             {
                 "type": "modZip",
-                "url": "https://github.com/EL20202/cc-uncapped-stats/archive/v1.0.0.zip",
-                "source": "cc-uncapped-stats-1.0.0",
+                "url": "https://github.com/EL20202/cc-uncapped-stats/archive/v1.0.1.zip",
+                "source": "cc-uncapped-stats-1.0.1",
                 "hash": {
-                    "sha256": "a3715a39d2a0886348b161391a2449435d594d172dab32f2934fedc4976783f0"
+                    "sha256": "bf5d36cb8e5c45e768eecc48b8ffd82858e3f9c781de9d0f9816ee5db98a9486"
                 }
             }
         ]
