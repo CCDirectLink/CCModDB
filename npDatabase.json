@@ -566,26 +566,6 @@
             }
         ]
     },
-    "cc-world-map-overhaul": {
-        "metadata": {
-            "name": "cc-world-map-overhaul",
-            "ccmodHumanName": "World map overhaul",
-            "description": "A better world map",
-            "homepage": "https://github.com/dmitmel/cc-world-map-overhaul",
-            "version": "1.0.1",
-            "prestart": "prestart.js"
-        },
-        "installation": [
-            {
-                "type": "modZip",
-                "url": "https://github.com/dmitmel/cc-world-map-overhaul/releases/download/v1.0.1/cc-world-map-overhaul_v1.0.1.zip",
-                "source": "cc-world-map-overhaul",
-                "hash": {
-                    "sha256": "830689aa2ac17ddf4589f8454be2cf6adb9bd14f419baa473f9d7b19b0ebda5e"
-                }
-            }
-        ]
-    },
     "ccloader": {
         "metadata": {
             "name": "ccloader",
@@ -889,6 +869,26 @@
                 "source": "CCTimeWalker-0.3.0",
                 "hash": {
                     "sha256": "a7e80ba0478803b52b26ec3d8ba7041fa3396b8aba049e11c2511ac9ed0d0fc0"
+                }
+            }
+        ]
+    },
+    "world-map-overhaul": {
+        "metadata": {
+            "name": "world-map-overhaul",
+            "ccmodHumanName": "World map overhaul",
+            "description": "A better world map",
+            "homepage": "https://github.com/dmitmel/cc-world-map-overhaul",
+            "version": "1.1.0",
+            "prestart": "prestart.js"
+        },
+        "installation": [
+            {
+                "type": "modZip",
+                "url": "https://github.com/dmitmel/cc-world-map-overhaul/releases/download/v1.1.0/cc-world-map-overhaul_v1.1.0.zip",
+                "source": "cc-world-map-overhaul",
+                "hash": {
+                    "sha256": "541311fa59d3f9c1d1950446464711ae8b383bc40b98af6e2b3289a642335c07"
                 }
             }
         ]

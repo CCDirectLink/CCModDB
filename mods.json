@@ -322,21 +322,6 @@
             },
             "version": "1.5.0"
         },
-        "cc-world-map-overhaul": {
-            "name": "World map overhaul",
-            "description": "A better world map",
-            "page": [
-                {
-                    "name": "GitHub",
-                    "url": "https://github.com/dmitmel/cc-world-map-overhaul"
-                }
-            ],
-            "archive_link": "https://github.com/dmitmel/cc-world-map-overhaul/releases/download/v1.0.1/cc-world-map-overhaul_v1.0.1.zip",
-            "hash": {
-                "sha256": "830689aa2ac17ddf4589f8454be2cf6adb9bd14f419baa473f9d7b19b0ebda5e"
-            },
-            "version": "1.0.1"
-        },
         "extendable-severed-heads": {
             "name": "extendable-severed-heads",
             "description": "A mod. (Description not available; contact mod author and have them add a description to their package.json file)",
@@ -500,6 +485,21 @@
                 "sha256": "61da7efea85cdcd39c5bb297cea54dd57b2cccdb0dcb48d807c0eb7b66eaffbf"
             },
             "version": "0.3.0"
+        },
+        "world-map-overhaul": {
+            "name": "World map overhaul",
+            "description": "A better world map",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/dmitmel/cc-world-map-overhaul"
+                }
+            ],
+            "archive_link": "https://github.com/dmitmel/cc-world-map-overhaul/releases/download/v1.1.0/cc-world-map-overhaul_v1.1.0.zip",
+            "hash": {
+                "sha256": "541311fa59d3f9c1d1950446464711ae8b383bc40b98af6e2b3289a642335c07"
+            },
+            "version": "1.1.0"
         }
     }
 }
