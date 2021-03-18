@@ -337,22 +337,6 @@
             },
             "version": "1.0.1"
         },
-        "crosscode-ru": {
-            "name": "crosscode-ru",
-            "description": "Russian translation for CrossCode",
-            "license": "(MIT AND CC-BY-4.0)",
-            "page": [
-                {
-                    "name": "GitHub",
-                    "url": "https://github.com/dmitmel/crosscode-ru"
-                }
-            ],
-            "archive_link": "https://github.com/CCDirectLink/crosscode-ru/releases/download/v1.0.5/crosscode-ru_v1.0.5.zip",
-            "hash": {
-                "sha256": "801447c85df76cf1e981e9f3f805c095568b20834e17476d580452472216d064"
-            },
-            "version": "1.0.5"
-        },
         "extendable-severed-heads": {
             "name": "extendable-severed-heads",
             "description": "A mod. (Description not available; contact mod author and have them add a description to their package.json file)",

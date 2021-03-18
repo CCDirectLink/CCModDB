@@ -223,11 +223,6 @@
 	},
 	{
 		"type": "modZip",
-		"urlZip": "https://github.com/CCDirectLink/crosscode-ru/releases/download/v1.0.5/crosscode-ru_v1.0.5.zip",
-		"source": "crosscode-ru"
-	},
-	{
-		"type": "modZip",
 		"urlZip": "https://github.com/dmitmel/crosscode-readable-saves/releases/download/v1.0.0/crosscode-readable-saves_v1.0.0.zip",
 		"source": "crosscode-readable-saves"
 	},
