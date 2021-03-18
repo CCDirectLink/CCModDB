@@ -81,10 +81,10 @@
         "installation": [
             {
                 "type": "modZip",
-                "url": "https://github.com/CCDirectLink/CCLoader/archive/v2.19.0/v2.9.0.zip",
-                "source": "CCLoader-2.19.0-v2.9.0/assets/mods/ccloader-version-display",
+                "url": "https://github.com/CCDirectLink/CCLoader/archive/v2.20.0/v2.10.0.zip",
+                "source": "CCLoader-2.20.0-v2.10.0/assets/mods/ccloader-version-display",
                 "hash": {
-                    "sha256": "d02811a12703634fa0cc1b6da7168a02b0f237c7137233124ab2112f6055db8d"
+                    "sha256": "090cec72d8e55b9be48b445da53afe41df071f47dc23fcba26b5a852cb1bc600"
                 }
             }
         ]
@@ -502,7 +502,7 @@
             "prestart": "prestart.js",
             "plugin": "plugin.js",
             "hidden": true,
-            "version": "2.9.0",
+            "version": "2.10.0",
             "ccmodDependencies": {
                 "ccloader": "^2.11.0",
                 "crosscode": "^1.0.0"
@@ -511,10 +511,10 @@
         "installation": [
             {
                 "type": "modZip",
-                "url": "https://github.com/CCDirectLink/CCLoader/archive/v2.19.0/v2.9.0.zip",
-                "source": "CCLoader-2.19.0-v2.9.0/assets/mods/simplify",
+                "url": "https://github.com/CCDirectLink/CCLoader/archive/v2.20.0/v2.10.0.zip",
+                "source": "CCLoader-2.20.0-v2.10.0/assets/mods/simplify",
                 "hash": {
-                    "sha256": "d02811a12703634fa0cc1b6da7168a02b0f237c7137233124ab2112f6055db8d"
+                    "sha256": "090cec72d8e55b9be48b445da53afe41df071f47dc23fcba26b5a852cb1bc600"
                 }
             }
         ]
@@ -592,15 +592,15 @@
             "ccmodHumanName": "CCLoader",
             "ccmodType": "base",
             "description": "Modloader for CrossCode. This or a similar modloader is needed for most mods.",
-            "version": "2.19.0"
+            "version": "2.20.0"
         },
         "installation": [
             {
                 "type": "modZip",
-                "url": "https://github.com/CCDirectLink/CCLoader/archive/v2.19.0/v2.9.0.zip",
-                "source": "CCLoader-2.19.0-v2.9.0",
+                "url": "https://github.com/CCDirectLink/CCLoader/archive/v2.20.0/v2.10.0.zip",
+                "source": "CCLoader-2.20.0-v2.10.0",
                 "hash": {
-                    "sha256": "d02811a12703634fa0cc1b6da7168a02b0f237c7137233124ab2112f6055db8d"
+                    "sha256": "090cec72d8e55b9be48b445da53afe41df071f47dc23fcba26b5a852cb1bc600"
                 }
             }
         ]
