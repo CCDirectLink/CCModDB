@@ -342,6 +342,16 @@
             },
             "version": "0.1.1"
         },
+        "inventory-search": {
+            "name": "Inventory Search",
+            "description": "A mod. (Description not available; contact mod author and have them add a description to their package.json file)",
+            "page": [],
+            "archive_link": "https://github.com/Naxane/CCInventorySearch/releases/download/v1.0.0/CCInventorySearch-v1.0.0.ccmod",
+            "hash": {
+                "sha256": "e10175e606f5b032ad0a28ee29318af4362e3e1a54f63765f04f148508565ffa"
+            },
+            "version": "0.0.1"
+        },
         "item-api": {
             "name": "item-api",
             "description": "Allows custom items to be prepared in such a way that they 'just work'.",
