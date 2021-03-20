@@ -621,6 +621,35 @@
             }
         ]
     },
+    "inventory-search": {
+        "metadata": {
+            "name": "inventory-search",
+            "ccmodHumanName": "Inventory Search",
+            "version": "0.0.1",
+            "prestart": "prestart.js",
+            "module": true,
+            "ccmodDependencies": {
+                "crosscode": "^1.1.0 || 1.0.2"
+            }
+        },
+        "installation": [
+            {
+                "type": "ccmod",
+                "url": "https://github.com/Naxane/CCInventorySearch/releases/download/v1.0.0/CCInventorySearch-v1.0.0.ccmod",
+                "hash": {
+                    "sha256": "e10175e606f5b032ad0a28ee29318af4362e3e1a54f63765f04f148508565ffa"
+                }
+            },
+            {
+                "type": "modZip",
+                "url": "https://github.com/Naxane/CCInventorySearch/archive/refs/tags/v1.0.0.zip",
+                "source": "CCInventorySearch-1.0.0/src",
+                "hash": {
+                    "sha256": "3f85018e3a1c1126841946fe758e1024f7665446c563f2ec9ba8179769238a4d"
+                }
+            }
+        ]
+    },
     "item-api": {
         "metadata": {
             "name": "item-api",

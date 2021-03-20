@@ -233,12 +233,12 @@
 	},
 	{
 		"type": "ccmod",
-		"urlZip": "https://github.com/Naxane/CCInventorySearch/releases/download/v1.0.0/CCInventorySearch-v1.0.0.ccmod"
+		"url": "https://github.com/Naxane/CCInventorySearch/releases/download/v1.0.0/CCInventorySearch-v1.0.0.ccmod"
 	},
 	{
 		"type": "modZip",
 		"urlZip": "https://github.com/Naxane/CCInventorySearch/archive/refs/tags/v1.0.0.zip",
-		"source": "CCInventoryMod-1.0.0"
+		"source": "CCInventorySearch-1.0.0/src"
 	}
 ]
 
