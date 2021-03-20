@@ -230,6 +230,15 @@
 		"type": "modZip",
 		"urlZip": "https://github.com/ubergeek77/CCExtraGamepadOptions/archive/1.0.0.zip",
 		"source": "CCExtraGamepadOptions-1.0.0"
+	},
+	{
+		"type": "ccmod",
+		"urlZip": "https://github.com/Naxane/CCInventorySearch/releases/download/v1.0.0/CCInventorySearch-v1.0.0.ccmod",
+	},
+	{
+		"type": "modZip,
+		"urlZip": "https://github.com/Naxane/CCInventorySearch/archive/refs/tags/v1.0.0.zip"
+		"source": "CCInventoryMod-1.0.0"
 	}
 ]
 
