@@ -306,11 +306,11 @@
                     "url": "https://github.com/EL20202/cc-uncapped-stats"
                 }
             ],
-            "archive_link": "https://github.com/EL20202/cc-uncapped-stats/releases/download/v1.0.1/cc-uncapped-stats.ccmod",
+            "archive_link": "https://github.com/EL20202/cc-uncapped-stats/releases/download/v1.1.1/cc-uncapped-stats-v1.1.1.ccmod",
             "hash": {
-                "sha256": "5e2153d4944f7184b65bb778c05a8be48771e3c1d548093fb441c26b8706c109"
+                "sha256": "4084245193fe5b6f43842afcc8db02b78ea6f12472a345b17a339c4c59e48fc8"
             },
-            "version": "1.0.1"
+            "version": "1.1.1"
         },
         "blades": {
             "name": "blades",
@@ -343,14 +343,14 @@
             "version": "0.1.1"
         },
         "inventory-search": {
-            "name": "Inventory Search",
+            "name": "CCInventorySearch",
             "description": "A mod. (Description not available; contact mod author and have them add a description to their package.json file)",
             "page": [],
             "archive_link": "https://github.com/Naxane/CCInventorySearch/releases/download/v1.0.0/CCInventorySearch-v1.0.0.ccmod",
             "hash": {
-                "sha256": "e10175e606f5b032ad0a28ee29318af4362e3e1a54f63765f04f148508565ffa"
+                "sha256": "dcf0a845510295be071290ac535da497c599779472c5f22fbf6e17251b428de3"
             },
-            "version": "0.0.1"
+            "version": "1.0.0"
         },
         "item-api": {
             "name": "item-api",

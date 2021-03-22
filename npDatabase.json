@@ -522,27 +522,29 @@
     "Uncapped Stats": {
         "metadata": {
             "name": "Uncapped Stats",
-            "version": "1.0.1",
+            "version": "1.1.1",
             "description": "Removes the visual stat caps - see your stats for what they really are!",
             "homepage": "https://github.com/EL20202/cc-uncapped-stats",
             "module": true,
             "prestart": "prestart.js",
-            "ccmodDependencies": {}
+            "ccmodDependencies": {
+                "ccloader": "^2.20.0"
+            }
         },
         "installation": [
             {
                 "type": "ccmod",
-                "url": "https://github.com/EL20202/cc-uncapped-stats/releases/download/v1.0.1/cc-uncapped-stats.ccmod",
+                "url": "https://github.com/EL20202/cc-uncapped-stats/releases/download/v1.1.1/cc-uncapped-stats-v1.1.1.ccmod",
                 "hash": {
-                    "sha256": "5e2153d4944f7184b65bb778c05a8be48771e3c1d548093fb441c26b8706c109"
+                    "sha256": "4084245193fe5b6f43842afcc8db02b78ea6f12472a345b17a339c4c59e48fc8"
                 }
             },
             {
                 "type": "modZip",
-                "url": "https://github.com/EL20202/cc-uncapped-stats/archive/v1.0.1.zip",
-                "source": "cc-uncapped-stats-1.0.1",
+                "url": "https://github.com/EL20202/cc-uncapped-stats/archive/refs/tags/v1.1.1.zip",
+                "source": "cc-uncapped-stats-1.1.1",
                 "hash": {
-                    "sha256": "bf5d36cb8e5c45e768eecc48b8ffd82858e3f9c781de9d0f9816ee5db98a9486"
+                    "sha256": "f71786c48ba246993fd0cd924155a7d09be5fe7020c97482ec285ea7dbe5b1b9"
                 }
             }
         ]
@@ -624,8 +626,8 @@
     "inventory-search": {
         "metadata": {
             "name": "inventory-search",
-            "ccmodHumanName": "Inventory Search",
-            "version": "0.0.1",
+            "ccmodHumanName": "CCInventorySearch",
+            "version": "1.0.0",
             "prestart": "prestart.js",
             "module": true,
             "ccmodDependencies": {
@@ -637,7 +639,7 @@
                 "type": "ccmod",
                 "url": "https://github.com/Naxane/CCInventorySearch/releases/download/v1.0.0/CCInventorySearch-v1.0.0.ccmod",
                 "hash": {
-                    "sha256": "e10175e606f5b032ad0a28ee29318af4362e3e1a54f63765f04f148508565ffa"
+                    "sha256": "dcf0a845510295be071290ac535da497c599779472c5f22fbf6e17251b428de3"
                 }
             },
             {
