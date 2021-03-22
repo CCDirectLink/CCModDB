@@ -10,12 +10,12 @@
 	},
 	{
 		"type": "ccmod",
-		"url": "https://github.com/EL20202/cc-uncapped-stats/releases/download/v1.0.1/cc-uncapped-stats.ccmod"
+		"url": "https://github.com/EL20202/cc-uncapped-stats/releases/download/v1.1.1/cc-uncapped-stats-v1.1.1.ccmod"
 	},
 	{
 		"type": "modZip",
-		"urlZip": "https://github.com/EL20202/cc-uncapped-stats/archive/v1.0.1.zip",
-		"source": "cc-uncapped-stats-1.0.1"
+		"urlZip": "https://github.com/EL20202/cc-uncapped-stats/archive/refs/tags/v1.1.1.zip",
+		"source": "cc-uncapped-stats-1.1.1"
 	},
 	{
 		"type": "ccmod",
