@@ -99,11 +99,11 @@
                     "url": "https://github.com/ZeikJT/CrossCodeCheats"
                 }
             ],
-            "archive_link": "https://github.com/ZeikJT/CrossCodeCheats/archive/1.3.5.zip",
+            "archive_link": "https://github.com/ZeikJT/CrossCodeCheats/archive/1.3.7.zip",
             "hash": {
-                "sha256": "70ca5b50c04478e85cc5fe84860a3f702d1a9498e4060b58f30363ad68aa4005"
+                "sha256": "1d69e191cafa68cc6c5cd76b98a78580f9b5fa7c1a44c8555f21c67154c4c846"
             },
-            "version": "1.3.5"
+            "version": "1.3.7"
         },
         "CrossCode C Edition": {
             "name": "CrossCode C Edition",
