@@ -53,12 +53,12 @@
 	},
 	{
 		"type": "ccmod",
-		"url": "https://github.com/CCDirectLink/CCPresetRevival/releases/download/1.1.0/CCPresetRevival.ccmod"
+		"url": "https://github.com/CCDirectLink/CCPresetRevival/releases/download/1.1.1/CCPresetRevival.ccmod"
 	},
 	{
 		"type": "modZip",
-		"urlZip": "https://github.com/CCDirectLink/CCPresetRevival/archive/1.1.0.zip",
-		"source": "CCPresetRevival-1.1.0"
+		"urlZip": "https://github.com/CCDirectLink/CCPresetRevival/archive/1.1.1.zip",
+		"source": "CCPresetRevival-1.1.1"
 	},
 	{
 		"type": "modZip",
