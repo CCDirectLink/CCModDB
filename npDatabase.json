@@ -93,7 +93,7 @@
         "metadata": {
             "name": "CCPresetRevival",
             "ccmodHumanName": "Preset revival",
-            "version": "1.1.0",
+            "version": "1.1.1",
             "plugin": "plugin.js",
             "homepage": "https://github.com/CCDirectLink/CCPresetRevival",
             "description": "This brings back the preset menu, which allows you to start the game at a specific point."
@@ -101,17 +101,17 @@
         "installation": [
             {
                 "type": "ccmod",
-                "url": "https://github.com/CCDirectLink/CCPresetRevival/releases/download/1.1.0/CCPresetRevival.ccmod",
+                "url": "https://github.com/CCDirectLink/CCPresetRevival/releases/download/1.1.1/CCPresetRevival.ccmod",
                 "hash": {
-                    "sha256": "3ccdabfb67ac475d6985ee74a2f98ac8940248581e8571f20b2cefdfdded8dda"
+                    "sha256": "1fd93226df2d6e78700556d1d4f75899997563883fd28839595a05696fb2888d"
                 }
             },
             {
                 "type": "modZip",
-                "url": "https://github.com/CCDirectLink/CCPresetRevival/archive/1.1.0.zip",
-                "source": "CCPresetRevival-1.1.0",
+                "url": "https://github.com/CCDirectLink/CCPresetRevival/archive/1.1.1.zip",
+                "source": "CCPresetRevival-1.1.1",
                 "hash": {
-                    "sha256": "daa03688f3a26e80b14b3e4732333ecef7b806af2d12e599411202ca56ca417b"
+                    "sha256": "d9dc3e5d2fbe116d180b7f88c93e9535798db09964b93c8adcaa0935c2d55ad2"
                 }
             }
         ]

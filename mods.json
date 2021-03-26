@@ -49,11 +49,11 @@
                     "url": "https://github.com/CCDirectLink/CCPresetRevival"
                 }
             ],
-            "archive_link": "https://github.com/CCDirectLink/CCPresetRevival/releases/download/1.1.0/CCPresetRevival.ccmod",
+            "archive_link": "https://github.com/CCDirectLink/CCPresetRevival/releases/download/1.1.1/CCPresetRevival.ccmod",
             "hash": {
-                "sha256": "3ccdabfb67ac475d6985ee74a2f98ac8940248581e8571f20b2cefdfdded8dda"
+                "sha256": "1fd93226df2d6e78700556d1d4f75899997563883fd28839595a05696fb2888d"
             },
-            "version": "1.1.0"
+            "version": "1.1.1"
         },
         "CCRandomEvents": {
             "name": "CCRandomEvents",
