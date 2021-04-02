@@ -135,6 +135,34 @@
             }
         ]
     },
+    "Capped Stats": {
+        "metadata": {
+            "name": "Capped Stats",
+            "version": "1.0.0",
+            "description": "big numbers are very scary. :( low numbers are not scary! :)",
+            "homepage": "https://github.com/EL20202/cc-uncapped-stats",
+            "module": true,
+            "prestart": "prestart.js",
+            "ccmodDependencies": {}
+        },
+        "installation": [
+            {
+                "type": "ccmod",
+                "url": "https://github.com/EL20202/cc-capped-stats/releases/download/v1.0.0/cc-capped-stats.ccmod",
+                "hash": {
+                    "sha256": "34c11a440d7af0857728619e17c7143102cec55a1e16b3dd5c3c16935b8965c2"
+                }
+            },
+            {
+                "type": "modZip",
+                "url": "https://github.com/EL20202/cc-capped-stats/archive/refs/tags/v1.0.0.zip",
+                "source": "cc-capped-stats-1.0.0",
+                "hash": {
+                    "sha256": "2d8876bae0fa566ad35b4f4d5db5c2b5d1a69c55b38e27aa337c2b0b666c20c1"
+                }
+            }
+        ]
+    },
     "Character Swap": {
         "metadata": {
             "name": "Character Swap",

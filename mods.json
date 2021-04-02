@@ -70,6 +70,21 @@
             },
             "version": "0.0.8"
         },
+        "Capped Stats": {
+            "name": "Capped Stats",
+            "description": "big numbers are very scary. :( low numbers are not scary! :)",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/EL20202/cc-uncapped-stats"
+                }
+            ],
+            "archive_link": "https://github.com/EL20202/cc-capped-stats/releases/download/v1.0.0/cc-capped-stats.ccmod",
+            "hash": {
+                "sha256": "34c11a440d7af0857728619e17c7143102cec55a1e16b3dd5c3c16935b8965c2"
+            },
+            "version": "1.0.0"
+        },
         "Character Swap": {
             "name": "Character Swap",
             "description": "Play as a variety of characters previously unavailable.",

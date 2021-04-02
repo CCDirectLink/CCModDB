@@ -248,6 +248,15 @@
 	{
 		"type": "ccmod",
 		"url": "https://github.com/EL20202/cc-dlc-arena-music-fix/releases/download/v1.0.0/cc-dlc-arena-music-fix.v1.0.0.ccmod"
+	},
+	{
+		"type": "ccmod",
+		"url": "https://github.com/EL20202/cc-capped-stats/releases/download/v1.0.0/cc-capped-stats.ccmod"
+	},
+	{
+		"type": "modZip",
+		"urlZip": "https://github.com/EL20202/cc-capped-stats/archive/refs/tags/v1.0.0.zip",
+		"source": "cc-capped-stats-1.0.0"
 	}
 ]
 
