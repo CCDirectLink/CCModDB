@@ -971,11 +971,18 @@
         },
         "installation": [
             {
+                "type": "ccmod",
+                "url": "https://github.com/dmitmel/cc-world-map-overhaul/releases/download/v1.1.1/world-map-overhaul_v1.1.1.ccmod",
+                "hash": {
+                    "sha256": "b1067a44df0956450cb5948e804ba9c9a80eb621abb0b2e66bbf55e466405f97"
+                }
+            },
+            {
                 "type": "modZip",
                 "url": "https://github.com/dmitmel/cc-world-map-overhaul/releases/download/v1.1.1/world-map-overhaul_v1.1.1.zip",
                 "source": "world-map-overhaul",
                 "hash": {
-                    "sha256": "ec28c6469579f6638652c91a32b3564cf7d5b4ee77f8512deba6ac71a292eba8"
+                    "sha256": "5fc05512a8db6b185807bd26df63029a8ee932dc500554b9c9ec2b84e90d0d55"
                 }
             }
         ]
