@@ -51,8 +51,8 @@
             "description" : "A CrossCode modding tool that allows you to graphically edit areas.",
             "licence" : "MIT",
             "page" : [{ "name" : "GitHub", "url" : "https://github.com/WatDuhHekBro/CCAreaEditor" }],
-            "archive_link" : "https://github.com/WatDuhHekBro/CCAreaEditor/archive/refs/tags/FMR.zip",
-            "hash" : { "sha256" : "88dc33cf2bc42e253bcce68832e673b0d71e80f895482271894c4407b19834a7" },
+            "archive_link" : "https://github.com/WatDuhHekBro/CCAreaEditor/releases/download/v1.0.6/CCAE-v1.0.6.zip",
+            "hash" : { "sha256" : "17dbd9266edd451c252de5bf778efde9a1eb6d4e80c8d9c528407030ab2a859c" },
             "version" : "1.0.6"
         }
     }
