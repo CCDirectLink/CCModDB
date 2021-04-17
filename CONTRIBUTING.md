@@ -43,7 +43,7 @@ And an example `ccmod` entry would be:
 ```json
 	{
 		"type": "ccmod",
-		"urlZip": "https://github.com/keanuplayz/LeaTriblader/releases/download/1.0.0/LeaTriblader.ccmod"
+		"url": "https://github.com/keanuplayz/LeaTriblader/releases/download/1.0.0/LeaTriblader.ccmod"
 	}
 ```
 
