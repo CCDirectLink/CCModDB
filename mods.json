@@ -526,6 +526,21 @@
             },
             "version": "0.3.0"
         },
+        "uwuifier": {
+            "name": "uwuifier",
+            "description": "Dynamically uwuifies text.",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/WatDuhHekBro/cc-uwuifier"
+                }
+            ],
+            "archive_link": "https://github.com/WatDuhHekBro/cc-uwuifier/releases/download/v1.0.0/uwuifier.ccmod",
+            "hash": {
+                "sha256": "a42ba4e80be65bfdab9ab94533d4ac3a62652aaae4b6a6663b5afd275ee9f988"
+            },
+            "version": "1.0.0"
+        },
         "world-map-overhaul": {
             "name": "World map overhaul",
             "description": "A better world map",

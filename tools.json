@@ -45,6 +45,15 @@
             "archive_link" : "https://github.com/CCDirectLink/crosscode-map-editor/releases/download/v0.8.0/cc-map-editor-0.8.0-win.exe",
             "hash" : { "sha256" : "52a85d244cfcd3428b03835422cc74882254b6a66700540650a252a832665106" },
             "version" : "0.8.0"
+        },
+        "CCAreaEditor" : {
+            "name" : "CCAreaEditor",
+            "description" : "A CrossCode modding tool that allows you to graphically edit areas.",
+            "licence" : "MIT",
+            "page" : [{ "name" : "GitHub", "url" : "https://github.com/WatDuhHekBro/CCAreaEditor" }],
+            "archive_link" : "https://github.com/WatDuhHekBro/CCAreaEditor/archive/refs/tags/FMR.zip",
+            "hash" : { "sha256" : "88dc33cf2bc42e253bcce68832e673b0d71e80f895482271894c4407b19834a7" },
+            "version" : "1.0.6"
         }
     }
 }
