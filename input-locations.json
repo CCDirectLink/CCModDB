@@ -183,19 +183,19 @@
 	},
 	{
 		"type": "modZip",
-		"urlZip": "https://github.com/CCDirectLink/CCLoader/archive/v2.20.0/v2.10.0.zip",
-		"source": "CCLoader-2.20.0-v2.10.0",
-		"packageJSONPath": "CCLoader-2.20.0-v2.10.0/ccloader/package.json"
+		"urlZip": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.20.1/v2.10.1.zip",
+		"source": "CCLoader-2.20.1-v2.10.1",
+		"packageJSONPath": "CCLoader-2.20.1-v2.10.1/ccloader/package.json"
 	},
 	{
 		"type": "modZip",
-		"urlZip": "https://github.com/CCDirectLink/CCLoader/archive/v2.20.0/v2.10.0.zip",
-		"source": "CCLoader-2.20.0-v2.10.0/assets/mods/simplify"
+		"urlZip": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.20.1/v2.10.1.zip",
+		"source": "CCLoader-2.20.1-v2.10.1/assets/mods/simplify"
 	},
 	{
 		"type": "modZip",
-		"urlZip": "https://github.com/CCDirectLink/CCLoader/archive/v2.20.0/v2.10.0.zip",
-		"source": "CCLoader-2.20.0-v2.10.0/assets/mods/ccloader-version-display"
+		"urlZip": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.20.1/v2.10.1.zip",
+		"source": "CCLoader-2.20.1-v2.10.1/assets/mods/ccloader-version-display"
 	},
 	{
 		"type": "modZip",
