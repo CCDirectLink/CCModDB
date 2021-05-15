@@ -34,9 +34,9 @@
             "name": "CCLoader display version",
             "description": "A mod. (Description not available; contact mod author and have them add a description to their package.json file)",
             "page": [],
-            "archive_link": "https://github.com/CCDirectLink/CCLoader/archive/v2.20.0/v2.10.0.zip",
+            "archive_link": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.20.1/v2.10.1.zip",
             "hash": {
-                "sha256": "090cec72d8e55b9be48b445da53afe41df071f47dc23fcba26b5a852cb1bc600"
+                "sha256": "bc252f7ce90bef500d8996574edcb0f5b466ef755aab66d90d5ea79e149bd488"
             },
             "version": "1.1.3"
         },
@@ -321,11 +321,11 @@
             "name": "Simplify",
             "description": "A mod. (Description not available; contact mod author and have them add a description to their package.json file)",
             "page": [],
-            "archive_link": "https://github.com/CCDirectLink/CCLoader/archive/v2.20.0/v2.10.0.zip",
+            "archive_link": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.20.1/v2.10.1.zip",
             "hash": {
-                "sha256": "090cec72d8e55b9be48b445da53afe41df071f47dc23fcba26b5a852cb1bc600"
+                "sha256": "bc252f7ce90bef500d8996574edcb0f5b466ef755aab66d90d5ea79e149bd488"
             },
-            "version": "2.10.0"
+            "version": "2.10.1"
         },
         "Uncapped Stats": {
             "name": "Uncapped Stats",
