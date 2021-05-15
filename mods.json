@@ -177,13 +177,13 @@
         },
         "Extra Gamepad Options": {
             "name": "Extra Gamepad Options",
-            "description": "Adds a Nintendo Switch icon theme (with 3 color schemes), and allows for the swapping of A/B, X/Y, L/R, and LT/RT.",
+            "description": "Allows buttons/triggers to be swapped, and adds extra icon themes.",
             "page": [],
-            "archive_link": "https://github.com/ubergeek77/CCExtraGamepadOptions/archive/1.0.0.zip",
+            "archive_link": "https://github.com/ubergeek77/CCExtraGamepadOptions/archive/1.0.2.zip",
             "hash": {
-                "sha256": "b8814cebf4f3e5b89accf3d32e0d9915bb109a4a5a1e3aca4147ade088f08c69"
+                "sha256": "5df1571d3d1e991f2fbabab73d56d99bd185a659c66d44603b9cd3d504b7a8ac"
             },
-            "version": "1.0.0"
+            "version": "1.0.2"
         },
         "French": {
             "name": "French",
