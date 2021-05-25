@@ -479,6 +479,22 @@
             },
             "version": "1.0.0"
         },
+        "render-hitboxes": {
+            "name": "Render hitboxes",
+            "description": "Renders hitboxes as red wireframes",
+            "license": "CC0-1.0",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/dmitmel/crosscode-render-hitboxes"
+                }
+            ],
+            "archive_link": "https://github.com/dmitmel/crosscode-render-hitboxes/archive/refs/tags/v1.0.0.zip",
+            "hash": {
+                "sha256": "868b6d78e86e4edffd10df742a16d6d20971dbf4d66b38f1149c97b404e1a826"
+            },
+            "version": "1.0.0"
+        },
         "slowmotion": {
             "name": "slowmotion",
             "description": "Turns your C key into a slowmotion controller.",
@@ -494,6 +510,22 @@
                 "sha256": "4f06f16fb6f42991e1ad7792bb6a3cdc61b38937939ca9ea9780528a76f6f2ee"
             },
             "version": "0.1.1"
+        },
+        "teleport-anywhere": {
+            "name": "Teleport Anywhere!",
+            "description": "Teleport to any map/room in an area or a dungeon simply by clicking it in the map menu",
+            "license": "CC0-1.0",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/dmitmel/crosscode-teleport-anywhere"
+                }
+            ],
+            "archive_link": "https://github.com/dmitmel/crosscode-teleport-anywhere/archive/refs/tags/v1.0.0.zip",
+            "hash": {
+                "sha256": "6f509d9560006e4fc593de0371e3f309e83b82c210cd1fed6ca8fb526c85bdf5"
+            },
+            "version": "1.0.0"
         },
         "timer": {
             "name": "timer",
