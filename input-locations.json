@@ -265,6 +265,16 @@
 	{
 		"type": "ccmod",
 		"url": "https://github.com/WatDuhHekBro/cc-uwuifier/releases/download/v1.0.1/uwuifier.ccmod"
+	},
+	{
+		"type": "modZip",
+		"urlZip": "https://github.com/dmitmel/crosscode-teleport-anywhere/archive/refs/tags/v1.0.0.zip",
+		"source": "crosscode-teleport-anywhere-1.0.0"
+	},
+	{
+		"type": "modZip",
+		"urlZip": "https://github.com/dmitmel/crosscode-render-hitboxes/archive/refs/tags/v1.0.0.zip",
+		"source": "crosscode-render-hitboxes-1.0.0"
 	}
 ]
 
