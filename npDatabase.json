@@ -643,6 +643,46 @@
             }
         ]
     },
+    "crosscode-tweak-pack": {
+        "metadata": {
+            "name": "crosscode-tweak-pack",
+            "version": "1.0.0",
+            "ccmodHumanName": "dmitmel's tweak pack",
+            "description": "Micro-mods by dmitmel in a single 999-in-1 package, ranging from QoL tweaks to cheats.",
+            "license": "CC0-1.0",
+            "homepage": "https://github.com/dmitmel/crosscode-tweak-pack",
+            "module": true,
+            "plugin": "src/_plugin.js",
+            "prestart": "src/_prestart.js",
+            "assets": [
+                "data/lang/sc/gui.en_US.json.patch",
+                "data/lang/sc/gui.ru_RU.json.patch"
+            ],
+            "scripts": {
+                "lint": "eslint . --ext .js,.ts --ignore-path .gitignore",
+                "check-fmt": "prettier --check '**/*.{js,ts,json,css,scss,html,md}' --ignore-path .gitignore"
+            },
+            "devDependencies": {
+                "eslint": "^7.29.0",
+                "eslint-config-dmitmel": "dmitmel/eslint-config-dmitmel",
+                "eslint-config-prettier": "^8.3.0",
+                "eslint-plugin-node": "^11.1.0",
+                "eslint-plugin-prettier": "^3.4.0",
+                "prettier": "^2.3.1",
+                "ultimate-crosscode-typedefs": "dmitmel/ultimate-crosscode-typedefs"
+            }
+        },
+        "installation": [
+            {
+                "type": "modZip",
+                "url": "https://github.com/dmitmel/crosscode-tweak-pack/releases/download/v1.0.0/crosscode-tweak-pack_v1.0.0.zip",
+                "source": "crosscode-tweak-pack",
+                "hash": {
+                    "sha256": "5dfcb174688f3aefa579492f750ae6b09ebf27e0ed023af8fa5ea4e8b68a9952"
+                }
+            }
+        ]
+    },
     "extendable-severed-heads": {
         "metadata": {
             "name": "extendable-severed-heads",
@@ -879,28 +919,6 @@
             }
         ]
     },
-    "render-hitboxes": {
-        "metadata": {
-            "name": "render-hitboxes",
-            "version": "1.0.0",
-            "ccmodHumanName": "Render hitboxes",
-            "description": "Renders hitboxes as red wireframes",
-            "homepage": "https://github.com/dmitmel/crosscode-render-hitboxes",
-            "license": "CC0-1.0",
-            "module": true,
-            "prestart": "prestart.js"
-        },
-        "installation": [
-            {
-                "type": "modZip",
-                "url": "https://github.com/dmitmel/crosscode-render-hitboxes/archive/refs/tags/v1.0.0.zip",
-                "source": "crosscode-render-hitboxes-1.0.0",
-                "hash": {
-                    "sha256": "868b6d78e86e4edffd10df742a16d6d20971dbf4d66b38f1149c97b404e1a826"
-                }
-            }
-        ]
-    },
     "slowmotion": {
         "metadata": {
             "name": "slowmotion",
@@ -924,32 +942,6 @@
                 "source": "CCSlowmotion-0.1.1/slowmotion",
                 "hash": {
                     "sha256": "95ffe20f8f611cd7a18b5b8f77c0437b60101badb11aefcd64597ef3b7ecdc6a"
-                }
-            }
-        ]
-    },
-    "teleport-anywhere": {
-        "metadata": {
-            "name": "teleport-anywhere",
-            "version": "1.0.0",
-            "ccmodHumanName": "Teleport Anywhere!",
-            "description": "Teleport to any map/room in an area or a dungeon simply by clicking it in the map menu",
-            "license": "CC0-1.0",
-            "homepage": "https://github.com/dmitmel/crosscode-teleport-anywhere",
-            "module": true,
-            "prestart": "prestart.js",
-            "assets": [
-                "data/lang/sc/gui.en_US.json.patch",
-                "data/lang/sc/gui.ru_RU.json.patch"
-            ]
-        },
-        "installation": [
-            {
-                "type": "modZip",
-                "url": "https://github.com/dmitmel/crosscode-teleport-anywhere/archive/refs/tags/v1.0.0.zip",
-                "source": "crosscode-teleport-anywhere-1.0.0",
-                "hash": {
-                    "sha256": "6f509d9560006e4fc593de0371e3f309e83b82c210cd1fed6ca8fb526c85bdf5"
                 }
             }
         ]
