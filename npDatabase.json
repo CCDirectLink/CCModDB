@@ -528,23 +528,20 @@
     "Restart Button": {
         "metadata": {
             "name": "Restart Button",
-            "version": "1.1.2",
+            "version": "1.1.3",
             "description": "Adds a button to restart the game without memory leaks",
             "license": "MIT",
             "homepage": "https://github.com/bluecheetah001/CCRestartButton",
-            "main": "mod.js",
-            "module": true,
-            "ccmodDependencies": {
-                "Simplify": "^2.2.0"
-            }
+            "plugin": "mod.js",
+            "module": true
         },
         "installation": [
             {
                 "type": "modZip",
-                "url": "https://github.com/bluecheetah001/CCRestartButton/archive/v1.1.2.zip",
-                "source": "CCRestartButton-1.1.2",
+                "url": "https://github.com/CCDirectLink/CCRestartButton/archive/refs/tags/v1.1.3.zip",
+                "source": "CCRestartButton-1.1.3",
                 "hash": {
-                    "sha256": "120c9aeae9ce30b8d9c3acc21d8614f507ca7db9eb6a696ca6c1c5075f63e5bf"
+                    "sha256": "6a31aba45a5df4a498901721fa14ed673677d1010707cd9146cee7c41804ad5a"
                 }
             }
         ]
