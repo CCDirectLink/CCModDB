@@ -287,20 +287,22 @@
             "name": "Discord",
             "prestart": "mod.js",
             "ccmodHumanName": "Rich Presence for Discord",
-            "version": "0.1.1",
+            "version": "1.0.0",
             "homepage": "https://github.com/CCDirectLink/CCdiscord",
             "description": "Show off your CrossCode skills in Discord",
-            "ccmodDependencies": {
-                "mod-require-fix": "^1.0.0"
+            "module": true,
+            "ccmodDependencies": {},
+            "dependencies": {
+                "discord-rpc": "^3.2.0"
             }
         },
         "installation": [
             {
                 "type": "modZip",
-                "url": "https://github.com/CCDirectLink/CCdiscord/archive/8c5dce9653b170ecb4d4a1ba5b170629539c2644.zip",
-                "source": "CCdiscord-8c5dce9653b170ecb4d4a1ba5b170629539c2644/discord",
+                "url": "https://github.com/CCDirectLink/CCdiscord/archive/refs/tags/v1.0.0.zip",
+                "source": "CCdiscord-1.0.0",
                 "hash": {
-                    "sha256": "4de61fb32ebc3282238bdafa3069f8a1462c7d0ad10d85b1e02c4439597cb04c"
+                    "sha256": "5df25d4d8ad3fc3872c53f184cbfd27d32489985b724d1830ffe1f71fdefbdc8"
                 }
             }
         ]
@@ -875,10 +877,10 @@
         "installation": [
             {
                 "type": "modZip",
-                "url": "https://github.com/CCDirectLink/CCdiscord/archive/8c5dce9653b170ecb4d4a1ba5b170629539c2644.zip",
-                "source": "CCdiscord-8c5dce9653b170ecb4d4a1ba5b170629539c2644/mod-require-fix",
+                "url": "https://github.com/CCDirectLink/mod-require-fix/archive/refs/tags/v1.0.1.zip",
+                "source": "mod-require-fix-1.0.1",
                 "hash": {
-                    "sha256": "4de61fb32ebc3282238bdafa3069f8a1462c7d0ad10d85b1e02c4439597cb04c"
+                    "sha256": "5a8a90cb72d52b9cd786a3f25c3dab1ab4b09d3dad9e8c744ae48281270b5a33"
                 }
             }
         ]

@@ -123,7 +123,7 @@ async function buildEntry(result: PackageDB, pkg: PkgMetadata, inputs: InputLoca
 }
 
 function check(pkg: PkgMetadata): boolean {
-	if (pkg.dependencies) {
+	if (pkg.dependencies && !pkg.ccmodDependencies) {
 		console.warn(`Package has 'dependencies', not 'ccmodDependencies': ${pkg.name}; correct ASAP`);
 		return false;
 	}

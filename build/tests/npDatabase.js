@@ -74,9 +74,6 @@ function testMetadata(jsonData, metadata) {
 		'metadata.version (type: string) must be undefined or valid semver')
 			.to.be.true;
 
-		expect(metadata.dependencies === undefined,
-			'metadata.dependencies must not be used').to.be.true;
-
 		expect(metadata.ccmodHumanName === undefined
 			|| typeof metadata.ccmodHumanName === 'string',
 		'metadata.ccmodHumanName (type: string) has wrong type').to.be.true;
@@ -117,6 +114,9 @@ function testMetadata(jsonData, metadata) {
 					.to.not.be.undefined;
 			}
 		});
+	} else {
+		expect(metadata.dependencies === undefined,
+			'metadata.dependencies must not be used').to.be.true;
 	}
 }
 
