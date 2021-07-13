@@ -282,6 +282,31 @@
             }
         ]
     },
+    "Discord": {
+        "metadata": {
+            "name": "Discord",
+            "prestart": "mod.js",
+            "ccmodHumanName": "Rich Presence for Discord",
+            "version": "1.0.0",
+            "homepage": "https://github.com/CCDirectLink/CCdiscord",
+            "description": "Show off your CrossCode skills in Discord",
+            "module": true,
+            "ccmodDependencies": {},
+            "dependencies": {
+                "discord-rpc": "^3.2.0"
+            }
+        },
+        "installation": [
+            {
+                "type": "modZip",
+                "url": "https://github.com/CCDirectLink/CCdiscord/archive/refs/tags/v1.0.0.zip",
+                "source": "CCdiscord-1.0.0",
+                "hash": {
+                    "sha256": "5df25d4d8ad3fc3872c53f184cbfd27d32489985b724d1830ffe1f71fdefbdc8"
+                }
+            }
+        ]
+    },
     "Element Boss": {
         "metadata": {
             "name": "Element Boss",
