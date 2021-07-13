@@ -76,13 +76,13 @@
 	},
 	{
 		"type": "modZip",
-		"urlZip": "https://github.com/CCDirectLink/CCdiscord/archive/8c5dce9653b170ecb4d4a1ba5b170629539c2644.zip",
-		"source": "CCdiscord-8c5dce9653b170ecb4d4a1ba5b170629539c2644/discord"
+		"urlZip": "https://github.com/CCDirectLink/CCdiscord/archive/refs/tags/v1.0.0.zip",
+		"source": "CCdiscord-1.0.0"
 	},
 	{
 		"type": "modZip",
-		"urlZip": "https://github.com/CCDirectLink/CCdiscord/archive/8c5dce9653b170ecb4d4a1ba5b170629539c2644.zip",
-		"source": "CCdiscord-8c5dce9653b170ecb4d4a1ba5b170629539c2644/mod-require-fix"
+		"urlZip": "https://github.com/CCDirectLink/mod-require-fix/archive/refs/tags/v1.0.1.zip",
+		"source": "mod-require-fix-1.0.1"
 	},
 	{
 		"type": "ccmod",

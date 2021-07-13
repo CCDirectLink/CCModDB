@@ -145,21 +145,6 @@
             },
             "version": "1.0.0"
         },
-        "Discord": {
-            "name": "Rich Presence for Discord",
-            "description": "Show off your CrossCode skills in Discord",
-            "page": [
-                {
-                    "name": "GitHub",
-                    "url": "https://github.com/CCDirectLink/CCdiscord"
-                }
-            ],
-            "archive_link": "https://github.com/CCDirectLink/CCdiscord/archive/8c5dce9653b170ecb4d4a1ba5b170629539c2644.zip",
-            "hash": {
-                "sha256": "4de61fb32ebc3282238bdafa3069f8a1462c7d0ad10d85b1e02c4439597cb04c"
-            },
-            "version": "0.1.1"
-        },
         "Element Boss": {
             "name": "Element Boss",
             "description": "Adds a new boss battle to the game.",
@@ -473,9 +458,9 @@
                     "url": "https://github.com/CCDirectLink/CCdiscord"
                 }
             ],
-            "archive_link": "https://github.com/CCDirectLink/CCdiscord/archive/8c5dce9653b170ecb4d4a1ba5b170629539c2644.zip",
+            "archive_link": "https://github.com/CCDirectLink/mod-require-fix/archive/refs/tags/v1.0.1.zip",
             "hash": {
-                "sha256": "4de61fb32ebc3282238bdafa3069f8a1462c7d0ad10d85b1e02c4439597cb04c"
+                "sha256": "5a8a90cb72d52b9cd786a3f25c3dab1ab4b09d3dad9e8c744ae48281270b5a33"
             },
             "version": "1.0.1"
         },
