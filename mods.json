@@ -429,6 +429,22 @@
             },
             "version": "0.2.0"
         },
+        "junolea": {
+            "name": "Junolea Skin",
+            "description": "Adds a skin which makes Lea look like Juno",
+            "license": "CC-BY-4.0",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/Inevitabilis/CC-Junolea"
+                }
+            ],
+            "archive_link": "https://github.com/Inevitabilis/CC-Junolea/archive/refs/tags/v1.0.0.zip",
+            "hash": {
+                "sha256": "16b9dbbfa21c9fa18d8ed3048c842521039f0713c6cfc2a17f2d2e89f79bea2f"
+            },
+            "version": "1.0.0"
+        },
         "map-watch": {
             "name": "Map Watcher",
             "description": "A mod that automatically loads a map when changes are detected",
