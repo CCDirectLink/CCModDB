@@ -158,8 +158,8 @@
 	},
 	{
 		"type": "modZip",
-		"urlZip": "https://github.com/CCDirectLink/item-api/archive/v0.4.1.zip",
-		"source": "item-api-0.4.1"
+		"urlZip": "https://github.com/CCDirectLink/item-api/archive/refs/tags/v0.4.2.zip",
+		"source": "item-api-0.4.2"
 	},
 	{
 		"type": "modZip",
