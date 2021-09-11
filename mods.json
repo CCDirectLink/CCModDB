@@ -407,11 +407,11 @@
                     "url": "https://gitlab.com/20kdc/ccprestartapi"
                 }
             ],
-            "archive_link": "https://github.com/CCDirectLink/item-api/archive/v0.4.1.zip",
+            "archive_link": "https://github.com/CCDirectLink/item-api/archive/refs/tags/v0.4.2.zip",
             "hash": {
-                "sha256": "65e0a2064a4686de2adc67e37e39664e7f1f2a555095334de5e9c96dbb85c8ef"
+                "sha256": "68d7f15b5e3c4264831dfe89a3ad2ad819825819d98aa529cee03e73312a6b21"
             },
-            "version": "0.4.1"
+            "version": "0.4.2"
         },
         "jetpack": {
             "name": "jetpack",
