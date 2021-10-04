@@ -352,6 +352,21 @@
             },
             "version": "1.5.0"
         },
+        "cc-extra-dialogue": {
+            "name": "CrossCode Extra Dialogue",
+            "description": "Adds more lore-friendly dialogue for party members.",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/Paradragon/cc-extra-dialogue"
+                }
+            ],
+            "archive_link": "https://github.com/Paradragon/cc-extra-dialogue/releases/download/v1.0.0/cc-extra-dialogue.ccmod",
+            "hash": {
+                "sha256": "8ab162b803f9a663f5677b058fafcf07218145f38f7a90cbdcf05845b0a5e329"
+            },
+            "version": "1.0.0"
+        },
         "crosscode-tweak-pack": {
             "name": "dmitmel's tweak pack",
             "description": "Micro-mods by dmitmel in a single 999-in-1 package, ranging from QoL tweaks to cheats.",

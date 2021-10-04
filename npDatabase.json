@@ -623,6 +623,25 @@
             }
         ]
     },
+    "cc-extra-dialogue": {
+        "metadata": {
+            "name": "cc-extra-dialogue",
+            "version": "1.0.0",
+            "ccmodHumanName": "CrossCode Extra Dialogue",
+            "description": "Adds more lore-friendly dialogue for party members.",
+            "homepage": "https://github.com/Paradragon/cc-extra-dialogue",
+            "prestart": "prestart.js"
+        },
+        "installation": [
+            {
+                "type": "ccmod",
+                "url": "https://github.com/Paradragon/cc-extra-dialogue/releases/download/v1.0.0/cc-extra-dialogue.ccmod",
+                "hash": {
+                    "sha256": "8ab162b803f9a663f5677b058fafcf07218145f38f7a90cbdcf05845b0a5e329"
+                }
+            }
+        ]
+    },
     "ccloader": {
         "metadata": {
             "name": "ccloader",
