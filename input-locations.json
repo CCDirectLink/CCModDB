@@ -67,12 +67,12 @@
 	},
 	{
 		"type": "ccmod",
-		"url": "https://github.com/CCDirectLink/CCNewGamePP/releases/download/v1.1.1/CCNewGamePP.ccmod"
+		"url": "https://github.com/CCDirectLink/CCNewGamePP/releases/download/v1.2.0/CCNewGamePP.ccmod"
 	},
 	{
 		"type": "modZip",
-		"urlZip": "https://github.com/CCDirectLink/CCNewGamePP/archive/v1.1.1.zip",
-		"source": "CCNewGamePP-1.1.1"
+		"urlZip": "https://github.com/CCDirectLink/CCNewGamePP/archive/v1.2.0.zip",
+		"source": "CCNewGamePP-1.2.0"
 	},
 	{
 		"type": "modZip",

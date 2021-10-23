@@ -265,11 +265,11 @@
                     "url": "https://github.com/CCDirectLink/CCNewGamePP"
                 }
             ],
-            "archive_link": "https://github.com/CCDirectLink/CCNewGamePP/releases/download/v1.1.1/CCNewGamePP.ccmod",
+            "archive_link": "https://github.com/CCDirectLink/CCNewGamePP/releases/download/v1.2.0/CCNewGamePP.ccmod",
             "hash": {
-                "sha256": "44942ca4ff4afb37c3ef34d14d298d47eaa7f1a5a4c37b702dfc6bcf66481c48"
+                "sha256": "4cdd4896faa70c5a6e7e83b9ddf9b00e03e45d2f3296e4c546384779ef08a57e"
             },
-            "version": "1.1.1"
+            "version": "1.2.0"
         },
         "Palicat": {
             "name": "Palicat",
