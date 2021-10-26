@@ -5,13 +5,13 @@ import { download, streamToBuffer } from './download';
 export async function get(input: InputLocation): Promise<[PkgMetadata, InputLocation]> {
 	try {
 		switch (input.type) {
-			case 'modZip':
-				return [await getModZip(input), input];
-			case 'ccmod':
-				return [await getCCMod(input), input];
-			default:
-				throw new Error(`Unknown location type '${input.type}'`);
-			}
+		case 'modZip':
+			return [await getModZip(input), input];
+		case 'ccmod':
+			return [await getCCMod(input), input];
+		default:
+			throw new Error(`Unknown location type '${input.type}'`);
+		}
 	} catch (e) {
 		console.log('Error while extracting', input);
 		throw e;
@@ -79,7 +79,7 @@ function openFile(zip: yauzl.ZipFile, file: string): Promise<stream.Readable> {
 				} else {
 					if (entry.fileName === file) {
 						zip.openReadStream(entry, (err, result) => {
-							if (err) {
+							if (err || !result) {
 								return reject(err);
 							}
 							resolve(result);
