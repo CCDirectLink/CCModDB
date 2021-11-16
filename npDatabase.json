@@ -1083,7 +1083,7 @@
     "uwuifier": {
         "metadata": {
             "name": "uwuifier",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "description": "Dynamically uwuifies text.",
             "homepage": "https://github.com/WatDuhHekBro/cc-uwuifier",
             "prestart": "prestart.js",
@@ -1093,9 +1093,9 @@
         "installation": [
             {
                 "type": "ccmod",
-                "url": "https://github.com/WatDuhHekBro/cc-uwuifier/releases/download/v1.0.1/uwuifier.ccmod",
+                "url": "https://github.com/WatDuhHekBro/cc-uwuifier/releases/download/v1.0.2/uwuifier.ccmod",
                 "hash": {
-                    "sha256": "08c94df1d50e3e3b3db37ca9d05e71ed1a10ba3267648d98aae80e3642c53353"
+                    "sha256": "295b8019d74e0a9bf9a8ff9aa4b48d25694028bc727bc3a830daeb23b4efef3e"
                 }
             }
         ]
