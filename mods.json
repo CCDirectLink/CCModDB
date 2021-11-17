@@ -597,11 +597,11 @@
                     "url": "https://github.com/dmitmel/cc-world-map-overhaul"
                 }
             ],
-            "archive_link": "https://github.com/dmitmel/cc-world-map-overhaul/releases/download/v1.1.1/world-map-overhaul_v1.1.1.ccmod",
+            "archive_link": "https://github.com/dmitmel/cc-world-map-overhaul/releases/download/v1.1.2/world-map-overhaul_v1.1.2.ccmod",
             "hash": {
-                "sha256": "b1067a44df0956450cb5948e804ba9c9a80eb621abb0b2e66bbf55e466405f97"
+                "sha256": "78aa2526039c77e69252ccb3f3ff0e0ba6d4ba6c18a10a900002e6981d024a05"
             },
-            "version": "1.1.1"
+            "version": "1.1.2"
         }
     }
 }
