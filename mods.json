@@ -377,11 +377,11 @@
                     "url": "https://github.com/dmitmel/crosscode-tweak-pack"
                 }
             ],
-            "archive_link": "https://github.com/dmitmel/crosscode-tweak-pack/releases/download/v1.0.0/crosscode-tweak-pack_v1.0.0.zip",
+            "archive_link": "https://github.com/dmitmel/crosscode-tweak-pack/releases/download/v1.1.0/crosscode-tweak-pack_v1.1.0.zip",
             "hash": {
-                "sha256": "5dfcb174688f3aefa579492f750ae6b09ebf27e0ed023af8fa5ea4e8b68a9952"
+                "sha256": "0cc60fb1aeccdb7f664430feb222df8cbf0571a5c5359dcb689f1b551a983713"
             },
-            "version": "1.0.0"
+            "version": "1.1.0"
         },
         "extendable-severed-heads": {
             "name": "extendable-severed-heads",
