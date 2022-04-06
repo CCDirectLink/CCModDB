@@ -130,21 +130,6 @@
             },
             "version": "1.0.0"
         },
-        "DLC Arena Music Fix": {
-            "name": "DLC Arena Music Fix",
-            "description": "Fixes the music that plays in some DLC Arena rounds.",
-            "page": [
-                {
-                    "name": "GitHub",
-                    "url": "https://github.com/EL20202/cc-uncapped-stats"
-                }
-            ],
-            "archive_link": "https://github.com/EL20202/cc-dlc-arena-music-fix/releases/download/v1.0.0/cc-dlc-arena-music-fix.v1.0.0.ccmod",
-            "hash": {
-                "sha256": "dc278e20dd475a5da04143e3447486ff8ee2253298890a58d59716a48b248e95"
-            },
-            "version": "1.0.0"
-        },
         "Discord": {
             "name": "Rich Presence for Discord",
             "description": "Show off your CrossCode skills in Discord",
