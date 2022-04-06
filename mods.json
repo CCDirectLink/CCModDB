@@ -495,6 +495,36 @@
             },
             "version": "1.0.1"
         },
+        "nine-rooms": {
+            "name": "nine-rooms",
+            "description": "A little piece of lost history.",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/Pyrocorvid/CCNineRooms"
+                }
+            ],
+            "archive_link": "https://github.com/Pyrocorvid/CCNineRooms/archive/fd5781d15d1c8184c250011b846add2931d59c24.zip",
+            "hash": {
+                "sha256": "3b7e05fc8887e9ff01b5935bf7a231cb938e32512e851e975eafd39b359e8e80"
+            },
+            "version": "0.1.0"
+        },
+        "past-booster": {
+            "name": "past-booster",
+            "description": "Makes the Nine Rooms mod a little more... post-gamey.",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/Pyrocorvid/CCNineRooms"
+                }
+            ],
+            "archive_link": "https://github.com/Pyrocorvid/CCNineRooms/archive/fd5781d15d1c8184c250011b846add2931d59c24.zip",
+            "hash": {
+                "sha256": "3b7e05fc8887e9ff01b5935bf7a231cb938e32512e851e975eafd39b359e8e80"
+            },
+            "version": "0.1.0"
+        },
         "readable-saves": {
             "name": "Readable saves",
             "description": "Unencrypts the save file and adds an additional save format suitable for editing by hand",

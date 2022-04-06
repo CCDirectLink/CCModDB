@@ -938,6 +938,45 @@
             }
         ]
     },
+    "nine-rooms": {
+        "metadata": {
+            "name": "nine-rooms",
+            "version": "0.1.0",
+            "description": "A little piece of lost history.",
+            "homepage": "https://github.com/Pyrocorvid/CCNineRooms"
+        },
+        "installation": [
+            {
+                "type": "modZip",
+                "url": "https://github.com/Pyrocorvid/CCNineRooms/archive/fd5781d15d1c8184c250011b846add2931d59c24.zip",
+                "source": "CCNineRooms-fd5781d15d1c8184c250011b846add2931d59c24/nine-rooms",
+                "hash": {
+                    "sha256": "3b7e05fc8887e9ff01b5935bf7a231cb938e32512e851e975eafd39b359e8e80"
+                }
+            }
+        ]
+    },
+    "past-booster": {
+        "metadata": {
+            "name": "past-booster",
+            "version": "0.1.0",
+            "description": "Makes the Nine Rooms mod a little more... post-gamey.",
+            "homepage": "https://github.com/Pyrocorvid/CCNineRooms",
+            "ccmodDependencies": {
+                "nine-rooms": ">=0.1.0"
+            }
+        },
+        "installation": [
+            {
+                "type": "modZip",
+                "url": "https://github.com/Pyrocorvid/CCNineRooms/archive/fd5781d15d1c8184c250011b846add2931d59c24.zip",
+                "source": "CCNineRooms-fd5781d15d1c8184c250011b846add2931d59c24/past-booster",
+                "hash": {
+                    "sha256": "3b7e05fc8887e9ff01b5935bf7a231cb938e32512e851e975eafd39b359e8e80"
+                }
+            }
+        ]
+    },
     "readable-saves": {
         "metadata": {
             "name": "readable-saves",

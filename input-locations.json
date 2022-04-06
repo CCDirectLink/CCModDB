@@ -270,5 +270,15 @@
 	{
 		"type": "ccmod",
 		"url": "https://github.com/Paradragon/cc-extra-dialogue/releases/download/v1.0.0/cc-extra-dialogue.ccmod"
+	},
+	{
+		"type": "modZip",
+		"urlZip": "https://github.com/Pyrocorvid/CCNineRooms/archive/fd5781d15d1c8184c250011b846add2931d59c24.zip",
+		"source": "CCNineRooms-fd5781d15d1c8184c250011b846add2931d59c24/nine-rooms"
+	},
+	{
+		"type": "modZip",
+		"urlZip": "https://github.com/Pyrocorvid/CCNineRooms/archive/fd5781d15d1c8184c250011b846add2931d59c24.zip",
+		"source": "CCNineRooms-fd5781d15d1c8184c250011b846add2931d59c24/past-booster"
 	}
 ]
