@@ -254,34 +254,6 @@
             }
         ]
     },
-    "DLC Arena Music Fix": {
-        "metadata": {
-            "name": "DLC Arena Music Fix",
-            "version": "1.0.0",
-            "description": "Fixes the music that plays in some DLC Arena rounds.",
-            "homepage": "https://github.com/EL20202/cc-uncapped-stats",
-            "ccmodDependencies": {
-                "ccloader": "^2.20.0"
-            }
-        },
-        "installation": [
-            {
-                "type": "modZip",
-                "url": "https://github.com/EL20202/cc-dlc-arena-music-fix/archive/refs/tags/v1.0.0.zip",
-                "source": "cc-dlc-arena-music-fix-1.0.0",
-                "hash": {
-                    "sha256": "1a163abc0d7047afeb71801875510d618142200b30aae549b6d007f9d457acdc"
-                }
-            },
-            {
-                "type": "ccmod",
-                "url": "https://github.com/EL20202/cc-dlc-arena-music-fix/releases/download/v1.0.0/cc-dlc-arena-music-fix.v1.0.0.ccmod",
-                "hash": {
-                    "sha256": "dc278e20dd475a5da04143e3447486ff8ee2253298890a58d59716a48b248e95"
-                }
-            }
-        ]
-    },
     "Discord": {
         "metadata": {
             "name": "Discord",
