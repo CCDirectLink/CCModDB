@@ -273,12 +273,12 @@
 	},
 	{
 		"type": "modZip",
-		"urlZip": "https://github.com/Pyrocorvid/CCNineRooms/archive/fd5781d15d1c8184c250011b846add2931d59c24.zip",
-		"source": "CCNineRooms-fd5781d15d1c8184c250011b846add2931d59c24/nine-rooms"
+		"urlZip": "https://github.com/Pyrocorvid/CCNineRooms/archive/refs/tags/v1.0.1.zip",
+		"source": "CCNineRooms-1.0.1/nine-rooms"
 	},
 	{
 		"type": "modZip",
-		"urlZip": "https://github.com/Pyrocorvid/CCNineRooms/archive/fd5781d15d1c8184c250011b846add2931d59c24.zip",
-		"source": "CCNineRooms-fd5781d15d1c8184c250011b846add2931d59c24/past-booster"
+		"urlZip": "https://github.com/Pyrocorvid/CCNineRooms/archive/refs/tags/v1.0.1.zip",
+		"source": "CCNineRooms-1.0.1/past-booster"
 	}
 ]
