@@ -1043,7 +1043,7 @@
             "plugin": "plugin.js",
             "homepage": "https://github.com/CCDirectLink/CCTimer",
             "description": "A speedrun timer for CrossCode.",
-            "version": "2.4.0",
+            "version": "2.5.0",
             "ccmodDependencies": {
                 "ccloader": "^2.19.0",
                 "Simplify": "^2.9.0"
@@ -1052,10 +1052,10 @@
         "installation": [
             {
                 "type": "modZip",
-                "url": "https://github.com/CCDirectLink/CCTimer/archive/v2.4.0.zip",
-                "source": "CCTimer-2.4.0/timer",
+                "url": "https://github.com/CCDirectLink/CCTimer/archive/v2.5.0.zip",
+                "source": "CCTimer-2.5.0/timer",
                 "hash": {
-                    "sha256": "ade27df3df69dbdb94e1b5a5cee5703367c5b4220d9fc576b98a0e379f650e85"
+                    "sha256": "f1db2f8bdd4db68e971f650e0e45ade07f80ebda5a8321c17b33ff48743066c3"
                 }
             }
         ]

@@ -566,11 +566,11 @@
                     "url": "https://github.com/CCDirectLink/CCTimer"
                 }
             ],
-            "archive_link": "https://github.com/CCDirectLink/CCTimer/archive/v2.4.0.zip",
+            "archive_link": "https://github.com/CCDirectLink/CCTimer/archive/v2.5.0.zip",
             "hash": {
-                "sha256": "ade27df3df69dbdb94e1b5a5cee5703367c5b4220d9fc576b98a0e379f650e85"
+                "sha256": "f1db2f8bdd4db68e971f650e0e45ade07f80ebda5a8321c17b33ff48743066c3"
             },
-            "version": "2.4.0"
+            "version": "2.5.0"
         },
         "timewalker": {
             "name": "timewalker",
