@@ -280,5 +280,10 @@
 		"type": "modZip",
 		"urlZip": "https://github.com/Pyrocorvid/CCNineRooms/archive/refs/tags/v1.0.1.zip",
 		"source": "CCNineRooms-1.0.1/past-booster"
+	},
+	{
+		"type": "modZip",
+		"urlZip": "https://github.com/CookieSalesman/CrossCode-HADOUKEN-v1.0/archive/b8902034bbb435f0ff348f86f002e53c4362199b.zip",
+		"source": "CrossCode-HADOUKEN-v1.0-b8902034bbb435f0ff348f86f002e53c4362199b/hadouken"
 	}
 ]
