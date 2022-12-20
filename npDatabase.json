@@ -345,6 +345,23 @@
             }
         ]
     },
+    "Hadouken": {
+        "metadata": {
+            "name": "Hadouken",
+            "ccmodHumanName": "Hadouken",
+            "version": "1.0.0"
+        },
+        "installation": [
+            {
+                "type": "modZip",
+                "url": "https://github.com/CookieSalesman/CrossCode-HADOUKEN-v1.0/archive/b8902034bbb435f0ff348f86f002e53c4362199b.zip",
+                "source": "CrossCode-HADOUKEN-v1.0-b8902034bbb435f0ff348f86f002e53c4362199b/hadouken",
+                "hash": {
+                    "sha256": "b038a9733b1ce2385a1c91c8595314ac6498958c9ba0a0366e0f1a1051e72e70"
+                }
+            }
+        ]
+    },
     "Kit Player": {
         "metadata": {
             "name": "Kit Player",
