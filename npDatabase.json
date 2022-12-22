@@ -354,10 +354,10 @@
         "installation": [
             {
                 "type": "modZip",
-                "url": "https://github.com/CookieSalesman/CrossCode-HADOUKEN-v1.0/archive/b8902034bbb435f0ff348f86f002e53c4362199b.zip",
-                "source": "CrossCode-HADOUKEN-v1.0-b8902034bbb435f0ff348f86f002e53c4362199b/hadouken",
+                "url": "https://github.com/CookieSalesman/CrossCode-HADOUKEN-v1.0/archive/refs/tags/v1.0.0.zip",
+                "source": "CrossCode-HADOUKEN-v1.0-1.0.0",
                 "hash": {
-                    "sha256": "b038a9733b1ce2385a1c91c8595314ac6498958c9ba0a0366e0f1a1051e72e70"
+                    "sha256": "4675038bf374b5193e4a723d9a50b78c8e79bcf249ab70438258bb4241dadd87"
                 }
             }
         ]
