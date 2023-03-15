@@ -378,6 +378,16 @@
             },
             "version": "1.1.0"
         },
+        "cursedcode": {
+            "name": "cursedcode",
+            "description": "Cursed custom maps.",
+            "page": [],
+            "archive_link": "https://github.com/Symphiel/CursedCode/releases/download/0.1.0/cursedcode.ccmod",
+            "hash": {
+                "sha256": "308e693d7d878568439c15641b4f556e4dcb6d41ba0710a8cda334dfd6c97102"
+            },
+            "version": "0.1.0"
+        },
         "extendable-severed-heads": {
             "name": "extendable-severed-heads",
             "description": "A mod. (Description not available; contact mod author and have them add a description to their package.json file)",

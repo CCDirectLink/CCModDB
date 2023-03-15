@@ -285,5 +285,9 @@
 		"type": "modZip",
 		"urlZip": "https://github.com/CookieSalesman/CrossCode-HADOUKEN-v1.0/archive/refs/tags/v1.0.0.zip",
 		"source": "CrossCode-HADOUKEN-v1.0-1.0.0"
+	},
+	{
+		"type": "ccmod",
+		"url": "https://github.com/Symphiel/CursedCode/releases/download/0.1.0/cursedcode.ccmod"
 	}
 ]
