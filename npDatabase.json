@@ -696,7 +696,7 @@
             "displayName": "CursedCode",
             "description": "Cursed custom maps.",
             "prestart": "mod.js",
-            "version": "0.1.0",
+            "version": "0.1.1",
             "module": true,
             "ccmodDependencies": {},
             "scripts": {
@@ -713,9 +713,9 @@
         "installation": [
             {
                 "type": "ccmod",
-                "url": "https://github.com/Symphiel/CursedCode/releases/download/0.1.0/cursedcode.ccmod",
+                "url": "https://github.com/Symphiel/CursedCode/releases/download/0.1.1/cursedcode.ccmod",
                 "hash": {
-                    "sha256": "308e693d7d878568439c15641b4f556e4dcb6d41ba0710a8cda334dfd6c97102"
+                    "sha256": "e265e1cb434d6718c655909792a8077cbe6073618a0a984e43fc944a62caee46"
                 }
             }
         ]
