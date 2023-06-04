@@ -105,18 +105,19 @@ function testMetadata(jsonData, metadata) {
 					`dependency ${dep} must be specify a valid range`)
 					.to.not.be.null;
 
-				if ([
-					'crosscode',
-					'simplify',
-					// https://github.com/CCDirectLink/CCLoader3/blob/edb3481d9ea504e2c7f7fe46709ab2b4a7f2ce0b/src/game.ts#L9-L17
-					'fish-gear',
-					'flying-hedgehag',
-					'manlea',
-					'ninja-skin',
-					'post-game',
-					'scorpion-robo',
-					'snowman-tank'
-				].includes(dep.toLowerCase())) {
+				if (
+					[
+						'crosscode',
+						'simplify',
+						// https://github.com/CCDirectLink/CCLoader3/blob/edb3481d9ea504e2c7f7fe46709ab2b4a7f2ce0b/src/game.ts#L9-L17
+						'fish-gear',
+						'flying-hedgehag',
+						'manlea',
+						'ninja-skin',
+						'post-game',
+						'scorpion-robo',
+						'snowman-tank',
+					].includes(dep.toLowerCase())) {
 					continue;
 				}
 
