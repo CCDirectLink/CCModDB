@@ -89,6 +89,64 @@
             }
         ]
     },
+    "CCOldMedia": {
+        "metadata": {
+            "name": "CCOldMedia",
+            "version": "1.0.0",
+            "description": "A mod that brings back some old title screen assets.",
+            "homepage": "https://github.com/lexisother/CCOldMedia",
+            "module": true,
+            "prestart": "src/prestart.js",
+            "ccmodDependencies": {}
+        },
+        "installation": [
+            {
+                "type": "modZip",
+                "url": "https://github.com/lexisother/CCOldMedia/archive/refs/tags/v1.0.0.zip",
+                "source": "CCOldMedia-1.0.0",
+                "hash": {
+                    "sha256": "491263c26aefa8f366c135e2672c0214bb593059d44ddf22bebfc3a655f0b73e"
+                }
+            },
+            {
+                "type": "ccmod",
+                "url": "https://github.com/lexisother/CCOldMedia/releases/download/v1.0.0/CCOldMedia.ccmod",
+                "hash": {
+                    "sha256": "0791db068d46cf394fc3a512cf3a5bca7744a1550d1e72d07adb39bcea097703"
+                }
+            }
+        ]
+    },
+    "CCPostDLC": {
+        "metadata": {
+            "name": "CCPostDLC",
+            "version": "1.0.0",
+            "description": "Adjusts the game to continue after completing the DLC.",
+            "homepage": "https://github.com/lexisother/CCPostDLC",
+            "prestart": "src/prestart.js",
+            "ccmodDependencies": {
+                "crosscode": ">=1.4.0",
+                "post-game": ">=1.4.0"
+            }
+        },
+        "installation": [
+            {
+                "type": "modZip",
+                "url": "https://github.com/lexisother/CCPostDLC/archive/refs/tags/v1.0.0.zip",
+                "source": "CCPostDLC-1.0.0",
+                "hash": {
+                    "sha256": "704877a8628bb3b6973e8adb22ca93bedd7db816b69a8b3c7d9d35301df63ac6"
+                }
+            },
+            {
+                "type": "ccmod",
+                "url": "https://github.com/lexisother/CCPostDLC/releases/download/v1.0.0/CCPostDLC.ccmod",
+                "hash": {
+                    "sha256": "eec76c279f1683b415e4f06186d6d4d8ae6e9d247cec845bce1e6a7e6d69cea0"
+                }
+            }
+        ]
+    },
     "CCPresetRevival": {
         "metadata": {
             "name": "CCPresetRevival",

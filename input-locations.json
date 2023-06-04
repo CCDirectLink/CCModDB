@@ -289,5 +289,23 @@
 	{
 		"type": "ccmod",
 		"url": "https://github.com/Symphiel/CursedCode/releases/download/0.1.1/cursedcode.ccmod"
+	},
+	{
+		"type": "modZip",
+		"urlZip": "https://github.com/lexisother/CCPostDLC/archive/refs/tags/v1.0.0.zip",
+		"source": "CCPostDLC-1.0.0"
+	},
+	{
+		"type": "ccmod",
+		"url": "https://github.com/lexisother/CCPostDLC/releases/download/v1.0.0/CCPostDLC.ccmod"
+	},
+	{
+		"type": "modZip",
+		"urlZip": "https://github.com/lexisother/CCOldMedia/archive/refs/tags/v1.0.0.zip",
+		"source": "CCOldMedia-1.0.0"
+	},
+	{
+		"type": "ccmod",
+		"url": "https://github.com/lexisother/CCOldMedia/releases/download/v1.0.0/CCOldMedia.ccmod"
 	}
 ]
