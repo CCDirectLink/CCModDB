@@ -209,11 +209,11 @@
                     "url": "https://github.com/L-Sherry/French-CC"
                 }
             ],
-            "archive_link": "https://github.com/L-Sherry/French-CC/archive/v1.3.0.zip",
+            "archive_link": "https://github.com/L-Sherry/French-CC/archive/v1.4.0.zip",
             "hash": {
-                "sha256": "dea0b42c4e89876800f9d62f55364a9c31c29b32626716dae5b774ab96023dda"
+                "sha256": "30a9febd011fb056426a1d0e8d9f7f50b8dd7310b80a21f1c6e2d3a6c2a143ff"
             },
-            "version": "1.3.0"
+            "version": "1.4.0"
         },
         "Hadouken": {
             "name": "Hadouken",
