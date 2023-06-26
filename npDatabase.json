@@ -574,6 +574,34 @@
             }
         ]
     },
+    "QuickInfo EXP Viewer": {
+        "metadata": {
+            "name": "QuickInfo EXP Viewer",
+            "version": "1.0.0",
+            "description": "Shows the EXP the enemy will give you in the quickinfo popup.",
+            "homepage": "https://github.com/lexisother/cc-quickinfo-exp",
+            "module": true,
+            "prestart": "prestart.js",
+            "ccmodDependencies": {}
+        },
+        "installation": [
+            {
+                "type": "modZip",
+                "url": "https://github.com/lexisother/cc-quickinfo-exp/archive/refs/tags/v1.0.1.zip",
+                "source": "cc-quickinfo-exp-1.0.1",
+                "hash": {
+                    "sha256": "e8e0fa7e59aca78821df92121c3e745bdd5fdf7f2ee5df4e028db9dfb471ed05"
+                }
+            },
+            {
+                "type": "ccmod",
+                "url": "https://github.com/lexisother/cc-quickinfo-exp/releases/download/v1.0.1/cc-quickinfo-exp.ccmod",
+                "hash": {
+                    "sha256": "fcdeeba04a3c3e210353a23031c4396dfa33876f770347e550103a4308e3685a"
+                }
+            }
+        ]
+    },
     "Restart Button": {
         "metadata": {
             "name": "Restart Button",
