@@ -433,6 +433,16 @@
             },
             "version": "0.1.1"
         },
+        "el-tweaks": {
+            "name": "el-tweaks",
+            "description": "A coremod full of useful functionality for modders, as well as many tweaks for players.",
+            "page": [],
+            "archive_link": "https://github.com/EL20202/el-crosscode-tweaks/releases/download/v0.5.8/els-tweaks.ccmod",
+            "hash": {
+                "sha256": "14a6fa05766def657bed910c7c76b67685ac166771dc9ad82e6d6628f782db77"
+            },
+            "version": "0.5.8"
+        },
         "extendable-severed-heads": {
             "name": "extendable-severed-heads",
             "description": "A mod. (Description not available; contact mod author and have them add a description to their package.json file)",
@@ -442,6 +452,16 @@
                 "sha256": "2fd7991bc70000ade0af06d585c64d1458adee6769b00cbccbbc748be487549e"
             },
             "version": "1.0.0"
+        },
+        "font-utils": {
+            "name": "font-utils",
+            "description": "Adds various new font colors!",
+            "page": [],
+            "archive_link": "https://github.com/EL20202/crosscode-font-utils/releases/download/v1.1.0/font-utils.ccmod",
+            "hash": {
+                "sha256": "fc9aa9aa56336f28815abc06b26dbde42c34885190d0221c6f6c6d3f5b498148"
+            },
+            "version": "1.1.0"
         },
         "hardcoded-config-injector": {
             "name": "hardcoded-config-injector",
