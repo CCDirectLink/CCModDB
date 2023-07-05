@@ -496,6 +496,36 @@
             }
         ]
     },
+    "Logic Steps": {
+        "metadata": {
+            "name": "Logic Steps",
+            "version": "1.0.1",
+            "description": "Adds a couple custom patch steps that allow for control of logic flow.",
+            "homepage": "https://github.com/lexisother/logic-steps",
+            "module": true,
+            "postload": "postload.js",
+            "ccmodDependencies": {
+                "ccloader": ">=2.22.1"
+            }
+        },
+        "installation": [
+            {
+                "type": "modZip",
+                "url": "https://github.com/lexisother/logic-steps/archive/refs/tags/v1.0.1.zip",
+                "source": "logic-steps-1.0.1",
+                "hash": {
+                    "sha256": "9fcde08ef4a637f3393f23a53b70bfdcc6805de2f21f6234f416d36691defd6a"
+                }
+            },
+            {
+                "type": "ccmod",
+                "url": "https://github.com/lexisother/logic-steps/releases/download/v1.0.1/logic-steps.ccmod",
+                "hash": {
+                    "sha256": "79ac505e9f8f5f948ecb1f9e33b8da330a352f95eee5d381dd697bd3cd93f730"
+                }
+            }
+        ]
+    },
     "New game++": {
         "metadata": {
             "name": "New game++",
