@@ -334,5 +334,14 @@
   {
     "type": "ccmod",
     "url": "https://github.com/lexisother/cc-quickinfo-exp/releases/download/v1.0.1/cc-quickinfo-exp.ccmod"
+  },
+  {
+    "type": "modZip",
+    "urlZip": "https://github.com/lexisother/logic-steps/archive/refs/tags/v1.0.1.zip",
+    "source": "logic-steps-1.0.1"
+  },
+  {
+    "type": "ccmod",
+    "url": "https://github.com/lexisother/logic-steps/releases/download/v1.0.1/logic-steps.ccmod"
   }
 ]
