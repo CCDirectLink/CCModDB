@@ -95,8 +95,8 @@
 	},
 	{
 		"type": "modZip",
-		"urlZip": "https://github.com/CCDirectLink/CCTimer/archive/v2.6.0.zip",
-		"source": "CCTimer-2.6.0/timer"
+		"urlZip": "https://github.com/CCDirectLink/CCTimer/releases/download/v3.0.0/CCTimer.zip",
+		"source": "CCTimer"
 	},
 	{
 		"type": "ccmod",
