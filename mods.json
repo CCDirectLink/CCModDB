@@ -422,6 +422,17 @@
             },
             "version": "1.0.0"
         },
+        "cc-vim": {
+            "name": "cc-vim",
+            "description": "Adds a popup command prompt",
+            "license": "GNU GPLv3",
+            "page": [],
+            "archive_link": "https://github.com/krypciak/cc-vim/releases/download/1.3.0/cc-vim-1.3.0.ccmod",
+            "hash": {
+                "sha256": "e5b183cc4648221dff82001aff21d57a0cc0cbaeb75ddc4e889df3be380cfcea"
+            },
+            "version": "1.3.0"
+        },
         "crosscode-tweak-pack": {
             "name": "dmitmel's tweak pack",
             "description": "Micro-mods by dmitmel in a single 999-in-1 package, ranging from QoL tweaks to cheats.",
