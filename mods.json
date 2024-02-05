@@ -407,6 +407,22 @@
             },
             "version": "1.5.0"
         },
+        "cc-diorbital-menu": {
+            "name": "cc-diorbital-menu",
+            "description": "Extends the quick menu",
+            "license": "GPLv3",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/krypciak/cc-diorbital-menu"
+                }
+            ],
+            "archive_link": "https://github.com/krypciak/cc-diorbital-menu/releases/download/v1.0.3/cc-diorbital-menu-1.0.3.ccmod",
+            "hash": {
+                "sha256": "5c5246f43f6ae7a9f3c5eb26c4b40c5a3a8cab224740f881ade7392c897d712f"
+            },
+            "version": "1.0.3"
+        },
         "cc-extra-dialogue": {
             "name": "CrossCode Extra Dialogue",
             "description": "Adds more lore-friendly dialogue for party members.",

@@ -352,5 +352,14 @@
   {
     "type": "ccmod",
     "url": "https://github.com/krypciak/cc-vim/releases/download/1.3.1/cc-vim-1.3.1.ccmod"
+  },
+  {
+	"type": "modZip",
+	"urlZip": "https://github.com/krypciak/cc-diorbital-menu/archive/refs/tags/v1.0.3.zip",
+	"source": "cc-diorbital-menu-1.0.3"
+  },
+  {
+    "type": "ccmod",
+    "url": "https://github.com/krypciak/cc-diorbital-menu/releases/download/v1.0.3/cc-diorbital-menu-1.0.3.ccmod"
   }
 ]
