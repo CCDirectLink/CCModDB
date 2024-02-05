@@ -747,6 +747,47 @@
             }
         ]
     },
+    "cc-fancy-crash": {
+        "metadata": {
+            "name": "cc-fancy-crash",
+            "version": "1.0.7",
+            "description": "Better crash message",
+            "scripts": {
+                "start": "esbuild --target=es2018 --format=esm --platform=node --bundle --sourcemap=inline --outfile=plugin.js src/plugin.ts",
+                "watch": "esbuild --target=es2018 --format=esm --platform=node --bundle --sourcemap=inline --watch --outfile=plugin.js src/plugin.ts",
+                "build": "esbuild --target=es2018 --format=esm --platform=node --bundle --outfile='plugin.js' 'src/plugin.ts'",
+                "format": "prettier ./src -w"
+            },
+            "author": "krypek",
+            "license": "GPLv3",
+            "homepage": "https://github.com/krypciak/cc-fancy-crash",
+            "devDependencies": {
+                "@types/node": "^11.6.0",
+                "@typescript-eslint/eslint-plugin": "^6.20.0",
+                "@typescript-eslint/parser": "^6.20.0",
+                "esbuild": "^0.20.0",
+                "typescript": "^5.3.3",
+                "ultimate-crosscode-typedefs": "github:krypciak/ultimate-crosscode-typedefs"
+            }
+        },
+        "installation": [
+            {
+                "type": "modZip",
+                "url": "https://github.com/krypciak/cc-fancy-crash/archive/refs/tags/v1.0.7.zip",
+                "source": "cc-fancy-crash-1.0.7",
+                "hash": {
+                    "sha256": "d1282639f2a76f518489ad19df412675d166735934045f6244b9f29fe1a6794a"
+                }
+            },
+            {
+                "type": "ccmod",
+                "url": "https://github.com/krypciak/cc-fancy-crash/releases/download/v1.0.7/cc-fancy-crash-1.0.7.ccmod",
+                "hash": {
+                    "sha256": "edc33bc5c294a9573a49eea1c4080a458c70a9e9e8e1a6f960e3d798ce935503"
+                }
+            }
+        ]
+    },
     "cc-vim": {
         "metadata": {
             "name": "cc-vim",
