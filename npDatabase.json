@@ -796,15 +796,18 @@
     "cc-vim": {
         "metadata": {
             "name": "cc-vim",
-            "version": "1.3.1",
+            "version": "1.5.4",
             "description": "Adds a popup command prompt",
             "scripts": {
                 "start": "esbuild --target=es2018 --format=esm --platform=node --bundle --sourcemap=inline --outfile=plugin.js src/plugin.ts",
-                "watch": "esbuild --target=es2018 --format=esm --platform=node --bundle --sourcemap=inline --watch --outfile=plugin.js src/plugin.ts"
+                "watch": "esbuild --target=es2018 --format=esm --platform=node --bundle --sourcemap=inline --watch --outfile=plugin.js src/plugin.ts",
+                "build": "npx esbuild --target=es2018 --format=esm --platform=node --bundle --outfile='plugin.js' 'src/plugin.ts'",
+                "format": "prettier ./src -w"
             },
             "author": "krypek",
             "license": "GNU GPLv3",
             "homepage": "https://github.com/krypciak/cc-vim",
+            "types": "src/global.d.ts",
             "devDependencies": {
                 "@types/node": "^20.4.4",
                 "@typescript-eslint/eslint-plugin": "^6.2.0",
@@ -813,23 +816,24 @@
                 "fuse.js": "^6.6.2",
                 "prettier": "3.0.0",
                 "typescript": "^5.1.6",
-                "ultimate-crosscode-typedefs": "github:krypciak/ultimate-crosscode-typedefs"
+                "ultimate-crosscode-typedefs": "github:krypciak/ultimate-crosscode-typedefs",
+                "cc-quick-menu-ext": "github:krypciak/cc-quick-menu-ext"
             }
         },
         "installation": [
             {
                 "type": "modZip",
-                "url": "https://github.com/krypciak/cc-vim/archive/refs/tags/1.3.1.zip",
-                "source": "cc-vim-1.3.1",
+                "url": "https://github.com/krypciak/cc-vim/archive/refs/tags/v1.5.4.zip",
+                "source": "cc-vim-1.5.4",
                 "hash": {
-                    "sha256": "cc036a8ba6700ebde6659dd2e39674047cb9721abe773c7beeac036e6c7399f8"
+                    "sha256": "c6c650179f47dcd4734c1df2364057b22d752c9fb8b4ce53b5ffc51b0e8566db"
                 }
             },
             {
                 "type": "ccmod",
-                "url": "https://github.com/krypciak/cc-vim/releases/download/1.3.1/cc-vim-1.3.1.ccmod",
+                "url": "https://github.com/krypciak/cc-vim/releases/download/v1.5.4/cc-vim-1.5.4.ccmod",
                 "hash": {
-                    "sha256": "58dae609b70fb78a9a02cb17c900619453250c31495f8467ffa98f2111fd0527"
+                    "sha256": "956b112b9e9928c8de6e8eac68f3e132dd275d31904f3bed607c4aee0ff09eb0"
                 }
             }
         ]
@@ -941,14 +945,6 @@
             }
         },
         "installation": [
-            {
-                "type": "modZip",
-                "url": "https://github.com/EL20202/el-crosscode-tweaks/archive/refs/tags/v0.5.8.zip",
-                "source": "el-crosscode-tweaks-0.5.8",
-                "hash": {
-                    "sha256": "fbe68466dd4854887c5ab62029a5754e8c7377a6917d988cea96b756e5a8c07c"
-                }
-            },
             {
                 "type": "ccmod",
                 "url": "https://github.com/EL20202/el-crosscode-tweaks/releases/download/v0.5.8/els-tweaks.ccmod",
@@ -1354,19 +1350,27 @@
             "plugin": "plugin.js",
             "homepage": "https://github.com/CCDirectLink/CCTimer",
             "description": "A speedrun timer for CrossCode.",
-            "version": "2.6.0",
+            "scripts": {
+                "start": "esbuild --target=es2018 --format=esm --platform=node --bundle --sourcemap=inline --outfile=plugin.js src/plugin.js",
+                "watch": "esbuild --target=es2018 --format=esm --platform=node --bundle --sourcemap=inline --watch --outfile=plugin.js src/plugin.js"
+            },
+            "version": "3.0.0",
             "ccmodDependencies": {
                 "ccloader": "^2.19.0",
                 "Simplify": "^2.9.0"
+            },
+            "devDependencies": {
+                "esbuild": "^0.19.1",
+                "ws": "^8.13.0"
             }
         },
         "installation": [
             {
                 "type": "modZip",
-                "url": "https://github.com/CCDirectLink/CCTimer/archive/v2.6.0.zip",
-                "source": "CCTimer-2.6.0/timer",
+                "url": "https://github.com/CCDirectLink/CCTimer/releases/download/v3.0.0/CCTimer.zip",
+                "source": "CCTimer",
                 "hash": {
-                    "sha256": "aae5a656c8174b2d0dbcf340851ea9ca5ba5fd1b85c7a05f7aa8fe1086daf7b9"
+                    "sha256": "7ba4327609e3ff0b29d2921af7d9255fbeae9dfe3d4fc035f93e99312f7ff2bb"
                 }
             }
         ]
