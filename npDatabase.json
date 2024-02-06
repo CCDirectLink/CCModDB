@@ -728,6 +728,52 @@
             }
         ]
     },
+    "cc-diorbital-menu": {
+        "metadata": {
+            "name": "cc-diorbital-menu",
+            "version": "1.0.3",
+            "scripts": {
+                "start": "npx esbuild --target=es2018 --format=esm --platform=node --bundle --sourcemap=inline --outfile=plugin.js src/plugin.ts",
+                "watch": "npx esbuild --target=es2018 --format=esm --platform=node --bundle --sourcemap=inline --watch --outfile=plugin.js src/plugin.ts",
+                "build": "npx esbuild --target=es2018 --format=esm --platform=node --bundle --minify --outfile='plugin.js' 'src/plugin.ts'",
+                "format": "prettier ./src -w"
+            },
+            "license": "GPLv3",
+            "homepage": "https://github.com/krypciak/cc-diorbital-menu",
+            "ccmodHumanName": "cc-diorbital-menu",
+            "description": "Extends the quick menu",
+            "plugin": "plugin.js",
+            "devDependencies": {
+                "@types/node": "^11.6.0",
+                "@typescript-eslint/eslint-plugin": "^6.20.0",
+                "@typescript-eslint/parser": "^6.20.0",
+                "esbuild": "^0.20.0",
+                "eslint": "^8.56.0",
+                "eslint-config-prettier": "^9.1.0",
+                "prettier": "3.2.4",
+                "typescript": "^5.3.3",
+                "ultimate-crosscode-typedefs": "github:krypciak/ultimate-crosscode-typedefs",
+                "cc-vim": "github:krypciak/cc-vim"
+            }
+        },
+        "installation": [
+            {
+                "type": "modZip",
+                "url": "https://github.com/krypciak/cc-diorbital-menu/archive/refs/tags/v1.0.3.zip",
+                "source": "cc-diorbital-menu-1.0.3",
+                "hash": {
+                    "sha256": "e7eea0c5a547e325661fc17a51b39219da35ee8fafe2706b1c75b34113b40f2b"
+                }
+            },
+            {
+                "type": "ccmod",
+                "url": "https://github.com/krypciak/cc-diorbital-menu/releases/download/v1.0.3/cc-diorbital-menu-1.0.3.ccmod",
+                "hash": {
+                    "sha256": "5c5246f43f6ae7a9f3c5eb26c4b40c5a3a8cab224740f881ade7392c897d712f"
+                }
+            }
+        ]
+    },
     "cc-extra-dialogue": {
         "metadata": {
             "name": "cc-extra-dialogue",
