@@ -301,6 +301,22 @@
             },
             "version": "1.0.0"
         },
+        "cc-diorbital-menu": {
+            "name": "cc-diorbital-menu",
+            "description": "Extends the quick menu",
+            "license": "GPLv3",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/krypciak/cc-diorbital-menu"
+                }
+            ],
+            "archive_link": "https://github.com/krypciak/cc-diorbital-menu/releases/download/v1.0.3/cc-diorbital-menu-1.0.3.ccmod",
+            "hash": {
+                "sha256": "5c5246f43f6ae7a9f3c5eb26c4b40c5a3a8cab224740f881ade7392c897d712f"
+            },
+            "version": "1.0.3"
+        },
         "cc-extra-dialogue": {
             "name": "CrossCode Extra Dialogue",
             "description": "Adds more lore-friendly dialogue for party members.",
@@ -317,7 +333,7 @@
             "version": "1.0.0"
         },
         "cc-fancy-crash": {
-            "name": "cc-fancy-crash",
+            "name": "Fancy crash",
             "description": "Better crash message",
             "license": "GPLv3",
             "page": [
@@ -331,6 +347,51 @@
                 "sha256": "edc33bc5c294a9573a49eea1c4080a458c70a9e9e8e1a6f960e3d798ce935503"
             },
             "version": "1.0.7"
+        },
+        "cc-oldmedia": {
+            "name": "CC-OldMedia",
+            "description": "A mod that brings back some old title screen assets.",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/lexisother/CCOldMedia"
+                }
+            ],
+            "archive_link": "https://github.com/lexisother/CCOldMedia/releases/download/v1.0.0/CCOldMedia.ccmod",
+            "hash": {
+                "sha256": "0791db068d46cf394fc3a512cf3a5bca7744a1550d1e72d07adb39bcea097703"
+            },
+            "version": "1.0.0"
+        },
+        "cc-quickinfo-exp": {
+            "name": "QuickInfo EXP Viewer",
+            "description": "Shows the EXP the enemy will give you in the quickinfo popup.",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/lexisother/cc-quickinfo-exp"
+                }
+            ],
+            "archive_link": "https://github.com/lexisother/cc-quickinfo-exp/releases/download/v1.0.1/cc-quickinfo-exp.ccmod",
+            "hash": {
+                "sha256": "fcdeeba04a3c3e210353a23031c4396dfa33876f770347e550103a4308e3685a"
+            },
+            "version": "1.0.0"
+        },
+        "cc-uncapped-stats": {
+            "name": "Uncapped Stats",
+            "description": "Removes! the visual stat caps - see your stats for what they really are!",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/EL20202/cc-uncapped-stats"
+                }
+            ],
+            "archive_link": "https://github.com/EL20202/cc-uncapped-stats/releases/download/v1.1.1/cc-uncapped-stats-v1.1.1.ccmod",
+            "hash": {
+                "sha256": "4084245193fe5b6f43842afcc8db02b78ea6f12472a345b17a339c4c59e48fc8"
+            },
+            "version": "1.1.1"
         },
         "cc-vim": {
             "name": "Vim Command Mode",
@@ -645,7 +706,7 @@
             "version": "0.1.1"
         },
         "timer": {
-            "name": "timer",
+            "name": "CCTimer",
             "description": "A speedrun timer for CrossCode.",
             "page": [
                 {
@@ -706,3 +767,4 @@
             "version": "1.1.2"
         }
     }
+}
