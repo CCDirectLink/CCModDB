@@ -350,15 +350,6 @@
   },
   {
     "type": "modZip",
-    "urlZip": "https://github.com/krypciak/cc-diorbital-menu/archive/refs/tags/v1.0.3.zip",
-    "source": "cc-diorbital-menu-1.0.3"
-  },
-  {
-    "type": "ccmod",
-    "url": "https://github.com/krypciak/cc-diorbital-menu/releases/download/v1.0.3/cc-diorbital-menu-1.0.3.ccmod"
-  },
-  {
-    "type": "modZip",
     "urlZip": "https://github.com/krypciak/cc-fancy-crash/archive/refs/tags/v1.0.7.zip",
     "source": "cc-fancy-crash-1.0.7"
   },
