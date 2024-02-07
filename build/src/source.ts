@@ -1,6 +1,7 @@
 import stream from 'stream'
 import yauzl from 'yauzl'
 import { download, streamToBuffer } from './download'
+import fs from 'fs'
 
 export type ModMetadatas = {
     ccmod?: PkgCCMod
@@ -9,36 +10,44 @@ export type ModMetadatas = {
 export type ModMetadatasInput = ModMetadatas & { input: InputLocation }
 
 export async function get(input: InputLocation): Promise<ModMetadatasInput> {
-    let out
+    const fileFetchFunc: ((input: any, fileName: string, parseToJson?: boolean) => any) | 'error' =
+        input.type === 'modZip'
+            ? (input: ModZipInputLocation, fileName, parseToJson) => getModZipFile<PkgMetadata>(input, fileName, parseToJson)
+            : input.type === 'ccmod'
+            ? (input: CCModInputLocation, fileName, parseToJson) => getCCModFile<PkgMetadata>(input, fileName, parseToJson)
+            : 'error'
+    if (fileFetchFunc === 'error') throw new Error(`Unknown location type '${input.type}'`)
+
+    let pkg
     try {
-        switch (input.type) {
-            case 'modZip':
-                out = {
-                    meta: await getModZipFile<PkgMetadata>(input, 'package.json'),
-                    ccmod: await getModZipFile<PkgCCMod>(input, 'ccmod.json'),
-                    input,
-                }
-                break
-            case 'ccmod':
-                out = {
-                    meta: await getCCModFile<PkgMetadata>(input, 'package.json'),
-                    ccmod: await getCCModFile<PkgCCMod>(input, 'ccmod.json'),
-                    input,
-                }
-                break
-            default:
-                throw new Error(`Unknown location type '${input.type}'`)
+        pkg = {
+            meta: await fileFetchFunc(input, 'package.json'),
+            ccmod: await fileFetchFunc(input, 'ccmod.json'),
+            input,
         }
     } catch (e) {
         console.log('Error while extracting', input)
         console.log(e)
         throw e
     }
-    if (!out.ccmod && !out.meta) throw new Error(`A mod has to either have a package.json or a ccmod.json: ${input}`)
-    return out
+    if (!pkg.ccmod && !pkg.meta) throw new Error(`A mod has to either have a package.json or a ccmod.json: ${input}`)
+    const iconPath = getModIconPath(pkg)
+    if (iconPath) {
+        const imgData = await fileFetchFunc(input, iconPath, false)
+        fs.writeFile(`../icons/${pkg.ccmod!.id}.png`, imgData, err => {
+            if (err) throw err
+        })
+    }
+    return pkg
 }
 
-async function getModZipFile<T>(zip: ModZipInputLocation, fileName: string): Promise<T | undefined> {
+function getModIconPath(pkg: ModMetadatasInput): string | undefined {
+    const ccmod = pkg.ccmod
+    if (!ccmod || !ccmod.icons || typeof ccmod.icons !== 'object' || !ccmod.icons['24']) return
+    return ccmod.icons['24']
+}
+
+async function getModZipFile<T>(zip: ModZipInputLocation, fileName: string, parseToJson: boolean = true): Promise<T | undefined> {
     const file = await download(zip.urlZip)
     const buf = await streamToBuffer(file)
     if (buf.length === 0) return
@@ -46,11 +55,12 @@ async function getModZipFile<T>(zip: ModZipInputLocation, fileName: string): Pro
     let stream
     stream = await openFile(archive, modZipPath(zip, fileName))
     if (!stream) return
-    const rawPkg = await streamToBuffer(stream)
+    const raw = await streamToBuffer(stream)
 
     archive.close()
 
-    return JSON.parse(rawPkg as unknown as string) as T
+    if (!parseToJson) return raw as unknown as T
+    return JSON.parse(raw as unknown as string) as T
 }
 
 function modZipPath(zip: ModZipInputLocation, fileName: string): string {
@@ -63,18 +73,19 @@ function modZipPath(zip: ModZipInputLocation, fileName: string): string {
     return fileName
 }
 
-async function getCCModFile<T>(ccmod: CCModInputLocation, fileName: string): Promise<T | undefined> {
+async function getCCModFile<T>(ccmod: CCModInputLocation, fileName: string, parseToJson: boolean = true): Promise<T | undefined> {
     const file = await download(ccmod.url)
     const buf = await streamToBuffer(file)
     if (buf.length === 0) return
     const archive = await open(buf)
     const stream = await openFile(archive, fileName)
     if (!stream) return
-    const rawPkg = await streamToBuffer(stream)
+    const raw = await streamToBuffer(stream)
 
     archive.close()
 
-    return JSON.parse(rawPkg as unknown as string) as T
+    if (!parseToJson) return raw as unknown as T
+    return JSON.parse(raw as unknown as string) as T
 }
 
 function open(buffer: Buffer): Promise<yauzl.ZipFile> {
