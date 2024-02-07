@@ -20,6 +20,21 @@
             },
             "version": "1.0.0"
         },
+        "CC-OldMedia": {
+            "name": "CC-OldMedia",
+            "description": "A mod that brings back some old title screen assets.",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/lexisother/CCOldMedia"
+                }
+            ],
+            "archive_link": "https://github.com/lexisother/CCOldMedia/releases/download/v1.0.0/CCOldMedia.ccmod",
+            "hash": {
+                "sha256": "0791db068d46cf394fc3a512cf3a5bca7744a1550d1e72d07adb39bcea097703"
+            },
+            "version": "1.0.0"
+        },
         "CCJoystickExt": {
             "name": "CCJoystickExt",
             "description": "Adds gamepad bindings on L3 and R3 to easily swap elements",
@@ -39,6 +54,21 @@
                 "sha256": "7ab3d850b5368dda4593318fd3e957e0bc46128e25844eeda97ca0eec16b343a"
             },
             "version": "1.1.3"
+        },
+        "CCPostDLC": {
+            "name": "CCPostDLC",
+            "description": "Adjusts the game to continue after completing the DLC.",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/lexisother/CCPostDLC"
+                }
+            ],
+            "archive_link": "https://github.com/lexisother/CCPostDLC/releases/download/v1.0.0/CCPostDLC.ccmod",
+            "hash": {
+                "sha256": "eec76c279f1683b415e4f06186d6d4d8ae6e9d247cec845bce1e6a7e6d69cea0"
+            },
+            "version": "1.0.0"
         },
         "CCPresetRevival": {
             "name": "Preset revival",
@@ -69,6 +99,36 @@
                 "sha256": "67ff4803a1e5f240187aad81a8101a66b1c4316f110d6ef5f6527b2b472c064e"
             },
             "version": "0.0.8"
+        },
+        "CCTimer": {
+            "name": "CCTimer",
+            "description": "A speedrun timer for CrossCode.",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/CCDirectLink/CCTimer"
+                }
+            ],
+            "archive_link": "https://github.com/CCDirectLink/CCTimer/releases/download/v3.0.0/CCTimer.zip",
+            "hash": {
+                "sha256": "7ba4327609e3ff0b29d2921af7d9255fbeae9dfe3d4fc035f93e99312f7ff2bb"
+            },
+            "version": "3.0.0"
+        },
+        "Capped Stats": {
+            "name": "Capped Stats",
+            "description": "Adds a visual stat cap - see your stats for what they really aren't!",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/EL20202/cc-uncapped-stats"
+                }
+            ],
+            "archive_link": "https://github.com/EL20202/cc-capped-stats/releases/download/v1.0.0/cc-capped-stats.ccmod",
+            "hash": {
+                "sha256": "34c11a440d7af0857728619e17c7143102cec55a1e16b3dd5c3c16935b8965c2"
+            },
+            "version": "1.0.0"
         },
         "Character Swap": {
             "name": "Character Swap",
@@ -115,6 +175,21 @@
             },
             "version": "1.0.0"
         },
+        "CrossCode Extra Dialogue": {
+            "name": "CrossCode Extra Dialogue",
+            "description": "Adds more lore-friendly dialogue for party members.",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/Paradragon/cc-extra-dialogue"
+                }
+            ],
+            "archive_link": "https://github.com/Paradragon/cc-extra-dialogue/releases/download/v1.0.0/cc-extra-dialogue.ccmod",
+            "hash": {
+                "sha256": "8ab162b803f9a663f5677b058fafcf07218145f38f7a90cbdcf05845b0a5e329"
+            },
+            "version": "1.0.0"
+        },
         "Discord": {
             "name": "Rich Presence for Discord",
             "description": "Show off your CrossCode skills in Discord",
@@ -129,6 +204,16 @@
                 "sha256": "5df25d4d8ad3fc3872c53f184cbfd27d32489985b724d1830ffe1f71fdefbdc8"
             },
             "version": "1.0.0"
+        },
+        "EL's Tweaks": {
+            "name": "EL's Tweaks",
+            "description": "A coremod full of useful functionality for modders, as well as many tweaks for players.",
+            "page": [],
+            "archive_link": "https://github.com/EL20202/el-crosscode-tweaks/releases/download/v0.5.8/els-tweaks.ccmod",
+            "hash": {
+                "sha256": "14a6fa05766def657bed910c7c76b67685ac166771dc9ad82e6d6628f782db77"
+            },
+            "version": "0.5.8"
         },
         "Element Boss": {
             "name": "Element Boss",
@@ -155,6 +240,47 @@
             },
             "version": "1.0.2"
         },
+        "Fancy crash": {
+            "name": "Fancy crash",
+            "description": "Better crash message",
+            "license": "GPLv3",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/krypciak/cc-fancy-crash"
+                }
+            ],
+            "archive_link": "https://github.com/krypciak/cc-fancy-crash/releases/download/v1.0.7/cc-fancy-crash-1.0.7.ccmod",
+            "hash": {
+                "sha256": "edc33bc5c294a9573a49eea1c4080a458c70a9e9e8e1a6f960e3d798ce935503"
+            },
+            "version": "1.0.7"
+        },
+        "Font Utilities": {
+            "name": "Font Utilities",
+            "description": "Adds various new font colors!",
+            "page": [],
+            "archive_link": "https://github.com/EL20202/crosscode-font-utils/releases/download/v1.1.0/font-utils.ccmod",
+            "hash": {
+                "sha256": "fc9aa9aa56336f28815abc06b26dbde42c34885190d0221c6f6c6d3f5b498148"
+            },
+            "version": "1.1.0"
+        },
+        "French": {
+            "name": "French",
+            "description": "CrossCode in french !",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/L-Sherry/French-CC"
+                }
+            ],
+            "archive_link": "https://github.com/L-Sherry/French-CC/archive/v1.4.0.zip",
+            "hash": {
+                "sha256": "30a9febd011fb056426a1d0e8d9f7f50b8dd7310b80a21f1c6e2d3a6c2a143ff"
+            },
+            "version": "1.4.0"
+        },
         "Hadouken": {
             "name": "Hadouken",
             "description": "A mod. (Description not available; contact mod author and have them add a description to their package.json file)",
@@ -162,6 +288,22 @@
             "archive_link": "https://github.com/CookieSalesman/CrossCode-HADOUKEN-v1.0/archive/refs/tags/v1.0.0.zip",
             "hash": {
                 "sha256": "4675038bf374b5193e4a723d9a50b78c8e79bcf249ab70438258bb4241dadd87"
+            },
+            "version": "1.0.0"
+        },
+        "Junolea Skin": {
+            "name": "Junolea Skin",
+            "description": "Adds a skin which makes Lea look like Juno",
+            "license": "CC-BY-4.0",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/Inevitabilis/CC-Junolea"
+                }
+            ],
+            "archive_link": "https://github.com/Inevitabilis/CC-Junolea/archive/refs/tags/v1.0.0.zip",
+            "hash": {
+                "sha256": "16b9dbbfa21c9fa18d8ed3048c842521039f0713c6cfc2a17f2d2e89f79bea2f"
             },
             "version": "1.0.0"
         },
@@ -205,6 +347,37 @@
             },
             "version": "1.0.1"
         },
+        "Localize Me": {
+            "name": "Localize Me",
+            "description": "Add support for more locales, languages and translations",
+            "license": "MIT",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/L-Sherry/Localize-Me"
+                }
+            ],
+            "archive_link": "https://github.com/L-Sherry/Localize-me/archive/v0.6.0.zip",
+            "hash": {
+                "sha256": "98da8afe115cb453331ba96a70711bf22453703a921d1578b239aff14084702b"
+            },
+            "version": "0.6.0"
+        },
+        "Logic Steps": {
+            "name": "Logic Steps",
+            "description": "Adds a couple custom patch steps that allow for control of logic flow.",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/lexisother/logic-steps"
+                }
+            ],
+            "archive_link": "https://github.com/lexisother/logic-steps/releases/download/v1.0.1/logic-steps.ccmod",
+            "hash": {
+                "sha256": "79ac505e9f8f5f948ecb1f9e33b8da330a352f95eee5d381dd697bd3cd93f730"
+            },
+            "version": "1.0.1"
+        },
         "New game++": {
             "name": "New game++",
             "description": "A small collection of addons to CrossCode's NG+.",
@@ -219,6 +392,21 @@
                 "sha256": "a9ccbc44306b43f8b3d2adf1f121e39b14057227961d8881bf831e63aca3a685"
             },
             "version": "1.3.0"
+        },
+        "Nine Rooms": {
+            "name": "Nine Rooms",
+            "description": "A little piece of lost history.",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/Pyrocorvid/CCNineRooms"
+                }
+            ],
+            "archive_link": "https://github.com/Pyrocorvid/CCNineRooms/archive/refs/tags/v1.0.1.zip",
+            "hash": {
+                "sha256": "2a62c02cc322ef7a79c49352a5ab8b4098dfa2f10b2f8cb6b989ab2f6444822d"
+            },
+            "version": "0.1.0"
         },
         "Palicat": {
             "name": "Palicat",
@@ -235,6 +423,21 @@
             },
             "version": "1.0.4"
         },
+        "Past Booster": {
+            "name": "Past Booster",
+            "description": "Makes the Nine Rooms mod a little more... post-gamey.",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/Pyrocorvid/CCNineRooms"
+                }
+            ],
+            "archive_link": "https://github.com/Pyrocorvid/CCNineRooms/archive/refs/tags/v1.0.1.zip",
+            "hash": {
+                "sha256": "2a62c02cc322ef7a79c49352a5ab8b4098dfa2f10b2f8cb6b989ab2f6444822d"
+            },
+            "version": "0.1.0"
+        },
         "Qine": {
             "name": "Qine",
             "description": "Adds the character Qine as a party member and PvP duel.",
@@ -249,6 +452,21 @@
                 "sha256": "73bec599fdb63f6b0504d1ea6b549904daf97f00c8667f6bd6378c91560d8c29"
             },
             "version": "0.2.7"
+        },
+        "QuickInfo EXP Viewer": {
+            "name": "QuickInfo EXP Viewer",
+            "description": "Shows the EXP the enemy will give you in the quickinfo popup.",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/lexisother/cc-quickinfo-exp"
+                }
+            ],
+            "archive_link": "https://github.com/lexisother/cc-quickinfo-exp/releases/download/v1.0.1/cc-quickinfo-exp.ccmod",
+            "hash": {
+                "sha256": "fcdeeba04a3c3e210353a23031c4396dfa33876f770347e550103a4308e3685a"
+            },
+            "version": "1.0.0"
         },
         "Restart Button": {
             "name": "Restart Button",
@@ -276,6 +494,52 @@
             },
             "version": "2.12.1"
         },
+        "Uncapped Stats": {
+            "name": "Uncapped Stats",
+            "description": "Removes! the visual stat caps - see your stats for what they really are!",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/EL20202/cc-uncapped-stats"
+                }
+            ],
+            "archive_link": "https://github.com/EL20202/cc-uncapped-stats/releases/download/v1.1.1/cc-uncapped-stats-v1.1.1.ccmod",
+            "hash": {
+                "sha256": "4084245193fe5b6f43842afcc8db02b78ea6f12472a345b17a339c4c59e48fc8"
+            },
+            "version": "1.1.1"
+        },
+        "Vim Command Mode": {
+            "name": "Vim Command Mode",
+            "description": "Adds a popup command prompt",
+            "license": "GNU GPLv3",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/krypciak/cc-vim"
+                }
+            ],
+            "archive_link": "https://github.com/krypciak/cc-vim/releases/download/v1.5.4/cc-vim-1.5.4.ccmod",
+            "hash": {
+                "sha256": "956b112b9e9928c8de6e8eac68f3e132dd275d31904f3bed607c4aee0ff09eb0"
+            },
+            "version": "1.5.4"
+        },
+        "World map overhaul": {
+            "name": "World map overhaul",
+            "description": "A better world map",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/dmitmel/cc-world-map-overhaul"
+                }
+            ],
+            "archive_link": "https://github.com/dmitmel/cc-world-map-overhaul/releases/download/v1.1.2/world-map-overhaul_v1.1.2.ccmod",
+            "hash": {
+                "sha256": "78aa2526039c77e69252ccb3f3ff0e0ba6d4ba6c18a10a900002e6981d024a05"
+            },
+            "version": "1.1.2"
+        },
         "blades": {
             "name": "blades",
             "description": "Asset which replaces balls with blades, now for all classes!",
@@ -285,21 +549,6 @@
                 "sha256": "aa1fe7bdc217a8c27d91496b48f2642cea243ed158dafe32251834536666a25a"
             },
             "version": "1.5.0"
-        },
-        "cc-capped-stats": {
-            "name": "Capped Stats",
-            "description": "Adds a visual stat cap - see your stats for what they really aren't!",
-            "page": [
-                {
-                    "name": "GitHub",
-                    "url": "https://github.com/EL20202/cc-uncapped-stats"
-                }
-            ],
-            "archive_link": "https://github.com/EL20202/cc-capped-stats/releases/download/v1.0.0/cc-capped-stats.ccmod",
-            "hash": {
-                "sha256": "34c11a440d7af0857728619e17c7143102cec55a1e16b3dd5c3c16935b8965c2"
-            },
-            "version": "1.0.0"
         },
         "cc-diorbital-menu": {
             "name": "cc-diorbital-menu",
@@ -317,114 +566,17 @@
             },
             "version": "1.0.3"
         },
-        "cc-extra-dialogue": {
-            "name": "CrossCode Extra Dialogue",
-            "description": "Adds more lore-friendly dialogue for party members.",
-            "page": [
-                {
-                    "name": "GitHub",
-                    "url": "https://github.com/Paradragon/cc-extra-dialogue"
-                }
-            ],
-            "archive_link": "https://github.com/Paradragon/cc-extra-dialogue/releases/download/v1.0.0/cc-extra-dialogue.ccmod",
+        "cursedcode": {
+            "name": "cursedcode",
+            "description": "Cursed custom maps.",
+            "page": [],
+            "archive_link": "https://github.com/Symphiel/CursedCode/releases/download/0.1.1/cursedcode.ccmod",
             "hash": {
-                "sha256": "8ab162b803f9a663f5677b058fafcf07218145f38f7a90cbdcf05845b0a5e329"
+                "sha256": "e265e1cb434d6718c655909792a8077cbe6073618a0a984e43fc944a62caee46"
             },
-            "version": "1.0.0"
+            "version": "0.1.1"
         },
-        "cc-fancy-crash": {
-            "name": "Fancy crash",
-            "description": "Better crash message",
-            "license": "GPLv3",
-            "page": [
-                {
-                    "name": "GitHub",
-                    "url": "https://github.com/krypciak/cc-fancy-crash"
-                }
-            ],
-            "archive_link": "https://github.com/krypciak/cc-fancy-crash/releases/download/v1.0.7/cc-fancy-crash-1.0.7.ccmod",
-            "hash": {
-                "sha256": "edc33bc5c294a9573a49eea1c4080a458c70a9e9e8e1a6f960e3d798ce935503"
-            },
-            "version": "1.0.7"
-        },
-        "cc-oldmedia": {
-            "name": "CC-OldMedia",
-            "description": "A mod that brings back some old title screen assets.",
-            "page": [
-                {
-                    "name": "GitHub",
-                    "url": "https://github.com/lexisother/CCOldMedia"
-                }
-            ],
-            "archive_link": "https://github.com/lexisother/CCOldMedia/releases/download/v1.0.0/CCOldMedia.ccmod",
-            "hash": {
-                "sha256": "0791db068d46cf394fc3a512cf3a5bca7744a1550d1e72d07adb39bcea097703"
-            },
-            "version": "1.0.0"
-        },
-        "cc-quickinfo-exp": {
-            "name": "QuickInfo EXP Viewer",
-            "description": "Shows the EXP the enemy will give you in the quickinfo popup.",
-            "page": [
-                {
-                    "name": "GitHub",
-                    "url": "https://github.com/lexisother/cc-quickinfo-exp"
-                }
-            ],
-            "archive_link": "https://github.com/lexisother/cc-quickinfo-exp/releases/download/v1.0.1/cc-quickinfo-exp.ccmod",
-            "hash": {
-                "sha256": "fcdeeba04a3c3e210353a23031c4396dfa33876f770347e550103a4308e3685a"
-            },
-            "version": "1.0.0"
-        },
-        "cc-uncapped-stats": {
-            "name": "Uncapped Stats",
-            "description": "Removes! the visual stat caps - see your stats for what they really are!",
-            "page": [
-                {
-                    "name": "GitHub",
-                    "url": "https://github.com/EL20202/cc-uncapped-stats"
-                }
-            ],
-            "archive_link": "https://github.com/EL20202/cc-uncapped-stats/releases/download/v1.1.1/cc-uncapped-stats-v1.1.1.ccmod",
-            "hash": {
-                "sha256": "4084245193fe5b6f43842afcc8db02b78ea6f12472a345b17a339c4c59e48fc8"
-            },
-            "version": "1.1.1"
-        },
-        "cc-vim": {
-            "name": "Vim Command Mode",
-            "description": "Adds a popup command prompt",
-            "license": "GNU GPLv3",
-            "page": [
-                {
-                    "name": "GitHub",
-                    "url": "https://github.com/krypciak/cc-vim"
-                }
-            ],
-            "archive_link": "https://github.com/krypciak/cc-vim/releases/download/v1.5.4/cc-vim-1.5.4.ccmod",
-            "hash": {
-                "sha256": "956b112b9e9928c8de6e8eac68f3e132dd275d31904f3bed607c4aee0ff09eb0"
-            },
-            "version": "1.5.4"
-        },
-        "ccpostdlc": {
-            "name": "CCPostDLC",
-            "description": "Adjusts the game to continue after completing the DLC.",
-            "page": [
-                {
-                    "name": "GitHub",
-                    "url": "https://github.com/lexisother/CCPostDLC"
-                }
-            ],
-            "archive_link": "https://github.com/lexisother/CCPostDLC/releases/download/v1.0.0/CCPostDLC.ccmod",
-            "hash": {
-                "sha256": "eec76c279f1683b415e4f06186d6d4d8ae6e9d247cec845bce1e6a7e6d69cea0"
-            },
-            "version": "1.0.0"
-        },
-        "crosscode-tweak-pack": {
+        "dmitmel's tweak pack": {
             "name": "dmitmel's tweak pack",
             "description": "Micro-mods by dmitmel in a single 999-in-1 package, ranging from QoL tweaks to cheats.",
             "license": "CC0-1.0",
@@ -440,26 +592,6 @@
             },
             "version": "1.1.0"
         },
-        "cursedcode": {
-            "name": "cursedcode",
-            "description": "Cursed custom maps.",
-            "page": [],
-            "archive_link": "https://github.com/Symphiel/CursedCode/releases/download/0.1.1/cursedcode.ccmod",
-            "hash": {
-                "sha256": "e265e1cb434d6718c655909792a8077cbe6073618a0a984e43fc944a62caee46"
-            },
-            "version": "0.1.1"
-        },
-        "el-tweaks": {
-            "name": "EL's Tweaks",
-            "description": "A coremod full of useful functionality for modders, as well as many tweaks for players.",
-            "page": [],
-            "archive_link": "https://github.com/EL20202/el-crosscode-tweaks/releases/download/v0.5.8/els-tweaks.ccmod",
-            "hash": {
-                "sha256": "14a6fa05766def657bed910c7c76b67685ac166771dc9ad82e6d6628f782db77"
-            },
-            "version": "0.5.8"
-        },
         "extendable-severed-heads": {
             "name": "extendable-severed-heads",
             "description": "A mod. (Description not available; contact mod author and have them add a description to their package.json file)",
@@ -469,31 +601,6 @@
                 "sha256": "2fd7991bc70000ade0af06d585c64d1458adee6769b00cbccbbc748be487549e"
             },
             "version": "1.0.0"
-        },
-        "font-utils": {
-            "name": "Font Utilities",
-            "description": "Adds various new font colors!",
-            "page": [],
-            "archive_link": "https://github.com/EL20202/crosscode-font-utils/releases/download/v1.1.0/font-utils.ccmod",
-            "hash": {
-                "sha256": "fc9aa9aa56336f28815abc06b26dbde42c34885190d0221c6f6c6d3f5b498148"
-            },
-            "version": "1.1.0"
-        },
-        "french": {
-            "name": "French",
-            "description": "CrossCode in french !",
-            "page": [
-                {
-                    "name": "GitHub",
-                    "url": "https://github.com/L-Sherry/French-CC"
-                }
-            ],
-            "archive_link": "https://github.com/L-Sherry/French-CC/archive/v1.4.0.zip",
-            "hash": {
-                "sha256": "30a9febd011fb056426a1d0e8d9f7f50b8dd7310b80a21f1c6e2d3a6c2a143ff"
-            },
-            "version": "1.4.0"
         },
         "hardcoded-config-injector": {
             "name": "hardcoded-config-injector",
@@ -562,53 +669,6 @@
             },
             "version": "0.2.0"
         },
-        "junolea": {
-            "name": "Junolea Skin",
-            "description": "Adds a skin which makes Lea look like Juno",
-            "license": "CC-BY-4.0",
-            "page": [
-                {
-                    "name": "GitHub",
-                    "url": "https://github.com/Inevitabilis/CC-Junolea"
-                }
-            ],
-            "archive_link": "https://github.com/Inevitabilis/CC-Junolea/archive/refs/tags/v1.0.0.zip",
-            "hash": {
-                "sha256": "16b9dbbfa21c9fa18d8ed3048c842521039f0713c6cfc2a17f2d2e89f79bea2f"
-            },
-            "version": "1.0.0"
-        },
-        "localize-me": {
-            "name": "Localize Me",
-            "description": "Add support for more locales, languages and translations",
-            "license": "MIT",
-            "page": [
-                {
-                    "name": "GitHub",
-                    "url": "https://github.com/L-Sherry/Localize-Me"
-                }
-            ],
-            "archive_link": "https://github.com/L-Sherry/Localize-me/archive/v0.6.0.zip",
-            "hash": {
-                "sha256": "98da8afe115cb453331ba96a70711bf22453703a921d1578b239aff14084702b"
-            },
-            "version": "0.6.0"
-        },
-        "logic-steps": {
-            "name": "Logic Steps",
-            "description": "Adds a couple custom patch steps that allow for control of logic flow.",
-            "page": [
-                {
-                    "name": "GitHub",
-                    "url": "https://github.com/lexisother/logic-steps"
-                }
-            ],
-            "archive_link": "https://github.com/lexisother/logic-steps/releases/download/v1.0.1/logic-steps.ccmod",
-            "hash": {
-                "sha256": "79ac505e9f8f5f948ecb1f9e33b8da330a352f95eee5d381dd697bd3cd93f730"
-            },
-            "version": "1.0.1"
-        },
         "map-watch": {
             "name": "Map Watcher",
             "description": "A mod that automatically loads a map when changes are detected",
@@ -659,36 +719,6 @@
             },
             "version": "1.0.1"
         },
-        "nine-rooms": {
-            "name": "Nine Rooms",
-            "description": "A little piece of lost history.",
-            "page": [
-                {
-                    "name": "GitHub",
-                    "url": "https://github.com/Pyrocorvid/CCNineRooms"
-                }
-            ],
-            "archive_link": "https://github.com/Pyrocorvid/CCNineRooms/archive/refs/tags/v1.0.1.zip",
-            "hash": {
-                "sha256": "2a62c02cc322ef7a79c49352a5ab8b4098dfa2f10b2f8cb6b989ab2f6444822d"
-            },
-            "version": "0.1.0"
-        },
-        "past-booster": {
-            "name": "Past Booster",
-            "description": "Makes the Nine Rooms mod a little more... post-gamey.",
-            "page": [
-                {
-                    "name": "GitHub",
-                    "url": "https://github.com/Pyrocorvid/CCNineRooms"
-                }
-            ],
-            "archive_link": "https://github.com/Pyrocorvid/CCNineRooms/archive/refs/tags/v1.0.1.zip",
-            "hash": {
-                "sha256": "2a62c02cc322ef7a79c49352a5ab8b4098dfa2f10b2f8cb6b989ab2f6444822d"
-            },
-            "version": "0.1.0"
-        },
         "readable-saves": {
             "name": "Readable saves",
             "description": "Unencrypts the save file and adds an additional save format suitable for editing by hand",
@@ -721,21 +751,6 @@
             },
             "version": "0.1.1"
         },
-        "timer": {
-            "name": "CCTimer",
-            "description": "A speedrun timer for CrossCode.",
-            "page": [
-                {
-                    "name": "GitHub",
-                    "url": "https://github.com/CCDirectLink/CCTimer"
-                }
-            ],
-            "archive_link": "https://github.com/CCDirectLink/CCTimer/releases/download/v3.0.0/CCTimer.zip",
-            "hash": {
-                "sha256": "7ba4327609e3ff0b29d2921af7d9255fbeae9dfe3d4fc035f93e99312f7ff2bb"
-            },
-            "version": "3.0.0"
-        },
         "timewalker": {
             "name": "timewalker",
             "description": "Lets you control time.",
@@ -766,21 +781,6 @@
                 "sha256": "295b8019d74e0a9bf9a8ff9aa4b48d25694028bc727bc3a830daeb23b4efef3e"
             },
             "version": "1.0.2"
-        },
-        "world-map-overhaul": {
-            "name": "World map overhaul",
-            "description": "A better world map",
-            "page": [
-                {
-                    "name": "GitHub",
-                    "url": "https://github.com/dmitmel/cc-world-map-overhaul"
-                }
-            ],
-            "archive_link": "https://github.com/dmitmel/cc-world-map-overhaul/releases/download/v1.1.2/world-map-overhaul_v1.1.2.ccmod",
-            "hash": {
-                "sha256": "78aa2526039c77e69252ccb3f3ff0e0ba6d4ba6c18a10a900002e6981d024a05"
-            },
-            "version": "1.1.2"
         }
     }
 }
