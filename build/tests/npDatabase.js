@@ -53,6 +53,9 @@ function testPackage(jsonData, mod, name) {
 		if (mod && mod.metadata) {
 			testMetadata(jsonData, mod.metadata);
 		}
+		if (mod && mod.metadataCCMod) {
+			testMetadataCCMod(jsonData, mod.metadataCCMod);
+		}
 
 		if (mod && mod.installation) {
 			testInstallation(mod);
@@ -129,6 +132,80 @@ function testMetadata(jsonData, metadata) {
 	} else {
 		expect(metadata.dependencies === undefined,
 			'metadata.dependencies must not be used').to.be.true;
+	}
+}
+
+function testMetadataCCMod(jsonData, ccmod) {
+	it('Test ccmod.json', () => {
+		expect(typeof ccmod.id === 'string',
+			'ccmod.id (type: string) required').to.be.true;
+
+		expect([undefined, 'mod', 'library'].includes(ccmod.type),
+			'ccmod.type (type: string) must have one of: '
+			+ '[undefined, "mod", "library"]').to.be.true;
+
+		expect(ccmod.version === undefined
+			|| semver.valid(ccmod.version) !== null,
+		'ccmod.version (type: string) must be undefined or valid semver')
+			.to.be.true;
+
+		expect(ccmod.title === undefined
+			|| typeof ccmod.title === 'string'
+            || typeof ccmod.title === 'object',
+		'ccmod.title (type: string) has wrong type').to.be.true;
+		expect(ccmod.description === undefined
+			|| typeof ccmod.description === 'string'
+			|| typeof ccmod.description === 'object',
+		'ccmod.description (type: string) has wrong type').to.be.true;
+		expect(ccmod.license === undefined
+			|| typeof ccmod.license === 'string',
+		'ccmod.license (type: string) has wrong type').to.be.true;
+		expect(ccmod.homepage === undefined
+			|| typeof ccmod.homepage === 'string',
+		'ccmod.homepage (type: string) has wrong type').to.be.true;
+	});
+
+	if (ccmod.dependencies) {
+		it('Test check dependencies', () => {
+			expect(typeof ccmod.dependencies === 'object',
+				'ccmod.dependencies (type: object) must be an object')
+				.to.be.true;
+			expect(Array.isArray(ccmod.dependencies),
+				'ccmod.dependencies (type: object) must be an object')
+				.to.be.false;
+			expect(ccmod.dependencies !== null,
+				'ccmod.dependencies (type: object) must be an object')
+				.to.be.true;
+
+			for (const dep of Object.keys(ccmod.dependencies)) {
+				expect(semver.validRange(ccmod.dependencies[dep]),
+					`dependency ${dep} must be specify a valid range`)
+					.to.not.be.null;
+
+				if (
+					[
+						'crosscode',
+						'simplify',
+						// https://github.com/CCDirectLink/CCLoader3/blob/edb3481d9ea504e2c7f7fe46709ab2b4a7f2ce0b/src/game.ts#L9-L17
+						'fish-gear',
+						'flying-hedgehag',
+						'manlea',
+						'ninja-skin',
+						'post-game',
+						'scorpion-robo',
+						'snowman-tank',
+					].includes(dep.toLowerCase())) {
+					continue;
+				}
+
+				expect(jsonData[dep],
+					`dependency ${dep} must be registered in CCModDb`)
+					.to.not.be.undefined;
+			}
+		});
+	} else {
+		expect(ccmod.dependencies === undefined,
+			'ccmod.dependencies must not be used').to.be.true;
 	}
 }
 
