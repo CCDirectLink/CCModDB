@@ -1194,6 +1194,34 @@
             }
         ]
     },
+    "input-api": {
+        "metadata": {
+            "name": "input-api",
+            "version": "1.0.1",
+            "description": "Allows mods to add rebindable key bindings",
+            "license": "MIT",
+            "homepage": "https://github.com/dmitmel/input-api",
+            "module": true,
+            "postload": "postload.js"
+        },
+        "installation": [
+            {
+                "type": "modZip",
+                "url": "https://github.com/CCDirectLink/input-api/archive/refs/tags/v1.0.1.zip",
+                "source": "input-api-1.0.1",
+                "hash": {
+                    "sha256": "6201ff543341135acb69ce294ffb50ad4792aa5352897e59f1855afff2b7f2c1"
+                }
+            },
+            {
+                "type": "ccmod",
+                "url": "https://github.com/CCDirectLink/input-api/releases/download/v1.0.1/input-api.ccmod",
+                "hash": {
+                    "sha256": "0b23e53d95963ef55c689090bac359f0815f5337dc671466a34adb852558c7c9"
+                }
+            }
+        ]
+    },
     "inventory-search": {
         "metadata": {
             "name": "inventory-search",
