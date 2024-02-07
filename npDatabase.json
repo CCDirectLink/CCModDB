@@ -89,64 +89,6 @@
             }
         ]
     },
-    "CCOldMedia": {
-        "metadata": {
-            "name": "CCOldMedia",
-            "version": "1.0.0",
-            "description": "A mod that brings back some old title screen assets.",
-            "homepage": "https://github.com/lexisother/CCOldMedia",
-            "module": true,
-            "prestart": "src/prestart.js",
-            "ccmodDependencies": {}
-        },
-        "installation": [
-            {
-                "type": "modZip",
-                "url": "https://github.com/lexisother/CCOldMedia/archive/refs/tags/v1.0.0.zip",
-                "source": "CCOldMedia-1.0.0",
-                "hash": {
-                    "sha256": "491263c26aefa8f366c135e2672c0214bb593059d44ddf22bebfc3a655f0b73e"
-                }
-            },
-            {
-                "type": "ccmod",
-                "url": "https://github.com/lexisother/CCOldMedia/releases/download/v1.0.0/CCOldMedia.ccmod",
-                "hash": {
-                    "sha256": "0791db068d46cf394fc3a512cf3a5bca7744a1550d1e72d07adb39bcea097703"
-                }
-            }
-        ]
-    },
-    "CCPostDLC": {
-        "metadata": {
-            "name": "CCPostDLC",
-            "version": "1.0.0",
-            "description": "Adjusts the game to continue after completing the DLC.",
-            "homepage": "https://github.com/lexisother/CCPostDLC",
-            "prestart": "src/prestart.js",
-            "ccmodDependencies": {
-                "crosscode": ">=1.4.0",
-                "post-game": ">=1.4.0"
-            }
-        },
-        "installation": [
-            {
-                "type": "modZip",
-                "url": "https://github.com/lexisother/CCPostDLC/archive/refs/tags/v1.0.0.zip",
-                "source": "CCPostDLC-1.0.0",
-                "hash": {
-                    "sha256": "704877a8628bb3b6973e8adb22ca93bedd7db816b69a8b3c7d9d35301df63ac6"
-                }
-            },
-            {
-                "type": "ccmod",
-                "url": "https://github.com/lexisother/CCPostDLC/releases/download/v1.0.0/CCPostDLC.ccmod",
-                "hash": {
-                    "sha256": "eec76c279f1683b415e4f06186d6d4d8ae6e9d247cec845bce1e6a7e6d69cea0"
-                }
-            }
-        ]
-    },
     "CCPresetRevival": {
         "metadata": {
             "name": "CCPresetRevival",
@@ -189,34 +131,6 @@
                 "source": "CCRandomEvents-0.0.8",
                 "hash": {
                     "sha256": "67ff4803a1e5f240187aad81a8101a66b1c4316f110d6ef5f6527b2b472c064e"
-                }
-            }
-        ]
-    },
-    "Capped Stats": {
-        "metadata": {
-            "name": "Capped Stats",
-            "version": "1.0.0",
-            "description": "big numbers are very scary. :( low numbers are not scary! :)",
-            "homepage": "https://github.com/EL20202/cc-uncapped-stats",
-            "module": true,
-            "prestart": "prestart.js",
-            "ccmodDependencies": {}
-        },
-        "installation": [
-            {
-                "type": "ccmod",
-                "url": "https://github.com/EL20202/cc-capped-stats/releases/download/v1.0.0/cc-capped-stats.ccmod",
-                "hash": {
-                    "sha256": "34c11a440d7af0857728619e17c7143102cec55a1e16b3dd5c3c16935b8965c2"
-                }
-            },
-            {
-                "type": "modZip",
-                "url": "https://github.com/EL20202/cc-capped-stats/archive/refs/tags/v1.0.0.zip",
-                "source": "cc-capped-stats-1.0.0",
-                "hash": {
-                    "sha256": "2d8876bae0fa566ad35b4f4d5db5c2b5d1a69c55b38e27aa337c2b0b666c20c1"
                 }
             }
         ]
@@ -380,29 +294,6 @@
             }
         ]
     },
-    "French": {
-        "metadata": {
-            "name": "French",
-            "description": "CrossCode en français !",
-            "homepage": "https://github.com/L-Sherry/French-CC",
-            "postload": "mod.js",
-            "module": true,
-            "version": "1.4.0",
-            "ccmodDependencies": {
-                "Localize Me": ">=0.5 <1"
-            }
-        },
-        "installation": [
-            {
-                "type": "modZip",
-                "url": "https://github.com/L-Sherry/French-CC/archive/v1.4.0.zip",
-                "source": "French-CC-1.4.0",
-                "hash": {
-                    "sha256": "30a9febd011fb056426a1d0e8d9f7f50b8dd7310b80a21f1c6e2d3a6c2a143ff"
-                }
-            }
-        ]
-    },
     "Hadouken": {
         "metadata": {
             "name": "Hadouken",
@@ -475,57 +366,6 @@
             }
         ]
     },
-    "Localize Me": {
-        "metadata": {
-            "name": "Localize Me",
-            "license": "MIT",
-            "homepage": "https://github.com/L-Sherry/Localize-me",
-            "description": "Add support for more locales, languages and translations",
-            "postload": "mod.js",
-            "module": true,
-            "version": "0.6.0"
-        },
-        "installation": [
-            {
-                "type": "modZip",
-                "url": "https://github.com/L-Sherry/Localize-me/archive/v0.6.0.zip",
-                "source": "Localize-me-0.6.0",
-                "hash": {
-                    "sha256": "98da8afe115cb453331ba96a70711bf22453703a921d1578b239aff14084702b"
-                }
-            }
-        ]
-    },
-    "Logic Steps": {
-        "metadata": {
-            "name": "Logic Steps",
-            "version": "1.0.1",
-            "description": "Adds a couple custom patch steps that allow for control of logic flow.",
-            "homepage": "https://github.com/lexisother/logic-steps",
-            "module": true,
-            "postload": "postload.js",
-            "ccmodDependencies": {
-                "ccloader": ">=2.22.1"
-            }
-        },
-        "installation": [
-            {
-                "type": "modZip",
-                "url": "https://github.com/lexisother/logic-steps/archive/refs/tags/v1.0.1.zip",
-                "source": "logic-steps-1.0.1",
-                "hash": {
-                    "sha256": "9fcde08ef4a637f3393f23a53b70bfdcc6805de2f21f6234f416d36691defd6a"
-                }
-            },
-            {
-                "type": "ccmod",
-                "url": "https://github.com/lexisother/logic-steps/releases/download/v1.0.1/logic-steps.ccmod",
-                "hash": {
-                    "sha256": "79ac505e9f8f5f948ecb1f9e33b8da330a352f95eee5d381dd697bd3cd93f730"
-                }
-            }
-        ]
-    },
     "New game++": {
         "metadata": {
             "name": "New game++",
@@ -535,6 +375,17 @@
             "homepage": "https://github.com/CCDirectLink/CCNewGamePP",
             "description": "A small collection of addons to CrossCode's NG+.",
             "ccmodDependencies": {
+                "crosscode": "^1.2.0",
+                "ccloader": "^2.14.3"
+            }
+        },
+        "metadataCCMod": {
+            "id": "New game++",
+            "version": "1.3.0",
+            "plugin": "plugin.js",
+            "homepage": "https://github.com/CCDirectLink/CCNewGamePP",
+            "description": "A small collection of addons to CrossCode's NG+.",
+            "dependencies": {
                 "crosscode": "^1.2.0",
                 "ccloader": "^2.14.3"
             }
@@ -604,34 +455,6 @@
             }
         ]
     },
-    "QuickInfo EXP Viewer": {
-        "metadata": {
-            "name": "QuickInfo EXP Viewer",
-            "version": "1.0.0",
-            "description": "Shows the EXP the enemy will give you in the quickinfo popup.",
-            "homepage": "https://github.com/lexisother/cc-quickinfo-exp",
-            "module": true,
-            "prestart": "prestart.js",
-            "ccmodDependencies": {}
-        },
-        "installation": [
-            {
-                "type": "modZip",
-                "url": "https://github.com/lexisother/cc-quickinfo-exp/archive/refs/tags/v1.0.1.zip",
-                "source": "cc-quickinfo-exp-1.0.1",
-                "hash": {
-                    "sha256": "e8e0fa7e59aca78821df92121c3e745bdd5fdf7f2ee5df4e028db9dfb471ed05"
-                }
-            },
-            {
-                "type": "ccmod",
-                "url": "https://github.com/lexisother/cc-quickinfo-exp/releases/download/v1.0.1/cc-quickinfo-exp.ccmod",
-                "hash": {
-                    "sha256": "fcdeeba04a3c3e210353a23031c4396dfa33876f770347e550103a4308e3685a"
-                }
-            }
-        ]
-    },
     "Restart Button": {
         "metadata": {
             "name": "Restart Button",
@@ -679,36 +502,6 @@
             }
         ]
     },
-    "Uncapped Stats": {
-        "metadata": {
-            "name": "Uncapped Stats",
-            "version": "1.1.1",
-            "description": "Removes the visual stat caps - see your stats for what they really are!",
-            "homepage": "https://github.com/EL20202/cc-uncapped-stats",
-            "module": true,
-            "prestart": "prestart.js",
-            "ccmodDependencies": {
-                "ccloader": "^2.20.0"
-            }
-        },
-        "installation": [
-            {
-                "type": "ccmod",
-                "url": "https://github.com/EL20202/cc-uncapped-stats/releases/download/v1.1.1/cc-uncapped-stats-v1.1.1.ccmod",
-                "hash": {
-                    "sha256": "4084245193fe5b6f43842afcc8db02b78ea6f12472a345b17a339c4c59e48fc8"
-                }
-            },
-            {
-                "type": "modZip",
-                "url": "https://github.com/EL20202/cc-uncapped-stats/archive/refs/tags/v1.1.1.zip",
-                "source": "cc-uncapped-stats-1.1.1",
-                "hash": {
-                    "sha256": "f71786c48ba246993fd0cd924155a7d09be5fe7020c97482ec285ea7dbe5b1b9"
-                }
-            }
-        ]
-    },
     "blades": {
         "metadata": {
             "name": "blades",
@@ -728,6 +521,47 @@
             }
         ]
     },
+    "cc-capped-stats": {
+        "metadata": {
+            "name": "Capped Stats",
+            "version": "1.0.0",
+            "description": "big numbers are very scary. :( low numbers are not scary! :)",
+            "homepage": "https://github.com/EL20202/cc-uncapped-stats",
+            "module": true,
+            "prestart": "prestart.js",
+            "ccmodDependencies": {}
+        },
+        "metadataCCMod": {
+            "id": "cc-capped-stats",
+            "version": "1.0.0",
+            "title": "Capped Stats",
+            "description": "Adds a visual stat cap - see your stats for what they really aren't!",
+            "prestart": "prestart.js",
+            "icons": {
+                "24": "icon.png"
+            },
+            "dependencies": {
+                "ccloader": "^2.20.0"
+            }
+        },
+        "installation": [
+            {
+                "type": "ccmod",
+                "url": "https://github.com/EL20202/cc-capped-stats/releases/download/v1.0.0/cc-capped-stats.ccmod",
+                "hash": {
+                    "sha256": "34c11a440d7af0857728619e17c7143102cec55a1e16b3dd5c3c16935b8965c2"
+                }
+            },
+            {
+                "type": "modZip",
+                "url": "https://github.com/EL20202/cc-capped-stats/archive/refs/tags/v1.0.0.zip",
+                "source": "cc-capped-stats-1.0.0",
+                "hash": {
+                    "sha256": "2d8876bae0fa566ad35b4f4d5db5c2b5d1a69c55b38e27aa337c2b0b666c20c1"
+                }
+            }
+        ]
+    },
     "cc-extra-dialogue": {
         "metadata": {
             "name": "cc-extra-dialogue",
@@ -737,12 +571,139 @@
             "homepage": "https://github.com/Paradragon/cc-extra-dialogue",
             "prestart": "prestart.js"
         },
+        "metadataCCMod": {
+            "id": "cc-extra-dialogue",
+            "version": "1.0.0",
+            "title": "CrossCode Extra Dialogue",
+            "description": "Adds more lore-friendly dialogue for party members.",
+            "homepage": "https://github.com/Paradragon/cc-extra-dialogue",
+            "icons": {
+                "24": "icon.png"
+            },
+            "prestart": "prestart.js"
+        },
         "installation": [
             {
                 "type": "ccmod",
                 "url": "https://github.com/Paradragon/cc-extra-dialogue/releases/download/v1.0.0/cc-extra-dialogue.ccmod",
                 "hash": {
                     "sha256": "8ab162b803f9a663f5677b058fafcf07218145f38f7a90cbdcf05845b0a5e329"
+                }
+            }
+        ]
+    },
+    "cc-oldmedia": {
+        "metadata": {
+            "name": "CCOldMedia",
+            "version": "1.0.0",
+            "description": "A mod that brings back some old title screen assets.",
+            "homepage": "https://github.com/lexisother/CCOldMedia",
+            "module": true,
+            "prestart": "src/prestart.js",
+            "ccmodDependencies": {}
+        },
+        "metadataCCMod": {
+            "id": "cc-oldmedia",
+            "version": "1.0.0",
+            "title": "CC-OldMedia",
+            "description": "A mod that brings back some old title screen assets.",
+            "homepage": "https://github.com/lexisother/CCOldMedia",
+            "prestart": "src/prestart.js"
+        },
+        "installation": [
+            {
+                "type": "modZip",
+                "url": "https://github.com/lexisother/CCOldMedia/archive/refs/tags/v1.0.0.zip",
+                "source": "CCOldMedia-1.0.0",
+                "hash": {
+                    "sha256": "491263c26aefa8f366c135e2672c0214bb593059d44ddf22bebfc3a655f0b73e"
+                }
+            },
+            {
+                "type": "ccmod",
+                "url": "https://github.com/lexisother/CCOldMedia/releases/download/v1.0.0/CCOldMedia.ccmod",
+                "hash": {
+                    "sha256": "0791db068d46cf394fc3a512cf3a5bca7744a1550d1e72d07adb39bcea097703"
+                }
+            }
+        ]
+    },
+    "cc-quickinfo-exp": {
+        "metadata": {
+            "name": "QuickInfo EXP Viewer",
+            "version": "1.0.0",
+            "description": "Shows the EXP the enemy will give you in the quickinfo popup.",
+            "homepage": "https://github.com/lexisother/cc-quickinfo-exp",
+            "module": true,
+            "prestart": "prestart.js",
+            "ccmodDependencies": {}
+        },
+        "metadataCCMod": {
+            "id": "cc-quickinfo-exp",
+            "version": "1.0.0",
+            "title": "QuickInfo EXP Viewer",
+            "description": "Shows the EXP the enemy will give you in the quickinfo popup.",
+            "poststart": "poststart.js",
+            "dependencies": {}
+        },
+        "installation": [
+            {
+                "type": "modZip",
+                "url": "https://github.com/lexisother/cc-quickinfo-exp/archive/refs/tags/v1.0.1.zip",
+                "source": "cc-quickinfo-exp-1.0.1",
+                "hash": {
+                    "sha256": "e8e0fa7e59aca78821df92121c3e745bdd5fdf7f2ee5df4e028db9dfb471ed05"
+                }
+            },
+            {
+                "type": "ccmod",
+                "url": "https://github.com/lexisother/cc-quickinfo-exp/releases/download/v1.0.1/cc-quickinfo-exp.ccmod",
+                "hash": {
+                    "sha256": "fcdeeba04a3c3e210353a23031c4396dfa33876f770347e550103a4308e3685a"
+                }
+            }
+        ]
+    },
+    "cc-uncapped-stats": {
+        "metadata": {
+            "name": "Uncapped Stats",
+            "version": "1.1.1",
+            "description": "Removes the visual stat caps - see your stats for what they really are!",
+            "homepage": "https://github.com/EL20202/cc-uncapped-stats",
+            "module": true,
+            "prestart": "prestart.js",
+            "ccmodDependencies": {
+                "ccloader": "^2.20.0"
+            }
+        },
+        "metadataCCMod": {
+            "id": "cc-uncapped-stats",
+            "version": "1.1.1",
+            "title": "Uncapped Stats",
+            "description": "Removes! the visual stat caps - see your stats for what they really are!",
+            "homepage": "https://github.com/EL20202/cc-uncapped-stats",
+            "prestart": "prestart.js",
+            "icons": {
+                "24": "icon.png"
+            },
+            "dependencies": {
+                "ccloader": "^2.20.0"
+            }
+        },
+        "installation": [
+            {
+                "type": "ccmod",
+                "url": "https://github.com/EL20202/cc-uncapped-stats/releases/download/v1.1.1/cc-uncapped-stats-v1.1.1.ccmod",
+                "hash": {
+                    "sha256": "4084245193fe5b6f43842afcc8db02b78ea6f12472a345b17a339c4c59e48fc8"
+                }
+            },
+            {
+                "type": "modZip",
+                "url": "https://github.com/EL20202/cc-uncapped-stats/archive/refs/tags/v1.1.1.zip",
+                "source": "cc-uncapped-stats-1.1.1",
+                "hash": {
+                    "sha256": "f71786c48ba246993fd0cd924155a7d09be5fe7020c97482ec285ea7dbe5b1b9"
                 }
             }
         ]
@@ -768,6 +729,36 @@
                 "prettier": "3.0.0",
                 "typescript": "^5.1.6",
                 "ultimate-crosscode-typedefs": "github:krypciak/ultimate-crosscode-typedefs"
+            }
+        },
+        "metadataCCMod": {
+            "id": "cc-vim",
+            "version": "1.3.1",
+            "title": {
+                "en_US": "Vim Command Mode",
+                "de_DE": "Vim Command Mode",
+                "fr_FR": "Vim Command Mode",
+                "zh_CN": "Vim Command Mode",
+                "zh_TW": "Vim Command Mode",
+                "ja_JP": "Vim Command Mode",
+                "ko_KR": "Vim Command Mode"
+            },
+            "description": {
+                "en_US": "Adds a popup command prompt",
+                "de_DE": "Adds a popup command prompt",
+                "fr_FR": "Adds a popup command prompt",
+                "zh_CN": "Adds a popup command prompt",
+                "zh_TW": "Adds a popup command prompt",
+                "ja_JP": "Adds a popup command prompt",
+                "ko_KR": "Adds a popup command prompt"
+            },
+            "homepage": "https://github.com/krypciak/cc-vim",
+            "icons": {
+                "24": "icon.png"
+            },
+            "plugin": "plugin.js",
+            "dependencies": {
+                "input-api": ">=1.0.0"
             }
         },
         "installation": [
@@ -807,6 +798,47 @@
             }
         ]
     },
+    "ccpostdlc": {
+        "metadata": {
+            "name": "CCPostDLC",
+            "version": "1.0.0",
+            "description": "Adjusts the game to continue after completing the DLC.",
+            "homepage": "https://github.com/lexisother/CCPostDLC",
+            "prestart": "src/prestart.js",
+            "ccmodDependencies": {
+                "crosscode": ">=1.4.0",
+                "post-game": ">=1.4.0"
+            }
+        },
+        "metadataCCMod": {
+            "id": "ccpostdlc",
+            "version": "1.0.0",
+            "title": "CCPostDLC",
+            "description": "Adjusts the game to continue after completing the DLC.",
+            "homepage": "https://github.com/lexisother/CCPostDLC",
+            "dependencies": {
+                "crosscode": ">=1.4.0",
+                "post-game": ">=1.4.0"
+            }
+        },
+        "installation": [
+            {
+                "type": "modZip",
+                "url": "https://github.com/lexisother/CCPostDLC/archive/refs/tags/v1.0.0.zip",
+                "source": "CCPostDLC-1.0.0",
+                "hash": {
+                    "sha256": "704877a8628bb3b6973e8adb22ca93bedd7db816b69a8b3c7d9d35301df63ac6"
+                }
+            },
+            {
+                "type": "ccmod",
+                "url": "https://github.com/lexisother/CCPostDLC/releases/download/v1.0.0/CCPostDLC.ccmod",
+                "hash": {
+                    "sha256": "eec76c279f1683b415e4f06186d6d4d8ae6e9d247cec845bce1e6a7e6d69cea0"
+                }
+            }
+        ]
+    },
     "crosscode-tweak-pack": {
         "metadata": {
             "name": "crosscode-tweak-pack",
@@ -835,6 +867,26 @@
                 "prettier": "^2.3.1",
                 "ultimate-crosscode-typedefs": "dmitmel/ultimate-crosscode-typedefs"
             }
+        },
+        "metadataCCMod": {
+            "id": "crosscode-tweak-pack",
+            "version": "1.1.0",
+            "title": "dmitmel's tweak pack",
+            "description": {
+                "en_US": "Micro-mods by dmitmel in a single 999-in-1 package, ranging from QoL tweaks to cheats.",
+                "ru_RU": "Микро-моды от dmitmel в одной упаковке 999-in-1, начиная от QoL дополнений и заканчивая читами."
+            },
+            "license": "CC0-1.0",
+            "homepage": "https://github.com/dmitmel/crosscode-tweak-pack",
+            "icons": {
+                "24": "icon24.png"
+            },
+            "plugin": "src/_plugin.js",
+            "prestart": "src/_prestart.js",
+            "assets": [
+                "data/lang/sc/gui.en_US.json.patch",
+                "data/lang/sc/gui.ru_RU.json.patch"
+            ]
         },
         "installation": [
             {
@@ -894,6 +946,13 @@
                 "watch": "tsc --watch"
             }
         },
+        "metadataCCMod": {
+            "id": "el-tweaks",
+            "version": "0.5.8",
+            "title": "EL's Tweaks",
+            "description": "A coremod full of useful functionality for modders, as well as many tweaks for players.",
+            "plugin": "./dist/plugin.js"
+        },
         "installation": [
             {
                 "type": "modZip",
@@ -938,6 +997,13 @@
             "description": "Adds various new font colors!",
             "prestart": "prestart.js"
         },
+        "metadataCCMod": {
+            "id": "font-utils",
+            "version": "1.1.0",
+            "title": "Font Utilities",
+            "description": "Adds various new font colors!",
+            "prestart": "prestart.js"
+        },
         "installation": [
             {
                 "type": "modZip",
@@ -952,6 +1018,51 @@
                 "url": "https://github.com/EL20202/crosscode-font-utils/releases/download/v1.1.0/font-utils.ccmod",
                 "hash": {
                     "sha256": "fc9aa9aa56336f28815abc06b26dbde42c34885190d0221c6f6c6d3f5b498148"
+                }
+            }
+        ]
+    },
+    "french": {
+        "metadata": {
+            "name": "French",
+            "description": "CrossCode en français !",
+            "homepage": "https://github.com/L-Sherry/French-CC",
+            "postload": "mod.js",
+            "module": true,
+            "version": "1.4.0",
+            "ccmodDependencies": {
+                "Localize Me": ">=0.5 <1"
+            }
+        },
+        "metadataCCMod": {
+            "id": "french",
+            "version": "1.4.0",
+            "title": {
+                "en_US": "French",
+                "fr_FR": "Français",
+                "de_DE": "Französisch"
+            },
+            "description": {
+                "en_US": "CrossCode in french !",
+                "fr_FR": "CrossCode en français !",
+                "de_DE": "CrossCode im Französisch !"
+            },
+            "homepage": "https://github.com/L-Sherry/French-CC",
+            "icons": {
+                "24": "flaglea.png"
+            },
+            "postload": "mod.js",
+            "dependencies": {
+                "localize-me": ">=0.5 <2"
+            }
+        },
+        "installation": [
+            {
+                "type": "modZip",
+                "url": "https://github.com/L-Sherry/French-CC/archive/v1.4.0.zip",
+                "source": "French-CC-1.4.0",
+                "hash": {
+                    "sha256": "30a9febd011fb056426a1d0e8d9f7f50b8dd7310b80a21f1c6e2d3a6c2a143ff"
                 }
             }
         ]
@@ -1107,6 +1218,58 @@
                 "media/map/baked/tree-top-ctron-junolea.png"
             ]
         },
+        "metadataCCMod": {
+            "id": "junolea",
+            "version": "1.0.0",
+            "title": "Junolea Skin",
+            "description": "Adds a skin which makes Lea look like Juno",
+            "license": "CC-BY-4.0",
+            "homepage": "https://github.com/Inevitabilis/CC-Junolea",
+            "icons": {
+                "24": "icon24.png"
+            },
+            "dependencies": {
+                "item-api": ">=0.2.0 <1.0.0"
+            },
+            "assets": [
+                "data/animations/player-skins/junolea-hugging.json",
+                "data/animations/player-skins/junolea-hugging.json.patch",
+                "data/animations/player-skins/junolea-poses-debug.json",
+                "data/animations/player-skins/junolea-poses-debug.json.patch",
+                "data/animations/player-skins/junolea-poses.json",
+                "data/animations/player-skins/junolea-poses.json.patch",
+                "data/animations/player-skins/junolea-sleeping.json",
+                "data/animations/player-skins/junolea-sleeping.json.patch",
+                "data/animations/player-skins/junolea-weak.json",
+                "data/animations/player-skins/junolea-weak.json.patch",
+                "data/animations/player-skins/junolea.json",
+                "data/animations/player-skins/junolea.json.patch",
+                "data/characters/main/junolea.json",
+                "data/characters/main/junolea.json.patch",
+                "data/database.json.patch",
+                "data/effects/skins/junolea.json",
+                "data/effects/skins/junolea.json.patch",
+                "data/item-database.json.patch",
+                "media/entity/player/junolea-hugging.png",
+                "media/entity/player/junolea-move-weak.png",
+                "media/entity/player/junolea-move.png",
+                "media/entity/player/junolea-poses-debug.png",
+                "media/entity/player/junolea-poses.png",
+                "media/entity/player/junolea-sleeping.png",
+                "media/entity/player/junolea-throw.png",
+                "media/face/junolea-hand.png",
+                "media/face/junolea-panic.png",
+                "media/face/junolea-special.png",
+                "media/face/junolea.png",
+                "media/gui/skins/junolea.png",
+                "media/map/baked/lea-bakii-kum-junolea.png",
+                "media/map/baked/lea-ctron-bakii-kum-junolea.png",
+                "media/map/baked/lea-server-junolea.png",
+                "media/map/baked/the-room-conversation-clear-junolea.png",
+                "media/map/baked/the-room-conversation-shelf-junolea.png",
+                "media/map/baked/tree-top-ctron-junolea.png"
+            ]
+        },
         "installation": [
             {
                 "type": "modZip",
@@ -1114,6 +1277,85 @@
                 "source": "CC-Junolea-1.0.0",
                 "hash": {
                     "sha256": "16b9dbbfa21c9fa18d8ed3048c842521039f0713c6cfc2a17f2d2e89f79bea2f"
+                }
+            }
+        ]
+    },
+    "localize-me": {
+        "metadata": {
+            "name": "Localize Me",
+            "license": "MIT",
+            "homepage": "https://github.com/L-Sherry/Localize-me",
+            "description": "Add support for more locales, languages and translations",
+            "postload": "mod.js",
+            "module": true,
+            "version": "0.6.0"
+        },
+        "metadataCCMod": {
+            "id": "localize-me",
+            "version": "0.6.0",
+            "title": {
+                "en_US": "Localize Me",
+                "fr_FR": "Régionalisez-Moi",
+                "de_DE": "Lokalisiert mich"
+            },
+            "description": {
+                "en_US": "Add support for more locales, languages and translations",
+                "fr_FR": "Ajoute la gestion de plus de locales, de languages et de traductions",
+                "de_DE": "Fügt Unterstützung für mehr Lokalen, Sprachen und Übersetzungen hinzu",
+                "ru_RU": "Мод для создания дополнительных региональных настроек, языков и переводов"
+            },
+            "license": "MIT",
+            "homepage": "https://github.com/L-Sherry/Localize-Me",
+            "postload": "mod.js"
+        },
+        "installation": [
+            {
+                "type": "modZip",
+                "url": "https://github.com/L-Sherry/Localize-me/archive/v0.6.0.zip",
+                "source": "Localize-me-0.6.0",
+                "hash": {
+                    "sha256": "98da8afe115cb453331ba96a70711bf22453703a921d1578b239aff14084702b"
+                }
+            }
+        ]
+    },
+    "logic-steps": {
+        "metadata": {
+            "name": "Logic Steps",
+            "version": "1.0.1",
+            "description": "Adds a couple custom patch steps that allow for control of logic flow.",
+            "homepage": "https://github.com/lexisother/logic-steps",
+            "module": true,
+            "postload": "postload.js",
+            "ccmodDependencies": {
+                "ccloader": ">=2.22.1"
+            }
+        },
+        "metadataCCMod": {
+            "id": "logic-steps",
+            "version": "1.0.1",
+            "title": "Logic Steps",
+            "description": "Adds a couple custom patch steps that allow for control of logic flow.",
+            "postload": "postload.js",
+            "dependencies": {
+                "ccloader": ">=2.22.1"
+            }
+        },
+        "installation": [
+            {
+                "type": "modZip",
+                "url": "https://github.com/lexisother/logic-steps/archive/refs/tags/v1.0.1.zip",
+                "source": "logic-steps-1.0.1",
+                "hash": {
+                    "sha256": "9fcde08ef4a637f3393f23a53b70bfdcc6805de2f21f6234f416d36691defd6a"
+                }
+            },
+            {
+                "type": "ccmod",
+                "url": "https://github.com/lexisother/logic-steps/releases/download/v1.0.1/logic-steps.ccmod",
+                "hash": {
+                    "sha256": "79ac505e9f8f5f948ecb1f9e33b8da330a352f95eee5d381dd697bd3cd93f730"
                 }
             }
         ]
@@ -1210,6 +1452,13 @@
             "description": "A little piece of lost history.",
             "homepage": "https://github.com/Pyrocorvid/CCNineRooms"
         },
+        "metadataCCMod": {
+            "id": "nine-rooms",
+            "version": "0.1.0",
+            "title": "Nine Rooms",
+            "description": "A little piece of lost history.",
+            "homepage": "https://github.com/Pyrocorvid/CCNineRooms"
+        },
         "installation": [
             {
                 "type": "modZip",
@@ -1228,6 +1477,16 @@
             "description": "Makes the Nine Rooms mod a little more... post-gamey.",
             "homepage": "https://github.com/Pyrocorvid/CCNineRooms",
             "ccmodDependencies": {
+                "nine-rooms": ">=0.1.0"
+            }
+        },
+        "metadataCCMod": {
+            "id": "past-booster",
+            "version": "0.1.0",
+            "title": "Past Booster",
+            "description": "Makes the Nine Rooms mod a little more... post-gamey.",
+            "homepage": "https://github.com/Pyrocorvid/CCNineRooms",
+            "dependencies": {
                 "nine-rooms": ">=0.1.0"
             }
         },
@@ -1382,6 +1641,54 @@
             "description": "A better world map",
             "homepage": "https://github.com/dmitmel/cc-world-map-overhaul",
             "version": "1.1.2",
+            "prestart": "prestart.js",
+            "assets": [
+                "media/gui/better-world-map/overlays/colored/arid.png",
+                "media/gui/better-world-map/overlays/colored/autumn-area.png",
+                "media/gui/better-world-map/overlays/colored/autumn-fall.png",
+                "media/gui/better-world-map/overlays/colored/beach.png",
+                "media/gui/better-world-map/overlays/colored/bergen-trails.png",
+                "media/gui/better-world-map/overlays/colored/final-dng.png",
+                "media/gui/better-world-map/overlays/colored/forest.png",
+                "media/gui/better-world-map/overlays/colored/heat-area.png",
+                "media/gui/better-world-map/overlays/colored/jungle.png",
+                "media/gui/better-world-map/overlays/colored/rookie-harbor.png",
+                "media/gui/better-world-map/overlays/default/arid.png",
+                "media/gui/better-world-map/overlays/default/autumn-area.png",
+                "media/gui/better-world-map/overlays/default/autumn-fall.png",
+                "media/gui/better-world-map/overlays/default/beach.png",
+                "media/gui/better-world-map/overlays/default/bergen-trails.png",
+                "media/gui/better-world-map/overlays/default/final-dng.png",
+                "media/gui/better-world-map/overlays/default/forest.png",
+                "media/gui/better-world-map/overlays/default/heat-area.png",
+                "media/gui/better-world-map/overlays/default/jungle.png",
+                "media/gui/better-world-map/overlays/default/rookie-harbor.png",
+                "media/gui/better-world-map/overlays/reveal/arid.png",
+                "media/gui/better-world-map/overlays/reveal/autumn-area.png",
+                "media/gui/better-world-map/overlays/reveal/autumn-fall.png",
+                "media/gui/better-world-map/overlays/reveal/beach.png",
+                "media/gui/better-world-map/overlays/reveal/bergen-trails.png",
+                "media/gui/better-world-map/overlays/reveal/final-dng.png",
+                "media/gui/better-world-map/overlays/reveal/forest.png",
+                "media/gui/better-world-map/overlays/reveal/heat-area.png",
+                "media/gui/better-world-map/overlays/reveal/jungle.png",
+                "media/gui/better-world-map/overlays/reveal/rookie-harbor.png",
+                "media/gui/better-world-map/patched-area-buttons.png",
+                "media/gui/better-world-map/sea.png"
+            ]
+        },
+        "metadataCCMod": {
+            "id": "world-map-overhaul",
+            "version": "1.1.2",
+            "title": "World map overhaul",
+            "description": {
+                "en_US": "A better world map",
+                "ru_RU": "Улучшенная карта мира"
+            },
+            "homepage": "https://github.com/dmitmel/cc-world-map-overhaul",
+            "icons": {
+                "24": "icon24.png"
+            },
             "prestart": "prestart.js",
             "assets": [
                 "media/gui/better-world-map/overlays/colored/arid.png",
