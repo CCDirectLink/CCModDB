@@ -30,10 +30,8 @@ export async function get(input: InputLocation): Promise<ModMetadatasInput> {
                 throw new Error(`Unknown location type '${input.type}'`)
         }
     } catch (e) {
-        console.log('--------')
         console.log('Error while extracting', input)
         console.log(e)
-        console.log('--------')
         throw e
     }
     if (!out.ccmod && !out.meta) throw new Error(`A mod has to either have a package.json or a ccmod.json: ${input}`)
