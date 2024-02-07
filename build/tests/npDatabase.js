@@ -124,7 +124,7 @@ function testMetadata(jsonData, metadata) {
 					continue;
 				}
 
-				expect(jsonData[dep],
+				expect(jsonData[dep] || Object.values(jsonData).find(mod => mod.metadata && mod.metadata.name === dep),
 					`dependency ${dep} must be registered in CCModDb`)
 					.to.not.be.undefined;
 			}
@@ -198,7 +198,7 @@ function testMetadataCCMod(jsonData, ccmod) {
 					continue;
 				}
 
-				expect(jsonData[dep],
+				expect(jsonData[dep] || Object.values(jsonData).find(mod => mod.metadata && mod.metadata.name === dep),
 					`dependency ${dep} must be registered in CCModDb`)
 					.to.not.be.undefined;
 			}
