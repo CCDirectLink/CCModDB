@@ -521,43 +521,48 @@
             }
         ]
     },
-    "cc-capped-stats": {
+    "cc-diorbital-menu": {
         "metadata": {
-            "name": "Capped Stats",
-            "version": "1.0.0",
-            "description": "big numbers are very scary. :( low numbers are not scary! :)",
-            "homepage": "https://github.com/EL20202/cc-uncapped-stats",
-            "module": true,
-            "prestart": "prestart.js",
-            "ccmodDependencies": {}
-        },
-        "metadataCCMod": {
-            "id": "cc-capped-stats",
-            "version": "1.0.0",
-            "title": "Capped Stats",
-            "description": "Adds a visual stat cap - see your stats for what they really aren't!",
-            "prestart": "prestart.js",
-            "icons": {
-                "24": "icon.png"
+            "name": "cc-diorbital-menu",
+            "version": "1.0.3",
+            "scripts": {
+                "start": "npx esbuild --target=es2018 --format=esm --platform=node --bundle --sourcemap=inline --outfile=plugin.js src/plugin.ts",
+                "watch": "npx esbuild --target=es2018 --format=esm --platform=node --bundle --sourcemap=inline --watch --outfile=plugin.js src/plugin.ts",
+                "build": "npx esbuild --target=es2018 --format=esm --platform=node --bundle --minify --outfile='plugin.js' 'src/plugin.ts'",
+                "format": "prettier ./src -w"
             },
-            "dependencies": {
-                "ccloader": "^2.20.0"
+            "license": "GPLv3",
+            "homepage": "https://github.com/krypciak/cc-diorbital-menu",
+            "ccmodHumanName": "cc-diorbital-menu",
+            "description": "Extends the quick menu",
+            "plugin": "plugin.js",
+            "devDependencies": {
+                "@types/node": "^11.6.0",
+                "@typescript-eslint/eslint-plugin": "^6.20.0",
+                "@typescript-eslint/parser": "^6.20.0",
+                "esbuild": "^0.20.0",
+                "eslint": "^8.56.0",
+                "eslint-config-prettier": "^9.1.0",
+                "prettier": "3.2.4",
+                "typescript": "^5.3.3",
+                "ultimate-crosscode-typedefs": "github:krypciak/ultimate-crosscode-typedefs",
+                "cc-vim": "github:krypciak/cc-vim"
             }
         },
         "installation": [
             {
-                "type": "ccmod",
-                "url": "https://github.com/EL20202/cc-capped-stats/releases/download/v1.0.0/cc-capped-stats.ccmod",
+                "type": "modZip",
+                "url": "https://github.com/krypciak/cc-diorbital-menu/archive/refs/tags/v1.0.3.zip",
+                "source": "cc-diorbital-menu-1.0.3",
                 "hash": {
-                    "sha256": "34c11a440d7af0857728619e17c7143102cec55a1e16b3dd5c3c16935b8965c2"
+                    "sha256": "e7eea0c5a547e325661fc17a51b39219da35ee8fafe2706b1c75b34113b40f2b"
                 }
             },
             {
-                "type": "modZip",
-                "url": "https://github.com/EL20202/cc-capped-stats/archive/refs/tags/v1.0.0.zip",
-                "source": "cc-capped-stats-1.0.0",
+                "type": "ccmod",
+                "url": "https://github.com/krypciak/cc-diorbital-menu/releases/download/v1.0.3/cc-diorbital-menu-1.0.3.ccmod",
                 "hash": {
-                    "sha256": "2d8876bae0fa566ad35b4f4d5db5c2b5d1a69c55b38e27aa337c2b0b666c20c1"
+                    "sha256": "5c5246f43f6ae7a9f3c5eb26c4b40c5a3a8cab224740f881ade7392c897d712f"
                 }
             }
         ]
@@ -592,118 +597,43 @@
             }
         ]
     },
-    "cc-oldmedia": {
+    "cc-fancy-crash": {
         "metadata": {
-            "name": "CCOldMedia",
-            "version": "1.0.0",
-            "description": "A mod that brings back some old title screen assets.",
-            "homepage": "https://github.com/lexisother/CCOldMedia",
-            "module": true,
-            "prestart": "src/prestart.js",
-            "ccmodDependencies": {}
-        },
-        "metadataCCMod": {
-            "id": "cc-oldmedia",
-            "version": "1.0.0",
-            "title": "CC-OldMedia",
-            "description": "A mod that brings back some old title screen assets.",
-            "homepage": "https://github.com/lexisother/CCOldMedia",
-            "prestart": "src/prestart.js"
+            "name": "cc-fancy-crash",
+            "version": "1.0.7",
+            "description": "Better crash message",
+            "scripts": {
+                "start": "esbuild --target=es2018 --format=esm --platform=node --bundle --sourcemap=inline --outfile=plugin.js src/plugin.ts",
+                "watch": "esbuild --target=es2018 --format=esm --platform=node --bundle --sourcemap=inline --watch --outfile=plugin.js src/plugin.ts",
+                "build": "esbuild --target=es2018 --format=esm --platform=node --bundle --outfile='plugin.js' 'src/plugin.ts'",
+                "format": "prettier ./src -w"
+            },
+            "author": "krypek",
+            "license": "GPLv3",
+            "homepage": "https://github.com/krypciak/cc-fancy-crash",
+            "devDependencies": {
+                "@types/node": "^11.6.0",
+                "@typescript-eslint/eslint-plugin": "^6.20.0",
+                "@typescript-eslint/parser": "^6.20.0",
+                "esbuild": "^0.20.0",
+                "typescript": "^5.3.3",
+                "ultimate-crosscode-typedefs": "github:krypciak/ultimate-crosscode-typedefs"
+            }
         },
         "installation": [
             {
                 "type": "modZip",
-                "url": "https://github.com/lexisother/CCOldMedia/archive/refs/tags/v1.0.0.zip",
-                "source": "CCOldMedia-1.0.0",
+                "url": "https://github.com/krypciak/cc-fancy-crash/archive/refs/tags/v1.0.7.zip",
+                "source": "cc-fancy-crash-1.0.7",
                 "hash": {
-                    "sha256": "491263c26aefa8f366c135e2672c0214bb593059d44ddf22bebfc3a655f0b73e"
+                    "sha256": "d1282639f2a76f518489ad19df412675d166735934045f6244b9f29fe1a6794a"
                 }
             },
             {
                 "type": "ccmod",
-                "url": "https://github.com/lexisother/CCOldMedia/releases/download/v1.0.0/CCOldMedia.ccmod",
+                "url": "https://github.com/krypciak/cc-fancy-crash/releases/download/v1.0.7/cc-fancy-crash-1.0.7.ccmod",
                 "hash": {
-                    "sha256": "0791db068d46cf394fc3a512cf3a5bca7744a1550d1e72d07adb39bcea097703"
-                }
-            }
-        ]
-    },
-    "cc-quickinfo-exp": {
-        "metadata": {
-            "name": "QuickInfo EXP Viewer",
-            "version": "1.0.0",
-            "description": "Shows the EXP the enemy will give you in the quickinfo popup.",
-            "homepage": "https://github.com/lexisother/cc-quickinfo-exp",
-            "module": true,
-            "prestart": "prestart.js",
-            "ccmodDependencies": {}
-        },
-        "metadataCCMod": {
-            "id": "cc-quickinfo-exp",
-            "version": "1.0.0",
-            "title": "QuickInfo EXP Viewer",
-            "description": "Shows the EXP the enemy will give you in the quickinfo popup.",
-            "poststart": "poststart.js",
-            "dependencies": {}
-        },
-        "installation": [
-            {
-                "type": "modZip",
-                "url": "https://github.com/lexisother/cc-quickinfo-exp/archive/refs/tags/v1.0.1.zip",
-                "source": "cc-quickinfo-exp-1.0.1",
-                "hash": {
-                    "sha256": "e8e0fa7e59aca78821df92121c3e745bdd5fdf7f2ee5df4e028db9dfb471ed05"
-                }
-            },
-            {
-                "type": "ccmod",
-                "url": "https://github.com/lexisother/cc-quickinfo-exp/releases/download/v1.0.1/cc-quickinfo-exp.ccmod",
-                "hash": {
-                    "sha256": "fcdeeba04a3c3e210353a23031c4396dfa33876f770347e550103a4308e3685a"
-                }
-            }
-        ]
-    },
-    "cc-uncapped-stats": {
-        "metadata": {
-            "name": "Uncapped Stats",
-            "version": "1.1.1",
-            "description": "Removes the visual stat caps - see your stats for what they really are!",
-            "homepage": "https://github.com/EL20202/cc-uncapped-stats",
-            "module": true,
-            "prestart": "prestart.js",
-            "ccmodDependencies": {
-                "ccloader": "^2.20.0"
-            }
-        },
-        "metadataCCMod": {
-            "id": "cc-uncapped-stats",
-            "version": "1.1.1",
-            "title": "Uncapped Stats",
-            "description": "Removes! the visual stat caps - see your stats for what they really are!",
-            "homepage": "https://github.com/EL20202/cc-uncapped-stats",
-            "prestart": "prestart.js",
-            "icons": {
-                "24": "icon.png"
-            },
-            "dependencies": {
-                "ccloader": "^2.20.0"
-            }
-        },
-        "installation": [
-            {
-                "type": "ccmod",
-                "url": "https://github.com/EL20202/cc-uncapped-stats/releases/download/v1.1.1/cc-uncapped-stats-v1.1.1.ccmod",
-                "hash": {
-                    "sha256": "4084245193fe5b6f43842afcc8db02b78ea6f12472a345b17a339c4c59e48fc8"
-                }
-            },
-            {
-                "type": "modZip",
-                "url": "https://github.com/EL20202/cc-uncapped-stats/archive/refs/tags/v1.1.1.zip",
-                "source": "cc-uncapped-stats-1.1.1",
-                "hash": {
-                    "sha256": "f71786c48ba246993fd0cd924155a7d09be5fe7020c97482ec285ea7dbe5b1b9"
+                    "sha256": "edc33bc5c294a9573a49eea1c4080a458c70a9e9e8e1a6f960e3d798ce935503"
                 }
             }
         ]
@@ -711,15 +641,18 @@
     "cc-vim": {
         "metadata": {
             "name": "cc-vim",
-            "version": "1.3.1",
+            "version": "1.5.4",
             "description": "Adds a popup command prompt",
             "scripts": {
                 "start": "esbuild --target=es2018 --format=esm --platform=node --bundle --sourcemap=inline --outfile=plugin.js src/plugin.ts",
-                "watch": "esbuild --target=es2018 --format=esm --platform=node --bundle --sourcemap=inline --watch --outfile=plugin.js src/plugin.ts"
+                "watch": "esbuild --target=es2018 --format=esm --platform=node --bundle --sourcemap=inline --watch --outfile=plugin.js src/plugin.ts",
+                "build": "npx esbuild --target=es2018 --format=esm --platform=node --bundle --outfile='plugin.js' 'src/plugin.ts'",
+                "format": "prettier ./src -w"
             },
             "author": "krypek",
             "license": "GNU GPLv3",
             "homepage": "https://github.com/krypciak/cc-vim",
+            "types": "src/global.d.ts",
             "devDependencies": {
                 "@types/node": "^20.4.4",
                 "@typescript-eslint/eslint-plugin": "^6.2.0",
@@ -728,7 +661,8 @@
                 "fuse.js": "^6.6.2",
                 "prettier": "3.0.0",
                 "typescript": "^5.1.6",
-                "ultimate-crosscode-typedefs": "github:krypciak/ultimate-crosscode-typedefs"
+                "ultimate-crosscode-typedefs": "github:krypciak/ultimate-crosscode-typedefs",
+                "cc-quick-menu-ext": "github:krypciak/cc-quick-menu-ext"
             }
         },
         "metadataCCMod": {
@@ -764,17 +698,17 @@
         "installation": [
             {
                 "type": "modZip",
-                "url": "https://github.com/krypciak/cc-vim/archive/refs/tags/1.3.1.zip",
-                "source": "cc-vim-1.3.1",
+                "url": "https://github.com/krypciak/cc-vim/archive/refs/tags/v1.5.4.zip",
+                "source": "cc-vim-1.5.4",
                 "hash": {
-                    "sha256": "cc036a8ba6700ebde6659dd2e39674047cb9721abe773c7beeac036e6c7399f8"
+                    "sha256": "c6c650179f47dcd4734c1df2364057b22d752c9fb8b4ce53b5ffc51b0e8566db"
                 }
             },
             {
                 "type": "ccmod",
-                "url": "https://github.com/krypciak/cc-vim/releases/download/1.3.1/cc-vim-1.3.1.ccmod",
+                "url": "https://github.com/krypciak/cc-vim/releases/download/v1.5.4/cc-vim-1.5.4.ccmod",
                 "hash": {
-                    "sha256": "58dae609b70fb78a9a02cb17c900619453250c31495f8467ffa98f2111fd0527"
+                    "sha256": "956b112b9e9928c8de6e8eac68f3e132dd275d31904f3bed607c4aee0ff09eb0"
                 }
             }
         ]
@@ -954,14 +888,6 @@
             "plugin": "./dist/plugin.js"
         },
         "installation": [
-            {
-                "type": "modZip",
-                "url": "https://github.com/EL20202/el-crosscode-tweaks/archive/refs/tags/v0.5.8.zip",
-                "source": "el-crosscode-tweaks-0.5.8",
-                "hash": {
-                    "sha256": "fbe68466dd4854887c5ab62029a5754e8c7377a6917d988cea96b756e5a8c07c"
-                }
-            },
             {
                 "type": "ccmod",
                 "url": "https://github.com/EL20202/el-crosscode-tweaks/releases/download/v0.5.8/els-tweaks.ccmod",
@@ -1567,19 +1493,27 @@
             "plugin": "plugin.js",
             "homepage": "https://github.com/CCDirectLink/CCTimer",
             "description": "A speedrun timer for CrossCode.",
-            "version": "2.6.0",
+            "scripts": {
+                "start": "esbuild --target=es2018 --format=esm --platform=node --bundle --sourcemap=inline --outfile=plugin.js src/plugin.js",
+                "watch": "esbuild --target=es2018 --format=esm --platform=node --bundle --sourcemap=inline --watch --outfile=plugin.js src/plugin.js"
+            },
+            "version": "3.0.0",
             "ccmodDependencies": {
                 "ccloader": "^2.19.0",
                 "Simplify": "^2.9.0"
+            },
+            "devDependencies": {
+                "esbuild": "^0.19.1",
+                "ws": "^8.13.0"
             }
         },
         "installation": [
             {
                 "type": "modZip",
-                "url": "https://github.com/CCDirectLink/CCTimer/archive/v2.6.0.zip",
-                "source": "CCTimer-2.6.0/timer",
+                "url": "https://github.com/CCDirectLink/CCTimer/releases/download/v3.0.0/CCTimer.zip",
+                "source": "CCTimer",
                 "hash": {
-                    "sha256": "aae5a656c8174b2d0dbcf340851ea9ca5ba5fd1b85c7a05f7aa8fe1086daf7b9"
+                    "sha256": "7ba4327609e3ff0b29d2921af7d9255fbeae9dfe3d4fc035f93e99312f7ff2bb"
                 }
             }
         ]
@@ -1743,4 +1677,3 @@
             }
         ]
     }
-}

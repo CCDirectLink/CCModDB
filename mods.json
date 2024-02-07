@@ -316,50 +316,21 @@
             },
             "version": "1.0.0"
         },
-        "cc-oldmedia": {
-            "name": "CC-OldMedia",
-            "description": "A mod that brings back some old title screen assets.",
+        "cc-fancy-crash": {
+            "name": "cc-fancy-crash",
+            "description": "Better crash message",
+            "license": "GPLv3",
             "page": [
                 {
                     "name": "GitHub",
-                    "url": "https://github.com/lexisother/CCOldMedia"
+                    "url": "https://github.com/krypciak/cc-fancy-crash"
                 }
             ],
-            "archive_link": "https://github.com/lexisother/CCOldMedia/releases/download/v1.0.0/CCOldMedia.ccmod",
+            "archive_link": "https://github.com/krypciak/cc-fancy-crash/releases/download/v1.0.7/cc-fancy-crash-1.0.7.ccmod",
             "hash": {
-                "sha256": "0791db068d46cf394fc3a512cf3a5bca7744a1550d1e72d07adb39bcea097703"
+                "sha256": "edc33bc5c294a9573a49eea1c4080a458c70a9e9e8e1a6f960e3d798ce935503"
             },
-            "version": "1.0.0"
-        },
-        "cc-quickinfo-exp": {
-            "name": "QuickInfo EXP Viewer",
-            "description": "Shows the EXP the enemy will give you in the quickinfo popup.",
-            "page": [
-                {
-                    "name": "GitHub",
-                    "url": "https://github.com/lexisother/cc-quickinfo-exp"
-                }
-            ],
-            "archive_link": "https://github.com/lexisother/cc-quickinfo-exp/releases/download/v1.0.1/cc-quickinfo-exp.ccmod",
-            "hash": {
-                "sha256": "fcdeeba04a3c3e210353a23031c4396dfa33876f770347e550103a4308e3685a"
-            },
-            "version": "1.0.0"
-        },
-        "cc-uncapped-stats": {
-            "name": "Uncapped Stats",
-            "description": "Removes! the visual stat caps - see your stats for what they really are!",
-            "page": [
-                {
-                    "name": "GitHub",
-                    "url": "https://github.com/EL20202/cc-uncapped-stats"
-                }
-            ],
-            "archive_link": "https://github.com/EL20202/cc-uncapped-stats/releases/download/v1.1.1/cc-uncapped-stats-v1.1.1.ccmod",
-            "hash": {
-                "sha256": "4084245193fe5b6f43842afcc8db02b78ea6f12472a345b17a339c4c59e48fc8"
-            },
-            "version": "1.1.1"
+            "version": "1.0.7"
         },
         "cc-vim": {
             "name": "Vim Command Mode",
@@ -371,11 +342,11 @@
                     "url": "https://github.com/krypciak/cc-vim"
                 }
             ],
-            "archive_link": "https://github.com/krypciak/cc-vim/releases/download/1.3.1/cc-vim-1.3.1.ccmod",
+            "archive_link": "https://github.com/krypciak/cc-vim/releases/download/v1.5.4/cc-vim-1.5.4.ccmod",
             "hash": {
-                "sha256": "58dae609b70fb78a9a02cb17c900619453250c31495f8467ffa98f2111fd0527"
+                "sha256": "956b112b9e9928c8de6e8eac68f3e132dd275d31904f3bed607c4aee0ff09eb0"
             },
-            "version": "1.3.1"
+            "version": "1.5.4"
         },
         "ccpostdlc": {
             "name": "CCPostDLC",
@@ -682,11 +653,11 @@
                     "url": "https://github.com/CCDirectLink/CCTimer"
                 }
             ],
-            "archive_link": "https://github.com/CCDirectLink/CCTimer/archive/v2.6.0.zip",
+            "archive_link": "https://github.com/CCDirectLink/CCTimer/releases/download/v3.0.0/CCTimer.zip",
             "hash": {
-                "sha256": "aae5a656c8174b2d0dbcf340851ea9ca5ba5fd1b85c7a05f7aa8fe1086daf7b9"
+                "sha256": "7ba4327609e3ff0b29d2921af7d9255fbeae9dfe3d4fc035f93e99312f7ff2bb"
             },
-            "version": "2.6.0"
+            "version": "3.0.0"
         },
         "timewalker": {
             "name": "timewalker",
@@ -735,4 +706,3 @@
             "version": "1.1.2"
         }
     }
-}
