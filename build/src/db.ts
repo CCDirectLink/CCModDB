@@ -126,7 +126,7 @@ function getInstallation(installations: InstallMethod[]): { url: string; hash: {
 }
 
 async function buildEntry(result: PackageDB, meta: PkgMetadata | undefined, ccmod: PkgCCMod | undefined, inputs: InputLocation[]): Promise<void> {
-    result[getStringFromLocalisedString(ccmod?.title || meta!.name)] = {
+    result[ccmod?.id || meta!.name] = {
         metadata: meta,
         metadataCCMod: ccmod,
         installation: await generateInstallations(inputs),
