@@ -2,6 +2,7 @@ import stream from 'stream'
 import yauzl from 'yauzl'
 import { download, streamToBuffer } from './download'
 import fs from 'fs'
+import { getHomepage } from './db'
 
 export type ModMetadatas = {
     ccmod?: PkgCCMod
@@ -14,8 +15,8 @@ export async function get(input: InputLocation): Promise<ModMetadatasInput> {
         input.type === 'modZip'
             ? (input: ModZipInputLocation, fileName, parseToJson) => getModZipFile<PkgMetadata>(input, fileName, parseToJson)
             : input.type === 'ccmod'
-            ? (input: CCModInputLocation, fileName, parseToJson) => getCCModFile<PkgMetadata>(input, fileName, parseToJson)
-            : 'error'
+              ? (input: CCModInputLocation, fileName, parseToJson) => getCCModFile<PkgMetadata>(input, fileName, parseToJson)
+              : 'error'
     if (fileFetchFunc === 'error') throw new Error(`Unknown location type '${input.type}'`)
 
     let pkg
@@ -125,4 +126,35 @@ function openFile(zip: yauzl.ZipFile, file: string): Promise<stream.Readable | u
             })
             .on('error', err => reject(err))
     })
+}
+
+/* this has to be done outside of buildEntry to avoid concurent api requests */
+export async function addStarsToResults(result: PackageDB) {
+    console.log('fetching stars...')
+    for (const id in result) {
+        const mod = result[id]
+        mod.stars = await getStars(mod.metadata, mod.metadataCCMod)
+    }
+}
+
+async function getStars(meta: PkgMetadata | undefined, ccmod: PkgCCMod | undefined): Promise<number | undefined> {
+    const homepageArr = getHomepage(ccmod?.homepage || meta!.homepage)
+    if (homepageArr.length == 0) return
+    if (homepageArr.length > 1) throw new Error('Multi page star counting not supported')
+    const { name, url } = homepageArr[0]
+    if (name == 'GitHub') {
+        const apiUrl = `https://api.github.com/repos/${url.substring('https://github.com/'.length)}`
+        const GITHUB_TOKEN = process.env['GITHUB_TOKEN']
+        const data = await (
+            await fetch(apiUrl, {
+                method: 'GET',
+                headers: {
+                    Authorization: `token ${GITHUB_TOKEN}`,
+                },
+            })
+        ).json()
+        const stars = data.stargazers_count
+        return stars
+    }
+    return
 }

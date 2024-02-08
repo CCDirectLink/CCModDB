@@ -2,7 +2,7 @@ import semver from 'semver'
 import crypto from 'crypto'
 import fs from 'fs'
 import { download, streamToBuffer } from './download'
-import { ModMetadatasInput, ModMetadatas } from './source'
+import { ModMetadatasInput, ModMetadatas, addStarsToResults } from './source'
 
 interface ModDb {
     [name: string]: {
@@ -30,6 +30,7 @@ export async function build(packages: ModMetadatasInput[]): Promise<PackageDB> {
     }
 
     await Promise.all(promises)
+    await addStarsToResults(result)
 
     return sort(result)
 }
@@ -83,7 +84,7 @@ export async function writeMods(db: PackageDB): Promise<void> {
     })
 }
 
-function getHomepage(url?: string): Page[] {
+export function getHomepage(url?: string): Page[] {
     if (!url) {
         return []
     }

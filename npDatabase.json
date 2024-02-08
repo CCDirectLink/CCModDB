@@ -114,7 +114,8 @@
                     "sha256": "d9dc3e5d2fbe116d180b7f88c93e9535798db09964b93c8adcaa0935c2d55ad2"
                 }
             }
-        ]
+        ],
+        "stars": 1
     },
     "CCRandomEvents": {
         "metadata": {
@@ -133,7 +134,8 @@
                     "sha256": "67ff4803a1e5f240187aad81a8101a66b1c4316f110d6ef5f6527b2b472c064e"
                 }
             }
-        ]
+        ],
+        "stars": 0
     },
     "Character Swap": {
         "metadata": {
@@ -198,7 +200,8 @@
                     "sha256": "ff903d75f2098fbe3061ea8cc309f55a54c15050ddb4395606439ac8a8268faf"
                 }
             }
-        ]
+        ],
+        "stars": 5
     },
     "CrossCode C Edition": {
         "metadata": {
@@ -249,7 +252,8 @@
                     "sha256": "5df25d4d8ad3fc3872c53f184cbfd27d32489985b724d1830ffe1f71fdefbdc8"
                 }
             }
-        ]
+        ],
+        "stars": 6
     },
     "Element Boss": {
         "metadata": {
@@ -272,7 +276,8 @@
                     "sha256": "e0bdc31b640bd7a00bd7c69dcb7a8cef87130f0cb349b44874ba440c67f02922"
                 }
             }
-        ]
+        ],
+        "stars": 0
     },
     "Extra Gamepad Options": {
         "metadata": {
@@ -327,7 +332,8 @@
                     "sha256": "bef7447b66e411292493bde5d0fd312d0f4ca13a4c4ab215d02f9472eb291968"
                 }
             }
-        ]
+        ],
+        "stars": 0
     },
     "Lea sits on the Title": {
         "metadata": {
@@ -364,7 +370,8 @@
                     "sha256": "b0a23ca05f65c09e52aebc3ce3c836ec326a972531ef4a373fdf4876494b022b"
                 }
             }
-        ]
+        ],
+        "stars": 0
     },
     "New game++": {
         "metadata": {
@@ -406,7 +413,8 @@
                     "sha256": "37e48525234fe437e20cad9206cbc6c45a4421f381d51727e45162d103a1d472"
                 }
             }
-        ]
+        ],
+        "stars": 3
     },
     "Palicat": {
         "metadata": {
@@ -429,7 +437,8 @@
                     "sha256": "75d84d8a190bece945d20f2fda3518c06cdbdd57f209b91471f9815feffb4b70"
                 }
             }
-        ]
+        ],
+        "stars": 1
     },
     "Qine": {
         "metadata": {
@@ -453,7 +462,8 @@
                     "sha256": "73bec599fdb63f6b0504d1ea6b549904daf97f00c8667f6bd6378c91560d8c29"
                 }
             }
-        ]
+        ],
+        "stars": 1
     },
     "Restart Button": {
         "metadata": {
@@ -474,7 +484,8 @@
                     "sha256": "6a31aba45a5df4a498901721fa14ed673677d1010707cd9146cee7c41804ad5a"
                 }
             }
-        ]
+        ],
+        "stars": 1
     },
     "Simplify": {
         "metadata": {
@@ -560,7 +571,8 @@
                     "sha256": "2d8876bae0fa566ad35b4f4d5db5c2b5d1a69c55b38e27aa337c2b0b666c20c1"
                 }
             }
-        ]
+        ],
+        "stars": 1
     },
     "cc-extra-dialogue": {
         "metadata": {
@@ -590,7 +602,8 @@
                     "sha256": "8ab162b803f9a663f5677b058fafcf07218145f38f7a90cbdcf05845b0a5e329"
                 }
             }
-        ]
+        ],
+        "stars": 4
     },
     "cc-fancy-crash": {
         "metadata": {
@@ -643,7 +656,8 @@
                     "sha256": "edc33bc5c294a9573a49eea1c4080a458c70a9e9e8e1a6f960e3d798ce935503"
                 }
             }
-        ]
+        ],
+        "stars": 0
     },
     "cc-oldmedia": {
         "metadata": {
@@ -679,7 +693,8 @@
                     "sha256": "0791db068d46cf394fc3a512cf3a5bca7744a1550d1e72d07adb39bcea097703"
                 }
             }
-        ]
+        ],
+        "stars": 0
     },
     "cc-quickinfo-exp": {
         "metadata": {
@@ -715,7 +730,8 @@
                     "sha256": "fcdeeba04a3c3e210353a23031c4396dfa33876f770347e550103a4308e3685a"
                 }
             }
-        ]
+        ],
+        "stars": 0
     },
     "cc-uncapped-stats": {
         "metadata": {
@@ -759,7 +775,8 @@
                     "sha256": "f71786c48ba246993fd0cd924155a7d09be5fe7020c97482ec285ea7dbe5b1b9"
                 }
             }
-        ]
+        ],
+        "stars": 1
     },
     "cc-vim": {
         "metadata": {
@@ -834,7 +851,8 @@
                     "sha256": "956b112b9e9928c8de6e8eac68f3e132dd275d31904f3bed607c4aee0ff09eb0"
                 }
             }
-        ]
+        ],
+        "stars": 1
     },
     "ccloader": {
         "metadata": {
@@ -894,7 +912,8 @@
                     "sha256": "eec76c279f1683b415e4f06186d6d4d8ae6e9d247cec845bce1e6a7e6d69cea0"
                 }
             }
-        ]
+        ],
+        "stars": 0
     },
     "crosscode-tweak-pack": {
         "metadata": {
@@ -954,7 +973,8 @@
                     "sha256": "0cc60fb1aeccdb7f664430feb222df8cbf0571a5c5359dcb689f1b551a983713"
                 }
             }
-        ]
+        ],
+        "stars": 8
     },
     "cursedcode": {
         "metadata": {
@@ -1114,7 +1134,8 @@
                     "sha256": "30a9febd011fb056426a1d0e8d9f7f50b8dd7310b80a21f1c6e2d3a6c2a143ff"
                 }
             }
-        ]
+        ],
+        "stars": 16
     },
     "hardcoded-config-injector": {
         "metadata": {
@@ -1160,7 +1181,8 @@
                     "sha256": "0b23e53d95963ef55c689090bac359f0815f5337dc671466a34adb852558c7c9"
                 }
             }
-        ]
+        ],
+        "stars": 5
     },
     "inventory-search": {
         "metadata": {
@@ -1210,7 +1232,8 @@
                     "sha256": "68d7f15b5e3c4264831dfe89a3ad2ad819825819d98aa529cee03e73312a6b21"
                 }
             }
-        ]
+        ],
+        "stars": 0
     },
     "jetpack": {
         "metadata": {
@@ -1242,7 +1265,8 @@
                     "sha256": "49841feae2ddf8e42bce5dec6d712e2fb714ac66e8d8b3d8f0b94eaa47674a71"
                 }
             }
-        ]
+        ],
+        "stars": 4
     },
     "junolea": {
         "metadata": {
@@ -1356,7 +1380,8 @@
                     "sha256": "16b9dbbfa21c9fa18d8ed3048c842521039f0713c6cfc2a17f2d2e89f79bea2f"
                 }
             }
-        ]
+        ],
+        "stars": 1
     },
     "localize-me": {
         "metadata": {
@@ -1395,7 +1420,8 @@
                     "sha256": "98da8afe115cb453331ba96a70711bf22453703a921d1578b239aff14084702b"
                 }
             }
-        ]
+        ],
+        "stars": 5
     },
     "logic-steps": {
         "metadata": {
@@ -1435,7 +1461,8 @@
                     "sha256": "79ac505e9f8f5f948ecb1f9e33b8da330a352f95eee5d381dd697bd3cd93f730"
                 }
             }
-        ]
+        ],
+        "stars": 1
     },
     "map-watch": {
         "metadata": {
@@ -1482,7 +1509,8 @@
                     "sha256": "d52de73fbb2dd8406d971c201075b5942ee03540588dcd1fb857007cdf6266c0"
                 }
             }
-        ]
+        ],
+        "stars": 0
     },
     "menu-ui-replacer": {
         "metadata": {
@@ -1520,7 +1548,8 @@
                     "sha256": "5a8a90cb72d52b9cd786a3f25c3dab1ab4b09d3dad9e8c744ae48281270b5a33"
                 }
             }
-        ]
+        ],
+        "stars": 6
     },
     "nine-rooms": {
         "metadata": {
@@ -1545,7 +1574,8 @@
                     "sha256": "2a62c02cc322ef7a79c49352a5ab8b4098dfa2f10b2f8cb6b989ab2f6444822d"
                 }
             }
-        ]
+        ],
+        "stars": 1
     },
     "past-booster": {
         "metadata": {
@@ -1576,7 +1606,8 @@
                     "sha256": "2a62c02cc322ef7a79c49352a5ab8b4098dfa2f10b2f8cb6b989ab2f6444822d"
                 }
             }
-        ]
+        ],
+        "stars": 1
     },
     "readable-saves": {
         "metadata": {
@@ -1609,7 +1640,8 @@
                     "sha256": "d05d18d8923e7a62c35b6a9be97775b173710372ac5fac8a21507321a4284cfc"
                 }
             }
-        ]
+        ],
+        "stars": 1
     },
     "slowmotion": {
         "metadata": {
@@ -1636,7 +1668,8 @@
                     "sha256": "95ffe20f8f611cd7a18b5b8f77c0437b60101badb11aefcd64597ef3b7ecdc6a"
                 }
             }
-        ]
+        ],
+        "stars": 1
     },
     "timer": {
         "metadata": {
@@ -1681,7 +1714,8 @@
                     "sha256": "7ba4327609e3ff0b29d2921af7d9255fbeae9dfe3d4fc035f93e99312f7ff2bb"
                 }
             }
-        ]
+        ],
+        "stars": 1
     },
     "timewalker": {
         "metadata": {
@@ -1711,7 +1745,8 @@
                     "sha256": "a7e80ba0478803b52b26ec3d8ba7041fa3396b8aba049e11c2511ac9ed0d0fc0"
                 }
             }
-        ]
+        ],
+        "stars": 1
     },
     "uwuifier": {
         "metadata": {
@@ -1731,7 +1766,8 @@
                     "sha256": "295b8019d74e0a9bf9a8ff9aa4b48d25694028bc727bc3a830daeb23b4efef3e"
                 }
             }
-        ]
+        ],
+        "stars": 3
     },
     "world-map-overhaul": {
         "metadata": {
@@ -1840,6 +1876,7 @@
                     "sha256": "03aa7cf573166a5a4b12c703bd63d7fd92f9bcf403ddc65cc7fd60b6ce2a97ca"
                 }
             }
-        ]
+        ],
+        "stars": 0
     }
 }

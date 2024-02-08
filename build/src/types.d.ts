@@ -172,6 +172,7 @@ declare type Package = {
     metadataCCMod?: PkgCCMod
     // Installation methods (try in order)
     installation: InstallMethod[]
+    stars?: number
 }
 
 /*

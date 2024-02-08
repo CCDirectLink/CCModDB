@@ -55,7 +55,8 @@ function body(url: string): Promise<http.IncomingMessage> {
 async function getUsingMethod(url: string, method: string): Promise<http.IncomingMessage> {
     const uri = urlModule.parse(url)
     const { get } = uri.protocol === 'https:' ? https : http
-    const options = { method }
+
+    const options: http.RequestOptions = { method }
 
     return new Promise((resolve, reject) =>
         get(url, options)
