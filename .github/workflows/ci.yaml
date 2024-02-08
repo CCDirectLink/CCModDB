@@ -7,9 +7,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/labeler@v4
-        with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         with:
@@ -18,3 +15,5 @@ jobs:
         run: npm ci
       - working-directory: build/
         run: npm test
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
