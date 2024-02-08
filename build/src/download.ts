@@ -56,7 +56,15 @@ async function getUsingMethod(url: string, method: string): Promise<http.Incomin
     const uri = urlModule.parse(url)
     const { get } = uri.protocol === 'https:' ? https : http
 
-    const options: http.RequestOptions = { method }
+    const GITHUB_TOKEN = process.env['GITHUB_TOKEN']
+    const options: http.RequestOptions = {
+        method,
+        headers: !GITHUB_TOKEN
+            ? undefined
+            : {
+                  Authorization: `token ${GITHUB_TOKEN}`,
+              },
+    }
 
     return new Promise((resolve, reject) =>
         get(url, options)
