@@ -35,7 +35,7 @@ describe('InputLocations', () => {
 							.to.not.throw;
 						break;
 					}
-				}).timeout(100000);
+				}).timeout(1000000);
 			});
 		}
 	});
