@@ -1232,8 +1232,7 @@
                     "sha256": "68d7f15b5e3c4264831dfe89a3ad2ad819825819d98aa529cee03e73312a6b21"
                 }
             }
-        ],
-        "stars": 0
+        ]
     },
     "jetpack": {
         "metadata": {
@@ -1509,8 +1508,7 @@
                     "sha256": "d52de73fbb2dd8406d971c201075b5942ee03540588dcd1fb857007cdf6266c0"
                 }
             }
-        ],
-        "stars": 0
+        ]
     },
     "menu-ui-replacer": {
         "metadata": {
@@ -1715,7 +1713,7 @@
                 }
             }
         ],
-        "stars": 1
+        "stars": 2
     },
     "timewalker": {
         "metadata": {
@@ -1877,6 +1875,6 @@
                 }
             }
         ],
-        "stars": 0
+        "stars": 1
     }
 }
