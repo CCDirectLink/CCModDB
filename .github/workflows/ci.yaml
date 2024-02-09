@@ -13,7 +13,8 @@ jobs:
           node-version: 15.x
       - working-directory: build/
         run: npm ci
-      - working-directory: build/
+      - name: npm run test
+        working-directory: build/
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npm test
-        with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
