@@ -18,7 +18,7 @@ interface ModDb {
     }
 }
 
-export async function build(packages: ModMetadatasInput[], oldDb: PackageDB): Promise<PackageDB> {
+export async function build(packages: ModMetadatasInput[], oldDb?: PackageDB): Promise<PackageDB> {
     const result: PackageDB = {}
     const promises: Promise<void>[] = []
 

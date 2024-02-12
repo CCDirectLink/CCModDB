@@ -6,6 +6,7 @@ import fs from 'fs'
 async function main() {
     const GITHUB_TOKEN = process.env['GITHUB_TOKEN']
     if (!GITHUB_TOKEN) throw new Error('GITHUB_TOKEN enviroment variable is required. To create a token, see https://github.com/settings/tokens?type=beta')
+
     const locations = await inputLocations.parse()
     const promises: Promise<source.ModMetadatasInput>[] = []
     for (const loc of locations) {
@@ -13,8 +14,8 @@ async function main() {
     }
     const packages = await Promise.all(promises)
 
-    const oldDb: PackageDB = JSON.parse((await fs.promises.readFile('../npDatabase.json')).toString())
-    const pkgDb = await db.build(packages, oldDb)
+    const oldNpDatabase: PackageDB | undefined = fs.existsSync('../npDatabase.json') ? JSON.parse(fs.readFileSync('../npDatabase.json').toString()) : undefined
+    const pkgDb = await db.build(packages, oldNpDatabase)
     await db.write(pkgDb)
     await db.writeMods(pkgDb)
 }
