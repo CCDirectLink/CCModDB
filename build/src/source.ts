@@ -3,6 +3,7 @@ import yauzl from 'yauzl'
 import { download, streamToBuffer } from './download'
 import fs from 'fs'
 import { getHomepage } from './db'
+import * as github from '@octokit/openapi-types'
 
 export type ModMetadatas = {
     ccmod?: PkgCCMod
@@ -129,44 +130,64 @@ function openFile(zip: yauzl.ZipFile, file: string): Promise<stream.Readable | u
 }
 
 /* this has to be done outside of buildEntry to avoid concurent api requests */
-export async function addStarsAndTimestampsToResults(result: PackageDB, oldDb: PackageDB) {
+export async function addStarsAndTimestampsToResults(result: PackageDB, oldDb?: PackageDB) {
     console.log('fetching stars and timestamps...')
     for (const id in result) {
         const mod = result[id]
 
-        const res = await getStarsAndTimestamp(mod.metadata, mod.metadataCCMod)
+        let fetchTimestamp = false
+        let oldMod: Package | undefined
+        if (oldDb) {
+            const newVersion = mod.metadataCCMod?.version || mod.metadata?.version
+            oldMod = oldDb[id]
+            const oldVersion = oldMod.metadataCCMod?.version || oldMod.metadata?.version
+            fetchTimestamp = oldVersion != newVersion || oldMod.lastUpdateTimestamp === undefined
+        }
+
+        const res = await getStarsAndTimestamp(mod.metadata, mod.metadataCCMod, fetchTimestamp)
         if (!res) continue
         mod.stars = res.stars
 
-        const newVersion = mod.metadataCCMod?.version || mod.metadata?.version
-        const oldMod = oldDb[id]
-        const oldVersion = oldMod.metadataCCMod?.version || oldMod.metadata?.version
-        if (oldVersion != newVersion || oldMod.lastUpdateTimestamp === undefined) {
-            mod.lastUpdateTimestamp = res.timestamp
-        }
+        if (!oldDb) continue
+        mod.lastUpdateTimestamp = fetchTimestamp ? res.timestamp : oldMod!.lastUpdateTimestamp
     }
 }
 
-async function getStarsAndTimestamp(meta: PkgMetadata | undefined, ccmod: PkgCCMod | undefined): Promise<{ stars: number; timestamp: number } | undefined> {
+async function fetchGithub<T>(url: string): Promise<T> {
+    const GITHUB_TOKEN = process.env['GITHUB_TOKEN']
+    const data = await (
+        await fetch(url, {
+            method: 'GET',
+            headers: {
+                Authorization: `token ${GITHUB_TOKEN}`,
+            },
+        })
+    ).json()
+    return data
+}
+
+async function getStarsAndTimestamp(
+    meta: PkgMetadata | undefined,
+    ccmod: PkgCCMod | undefined,
+    fetchTimestamp: boolean
+): Promise<{ stars: number; timestamp?: number } | undefined> {
     const homepageArr = getHomepage(ccmod?.homepage || meta!.homepage)
     if (homepageArr.length == 0) return
     if (homepageArr.length > 1) throw new Error('Multi page star counting not supported')
     const { name, url } = homepageArr[0]
     if (name == 'GitHub') {
         const apiUrl = `https://api.github.com/repos/${url.substring('https://github.com/'.length)}`
-        const GITHUB_TOKEN = process.env['GITHUB_TOKEN']
-        const data = await (
-            await fetch(apiUrl, {
-                method: 'GET',
-                headers: {
-                    Authorization: `token ${GITHUB_TOKEN}`,
-                },
-            })
-        ).json()
-        const stars: number = data.stargazers_count
-        const date: string = data.pushed_at
-        const timestamp: number = new Date(date).getTime()
-        console.log(date, timestamp)
+        const data = await fetchGithub<github.components['schemas']['full-repository']>(apiUrl)
+        const stars = data.stargazers_count
+
+        let timestamp: number | undefined
+        if (fetchTimestamp) {
+            const branchApiUrl = data.branches_url.replace(/\{\/branch\}/, `/${data.default_branch}`)
+            const branchData = await fetchGithub<github.components['schemas']['branch-with-protection']>(branchApiUrl)
+            const date = branchData.commit.commit.author!.date!
+            timestamp = new Date(date).getTime()
+            console.log(url, date, timestamp)
+        }
         return { stars, timestamp }
     }
     return
