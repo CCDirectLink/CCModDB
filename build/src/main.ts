@@ -1,6 +1,7 @@
 import * as inputLocations from './inputLocations'
 import * as source from './source'
 import * as db from './db'
+import fs from 'fs'
 
 async function main() {
     const GITHUB_TOKEN = process.env['GITHUB_TOKEN']
@@ -12,7 +13,8 @@ async function main() {
     }
     const packages = await Promise.all(promises)
 
-    const pkgDb = await db.build(packages)
+    const oldDb: PackageDB = JSON.parse((await fs.promises.readFile('../npDatabase.json')).toString())
+    const pkgDb = await db.build(packages, oldDb)
     await db.write(pkgDb)
     await db.writeMods(pkgDb)
 }

@@ -15,8 +15,8 @@ export async function get(input: InputLocation): Promise<ModMetadatasInput> {
         input.type === 'modZip'
             ? (input: ModZipInputLocation, fileName, parseToJson) => getModZipFile<PkgMetadata>(input, fileName, parseToJson)
             : input.type === 'ccmod'
-              ? (input: CCModInputLocation, fileName, parseToJson) => getCCModFile<PkgMetadata>(input, fileName, parseToJson)
-              : 'error'
+            ? (input: CCModInputLocation, fileName, parseToJson) => getCCModFile<PkgMetadata>(input, fileName, parseToJson)
+            : 'error'
     if (fileFetchFunc === 'error') throw new Error(`Unknown location type '${input.type}'`)
 
     let pkg
@@ -129,15 +129,25 @@ function openFile(zip: yauzl.ZipFile, file: string): Promise<stream.Readable | u
 }
 
 /* this has to be done outside of buildEntry to avoid concurent api requests */
-export async function addStarsToResults(result: PackageDB) {
-    console.log('fetching stars...')
+export async function addStarsAndTimestampsToResults(result: PackageDB, oldDb: PackageDB) {
+    console.log('fetching stars and timestamps...')
     for (const id in result) {
         const mod = result[id]
-        mod.stars = await getStars(mod.metadata, mod.metadataCCMod)
+
+        const res = await getStarsAndTimestamp(mod.metadata, mod.metadataCCMod)
+        if (!res) continue
+        mod.stars = res.stars
+
+        const newVersion = mod.metadataCCMod?.version || mod.metadata?.version
+        const oldMod = oldDb[id]
+        const oldVersion = oldMod.metadataCCMod?.version || oldMod.metadata?.version
+        if (oldVersion != newVersion || oldMod.lastUpdateTimestamp === undefined) {
+            mod.lastUpdateTimestamp = res.timestamp
+        }
     }
 }
 
-async function getStars(meta: PkgMetadata | undefined, ccmod: PkgCCMod | undefined): Promise<number | undefined> {
+async function getStarsAndTimestamp(meta: PkgMetadata | undefined, ccmod: PkgCCMod | undefined): Promise<{ stars: number; timestamp: number } | undefined> {
     const homepageArr = getHomepage(ccmod?.homepage || meta!.homepage)
     if (homepageArr.length == 0) return
     if (homepageArr.length > 1) throw new Error('Multi page star counting not supported')
@@ -153,8 +163,11 @@ async function getStars(meta: PkgMetadata | undefined, ccmod: PkgCCMod | undefin
                 },
             })
         ).json()
-        const stars = data.stargazers_count
-        return stars
+        const stars: number = data.stargazers_count
+        const date: string = data.pushed_at
+        const timestamp: number = new Date(date).getTime()
+        console.log(date, timestamp)
+        return { stars, timestamp }
     }
     return
 }

@@ -173,6 +173,7 @@ declare type Package = {
     // Installation methods (try in order)
     installation: InstallMethod[]
     stars?: number
+    lastUpdateTimestamp?: number
 }
 
 /*
