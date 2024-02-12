@@ -115,7 +115,8 @@
                 }
             }
         ],
-        "stars": 1
+        "stars": 1,
+        "lastUpdateTimestamp": 1687718442000
     },
     "CCRandomEvents": {
         "metadata": {
@@ -135,7 +136,8 @@
                 }
             }
         ],
-        "stars": 0
+        "stars": 0,
+        "lastUpdateTimestamp": 1607534153000
     },
     "Character Swap": {
         "metadata": {
@@ -201,7 +203,8 @@
                 }
             }
         ],
-        "stars": 5
+        "stars": 5,
+        "lastUpdateTimestamp": 1694221074000
     },
     "CrossCode C Edition": {
         "metadata": {
@@ -253,7 +256,8 @@
                 }
             }
         ],
-        "stars": 6
+        "stars": 6,
+        "lastUpdateTimestamp": 1697556236000
     },
     "Element Boss": {
         "metadata": {
@@ -277,7 +281,8 @@
                 }
             }
         ],
-        "stars": 0
+        "stars": 0,
+        "lastUpdateTimestamp": 1574862736000
     },
     "Extra Gamepad Options": {
         "metadata": {
@@ -333,7 +338,8 @@
                 }
             }
         ],
-        "stars": 0
+        "stars": 0,
+        "lastUpdateTimestamp": 1575922508000
     },
     "Lea sits on the Title": {
         "metadata": {
@@ -371,7 +377,8 @@
                 }
             }
         ],
-        "stars": 0
+        "stars": 0,
+        "lastUpdateTimestamp": 1586942674000
     },
     "New game++": {
         "metadata": {
@@ -414,7 +421,8 @@
                 }
             }
         ],
-        "stars": 3
+        "stars": 3,
+        "lastUpdateTimestamp": 1662819119000
     },
     "Palicat": {
         "metadata": {
@@ -438,7 +446,8 @@
                 }
             }
         ],
-        "stars": 1
+        "stars": 1,
+        "lastUpdateTimestamp": 1593460293000
     },
     "Qine": {
         "metadata": {
@@ -463,7 +472,8 @@
                 }
             }
         ],
-        "stars": 1
+        "stars": 1,
+        "lastUpdateTimestamp": 1707002315000
     },
     "Restart Button": {
         "metadata": {
@@ -485,7 +495,8 @@
                 }
             }
         ],
-        "stars": 1
+        "stars": 1,
+        "lastUpdateTimestamp": 1656233966000
     },
     "Simplify": {
         "metadata": {
@@ -572,7 +583,8 @@
                 }
             }
         ],
-        "stars": 1
+        "stars": 1,
+        "lastUpdateTimestamp": 1646540805000
     },
     "cc-extra-dialogue": {
         "metadata": {
@@ -603,7 +615,8 @@
                 }
             }
         ],
-        "stars": 4
+        "stars": 4,
+        "lastUpdateTimestamp": 1633371805000
     },
     "cc-fancy-crash": {
         "metadata": {
@@ -657,7 +670,8 @@
                 }
             }
         ],
-        "stars": 0
+        "stars": 0,
+        "lastUpdateTimestamp": 1707129881000
     },
     "cc-oldmedia": {
         "metadata": {
@@ -694,7 +708,8 @@
                 }
             }
         ],
-        "stars": 0
+        "stars": 0,
+        "lastUpdateTimestamp": 1685899294000
     },
     "cc-quickinfo-exp": {
         "metadata": {
@@ -731,7 +746,8 @@
                 }
             }
         ],
-        "stars": 0
+        "stars": 0,
+        "lastUpdateTimestamp": 1687809967000
     },
     "cc-uncapped-stats": {
         "metadata": {
@@ -776,7 +792,8 @@
                 }
             }
         ],
-        "stars": 1
+        "stars": 1,
+        "lastUpdateTimestamp": 1646540805000
     },
     "cc-vim": {
         "metadata": {
@@ -852,7 +869,8 @@
                 }
             }
         ],
-        "stars": 1
+        "stars": 1,
+        "lastUpdateTimestamp": 1707145922000
     },
     "ccloader": {
         "metadata": {
@@ -913,7 +931,8 @@
                 }
             }
         ],
-        "stars": 0
+        "stars": 0,
+        "lastUpdateTimestamp": 1685899525000
     },
     "crosscode-tweak-pack": {
         "metadata": {
@@ -974,7 +993,8 @@
                 }
             }
         ],
-        "stars": 8
+        "stars": 8,
+        "lastUpdateTimestamp": 1690340225000
     },
     "cursedcode": {
         "metadata": {
@@ -1135,7 +1155,8 @@
                 }
             }
         ],
-        "stars": 16
+        "stars": 16,
+        "lastUpdateTimestamp": 1698267731000
     },
     "hardcoded-config-injector": {
         "metadata": {
@@ -1182,7 +1203,8 @@
                 }
             }
         ],
-        "stars": 5
+        "stars": 5,
+        "lastUpdateTimestamp": 1646924359000
     },
     "inventory-search": {
         "metadata": {
@@ -1265,7 +1287,8 @@
                 }
             }
         ],
-        "stars": 4
+        "stars": 4,
+        "lastUpdateTimestamp": 1589834816000
     },
     "junolea": {
         "metadata": {
@@ -1380,7 +1403,8 @@
                 }
             }
         ],
-        "stars": 1
+        "stars": 1,
+        "lastUpdateTimestamp": 1628412357000
     },
     "localize-me": {
         "metadata": {
@@ -1420,7 +1444,8 @@
                 }
             }
         ],
-        "stars": 5
+        "stars": 5,
+        "lastUpdateTimestamp": 1621100593000
     },
     "logic-steps": {
         "metadata": {
@@ -1461,7 +1486,8 @@
                 }
             }
         ],
-        "stars": 1
+        "stars": 1,
+        "lastUpdateTimestamp": 1688564827000
     },
     "map-watch": {
         "metadata": {
@@ -1547,7 +1573,8 @@
                 }
             }
         ],
-        "stars": 6
+        "stars": 6,
+        "lastUpdateTimestamp": 1697556236000
     },
     "nine-rooms": {
         "metadata": {
@@ -1573,7 +1600,8 @@
                 }
             }
         ],
-        "stars": 1
+        "stars": 1,
+        "lastUpdateTimestamp": 1649296780000
     },
     "past-booster": {
         "metadata": {
@@ -1605,7 +1633,8 @@
                 }
             }
         ],
-        "stars": 1
+        "stars": 1,
+        "lastUpdateTimestamp": 1649296780000
     },
     "readable-saves": {
         "metadata": {
@@ -1639,7 +1668,8 @@
                 }
             }
         ],
-        "stars": 1
+        "stars": 1,
+        "lastUpdateTimestamp": 1689734609000
     },
     "slowmotion": {
         "metadata": {
@@ -1667,7 +1697,8 @@
                 }
             }
         ],
-        "stars": 1
+        "stars": 1,
+        "lastUpdateTimestamp": 1590576242000
     },
     "timer": {
         "metadata": {
@@ -1713,7 +1744,8 @@
                 }
             }
         ],
-        "stars": 2
+        "stars": 2,
+        "lastUpdateTimestamp": 1692199724000
     },
     "timewalker": {
         "metadata": {
@@ -1744,7 +1776,8 @@
                 }
             }
         ],
-        "stars": 1
+        "stars": 1,
+        "lastUpdateTimestamp": 1599128575000
     },
     "uwuifier": {
         "metadata": {
@@ -1765,7 +1798,8 @@
                 }
             }
         ],
-        "stars": 3
+        "stars": 3,
+        "lastUpdateTimestamp": 1636658238000
     },
     "world-map-overhaul": {
         "metadata": {
@@ -1875,6 +1909,7 @@
                 }
             }
         ],
-        "stars": 1
+        "stars": 1,
+        "lastUpdateTimestamp": 1626540796000
     }
 }
