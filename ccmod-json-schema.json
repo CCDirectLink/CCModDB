@@ -11,7 +11,7 @@
       "type": "string"
     },
     "localisedString": {
-      "type": "object",
+      "type": ["string", "object"],
       "properties": {
         "en_US": { "type": "string" },
         "de_DE": { "type": "string" },
@@ -31,7 +31,7 @@
       "type": "string",
       "description": "ID of the mod, used for various fallbacks."
     },
-    "title": {
+    "name": {
       "$ref": "#/$defs/localisedString"
     },
     "description": {
@@ -45,12 +45,12 @@
       "type": "string",
       "description": "The license this mod is distributed under."
     },
-    "keywords": {
+    "tags": {
       "type": "array",
       "items": {
         "type": "string"
       },
-      "minItems": 1
+      "minItems": 0
     },
     "icons": {
       "type": "object",
@@ -59,7 +59,7 @@
       }
     },
     "authors": {
-      "type": "array",
+      "type": ["string", "array"],
       "items": {
         "type": "string"
       },
@@ -89,45 +89,21 @@
     }
   },
   "required": ["id", "version"],
-  "oneOf": [
+  "anyOf": [
     {
-      "allOf": [
-        {
-          "required": ["plugin"]
-        },
-        {
-          "not": {
-            "required": ["preload"]
-          }
-        },
-        {
-          "not": {
-            "required": ["postload"]
-          }
-        },
-        {
-          "not": {
-            "required": ["prestart"]
-          }
-        },
-        {
-          "not": {
-            "required": ["poststart"]
-          }
-        }
-      ]
+      "required": ["plugin"]
     },
     {
-      "allOf": [
-        {
-          "required": ["preload", "postload", "prestart", "poststart"]
-        },
-        {
-          "not": {
-            "required": ["plugin"]
-          }
-        }
-      ]
+      "required": ["preload"]
+    },
+    {
+      "required": ["postload"]
+    },
+    {
+      "required": ["prestart"]
+    },
+    {
+      "required": ["poststart"]
     }
   ]
 }
