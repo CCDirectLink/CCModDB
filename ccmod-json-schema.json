@@ -54,6 +54,14 @@
         "type": "string"
       }
     },
+    "homepage": {
+        "type": "string",
+        "description": "Mod homepage link."
+    },
+    "repository": {
+        "type": "string",
+        "description": "Mod repository link."
+    },
     "authors": {
       "type": ["string", "array"],
       "items": {
