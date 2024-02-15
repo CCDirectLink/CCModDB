@@ -58,4 +58,5 @@
 }
 ```
 
-Typescript types for this can be found in [CCUTD](https://github.com/CCDirectLink/ultimate-crosscode-typedefs/blob/master/file-types/mod-manifest.d.ts#L5)
+Typescript types for this can be found in [CCUTD](https://github.com/CCDirectLink/ultimate-crosscode-typedefs/blob/master/file-types/mod-manifest.d.ts#L5)  
+[JSON Schema](https://json-schema.org/) for `ccmod.json` can be found [here](./ccmod-json-schema.json).
