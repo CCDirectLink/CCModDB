@@ -27,8 +27,8 @@
 - `combat arts` - adds new combat arts
 - `maps` - adds new content maps
 - `boss` - adds new bosses
-- `ng++` - adds additional ng+ options
-- `skins` - adds any kind of skin to the game
+- `ng+` - adds additional ng+ options
+- `cosmetic` - adds any kind of cosmetic things like skins, pets or menu skins
 - `pets` - add a pet
 - `accessibility` - makes the game more accessible
 - `dev` - helps mod developers create mods
@@ -58,4 +58,4 @@
 }
 ```
 
-Typescript types for this can be found in [CCUTD](https://github.com/CCDirectLink/ultimate-crosscode-typedefs)
+Typescript types for this can be found in [CCUTD](https://github.com/CCDirectLink/ultimate-crosscode-typedefs/blob/master/file-types/mod-manifest.d.ts#L5)
