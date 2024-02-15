@@ -2,7 +2,7 @@ import stream from 'stream'
 import yauzl from 'yauzl'
 import { download, streamToBuffer } from './download'
 import fs from 'fs'
-import { getHomepage } from './db'
+import { getRepositoryEntry } from './db'
 import * as github from '@octokit/openapi-types'
 
 export type ModMetadatas = {
@@ -171,7 +171,7 @@ async function getStarsAndTimestamp(
     ccmod: PkgCCMod | undefined,
     fetchTimestamp: boolean
 ): Promise<{ stars: number; timestamp?: number } | undefined> {
-    const homepageArr = getHomepage(ccmod?.homepage || meta!.homepage)
+    const homepageArr = getRepositoryEntry(ccmod?.repository || meta!.homepage)
     if (homepageArr.length == 0) return
     if (homepageArr.length > 1) throw new Error('Multi page star counting not supported')
     const { name, url } = homepageArr[0]

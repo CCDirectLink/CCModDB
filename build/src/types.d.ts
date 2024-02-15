@@ -106,10 +106,10 @@ declare type PkgCCMod = {
     description?: LocalizedString
     license?: string
     homepage?: string
-    keywords?: string[]
+    repository?: string
+    tags?: string[]
     authors?: Person[]
     icons?: Record<string, FilePath>
-    type?: 'mod' | 'library'
 
     dependencies?: Record<string, SemverConstraint>
 

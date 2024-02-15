@@ -67,7 +67,7 @@ export async function writeMods(db: PackageDB): Promise<void> {
                     'A mod. (Description not available; contact mod author and have them add a description to their package.json file)'
             ),
             license: ccmod?.license || meta!.license,
-            page: getHomepage(ccmod?.homepage || meta!.homepage),
+            page: getRepositoryEntry(ccmod?.repository || ccmod?.homepage || meta!.homepage), /* old field, should be unused, kept for compatibility */
             archive_link: install.url,
             hash: install.hash,
             version: ccmod?.version || meta!.version,
@@ -84,7 +84,7 @@ export async function writeMods(db: PackageDB): Promise<void> {
     })
 }
 
-export function getHomepage(url?: string): Page[] {
+export function getRepositoryEntry(url?: string): Page[] {
     if (!url) {
         return []
     }
