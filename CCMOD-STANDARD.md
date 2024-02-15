@@ -8,7 +8,6 @@
 - `version` - Uses the [semver](https://semver.org/) format
 - `title` - Title shown to users. Can be localized
 - `description` - Description shown to users. Can be localized
-- `license` - Dont know what to choose? I recommend `GPLv3`. Read more at https://choosealicense.com
 - `homepage` - Put your GitHub repository link here
 - `tags` (Optional) - A list of mod tags. Read what tags are availible below in Mod tag list
 - `authors` - Either a string or an array of mod authors
@@ -40,9 +39,8 @@
 {
     "id": "crossedeyes",
     "version": "0.5.7",
-    "name": "CrossedEyes",
+    "title": "CrossedEyes",
     "description": "Accessibility mod for CrossCode",
-    "license": "GPLv3",
     "homepage": "https://github.com/CCDirectLink/CrossedEyes",
     "tags": ["accessibility"],
     "authors": ["krypek", "2767mr"],
