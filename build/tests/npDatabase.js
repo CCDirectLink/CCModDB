@@ -37,10 +37,13 @@ function testPackage(jsonData, mod, name) {
 
 			expect(typeof mod.metadata === 'object',
 				'metadata (type: object) required').to.be.true;
-			expect(Array.isArray(mod.metadata),
-				'metadata (type: object) required').to.be.false;
-			expect(mod.metadata !== null,
-				'metadata (type: object) required').to.be.true;
+			// expect(Array.isArray(mod.metadata),
+			// 	'metadata (type: object) required').to.be.false;
+			// expect(mod.metadata !== null,
+			// 	'metadata (type: object) required').to.be.true;
+
+            expect(mod.metadataCCMod !== undefined, 'metadataCCMod (type: object) required').to.be.true
+
 
 			expect(typeof mod.installation === 'object',
 				'installation (type: array) required').to.be.true;
@@ -50,16 +53,19 @@ function testPackage(jsonData, mod, name) {
 				'installation (type: array) required').to.be.true;
 		});
 
-		if (mod && mod.metadata) {
-			testMetadata(jsonData, mod.metadata);
-		}
-		if (mod && mod.metadataCCMod) {
-			testMetadataCCMod(jsonData, mod.metadataCCMod);
-		}
+        if (mod) {
+		    if (mod.metadata) {
+		    	testMetadata(jsonData, mod.metadata);
+		    }
+            
+		    if (mod.metadataCCMod) {
+		    	testMetadataCCMod(jsonData, mod.metadataCCMod);
+		    }
 
-		if (mod && mod.installation) {
-			testInstallation(mod);
-		}
+		    if (mod.installation) {
+		    	testInstallation(mod);
+		    }
+        }
 	});
 }
 
@@ -140,29 +146,32 @@ function testMetadataCCMod(jsonData, ccmod) {
 		expect(typeof ccmod.id === 'string',
 			'ccmod.id (type: string) required').to.be.true;
 
-		expect([undefined, 'mod', 'library'].includes(ccmod.type),
-			'ccmod.type (type: string) must have one of: '
-			+ '[undefined, "mod", "library"]').to.be.true;
-
-		expect(ccmod.version === undefined
-			|| semver.valid(ccmod.version) !== null,
-		'ccmod.version (type: string) must be undefined or valid semver')
+		expect(typeof ccmod.version === 'string'
+			&& semver.valid(ccmod.version) !== null,
+		'ccmod.version (type: string) is missing or isnt valid semver')
 			.to.be.true;
 
-		expect(ccmod.title === undefined
-			|| typeof ccmod.title === 'string'
+		expect(typeof ccmod.title === 'string'
             || typeof ccmod.title === 'object',
-		'ccmod.title (type: string) has wrong type').to.be.true;
-		expect(ccmod.description === undefined
-			|| typeof ccmod.description === 'string'
-			|| typeof ccmod.description === 'object',
-		'ccmod.description (type: string) has wrong type').to.be.true;
-		expect(ccmod.license === undefined
-			|| typeof ccmod.license === 'string',
-		'ccmod.license (type: string) has wrong type').to.be.true;
+		'ccmod.title (type: string) is missing or has wrong type').to.be.true;
+		expect(ccmod.description !== undefined && (
+			   typeof ccmod.description === 'string'
+			|| typeof ccmod.description === 'object'),
+		'ccmod.description (type: string) is missing or has wrong type').to.be.true;
 		expect(ccmod.homepage === undefined
 			|| typeof ccmod.homepage === 'string',
 		'ccmod.homepage (type: string) has wrong type').to.be.true;
+
+		expect(typeof ccmod.repository === 'string',
+		'ccmod.repository (type: string) is missing or has wrong type').to.be.true;
+
+		expect(ccmod.tags !== undefined 
+            && Array.isArray(ccmod.tags),
+		'ccmod.tags (type: array) is missing or has wrong type').to.be.true;
+
+		expect(ccmod.authors !== undefined 
+            && Array.isArray(ccmod.tags),
+		'ccmod.tags (type: array) is missing or has wrong type').to.be.true;
 	});
 
 	if (ccmod.dependencies) {
