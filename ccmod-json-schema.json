@@ -88,22 +88,5 @@
       "type": "string"
     }
   },
-  "required": ["id", "version"],
-  "anyOf": [
-    {
-      "required": ["plugin"]
-    },
-    {
-      "required": ["preload"]
-    },
-    {
-      "required": ["postload"]
-    },
-    {
-      "required": ["prestart"]
-    },
-    {
-      "required": ["poststart"]
-    }
-  ]
+  "required": ["id", "version"]
 }
