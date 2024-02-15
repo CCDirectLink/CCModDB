@@ -31,7 +31,7 @@
       "type": "string",
       "description": "ID of the mod, used for various fallbacks."
     },
-    "name": {
+    "title": {
       "$ref": "#/$defs/localisedString"
     },
     "description": {
@@ -40,10 +40,6 @@
     "version": {
       "$ref": "#/$defs/semver",
       "description": "The version of this mod following semantic versioning (https://semver.org)."
-    },
-    "license": {
-      "type": "string",
-      "description": "The license this mod is distributed under."
     },
     "tags": {
       "type": "array",
