@@ -43,7 +43,7 @@
     "version": "0.5.7",
     "title": "CrossedEyes",
     "description": "Accessibility mod for CrossCode",
-    "homepage": "https://github.com/CCDirectLink/CrossedEyes",
+    "repository": "https://github.com/CCDirectLink/CrossedEyes",
     "tags": ["accessibility"],
     "authors": ["krypek", "2767mr"],
     "icons": {
