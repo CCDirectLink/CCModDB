@@ -135,13 +135,14 @@ export async function addStarsAndTimestampsToResults(result: PackageDB, oldDb?: 
     for (const id in result) {
         const mod = result[id]
 
+        if (!mod) continue
         let fetchTimestamp = false
         let oldMod: Package | undefined
         if (oldDb) {
             const newVersion = mod.metadataCCMod?.version || mod.metadata?.version
             oldMod = oldDb[id]
-            const oldVersion = oldMod.metadataCCMod?.version || oldMod.metadata?.version
-            fetchTimestamp = oldVersion != newVersion || oldMod.lastUpdateTimestamp === undefined
+            const oldVersion = oldMod?.metadataCCMod?.version || oldMod?.metadata?.version
+            fetchTimestamp = oldVersion != newVersion || oldMod?.lastUpdateTimestamp === undefined
         }
 
         const res = await getStarsAndTimestamp(mod.metadata, mod.metadataCCMod, fetchTimestamp)
