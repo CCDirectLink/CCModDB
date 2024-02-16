@@ -1,3 +1,52 @@
 {
-    "mods": {}
+    "mods": {
+        "cc-blitzkrieg": {
+            "name": "Blitzkrieg (WIP)",
+            "description": "Puzzle solving, incresed puzzle difficuly, puzzle and boss collection tools",
+            "license": "GPLv3",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/krypciak/cc-blitzkrieg"
+                }
+            ],
+            "archive_link": "https://github.com/krypciak/cc-blitzkrieg/releases/download/v0.4.8/cc-blitzkrieg-0.4.8.ccmod",
+            "hash": {
+                "sha256": "eb88b197308a00273f6aeb713b9445f37aa1a4d161159aee243951da5c85bbd1"
+            },
+            "version": "0.4.8"
+        },
+        "cc-fancy-crash": {
+            "name": "Fancy crash",
+            "description": "Better crash message",
+            "license": "GPLv3",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/krypciak/cc-fancy-crash"
+                }
+            ],
+            "archive_link": "https://github.com/krypciak/cc-fancy-crash/releases/download/v1.0.8/cc-fancy-crash-1.0.8.ccmod",
+            "hash": {
+                "sha256": "4072312dfc3d9f99b0b33df61dc8470f96e53453c9b45b71d7e9ef83db24b7aa"
+            },
+            "version": "1.0.8"
+        },
+        "input-api": {
+            "name": "input-api",
+            "description": "Allows mods to add rebindable key bindings",
+            "license": "MIT",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/CCDirectLink/input-api"
+                }
+            ],
+            "archive_link": "https://github.com/krypciak/input-api/releases/download/v1.0.2/input-api.ccmod",
+            "hash": {
+                "sha256": "0c3acb06a812f50237f69fd9d4b3b542f9cba6d583be5bf1082399c6a1ab9e08"
+            },
+            "version": "1.0.2"
+        }
+    }
 }

@@ -1,1 +1,146 @@
-{}
+{
+    "cc-blitzkrieg": {
+        "metadata": {
+            "name": "cc-blitzkrieg",
+            "version": "0.4.8",
+            "description": "Blitzkrieg",
+            "scripts": {
+                "start": "esbuild --target=es2018 --format=esm --platform=node --bundle --sourcemap=inline --outfile=plugin.js src/plugin.ts",
+                "watch": "esbuild --target=es2018 --format=esm --platform=node --bundle --sourcemap=inline --watch --outfile=plugin.js src/plugin.ts",
+                "build": "esbuild --target=es2018 --format=esm --platform=node --bundle --outfile='plugin.js' 'src/plugin.ts'",
+                "format": "prettier ./src -w; npx prettier ./assets -w --tab-width 4 --no-semi --print-width 500 --bracket-same-line"
+            },
+            "types": "types/plugin.d.ts",
+            "author": "krypek",
+            "license": "GPLv3",
+            "homepage": "https://github.com/krypciak/cc-blitzkrieg",
+            "devDependencies": {
+                "@types/node": "^11.6.0",
+                "@typescript-eslint/eslint-plugin": "^6.20.0",
+                "@typescript-eslint/parser": "^6.20.0",
+                "cc-map-util": "github:krypciak/cc-map-util",
+                "cc-vim": "github:krypciak/cc-vim",
+                "esbuild": "^0.20.0",
+                "prettier": "^3.2.5",
+                "typescript": "^5.3.3",
+                "ultimate-crosscode-typedefs": "github:krypciak/ultimate-crosscode-typedefs",
+                "cc-diorbital-menu": "github:krypciak/cc-diorbital-menu"
+            }
+        },
+        "metadataCCMod": {
+            "id": "cc-blitzkrieg",
+            "version": "0.4.8",
+            "title": "Blitzkrieg (WIP)",
+            "description": "Puzzle solving, incresed puzzle difficuly, puzzle and boss collection tools",
+            "repository": "https://github.com/krypciak/cc-blitzkrieg",
+            "tags": [
+                "library",
+                "puzzle"
+            ],
+            "authors": "krypek",
+            "icons": {
+                "24": "icon/icon.png"
+            },
+            "dependencies": {
+                "input-api": ">=1.0.2",
+                "crosscode": ">=1.4.0"
+            },
+            "plugin": "plugin.js"
+        },
+        "installation": [
+            {
+                "type": "ccmod",
+                "url": "https://github.com/krypciak/cc-blitzkrieg/releases/download/v0.4.8/cc-blitzkrieg-0.4.8.ccmod",
+                "hash": {
+                    "sha256": "eb88b197308a00273f6aeb713b9445f37aa1a4d161159aee243951da5c85bbd1"
+                }
+            }
+        ],
+        "stars": 0,
+        "lastUpdateTimestamp": 1708107327000
+    },
+    "cc-fancy-crash": {
+        "metadata": {
+            "name": "cc-fancy-crash",
+            "version": "1.0.8",
+            "description": "Better crash message",
+            "scripts": {
+                "start": "esbuild --target=es2018 --format=esm --platform=node --bundle --sourcemap=inline --outfile=plugin.js src/plugin.ts",
+                "watch": "esbuild --target=es2018 --format=esm --platform=node --bundle --sourcemap=inline --watch --outfile=plugin.js src/plugin.ts",
+                "build": "esbuild --target=es2018 --format=esm --platform=node --bundle --outfile='plugin.js' 'src/plugin.ts'",
+                "format": "prettier ./src -w"
+            },
+            "author": "krypek",
+            "license": "GPLv3",
+            "homepage": "https://github.com/krypciak/cc-fancy-crash",
+            "devDependencies": {
+                "@types/node": "^11.6.0",
+                "@typescript-eslint/eslint-plugin": "^6.20.0",
+                "@typescript-eslint/parser": "^6.20.0",
+                "esbuild": "^0.20.0",
+                "typescript": "^5.3.3",
+                "ultimate-crosscode-typedefs": "github:krypciak/ultimate-crosscode-typedefs"
+            }
+        },
+        "metadataCCMod": {
+            "id": "cc-fancy-crash",
+            "version": "1.0.8",
+            "title": "Fancy crash",
+            "description": "Better crash message",
+            "repository": "https://github.com/krypciak/cc-fancy-crash",
+            "tags": [
+                "dev"
+            ],
+            "authors": "krypek",
+            "icons": {
+                "24": "icon/icon.png"
+            },
+            "plugin": "plugin.js"
+        },
+        "installation": [
+            {
+                "type": "ccmod",
+                "url": "https://github.com/krypciak/cc-fancy-crash/releases/download/v1.0.8/cc-fancy-crash-1.0.8.ccmod",
+                "hash": {
+                    "sha256": "4072312dfc3d9f99b0b33df61dc8470f96e53453c9b45b71d7e9ef83db24b7aa"
+                }
+            }
+        ],
+        "stars": 0,
+        "lastUpdateTimestamp": 1708109072000
+    },
+    "input-api": {
+        "metadata": {
+            "name": "input-api",
+            "version": "1.0.2",
+            "description": "Allows mods to add rebindable key bindings",
+            "license": "MIT",
+            "homepage": "https://github.com/CCDirectLink/input-api",
+            "module": true,
+            "postload": "postload.js"
+        },
+        "metadataCCMod": {
+            "id": "input-api",
+            "version": "1.0.2",
+            "title": "input-api",
+            "description": "Allows mods to add rebindable key bindings",
+            "repository": "https://github.com/CCDirectLink/input-api",
+            "tags": [
+                "library"
+            ],
+            "authors": "dmitmel",
+            "postload": "postload.js"
+        },
+        "installation": [
+            {
+                "type": "ccmod",
+                "url": "https://github.com/krypciak/input-api/releases/download/v1.0.2/input-api.ccmod",
+                "hash": {
+                    "sha256": "0c3acb06a812f50237f69fd9d4b3b542f9cba6d583be5bf1082399c6a1ab9e08"
+                }
+            }
+        ],
+        "stars": 5,
+        "lastUpdateTimestamp": 1646924334000
+    }
+}
