@@ -31,6 +31,7 @@
 - `ng+` - adds additional ng+ options
 - `cosmetic` - adds any kind of cosmetic things like skins, pets or menu skins
 - `pets` - add a pet
+- `fun` - fun things not necessarily useful
 - `accessibility` - makes the game more accessible
 - `dev` - helps mod developers create mods
 - `library` - used by other mods
