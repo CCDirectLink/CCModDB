@@ -32,6 +32,7 @@
 - `cosmetic` - adds any kind of cosmetic things like skins, pets or menu skins
 - `pets` - add a pet
 - `fun` - fun things not necessarily useful
+- `cheats` - do things you're not supposed to do like spawn items or infinite gold
 - `accessibility` - makes the game more accessible
 - `dev` - helps mod developers create mods
 - `library` - used by other mods
