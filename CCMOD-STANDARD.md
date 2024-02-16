@@ -27,6 +27,7 @@
 - `combat arts` - adds new combat arts
 - `maps` - adds new content maps
 - `boss` - adds new bosses
+- `puzzle` - adds new puzzles or something puzzle related
 - `ng+` - adds additional ng+ options
 - `cosmetic` - adds any kind of cosmetic things like skins, pets or menu skins
 - `pets` - add a pet
