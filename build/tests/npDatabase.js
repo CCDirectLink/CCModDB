@@ -171,7 +171,7 @@ function testMetadataCCMod(jsonData, ccmod) {
 
 		expect(ccmod.authors !== undefined 
             && Array.isArray(ccmod.tags),
-		'ccmod.tags (type: array) is missing or has wrong type').to.be.true;
+		'ccmod.authors (type: array) is missing or has wrong type').to.be.true;
 	});
 
 	if (ccmod.dependencies) {
