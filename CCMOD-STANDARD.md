@@ -9,7 +9,7 @@
 - `title` - Title shown to users. Can be localized
 - `description` - Description shown to users. Can be localized
 - `homepage` (Optional) - Put your mod homepage link here (don't put your repository link here)
-- `repository` - Put your repository link here. Non GitHub links will be missing CCModManager functionality
+- `repository` - Put your repository link here. Non GitHub links will be missing some [CCModManager](https://github.com/CCDirectLink/CCModManager) functionality
 - `tags` (Optional) - A list of mod tags. Read what tags are availible below in Mod tag list
 - `authors` - Either a string or an array of mod authors
 - `icons` (Optional) - Mod icon. Currently only the size of 24x24 pixels is supported
