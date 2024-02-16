@@ -32,6 +32,7 @@
 - `cosmetic` - adds any kind of cosmetic things like skins, pets or menu skins
 - `fun` - fun things not necessarily useful
 - `cheats` - do things you're not supposed to do like spawn items or infinite gold
+- `speedrun` - helps speedrunners with speedruns or practise
 - `accessibility` - makes the game more accessible
 - `dev` - helps mod developers create mods
 - `library` - used by other mods
