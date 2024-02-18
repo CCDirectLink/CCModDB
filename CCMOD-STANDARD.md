@@ -34,6 +34,7 @@
 - `cheats` - do things you're not supposed to do like spawn items or infinite gold
 - `speedrun` - helps speedrunners with speedruns or practise
 - `widget` - adds a [CCUILib](https://github.com/conorlawton/nax-ccuilib) quick menu widget
+- `language` - adds a new language
 - `accessibility` - makes the game more accessible
 - `dev` - helps mod developers create mods
 - `library` - used by other mods
