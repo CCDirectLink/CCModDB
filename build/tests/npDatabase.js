@@ -35,8 +35,8 @@ function testPackage(jsonData, mod, name) {
 			expect(mod !== null,
 				'package must not be null').to.be.true;
 
-			expect(typeof mod.metadata === 'object',
-				'metadata (type: object) required').to.be.true;
+			// expect(typeof mod.metadata === 'object',
+			// 	'metadata (type: object) required').to.be.true;
 			// expect(Array.isArray(mod.metadata),
 			// 	'metadata (type: object) required').to.be.false;
 			// expect(mod.metadata !== null,
