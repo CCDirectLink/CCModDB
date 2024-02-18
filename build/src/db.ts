@@ -60,14 +60,14 @@ export async function writeMods(db: PackageDB): Promise<void> {
         if (!install) continue
 
         mods[name] = {
-            name: getStringFromLocalisedString(ccmod?.title || meta!.ccmodHumanName || name),
+            name: getStringFromLocalisedString(ccmod?.title || meta?.ccmodHumanName || name),
             description: getStringFromLocalisedString(
                 ccmod?.description ||
-                    meta!.description ||
+                    meta?.description ||
                     'A mod. (Description not available; contact mod author and have them add a description to their package.json file)'
             ),
-            license: ccmod?.license || meta!.license,
-            page: getRepositoryEntry(ccmod?.repository || ccmod?.homepage || meta!.homepage), /* old field, should be unused, kept for compatibility */
+            license: ccmod?.license || meta?.license,
+            page: getRepositoryEntry(ccmod?.repository || ccmod?.homepage || meta?.homepage), /* old field, should be unused, kept for compatibility */
             archive_link: install.url,
             hash: install.hash,
             version: ccmod?.version || meta!.version,
@@ -128,7 +128,7 @@ function getInstallation(installations: InstallMethod[]): { url: string; hash: {
 
 async function buildEntry(result: PackageDB, meta: PkgMetadata | undefined, ccmod: PkgCCMod | undefined, inputs: InputLocation[]): Promise<void> {
     result[ccmod?.id || meta!.name] = {
-        metadata: meta,
+        // metadata: meta,
         metadataCCMod: ccmod,
         installation: await generateInstallations(inputs),
     }
