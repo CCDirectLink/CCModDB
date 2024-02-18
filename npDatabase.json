@@ -1,32 +1,34 @@
 {
-    "cc-blitzkrieg": {
-        "metadata": {
-            "name": "cc-blitzkrieg",
-            "version": "0.4.8",
-            "description": "Blitzkrieg",
-            "scripts": {
-                "start": "esbuild --target=es2018 --format=esm --platform=node --bundle --sourcemap=inline --outfile=plugin.js src/plugin.ts",
-                "watch": "esbuild --target=es2018 --format=esm --platform=node --bundle --sourcemap=inline --watch --outfile=plugin.js src/plugin.ts",
-                "build": "esbuild --target=es2018 --format=esm --platform=node --bundle --outfile='plugin.js' 'src/plugin.ts'",
-                "format": "prettier ./src -w; npx prettier ./assets -w --tab-width 4 --no-semi --print-width 500 --bracket-same-line"
-            },
-            "types": "types/plugin.d.ts",
-            "author": "krypek",
-            "license": "GPLv3",
-            "homepage": "https://github.com/krypciak/cc-blitzkrieg",
-            "devDependencies": {
-                "@types/node": "^11.6.0",
-                "@typescript-eslint/eslint-plugin": "^6.20.0",
-                "@typescript-eslint/parser": "^6.20.0",
-                "cc-map-util": "github:krypciak/cc-map-util",
-                "cc-vim": "github:krypciak/cc-vim",
-                "esbuild": "^0.20.0",
-                "prettier": "^3.2.5",
-                "typescript": "^5.3.3",
-                "ultimate-crosscode-typedefs": "github:krypciak/ultimate-crosscode-typedefs",
-                "cc-diorbital-menu": "github:krypciak/cc-diorbital-menu"
-            }
+    "blades": {
+        "metadataCCMod": {
+            "id": "blades",
+            "version": "1.5.0",
+            "title": "Blades",
+            "description": "Asset which replaces balls with blades, now for all classes!",
+            "repository": "https://github.com/CCDirectLink/Blades",
+            "tags": [
+                "cosmetic"
+            ],
+            "authors": [
+                "keanuplayz",
+                "ac2pic",
+                "2767mr"
+            ]
         },
+        "installation": [
+            {
+                "type": "modZip",
+                "url": "https://github.com/CCDirectLink/Blades/archive/1.6.0.zip",
+                "source": "Blades-1.6.0",
+                "hash": {
+                    "sha256": "d28fc9eeff4240aa9775ad6bbe4723f9dbcb6defe15b23e483ee490c48acab18"
+                }
+            }
+        ],
+        "stars": 2,
+        "lastUpdateTimestamp": 1708114400000
+    },
+    "cc-blitzkrieg": {
         "metadataCCMod": {
             "id": "cc-blitzkrieg",
             "version": "0.4.8",
@@ -59,29 +61,39 @@
         "stars": 0,
         "lastUpdateTimestamp": 1708107327000
     },
-    "cc-fancy-crash": {
-        "metadata": {
-            "name": "cc-fancy-crash",
-            "version": "1.0.8",
-            "description": "Better crash message",
-            "scripts": {
-                "start": "esbuild --target=es2018 --format=esm --platform=node --bundle --sourcemap=inline --outfile=plugin.js src/plugin.ts",
-                "watch": "esbuild --target=es2018 --format=esm --platform=node --bundle --sourcemap=inline --watch --outfile=plugin.js src/plugin.ts",
-                "build": "esbuild --target=es2018 --format=esm --platform=node --bundle --outfile='plugin.js' 'src/plugin.ts'",
-                "format": "prettier ./src -w"
+    "cc-character-widgets": {
+        "metadataCCMod": {
+            "id": "cc-character-widgets",
+            "version": "1.0.0",
+            "title": "Character swap widgets",
+            "description": "Adds a character swap quick menu widgets",
+            "repository": "https://github.com/krypciak/cc-character-widgets",
+            "tags": [
+                "widget",
+                "character"
+            ],
+            "authors": "krypek",
+            "icons": {
+                "24": "icon/icon.png"
             },
-            "author": "krypek",
-            "license": "GPLv3",
-            "homepage": "https://github.com/krypciak/cc-fancy-crash",
-            "devDependencies": {
-                "@types/node": "^11.6.0",
-                "@typescript-eslint/eslint-plugin": "^6.20.0",
-                "@typescript-eslint/parser": "^6.20.0",
-                "esbuild": "^0.20.0",
-                "typescript": "^5.3.3",
-                "ultimate-crosscode-typedefs": "github:krypciak/ultimate-crosscode-typedefs"
-            }
+            "dependencies": {
+                "nax-ccuilib": ">=1.2.3"
+            },
+            "plugin": "plugin.js"
         },
+        "installation": [
+            {
+                "type": "ccmod",
+                "url": "https://github.com/krypciak/cc-character-widgets/releases/download/v1.0.0/cc-character-widgets-1.0.0.ccmod",
+                "hash": {
+                    "sha256": "64fe713374289d4e9e164afa6e23b96ab3f397323f0e37977fb6ffc1fd70122b"
+                }
+            }
+        ],
+        "stars": 0,
+        "lastUpdateTimestamp": 1708253385000
+    },
+    "cc-fancy-crash": {
         "metadataCCMod": {
             "id": "cc-fancy-crash",
             "version": "1.0.8",
@@ -109,16 +121,41 @@
         "stars": 0,
         "lastUpdateTimestamp": 1708109072000
     },
-    "input-api": {
-        "metadata": {
-            "name": "input-api",
-            "version": "1.0.2",
-            "description": "Allows mods to add rebindable key bindings",
-            "license": "MIT",
-            "homepage": "https://github.com/CCDirectLink/input-api",
-            "module": true,
-            "postload": "postload.js"
+    "cc-jetpack-widget": {
+        "metadataCCMod": {
+            "id": "cc-jetpack-widget",
+            "version": "1.0.1",
+            "title": "Jetpack widget",
+            "description": "Adds a jetpack quick menu widget",
+            "repository": "https://github.com/krypciak/cc-jetpack-widget",
+            "tags": [
+                "widget",
+                "speedrun",
+                "fun",
+                "cheats"
+            ],
+            "authors": "krypek",
+            "icons": {
+                "24": "icon/icon.png"
+            },
+            "dependencies": {
+                "nax-ccuilib": ">=1.2.3"
+            },
+            "plugin": "plugin.js"
         },
+        "installation": [
+            {
+                "type": "ccmod",
+                "url": "https://github.com/krypciak/cc-jetpack-widget/releases/download/v1.0.1/cc-jetpack-widget-1.0.1.ccmod",
+                "hash": {
+                    "sha256": "fa0d7f74e443030dcf5615e08ff4fc20a2d38b08d8d9e1ca78eda32f3c394c0c"
+                }
+            }
+        ],
+        "stars": 0,
+        "lastUpdateTimestamp": 1708253819000
+    },
+    "input-api": {
         "metadataCCMod": {
             "id": "input-api",
             "version": "1.0.2",
@@ -142,5 +179,35 @@
         ],
         "stars": 5,
         "lastUpdateTimestamp": 1646924334000
+    },
+    "preset-revival-plus": {
+        "metadataCCMod": {
+            "id": "preset-revival-plus",
+            "version": "2.1.1",
+            "title": "Preset Revival Plus",
+            "description": "Brings back the preset menu, which allows you to start the game at a specific point.",
+            "repository": "https://github.com/EpicYoshiMaster/CCPresetRevivalPlus",
+            "tags": [
+                "speedrun",
+                "dev"
+            ],
+            "authors": [
+                "ac2pic",
+                "2767mr",
+                "EpicYoshiMaster"
+            ],
+            "prestart": "prestart.js"
+        },
+        "installation": [
+            {
+                "type": "ccmod",
+                "url": "https://github.com/EpicYoshiMaster/CCPresetRevivalPlus/releases/download/2.1.1/CCPresetRevivalPlus.v2.1.1.ccmod",
+                "hash": {
+                    "sha256": "19aa49547dfd4fe686be1e490b6b004ef36250d057de896984a91c11bf2adb77"
+                }
+            }
+        ],
+        "stars": 0,
+        "lastUpdateTimestamp": 1708116396000
     }
 }
