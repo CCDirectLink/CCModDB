@@ -24,9 +24,13 @@
 ## Mod tag list
 
 - `QoL` - stands for "Quality of Life". Makes the playing experience smoother
-- `player-character` - adds new playable characters and/or classes
-- `party-member` - adds new playable characters and/or classes
+- `player character` - adds new playable characters and/or classes
+- `party member` - adds new playable characters and/or classes
 - `combat arts` - adds new combat arts
+- `pvp duel` - adds a pvp duel
+- `arena` - adds new arena cups
+- `dungeon` - adds a new dungeon
+- `quests` - adds new quests
 - `maps` - adds new content maps
 - `boss` - adds new bosses
 - `puzzle` - adds new puzzles or something puzzle related
