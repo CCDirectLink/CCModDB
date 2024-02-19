@@ -45,6 +45,21 @@
             },
             "version": "0.4.8"
         },
+        "cc-capped-stats": {
+            "name": "Capped Stats",
+            "description": "Adds a visual stat cap - see your stats for what they really aren't!",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/elluminance/cc-capped-stats"
+                }
+            ],
+            "archive_link": "https://github.com/elluminance/cc-capped-stats/releases/download/v1.0.0/cc-capped-stats.ccmod",
+            "hash": {
+                "sha256": "afd410d055effb03c46b8604cab4f402a0ec986b2c9394c4af3be3546a594f79"
+            },
+            "version": "1.0.0"
+        },
         "cc-character-widgets": {
             "name": "Character swap widgets",
             "description": "Adds a character swap quick menu widgets",
@@ -135,6 +150,21 @@
             },
             "version": "0.1.2"
         },
+        "el-tweaks": {
+            "name": "EL's Tweaks",
+            "description": "A coremod full of useful functionality for modders, as well as many tweaks for players.",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/elluminance/el-crosscode-tweaks"
+                }
+            ],
+            "archive_link": "https://github.com/elluminance/el-crosscode-tweaks/releases/download/v0.7.5/els-tweaks.ccmod",
+            "hash": {
+                "sha256": "30421792706ab587c67af19b698609d0c2ae6712adfaa3464bf4d3776ee66c90"
+            },
+            "version": "0.7.5"
+        },
         "element-boss": {
             "name": "Element Boss",
             "description": "Adds a new boss battle to the game.",
@@ -149,6 +179,36 @@
                 "sha256": "569d371c4bb151222e5d8cd1104115bfe6c5fe1b4325813e586e26ecbe0fbbb2"
             },
             "version": "0.1.3"
+        },
+        "extension-asset-preloader": {
+            "name": "Extension Asset Preloader",
+            "description": "Fixes files from extensions potentially not being loaded during the game's loading.",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/elluminance/crosscode-extension-asset-preloader"
+                }
+            ],
+            "archive_link": "https://github.com/elluminance/crosscode-extension-asset-preloader/releases/download/v1.0.0/extension-asset-preloader.ccmod",
+            "hash": {
+                "sha256": "ec7f83e4064a220ac6ca44d8bb4659cc2665709b5dcc173ea515133ef06b7b09"
+            },
+            "version": "1.0.0"
+        },
+        "font-utils": {
+            "name": "Font Utilities",
+            "description": "Adds various new font colors!",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/elluminance/crosscode-font-utils"
+                }
+            ],
+            "archive_link": "https://github.com/elluminance/crosscode-font-utils/releases/download/v1.2.1/font-utils.ccmod",
+            "hash": {
+                "sha256": "82b694a6e808081d9db494a57598944c6c7363439f561e87832225677e61769a"
+            },
+            "version": "1.2.0"
         },
         "input-api": {
             "name": "input-api",
@@ -179,6 +239,21 @@
                 "sha256": "82523e959809c7b46cce0d7c702f9bf85f1981a80ac999be09782811fcaa33d0"
             },
             "version": "0.4.4"
+        },
+        "modifier-api": {
+            "name": "Modifier API \\c[3]Reborn\\c[0]",
+            "description": "Enables easier creation and usage of custom modifiers and statuses.",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/elluminance/crosscode-modifier-api-reborn"
+                }
+            ],
+            "archive_link": "https://github.com/elluminance/crosscode-modifier-api-reborn/releases/download/v0.1.1/modifier-api.ccmod",
+            "hash": {
+                "sha256": "2e2ebf66a3bdb3a98d19b59c6e51918cea050940a28de4657b7dc05c62d1b30b"
+            },
+            "version": "0.1.1"
         },
         "nine-rooms": {
             "name": "Nine Rooms",

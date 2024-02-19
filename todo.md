@@ -24,13 +24,13 @@
 - https://github.com/conorlawton/CCInventorySearch/pull/5 (remind him of the other crash fix pr)
 - https://github.com/conorlawton/nax-ccuilib/pull/4
 
-### EL
+### ~~EL~~
 
-- https://github.com/EL20202/cc-capped-stats/pull/1
-- https://github.com/EL20202/crosscode-font-utils/pull/2
-- https://github.com/EL20202/el-crosscode-tweaks/pull/2
-- https://github.com/EL20202/crosscode-extension-asset-preloader/pull/1
-- https://github.com/EL20202/crosscode-modifier-api-reborn/pull/1
+- ~~https://github.com/EL20202/cc-capped-stats/pull/1~~
+- ~~https://github.com/EL20202/crosscode-font-utils/pull/2~~
+- ~~https://github.com/EL20202/el-crosscode-tweaks/pull/2~~
+- ~~https://github.com/EL20202/crosscode-extension-asset-preloader/pull/1~~
+- ~~https://github.com/EL20202/crosscode-modifier-api-reborn/pull/1~~
 
 ### Alyx
 

@@ -91,6 +91,37 @@
         "stars": 0,
         "lastUpdateTimestamp": 1708107327000
     },
+    "cc-capped-stats": {
+        "metadataCCMod": {
+            "id": "cc-capped-stats",
+            "version": "1.0.0",
+            "title": "Capped Stats",
+            "description": "Adds a visual stat cap - see your stats for what they really aren't!",
+            "repository": "https://github.com/elluminance/cc-capped-stats",
+            "tags": [
+                "fun"
+            ],
+            "authors": "elluminance",
+            "prestart": "prestart.js",
+            "icons": {
+                "24": "icon.png"
+            },
+            "dependencies": {
+                "ccloader": "^2.20.0"
+            }
+        },
+        "installation": [
+            {
+                "type": "ccmod",
+                "url": "https://github.com/elluminance/cc-capped-stats/releases/download/v1.0.0/cc-capped-stats.ccmod",
+                "hash": {
+                    "sha256": "afd410d055effb03c46b8604cab4f402a0ec986b2c9394c4af3be3546a594f79"
+                }
+            }
+        ],
+        "stars": 0,
+        "lastUpdateTimestamp": 1708372177000
+    },
     "cc-character-widgets": {
         "metadataCCMod": {
             "id": "cc-character-widgets",
@@ -272,6 +303,35 @@
         "stars": 1,
         "lastUpdateTimestamp": 1708368308000
     },
+    "el-tweaks": {
+        "metadataCCMod": {
+            "id": "el-tweaks",
+            "version": "0.7.5",
+            "title": "EL's Tweaks",
+            "description": "A coremod full of useful functionality for modders, as well as many tweaks for players.",
+            "repository": "https://github.com/elluminance/el-crosscode-tweaks",
+            "tags": [
+                "QoL",
+                "library"
+            ],
+            "authors": "elluminance",
+            "plugin": "./dist/plugin.js",
+            "dependencies": {
+                "ccloader": "2.x.x"
+            }
+        },
+        "installation": [
+            {
+                "type": "ccmod",
+                "url": "https://github.com/elluminance/el-crosscode-tweaks/releases/download/v0.7.5/els-tweaks.ccmod",
+                "hash": {
+                    "sha256": "30421792706ab587c67af19b698609d0c2ae6712adfaa3464bf4d3776ee66c90"
+                }
+            }
+        ],
+        "stars": 3,
+        "lastUpdateTimestamp": 1708372183000
+    },
     "element-boss": {
         "metadataCCMod": {
             "id": "element-boss",
@@ -296,6 +356,56 @@
         ],
         "stars": 0,
         "lastUpdateTimestamp": 1708290993000
+    },
+    "extension-asset-preloader": {
+        "metadataCCMod": {
+            "id": "extension-asset-preloader",
+            "version": "1.0.0",
+            "title": "Extension Asset Preloader",
+            "description": "Fixes files from extensions potentially not being loaded during the game's loading.",
+            "repository": "https://github.com/elluminance/crosscode-extension-asset-preloader",
+            "tags": [
+                "library"
+            ],
+            "authors": "elluminance",
+            "postload": "postload.js"
+        },
+        "installation": [
+            {
+                "type": "ccmod",
+                "url": "https://github.com/elluminance/crosscode-extension-asset-preloader/releases/download/v1.0.0/extension-asset-preloader.ccmod",
+                "hash": {
+                    "sha256": "ec7f83e4064a220ac6ca44d8bb4659cc2665709b5dcc173ea515133ef06b7b09"
+                }
+            }
+        ],
+        "stars": 0,
+        "lastUpdateTimestamp": 1708372180000
+    },
+    "font-utils": {
+        "metadataCCMod": {
+            "id": "font-utils",
+            "version": "1.2.0",
+            "title": "Font Utilities",
+            "description": "Adds various new font colors!",
+            "repository": "https://github.com/elluminance/crosscode-font-utils",
+            "tags": [
+                "library"
+            ],
+            "authors": "elluminance",
+            "prestart": "dist/prestart.js"
+        },
+        "installation": [
+            {
+                "type": "ccmod",
+                "url": "https://github.com/elluminance/crosscode-font-utils/releases/download/v1.2.1/font-utils.ccmod",
+                "hash": {
+                    "sha256": "82b694a6e808081d9db494a57598944c6c7363439f561e87832225677e61769a"
+                }
+            }
+        ],
+        "stars": 0,
+        "lastUpdateTimestamp": 1708372178000
     },
     "input-api": {
         "metadataCCMod": {
@@ -355,6 +465,32 @@
         ],
         "stars": 1,
         "lastUpdateTimestamp": 1708294841000
+    },
+    "modifier-api": {
+        "metadataCCMod": {
+            "id": "modifier-api",
+            "version": "0.1.1",
+            "title": "Modifier API \\c[3]Reborn\\c[0]",
+            "description": "Enables easier creation and usage of custom modifiers and statuses.",
+            "repository": "https://github.com/elluminance/crosscode-modifier-api-reborn",
+            "tags": [
+                "library"
+            ],
+            "authors": "elluminance",
+            "postload": "./dist/postload.js",
+            "prestart": "./dist/prestart.js"
+        },
+        "installation": [
+            {
+                "type": "ccmod",
+                "url": "https://github.com/elluminance/crosscode-modifier-api-reborn/releases/download/v0.1.1/modifier-api.ccmod",
+                "hash": {
+                    "sha256": "2e2ebf66a3bdb3a98d19b59c6e51918cea050940a28de4657b7dc05c62d1b30b"
+                }
+            }
+        ],
+        "stars": 0,
+        "lastUpdateTimestamp": 1708372181000
     },
     "nine-rooms": {
         "metadataCCMod": {
