@@ -83,5 +83,10 @@
   {
     "type": "ccmod",
     "url": "https://github.com/elluminance/el-crosscode-tweaks/releases/download/v0.7.5/els-tweaks.ccmod"
+  },
+  {
+    "type": "modZip",
+    "urlZip": "https://github.com/Inevitabilis/CC-Junolea/archive/refs/tags/v1.0.1.zip",
+    "source": "CC-Junolea-1.0.1"
   }
 ]

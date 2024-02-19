@@ -58,6 +58,7 @@
 - ~~https://github.com/Symphiel/CursedCode/pull/1~~
 - https://github.com/Hsifnus/autumns-genesis/pull/35
 - https://github.com/2hh8899/ArcaneLab/pull/18
+- https://github.com/CodeTriangle/CCMultiworldRandomizer/pull/10
 
 ## PR's in progress but probably never merging (will need to make release on my fork if not merged)
 
@@ -77,7 +78,7 @@
 - https://github.com/tylercamp/CCJoystickExt/pull/1
 - https://github.com/ubergeek77/CCExtraGamepadOptions/pull/3
 - https://github.com/WatDuhHekBro/cc-uwuifier/pull/4
-- https://github.com/Inevitabilis/CC-Junolea/pull/1
+- ~~https://github.com/Inevitabilis/CC-Junolea/pull/1~~
 - ~~https://github.com/Pyrocorvid/CCNineRooms/pull/2~~
 - https://github.com/CookieSalesman/CrossCode-HADOUKEN-v1.0/pull/2
 - https://github.com/canbora/cc-named-saves/pull/2

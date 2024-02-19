@@ -466,6 +466,78 @@
         "stars": 1,
         "lastUpdateTimestamp": 1708294841000
     },
+    "junolea": {
+        "metadataCCMod": {
+            "id": "junolea",
+            "version": "1.0.0",
+            "title": "Junolea Skin",
+            "description": "Adds a skin which makes Lea look like Juno",
+            "repository": "https://github.com/Inevitabilis/CC-Junolea",
+            "tags": [
+                "cosmetic"
+            ],
+            "authors": [
+                "Inevitabilis",
+                "dmitmel"
+            ],
+            "icons": {
+                "24": "icon24.png"
+            },
+            "dependencies": {
+                "item-api": ">=0.2.0 <1.0.0"
+            },
+            "assets": [
+                "data/animations/player-skins/junolea-hugging.json",
+                "data/animations/player-skins/junolea-hugging.json.patch",
+                "data/animations/player-skins/junolea-poses-debug.json",
+                "data/animations/player-skins/junolea-poses-debug.json.patch",
+                "data/animations/player-skins/junolea-poses.json",
+                "data/animations/player-skins/junolea-poses.json.patch",
+                "data/animations/player-skins/junolea-sleeping.json",
+                "data/animations/player-skins/junolea-sleeping.json.patch",
+                "data/animations/player-skins/junolea-weak.json",
+                "data/animations/player-skins/junolea-weak.json.patch",
+                "data/animations/player-skins/junolea.json",
+                "data/animations/player-skins/junolea.json.patch",
+                "data/characters/main/junolea.json",
+                "data/characters/main/junolea.json.patch",
+                "data/database.json.patch",
+                "data/effects/skins/junolea.json",
+                "data/effects/skins/junolea.json.patch",
+                "data/item-database.json.patch",
+                "media/entity/player/junolea-hugging.png",
+                "media/entity/player/junolea-move-weak.png",
+                "media/entity/player/junolea-move.png",
+                "media/entity/player/junolea-poses-debug.png",
+                "media/entity/player/junolea-poses.png",
+                "media/entity/player/junolea-sleeping.png",
+                "media/entity/player/junolea-throw.png",
+                "media/face/junolea-hand.png",
+                "media/face/junolea-panic.png",
+                "media/face/junolea-special.png",
+                "media/face/junolea.png",
+                "media/gui/skins/junolea.png",
+                "media/map/baked/lea-bakii-kum-junolea.png",
+                "media/map/baked/lea-ctron-bakii-kum-junolea.png",
+                "media/map/baked/lea-server-junolea.png",
+                "media/map/baked/the-room-conversation-clear-junolea.png",
+                "media/map/baked/the-room-conversation-shelf-junolea.png",
+                "media/map/baked/tree-top-ctron-junolea.png"
+            ]
+        },
+        "installation": [
+            {
+                "type": "modZip",
+                "url": "https://github.com/Inevitabilis/CC-Junolea/archive/refs/tags/v1.0.1.zip",
+                "source": "CC-Junolea-1.0.1",
+                "hash": {
+                    "sha256": "caa6fce0f7b2d604622f06c32b19e8cf1e1026ec1ac0bd4e07beec2a060b3fc6"
+                }
+            }
+        ],
+        "stars": 1,
+        "lastUpdateTimestamp": 1708374201000
+    },
     "modifier-api": {
         "metadataCCMod": {
             "id": "modifier-api",
