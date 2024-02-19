@@ -24,7 +24,8 @@
 ## Mod tag list
 
 - `QoL` - stands for "Quality of Life". Makes the playing experience smoother
-- `character` - adds new playable characters and/or classes
+- `player-character` - adds new playable characters and/or classes
+- `party-member` - adds new playable characters and/or classes
 - `combat arts` - adds new combat arts
 - `maps` - adds new content maps
 - `boss` - adds new bosses
