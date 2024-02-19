@@ -70,7 +70,7 @@ export async function writeMods(db: PackageDB): Promise<void> {
             page: getRepositoryEntry(ccmod?.repository || ccmod?.homepage || meta?.homepage), /* old field, should be unused, kept for compatibility */
             archive_link: install.url,
             hash: install.hash,
-            version: ccmod?.version || meta!.version,
+            version: ccmod?.version || meta?.version || 'unknown',
         }
     }
 

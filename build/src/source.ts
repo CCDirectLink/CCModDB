@@ -32,7 +32,8 @@ export async function get(input: InputLocation): Promise<ModMetadatasInput> {
         console.log(e)
         throw e
     }
-    if (!pkg.ccmod && !pkg.meta) throw new Error(`A mod has to either have a package.json or a ccmod.json: ${input}`)
+    if (!pkg.ccmod && !pkg.meta)
+        throw new Error(`A mod has to either have a package.json or a ccmod.json: ${input.type == 'ccmod' ? input.url : input.type == 'modZip' ? input.urlZip : ''}`)
     const iconPath = getModIconPath(pkg)
     if (iconPath) {
         const imgData = await fileFetchFunc(input, iconPath, false)
@@ -66,9 +67,10 @@ async function getModZipFile<T>(zip: ModZipInputLocation, fileName: string, pars
 }
 
 function modZipPath(zip: ModZipInputLocation, fileName: string): string {
-    if (fileName === 'package.json' && zip.packageJSONPath) {
-        return zip.packageJSONPath
-    }
+    if (fileName === 'package.json' && zip.packageJSONPath) return zip.packageJSONPath
+
+    if (fileName === 'ccmod.json' && zip.ccmodPath) return zip.ccmodPath
+
     if (zip.source) {
         return `${zip.source}/${fileName}`
     }
@@ -172,7 +174,7 @@ async function getStarsAndTimestamp(
     ccmod: PkgCCMod | undefined,
     fetchTimestamp: boolean
 ): Promise<{ stars: number; timestamp?: number } | undefined> {
-    const homepageArr = getRepositoryEntry(ccmod?.repository || meta!.homepage)
+    const homepageArr = getRepositoryEntry(ccmod?.repository || meta?.homepage)
     if (homepageArr.length == 0) return
     if (homepageArr.length > 1) throw new Error('Multi page star counting not supported')
     const { name, url } = homepageArr[0]
