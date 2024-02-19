@@ -16,6 +16,7 @@ declare type ModZipInputLocation = {
     // If provided, then the package.json file is at this location in the archive, regardless of 'source'.
     // This must pretty much only be used for base packages.
     packageJSONPath?: string
+    ccmodPath?: string
 }
 
 declare type CCModInputLocation = {
