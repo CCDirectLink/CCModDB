@@ -58,5 +58,10 @@
     "type": "modZip",
     "urlZip": "https://github.com/Pyrocorvid/CCNineRooms/archive/refs/tags/v1.0.2.zip",
     "source": "CCNineRooms-1.0.2/past-booster"
+  },
+  {
+    "type": "modZip",
+    "urlZip": "https://github.com/rioreur/palicat/archive/refs/tags/1.0.6.zip",
+    "source": "palicat-1.0.6"
   }
 ]

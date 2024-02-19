@@ -1,4 +1,34 @@
 {
+    "Palicat": {
+        "metadataCCMod": {
+            "id": "Palicat",
+            "version": "1.0.6",
+            "title": "Palicat",
+            "description": "A mod that implement the palico from monster hunter world into the game.",
+            "repository": "https://github.com/rioreur/palicat",
+            "tags": [
+                "cosmetic"
+            ],
+            "authors": "rioreur",
+            "dependencies": {
+                "crosscode": "^1.1.0",
+                "item-api": "^0.*"
+            },
+            "prestart": "prestart.js"
+        },
+        "installation": [
+            {
+                "type": "modZip",
+                "url": "https://github.com/rioreur/palicat/archive/refs/tags/1.0.6.zip",
+                "source": "palicat-1.0.6",
+                "hash": {
+                    "sha256": "049a5afbdd46c3bd168e4abc3406fb1c987be8dc830f4a2ef0ad2b424fd201f1"
+                }
+            }
+        ],
+        "stars": 1,
+        "lastUpdateTimestamp": 1708372645000
+    },
     "blades": {
         "metadataCCMod": {
             "id": "blades",

@@ -73,11 +73,11 @@
 - https://github.com/L-Sherry/Localize-me/pull/12
 - https://github.com/L-Sherry/French-CC/pull/19
 - https://github.com/L-Sherry/Bob-Rank/pull/1
-- https://github.com/rioreur/palicat/pull/3
+- ~~https://github.com/rioreur/palicat/pull/3~~
 - https://github.com/tylercamp/CCJoystickExt/pull/1
 - https://github.com/ubergeek77/CCExtraGamepadOptions/pull/3
 - https://github.com/WatDuhHekBro/cc-uwuifier/pull/4
 - https://github.com/Inevitabilis/CC-Junolea/pull/1
-- https://github.com/Pyrocorvid/CCNineRooms/pull/2
+- ~~https://github.com/Pyrocorvid/CCNineRooms/pull/2~~
 - https://github.com/CookieSalesman/CrossCode-HADOUKEN-v1.0/pull/2
 - https://github.com/canbora/cc-named-saves/pull/2

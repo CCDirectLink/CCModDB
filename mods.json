@@ -1,5 +1,20 @@
 {
     "mods": {
+        "Palicat": {
+            "name": "Palicat",
+            "description": "A mod that implement the palico from monster hunter world into the game.",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/rioreur/palicat"
+                }
+            ],
+            "archive_link": "https://github.com/rioreur/palicat/archive/refs/tags/1.0.6.zip",
+            "hash": {
+                "sha256": "049a5afbdd46c3bd168e4abc3406fb1c987be8dc830f4a2ef0ad2b424fd201f1"
+            },
+            "version": "1.0.6"
+        },
         "blades": {
             "name": "Blades",
             "description": "Asset which replaces balls with blades, now for all classes!",
