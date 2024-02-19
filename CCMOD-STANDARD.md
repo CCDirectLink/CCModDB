@@ -38,6 +38,7 @@
 - `accessibility` - makes the game more accessible
 - `dev` - helps mod developers create mods
 - `library` - used by other mods
+- `base` - used by stuff like CCLoader
 
 ## Example `ccmod.json`
 
