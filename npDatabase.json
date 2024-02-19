@@ -1,4 +1,16 @@
 {
+    "CCLoader display version": {
+        "installation": [
+            {
+                "type": "modZip",
+                "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.22.1/v2.12.1.zip",
+                "source": "CCLoader-2.22.1-v2.12.1/assets/mods/ccloader-version-display",
+                "hash": {
+                    "sha256": "7ab3d850b5368dda4593318fd3e957e0bc46128e25844eeda97ca0eec16b343a"
+                }
+            }
+        ]
+    },
     "blades": {
         "metadataCCMod": {
             "id": "blades",
@@ -93,6 +105,34 @@
         "stars": 0,
         "lastUpdateTimestamp": 1708253385000
     },
+    "cc-extra-dialogue": {
+        "metadataCCMod": {
+            "id": "cc-extra-dialogue",
+            "version": "1.0.1",
+            "title": "CrossCode Extra Dialogue",
+            "description": "Adds more lore-friendly dialogue for party members.",
+            "repository": "https://github.com/Paradragon/cc-extra-dialogue",
+            "tags": [
+                "QoL"
+            ],
+            "authors": "Paradragon",
+            "icons": {
+                "24": "icon.png"
+            },
+            "prestart": "prestart.js"
+        },
+        "installation": [
+            {
+                "type": "ccmod",
+                "url": "https://github.com/krypciak/cc-extra-dialogue/releases/download/v1.0.1/cc-extra-dialogue.ccmod",
+                "hash": {
+                    "sha256": "851d2c3aafcf7dda646e6ee80da3c99588a60f6735f2b8a64abb17cea9f85f5d"
+                }
+            }
+        ],
+        "stars": 5,
+        "lastUpdateTimestamp": 1633371453000
+    },
     "cc-fancy-crash": {
         "metadataCCMod": {
             "id": "cc-fancy-crash",
@@ -155,6 +195,74 @@
         "stars": 0,
         "lastUpdateTimestamp": 1708253819000
     },
+    "cc-vim": {
+        "metadataCCMod": {
+            "id": "cc-vim",
+            "version": "1.5.5",
+            "title": "Vim Command Mode",
+            "description": "Adds a popup command prompt",
+            "repository": "https://github.com/krypciak/cc-vim",
+            "tags": [
+                "dev"
+            ],
+            "authors": "krypek",
+            "icons": {
+                "24": "icon/icon.png"
+            },
+            "dependencies": {
+                "input-api": ">=1.0.0"
+            },
+            "plugin": "plugin.js"
+        },
+        "installation": [
+            {
+                "type": "ccmod",
+                "url": "https://github.com/krypciak/cc-vim/releases/download/v1.5.5/cc-vim-1.5.5.ccmod",
+                "hash": {
+                    "sha256": "c26c6e3e2d0a52242e226c89556d5e7820af78e71c436c2deeeb2525e550f201"
+                }
+            }
+        ],
+        "stars": 1,
+        "lastUpdateTimestamp": 1708366049000
+    },
+    "ccloader": {
+        "installation": [
+            {
+                "type": "modZip",
+                "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.23.1/v2.13.0.zip",
+                "source": "CCLoader-2.23.1-v2.13.0",
+                "hash": {
+                    "sha256": "6902af3fd73d95cf323a4ad659b716db8c6f4e4cce75ad3e11849f66cc325341"
+                }
+            }
+        ]
+    },
+    "element-boss": {
+        "metadataCCMod": {
+            "id": "element-boss",
+            "version": "0.1.3",
+            "title": "Element Boss",
+            "description": "Adds a new boss battle to the game.",
+            "repository": "https://github.com/krypciak/cc-element-boss",
+            "tags": [
+                "boss"
+            ],
+            "authors": "sgrunt",
+            "main": "mod.js"
+        },
+        "installation": [
+            {
+                "type": "ccmod",
+                "url": "https://github.com/krypciak/cc-element-boss/releases/download/v0.1.3/element-boss-0.1.3.ccmod",
+                "hash": {
+                    "sha256": "569d371c4bb151222e5d8cd1104115bfe6c5fe1b4325813e586e26ecbe0fbbb2"
+                }
+            }
+        ],
+        "stars": 0,
+        "lastUpdateTimestamp": 1708290993000
+    },
     "input-api": {
         "metadataCCMod": {
             "id": "input-api",
@@ -179,6 +287,40 @@
         ],
         "stars": 5,
         "lastUpdateTimestamp": 1646924334000
+    },
+    "item-api": {
+        "metadataCCMod": {
+            "id": "item-api",
+            "version": "0.4.4",
+            "title": "Item API",
+            "description": "Allows custom items to be prepared in such a way that they 'just work'.",
+            "repository": "https://github.com/CCDirectLink/item-api",
+            "tags": [
+                "library"
+            ],
+            "authors": [
+                "elluminance",
+                "dmitmel",
+                "hsifnus",
+                "ac2pic"
+            ],
+            "icons": {
+                "24": "icon-24.png"
+            },
+            "postload": "postload.js",
+            "prestart": "prestart.js"
+        },
+        "installation": [
+            {
+                "type": "ccmod",
+                "url": "https://github.com/CCDirectLink/item-api/releases/download/v0.4.4/item-api.ccmod",
+                "hash": {
+                    "sha256": "82523e959809c7b46cce0d7c702f9bf85f1981a80ac999be09782811fcaa33d0"
+                }
+            }
+        ],
+        "stars": 1,
+        "lastUpdateTimestamp": 1708294841000
     },
     "preset-revival-plus": {
         "metadataCCMod": {

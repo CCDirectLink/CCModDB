@@ -1,5 +1,15 @@
 {
     "mods": {
+        "CCLoader display version": {
+            "name": "CCLoader display version",
+            "description": "A mod. (Description not available; contact mod author and have them add a description to their package.json file)",
+            "page": [],
+            "archive_link": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.22.1/v2.12.1.zip",
+            "hash": {
+                "sha256": "7ab3d850b5368dda4593318fd3e957e0bc46128e25844eeda97ca0eec16b343a"
+            },
+            "version": "unknown"
+        },
         "blades": {
             "name": "Blades",
             "description": "Asset which replaces balls with blades, now for all classes!",
@@ -45,6 +55,21 @@
             },
             "version": "1.0.0"
         },
+        "cc-extra-dialogue": {
+            "name": "CrossCode Extra Dialogue",
+            "description": "Adds more lore-friendly dialogue for party members.",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/Paradragon/cc-extra-dialogue"
+                }
+            ],
+            "archive_link": "https://github.com/krypciak/cc-extra-dialogue/releases/download/v1.0.1/cc-extra-dialogue.ccmod",
+            "hash": {
+                "sha256": "851d2c3aafcf7dda646e6ee80da3c99588a60f6735f2b8a64abb17cea9f85f5d"
+            },
+            "version": "1.0.1"
+        },
         "cc-fancy-crash": {
             "name": "Fancy crash",
             "description": "Better crash message",
@@ -75,6 +100,46 @@
             },
             "version": "1.0.1"
         },
+        "cc-vim": {
+            "name": "Vim Command Mode",
+            "description": "Adds a popup command prompt",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/krypciak/cc-vim"
+                }
+            ],
+            "archive_link": "https://github.com/krypciak/cc-vim/releases/download/v1.5.5/cc-vim-1.5.5.ccmod",
+            "hash": {
+                "sha256": "c26c6e3e2d0a52242e226c89556d5e7820af78e71c436c2deeeb2525e550f201"
+            },
+            "version": "1.5.5"
+        },
+        "ccloader": {
+            "name": "ccloader",
+            "description": "A mod. (Description not available; contact mod author and have them add a description to their package.json file)",
+            "page": [],
+            "archive_link": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.23.1/v2.13.0.zip",
+            "hash": {
+                "sha256": "6902af3fd73d95cf323a4ad659b716db8c6f4e4cce75ad3e11849f66cc325341"
+            },
+            "version": "unknown"
+        },
+        "element-boss": {
+            "name": "Element Boss",
+            "description": "Adds a new boss battle to the game.",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/krypciak/cc-element-boss"
+                }
+            ],
+            "archive_link": "https://github.com/krypciak/cc-element-boss/releases/download/v0.1.3/element-boss-0.1.3.ccmod",
+            "hash": {
+                "sha256": "569d371c4bb151222e5d8cd1104115bfe6c5fe1b4325813e586e26ecbe0fbbb2"
+            },
+            "version": "0.1.3"
+        },
         "input-api": {
             "name": "input-api",
             "description": "Allows mods to add rebindable key bindings",
@@ -89,6 +154,21 @@
                 "sha256": "0c3acb06a812f50237f69fd9d4b3b542f9cba6d583be5bf1082399c6a1ab9e08"
             },
             "version": "1.0.2"
+        },
+        "item-api": {
+            "name": "Item API",
+            "description": "Allows custom items to be prepared in such a way that they 'just work'.",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/CCDirectLink/item-api"
+                }
+            ],
+            "archive_link": "https://github.com/CCDirectLink/item-api/releases/download/v0.4.4/item-api.ccmod",
+            "hash": {
+                "sha256": "82523e959809c7b46cce0d7c702f9bf85f1981a80ac999be09782811fcaa33d0"
+            },
+            "version": "0.4.4"
         },
         "preset-revival-plus": {
             "name": "Preset Revival Plus",
