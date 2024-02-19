@@ -105,6 +105,21 @@
             },
             "version": "1.5.5"
         },
+        "cursedcode": {
+            "name": "CursedCode",
+            "description": "Cursed custom maps.",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/Symphiel/CursedCode"
+                }
+            ],
+            "archive_link": "https://github.com/Symphiel/CursedCode/archive/refs/tags/0.1.1-2.zip",
+            "hash": {
+                "sha256": "7975f9d6862fdfa5066052a52b3e9174ab92df6ae7d8187101f40ca4ccfbd4af"
+            },
+            "version": "0.1.2"
+        },
         "element-boss": {
             "name": "Element Boss",
             "description": "Adds a new boss battle to the game.",

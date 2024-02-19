@@ -214,6 +214,34 @@
         "stars": 1,
         "lastUpdateTimestamp": 1708366049000
     },
+    "cursedcode": {
+        "metadataCCMod": {
+            "id": "cursedcode",
+            "version": "0.1.2",
+            "title": "CursedCode",
+            "description": "Cursed custom maps.",
+            "repository": "https://github.com/Symphiel/CursedCode",
+            "tags": [
+                "speedrun",
+                "maps",
+                "puzzle"
+            ],
+            "authors": "Symphiel",
+            "prestart": "mod.js"
+        },
+        "installation": [
+            {
+                "type": "modZip",
+                "url": "https://github.com/Symphiel/CursedCode/archive/refs/tags/0.1.1-2.zip",
+                "source": "CursedCode-0.1.1-2",
+                "hash": {
+                    "sha256": "7975f9d6862fdfa5066052a52b3e9174ab92df6ae7d8187101f40ca4ccfbd4af"
+                }
+            }
+        ],
+        "stars": 1,
+        "lastUpdateTimestamp": 1708368308000
+    },
     "element-boss": {
         "metadataCCMod": {
             "id": "element-boss",

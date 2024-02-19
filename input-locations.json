@@ -43,5 +43,10 @@
   {
     "type": "ccmod",
     "url": "https://github.com/krypciak/cc-vim/releases/download/v1.5.5/cc-vim-1.5.5.ccmod"
+  },
+  {
+    "type": "modZip",
+    "urlZip": "https://github.com/Symphiel/CursedCode/archive/refs/tags/0.1.1-2.zip",
+    "source": "CursedCode-0.1.1-2"
   }
 ]
