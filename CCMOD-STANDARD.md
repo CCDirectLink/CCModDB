@@ -11,7 +11,7 @@
 - `homepage` (Optional) - Put your mod homepage link here (don't put your repository link here)
 - `repository` - Put your repository link here. Non GitHub links will be missing some [CCModManager](https://github.com/CCDirectLink/CCModManager) functionality
 - `tags` (Optional) - A list of mod tags. Read what tags are availible below in Mod tag list.
-   If the first tag is `library` [CCModManager](https://github.com/CCDirectLink/CCModManager) will hide the mod by default.   
+   If the first tag is `library` [CCModManager](https://github.com/CCDirectLink/CCModManager) will hide the mod by default.
 - `authors` - Either a string or an array of mod authors
 - `icons` (Optional) - Mod icon. Currently only the size of 24x24 pixels is supported
 - `dependencies` (Optional) - Require certain mods for the mod to function. Uses the [semver](https://semver.org/) format
