@@ -165,6 +165,36 @@
             },
             "version": "0.4.4"
         },
+        "nine-rooms": {
+            "name": "Nine Rooms",
+            "description": "A little piece of lost history.",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/Pyrocorvid/CCNineRooms"
+                }
+            ],
+            "archive_link": "https://github.com/Pyrocorvid/CCNineRooms/archive/refs/tags/v1.0.2.zip",
+            "hash": {
+                "sha256": "92e33f6054472644a86dc3d3502d193455e32de31d05772299efae8bc1aca95f"
+            },
+            "version": "0.1.0"
+        },
+        "past-booster": {
+            "name": "Past Booster",
+            "description": "Makes the Nine Rooms mod a little more... post-gamey.",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/Pyrocorvid/CCNineRooms"
+                }
+            ],
+            "archive_link": "https://github.com/Pyrocorvid/CCNineRooms/archive/refs/tags/v1.0.2.zip",
+            "hash": {
+                "sha256": "92e33f6054472644a86dc3d3502d193455e32de31d05772299efae8bc1aca95f"
+            },
+            "version": "0.1.0"
+        },
         "preset-revival-plus": {
             "name": "Preset Revival Plus",
             "description": "Brings back the preset menu, which allows you to start the game at a specific point.",

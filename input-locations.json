@@ -48,5 +48,15 @@
     "type": "modZip",
     "urlZip": "https://github.com/Symphiel/CursedCode/archive/refs/tags/0.1.1-2.zip",
     "source": "CursedCode-0.1.1-2"
+  },
+  {
+    "type": "modZip",
+    "urlZip": "https://github.com/Pyrocorvid/CCNineRooms/archive/refs/tags/v1.0.2.zip",
+    "source": "CCNineRooms-1.0.2/nine-rooms"
+  },
+  {
+    "type": "modZip",
+    "urlZip": "https://github.com/Pyrocorvid/CCNineRooms/archive/refs/tags/v1.0.2.zip",
+    "source": "CCNineRooms-1.0.2/past-booster"
   }
 ]

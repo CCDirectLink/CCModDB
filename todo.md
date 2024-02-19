@@ -48,6 +48,11 @@
 - https://github.com/XenonA7/xmc-hexacast-litter/pull/1
 - https://github.com/XenonA7/clean-title-screen/pull/1
 
+### Juanba
+
+- https://github.com/buanjautista/cc-shock-quest/pull/1
+- https://github.com/buanjautista/cc-open-world/pull/2
+
 ### Rest
 
 - ~~https://github.com/Symphiel/CursedCode/pull/1~~
@@ -67,9 +72,9 @@
 - https://github.com/ZeikJT/CrossCodeCheats/pull/7
 - https://github.com/L-Sherry/Localize-me/pull/12
 - https://github.com/L-Sherry/French-CC/pull/19
+- https://github.com/L-Sherry/Bob-Rank/pull/1
 - https://github.com/rioreur/palicat/pull/3
 - https://github.com/tylercamp/CCJoystickExt/pull/1
-- https://github.com/L-Sherry/Bob-Rank/pull/1
 - https://github.com/ubergeek77/CCExtraGamepadOptions/pull/3
 - https://github.com/WatDuhHekBro/cc-uwuifier/pull/4
 - https://github.com/Inevitabilis/CC-Junolea/pull/1

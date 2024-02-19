@@ -326,6 +326,61 @@
         "stars": 1,
         "lastUpdateTimestamp": 1708294841000
     },
+    "nine-rooms": {
+        "metadataCCMod": {
+            "id": "nine-rooms",
+            "version": "0.1.0",
+            "title": "Nine Rooms",
+            "description": "A little piece of lost history.",
+            "repository": "https://github.com/Pyrocorvid/CCNineRooms",
+            "tags": [
+                "maps",
+                "fun"
+            ],
+            "authors": "Pyrocorvid"
+        },
+        "installation": [
+            {
+                "type": "modZip",
+                "url": "https://github.com/Pyrocorvid/CCNineRooms/archive/refs/tags/v1.0.2.zip",
+                "source": "CCNineRooms-1.0.2/nine-rooms",
+                "hash": {
+                    "sha256": "92e33f6054472644a86dc3d3502d193455e32de31d05772299efae8bc1aca95f"
+                }
+            }
+        ],
+        "stars": 1,
+        "lastUpdateTimestamp": 1708371875000
+    },
+    "past-booster": {
+        "metadataCCMod": {
+            "id": "past-booster",
+            "version": "0.1.0",
+            "title": "Past Booster",
+            "description": "Makes the Nine Rooms mod a little more... post-gamey.",
+            "repository": "https://github.com/Pyrocorvid/CCNineRooms",
+            "tags": [
+                "maps",
+                "fun"
+            ],
+            "authors": "Pyrocorvid",
+            "dependencies": {
+                "nine-rooms": ">=0.1.0"
+            }
+        },
+        "installation": [
+            {
+                "type": "modZip",
+                "url": "https://github.com/Pyrocorvid/CCNineRooms/archive/refs/tags/v1.0.2.zip",
+                "source": "CCNineRooms-1.0.2/past-booster",
+                "hash": {
+                    "sha256": "92e33f6054472644a86dc3d3502d193455e32de31d05772299efae8bc1aca95f"
+                }
+            }
+        ],
+        "stars": 1,
+        "lastUpdateTimestamp": 1708371875000
+    },
     "preset-revival-plus": {
         "metadataCCMod": {
             "id": "preset-revival-plus",
