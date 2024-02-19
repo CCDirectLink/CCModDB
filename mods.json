@@ -1,15 +1,5 @@
 {
     "mods": {
-        "CCLoader display version": {
-            "name": "CCLoader display version",
-            "description": "A mod. (Description not available; contact mod author and have them add a description to their package.json file)",
-            "page": [],
-            "archive_link": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.22.1/v2.12.1.zip",
-            "hash": {
-                "sha256": "7ab3d850b5368dda4593318fd3e957e0bc46128e25844eeda97ca0eec16b343a"
-            },
-            "version": "unknown"
-        },
         "blades": {
             "name": "Blades",
             "description": "Asset which replaces balls with blades, now for all classes!",
@@ -114,16 +104,6 @@
                 "sha256": "c26c6e3e2d0a52242e226c89556d5e7820af78e71c436c2deeeb2525e550f201"
             },
             "version": "1.5.5"
-        },
-        "ccloader": {
-            "name": "ccloader",
-            "description": "A mod. (Description not available; contact mod author and have them add a description to their package.json file)",
-            "page": [],
-            "archive_link": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.23.1/v2.13.0.zip",
-            "hash": {
-                "sha256": "6902af3fd73d95cf323a4ad659b716db8c6f4e4cce75ad3e11849f66cc325341"
-            },
-            "version": "unknown"
         },
         "element-boss": {
             "name": "Element Boss",

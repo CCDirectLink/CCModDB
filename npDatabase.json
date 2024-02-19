@@ -1,16 +1,4 @@
 {
-    "CCLoader display version": {
-        "installation": [
-            {
-                "type": "modZip",
-                "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.22.1/v2.12.1.zip",
-                "source": "CCLoader-2.22.1-v2.12.1/assets/mods/ccloader-version-display",
-                "hash": {
-                    "sha256": "7ab3d850b5368dda4593318fd3e957e0bc46128e25844eeda97ca0eec16b343a"
-                }
-            }
-        ]
-    },
     "blades": {
         "metadataCCMod": {
             "id": "blades",
@@ -225,18 +213,6 @@
         ],
         "stars": 1,
         "lastUpdateTimestamp": 1708366049000
-    },
-    "ccloader": {
-        "installation": [
-            {
-                "type": "modZip",
-                "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.23.1/v2.13.0.zip",
-                "source": "CCLoader-2.23.1-v2.13.0",
-                "hash": {
-                    "sha256": "6902af3fd73d95cf323a4ad659b716db8c6f4e4cce75ad3e11849f66cc325341"
-                }
-            }
-        ]
     },
     "element-boss": {
         "metadataCCMod": {

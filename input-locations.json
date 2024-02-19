@@ -1,17 +1,5 @@
 [
   {
-    "type": "modZip",
-    "urlZip": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.23.1/v2.13.0.zip",
-    "source": "CCLoader-2.23.1-v2.13.0",
-    "packageJSONPath": "CCLoader-2.23.1-v2.13.0/ccloader/package.json",
-    "ccmodPath": "CCLoader-2.23.1-v2.13.0/ccloader/ccmod.json"
-  },
-  {
-    "type": "modZip",
-    "urlZip": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.22.1/v2.12.1.zip",
-    "source": "CCLoader-2.22.1-v2.12.1/assets/mods/ccloader-version-display"
-  },
-  {
     "type": "ccmod",
     "url": "https://github.com/krypciak/input-api/releases/download/v1.0.2/input-api.ccmod"
   },
