@@ -2,7 +2,7 @@ declare type InputLocation = ZipInputLocation
 
 
 declare type ZipInputLocation = {
-    type: 'zip' | undefined
+    type?: 'zip'
     // The URL of the ZIP file.
     url: string
     // The subdirectory in which the package.json file is kept.
