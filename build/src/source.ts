@@ -57,7 +57,6 @@ async function getModZipFile<T>(zip: ZipInputLocation, fileName: string, parseTo
     /* find the source if it's missing */
     if (!zip.source && zip.url.endsWith('.zip')) {
         zip.source = await findZipRoot(buf)
-        console.log(zip.source)
     }
     const stream = await openFile(archive, modZipPath(zip, fileName))
     if (!stream) return
@@ -126,7 +125,6 @@ async function findZipRoot(buffer: Buffer): Promise<string | undefined> {
         zip.on('entry', (entry: yauzl.Entry) => {
             if (!entry.fileName.endsWith('/')) {
                 const name = path.basename(entry.fileName)
-                console.log(entry.fileName, name)
                 if (name == 'package.json' || name == 'ccmod.json') {
                     zip.close()
                     resolve(path.dirname(entry.fileName))
