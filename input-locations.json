@@ -88,5 +88,20 @@
     "type": "modZip",
     "urlZip": "https://github.com/Inevitabilis/CC-Junolea/archive/refs/tags/v1.0.1.zip",
     "source": "CC-Junolea-1.0.1"
+  },
+  {
+    "type": "modZip",
+    "urlZip": "https://github.com/XenonA7/cc-party-element-effects/archive/refs/tags/1.0.1.zip",
+    "source": "cc-party-element-effects-1.0.1"
+  },
+  {
+    "type": "modZip",
+    "urlZip": "https://github.com/XenonA7/qine/archive/refs/tags/0.3.1.zip",
+    "source": "qine-0.3.1"
+  },
+  {
+    "type": "modZip",
+    "urlZip": "https://github.com/XenonA7/xmc-hexacast/archive/refs/tags/0.27.3.zip",
+    "source": "xmc-hexacast-0.27.3"
   }
 ]

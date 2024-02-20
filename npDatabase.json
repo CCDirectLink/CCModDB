@@ -29,6 +29,58 @@
         "stars": 1,
         "lastUpdateTimestamp": 1708372645000
     },
+    "Qine": {
+        "metadataCCMod": {
+            "id": "Qine",
+            "version": "0.3.1",
+            "title": {
+                "en_US": "Qine",
+                "de_DE": "Qine",
+                "fr_FR": "Qine",
+                "zh_CN": "Qine",
+                "zh_TW": "Qine",
+                "ja_JP": "Qine",
+                "ko_KR": "Qine"
+            },
+            "description": {
+                "en_US": "Adds the character Qine as a party member and PvP duel.",
+                "de_DE": "Adds the character Qine as a party member and PvP duel.",
+                "fr_FR": "Adds the character Qine as a party member and PvP duel.",
+                "zh_CN": "Adds the character Qine as a party member and PvP duel.",
+                "zh_TW": "Adds the character Qine as a party member and PvP duel.",
+                "ja_JP": "Adds the character Qine as a party member and PvP duel.",
+                "ko_KR": "Adds the character Qine as a party member and PvP duel."
+            },
+            "repository": "https://github.com/XenonA7/qine",
+            "tags": [
+                "party member",
+                "pvp duel"
+            ],
+            "authors": [
+                "sgrunt",
+                "XenonA7"
+            ],
+            "icons": {
+                "24": "icon.png"
+            },
+            "prestart": "mod.js",
+            "dependencies": {
+                "extendable-severed-heads": ">=1.1.0"
+            }
+        },
+        "installation": [
+            {
+                "type": "modZip",
+                "url": "https://github.com/XenonA7/qine/archive/refs/tags/0.3.1.zip",
+                "source": "qine-0.3.1",
+                "hash": {
+                    "sha256": "8db827667134f32a15e98507bee700c97e24445d57c9d0e50275fdc5f5f98287"
+                }
+            }
+        ],
+        "stars": 1,
+        "lastUpdateTimestamp": 1708403695000
+    },
     "blades": {
         "metadataCCMod": {
             "id": "blades",
@@ -590,6 +642,52 @@
         "stars": 1,
         "lastUpdateTimestamp": 1708371875000
     },
+    "party-element-effects": {
+        "metadataCCMod": {
+            "id": "party-element-effects",
+            "version": "1.0.1",
+            "title": {
+                "en_US": "Party Element Effects",
+                "de_DE": "Party Element Effects",
+                "fr_FR": "Party Element Effects",
+                "zh_CN": "Party Element Effects",
+                "zh_TW": "Party Element Effects",
+                "ja_JP": "Party Element Effects",
+                "ko_KR": "Party Element Effects"
+            },
+            "description": {
+                "en_US": "Shows the proper effect when party members swap elements",
+                "de_DE": "Shows the proper effect when party members swap elements",
+                "fr_FR": "Shows the proper effect when party members swap elements",
+                "zh_CN": "Shows the proper effect when party members swap elements",
+                "zh_TW": "Shows the proper effect when party members swap elements",
+                "ja_JP": "Shows the proper effect when party members swap elements",
+                "ko_KR": "Shows the proper effect when party members swap elements"
+            },
+            "repository": "https://github.com/XenonA7/cc-party-element-effects",
+            "tags": [
+                "cosmetic",
+                "party member"
+            ],
+            "authors": "XenonA7",
+            "icons": {
+                "24": "icon.png"
+            },
+            "prestart": "prestart.js"
+        },
+        "installation": [
+            {
+                "type": "modZip",
+                "url": "https://github.com/XenonA7/cc-party-element-effects/archive/refs/tags/1.0.1.zip",
+                "source": "cc-party-element-effects-1.0.1",
+                "hash": {
+                    "sha256": "d8b2790f6e028fedcb13f68d5824b46aca2b3f2ae8be78f7ab4523cdba4d959c"
+                }
+            }
+        ],
+        "stars": 2,
+        "lastUpdateTimestamp": 1708402780000
+    },
     "past-booster": {
         "metadataCCMod": {
             "id": "past-booster",
@@ -648,5 +746,50 @@
         ],
         "stars": 0,
         "lastUpdateTimestamp": 1708116396000
+    },
+    "xmc-hexacast": {
+        "metadataCCMod": {
+            "id": "xmc-hexacast",
+            "version": "0.27.3",
+            "title": {
+                "en_US": "XMC - \\c[2]Hexacast\\c[0] \\c[1](WIP)\\c[0]"
+            },
+            "description": {
+                "en_US": "Adds a playable hexacast to XMC \\c[1](Mod Incomplete!)\\c[0]"
+            },
+            "icons": {
+                "24": "icon.png"
+            },
+            "repository": "https://github.com/XenonA7/xmc-hexacast",
+            "tags": [
+                "player character",
+                "party member"
+            ],
+            "authors": [
+                "XenonA7",
+                "Lychee"
+            ],
+            "prestart": "prestart.js",
+            "poststart": "poststart.js",
+            "dependencies": {
+                "extendable-severed-heads": ">=1.1.0",
+                "cc-alybox": ">=1.0.0",
+                "xenons-triblader-mod": ">=0.8.0",
+                "Simplify": ">=2.12.1",
+                "post-game": ">=1.4.0"
+            }
+        },
+        "installation": [
+            {
+                "type": "modZip",
+                "url": "https://github.com/XenonA7/xmc-hexacast/archive/refs/tags/0.27.3.zip",
+                "source": "xmc-hexacast-0.27.3",
+                "hash": {
+                    "sha256": "1444b03e3efd05f0bb1aeee5d9f9e3c0e5315cb0cdd10d3440474e7737cac3c3"
+                }
+            }
+        ],
+        "stars": 2,
+        "lastUpdateTimestamp": 1708404037000
     }
 }

@@ -15,6 +15,21 @@
             },
             "version": "1.0.6"
         },
+        "Qine": {
+            "name": "Qine",
+            "description": "Adds the character Qine as a party member and PvP duel.",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/XenonA7/qine"
+                }
+            ],
+            "archive_link": "https://github.com/XenonA7/qine/archive/refs/tags/0.3.1.zip",
+            "hash": {
+                "sha256": "8db827667134f32a15e98507bee700c97e24445d57c9d0e50275fdc5f5f98287"
+            },
+            "version": "0.3.1"
+        },
         "blades": {
             "name": "Blades",
             "description": "Asset which replaces balls with blades, now for all classes!",
@@ -285,6 +300,21 @@
             },
             "version": "0.1.0"
         },
+        "party-element-effects": {
+            "name": "Party Element Effects",
+            "description": "Shows the proper effect when party members swap elements",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/XenonA7/cc-party-element-effects"
+                }
+            ],
+            "archive_link": "https://github.com/XenonA7/cc-party-element-effects/archive/refs/tags/1.0.1.zip",
+            "hash": {
+                "sha256": "d8b2790f6e028fedcb13f68d5824b46aca2b3f2ae8be78f7ab4523cdba4d959c"
+            },
+            "version": "1.0.1"
+        },
         "past-booster": {
             "name": "Past Booster",
             "description": "Makes the Nine Rooms mod a little more... post-gamey.",
@@ -314,6 +344,21 @@
                 "sha256": "19aa49547dfd4fe686be1e490b6b004ef36250d057de896984a91c11bf2adb77"
             },
             "version": "2.1.1"
+        },
+        "xmc-hexacast": {
+            "name": "XMC - \\c[2]Hexacast\\c[0] \\c[1](WIP)\\c[0]",
+            "description": "Adds a playable hexacast to XMC \\c[1](Mod Incomplete!)\\c[0]",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/XenonA7/xmc-hexacast"
+                }
+            ],
+            "archive_link": "https://github.com/XenonA7/xmc-hexacast/archive/refs/tags/0.27.3.zip",
+            "hash": {
+                "sha256": "1444b03e3efd05f0bb1aeee5d9f9e3c0e5315cb0cdd10d3440474e7737cac3c3"
+            },
+            "version": "0.27.3"
         }
     }
 }

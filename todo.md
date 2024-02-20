@@ -41,10 +41,10 @@
 
 ### Xenon
 
-- https://github.com/XenonA7/qine/pull/1
+- ~~https://github.com/XenonA7/qine/pull/1~~
 - https://github.com/XenonA7/xenons-triblader-mod/pull/12
-- https://github.com/XenonA7/xmc-hexacast/pull/3
-- https://github.com/XenonA7/cc-party-element-effects/pull/2
+- ~~https://github.com/XenonA7/xmc-hexacast/pull/3~~
+- ~~https://github.com/XenonA7/cc-party-element-effects/pull/2~~
 - https://github.com/XenonA7/xmc-hexacast-litter/pull/1
 - https://github.com/XenonA7/clean-title-screen/pull/1
 
