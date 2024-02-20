@@ -140,7 +140,6 @@ async function findZipRoot(buffer: Buffer): Promise<string | undefined> {
 
 /* this has to be done outside of buildEntry to avoid concurent api requests */
 export async function addStarsAndTimestampsToResults(result: PackageDB, oldDb?: PackageDB) {
-    console.log('fetching stars and timestamps...')
     for (const id in result) {
         const mod = result[id]
 
@@ -196,7 +195,6 @@ async function getStarsAndTimestamp(
             const branchData = await fetchGithub<github.components['schemas']['branch-with-protection']>(branchApiUrl)
             const date = branchData.commit.commit.author!.date!
             timestamp = new Date(date).getTime()
-            console.log(url, date, timestamp)
         }
         return { stars, timestamp }
     }

@@ -104,7 +104,7 @@ export function getRepositoryEntry(url?: string): Page[] {
     return [{ name, url }]
 }
 
-function getStringFromLocalisedString(str: LocalizedString): string {
+export function getStringFromLocalisedString(str: LocalizedString): string {
     if (!str) throw new Error(`No mod name found: ${str}`)
     if (typeof str === 'string') return str
     const newStr = str.en_US

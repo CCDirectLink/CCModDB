@@ -1,20 +1,24 @@
 name: CI
-on: [push, pull_request, workflow_dispatch]
+on:
+    push:
+    workflow_dispatch:
 
 jobs:
-  check_database:
-    name: Check database
-    runs-on: ubuntu-latest
+    check_database:
+        name: Check database
+        runs-on: ubuntu-latest
 
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-        with:
-          node-version: 15.x
-      - working-directory: build/
-        run: npm ci
-      - name: npm run test
-        working-directory: build/
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: npm test
+        if: "!startsWith(github.event.head_commit.message, 'CCBot: ccbot')"
+
+        steps:
+            - uses: actions/checkout@v4
+            - uses: actions/setup-node@v4
+              with:
+                  node-version: 20
+            - working-directory: build/
+              run: npm ci
+            - name: npm run test
+              working-directory: build/
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              run: npm test
