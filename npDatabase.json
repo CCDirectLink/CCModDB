@@ -18,7 +18,7 @@
         },
         "installation": [
             {
-                "type": "modZip",
+                "type": "zip",
                 "url": "https://github.com/rioreur/palicat/archive/refs/tags/1.0.6.zip",
                 "source": "palicat-1.0.6",
                 "hash": {
@@ -70,7 +70,7 @@
         },
         "installation": [
             {
-                "type": "modZip",
+                "type": "zip",
                 "url": "https://github.com/XenonA7/qine/archive/refs/tags/0.3.1.zip",
                 "source": "qine-0.3.1",
                 "hash": {
@@ -99,7 +99,7 @@
         },
         "installation": [
             {
-                "type": "modZip",
+                "type": "zip",
                 "url": "https://github.com/CCDirectLink/Blades/archive/1.6.0.zip",
                 "source": "Blades-1.6.0",
                 "hash": {
@@ -133,7 +133,7 @@
         },
         "installation": [
             {
-                "type": "ccmod",
+                "type": "zip",
                 "url": "https://github.com/krypciak/cc-blitzkrieg/releases/download/v0.4.8/cc-blitzkrieg-0.4.8.ccmod",
                 "hash": {
                     "sha256": "eb88b197308a00273f6aeb713b9445f37aa1a4d161159aee243951da5c85bbd1"
@@ -164,7 +164,7 @@
         },
         "installation": [
             {
-                "type": "ccmod",
+                "type": "zip",
                 "url": "https://github.com/elluminance/cc-capped-stats/releases/download/v1.0.0/cc-capped-stats.ccmod",
                 "hash": {
                     "sha256": "afd410d055effb03c46b8604cab4f402a0ec986b2c9394c4af3be3546a594f79"
@@ -196,7 +196,7 @@
         },
         "installation": [
             {
-                "type": "ccmod",
+                "type": "zip",
                 "url": "https://github.com/krypciak/cc-character-widgets/releases/download/v1.0.0/cc-character-widgets-1.0.0.ccmod",
                 "hash": {
                     "sha256": "64fe713374289d4e9e164afa6e23b96ab3f397323f0e37977fb6ffc1fd70122b"
@@ -224,7 +224,7 @@
         },
         "installation": [
             {
-                "type": "ccmod",
+                "type": "zip",
                 "url": "https://github.com/krypciak/cc-extra-dialogue/releases/download/v1.0.1/cc-extra-dialogue.ccmod",
                 "hash": {
                     "sha256": "851d2c3aafcf7dda646e6ee80da3c99588a60f6735f2b8a64abb17cea9f85f5d"
@@ -252,7 +252,7 @@
         },
         "installation": [
             {
-                "type": "ccmod",
+                "type": "zip",
                 "url": "https://github.com/krypciak/cc-fancy-crash/releases/download/v1.0.8/cc-fancy-crash-1.0.8.ccmod",
                 "hash": {
                     "sha256": "4072312dfc3d9f99b0b33df61dc8470f96e53453c9b45b71d7e9ef83db24b7aa"
@@ -286,7 +286,7 @@
         },
         "installation": [
             {
-                "type": "ccmod",
+                "type": "zip",
                 "url": "https://github.com/krypciak/cc-jetpack-widget/releases/download/v1.0.1/cc-jetpack-widget-1.0.1.ccmod",
                 "hash": {
                     "sha256": "fa0d7f74e443030dcf5615e08ff4fc20a2d38b08d8d9e1ca78eda32f3c394c0c"
@@ -317,7 +317,7 @@
         },
         "installation": [
             {
-                "type": "ccmod",
+                "type": "zip",
                 "url": "https://github.com/krypciak/cc-vim/releases/download/v1.5.5/cc-vim-1.5.5.ccmod",
                 "hash": {
                     "sha256": "c26c6e3e2d0a52242e226c89556d5e7820af78e71c436c2deeeb2525e550f201"
@@ -344,7 +344,7 @@
         },
         "installation": [
             {
-                "type": "modZip",
+                "type": "zip",
                 "url": "https://github.com/Symphiel/CursedCode/archive/refs/tags/0.1.1-2.zip",
                 "source": "CursedCode-0.1.1-2",
                 "hash": {
@@ -374,7 +374,7 @@
         },
         "installation": [
             {
-                "type": "ccmod",
+                "type": "zip",
                 "url": "https://github.com/elluminance/el-crosscode-tweaks/releases/download/v0.7.5/els-tweaks.ccmod",
                 "hash": {
                     "sha256": "30421792706ab587c67af19b698609d0c2ae6712adfaa3464bf4d3776ee66c90"
@@ -399,7 +399,7 @@
         },
         "installation": [
             {
-                "type": "ccmod",
+                "type": "zip",
                 "url": "https://github.com/krypciak/cc-element-boss/releases/download/v0.1.3/element-boss-0.1.3.ccmod",
                 "hash": {
                     "sha256": "569d371c4bb151222e5d8cd1104115bfe6c5fe1b4325813e586e26ecbe0fbbb2"
@@ -424,7 +424,7 @@
         },
         "installation": [
             {
-                "type": "ccmod",
+                "type": "zip",
                 "url": "https://github.com/elluminance/crosscode-extension-asset-preloader/releases/download/v1.0.0/extension-asset-preloader.ccmod",
                 "hash": {
                     "sha256": "ec7f83e4064a220ac6ca44d8bb4659cc2665709b5dcc173ea515133ef06b7b09"
@@ -449,7 +449,7 @@
         },
         "installation": [
             {
-                "type": "ccmod",
+                "type": "zip",
                 "url": "https://github.com/elluminance/crosscode-font-utils/releases/download/v1.2.1/font-utils.ccmod",
                 "hash": {
                     "sha256": "82b694a6e808081d9db494a57598944c6c7363439f561e87832225677e61769a"
@@ -474,7 +474,7 @@
         },
         "installation": [
             {
-                "type": "ccmod",
+                "type": "zip",
                 "url": "https://github.com/krypciak/input-api/releases/download/v1.0.2/input-api.ccmod",
                 "hash": {
                     "sha256": "0c3acb06a812f50237f69fd9d4b3b542f9cba6d583be5bf1082399c6a1ab9e08"
@@ -508,7 +508,7 @@
         },
         "installation": [
             {
-                "type": "ccmod",
+                "type": "zip",
                 "url": "https://github.com/CCDirectLink/item-api/releases/download/v0.4.4/item-api.ccmod",
                 "hash": {
                     "sha256": "82523e959809c7b46cce0d7c702f9bf85f1981a80ac999be09782811fcaa33d0"
@@ -579,7 +579,7 @@
         },
         "installation": [
             {
-                "type": "modZip",
+                "type": "zip",
                 "url": "https://github.com/Inevitabilis/CC-Junolea/archive/refs/tags/v1.0.1.zip",
                 "source": "CC-Junolea-1.0.1",
                 "hash": {
@@ -606,7 +606,7 @@
         },
         "installation": [
             {
-                "type": "ccmod",
+                "type": "zip",
                 "url": "https://github.com/elluminance/crosscode-modifier-api-reborn/releases/download/v0.1.1/modifier-api.ccmod",
                 "hash": {
                     "sha256": "2e2ebf66a3bdb3a98d19b59c6e51918cea050940a28de4657b7dc05c62d1b30b"
@@ -631,7 +631,7 @@
         },
         "installation": [
             {
-                "type": "modZip",
+                "type": "zip",
                 "url": "https://github.com/Pyrocorvid/CCNineRooms/archive/refs/tags/v1.0.2.zip",
                 "source": "CCNineRooms-1.0.2/nine-rooms",
                 "hash": {
@@ -677,7 +677,7 @@
         },
         "installation": [
             {
-                "type": "modZip",
+                "type": "zip",
                 "url": "https://github.com/XenonA7/cc-party-element-effects/archive/refs/tags/1.0.1.zip",
                 "source": "cc-party-element-effects-1.0.1",
                 "hash": {
@@ -706,7 +706,7 @@
         },
         "installation": [
             {
-                "type": "modZip",
+                "type": "zip",
                 "url": "https://github.com/Pyrocorvid/CCNineRooms/archive/refs/tags/v1.0.2.zip",
                 "source": "CCNineRooms-1.0.2/past-booster",
                 "hash": {
@@ -737,7 +737,7 @@
         },
         "installation": [
             {
-                "type": "ccmod",
+                "type": "zip",
                 "url": "https://github.com/EpicYoshiMaster/CCPresetRevivalPlus/releases/download/2.1.1/CCPresetRevivalPlus.v2.1.1.ccmod",
                 "hash": {
                     "sha256": "19aa49547dfd4fe686be1e490b6b004ef36250d057de896984a91c11bf2adb77"
@@ -781,7 +781,7 @@
         },
         "installation": [
             {
-                "type": "modZip",
+                "type": "zip",
                 "url": "https://github.com/XenonA7/xmc-hexacast/archive/refs/tags/0.27.3.zip",
                 "source": "xmc-hexacast-0.27.3",
                 "hash": {

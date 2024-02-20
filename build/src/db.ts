@@ -67,7 +67,7 @@ export async function writeMods(db: PackageDB): Promise<void> {
                     'A mod. (Description not available; contact mod author and have them add a description to their package.json file)'
             ),
             license: ccmod?.license || meta?.license,
-            page: getRepositoryEntry(ccmod?.repository || ccmod?.homepage || meta?.homepage), /* old field, should be unused, kept for compatibility */
+            page: getRepositoryEntry(ccmod?.repository || ccmod?.homepage || meta?.homepage) /* old field, should be unused, kept for compatibility */,
             archive_link: install.url,
             hash: install.hash,
             version: ccmod?.version || meta?.version || 'unknown',
@@ -113,14 +113,9 @@ function getStringFromLocalisedString(str: LocalizedString): string {
 }
 
 function getInstallation(installations: InstallMethod[]): { url: string; hash: { sha256: string } } | undefined {
-    const zip = installations.find(i => i.type === 'ccmod') as InstallMethodCCMod
+    const zip = installations.find(i => i.type === 'zip') as InstallMethodZip
     if (zip) {
         return { url: zip.url, hash: zip.hash }
-    }
-
-    const modZip = installations.find(i => i.type === 'modZip') as InstallMethodModZip
-    if (modZip) {
-        return { url: modZip.url, hash: modZip.hash }
     }
 
     return undefined
@@ -214,31 +209,21 @@ async function generateInstallations(inputs: InputLocation[]): Promise<InstallMe
 
 async function generateInstallation(input: InputLocation): Promise<InstallMethod[] | InstallMethod | undefined> {
     switch (input.type) {
-        case 'modZip': {
-            const data = await streamToBuffer(await download(input.urlZip))
+        case undefined:
+        case 'zip': {
+            const data = await streamToBuffer(await download(input.url))
 
             return {
-                type: 'modZip',
-                url: input.urlZip,
+                type: 'zip',
+                url: input.url,
                 source: input.source,
                 hash: {
                     sha256: crypto.createHash('sha256').update(data).digest('hex'),
                 },
             }
         }
-        case 'ccmod': {
-            const data = await streamToBuffer(await download(input.url))
-
-            return {
-                type: 'ccmod',
-                url: input.url,
-                hash: {
-                    sha256: crypto.createHash('sha256').update(data).digest('hex'),
-                },
-            }
-        }
-        case 'injected':
-            return input.installation
+        default:
+            throw new Error('Unsupported type: ' + input.type)
     }
 }
 

@@ -2,6 +2,7 @@ import stream from 'stream'
 import yauzl from 'yauzl'
 import { download, streamToBuffer } from './download'
 import fs from 'fs'
+import path from 'path'
 import { getRepositoryEntry } from './db'
 import * as github from '@octokit/openapi-types'
 
@@ -13,12 +14,10 @@ export type ModMetadatasInput = ModMetadatas & { input: InputLocation }
 
 export async function get(input: InputLocation): Promise<ModMetadatasInput> {
     const fileFetchFunc: ((input: any, fileName: string, parseToJson?: boolean) => any) | 'error' =
-        input.type === 'modZip'
-            ? (input: ModZipInputLocation, fileName, parseToJson) => getModZipFile<PkgMetadata>(input, fileName, parseToJson)
-            : input.type === 'ccmod'
-            ? (input: CCModInputLocation, fileName, parseToJson) => getCCModFile<PkgMetadata>(input, fileName, parseToJson)
+        input.type === undefined || input.type === 'zip'
+            ? (input: ZipInputLocation, fileName, parseToJson) => getModZipFile<PkgMetadata>(input, fileName, parseToJson)
             : 'error'
-    if (fileFetchFunc === 'error') throw new Error(`Unknown location type '${input.type}'`)
+    if (fileFetchFunc === 'error') throw new Error(`Unsupported location type '${input.type}'`)
 
     let pkg
     try {
@@ -32,8 +31,7 @@ export async function get(input: InputLocation): Promise<ModMetadatasInput> {
         console.log(e)
         throw e
     }
-    if (!pkg.ccmod && !pkg.meta)
-        throw new Error(`A mod has to either have a package.json or a ccmod.json: ${input.type == 'ccmod' ? input.url : input.type == 'modZip' ? input.urlZip : ''}`)
+    if (!pkg.ccmod && !pkg.meta) throw new Error(`A mod has to either have a package.json or a ccmod.json: ${input.url}`)
     const iconPath = getModIconPath(pkg)
     if (iconPath) {
         const imgData = await fileFetchFunc(input, iconPath, false)
@@ -50,13 +48,18 @@ function getModIconPath(pkg: ModMetadatasInput): string | undefined {
     return ccmod.icons['24']
 }
 
-async function getModZipFile<T>(zip: ModZipInputLocation, fileName: string, parseToJson: boolean = true): Promise<T | undefined> {
-    const file = await download(zip.urlZip)
+async function getModZipFile<T>(zip: ZipInputLocation, fileName: string, parseToJson: boolean = true): Promise<T | undefined> {
+    const file = await download(zip.url)
     const buf = await streamToBuffer(file)
     if (buf.length === 0) return
     const archive = await open(buf)
-    let stream
-    stream = await openFile(archive, modZipPath(zip, fileName))
+
+    /* find the source if it's missing */
+    if (!zip.source && zip.url.endsWith('.zip')) {
+        zip.source = await findZipRoot(buf)
+        console.log(zip.source)
+    }
+    const stream = await openFile(archive, modZipPath(zip, fileName))
     if (!stream) return
     const raw = await streamToBuffer(stream)
 
@@ -66,7 +69,7 @@ async function getModZipFile<T>(zip: ModZipInputLocation, fileName: string, pars
     return JSON.parse(raw as unknown as string) as T
 }
 
-function modZipPath(zip: ModZipInputLocation, fileName: string): string {
+function modZipPath(zip: ZipInputLocation, fileName: string): string {
     if (fileName === 'package.json' && zip.packageJSONPath) return zip.packageJSONPath
 
     if (fileName === 'ccmod.json' && zip.ccmodPath) return zip.ccmodPath
@@ -75,21 +78,6 @@ function modZipPath(zip: ModZipInputLocation, fileName: string): string {
         return `${zip.source}/${fileName}`
     }
     return fileName
-}
-
-async function getCCModFile<T>(ccmod: CCModInputLocation, fileName: string, parseToJson: boolean = true): Promise<T | undefined> {
-    const file = await download(ccmod.url)
-    const buf = await streamToBuffer(file)
-    if (buf.length === 0) return
-    const archive = await open(buf)
-    const stream = await openFile(archive, fileName)
-    if (!stream) return
-    const raw = await streamToBuffer(stream)
-
-    archive.close()
-
-    if (!parseToJson) return raw as unknown as T
-    return JSON.parse(raw as unknown as string) as T
 }
 
 function open(buffer: Buffer): Promise<yauzl.ZipFile> {
@@ -127,6 +115,27 @@ function openFile(zip: yauzl.ZipFile, file: string): Promise<stream.Readable | u
                 return undefined
                 // reject(new Error(`${file} not found`))
             })
+            .on('error', err => reject(err))
+    })
+}
+
+async function findZipRoot(buffer: Buffer): Promise<string | undefined> {
+    const zip = await open(buffer)
+    return new Promise((resolve, reject) => {
+        zip.readEntry()
+        zip.on('entry', (entry: yauzl.Entry) => {
+            if (!entry.fileName.endsWith('/')) {
+                const name = path.basename(entry.fileName)
+                console.log(entry.fileName, name)
+                if (name == 'package.json' || name == 'ccmod.json') {
+                    zip.close()
+                    resolve(path.dirname(entry.fileName))
+                    return
+                }
+            }
+            zip.readEntry()
+        })
+            .on('end', () => resolve(undefined))
             .on('error', err => reject(err))
     })
 }

@@ -1,14 +1,10 @@
-declare type InputLocation = InjectedInputLocation | ModZipInputLocation | CCModInputLocation
+declare type InputLocation = ZipInputLocation
 
-// Represents a raw input location to put more or less directly into npDatabase.json
-declare type InjectedInputLocation = {
-    type: 'injected'
-} & Package
 
-declare type ModZipInputLocation = {
-    type: 'modZip'
+declare type ZipInputLocation = {
+    type: 'zip' | undefined
     // The URL of the ZIP file.
-    urlZip: string
+    url: string
     // The subdirectory in which the package.json file is kept.
     // Note that GitHub archives have an additional enclosing directory, so you will usually need to use this.
     // Only this subdirectory & subdirectories of it are extracted, and it is extracted at the target installation directory.
@@ -17,12 +13,6 @@ declare type ModZipInputLocation = {
     // This must pretty much only be used for base packages.
     packageJSONPath?: string
     ccmodPath?: string
-}
-
-declare type CCModInputLocation = {
-    type: 'ccmod'
-    // The URL of the ccmod file.
-    url: string
 }
 
 // The content of the input-locations.json file.
@@ -134,7 +124,7 @@ declare type PkgHash = {
 /*
  * Represents a method of installing the package.
  */
-declare type InstallMethod = InstallMethodCommon | InstallMethodModZip | InstallMethodCCMod
+declare type InstallMethod = InstallMethodCommon | InstallMethodZip
 
 /*
  * The common fields between all PackageDBInstallationMethods.
@@ -146,22 +136,15 @@ declare type InstallMethodCommon = {
     platform?: NodeOSPlatform
 }
 
-declare type InstallMethodModZip = InstallMethodCommon & {
-    type: 'modZip'
+declare type InstallMethodZip = InstallMethodCommon & {
+    type: 'zip'
     // The URL of the ZIP to download. (example: "https://github.com/CCDirectLink/CCLoader/archive/master.zip")
+    // or the URL of the ccmod to download. (example: "https://github.com/CCDirectLink/CC-ChargedBalls/releases/download/1.0.0/ChargedBalls.ccmod")
     url: string
     // The hash of the file at url.
     hash: PkgHash
     // If provided, the subdirectory of the ZIP that is the root of the extraction (example: "CCLoader-master")
     source?: string
-}
-
-declare type InstallMethodCCMod = InstallMethodCommon & {
-    type: 'ccmod'
-    // The URL of the ccmod to download. (example: "https://github.com/CCDirectLink/CC-ChargedBalls/releases/download/1.0.0/ChargedBalls.ccmod")
-    url: string
-    // The hash of the file at url.
-    hash: PkgHash
 }
 
 /*
