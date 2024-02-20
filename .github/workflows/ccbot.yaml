@@ -1,0 +1,30 @@
+name: CI
+on:
+    pull_request:
+        types: [opened]
+
+jobs:
+    completePR:
+        if: startsWith(github.event.pull_request.title, 'CCBot:')
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Check PR name
+            - uses: actions/checkout@v2
+            - uses: actions/setup-node@v1
+              with:
+                  node-version: 15.x
+            - working-directory: build/
+              run: npm ci
+            - name: Update the database
+              working-directory: build/
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              run: npm run start
+            - name: Commit changes
+            - run: |
+                git config --global user.email "${GITHUB_ACTOR_EMAIL}"
+                git config --global user.name "${GITHUB_ACTOR}"
+                git config --global --add safe.directory /github/workspaces
+                git commit -m ""
+                git push
