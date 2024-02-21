@@ -327,6 +327,32 @@
         "stars": 1,
         "lastUpdateTimestamp": 1708366049000
     },
+    "charged-balls": {
+        "metadataCCMod": {
+            "id": "charged-balls",
+            "version": "1.0.2",
+            "title": "Charged balls",
+            "description": "Replaces normal VRPs with charged VRPs",
+            "repository": "https://github.com/CCDirectLink/CC-ChargedBalls",
+            "tags": [
+                "fun"
+            ],
+            "authors": "keanuplayz",
+            "prestart": "prestart.js"
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/CCDirectLink/CC-ChargedBalls/archive/refs/tags/1.0.2.zip",
+                "source": "CC-ChargedBalls-1.0.2",
+                "hash": {
+                    "sha256": "f03c037b26839d84d92c76cd22f85bde1d3fcf3ffa437e8260262d0e6ae77c33"
+                }
+            }
+        ],
+        "stars": 1,
+        "lastUpdateTimestamp": 1708511711000
+    },
     "cursedcode": {
         "metadataCCMod": {
             "id": "cursedcode",

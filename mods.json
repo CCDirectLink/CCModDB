@@ -150,6 +150,21 @@
             },
             "version": "1.5.5"
         },
+        "charged-balls": {
+            "name": "Charged balls",
+            "description": "Replaces normal VRPs with charged VRPs",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/CCDirectLink/CC-ChargedBalls"
+                }
+            ],
+            "archive_link": "https://github.com/CCDirectLink/CC-ChargedBalls/archive/refs/tags/1.0.2.zip",
+            "hash": {
+                "sha256": "f03c037b26839d84d92c76cd22f85bde1d3fcf3ffa437e8260262d0e6ae77c33"
+            },
+            "version": "1.0.2"
+        },
         "cursedcode": {
             "name": "CursedCode",
             "description": "Cursed custom maps.",
