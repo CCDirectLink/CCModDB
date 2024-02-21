@@ -1,30 +1,51 @@
-name: CI
+name: Fill CCBot PR info
 on:
     pull_request:
         types: [opened]
 
 jobs:
     completePR:
-        if: startsWith(github.event.pull_request.title, 'CCBot:')
+        name: Fill CCBot PR info
         runs-on: ubuntu-latest
+        if: startsWith(github.event.pull_request.title, 'CCBot:')
 
         steps:
-            - name: Check PR name
-            - uses: actions/checkout@v2
-            - uses: actions/setup-node@v1
+            - uses: actions/checkout@v4
               with:
-                  node-version: 15.x
+                  ref: ${{ github.head_ref }}
+            - uses: actions/setup-node@v4
+              with:
+                  node-version: 20
             - working-directory: build/
               run: npm ci
             - name: Update the database
               working-directory: build/
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-              run: npm run start
-            - name: Commit changes
-            - run: |
-                git config --global user.email "${GITHUB_ACTOR_EMAIL}"
-                git config --global user.name "${GITHUB_ACTOR}"
-                git config --global --add safe.directory /github/workspaces
-                git commit -m ""
-                git push
+              run: |
+                  set -e
+                  OUT="$(npm run start)"
+
+                  OUT="$(echo "$OUT" | tail -1)"
+                  ID="$(echo "$OUT" | awk -F'|' '{print $1}')"
+                  VERSION="$(echo "$OUT" | awk -F'|' '{print $2}')"
+                  TITLE="$(echo "$OUT" | awk -F'|' '{print $3}')"
+                  DESCRIPTION="$(echo "$OUT" | awk -F'|' '{print $4}')"
+
+                  gh pr edit "${{ github.event.pull_request.number }}" --title "CCBot: ${ID}"
+                  gh pr comment "${{ github.event.pull_request.number }}" --body "Mod info:<br>${ID} v${VERSION}<br>${DESCRIPTION}"
+
+                  set +e
+                  OUT="$(npm run start)"
+                  npm test
+                  TEST_REP=$?
+
+                  set -e
+                  git config --global user.name "${GITHUB_ACTOR}"
+                  git config --global user.email "${GITHUB_ACTOR_ID}+${GITHUB_ACTOR}@users.noreply.github.com"
+                  git commit --all -m "CCBot: Fill '${ID}' info"
+                  git push
+
+                  if [ ! $TEST_REP -eq 0 ]; then
+                    exit 1
+                  fi

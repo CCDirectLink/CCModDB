@@ -57,7 +57,6 @@ async function getModZipFile<T>(zip: ZipInputLocation, fileName: string, parseTo
     /* find the source if it's missing */
     if (!zip.source && zip.url.endsWith('.zip')) {
         zip.source = await findZipRoot(buf)
-        console.log(zip.source)
     }
     const stream = await openFile(archive, modZipPath(zip, fileName))
     if (!stream) return
@@ -126,7 +125,6 @@ async function findZipRoot(buffer: Buffer): Promise<string | undefined> {
         zip.on('entry', (entry: yauzl.Entry) => {
             if (!entry.fileName.endsWith('/')) {
                 const name = path.basename(entry.fileName)
-                console.log(entry.fileName, name)
                 if (name == 'package.json' || name == 'ccmod.json') {
                     zip.close()
                     resolve(path.dirname(entry.fileName))
@@ -142,7 +140,6 @@ async function findZipRoot(buffer: Buffer): Promise<string | undefined> {
 
 /* this has to be done outside of buildEntry to avoid concurent api requests */
 export async function addStarsAndTimestampsToResults(result: PackageDB, oldDb?: PackageDB) {
-    console.log('fetching stars and timestamps...')
     for (const id in result) {
         const mod = result[id]
 
@@ -198,7 +195,6 @@ async function getStarsAndTimestamp(
             const branchData = await fetchGithub<github.components['schemas']['branch-with-protection']>(branchApiUrl)
             const date = branchData.commit.commit.author!.date!
             timestamp = new Date(date).getTime()
-            console.log(url, date, timestamp)
         }
         return { stars, timestamp }
     }
