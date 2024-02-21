@@ -25,12 +25,18 @@ jobs:
               run: |
                   set -e
                   OUT="$(npm run start)"
+                  echo "$OUT"
 
                   OUT="$(echo "$OUT" | tail -1)"
+                  echo "$OUT"
                   ID="$(echo "$OUT" | awk -F'|' '{print $1}')"
                   VERSION="$(echo "$OUT" | awk -F'|' '{print $2}')"
                   TITLE="$(echo "$OUT" | awk -F'|' '{print $3}')"
                   DESCRIPTION="$(echo "$OUT" | awk -F'|' '{print $4}')"
+                  echo "$ID"
+                  echo "$VERSION"
+                  echo "$TITLE"
+                  echo "$DESCRIPTION"
 
                   gh pr edit "${{ github.event.pull_request.number }}" --title "CCBot: ${ID}"
                   gh pr comment "${{ github.event.pull_request.number }}" --body "Mod info:<br>${ID} v${VERSION}<br>${DESCRIPTION}"
