@@ -1,4 +1,29 @@
 {
+    "Hadouken": {
+        "metadataCCMod": {
+            "id": "Hadouken",
+            "version": "1.0.0",
+            "title": "Hadouken",
+            "description": "Lea yells various forms of HADOUKEN or SHORYUKEN when casting appropriate combat arts.",
+            "repository": "https://github.com/CookieSalesman/CrossCode-HADOUKEN-v1.0",
+            "tags": [
+                "fun"
+            ],
+            "authors": "CookieSalesman"
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/CookieSalesman/CrossCode-HADOUKEN-v1.0/archive/refs/tags/v1.1.0.zip",
+                "source": "CrossCode-HADOUKEN-v1.0-1.1.0",
+                "hash": {
+                    "sha256": "aef230417fb2f2acb233f47f62f12441b3add64af8264935642abbd3a17b45f8"
+                }
+            }
+        ],
+        "stars": 0,
+        "lastUpdateTimestamp": 1708465799000
+    },
     "New game++": {
         "metadataCCMod": {
             "id": "New game++",

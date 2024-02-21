@@ -1,5 +1,20 @@
 {
     "mods": {
+        "Hadouken": {
+            "name": "Hadouken",
+            "description": "Lea yells various forms of HADOUKEN or SHORYUKEN when casting appropriate combat arts.",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/CookieSalesman/CrossCode-HADOUKEN-v1.0"
+                }
+            ],
+            "archive_link": "https://github.com/CookieSalesman/CrossCode-HADOUKEN-v1.0/archive/refs/tags/v1.1.0.zip",
+            "hash": {
+                "sha256": "aef230417fb2f2acb233f47f62f12441b3add64af8264935642abbd3a17b45f8"
+            },
+            "version": "1.0.0"
+        },
         "New game++": {
             "name": "New game++",
             "description": "A small collection of addons to CrossCode's NG+.",
