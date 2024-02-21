@@ -6,17 +6,17 @@
 
 ### CCDirectLink
 
-- https://github.com/CCDirectLink/input-api/pull/2
-- https://github.com/CCDirectLink/CC-ChargedBalls/pull/2
-- https://github.com/CCDirectLink/CCJetpack/pull/8
-- https://github.com/CCDirectLink/CCNewGamePP/pull/4
-- https://github.com/CCDirectLink/CCdiscord/pull/20
-- https://github.com/CCDirectLink/CCTimeWalker/pull/7
-- https://github.com/CCDirectLink/CCTimer/pull/6
-- https://github.com/CCDirectLink/extendable-severed-heads/pull/7
-- https://github.com/CCDirectLink/cc-menu-ui-replacement/pull/1
+- ~~https://github.com/CCDirectLink/input-api/pull/2~~
+- ~~https://github.com/CCDirectLink/CC-ChargedBalls/pull/2~~
+- ~~https://github.com/CCDirectLink/CCJetpack/pull/8~~
+- ~~https://github.com/CCDirectLink/CCNewGamePP/pull/4~~
+- ~~https://github.com/CCDirectLink/CCdiscord/pull/20~~
+- ~~https://github.com/CCDirectLink/CCTimeWalker/pull/7~~
+- ~~https://github.com/CCDirectLink/CCTimer/pull/6~~
+- ~~https://github.com/CCDirectLink/extendable-severed-heads/pull/7~~
+- ~~https://github.com/CCDirectLink/cc-menu-ui-replacement/pull/1~~
 - https://github.com/CCDirectLink/CCLoader/pull/104 (includes cc-display-version and simplify)
-- https://github.com/CCDirectLink/map-watch/pull/3
+- ~~https://github.com/CCDirectLink/map-watch/pull/3~~
 
 ### Nax
 
@@ -80,5 +80,5 @@
 - https://github.com/WatDuhHekBro/cc-uwuifier/pull/4
 - ~~https://github.com/Inevitabilis/CC-Junolea/pull/1~~
 - ~~https://github.com/Pyrocorvid/CCNineRooms/pull/2~~
-- https://github.com/CookieSalesman/CrossCode-HADOUKEN-v1.0/pull/2
+- ~~https://github.com/CookieSalesman/CrossCode-HADOUKEN-v1.0/pull/2~~
 - https://github.com/canbora/cc-named-saves/pull/2
