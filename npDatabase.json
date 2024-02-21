@@ -1,4 +1,38 @@
 {
+    "New game++": {
+        "metadataCCMod": {
+            "id": "New game++",
+            "version": "1.3.1",
+            "title": "New game++",
+            "description": "A small collection of addons to CrossCode's NG+.",
+            "repository": "https://github.com/CCDirectLink/CCNewGamePP",
+            "tags": [
+                "ng+"
+            ],
+            "authors": [
+                "2767mr",
+                "dmitmel",
+                "prismskey"
+            ],
+            "dependencies": {
+                "crosscode": "^1.2.0",
+                "ccloader": "^2.14.3"
+            },
+            "plugin": "plugin.js"
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/CCDirectLink/CCNewGamePP/archive/refs/tags/v1.3.1.zip",
+                "source": "CCNewGamePP-1.3.1",
+                "hash": {
+                    "sha256": "6ab9c06f8d2bb31af664c1cec929b8dd55623e43f699c56955555ac9a2ada02a"
+                }
+            }
+        ],
+        "stars": 3,
+        "lastUpdateTimestamp": 1708511960000
+    },
     "Palicat": {
         "metadataCCMod": {
             "id": "Palicat",
@@ -206,6 +240,40 @@
         "stars": 0,
         "lastUpdateTimestamp": 1708253385000
     },
+    "cc-discord": {
+        "metadataCCMod": {
+            "id": "cc-discord",
+            "version": "1.0.2",
+            "title": "Rich Presence for Discord",
+            "description": "Show off your CrossCode skills in Discord.",
+            "repository": "https://github.com/CCDirectLink/CCdiscord",
+            "tags": [
+                "cosmetic"
+            ],
+            "authors": [
+                "dmitmel",
+                "ac2pic",
+                "keanuplayz",
+                "omegalink12",
+                "2767mr",
+                "lexisother",
+                "krypek"
+            ],
+            "poststart": "mod.js"
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/CCDirectLink/CCdiscord/archive/refs/tags/v1.0.2.zip",
+                "source": "CCdiscord-1.0.2",
+                "hash": {
+                    "sha256": "0c6cda02465a16e99b70f8e271aad886b16b4f2b6c880c9e1c2a52f323cc4772"
+                }
+            }
+        ],
+        "stars": 6,
+        "lastUpdateTimestamp": 1708512075000
+    },
     "cc-extra-dialogue": {
         "metadataCCMod": {
             "id": "cc-extra-dialogue",
@@ -327,6 +395,32 @@
         "stars": 1,
         "lastUpdateTimestamp": 1708366049000
     },
+    "charged-balls": {
+        "metadataCCMod": {
+            "id": "charged-balls",
+            "version": "1.0.2",
+            "title": "Charged balls",
+            "description": "Replaces normal VRPs with charged VRPs",
+            "repository": "https://github.com/CCDirectLink/CC-ChargedBalls",
+            "tags": [
+                "fun"
+            ],
+            "authors": "keanuplayz",
+            "prestart": "prestart.js"
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/CCDirectLink/CC-ChargedBalls/archive/refs/tags/1.0.2.zip",
+                "source": "CC-ChargedBalls-1.0.2",
+                "hash": {
+                    "sha256": "f03c037b26839d84d92c76cd22f85bde1d3fcf3ffa437e8260262d0e6ae77c33"
+                }
+            }
+        ],
+        "stars": 1,
+        "lastUpdateTimestamp": 1708511711000
+    },
     "cursedcode": {
         "metadataCCMod": {
             "id": "cursedcode",
@@ -409,6 +503,36 @@
         "stars": 0,
         "lastUpdateTimestamp": 1708290993000
     },
+    "extendable-severed-heads": {
+        "metadataCCMod": {
+            "id": "extendable-severed-heads",
+            "version": "1.1.1",
+            "title": "extendable-severed-heads",
+            "description": "Library for adding new character head icons",
+            "repository": "https://github.com/CCDirectLink/extendable-severed-heads",
+            "tags": [
+                "library"
+            ],
+            "authors": [
+                "ac2pic",
+                "nax",
+                "elluminance"
+            ],
+            "plugin": "plugin.js"
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/CCDirectLink/extendable-severed-heads/archive/refs/tags/v1.1.1.zip",
+                "source": "extendable-severed-heads-1.1.1",
+                "hash": {
+                    "sha256": "f5613ac92ac20e138dec801063f8673aa15696836dd15700305e9007f6de119a"
+                }
+            }
+        ],
+        "stars": 3,
+        "lastUpdateTimestamp": 1708512538000
+    },
     "extension-asset-preloader": {
         "metadataCCMod": {
             "id": "extension-asset-preloader",
@@ -475,9 +599,10 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/input-api/releases/download/v1.0.2/input-api.ccmod",
+                "url": "https://github.com/CCDirectLink/input-api/archive/refs/tags/v1.0.2.zip",
+                "source": "input-api-1.0.2",
                 "hash": {
-                    "sha256": "0c3acb06a812f50237f69fd9d4b3b542f9cba6d583be5bf1082399c6a1ab9e08"
+                    "sha256": "414d3b091a4644b6d52ec64cac1e8017fda69fec5792f32ff1b40e674d1aec78"
                 }
             }
         ],
@@ -517,6 +642,41 @@
         ],
         "stars": 1,
         "lastUpdateTimestamp": 1708294841000
+    },
+    "jetpack": {
+        "metadataCCMod": {
+            "id": "jetpack",
+            "version": "0.2.1",
+            "title": "Jetpack",
+            "description": "Turns your CTRL key into a jetpack",
+            "repository": "https://github.com/CCDirectLink/CCJetpack",
+            "tags": [
+                "speedrun",
+                "fun",
+                "cheats"
+            ],
+            "authors": [
+                "2767mr",
+                "dmitmel"
+            ],
+            "dependencies": {
+                "crosscode": "^1.1.0"
+            },
+            "poststart": "poststart.js",
+            "prestart": "prestart.js"
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/CCDirectLink/CCJetpack/archive/refs/tags/v0.2.1.zip",
+                "source": "CCJetpack-0.2.1",
+                "hash": {
+                    "sha256": "bae0bbb4c500cf27725e1dce963829c0d5e253333d8362e42b563f66a3e275dd"
+                }
+            }
+        ],
+        "stars": 4,
+        "lastUpdateTimestamp": 1708511891000
     },
     "junolea": {
         "metadataCCMod": {
@@ -589,6 +749,68 @@
         ],
         "stars": 1,
         "lastUpdateTimestamp": 1708374201000
+    },
+    "map-watch": {
+        "metadataCCMod": {
+            "id": "map-watch",
+            "version": "1.1.1",
+            "title": "Map Watcher",
+            "description": "A mod that automatically loads a map when changes are detected",
+            "repository": "https://github.com/CCDirectLink/map-watch",
+            "tags": [
+                "dev"
+            ],
+            "authors": [
+                "2767mr",
+                "lexisother"
+            ],
+            "plugin": "plugin.js"
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/CCDirectLink/map-watch/archive/refs/tags/v1.1.1.zip",
+                "source": "map-watch-1.1.1",
+                "hash": {
+                    "sha256": "d5001f812cc76c45669b9770317f33eb350a058e89d366094ac188dd6af9b6e2"
+                }
+            }
+        ],
+        "stars": 1,
+        "lastUpdateTimestamp": 1708513132000
+    },
+    "menu-ui-replacer": {
+        "metadataCCMod": {
+            "id": "menu-ui-replacer",
+            "version": "1.0.4",
+            "title": "menu-ui-replacer",
+            "description": "Replace Lea with the character of your choice in the menu!",
+            "repository": "https://github.com/CCDirectLink/cc-menu-ui-replacement",
+            "tags": [
+                "library"
+            ],
+            "authors": [
+                "hsifnus",
+                "ac2pic"
+            ],
+            "plugin": "plugin.js",
+            "postload": "postload.js",
+            "assets": [
+                "assets/data/menu.json"
+            ]
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/CCDirectLink/cc-menu-ui-replacement/archive/refs/tags/v1.0.4.zip",
+                "source": "cc-menu-ui-replacement-1.0.4/cc-menu-ui-replacement",
+                "hash": {
+                    "sha256": "03c58361eef15b359d47282cb5ecb4656b269846c21c527bffeb9b0c122fc5d4"
+                }
+            }
+        ],
+        "stars": 1,
+        "lastUpdateTimestamp": 1708512670000
     },
     "modifier-api": {
         "metadataCCMod": {
@@ -746,6 +968,74 @@
         ],
         "stars": 0,
         "lastUpdateTimestamp": 1708116396000
+    },
+    "timer": {
+        "metadataCCMod": {
+            "id": "timer",
+            "version": "3.0.2",
+            "title": "CCTimer",
+            "description": "A speedrun timer for CrossCode.",
+            "repository": "https://github.com/CCDirectLink/CCTimer",
+            "tags": [
+                "speedrun"
+            ],
+            "authors": [
+                "2767mr",
+                "EpicYoshiMaster",
+                "krypek"
+            ],
+            "icons": {
+                "24": "icon.png"
+            },
+            "dependencies": {
+                "ccloader": "^2.19.0"
+            },
+            "plugin": "plugin.js"
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/CCDirectLink/CCTimer/archive/refs/tags/v3.0.2.zip",
+                "source": "CCTimer-3.0.2",
+                "hash": {
+                    "sha256": "4ce4598a04a0a9582dcbc57f8c5753d033940f22e86d8c9a216c78dc41ed4b18"
+                }
+            }
+        ],
+        "stars": 2,
+        "lastUpdateTimestamp": 1708512378000
+    },
+    "timewalker": {
+        "metadataCCMod": {
+            "id": "timewalker",
+            "version": "0.3.1",
+            "title": "timewalker",
+            "description": "Lets you control time.",
+            "repository": "https://github.com/CCDirectLink/CCTimeWalker",
+            "tags": [
+                "fun"
+            ],
+            "authors": [
+                "2767mr",
+                "tiredcoffee"
+            ],
+            "dependencies": {
+                "crosscode": "^1.1.0"
+            },
+            "plugin": "walker.js"
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/CCDirectLink/CCTimeWalker/archive/refs/tags/v0.3.1.zip",
+                "source": "CCTimeWalker-0.3.1",
+                "hash": {
+                    "sha256": "e197eaf2927a7b24c51e1560f5076268492fd2c12ccb3fde6cff7c2677fb3220"
+                }
+            }
+        ],
+        "stars": 1,
+        "lastUpdateTimestamp": 1708512139000
     },
     "xmc-hexacast": {
         "metadataCCMod": {
