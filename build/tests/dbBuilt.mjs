@@ -1,9 +1,8 @@
 // call with mocha
 // require chai
 
-const { expect } = require('chai');
-const fs = require('fs');
-const { intersects } = require('semver');
+import { expect } from 'chai'
+import fs from 'fs';
 
 describe('ModDB', () => {
 	const FILE_INPUT = '../input-locations.json';
@@ -53,7 +52,6 @@ describe('ModDB', () => {
 					expect.fail(name, undefined,
 						name + ' in npDatase but not in input-locations'
                         + ' (did you run `npm run build`?)');
-					break;
 				}
 			}
 		}

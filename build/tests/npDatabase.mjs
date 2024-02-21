@@ -1,11 +1,11 @@
 // call with mocha
 // require chai
 
-const { expect } = require('chai');
-const fs = require('fs');
-const semver = require('semver');
-const crypto = require('crypto');
-const {download, streamToBuffer} = require('../dist/download');
+import { expect } from 'chai';
+import fs from 'fs';
+import semver from 'semver';
+import crypto from 'crypto';
+import {download, streamToBuffer} from '../dist/download.js';
 
 describe('NpDatabase', () => {
 
