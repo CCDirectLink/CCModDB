@@ -409,6 +409,36 @@
         "stars": 0,
         "lastUpdateTimestamp": 1708290993000
     },
+    "extendable-severed-heads": {
+        "metadataCCMod": {
+            "id": "extendable-severed-heads",
+            "version": "1.1.1",
+            "title": "extendable-severed-heads",
+            "description": "Library for adding new character head icons",
+            "repository": "https://github.com/CCDirectLink/extendable-severed-heads",
+            "tags": [
+                "library"
+            ],
+            "authors": [
+                "ac2pic",
+                "nax",
+                "elluminance"
+            ],
+            "plugin": "plugin.js"
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/CCDirectLink/extendable-severed-heads/archive/refs/tags/v1.1.1.zip",
+                "source": "extendable-severed-heads-1.1.1",
+                "hash": {
+                    "sha256": "f5613ac92ac20e138dec801063f8673aa15696836dd15700305e9007f6de119a"
+                }
+            }
+        ],
+        "stars": 3,
+        "lastUpdateTimestamp": 1708512538000
+    },
     "extension-asset-preloader": {
         "metadataCCMod": {
             "id": "extension-asset-preloader",
