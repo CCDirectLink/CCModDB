@@ -70,7 +70,7 @@
 
 ### Rest1
 
-- https://github.com/ZeikJT/CrossCodeCheats/pull/7
+- ~~https://github.com/ZeikJT/CrossCodeCheats/pull/7~~
 - https://github.com/L-Sherry/Localize-me/pull/12
 - https://github.com/L-Sherry/French-CC/pull/19
 - https://github.com/L-Sherry/Bob-Rank/pull/1
