@@ -9,7 +9,6 @@ jobs:
         runs-on: ubuntu-latest
 
         if: "!startsWith(github.event.head_commit.message, 'CCBot: ccbot')"
-
         steps:
             - uses: actions/checkout@v4
             - uses: actions/setup-node@v4
