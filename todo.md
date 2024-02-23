@@ -59,7 +59,7 @@
 - ~~https://github.com/Symphiel/CursedCode/pull/1~~
 - https://github.com/Hsifnus/autumns-genesis/pull/35
 - https://github.com/2hh8899/ArcaneLab/pull/18
-- https://github.com/CodeTriangle/CCMultiworldRandomizer/pull/10
+- ~~https://github.com/CodeTriangle/CCMultiworldRandomizer/pull/10~~
 
 ## PR's in progress but probably never merging (will need to make release on my fork if not merged)
 
