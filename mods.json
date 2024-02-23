@@ -509,6 +509,21 @@
                 "sha256": "1444b03e3efd05f0bb1aeee5d9f9e3c0e5315cb0cdd10d3440474e7737cac3c3"
             },
             "version": "0.27.3"
+        },
+        "xmc-litter": {
+            "name": "XMC - Hexacast Litter",
+            "description": "Makes Hexacast spellcards linger on the ground for a long time \\c[3](visual only)\\c[0]",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/XenonA7/xmc-hexacast-litter"
+                }
+            ],
+            "archive_link": "https://github.com/XenonA7/xmc-hexacast-litter/archive/refs/tags/1.0.8.zip",
+            "hash": {
+                "sha256": "1fd83d646bcafc8e698568385150047fdbc68c21a20f02556a7f572f68bfe848"
+            },
+            "version": "1.0.8"
         }
     }
 }
