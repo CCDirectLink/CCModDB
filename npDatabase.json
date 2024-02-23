@@ -926,6 +926,36 @@
         "stars": 0,
         "lastUpdateTimestamp": 1708372181000
     },
+    "mw-rando": {
+        "metadataCCMod": {
+            "id": "mw-rando",
+            "version": "0.4.1",
+            "title": "Multiworld randomizer",
+            "description": "Client for CrossCode Archipelago Integration",
+            "repository": "https://github.com/CodeTriangle/CCMultiworldRandomizer",
+            "tags": [
+                "puzzle",
+                "speedrun"
+            ],
+            "authors": "CodeTriangle",
+            "plugin": "mw-rando/plugin.js",
+            "dependencies": {
+                "open-world": ">=0.1.8",
+                "nax-ccuilib": ">=1.2"
+            }
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.4.1/CCMultiworldRandomizer-0.4.1.ccmod",
+                "hash": {
+                    "sha256": "507105210e9407aea44cead7a057749b79cb3ffbf3caac7c947af1a3c517922e"
+                }
+            }
+        ],
+        "stars": 1,
+        "lastUpdateTimestamp": 1708711533000
+    },
     "nine-rooms": {
         "metadataCCMod": {
             "id": "nine-rooms",

@@ -435,6 +435,21 @@
             },
             "version": "0.1.1"
         },
+        "mw-rando": {
+            "name": "Multiworld randomizer",
+            "description": "Client for CrossCode Archipelago Integration",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer"
+                }
+            ],
+            "archive_link": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.4.1/CCMultiworldRandomizer-0.4.1.ccmod",
+            "hash": {
+                "sha256": "507105210e9407aea44cead7a057749b79cb3ffbf3caac7c947af1a3c517922e"
+            },
+            "version": "0.4.1"
+        },
         "nine-rooms": {
             "name": "Nine Rooms",
             "description": "A little piece of lost history.",
