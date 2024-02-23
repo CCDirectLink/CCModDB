@@ -446,6 +446,36 @@
         "stars": 1,
         "lastUpdateTimestamp": 1708511711000
     },
+    "cheats": {
+        "metadataCCMod": {
+            "id": "cheats",
+            "version": "1.4.1",
+            "title": "Cheats",
+            "description": "This mod adds cheats to CrossCode.",
+            "repository": "https://github.com/ZeikJT/CrossCodeCheats",
+            "tags": [
+                "cheats"
+            ],
+            "authors": "ZeikJT",
+            "dependencies": {
+                "ccloader": "^2.11.0",
+                "crosscode": ">=1.2"
+            },
+            "postload": "cheats.js"
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/ZeikJT/CrossCodeCheats/archive/refs/tags/1.4.1-patch.zip",
+                "source": "CrossCodeCheats-1.4.1-patch",
+                "hash": {
+                    "sha256": "4a328f0c42e6082fb5bf23e9df868cee20a0711d73df5d17780856c3ee19576f"
+                }
+            }
+        ],
+        "stars": 5,
+        "lastUpdateTimestamp": 1708498807000
+    },
     "cursedcode": {
         "metadataCCMod": {
             "id": "cursedcode",
