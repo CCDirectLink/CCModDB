@@ -476,6 +476,39 @@
         "stars": 5,
         "lastUpdateTimestamp": 1708498807000
     },
+    "clean-title-screen": {
+        "metadataCCMod": {
+            "id": "clean-title-screen",
+            "version": "1.0.1",
+            "title": {
+                "en_US": "Clean Title Screen"
+            },
+            "description": {
+                "en_US": "Removes Lea from the title screen"
+            },
+            "repository": "https://github.com/XenonA7/clean-title-screen",
+            "tags": [
+                "cosmetic"
+            ],
+            "authors": "XenonA7",
+            "icons": {
+                "24": "icon.png"
+            },
+            "dependencies": {}
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/XenonA7/clean-title-screen/archive/refs/tags/1.0.1.zip",
+                "source": "clean-title-screen-1.0.1",
+                "hash": {
+                    "sha256": "fbd13967461584e8f74062f6aa1c9fe34c4dce185ec9b8cfa4ea4340fb5c66e2"
+                }
+            }
+        ],
+        "stars": 0,
+        "lastUpdateTimestamp": 1708620822000
+    },
     "cursedcode": {
         "metadataCCMod": {
             "id": "cursedcode",
