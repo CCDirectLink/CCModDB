@@ -225,6 +225,21 @@
             },
             "version": "1.4.1"
         },
+        "clean-title-screen": {
+            "name": "Clean Title Screen",
+            "description": "Removes Lea from the title screen",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/XenonA7/clean-title-screen"
+                }
+            ],
+            "archive_link": "https://github.com/XenonA7/clean-title-screen/archive/refs/tags/1.0.1.zip",
+            "hash": {
+                "sha256": "fbd13967461584e8f74062f6aa1c9fe34c4dce185ec9b8cfa4ea4340fb5c66e2"
+            },
+            "version": "1.0.1"
+        },
         "cursedcode": {
             "name": "CursedCode",
             "description": "Cursed custom maps.",
