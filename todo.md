@@ -31,6 +31,7 @@
 - ~~https://github.com/EL20202/el-crosscode-tweaks/pull/2~~
 - ~~https://github.com/EL20202/crosscode-extension-asset-preloader/pull/1~~
 - ~~https://github.com/EL20202/crosscode-modifier-api-reborn/pull/1~~
+- https://github.com/elluminance/cc-c-edition/pull/1
 
 ### Alyx
 
