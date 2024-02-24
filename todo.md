@@ -17,6 +17,7 @@
 - ~~https://github.com/CCDirectLink/cc-menu-ui-replacement/pull/1~~
 - https://github.com/CCDirectLink/CCLoader/pull/104 (includes cc-display-version and simplify)
 - ~~https://github.com/CCDirectLink/map-watch/pull/3~~
+- https://github.com/CCDirectLink/unified-steps/pull/1
 
 ### Nax
 
@@ -58,7 +59,7 @@
 
 - ~~https://github.com/Symphiel/CursedCode/pull/1~~
 - https://github.com/Hsifnus/autumns-genesis/pull/35
-- https://github.com/2hh8899/ArcaneLab/pull/18
+- https://github.com/2hh8899/ArcaneLab/pull/19
 - ~~https://github.com/CodeTriangle/CCMultiworldRandomizer/pull/10~~
 
 ## PR's in progress but probably never merging (will need to make release on my fork if not merged)
