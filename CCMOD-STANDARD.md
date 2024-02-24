@@ -43,7 +43,7 @@
 - `language` - adds a new language
 - `accessibility` - makes the game more accessible
 - `dev` - helps mod developers create mods
-- `library` - used by other mods
+- `library` - used by other mods. CCModManager hides these mods by default only if this tag is the first element
 - `base` - used by stuff like CCLoader
 
 ## Example `ccmod.json`
