@@ -838,6 +838,51 @@
         "stars": 1,
         "lastUpdateTimestamp": 1708374201000
     },
+    "lqm-joern-mod": {
+        "metadataCCMod": {
+            "id": "lqm-joern-mod",
+            "version": "0.5.4",
+            "title": {
+                "en_US": "Lubkuluk's Joern and \\c[7]Quadroguard\\c[0] Mod \\i[party-BEHAVIOUR-1] (WIP)"
+            },
+            "description": {
+                "en_US": "Modifies Joern in a way Lubkuluk desires. \\c[1]Is in early access, expect some bugs.\\c[0]"
+            },
+            "repository": "https://github.com/lubkuluk/lubkuluks-joern-mod",
+            "tags": [
+                "player character",
+                "party member"
+            ],
+            "authors": [
+                "lubkuluk"
+            ],
+            "icons": {
+                "24": "icon.png"
+            },
+            "main": "main.js",
+            "preload": "preload.js",
+            "postload": "postload.js",
+            "prestart": "prestart.js",
+            "poststart": "poststart.js",
+            "dependencies": {
+                "extendable-severed-heads": "^1.1.0",
+                "unified-steps": "^0.1.0",
+                "xenons-triblader-mod": "^0.9.2"
+            }
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/lubkuluk/lubkuluks-joern-mod/files/14393459/lubkuluks-joern-mod.zip",
+                "source": "lubkuluks-joern-mod",
+                "hash": {
+                    "sha256": "d3828f11fc7c70e104c040d03d2d2f8de017e4dff1e715eb77ac37bef7106c2e"
+                }
+            }
+        ],
+        "stars": 0,
+        "lastUpdateTimestamp": 1707477054000
+    },
     "map-watch": {
         "metadataCCMod": {
             "id": "map-watch",

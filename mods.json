@@ -390,6 +390,21 @@
             },
             "version": "1.0.0"
         },
+        "lqm-joern-mod": {
+            "name": "Lubkuluk's Joern and \\c[7]Quadroguard\\c[0] Mod \\i[party-BEHAVIOUR-1] (WIP)",
+            "description": "Modifies Joern in a way Lubkuluk desires. \\c[1]Is in early access, expect some bugs.\\c[0]",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/lubkuluk/lubkuluks-joern-mod"
+                }
+            ],
+            "archive_link": "https://github.com/lubkuluk/lubkuluks-joern-mod/files/14393459/lubkuluks-joern-mod.zip",
+            "hash": {
+                "sha256": "d3828f11fc7c70e104c040d03d2d2f8de017e4dff1e715eb77ac37bef7106c2e"
+            },
+            "version": "0.5.4"
+        },
         "map-watch": {
             "name": "Map Watcher",
             "description": "A mod that automatically loads a map when changes are detected",
