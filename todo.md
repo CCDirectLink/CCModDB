@@ -18,6 +18,7 @@
 - https://github.com/CCDirectLink/CCLoader/pull/104 (includes cc-display-version and simplify)
 - ~~https://github.com/CCDirectLink/map-watch/pull/3~~
 - https://github.com/CCDirectLink/unified-steps/pull/1
+- https://github.com/CCDirectLink/cc-speedrun-utilities/pull/2
 
 ### Nax
 
