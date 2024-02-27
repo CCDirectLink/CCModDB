@@ -189,11 +189,11 @@
                     "url": "https://github.com/krypciak/cc-vim"
                 }
             ],
-            "archive_link": "https://github.com/krypciak/cc-vim/releases/download/v1.5.7/cc-vim-1.5.7.ccmod",
+            "archive_link": "https://github.com/krypciak/cc-vim/releases/download/v1.5.8/cc-vim-1.5.8.ccmod",
             "hash": {
-                "sha256": "ea2910759db1280fb459097ace8cd274d9d1c18299d999a488992281390885e7"
+                "sha256": "1d271f4ec1d954cd257361d78a5c75bfdccb75ec236f60fcd08a5fd3e6ade0e3"
             },
-            "version": "1.5.7"
+            "version": "1.5.8"
         },
         "charged-balls": {
             "name": "Charged balls",
