@@ -15,6 +15,21 @@
             },
             "version": "1.0.0"
         },
+        "Named-Saves": {
+            "name": "Named Saves",
+            "description": "Lets you rename save slots.",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/canbora/cc-named-saves"
+                }
+            ],
+            "archive_link": "https://github.com/canbora/cc-named-saves/releases/download/v1.0.1/cc-named-saves.ccmod",
+            "hash": {
+                "sha256": "3f73481fc8172d7af78eba5b80fbfb672135a8837c938f60b7f1598874fec1d9"
+            },
+            "version": "1.0.0"
+        },
         "New game++": {
             "name": "New game++",
             "description": "A small collection of addons to CrossCode's NG+.",

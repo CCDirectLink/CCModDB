@@ -24,6 +24,31 @@
         "stars": 0,
         "lastUpdateTimestamp": 1708465799000
     },
+    "Named-Saves": {
+        "metadataCCMod": {
+            "id": "Named-Saves",
+            "version": "1.0.0",
+            "title": "Named Saves",
+            "description": "Lets you rename save slots.",
+            "repository": "https://github.com/canbora/cc-named-saves",
+            "tags": [
+                "QoL"
+            ],
+            "authors": "canbora",
+            "prestart": "prestart.js"
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/canbora/cc-named-saves/releases/download/v1.0.1/cc-named-saves.ccmod",
+                "hash": {
+                    "sha256": "3f73481fc8172d7af78eba5b80fbfb672135a8837c938f60b7f1598874fec1d9"
+                }
+            }
+        ],
+        "stars": 0,
+        "lastUpdateTimestamp": 1709069948000
+    },
     "New game++": {
         "metadataCCMod": {
             "id": "New game++",
