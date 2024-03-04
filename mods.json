@@ -210,6 +210,21 @@
             },
             "version": "1.5.9"
         },
+        "ccmodmanager": {
+            "name": "CCModManager",
+            "description": "Mod manager for CrossCode!",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/CCDirectLink/CCModManager"
+                }
+            ],
+            "archive_link": "https://github.com/CCDirectLink/CCModManager/releases/download/v0.9.2/ccmodmanager-0.9.2.ccmod",
+            "hash": {
+                "sha256": "c4dd6f0c986db68f2d019a718efa72905a4a8b6d32e52db691394d1c40e10185"
+            },
+            "version": "0.9.2"
+        },
         "charged-balls": {
             "name": "Charged balls",
             "description": "Replaces normal VRPs with charged VRPs",
