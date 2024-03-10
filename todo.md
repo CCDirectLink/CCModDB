@@ -24,7 +24,7 @@
 
 - https://github.com/conorlawton/nax-module-cache/pull/1
 - https://github.com/conorlawton/CCInventorySearch/pull/5 (remind him of the other crash fix pr)
-- https://github.com/conorlawton/nax-ccuilib/pull/4
+- ~~https://github.com/conorlawton/nax-ccuilib/pull/4~~
 
 ### ~~EL~~
 
