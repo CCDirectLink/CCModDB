@@ -549,7 +549,7 @@
             {
                 "type": "zip",
                 "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.23.2/v2.13.0.zip",
-                "source": "CCLoader-2.23.2-v2.13.0/assets/mods/ccloader-version-display",
+                "source": "CCLoader-2.23.2-v2.13.0",
                 "hash": {
                     "sha256": "b46a4f53e2db70a49ee015a1df91b9544124710fc11ce16ddaf835fb6ae767da"
                 }

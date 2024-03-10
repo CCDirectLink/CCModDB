@@ -1,7 +1,8 @@
 [
     {
         "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.23.2/v2.13.0.zip",
-        "ccmodPath": "CCLoader-2.23.2-v2.13.0/ccloader/ccmod.json"
+        "ccmodPath": "CCLoader-2.23.2-v2.13.0/ccloader/ccmod.json",
+        "source": "CCLoader-2.23.2-v2.13.0"
     },
     {
         "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.23.2/v2.13.0.zip",
