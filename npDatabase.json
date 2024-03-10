@@ -1,4 +1,37 @@
 {
+    "CCLoader display version": {
+        "metadataCCMod": {
+            "id": "CCLoader display version",
+            "version": "1.1.3",
+            "title": "CCLoader display version",
+            "description": "Displays the current CCLoader version.",
+            "repository": "https://github.com/CCDirectLink/CCLoader",
+            "tags": [
+                "base"
+            ],
+            "authors": [
+                "2767mr",
+                "dmitmel",
+                "ac2pic"
+            ],
+            "dependencies": {
+                "crosscode": "^1.1.0 || 1.0.2"
+            },
+            "prestart": "prestart.js"
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.23.2/v2.13.0.zip",
+                "source": "CCLoader-2.23.2-v2.13.0/assets/mods/ccloader-version-display",
+                "hash": {
+                    "sha256": "b46a4f53e2db70a49ee015a1df91b9544124710fc11ce16ddaf835fb6ae767da"
+                }
+            }
+        ],
+        "stars": 31,
+        "lastUpdateTimestamp": 1710069756000
+    },
     "Hadouken": {
         "metadataCCMod": {
             "id": "Hadouken",
@@ -164,6 +197,48 @@
         ],
         "stars": 1,
         "lastUpdateTimestamp": 1708403695000
+    },
+    "Simplify": {
+        "metadataCCMod": {
+            "id": "Simplify",
+            "version": "2.13.0",
+            "title": "Simplify",
+            "description": "Library mod for CCLoader2.",
+            "repository": "https://github.com/CCDirectLink/CCLoader",
+            "tags": [
+                "library",
+                "base"
+            ],
+            "authors": [
+                "2767mr",
+                "lexisother",
+                "dmitmel",
+                "elluminance",
+                "ac2pic",
+                "20kdc"
+            ],
+            "dependencies": {
+                "ccloader": "^2.22.0",
+                "crosscode": "^1.0.0"
+            },
+            "poststart": "mod.js",
+            "preload": "preload.js",
+            "postload": "postload.js",
+            "prestart": "prestart.js",
+            "plugin": "plugin.js"
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.23.2/v2.13.0.zip",
+                "source": "CCLoader-2.23.2-v2.13.0/assets/mods/simplify",
+                "hash": {
+                    "sha256": "b46a4f53e2db70a49ee015a1df91b9544124710fc11ce16ddaf835fb6ae767da"
+                }
+            }
+        ],
+        "stars": 31,
+        "lastUpdateTimestamp": 1710069756000
     },
     "blades": {
         "metadataCCMod": {
@@ -445,7 +520,43 @@
             }
         ],
         "stars": 1,
-        "lastUpdateTimestamp": 1709375076000
+        "lastUpdateTimestamp": 1709462725000
+    },
+    "ccloader": {
+        "metadataCCMod": {
+            "id": "ccloader",
+            "version": "2.23.2",
+            "title": "CCLoader",
+            "description": "Modloader for CrossCode. This or a similar modloader is needed for most mods.",
+            "repository": "https://github.com/CCDirectLink/CCLoader",
+            "tags": [
+                "base"
+            ],
+            "authors": [
+                "2767mr",
+                "dmitmel",
+                "ac2pic",
+                "Vankerkom",
+                "20kdc",
+                "lexisother",
+                "L-Sherry",
+                "elluminance",
+                "omegalink12",
+                "Silverfeelin"
+            ]
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.23.2/v2.13.0.zip",
+                "source": "CCLoader-2.23.2-v2.13.0/assets/mods/ccloader-version-display",
+                "hash": {
+                    "sha256": "b46a4f53e2db70a49ee015a1df91b9544124710fc11ce16ddaf835fb6ae767da"
+                }
+            }
+        ],
+        "stars": 31,
+        "lastUpdateTimestamp": 1710069756000
     },
     "ccmodmanager": {
         "metadataCCMod": {
@@ -754,7 +865,7 @@
             }
         ],
         "stars": 5,
-        "lastUpdateTimestamp": 1646924334000
+        "lastUpdateTimestamp": 1708513309000
     },
     "item-api": {
         "metadataCCMod": {
@@ -788,7 +899,7 @@
             }
         ],
         "stars": 1,
-        "lastUpdateTimestamp": 1708294841000
+        "lastUpdateTimestamp": 1708528670000
     },
     "jetpack": {
         "metadataCCMod": {
@@ -1002,7 +1113,7 @@
             }
         ],
         "stars": 1,
-        "lastUpdateTimestamp": 1708512670000
+        "lastUpdateTimestamp": 1708540517000
     },
     "modifier-api": {
         "metadataCCMod": {
@@ -1058,7 +1169,7 @@
             }
         ],
         "stars": 2,
-        "lastUpdateTimestamp": 1708711533000
+        "lastUpdateTimestamp": 1709924111000
     },
     "nine-rooms": {
         "metadataCCMod": {

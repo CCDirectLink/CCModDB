@@ -1,5 +1,20 @@
 {
     "mods": {
+        "CCLoader display version": {
+            "name": "CCLoader display version",
+            "description": "Displays the current CCLoader version.",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/CCDirectLink/CCLoader"
+                }
+            ],
+            "archive_link": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.23.2/v2.13.0.zip",
+            "hash": {
+                "sha256": "b46a4f53e2db70a49ee015a1df91b9544124710fc11ce16ddaf835fb6ae767da"
+            },
+            "version": "1.1.3"
+        },
         "Hadouken": {
             "name": "Hadouken",
             "description": "Lea yells various forms of HADOUKEN or SHORYUKEN when casting appropriate combat arts.",
@@ -74,6 +89,21 @@
                 "sha256": "8db827667134f32a15e98507bee700c97e24445d57c9d0e50275fdc5f5f98287"
             },
             "version": "0.3.1"
+        },
+        "Simplify": {
+            "name": "Simplify",
+            "description": "Library mod for CCLoader2.",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/CCDirectLink/CCLoader"
+                }
+            ],
+            "archive_link": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.23.2/v2.13.0.zip",
+            "hash": {
+                "sha256": "b46a4f53e2db70a49ee015a1df91b9544124710fc11ce16ddaf835fb6ae767da"
+            },
+            "version": "2.13.0"
         },
         "blades": {
             "name": "Blades",
@@ -209,6 +239,21 @@
                 "sha256": "ec1d15248739379ff70844fd381c23b9ee20eab5ef1ba16753d47cb3dc170f46"
             },
             "version": "1.5.9"
+        },
+        "ccloader": {
+            "name": "CCLoader",
+            "description": "Modloader for CrossCode. This or a similar modloader is needed for most mods.",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/CCDirectLink/CCLoader"
+                }
+            ],
+            "archive_link": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.23.2/v2.13.0.zip",
+            "hash": {
+                "sha256": "b46a4f53e2db70a49ee015a1df91b9544124710fc11ce16ddaf835fb6ae767da"
+            },
+            "version": "2.23.2"
         },
         "ccmodmanager": {
             "name": "CCModManager",
