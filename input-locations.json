@@ -4,14 +4,8 @@
         "ccmodPath": "CCLoader-2.23.2-v2.13.0/ccloader/ccmod.json",
         "source": "CCLoader-2.23.2-v2.13.0"
     },
-    {
-        "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.23.2/v2.13.0.zip",
-        "source": "CCLoader-2.23.2-v2.13.0/assets/mods/simplify"
-    },
-    {
-        "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.23.2/v2.13.0.zip",
-        "source": "CCLoader-2.23.2-v2.13.0/assets/mods/ccloader-version-display"
-    },
+    { "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.23.2/v2.13.0.zip", "source": "CCLoader-2.23.2-v2.13.0/assets/mods/simplify" },
+    { "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.23.2/v2.13.0.zip", "source": "CCLoader-2.23.2-v2.13.0/assets/mods/ccloader-version-display" },
     { "url": "https://github.com/CCDirectLink/input-api/archive/refs/tags/v1.0.2.zip" },
     { "url": "https://github.com/krypciak/cc-blitzkrieg/releases/download/v0.5.2/cc-blitzkrieg-0.5.2.ccmod" },
     { "url": "https://github.com/krypciak/cc-fancy-crash/releases/download/v1.0.8/cc-fancy-crash-1.0.8.ccmod" },
@@ -52,5 +46,6 @@
     { "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.4.1/CCMultiworldRandomizer-0.4.1.ccmod" },
     { "url": "https://github.com/lubkuluk/lubkuluks-joern-mod/files/14393459/lubkuluks-joern-mod.zip" },
     { "url": "https://github.com/canbora/cc-named-saves/releases/download/v1.0.1/cc-named-saves.ccmod" },
-    { "url": "https://github.com/CCDirectLink/CCModManager/releases/download/v0.9.5/ccmodmanager-0.9.5.ccmod" }
+    { "url": "https://github.com/CCDirectLink/CCModManager/releases/download/v0.9.5/ccmodmanager-0.9.5.ccmod" },
+    { "url": "https://github.com/conorlawton/nax-ccuilib/releases/download/v1.2.4/nax-ccuilib.ccmod" }
 ]
