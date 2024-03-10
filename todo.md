@@ -84,4 +84,4 @@
 - ~~https://github.com/Inevitabilis/CC-Junolea/pull/1~~
 - ~~https://github.com/Pyrocorvid/CCNineRooms/pull/2~~
 - ~~https://github.com/CookieSalesman/CrossCode-HADOUKEN-v1.0/pull/2~~
-- https://github.com/canbora/cc-named-saves/pull/2
+- ~~https://github.com/canbora/cc-named-saves/pull/2~~
