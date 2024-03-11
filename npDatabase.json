@@ -1228,6 +1228,31 @@
         "stars": 1,
         "lastUpdateTimestamp": 1708371875000
     },
+    "open-world": {
+        "metadataCCMod": {
+            "id": "open-world",
+            "version": "0.3.2",
+            "title": "Open World patches",
+            "description": "Open World map patches for randomizer",
+            "repository": "https://github.com/buanjautista/cc-open-world",
+            "tags": [
+                "maps"
+            ],
+            "authors": "buanjautista",
+            "plugin": "plugin.js"
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/buanjautista/cc-open-world/releases/download/0.3.2/cc-open-world.v0.3.2.ccmod",
+                "hash": {
+                    "sha256": "e00a9a5215e71e40a77f0a6883f6d2856e9c6e36270e6fc0227106bfe64266d0"
+                }
+            }
+        ],
+        "stars": 2,
+        "lastUpdateTimestamp": 1710166002000
+    },
     "party-element-effects": {
         "metadataCCMod": {
             "id": "party-element-effects",
