@@ -219,11 +219,11 @@
                     "url": "https://github.com/krypciak/cc-jetpack-widget"
                 }
             ],
-            "archive_link": "https://github.com/krypciak/cc-jetpack-widget/releases/download/v1.0.1/cc-jetpack-widget-1.0.1.ccmod",
+            "archive_link": "https://github.com/krypciak/cc-jetpack-widget/releases/download/v1.0.3/cc-jetpack-widget-1.0.3.ccmod",
             "hash": {
-                "sha256": "fa0d7f74e443030dcf5615e08ff4fc20a2d38b08d8d9e1ca78eda32f3c394c0c"
+                "sha256": "b0d196493a2b3a02ea2b239ea06d2bb350e4ed6b6f5f57ab7c2226e12b7e9570"
             },
-            "version": "1.0.1"
+            "version": "1.0.3"
         },
         "cc-vim": {
             "name": "Vim Command Mode",
