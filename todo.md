@@ -54,7 +54,7 @@
 ### Juanba
 
 - https://github.com/buanjautista/cc-shock-quest/pull/1
-- https://github.com/buanjautista/cc-open-world/pull/2
+- ~~https://github.com/buanjautista/cc-open-world/pull/2~~
 
 ### Rest
 
