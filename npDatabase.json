@@ -1199,8 +1199,33 @@
                 }
             }
         ],
-        "stars": 0,
+        "stars": 1,
         "lastUpdateTimestamp": 1710105771000
+    },
+    "nax-module-cache": {
+        "metadataCCMod": {
+            "id": "nax-module-cache",
+            "version": "1.0.2",
+            "title": "Module Cache",
+            "description": "Caches module paths for ig._loadScript",
+            "repository": "https://github.com/conorlawton/nax-module-cache",
+            "tags": [
+                "library"
+            ],
+            "authors": "nax",
+            "plugin": "nax-module-cache/plugin.js"
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/krypciak/nax-module-cache/releases/download/v1.0.2/nax-module-cache.ccmod",
+                "hash": {
+                    "sha256": "86b3fb25b75c8edd5b6079577d7df6748e6494165b1b77d31f73311f577763a8"
+                }
+            }
+        ],
+        "stars": 0,
+        "lastUpdateTimestamp": 1691756237000
     },
     "nine-rooms": {
         "metadataCCMod": {
