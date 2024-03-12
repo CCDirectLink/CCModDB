@@ -1171,37 +1171,6 @@
         "stars": 2,
         "lastUpdateTimestamp": 1709924111000
     },
-    "nax-ccuilib": {
-        "metadataCCMod": {
-            "id": "nax-ccuilib",
-            "version": "1.2.4",
-            "title": "CCUILib",
-            "description": "Library of additional UI elements as well as making existing ones configurable",
-            "repository": "https://github.com/conorlawton/nax-ccuilib",
-            "tags": [
-                "library"
-            ],
-            "authors": [
-                "nax",
-                "krypek"
-            ],
-            "dependencies": {
-                "nax-module-cache": ">=1.0.0"
-            },
-            "plugin": "nax-ccuilib/plugin.js"
-        },
-        "installation": [
-            {
-                "type": "zip",
-                "url": "https://github.com/conorlawton/nax-ccuilib/releases/download/v1.2.4/nax-ccuilib.ccmod",
-                "hash": {
-                    "sha256": "71b08398c31dceff036e0134961fd3e712c057a5f9d89e88253f5194ec5cc63d"
-                }
-            }
-        ],
-        "stars": 1,
-        "lastUpdateTimestamp": 1710105771000
-    },
     "nax-module-cache": {
         "metadataCCMod": {
             "id": "nax-module-cache",
