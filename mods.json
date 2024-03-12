@@ -540,6 +540,21 @@
             },
             "version": "0.4.1"
         },
+        "nax-ccuilib": {
+            "name": "CCUILib",
+            "description": "Library of additional UI elements as well as making existing ones configurable",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/conorlawton/nax-ccuilib"
+                }
+            ],
+            "archive_link": "https://github.com/krypciak/nax-ccuilib/releases/download/v1.2.5/nax-ccuilib.ccmod",
+            "hash": {
+                "sha256": "7576c7c587ac129b1c09c584af280fc4806f8daeae788e0119d17eca28b391b3"
+            },
+            "version": "1.2.5"
+        },
         "nax-module-cache": {
             "name": "Module Cache",
             "description": "Caches module paths for ig._loadScript",
