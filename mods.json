@@ -264,11 +264,11 @@
                     "url": "https://github.com/CCDirectLink/CCModManager"
                 }
             ],
-            "archive_link": "https://github.com/CCDirectLink/CCModManager/releases/download/v0.9.5/ccmodmanager-0.9.5.ccmod",
+            "archive_link": "https://github.com/CCDirectLink/CCModManager/releases/download/v0.9.6/ccmodmanager-0.9.6.ccmod",
             "hash": {
-                "sha256": "95a017b42992f53e002c7c3dda05bf93c86a378efc71aaff9f7250f3672e09ec"
+                "sha256": "538badc9424f97f4598334aad4e6695a5ece3877a7e859b517e29aaee6ef9daa"
             },
-            "version": "0.9.5"
+            "version": "0.9.6"
         },
         "charged-balls": {
             "name": "Charged balls",
