@@ -315,6 +315,21 @@
             },
             "version": "1.0.1"
         },
+        "crossedeyes": {
+            "name": "CrossedEyes",
+            "description": "Accessibility mod for CrossCode",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/CCDirectLink/CrossedEyes"
+                }
+            ],
+            "archive_link": "https://github.com/CCDirectLink/CrossedEyes/releases/download/v0.5.8/crossedeyes-0.5.8.ccmod",
+            "hash": {
+                "sha256": "3544e841fec47f605f2a568df063acc03ebcfd4ef5a67e9dea766eaa670cfe32"
+            },
+            "version": "0.5.8"
+        },
         "cursedcode": {
             "name": "CursedCode",
             "description": "Cursed custom maps.",
