@@ -561,7 +561,7 @@
     "ccmodmanager": {
         "metadataCCMod": {
             "id": "ccmodmanager",
-            "version": "0.9.6",
+            "version": "0.9.7",
             "title": "CCModManager",
             "description": "Mod manager for CrossCode!",
             "repository": "https://github.com/CCDirectLink/CCModManager",
@@ -582,14 +582,14 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CCDirectLink/CCModManager/releases/download/v0.9.6/ccmodmanager-0.9.6.ccmod",
+                "url": "https://github.com/CCDirectLink/CCModManager/releases/download/v0.9.7/ccmodmanager-0.9.7.ccmod",
                 "hash": {
-                    "sha256": "538badc9424f97f4598334aad4e6695a5ece3877a7e859b517e29aaee6ef9daa"
+                    "sha256": "7aabb00b7434fce2cdee04dabd4378d8e27fcd37a6ee01c1a5581ea067a9cf32"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1710245317000
+        "lastUpdateTimestamp": 1710345326000
     },
     "charged-balls": {
         "metadataCCMod": {
