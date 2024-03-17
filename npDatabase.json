@@ -1490,6 +1490,67 @@
         "stars": 1,
         "lastUpdateTimestamp": 1708512139000
     },
+    "xenons-triblader-mod": {
+        "metadataCCMod": {
+            "id": "xenons-triblader-mod",
+            "version": "1.0.1",
+            "title": {
+                "en_US": "Xenon's \\c[2]Triblader\\c[0] Mod \\i[diff-2]",
+                "de_DE": "Xenon's \\c[2]Triblader\\c[0] Mod \\i[diff-2]",
+                "fr_FR": "Xenon's \\c[2]Triblader\\c[0] Mod \\i[diff-2]",
+                "zh_CN": "Xenon's \\c[2]Triblader\\c[0] Mod \\i[diff-2]",
+                "zh_TW": "Xenon's \\c[2]Triblader\\c[0] Mod \\i[diff-2]",
+                "ja_JP": "Xenon's \\c[2]Triblader\\c[0] Mod \\i[diff-2]",
+                "ko_KR": "Xenon's \\c[2]Triblader\\c[0] Mod \\i[diff-2]"
+            },
+            "description": {
+                "en_US": "Playable Tribladers, PVP, and more!",
+                "de_DE": "Playable Tribladers, PVP, and more!",
+                "fr_FR": "Playable Tribladers, PVP, and more!",
+                "zh_CN": "Playable Tribladers, PVP, and more!",
+                "zh_TW": "Playable Tribladers, PVP, and more!",
+                "ja_JP": "Playable Tribladers, PVP, and more!",
+                "ko_KR": "Playable Tribladers, PVP, and more!"
+            },
+            "icons": {
+                "24": "icon.png"
+            },
+            "repository": "https://github.com/XenonA7/xenons-triblader-mod",
+            "tags": [
+                "player character",
+                "party member",
+                "pvp duel",
+                "arena",
+                "combat arts"
+            ],
+            "authors": [
+                "XenonA7",
+                "krypek",
+                "HeartLychee"
+            ],
+            "prestart": "prestart.js",
+            "plugin": "plugin.js",
+            "dependencies": {
+                "Simplify": ">=2.12.1",
+                "extendable-severed-heads": ">=1.1.0",
+                "cc-alybox": ">=1.0.0",
+                "crosscode": ">=1.4.0",
+                "post-game": ">=1.4.0"
+            }
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/XenonA7/xenons-triblader-mod/archive/refs/tags/1.0.1.zip",
+                "source": "xenons-triblader-mod-1.0.1",
+                "hash": {
+                    "sha256": "f7c86bf095cdd2bc37922c8580558bd0e76dbd8657e58648470fb77ca128a0ae"
+                }
+            }
+        ],
+        "stars": 16,
+        "lastUpdateTimestamp": 1710647575000
+    },
     "xmc-hexacast": {
         "metadataCCMod": {
             "id": "xmc-hexacast",

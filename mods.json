@@ -690,6 +690,21 @@
             },
             "version": "0.3.1"
         },
+        "xenons-triblader-mod": {
+            "name": "Xenon's \\c[2]Triblader\\c[0] Mod \\i[diff-2]",
+            "description": "Playable Tribladers, PVP, and more!",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/XenonA7/xenons-triblader-mod"
+                }
+            ],
+            "archive_link": "https://github.com/XenonA7/xenons-triblader-mod/archive/refs/tags/1.0.1.zip",
+            "hash": {
+                "sha256": "f7c86bf095cdd2bc37922c8580558bd0e76dbd8657e58648470fb77ca128a0ae"
+            },
+            "version": "1.0.1"
+        },
         "xmc-hexacast": {
             "name": "XMC - \\c[2]Hexacast\\c[0] \\c[1](WIP)\\c[0]",
             "description": "Adds a playable hexacast to XMC \\c[1](Mod Incomplete!)\\c[0]",
