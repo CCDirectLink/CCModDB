@@ -880,6 +880,48 @@
         "stars": 0,
         "lastUpdateTimestamp": 1708372178000
     },
+    "french": {
+        "metadataCCMod": {
+            "id": "french",
+            "version": "1.5.0",
+            "title": {
+                "en_US": "French",
+                "fr_FR": "Français",
+                "de_DE": "Französisch"
+            },
+            "description": {
+                "en_US": "CrossCode in french !",
+                "fr_FR": "CrossCode en français !",
+                "de_DE": "CrossCode im Französisch !"
+            },
+            "repository": "https://github.com/L-Sherry/French-CC",
+            "tags": [
+                "language"
+            ],
+            "authors": [
+                "L-Sherry",
+                "KevinBonnoron"
+            ],
+            "icons": {
+                "24": "flaglea.png"
+            },
+            "dependencies": {
+                "localize-me": ">=0.5 <2"
+            },
+            "postload": "mod.js"
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/L-Sherry/French-CC/releases/download/v1.5.0/French-CC-v1.5.0.ccmod",
+                "hash": {
+                    "sha256": "784ec246a62d901c0969b42c1b2fb95f51302db6aa54dc639cee00e55686844c"
+                }
+            }
+        ],
+        "stars": 17,
+        "lastUpdateTimestamp": 1710697554000
+    },
     "input-api": {
         "metadataCCMod": {
             "id": "input-api",

@@ -420,6 +420,21 @@
             },
             "version": "1.2.0"
         },
+        "french": {
+            "name": "French",
+            "description": "CrossCode in french !",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/L-Sherry/French-CC"
+                }
+            ],
+            "archive_link": "https://github.com/L-Sherry/French-CC/releases/download/v1.5.0/French-CC-v1.5.0.ccmod",
+            "hash": {
+                "sha256": "784ec246a62d901c0969b42c1b2fb95f51302db6aa54dc639cee00e55686844c"
+            },
+            "version": "1.5.0"
+        },
         "input-api": {
             "name": "input-api",
             "description": "Allows mods to add rebindable key bindings",
