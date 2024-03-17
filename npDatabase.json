@@ -1047,6 +1047,46 @@
         "stars": 1,
         "lastUpdateTimestamp": 1708374201000
     },
+    "localize-me": {
+        "metadataCCMod": {
+            "id": "localize-me",
+            "version": "0.6.1",
+            "title": {
+                "en_US": "Localize Me",
+                "fr_FR": "Régionalisez-Moi",
+                "de_DE": "Lokalisiert mich"
+            },
+            "description": {
+                "en_US": "Add support for more locales, languages and translations",
+                "fr_FR": "Ajoute la gestion de plus de locales, de languages et de traductions",
+                "de_DE": "Fügt Unterstützung für mehr Lokalen, Sprachen und Übersetzungen hinzu",
+                "ru_RU": "Мод для создания дополнительных региональных настроек, языков и переводов"
+            },
+            "license": "MIT",
+            "repository": "https://github.com/L-Sherry/Localize-Me",
+            "tags": [
+                "library",
+                "language"
+            ],
+            "authors": [
+                "L-Sherry",
+                "dmitmel"
+            ],
+            "postload": "mod.js"
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/L-Sherry/Localize-me/archive/refs/tags/v0.6.1.zip",
+                "source": "Localize-me-0.6.1",
+                "hash": {
+                    "sha256": "9929a522987ec0d7e32163708c089b353f48feeb1f1129ca97ef133bc56f80b6"
+                }
+            }
+        ],
+        "stars": 5,
+        "lastUpdateTimestamp": 1710692661000
+    },
     "lqm-joern-mod": {
         "metadataCCMod": {
             "id": "lqm-joern-mod",

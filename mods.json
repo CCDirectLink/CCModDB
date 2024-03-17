@@ -480,6 +480,22 @@
             },
             "version": "1.0.0"
         },
+        "localize-me": {
+            "name": "Localize Me",
+            "description": "Add support for more locales, languages and translations",
+            "license": "MIT",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/L-Sherry/Localize-Me"
+                }
+            ],
+            "archive_link": "https://github.com/L-Sherry/Localize-me/archive/refs/tags/v0.6.1.zip",
+            "hash": {
+                "sha256": "9929a522987ec0d7e32163708c089b353f48feeb1f1129ca97ef133bc56f80b6"
+            },
+            "version": "0.6.1"
+        },
         "lqm-joern-mod": {
             "name": "Lubkuluk's Joern and \\c[7]Quadroguard\\c[0] Mod \\i[party-BEHAVIOUR-1] (WIP)",
             "description": "Modifies Joern in a way Lubkuluk desires. \\c[1]Is in early access, expect some bugs.\\c[0]",
