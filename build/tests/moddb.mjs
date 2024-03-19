@@ -1,8 +1,8 @@
 // call with mocha
 // require chai
 
-const { expect } = require('chai');
-const fs = require('fs');
+import { expect } from 'chai';
+import fs from 'fs';
 
 describe('ModDB', () => {
 
