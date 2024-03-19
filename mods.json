@@ -234,11 +234,11 @@
                     "url": "https://github.com/krypciak/cc-vim"
                 }
             ],
-            "archive_link": "https://github.com/krypciak/cc-vim/releases/download/v1.5.9/cc-vim-1.5.9.ccmod",
+            "archive_link": "https://github.com/krypciak/cc-vim/releases/download/v1.6.0/cc-vim-1.6.0.ccmod",
             "hash": {
-                "sha256": "ec1d15248739379ff70844fd381c23b9ee20eab5ef1ba16753d47cb3dc170f46"
+                "sha256": "6e4e2aa1959f45c0a268a72328fc5c9d25bf997f6f67b8f7400d45de6c9d9539"
             },
-            "version": "1.5.9"
+            "version": "1.6.0"
         },
         "ccloader": {
             "name": "CCLoader",
