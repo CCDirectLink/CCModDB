@@ -129,11 +129,11 @@
                     "url": "https://github.com/krypciak/cc-blitzkrieg"
                 }
             ],
-            "archive_link": "https://github.com/krypciak/cc-blitzkrieg/releases/download/v0.5.4/cc-blitzkrieg-0.5.4.ccmod",
+            "archive_link": "https://github.com/krypciak/cc-blitzkrieg/releases/download/v0.5.5/cc-blitzkrieg-0.5.5.ccmod",
             "hash": {
-                "sha256": "5edec218c4f6140580445889f9807195a192d6d523d43c1d9eaaaf2ffad5b3a4"
+                "sha256": "8c01ea748ae38b6c8bf2d4c01ab6c80dd1bcedcae3beb411f46c8e6d007fa5c2"
             },
-            "version": "0.5.4"
+            "version": "0.5.5"
         },
         "cc-capped-stats": {
             "name": "Capped Stats",
