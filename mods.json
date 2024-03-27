@@ -324,11 +324,11 @@
                     "url": "https://github.com/CCDirectLink/CrossedEyes"
                 }
             ],
-            "archive_link": "https://github.com/CCDirectLink/CrossedEyes/releases/download/v0.5.8/crossedeyes-0.5.8.ccmod",
+            "archive_link": "https://github.com/CCDirectLink/CrossedEyes/releases/download/v0.5.9/crossedeyes-0.5.9.ccmod",
             "hash": {
-                "sha256": "3544e841fec47f605f2a568df063acc03ebcfd4ef5a67e9dea766eaa670cfe32"
+                "sha256": "b46de2e73642bec1149750ba023e467965aca9ae12504218c5f6e37cf9293cd2"
             },
-            "version": "0.5.8"
+            "version": "0.5.9"
         },
         "cursedcode": {
             "name": "CursedCode",
