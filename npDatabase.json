@@ -240,6 +240,44 @@
         "stars": 31,
         "lastUpdateTimestamp": 1710069756000
     },
+    "arcane-lab": {
+        "metadataCCMod": {
+            "id": "arcane-lab",
+            "version": "0.1.7",
+            "title": "\\c[3]Arcane Lab\\c[0]",
+            "description": ":)",
+            "repository": "https://github.com/2hh8899/ArcaneLab",
+            "tags": [
+                "player character",
+                "party member",
+                "maps",
+                "quests",
+                "boss",
+                "puzzle"
+            ],
+            "authors": [
+                "eisus",
+                "ac2pic",
+                "WatDuhHekBro"
+            ],
+            "dependencies": {
+                "ccloader": "^2.14.1",
+                "extendable-severed-heads": "^1.0.0"
+            },
+            "prestart": "prestart.js"
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/krypciak/ArcaneLab/releases/download/v0.1.7/arcane-lab-0.1.7.ccmod",
+                "hash": {
+                    "sha256": "cfe597c5878a37b8a1f3ea37b3185c04cf2c65a47da3fbaedc7f7fd5d8be3bd7"
+                }
+            }
+        ],
+        "stars": 8,
+        "lastUpdateTimestamp": 1581799284000
+    },
     "blades": {
         "metadataCCMod": {
             "id": "blades",
