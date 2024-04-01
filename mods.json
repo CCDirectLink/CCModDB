@@ -595,11 +595,11 @@
                     "url": "https://github.com/conorlawton/nax-ccuilib"
                 }
             ],
-            "archive_link": "https://github.com/krypciak/nax-ccuilib/releases/download/v1.2.5/nax-ccuilib.ccmod",
+            "archive_link": "https://github.com/krypciak/nax-ccuilib/releases/download/v1.2.6/nax-ccuilib.ccmod",
             "hash": {
-                "sha256": "7576c7c587ac129b1c09c584af280fc4806f8daeae788e0119d17eca28b391b3"
+                "sha256": "77a57af942c9058074bb794f538118ea98b18513fe20c7dd674524c3cb3e2a67"
             },
-            "version": "1.2.5"
+            "version": "1.2.6"
         },
         "nax-module-cache": {
             "name": "Module Cache",
