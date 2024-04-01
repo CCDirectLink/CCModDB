@@ -269,6 +269,45 @@
         "stars": 2,
         "lastUpdateTimestamp": 1708114400000
     },
+    "bobrank": {
+        "metadataCCMod": {
+            "id": "bobrank",
+            "version": "1.0.1-beta",
+            "title": {
+                "en_US": "Bob-Rank",
+                "fr_FR": "Rang Bob",
+                "de_DE": "Bobreihe"
+            },
+            "description": {
+                "en_US": "Adds an unforgettable special effect on S-Rank",
+                "fr_FR": "Ajoute un effet inoubliable au Rang S",
+                "de_DE": "Füg ein unvergesslich Effekt an S-Rank an"
+            },
+            "repository": "https://github.com/L-Sherry/Bob-Rank",
+            "tags": [
+                "fun"
+            ],
+            "authors": [
+                "L-Sherry"
+            ],
+            "icons": {
+                "24": "icon.png"
+            },
+            "plugin": "plugin.js"
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/L-Sherry/Bob-Rank/archive/refs/heads/main.zip",
+                "source": "Bob-Rank-main",
+                "hash": {
+                    "sha256": "d87c2f247c92fcb240208965960e5e8a551ab3d2d2b0d0cfba5857c243371dfe"
+                }
+            }
+        ],
+        "stars": 2,
+        "lastUpdateTimestamp": 1711911112000
+    },
     "cc-blitzkrieg": {
         "metadataCCMod": {
             "id": "cc-blitzkrieg",

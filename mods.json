@@ -120,6 +120,21 @@
             },
             "version": "1.5.0"
         },
+        "bobrank": {
+            "name": "Bob-Rank",
+            "description": "Adds an unforgettable special effect on S-Rank",
+            "page": [
+                {
+                    "name": "GitHub",
+                    "url": "https://github.com/L-Sherry/Bob-Rank"
+                }
+            ],
+            "archive_link": "https://github.com/L-Sherry/Bob-Rank/archive/refs/heads/main.zip",
+            "hash": {
+                "sha256": "d87c2f247c92fcb240208965960e5e8a551ab3d2d2b0d0cfba5857c243371dfe"
+            },
+            "version": "1.0.1-beta"
+        },
         "cc-blitzkrieg": {
             "name": "Blitzkrieg (WIP)",
             "description": "Puzzle solving, incresed puzzle difficuly, puzzle and boss collection tools",
