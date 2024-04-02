@@ -310,7 +310,7 @@
     "bobrank": {
         "metadataCCMod": {
             "id": "bobrank",
-            "version": "1.0.1-beta",
+            "version": "1.0.1",
             "title": {
                 "en_US": "Bob-Rank",
                 "fr_FR": "Rang Bob",
@@ -336,15 +336,14 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/L-Sherry/Bob-Rank/archive/refs/heads/main.zip",
-                "source": "Bob-Rank-main",
+                "url": "https://github.com/L-Sherry/Bob-Rank/releases/download/v1.0.1/Bob-Rank-v1.0.1.ccmod",
                 "hash": {
-                    "sha256": "d87c2f247c92fcb240208965960e5e8a551ab3d2d2b0d0cfba5857c243371dfe"
+                    "sha256": "8de4833b0c42f8089cf6c13f5131f8cf3c6bd637516d56e1aaa4f1b81a894dbd"
                 }
             }
         ],
         "stars": 2,
-        "lastUpdateTimestamp": 1711911112000
+        "lastUpdateTimestamp": 1711969075000
     },
     "cc-blitzkrieg": {
         "metadataCCMod": {
