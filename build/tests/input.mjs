@@ -3,10 +3,10 @@
 
 import { expect } from 'chai';
 import fs from 'fs';
-import {download, streamToBuffer} from '../dist/download.js';
+import {download, streamToBuffer} from '../dist/src/download.js';
 
 describe('InputLocations', () => {
-	const FILE_PATH = '../input-locations.json';
+	const FILE_PATH = './input-locations.json';
 	const jsonData = JSON.parse(fs.readFileSync(FILE_PATH, 'utf8'));
 
 	it('Check json structure', () => {

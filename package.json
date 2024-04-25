@@ -6,9 +6,9 @@
     "scripts": {
         "build": "tsc",
         "watch": "tsc -w",
-        "start": "npm run build && npx node dist/main.js",
-        "test": "npm run build && mocha --parallel --recursive tests/",
-        "format": "prettier ./src -w"
+        "start": "npm run build && npx node build/dist/src/main.js",
+        "test": "npm run build && mocha --parallel --recursive build/tests/",
+        "format": "prettier ./build/src -w"
     },
     "repository": {
         "type": "git",

@@ -5,8 +5,8 @@ import { expect } from 'chai'
 import fs from 'fs';
 
 describe('ModDB', () => {
-	const FILE_INPUT = '../input-locations.json';
-	const FILE_PNP = '../npDatabase.json';
+	const FILE_INPUT = './input-locations.json';
+	const FILE_PNP = './npDatabase.json';
 	const jsonInput = JSON.parse(fs.readFileSync(FILE_INPUT, 'utf8'));
 	const jsonPnp = JSON.parse(fs.readFileSync(FILE_PNP, 'utf8'));
 

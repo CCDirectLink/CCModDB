@@ -49,11 +49,11 @@ export async function has(tag: string): Promise<boolean> {
 }
 
 function createDir(): Promise<void> {
-    return new Promise(resolve => fs.mkdir('./cache/', () => resolve()))
+    return new Promise(resolve => fs.mkdir('./build/cache/', () => resolve()))
 }
 
 function file(tag: string): string {
-    return './cache/' + hash(tag) + '.cache'
+    return './build/cache/' + hash(tag) + '.cache'
 }
 
 function hash(tag: string): string {
