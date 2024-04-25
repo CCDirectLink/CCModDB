@@ -3,7 +3,7 @@ import crypto from 'crypto'
 import fs from 'fs'
 import { download, streamToBuffer } from './download'
 import { ModMetadatasInput, ModMetadatas, addStarsAndTimestampsToResults } from './source'
-import type { LocalizedString, PackageDB, Page, InputLocation, InstallMethod, InstallMethodZip, PkgMetadata, PkgCCMod } from './types'
+import type { LocalizedString, PackageDB, Page, InputLocation, InstallMethod, PkgMetadata, PkgCCMod, InstallMethodZip } from './types'
 
 interface ModDb {
     [name: string]: {
@@ -210,7 +210,6 @@ async function generateInstallations(inputs: InputLocation[]): Promise<InstallMe
 
 async function generateInstallation(input: InputLocation): Promise<InstallMethod[] | InstallMethod | undefined> {
     switch (input.type) {
-        case undefined:
         case 'zip': {
             const data = await streamToBuffer(await download(input.url))
 
