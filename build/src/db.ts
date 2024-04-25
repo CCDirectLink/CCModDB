@@ -4,6 +4,7 @@ import fs from 'fs'
 import { download, streamToBuffer } from './download'
 import { ModMetadatasInput, ModMetadatas, addStarsAndTimestampsToResults } from './source'
 import type { LocalizedString, PackageDB, Page, InputLocation, InstallMethod, PkgMetadata, PkgCCMod, InstallMethodZip, LegacyModDb, ValidPkgCCMod } from './types'
+import { getRepositoryEntry } from './api'
 
 export async function build(packages: ModMetadatasInput[], oldDb?: PackageDB): Promise<PackageDB> {
     const result: PackageDB = {}
@@ -69,26 +70,6 @@ export async function writeMods(db: PackageDB): Promise<void> {
             resolve()
         })
     })
-}
-
-export function getRepositoryEntry(url?: string): Page[] {
-    if (!url) {
-        return []
-    }
-
-    let name: string
-    switch (new URL(url).hostname) {
-        case 'github.com':
-            name = 'GitHub'
-            break
-        case 'gitlab.com':
-            name = 'GitLab'
-            break
-        default:
-            name = "mod's homepage"
-    }
-
-    return [{ name, url }]
 }
 
 export function getStringFromLocalisedString(str: LocalizedString): string {
