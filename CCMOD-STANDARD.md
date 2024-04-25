@@ -38,7 +38,7 @@
 - `cosmetic` - adds any kind of cosmetic things like skins, pets or menu skins
 - `fun` - fun things not necessarily useful
 - `cheats` - do things you're not supposed to do like spawn items or infinite gold
-- `speedrun` - helps speedrunners with speedruns or practise
+- `speedrun` - helps speedrunners with speedruns or practice
 - `widget` - adds a [CCUILib](https://github.com/conorlawton/nax-ccuilib) quick menu widget
 - `language` - adds a new language
 - `accessibility` - makes the game more accessible
