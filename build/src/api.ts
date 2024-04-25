@@ -24,6 +24,6 @@ export function getStringFromLocalisedString(str: LocalizedString, lang = 'en_US
     if (!str) throw new Error(`No mod name found: ${str}`)
     if (typeof str === 'string') return str
     const newStr = str[lang]
-    if (!newStr) throw new Error(`No english mod name found: ${str}`)
+    if (!newStr) throw new Error(`No ${lang} mod name found: ${str}`)
     return newStr
 }
