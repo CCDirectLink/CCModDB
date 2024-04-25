@@ -3,7 +3,7 @@ import crypto from 'crypto'
 import fs from 'fs'
 import { download, streamToBuffer } from './download'
 import { ModMetadatasInput, ModMetadatas, addStarsAndTimestampsToResults } from './source'
-import type { LocalizedString, PackageDB, Page, InputLocation, InstallMethod, PkgMetadata, PkgCCMod, InstallMethodZip, LegacyModDb } from './types'
+import type { LocalizedString, PackageDB, Page, InputLocation, InstallMethod, PkgMetadata, PkgCCMod, InstallMethodZip, LegacyModDb, ValidPkgCCMod } from './types'
 
 export async function build(packages: ModMetadatasInput[], oldDb?: PackageDB): Promise<PackageDB> {
     const result: PackageDB = {}
@@ -108,7 +108,7 @@ function getInstallation(installations: InstallMethod[]): { url: string; hash: {
     return undefined
 }
 
-async function buildEntry(result: PackageDB, meta: PkgMetadata | undefined, ccmod: PkgCCMod | undefined, inputs: InputLocation[]): Promise<void> {
+async function buildEntry(result: PackageDB, meta: PkgMetadata | undefined, ccmod: ValidPkgCCMod | undefined, inputs: InputLocation[]): Promise<void> {
     result[ccmod?.id || meta!.name] = {
         // metadata: meta,
         metadataCCMod: ccmod,
@@ -149,7 +149,7 @@ function checkMeta(meta: PkgMetadata): boolean {
     return true
 }
 
-function checkCCMod(ccmod: PkgCCMod): boolean {
+function checkCCMod(ccmod: PkgCCMod): ccmod is ValidPkgCCMod {
     if (ccmod.dependencies) {
         if (ccmod.dependencies.constructor !== Object) {
             console.warn(`Package has dependencies not an object: ${ccmod.id}`)
