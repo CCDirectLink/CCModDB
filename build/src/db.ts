@@ -3,7 +3,7 @@ import crypto from 'crypto'
 import fs from 'fs'
 import { download, streamToBuffer } from './download'
 import { ModMetadatasInput, ModMetadatas, addStarsAndTimestampsToResults } from './source'
-import type { LocalizedString, PackageDB, InputLocation, InstallMethod, PkgMetadata, PkgCCMod, ValidPkgCCMod } from './types'
+import type { PackageDB, InputLocation, InstallMethod, PkgMetadata, PkgCCMod, ValidPkgCCMod } from './types'
 
 export async function build(packages: ModMetadatasInput[], oldDb?: PackageDB): Promise<PackageDB> {
     const result: PackageDB = {}
@@ -31,14 +31,6 @@ export async function write(db: PackageDB): Promise<void> {
             resolve()
         })
     })
-}
-
-export function getStringFromLocalisedString(str: LocalizedString): string {
-    if (!str) throw new Error(`No mod name found: ${str}`)
-    if (typeof str === 'string') return str
-    const newStr = str.en_US
-    if (!newStr) throw new Error(`No english mod name found: ${str}`)
-    return newStr
 }
 
 async function buildEntry(result: PackageDB, meta: PkgMetadata | undefined, ccmod: ValidPkgCCMod | undefined, inputs: InputLocation[]): Promise<void> {
