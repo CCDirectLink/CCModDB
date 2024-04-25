@@ -178,17 +178,3 @@ export type Package = {
  * Represents the database. Keys in this Record MUST match their respective `value.metadata.name`
  */
 export type PackageDB = Record<string, Package>
-
-export interface LegacyModDb {
-    [name: string]: {
-        name: string
-        description?: string
-        license?: string
-        page: Page[]
-        archive_link: string
-        hash: {
-            sha256: string
-        }
-        version: string
-    }
-}

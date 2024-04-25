@@ -3,8 +3,7 @@ import crypto from 'crypto'
 import fs from 'fs'
 import { download, streamToBuffer } from './download'
 import { ModMetadatasInput, ModMetadatas, addStarsAndTimestampsToResults } from './source'
-import type { LocalizedString, PackageDB, Page, InputLocation, InstallMethod, PkgMetadata, PkgCCMod, InstallMethodZip, LegacyModDb, ValidPkgCCMod } from './types'
-import { getRepositoryEntry } from './api'
+import type { LocalizedString, PackageDB, InputLocation, InstallMethod, PkgMetadata, PkgCCMod, ValidPkgCCMod } from './types'
 
 export async function build(packages: ModMetadatasInput[], oldDb?: PackageDB): Promise<PackageDB> {
     const result: PackageDB = {}
@@ -34,59 +33,12 @@ export async function write(db: PackageDB): Promise<void> {
     })
 }
 
-export async function writeMods(db: PackageDB): Promise<void> {
-    const mods: LegacyModDb = {}
-
-    for (const name of Object.keys(db)) {
-        const pkg = db[name]
-        const meta = pkg.metadata
-        const ccmod = pkg.metadataCCMod
-
-        if (meta?.ccmodType === 'base' || meta?.ccmodType === 'tool') continue
-
-        const install = getInstallation(pkg.installation)
-        if (!install) continue
-
-        mods[name] = {
-            name: getStringFromLocalisedString(ccmod?.title || meta?.ccmodHumanName || name),
-            description: getStringFromLocalisedString(
-                ccmod?.description ||
-                    meta?.description ||
-                    'A mod. (Description not available; contact mod author and have them add a description to their package.json file)'
-            ),
-            license: ccmod?.license || meta?.license,
-            page: getRepositoryEntry(ccmod?.repository || ccmod?.homepage || meta?.homepage) /* old field, should be unused, kept for compatibility */,
-            archive_link: install.url,
-            hash: install.hash,
-            version: ccmod?.version || meta?.version || 'unknown',
-        }
-    }
-
-    return new Promise<void>((resolve, reject) => {
-        fs.writeFile('./mods.json', JSON.stringify({ mods }, null, 4), err => {
-            if (err) {
-                return reject(err)
-            }
-            resolve()
-        })
-    })
-}
-
 export function getStringFromLocalisedString(str: LocalizedString): string {
     if (!str) throw new Error(`No mod name found: ${str}`)
     if (typeof str === 'string') return str
     const newStr = str.en_US
     if (!newStr) throw new Error(`No english mod name found: ${str}`)
     return newStr
-}
-
-function getInstallation(installations: InstallMethod[]): { url: string; hash: { sha256: string } } | undefined {
-    const zip = installations.find(i => i.type === 'zip') as InstallMethodZip
-    if (zip) {
-        return { url: zip.url, hash: zip.hash }
-    }
-
-    return undefined
 }
 
 async function buildEntry(result: PackageDB, meta: PkgMetadata | undefined, ccmod: ValidPkgCCMod | undefined, inputs: InputLocation[]): Promise<void> {
