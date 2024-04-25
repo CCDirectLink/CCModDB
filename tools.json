@@ -59,7 +59,7 @@
     "crosscode-map-editor": {
         "metadataCCMod": {
             "id": "CrossCode Map Editor",
-            "name": "CrossCode Map Editor",
+            "title": "CrossCode Map Editor",
             "version": "1.5.0",
             "description": "A Map Editor for CrossCode.",
             "licence": "MIT",
