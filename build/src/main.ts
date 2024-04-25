@@ -4,6 +4,7 @@ import * as db from './db'
 import fs from 'fs'
 import semver from 'semver'
 import type { PackageDB } from './types'
+import {getStringFromLocalisedString} from './api'
 
 async function main() {
     const GITHUB_TOKEN = process.env['GITHUB_TOKEN']
@@ -35,8 +36,8 @@ async function main() {
                     type,
                     ccmod.id,
                     ccmod.version!,
-                    db.getStringFromLocalisedString(ccmod.title ?? 'unknown'),
-                    db.getStringFromLocalisedString(ccmod.description ?? 'unknown')
+                    getStringFromLocalisedString(ccmod.title ?? 'unknown'),
+                    getStringFromLocalisedString(ccmod.description ?? 'unknown')
                 ]
                 console.log(arr.join('|'))
             }
