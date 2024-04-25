@@ -5,10 +5,10 @@ import fs from 'fs'
 import path from 'path'
 import { getRepositoryEntry } from './db'
 import * as github from '@octokit/openapi-types'
-import type { InputLocation, Package, PackageDB, PkgCCMod, PkgMetadata, ZipInputLocation } from './types'
+import type { InputLocation, Package, PackageDB, PkgMetadata, ValidPkgCCMod, ZipInputLocation } from './types'
 
 export type ModMetadatas = {
-    ccmod?: PkgCCMod
+    ccmod?: ValidPkgCCMod
     meta?: PkgMetadata
 }
 export type ModMetadatasInput = ModMetadatas & { input: InputLocation }
@@ -178,7 +178,7 @@ async function fetchGithub<T>(url: string): Promise<T> {
 
 async function getStarsAndTimestamp(
     meta: PkgMetadata | undefined,
-    ccmod: PkgCCMod | undefined,
+    ccmod: ValidPkgCCMod | undefined,
     fetchTimestamp: boolean
 ): Promise<{ stars: number; timestamp?: number } | undefined> {
     const homepageArr = getRepositoryEntry(ccmod?.repository || meta?.homepage)

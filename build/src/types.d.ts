@@ -91,17 +91,20 @@ type Person = /* PersonDetails | */ string
 //     comment?: LocalizedString
 // }
 
-export type PkgCCMod = {
+/*
+ * All mods in the database must have these fields
+ */
+export type ValidPkgCCMod = {
     id: string
-    version?: Semver
+    version: Semver
 
-    title?: LocalizedString
-    description?: LocalizedString
+    title: LocalizedString
+    description: LocalizedString
     license?: string
     homepage?: string
-    repository?: string
+    repository: string
     tags?: string[]
-    authors?: Person[] | Person
+    authors: Person[] | Person
     icons?: Record<string, FilePath>
 
     dependencies?: Record<string, SemverConstraint>
@@ -115,6 +118,13 @@ export type PkgCCMod = {
     postload?: FilePath
     prestart?: FilePath
     poststart?: FilePath
+}
+
+/**
+ * What ccloader requires for the mod to function
+ */
+export type PkgCCMod = Partial<ValidPkgCCMod> & {
+    id: string
 }
 
 // Represents some set of hashes for something.
@@ -155,7 +165,7 @@ export type Package = {
     // Metadata for the package.
     metadata?: PkgMetadata
     // ccmod.json Metadata for the package.
-    metadataCCMod?: PkgCCMod
+    metadataCCMod?: ValidPkgCCMod
     // Installation methods (try in order)
     installation: InstallMethod[]
     // Number of GitHub stars the project has.
