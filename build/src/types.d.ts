@@ -117,6 +117,7 @@ export type ValidTags =
     | 'dev'
     | 'library'
     | 'base'
+    | 'externaltool'
 /*
  * All mods in the database must have these fields
  */
