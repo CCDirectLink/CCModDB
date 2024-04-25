@@ -11,6 +11,7 @@ export type ZipInputLocation = {
     // If provided, then the package.json file is at this location in the archive, regardless of 'source'.
     // This must pretty much only be used for base packages.
     packageJSONPath?: string
+    // the same as packageJSONPath but for ccmod.json
     ccmodPath?: string
 }
 
@@ -73,6 +74,8 @@ export type PkgMetadata = {
     license?: string
     // Homepage URL (see https://docs.npmjs.com/files/package.json )
     homepage?: string
+    // NPM scripts
+    scripts?: Record<string, string>
 }
 
 type FilePath = string
@@ -80,13 +83,13 @@ type FilePath = string
 type LocalizedString = Record<Locale, string> | string
 type Locale = string
 
-type Person = PersonDetails | string
-interface PersonDetails {
-    name: LocalizedString
-    email?: LocalizedString
-    url?: LocalizedString
-    comment?: LocalizedString
-}
+type Person = /* PersonDetails | */ string
+// interface PersonDetails {
+//     name: LocalizedString
+//     email?: LocalizedString
+//     url?: LocalizedString
+//     comment?: LocalizedString
+// }
 
 export type PkgCCMod = {
     id: string
@@ -98,7 +101,7 @@ export type PkgCCMod = {
     homepage?: string
     repository?: string
     tags?: string[]
-    authors?: Person[]
+    authors?: Person[] | Person
     icons?: Record<string, FilePath>
 
     dependencies?: Record<string, SemverConstraint>
@@ -123,25 +126,24 @@ export type PkgHash = {
 /*
  * Represents a method of installing the package.
  */
-export type InstallMethod = InstallMethodCommon | InstallMethodZip
+export type InstallMethod = InstallMethodZip
 
-/*
- * The common fields between all PackageDBInstallationMethods.
- */
-export type InstallMethodCommon = {
-    // exports the type of installation method. ALWAYS CHECK THIS.
-    type: string
+export type InstallMethodBase = {
+    // The URL of the file to download.
+    // (example: "https://github.com/CCDirectLink/CCLoader/archive/master.zip")
+    // (example: "https://github.com/CCDirectLink/CC-ChargedBalls/releases/download/1.0.0/ChargedBalls.ccmod")
+    url: string
+    // The hash of the file at url.
+    hash: PkgHash
     // If present, constrains the platform this method may be used for.
     platform?: NodeOSPlatform
 }
 
-export type InstallMethodZip = InstallMethodCommon & {
+/*
+ * Includes .zip and .ccmod files
+ */
+export type InstallMethodZip = InstallMethodBase & {
     type: 'zip'
-    // The URL of the ZIP to download. (example: "https://github.com/CCDirectLink/CCLoader/archive/master.zip")
-    // or the URL of the ccmod to download. (example: "https://github.com/CCDirectLink/CC-ChargedBalls/releases/download/1.0.0/ChargedBalls.ccmod")
-    url: string
-    // The hash of the file at url.
-    hash: PkgHash
     // If provided, the subdirectory of the ZIP that is the root of the extraction (example: "CCLoader-master")
     source?: string
 }
@@ -152,10 +154,13 @@ export type InstallMethodZip = InstallMethodCommon & {
 export type Package = {
     // Metadata for the package.
     metadata?: PkgMetadata
+    // ccmod.json Metadata for the package.
     metadataCCMod?: PkgCCMod
     // Installation methods (try in order)
     installation: InstallMethod[]
+    // Number of GitHub stars the project has.
     stars?: number
+    // UNIX timestamp of the project repository last push date.
     lastUpdateTimestamp?: number
 }
 
