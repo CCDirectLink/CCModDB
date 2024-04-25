@@ -3,6 +3,7 @@ import * as source from './source'
 import * as db from './db'
 import fs from 'fs'
 import semver from 'semver'
+import type { PackageDB } from './types'
 
 async function main() {
     const GITHUB_TOKEN = process.env['GITHUB_TOKEN']

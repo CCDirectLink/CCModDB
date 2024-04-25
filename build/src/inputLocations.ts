@@ -1,4 +1,5 @@
 import fs from 'fs'
+import type { InputLocations } from './types'
 
 export async function parse(): Promise<InputLocations> {
     return JSON.parse((await read()) as any)
