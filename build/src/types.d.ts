@@ -172,7 +172,7 @@ export type PackageDB = Record<string, Package>
 export interface LegacyModDb {
     [name: string]: {
         name: string
-        description: string
+        description?: string
         license?: string
         page: Page[]
         archive_link: string
