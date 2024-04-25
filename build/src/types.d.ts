@@ -92,6 +92,32 @@ type Person = /* PersonDetails | */ string
 // }
 
 /*
+ * Mod tags that are in the ccmod.json standard
+ */
+export type ValidTags =
+    | 'QoL'
+    | 'player character'
+    | 'party member'
+    | 'combat arts'
+    | 'pvp duel'
+    | 'arena'
+    | 'dungeon'
+    | 'quests'
+    | 'maps'
+    | 'boss'
+    | 'puzzle'
+    | 'ng+'
+    | 'cosmetic'
+    | 'fun'
+    | 'cheats'
+    | 'speedrun'
+    | 'widget'
+    | 'language'
+    | 'accessibility'
+    | 'dev'
+    | 'library'
+    | 'base'
+/*
  * All mods in the database must have these fields
  */
 export type ValidPkgCCMod = {
@@ -103,7 +129,7 @@ export type ValidPkgCCMod = {
     license?: string
     homepage?: string
     repository: string
-    tags?: string[]
+    tags?: ValidTags[]
     authors: Person[] | Person
     icons?: Record<string, FilePath>
 
