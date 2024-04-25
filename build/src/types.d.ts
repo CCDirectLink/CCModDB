@@ -1,7 +1,6 @@
-declare type InputLocation = ZipInputLocation
+export type InputLocation = ZipInputLocation
 
-
-declare type ZipInputLocation = {
+export type ZipInputLocation = {
     type?: 'zip'
     // The URL of the ZIP file.
     url: string
@@ -16,14 +15,14 @@ declare type ZipInputLocation = {
 }
 
 // The content of the input-locations.json file.
-declare type InputLocations = InputLocation[]
+export type InputLocations = InputLocation[]
 
 // An os.platform() value (see https://nodejs.org/api/os.html#os_os_platform )
-declare type NodeOSPlatform = string
+export type NodeOSPlatform = string
 
 // Imported from https://github.com/CCDirectLink/CLS/blob/master/proposals/1/standardized-mod-format.md
-declare type Semver = string
-declare type SemverConstraint = string
+export type Semver = string
+export type SemverConstraint = string
 // StandardizedModPackage is retroactively made a subclass of PackageDBPackageMetadata.
 
 /*
@@ -32,12 +31,12 @@ declare type SemverConstraint = string
  *  and special-case UI to be user-friendly, such as CCLoader and NWJS upgrades.
  * (In particular, CrossCode, CCLoader and NWJS upgrades require custom detection methods for their local copies.)
  */
-declare type PackageType = 'mod' | 'tool' | 'base'
+export type PackageType = 'mod' | 'tool' | 'base'
 
 /*
  * A page relating to the mod.
  */
-declare type Page = {
+export type Page = {
     // The name of the page. For the canonical GitHub or GitLab page, this must be "GitHub" / "GitLab".
     name: string
     url: string
@@ -51,7 +50,7 @@ declare type Page = {
  * So it's very important to keep the package metadata format safe for NPM to read,
  *  and that means ensuring all package metadata is either avoided by NPM or understood by it.
  */
-declare type PkgMetadata = {
+export type PkgMetadata = {
     // This is the unique ID for this package, used for dependency handling. Note that this DOES NOT have to avoid collision with the NPM registry.
     name: string
     // If not provided, defaults to "mod".
@@ -89,7 +88,7 @@ interface PersonDetails {
     comment?: LocalizedString
 }
 
-declare type PkgCCMod = {
+export type PkgCCMod = {
     id: string
     version?: Semver
 
@@ -116,7 +115,7 @@ declare type PkgCCMod = {
 }
 
 // Represents some set of hashes for something.
-declare type PkgHash = {
+export type PkgHash = {
     // Lowercase hexadecimal-encoded SHA-256 hash of the data.
     sha256: string
 }
@@ -124,19 +123,19 @@ declare type PkgHash = {
 /*
  * Represents a method of installing the package.
  */
-declare type InstallMethod = InstallMethodCommon | InstallMethodZip
+export type InstallMethod = InstallMethodCommon | InstallMethodZip
 
 /*
  * The common fields between all PackageDBInstallationMethods.
  */
-declare type InstallMethodCommon = {
-    // Declares the type of installation method. ALWAYS CHECK THIS.
+export type InstallMethodCommon = {
+    // exports the type of installation method. ALWAYS CHECK THIS.
     type: string
     // If present, constrains the platform this method may be used for.
     platform?: NodeOSPlatform
 }
 
-declare type InstallMethodZip = InstallMethodCommon & {
+export type InstallMethodZip = InstallMethodCommon & {
     type: 'zip'
     // The URL of the ZIP to download. (example: "https://github.com/CCDirectLink/CCLoader/archive/master.zip")
     // or the URL of the ccmod to download. (example: "https://github.com/CCDirectLink/CC-ChargedBalls/releases/download/1.0.0/ChargedBalls.ccmod")
@@ -150,7 +149,7 @@ declare type InstallMethodZip = InstallMethodCommon & {
 /*
  * Represents a package in the database.
  */
-declare type Package = {
+export type Package = {
     // Metadata for the package.
     metadata?: PkgMetadata
     metadataCCMod?: PkgCCMod
@@ -163,4 +162,4 @@ declare type Package = {
 /*
  * Represents the database. Keys in this Record MUST match their respective `value.metadata.name`
  */
-declare type PackageDB = Record<string, Package>
+export type PackageDB = Record<string, Package>

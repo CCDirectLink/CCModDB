@@ -3,6 +3,7 @@ import crypto from 'crypto'
 import fs from 'fs'
 import { download, streamToBuffer } from './download'
 import { ModMetadatasInput, ModMetadatas, addStarsAndTimestampsToResults } from './source'
+import type { LocalizedString, PackageDB, Page, InputLocation, InstallMethod, InstallMethodZip, PkgMetadata, PkgCCMod } from './types'
 
 interface ModDb {
     [name: string]: {

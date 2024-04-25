@@ -5,6 +5,7 @@ import fs from 'fs'
 import path from 'path'
 import { getRepositoryEntry } from './db'
 import * as github from '@octokit/openapi-types'
+import type { InputLocation, Package, PackageDB, PkgCCMod, PkgMetadata, ZipInputLocation } from './types'
 
 export type ModMetadatas = {
     ccmod?: PkgCCMod
