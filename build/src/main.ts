@@ -19,7 +19,6 @@ async function main() {
     const oldPkgDb: PackageDB | undefined = fs.existsSync('./npDatabase.json') ? JSON.parse(fs.readFileSync('./npDatabase.json').toString()) : undefined
     const pkgDb = await db.build(packages, oldPkgDb)
     await db.write(pkgDb)
-    await db.writeMods(pkgDb)
 
     if (oldPkgDb) {
         for (const name in pkgDb) {

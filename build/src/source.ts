@@ -3,9 +3,9 @@ import yauzl from 'yauzl'
 import { download, streamToBuffer } from './download'
 import fs from 'fs'
 import path from 'path'
-import { getRepositoryEntry } from './db'
 import * as github from '@octokit/openapi-types'
 import type { InputLocation, Package, PackageDB, PkgMetadata, ValidPkgCCMod, ZipInputLocation } from './types'
+import { getRepositoryEntry } from './api'
 
 export type ModMetadatas = {
     ccmod?: ValidPkgCCMod
