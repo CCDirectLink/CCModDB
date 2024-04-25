@@ -1,59 +1,90 @@
 {
-    "tools" : {
-        "SpericalViewer" : {
-            "name" : "SpericalViewer",
-            "description" : "Viewer for CrossCode content.",
-            "license" : "MIT",
-            "page" : [{ "name" : "GitHub", "url" : "https://github.com/CCDirectLink/SpericalViewer" }],
-            "archive_link" : "https://github.com/CCDirectLink/SpericalViewer/archive/v0.3.7.zip",
-            "hash" : { "sha256" : "AAC16A0C9169BAAE554783CA89A5A890329334E992343A7735313AE076099F2C" },
-            "version" : "0.3.7"
+    "SpericalViewer": {
+        "metadataCCMod": {
+            "id": "SpericalViewer",
+            "version": "0.3.7",
+            "title": "SpericalViewer",
+            "description": "Viewer for CrossCode content.",
+            "license": "MIT",
+            "repository": "https://github.com/CCDirectLink/SpericalViewer",
+            "tags": ["externaltool"],
+            "authors": ["streetclaw", "2767mr", "ac2pic", "omegalink12"]
         },
-        "CCUpdaterCLI" : {
-            "name" : "CCUpdaterCLI",
-            "description" : "A simple tool to install, update and remove CCLoader mods.",
-            "license" : null,
-            "page" : [{ "name" : "GitHub", "url" : "https://github.com/CCDirectLink/CCUpdaterCLI" }],
-            "archive_link" : "https://github.com/CCDirectLink/CCUpdaterCLI/releases/download/v1.1.0/ccmu.exe",
-            "hash" : { "sha256" : "87DA1A0BA2463A107AA07EA8A1B3E9B59CD6748CFA087CA495D250942CED517D" },
-            "version" : "1.1.0"
+        "installation": [
+            {
+                "type": "externaltool",
+                "url": "https://github.com/CCDirectLink/SpericalViewer/archive/v0.3.7.zip",
+                "hash": { "sha256": "aac16a0c9169baae554783ca89a5a890329334e992343a7735313ae076099f2c" }
+            }
+        ]
+    },
+    "ccloader": {
+        "metadataCCMod": {
+            "id": "ccloader",
+            "title": "CCLoader",
+            "version": "2.23.2",
+            "description": "Modloader for CrossCode. This or a similar modloader is needed for most mods.",
+            "licence": "MIT",
+            "tags": ["externaltool"],
+            "repository": "https://github.com/CCDirectLink/CCLoader",
+            "authors": ["2767mr", "dmitmel", "ac2pic", "Vankerkom", "20kdc", "lexisother", "L-Sherry", "elluminance", "omegalink12", "Silverfeelin"]
         },
-        "CCLoader" : {
-            "name" : "CCLoader",
-            "description" : "A modloader for CrossCode.",
-            "licence" : "MIT",
-            "page" : [{ "name" : "GitHub", "url" : "https://github.com/CCDirectLink/CCLoader" }],
-            "archive_link" : "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.22.1/v2.12.1.zip",
-            "hash" : { "sha256" : "7ab3d850b5368dda4593318fd3e957e0bc46128e25844eeda97ca0eec16b343a" },
-            "version" : "2.22.1",
-            "subVersion" : "2.12.1"
+        "installation": [
+            {
+                "type": "externaltool",
+                "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.23.3/v2.13.0.zip",
+                "hash": { "sha256": "f7f7f9c7229985dfb62ac58129799070b6ae0114db043e343f6b20c34a6ff3cd" }
+            }
+        ]
+    },
+    "CCAnimationEditor": {
+        "metadataCCMod": {
+            "id": "CCAnimationEditor",
+            "title": "CCAnimationEditor",
+            "version": "0.2.8",
+            "description": "Animation editor for CrossCode.",
+            "licence": "ISC",
+            "tags": ["externaltool"],
+            "repository": "https://github.com/gregnk/CCAnimationEditor",
+            "authors": ["gregnk"]
         },
-        "CCAnimationEditor" : {
-            "name" : "CCAnimationEditor",
-            "description" : "Animation editor for CrossCode.",
-            "licence" : "ISC",
-            "page" : [{ "name" : "GitHub", "url" : "https://github.com/gregnk/ccanimationeditor" }],
-            "archive_link" : "https://github.com/gregnk/CCAnimationEditor/releases/download/v0.2.7/CCAnimationEditor-v0.2.7.zip",
-            "hash" : { "sha256" : "3cb01c6427c31bb78db5d7b076a8a0b9d058345fdb6a23771c38f83afcbb6bbd" },
-            "version" : "0.2.7"
+        "installation": [
+            {
+                "type": "externaltool",
+                "url": "https://github.com/gregnk/CCAnimationEditor/releases/download/v0.2.8/CCAnimationEditor-v0.2.8.zip",
+                "hash": { "sha256": "c1e2da297c88ce679a6d985ba10751ecb657138af03d0387a4fc8042cfcf460b" }
+            }
+        ]
+    },
+    "crosscode-map-editor": {
+        "metadataCCMod": {
+            "id": "CrossCode Map Editor",
+            "name": "CrossCode Map Editor",
+            "version": "1.5.0",
+            "description": "A Map Editor for CrossCode.",
+            "licence": "MIT",
+            "tags": ["externaltool"],
+            "repository": "https://github.com/CCDirectLink/crosscode-map-editor",
+            "authors": ["Vegita2", "2767mr", "ac2pic", "yellowsink", "elluminance", "krypciak", "dmitmel", "keanuplayz", "Fusion86", "Nnubes256"]
         },
-        "crosscode-map-editor" : {
-            "name" : "CrossCode Map Editor",
-            "description" : "A Map Editor for CrossCode.",
-            "licence" : "MIT",
-            "page" : [{ "name" : "GitHub", "url" : "https://github.com/CCDirectLink/crosscode-map-editor" }],
-            "archive_link" : "https://github.com/CCDirectLink/crosscode-map-editor/releases/download/v0.8.0/cc-map-editor-0.8.0-win.exe",
-            "hash" : { "sha256" : "52a85d244cfcd3428b03835422cc74882254b6a66700540650a252a832665106" },
-            "version" : "0.8.0"
-        },
-        "CCAreaEditor" : {
-            "name" : "CCAreaEditor",
-            "description" : "A CrossCode modding tool that allows you to graphically edit areas.",
-            "licence" : "MIT",
-            "page" : [{ "name" : "GitHub", "url" : "https://github.com/WatDuhHekBro/CCAreaEditor" }],
-            "archive_link" : "https://github.com/WatDuhHekBro/CCAreaEditor/releases/download/v1.0.6/CCAE-v1.0.6.zip",
-            "hash" : { "sha256" : "17dbd9266edd451c252de5bf778efde9a1eb6d4e80c8d9c528407030ab2a859c" },
-            "version" : "1.0.6"
+        "installation": {
+            "type": "externaltool",
+            "url": "https://github.com/CCDirectLink/crosscode-map-editor/releases/download/v1.5.0/cc-map-editor-1.5.0-win.exe",
+            "hash": { "sha256": "5ff589127a29c0e7dad3f3a4eba107c30dff1824fddd3b03558b78c2eeca140c" },
+            "platform": "win32"
         }
+    },
+    "CCAreaEditor": {
+        "metadataCCMod": {
+            "id": "CCAreaEditor",
+            "title": "CCAreaEditor",
+            "version": "1.0.6",
+            "description": "A CrossCode modding tool that allows you to graphically edit areas. https://watduhhekbro.github.io/CCAreaEditor/",
+            "licence": "MIT",
+            "tags": ["externaltool"],
+            "repository": "https://github.com/WatDuhHekBro/CCAreaEditor",
+            "authors": ["WatDuhHekBro"]
+        },
+        "installation": []
     }
 }

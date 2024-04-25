@@ -1,4 +1,4 @@
-export type InputLocation = ZipInputLocation
+export type InputLocation = ZipInputLocation | ExternalToolInputLocation
 
 export type ZipInputLocation = {
     type?: 'zip'
@@ -15,6 +15,12 @@ export type ZipInputLocation = {
     ccmodPath?: string
 }
 
+export type ExternalToolInputLocation = {
+    type?: 'externaltool'
+    // The URL of the ZIP file.
+    url: string
+}
+
 // The content of the input-locations.json file.
 export type InputLocations = InputLocation[]
 
@@ -27,6 +33,7 @@ export type SemverConstraint = string
 // StandardizedModPackage is retroactively made a subclass of PackageDBPackageMetadata.
 
 /*
+ * @deprecated
  * Represents a kind of package.
  * Please be aware that "base" is reserved for packages that absolutely require special-case local detection,
  *  and special-case UI to be user-friendly, such as CCLoader and NWJS upgrades.
@@ -44,6 +51,7 @@ export type Page = {
 }
 
 /*
+ * @deprecated
  * This is related to the supported package metadata for mods, on purpose.
  * Note, however, that the 'dependencies' key is NOT supported.
  * Also note the care to try not to reinvent NPM fields, but also to avoid them when inappropriate.
@@ -183,6 +191,12 @@ export type InstallMethodZip = InstallMethodBase & {
     type: 'zip'
     // If provided, the subdirectory of the ZIP that is the root of the extraction (example: "CCLoader-master")
     source?: string
+}
+/*
+ * Includes .zip and .ccmod files
+ */
+export type InstallMethodExternalTool = InstallMethodBase & {
+    type: 'externaltool'
 }
 
 /*
