@@ -3,21 +3,7 @@ import crypto from 'crypto'
 import fs from 'fs'
 import { download, streamToBuffer } from './download'
 import { ModMetadatasInput, ModMetadatas, addStarsAndTimestampsToResults } from './source'
-import type { LocalizedString, PackageDB, Page, InputLocation, InstallMethod, PkgMetadata, PkgCCMod, InstallMethodZip } from './types'
-
-interface ModDb {
-    [name: string]: {
-        name: string
-        description: string
-        license?: string
-        page: Page[]
-        archive_link: string
-        hash: {
-            sha256: string
-        }
-        version: string
-    }
-}
+import type { LocalizedString, PackageDB, Page, InputLocation, InstallMethod, PkgMetadata, PkgCCMod, InstallMethodZip, LegacyModDb } from './types'
 
 export async function build(packages: ModMetadatasInput[], oldDb?: PackageDB): Promise<PackageDB> {
     const result: PackageDB = {}
@@ -48,7 +34,7 @@ export async function write(db: PackageDB): Promise<void> {
 }
 
 export async function writeMods(db: PackageDB): Promise<void> {
-    const mods: ModDb = {}
+    const mods: LegacyModDb = {}
 
     for (const name of Object.keys(db)) {
         const pkg = db[name]
