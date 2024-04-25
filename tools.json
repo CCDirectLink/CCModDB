@@ -79,9 +79,10 @@
             "id": "CCAreaEditor",
             "title": "CCAreaEditor",
             "version": "1.0.6",
-            "description": "A CrossCode modding tool that allows you to graphically edit areas. https://watduhhekbro.github.io/CCAreaEditor/",
+            "description": "A CrossCode modding tool that allows you to graphically edit areas.",
             "licence": "MIT",
             "tags": ["externaltool"],
+            "homepage": "https://watduhhekbro.github.io/CCAreaEditor",
             "repository": "https://github.com/WatDuhHekBro/CCAreaEditor",
             "authors": ["WatDuhHekBro"]
         },
