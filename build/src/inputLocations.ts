@@ -6,7 +6,7 @@ export async function parse(): Promise<InputLocations> {
 
 function read(): Promise<Buffer> {
     return new Promise<Buffer>((resolve, reject) => {
-        fs.readFile('../input-locations.json', (err, data) => {
+        fs.readFile('./input-locations.json', (err, data) => {
             if (err) {
                 reject(err)
             }

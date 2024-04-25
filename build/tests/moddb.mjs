@@ -6,7 +6,7 @@ import fs from 'fs';
 
 describe('ModDB', () => {
 
-	const FILE_PATH = '../mods.json';
+	const FILE_PATH = './mods.json';
 	const jsonData = JSON.parse(fs.readFileSync(FILE_PATH, 'utf8'));
 
 	it('Check json structure', () => {

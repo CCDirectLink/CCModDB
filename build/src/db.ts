@@ -37,7 +37,7 @@ export async function build(packages: ModMetadatasInput[], oldDb?: PackageDB): P
 
 export async function write(db: PackageDB): Promise<void> {
     return new Promise<void>((resolve, reject) => {
-        fs.writeFile('../npDatabase.json', JSON.stringify(db, null, 4), err => {
+        fs.writeFile('./npDatabase.json', JSON.stringify(db, null, 4), err => {
             if (err) {
                 return reject(err)
             }
@@ -75,7 +75,7 @@ export async function writeMods(db: PackageDB): Promise<void> {
     }
 
     return new Promise<void>((resolve, reject) => {
-        fs.writeFile('../mods.json', JSON.stringify({ mods }, null, 4), err => {
+        fs.writeFile('./mods.json', JSON.stringify({ mods }, null, 4), err => {
             if (err) {
                 return reject(err)
             }

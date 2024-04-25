@@ -35,7 +35,7 @@ export async function get(input: InputLocation): Promise<ModMetadatasInput> {
     const iconPath = getModIconPath(pkg)
     if (iconPath) {
         const imgData = await fileFetchFunc(input, iconPath, false)
-        fs.writeFile(`../icons/${pkg.ccmod!.id}.png`, imgData, err => {
+        fs.writeFile(`./icons/${pkg.ccmod!.id}.png`, imgData, err => {
             if (err) throw err
         })
     }

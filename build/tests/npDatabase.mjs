@@ -5,11 +5,11 @@ import { expect } from 'chai';
 import fs from 'fs';
 import semver from 'semver';
 import crypto from 'crypto';
-import {download, streamToBuffer} from '../dist/download.js';
+import {download, streamToBuffer} from '../dist/src/download.js';
 
 describe('NpDatabase', () => {
 
-	const FILE_PATH = '../npDatabase.json';
+	const FILE_PATH = './npDatabase.json';
 	const jsonData = JSON.parse(fs.readFileSync(FILE_PATH, 'utf8'));
 
 	it('Check json structure', () => {

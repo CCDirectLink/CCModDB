@@ -15,7 +15,7 @@ async function main() {
     }
     const packages = await Promise.all(promises)
 
-    const oldPkgDb: PackageDB | undefined = fs.existsSync('../npDatabase.json') ? JSON.parse(fs.readFileSync('../npDatabase.json').toString()) : undefined
+    const oldPkgDb: PackageDB | undefined = fs.existsSync('./npDatabase.json') ? JSON.parse(fs.readFileSync('./npDatabase.json').toString()) : undefined
     const pkgDb = await db.build(packages, oldPkgDb)
     await db.write(pkgDb)
     await db.writeMods(pkgDb)

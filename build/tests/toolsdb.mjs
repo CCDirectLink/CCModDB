@@ -6,7 +6,7 @@ import fs from 'fs';
 
 describe('ToolsDB', () => {
 
-	const FILE_PATH = '../tools.json';
+	const FILE_PATH = './tools.json';
 	const HASH_TYPE = 'sha256';
 	const jsonData = JSON.parse(fs.readFileSync(FILE_PATH, 'utf8'));
 
