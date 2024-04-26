@@ -1,7 +1,7 @@
 export type InputLocation = ZipInputLocation | ExternalToolInputLocation
 
 export type ZipInputLocation = {
-    type?: 'zip'
+    type?: 'zip' | undefined
     // The URL of the ZIP file.
     url: string
     // The subdirectory in which the package.json file is kept.
@@ -16,7 +16,7 @@ export type ZipInputLocation = {
 }
 
 export type ExternalToolInputLocation = {
-    type?: 'externaltool'
+    type: 'externaltool'
     // The URL of the ZIP file.
     url: string
 }
