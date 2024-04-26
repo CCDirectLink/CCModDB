@@ -16,7 +16,8 @@
                 "url": "https://github.com/CCDirectLink/SpericalViewer/archive/v0.3.7.zip",
                 "hash": { "sha256": "aac16a0c9169baae554783ca89a5a890329334e992343a7735313ae076099f2c" }
             }
-        ]
+        ],
+        "stars": 2
     },
     "ccloader": {
         "metadataCCMod": {
@@ -35,7 +36,8 @@
                 "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.23.3/v2.13.0.zip",
                 "hash": { "sha256": "f7f7f9c7229985dfb62ac58129799070b6ae0114db043e343f6b20c34a6ff3cd" }
             }
-        ]
+        ],
+        "stars": 31
     },
     "CCAnimationEditor": {
         "metadataCCMod": {
@@ -54,7 +56,8 @@
                 "url": "https://github.com/gregnk/CCAnimationEditor/releases/download/v0.2.8/CCAnimationEditor-v0.2.8.zip",
                 "hash": { "sha256": "c1e2da297c88ce679a6d985ba10751ecb657138af03d0387a4fc8042cfcf460b" }
             }
-        ]
+        ],
+        "stars": 3
     },
     "crosscode-map-editor": {
         "metadataCCMod": {
@@ -74,7 +77,8 @@
                 "hash": { "sha256": "5ff589127a29c0e7dad3f3a4eba107c30dff1824fddd3b03558b78c2eeca140c" },
                 "platform": "win32"
             }
-        ]
+        ],
+        "stars": 46
     },
     "CCAreaEditor": {
         "metadataCCMod": {
@@ -88,6 +92,7 @@
             "repository": "https://github.com/WatDuhHekBro/CCAreaEditor",
             "authors": ["WatDuhHekBro"]
         },
-        "installation": []
+        "installation": [],
+        "stars": 1
     }
 }
