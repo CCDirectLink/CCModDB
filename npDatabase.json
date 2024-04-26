@@ -268,7 +268,7 @@
     "arcane-lab": {
         "metadataCCMod": {
             "id": "arcane-lab",
-            "version": "0.1.7",
+            "version": "0.1.8",
             "title": "\\c[3]Arcane Lab\\c[0]",
             "description": ":)",
             "repository": "https://github.com/2hh8899/ArcaneLab",
@@ -287,16 +287,20 @@
             ],
             "dependencies": {
                 "ccloader": "^2.14.1",
-                "extendable-severed-heads": "^1.0.0"
+                "item-api": "^0.*",
+                "extendable-severed-heads": "^1.1.0",
+                "modifier-api": "^0.1.0",
+                "cc-alybox": ">=1.0.0"
             },
-            "prestart": "prestart.js"
+            "prestart": "prestart.js",
+            "poststart": "poststart.js"
         },
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/ArcaneLab/releases/download/v0.1.7/arcane-lab-0.1.7.ccmod",
+                "url": "https://github.com/krypciak/ArcaneLab/releases/download/v0.1.8/arcane-lab-0.1.8.ccmod",
                 "hash": {
-                    "sha256": "cfe597c5878a37b8a1f3ea37b3185c04cf2c65a47da3fbaedc7f7fd5d8be3bd7"
+                    "sha256": "7ebf872f7b058f87a2f1bd5f0f9ee481e7085d02cd292b7da0691d3e70597061"
                 }
             }
         ],
