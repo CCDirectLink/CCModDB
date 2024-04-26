@@ -370,6 +370,34 @@
         "stars": 2,
         "lastUpdateTimestamp": 1711969075000
     },
+    "cc-alybox": {
+        "metadataCCMod": {
+            "id": "cc-alybox",
+            "version": "1.0.0",
+            "title": "AlyBox",
+            "description": "Library mod containing various extra features and fixes.",
+            "repository": "https://github.com/lexisother/cc-alybox",
+            "tags": [
+                "library"
+            ],
+            "authors": "lexisother",
+            "prestart": "src/_prestart.js",
+            "dependencies": {
+                "ccloader": ">=2.22.1"
+            }
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/lexisother/cc-alybox/releases/download/v1.0.0/cc-alybox.ccmod",
+                "hash": {
+                    "sha256": "5ed22aa552404e5a6a6eac083b9fc76603b2be2e5f4621e45cc6398a482b8abe"
+                }
+            }
+        ],
+        "stars": 1,
+        "lastUpdateTimestamp": 1714119354000
+    },
     "cc-blitzkrieg": {
         "metadataCCMod": {
             "id": "cc-blitzkrieg",
