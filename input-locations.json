@@ -55,5 +55,6 @@
     { "url": "https://github.com/L-Sherry/Localize-me/archive/refs/tags/v0.6.1.zip" },
     { "url": "https://github.com/L-Sherry/French-CC/releases/download/v1.5.0/French-CC-v1.5.0.ccmod" },
     { "url": "https://github.com/L-Sherry/Bob-Rank/releases/download/v1.0.1/Bob-Rank-v1.0.1.ccmod" },
-    { "url": "https://github.com/krypciak/ArcaneLab/releases/download/v0.1.7/arcane-lab-0.1.7.ccmod" }
+    { "url": "https://github.com/krypciak/ArcaneLab/releases/download/v0.1.7/arcane-lab-0.1.7.ccmod" },
+    { "url": "https://github.com/elluminance/cc-c-edition/releases/download/v1.0.0/cc-c-edition.ccmod" }
 ]
