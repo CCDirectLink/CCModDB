@@ -121,6 +121,7 @@ async function generateInstallations(inputs: InputLocation[]): Promise<InstallMe
 
 async function generateInstallation(input: InputLocation): Promise<InstallMethod[] | InstallMethod | undefined> {
     switch (input.type) {
+        case undefined:
         case 'zip': {
             const data = await streamToBuffer(await download(input.url))
 
