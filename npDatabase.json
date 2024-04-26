@@ -770,6 +770,34 @@
         "stars": 0,
         "lastUpdateTimestamp": 1713626436000
     },
+    "ccpostdlc": {
+        "metadataCCMod": {
+            "id": "ccpostdlc",
+            "version": "1.0.0",
+            "title": "CCPostDLC",
+            "description": "Adjusts the game to continue after completing the DLC.",
+            "repository": "https://github.com/lexisother/CCPostDLC",
+            "tags": [
+                "QoL"
+            ],
+            "authors": "lexisother",
+            "dependencies": {
+                "crosscode": ">=1.4.0",
+                "post-game": ">=1.4.0"
+            }
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/lexisother/CCPostDLC/releases/download/v1.0.0/CCPostDLC.ccmod",
+                "hash": {
+                    "sha256": "de939232f9aa884d1986dd4f97023b5f68a2c41b8325e2139ab9a8c015879739"
+                }
+            }
+        ],
+        "stars": 0,
+        "lastUpdateTimestamp": 1714119349000
+    },
     "charged-balls": {
         "metadataCCMod": {
             "id": "charged-balls",
