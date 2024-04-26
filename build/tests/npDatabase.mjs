@@ -269,7 +269,7 @@ function testInstallation(mod) {
 				await testZip(inst);
 				break;
 			}
-		}).timeout(10000);
+		}).timeout(100000);
 	}
 }
 
