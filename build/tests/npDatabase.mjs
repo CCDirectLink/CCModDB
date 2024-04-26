@@ -26,10 +26,30 @@ describe('NpDatabase', () => {
 			testPackage(jsonData, jsonData[mod], mod);
 		}
 	});
-
 });
 
-function testPackage(jsonData, mod, name) {
+describe('ToolsDB', () => {
+
+	const FILE_PATH = './tools.json';
+	const jsonData = JSON.parse(fs.readFileSync(FILE_PATH, 'utf8'));
+
+	it('Check json structure', () => {
+		expect(typeof jsonData === 'object',
+			'Json not valid: Not an object').to.be.true;
+		expect(Array.isArray(jsonData),
+			'Json not valid: Not an object').to.be.false;
+		expect(jsonData !== null,
+			'Json not valid: Not an object').to.be.true;
+	});
+
+	describe('tools', () => {
+		for (let mod of Object.keys(jsonData)) {
+			testPackage(jsonData, jsonData[mod], mod);
+		}
+	});
+});
+
+export function testPackage(jsonData, mod, name) {
 	describe(`Package: ${name}`, () => {
 		it('Check for required elements', () => {
 			expect(mod !== null,
@@ -232,8 +252,8 @@ function testInstallation(mod) {
 				'installation (type: object) must be an object')
 				.to.be.true;
 
-			expect(['zip'].includes(inst.type),
-				'installation.type (type: string) must be one of: ["zip"]')
+			expect(['zip', 'externaltool'].includes(inst.type),
+				'installation.type (type: string) must be one of: ["zip", "externaltool"]')
 				.to.be.true;
 
 			expect(inst.platform === undefined
@@ -244,6 +264,7 @@ function testInstallation(mod) {
 				.to.be.true;
 
 			switch (inst.type) {
+			case 'externaltool':
 			case 'zip':
 				await testZip(inst);
 				break;

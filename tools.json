@@ -67,12 +67,14 @@
             "repository": "https://github.com/CCDirectLink/crosscode-map-editor",
             "authors": ["Vegita2", "2767mr", "ac2pic", "yellowsink", "elluminance", "krypciak", "dmitmel", "keanuplayz", "Fusion86", "Nnubes256"]
         },
-        "installation": {
-            "type": "externaltool",
-            "url": "https://github.com/CCDirectLink/crosscode-map-editor/releases/download/v1.5.0/cc-map-editor-1.5.0-win.exe",
-            "hash": { "sha256": "5ff589127a29c0e7dad3f3a4eba107c30dff1824fddd3b03558b78c2eeca140c" },
-            "platform": "win32"
-        }
+        "installation": [
+            {
+                "type": "externaltool",
+                "url": "https://github.com/CCDirectLink/crosscode-map-editor/releases/download/v1.5.0/cc-map-editor-1.5.0-win.exe",
+                "hash": { "sha256": "5ff589127a29c0e7dad3f3a4eba107c30dff1824fddd3b03558b78c2eeca140c" },
+                "platform": "win32"
+            }
+        ]
     },
     "CCAreaEditor": {
         "metadataCCMod": {
