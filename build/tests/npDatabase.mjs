@@ -55,13 +55,6 @@ export function testPackage(jsonData, mod, name) {
 			expect(mod !== null,
 				'package must not be null').to.be.true;
 
-			// expect(typeof mod.metadata === 'object',
-			// 	'metadata (type: object) required').to.be.true;
-			// expect(Array.isArray(mod.metadata),
-			// 	'metadata (type: object) required').to.be.false;
-			// expect(mod.metadata !== null,
-			// 	'metadata (type: object) required').to.be.true;
-
             expect(mod.metadataCCMod !== undefined, 'metadataCCMod (type: object) required').to.be.true
 
 
@@ -74,10 +67,6 @@ export function testPackage(jsonData, mod, name) {
 		});
 
         if (mod) {
-		    if (mod.metadata) {
-		    	testMetadata(jsonData, mod.metadata);
-		    }
-            
 		    if (mod.metadataCCMod) {
 		    	testMetadataCCMod(jsonData, mod.metadataCCMod);
 		    }
@@ -89,77 +78,18 @@ export function testPackage(jsonData, mod, name) {
 	});
 }
 
-function testMetadata(jsonData, metadata) {
-	it('Test metadata', () => {
-		expect(typeof metadata.name === 'string',
-			'metadata.name (type: string) required').to.be.true;
-
-		expect([undefined, 'mod', 'tool', 'base'].includes(metadata.ccmodType),
-			'metadata.ccmodType (type: string) must have one of: '
-			+ '[undefined, "mod", "tool", "base"]').to.be.true;
-
-		expect(metadata.version === undefined
-			|| semver.valid(metadata.version) !== null,
-		'metadata.version (type: string) must be undefined or valid semver')
-			.to.be.true;
-
-		expect(metadata.ccmodHumanName === undefined
-			|| typeof metadata.ccmodHumanName === 'string',
-		'metadata.ccmodHumanName (type: string) has wrong type').to.be.true;
-		expect(metadata.description === undefined
-			|| typeof metadata.description === 'string',
-		'metadata.description (type: string) has wrong type').to.be.true;
-		expect(metadata.license === undefined
-			|| typeof metadata.license === 'string',
-		'metadata.license (type: string) has wrong type').to.be.true;
-		expect(metadata.homepage === undefined
-			|| typeof metadata.homepage === 'string',
-		'metadata.homepage (type: string) has wrong type').to.be.true;
-	});
-
-	if (metadata.ccmodDependencies) {
-		it('Test check dependencies', () => {
-			expect(typeof metadata.ccmodDependencies === 'object',
-				'metadata.ccmodDependencies (type: object) must be an object')
-				.to.be.true;
-			expect(Array.isArray(metadata.ccmodDependencies),
-				'metadata.ccmodDependencies (type: object) must be an object')
-				.to.be.false;
-			expect(metadata.ccmodDependencies !== null,
-				'metadata.ccmodDependencies (type: object) must be an object')
-				.to.be.true;
-
-			for (const dep of Object.keys(metadata.ccmodDependencies)) {
-				expect(semver.validRange(metadata.ccmodDependencies[dep]),
-					`dependency ${dep} must be specify a valid range`)
-					.to.not.be.null;
-
-				if (
-					[
-						'crosscode',
-						'simplify',
-						// https://github.com/CCDirectLink/CCLoader3/blob/edb3481d9ea504e2c7f7fe46709ab2b4a7f2ce0b/src/game.ts#L9-L17
-						'fish-gear',
-						'flying-hedgehag',
-						'manlea',
-						'ninja-skin',
-						'post-game',
-						'scorpion-robo',
-						'snowman-tank',
-					].includes(dep.toLowerCase())) {
-					continue;
-				}
-
-				expect(jsonData[dep] || Object.values(jsonData).find(mod => mod.metadata && mod.metadata.name === dep),
-					`dependency ${dep} must be registered in CCModDb`)
-					.to.not.be.undefined;
-			}
-		});
-	} else {
-		expect(metadata.dependencies === undefined,
-			'metadata.dependencies must not be used').to.be.true;
-	}
-}
+const skipTheseModDependencies = [
+	'crosscode',
+	'simplify',
+	// https://github.com/CCDirectLink/CCLoader3/blob/edb3481d9ea504e2c7f7fe46709ab2b4a7f2ce0b/src/game.ts#L9-L17
+	'fish-gear',
+	'flying-hedgehag',
+	'manlea',
+	'ninja-skin',
+	'post-game',
+	'scorpion-robo',
+	'snowman-tank',
+]
 
 function testMetadataCCMod(jsonData, ccmod) {
 	it('Test ccmod.json', () => {
@@ -211,21 +141,7 @@ function testMetadataCCMod(jsonData, ccmod) {
 					`dependency ${dep} must be specify a valid range`)
 					.to.not.be.null;
 
-				if (
-					[
-						'crosscode',
-						'simplify',
-						// https://github.com/CCDirectLink/CCLoader3/blob/edb3481d9ea504e2c7f7fe46709ab2b4a7f2ce0b/src/game.ts#L9-L17
-						'fish-gear',
-						'flying-hedgehag',
-						'manlea',
-						'ninja-skin',
-						'post-game',
-						'scorpion-robo',
-						'snowman-tank',
-					].includes(dep.toLowerCase())) {
-					continue;
-				}
+				if (skipTheseModDependencies.includes(dep.toLowerCase())) continue;
 
 				expect(jsonData[dep] || Object.values(jsonData).find(mod => mod.metadata && mod.metadata.name === dep),
 					`dependency ${dep} must be registered in CCModDb`)
