@@ -7,10 +7,19 @@ import semver from 'semver';
 import crypto from 'crypto';
 import {download, streamToBuffer} from '../dist/src/download.js';
 
+/**
+ * parsed npDatabase.json into JSON
+ */
+let jsonData
+/**
+ * parsed parent npDatabase.json into JSON
+ */
+let parentJsonData
+
 describe('NpDatabase', () => {
 
 	const FILE_PATH = './npDatabase.json';
-	const jsonData = JSON.parse(fs.readFileSync(FILE_PATH, 'utf8'));
+	jsonData = JSON.parse(fs.readFileSync(FILE_PATH, 'utf8'));
 
 	it('Check json structure', () => {
 		expect(typeof jsonData === 'object',
@@ -21,9 +30,14 @@ describe('NpDatabase', () => {
 			'Json not valid: Not an object').to.be.true;
 	});
 
+	const parentJsonString = process.env['PARENT_DB_DATA']
+	if (parentJsonString) {
+		parentJsonData = JSON.parse(parentJsonString)
+	}
+
 	describe('mods', () => {
 		for (let mod of Object.keys(jsonData)) {
-			testPackage(jsonData, jsonData[mod], mod);
+			testPackage(jsonData[mod], mod);
 		}
 	});
 });
@@ -44,19 +58,18 @@ describe('ToolsDB', () => {
 
 	describe('tools', () => {
 		for (let mod of Object.keys(jsonData)) {
-			testPackage(jsonData, jsonData[mod], mod);
+			testPackage(jsonData[mod], mod);
 		}
 	});
 });
 
-export function testPackage(jsonData, mod, name) {
+export function testPackage(mod, name) {
 	describe(`Package: ${name}`, () => {
 		it('Check for required elements', () => {
 			expect(mod !== null,
 				'package must not be null').to.be.true;
 
             expect(mod.metadataCCMod !== undefined, 'metadataCCMod (type: object) required').to.be.true
-
 
 			expect(typeof mod.installation === 'object',
 				'installation (type: array) required').to.be.true;
@@ -66,18 +79,16 @@ export function testPackage(jsonData, mod, name) {
 				'installation (type: array) required').to.be.true;
 		});
 
-        if (mod) {
-		    if (mod.metadataCCMod) {
-		    	testMetadataCCMod(jsonData, mod.metadataCCMod);
-		    }
+        if (!mod) return
 
-		    if (mod.installation) {
-		    	testInstallation(mod);
-		    }
-        }
+		if (mod.metadataCCMod) testMetadataCCMod(mod.metadataCCMod);
+		if (mod.installation) testInstallation(mod);
 	});
 }
 
+/**
+ * Mod dependencies to skip while checking if a mod has all it's dependencies in the database
+ */
 const skipTheseModDependencies = [
 	'crosscode',
 	'simplify',
@@ -90,8 +101,20 @@ const skipTheseModDependencies = [
 	'scorpion-robo',
 	'snowman-tank',
 ]
+/**
+ * Searches databases for a dependency by it's id and title
+ * @param {string} depName - Name of a dependency to look for
+ */
+function findDependency(depName) {
+	for (const db of [jsonData, parentJsonData].filter(Boolean)) {
+		if (db[depName]) return db[depName]
 
-function testMetadataCCMod(jsonData, ccmod) {
+		const dep = Object.values(db).find(mod => mod.metadataCCMod.title == depName)
+		if (dep) return dep
+	}
+}
+
+function testMetadataCCMod(ccmod) {
 	it('Test ccmod.json', () => {
 		expect(typeof ccmod.id === 'string',
 			'ccmod.id (type: string) required').to.be.true;
@@ -143,7 +166,7 @@ function testMetadataCCMod(jsonData, ccmod) {
 
 				if (skipTheseModDependencies.includes(dep.toLowerCase())) continue;
 
-				expect(jsonData[dep] || Object.values(jsonData).find(mod => mod.metadata && mod.metadata.name === dep),
+				expect(findDependency(dep),
 					`dependency ${dep} must be registered in CCModDb`)
 					.to.not.be.undefined;
 			}
