@@ -12,7 +12,7 @@ jobs:
     completePR:
         name: Fill CCBot PR info
         runs-on: ubuntu-latest
-        if: startsWith(github.event.pull_request.title, 'CCBot:')
+        if: startsWith(github.event.pull_request.title, 'CCBot')
 
         steps:
             - uses: actions/checkout@v4
