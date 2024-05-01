@@ -1,0 +1,67 @@
+name: Fill CCBot PR info
+
+permissions:
+    contents: read
+    pull-requests: write
+
+on:
+    pull_request:
+        types: [opened]
+
+jobs:
+    completePR:
+        name: Fill CCBot PR info
+        runs-on: ubuntu-latest
+        if: startsWith(github.event.pull_request.title, 'CCBot')
+
+        steps:
+            - uses: actions/checkout@v4
+              with:
+                  persist-credentials: false
+                  ref: ${{ github.head_ref }}
+                  token: ${{ secrets.PAT }}
+                  fetch-depth: 0
+            - uses: actions/setup-node@v4
+              with:
+                  node-version: 20
+            - working-directory: build/
+              run: npm ci
+
+            - name: Update the database
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              run: |
+                  set -e
+
+                  cd build
+                  OUT="$(npm run start)"
+                  echo "$OUT"
+
+                  OUT="$(echo "$OUT" | tail -1)"
+                  echo "$OUT"
+                  TYPE="$(echo "$OUT" | awk -F'|' '{print $1}')"
+                  ID="$(echo "$OUT" | awk -F'|' '{print $2}')"
+                  VERSION="$(echo "$OUT" | awk -F'|' '{print $3}')"
+                  TITLE="$(echo "$OUT" | awk -F'|' '{print $4}')"
+                  DESCRIPTION="$(echo "$OUT" | awk -F'|' '{print $5}')"
+                  echo "type: $TYPE"
+                  echo "id: $ID"
+                  echo "version: $VERSION"
+                  echo "title: $TITLE"
+                  echo "description: $DESCRIPTION"
+
+                  cd ..
+                  gh pr edit "${{ github.event.pull_request.number }}" --title "CCBot ${TYPE} mod: ${ID}"
+                  gh pr comment "${{ github.event.pull_request.number }}" --body "Mod info:<br>${TITLE} v${VERSION}<br>${DESCRIPTION}"
+
+                  git config --global user.name "${GITHUB_ACTOR}"
+                  git config --global user.email "${GITHUB_ACTOR_ID}+${GITHUB_ACTOR}@users.noreply.github.com"
+                  git add -A
+                  git commit -m "CCBot: Fill '${ID}' info"
+                  git status
+
+            - name: Push changes
+              uses: 'ad-m/github-push-action@master'
+              with:
+                  github_token: ${{ secrets.PAT }}
+                  branch: ${{ github.head_ref }}
