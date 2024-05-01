@@ -4,7 +4,7 @@ import * as db from './db'
 import fs from 'fs'
 import semver from 'semver'
 import type { PackageDB } from './types'
-import {getStringFromLocalisedString} from './api'
+import { getStringFromLocalisedString } from './api'
 
 async function main() {
     const GITHUB_TOKEN = process.env['GITHUB_TOKEN']
@@ -21,26 +21,27 @@ async function main() {
     const pkgDb = await db.build(packages, oldPkgDb)
     await db.write(pkgDb)
 
-    if (oldPkgDb) {
-        for (const name in pkgDb) {
-            let type: 'New' | 'Update' | undefined
-            const pkg = pkgDb[name]
-            const oldPkg = oldPkgDb[name]
-            if (!oldPkg) type = 'New'
-            else if (semver.gt(pkg.metadataCCMod!.version!, oldPkg.metadataCCMod!.version!)) type = 'Update'
+    if (oldPkgDb) printOutChanges(pkgDb, oldPkgDb)
+}
 
-            if (type) {
-                const ccmod = pkg.metadataCCMod!
-                // prettier-ignore
-                const arr: string[] = [
-                    type,
-                    ccmod.id,
-                    ccmod.version!,
-                    getStringFromLocalisedString(ccmod.title ?? 'unknown'),
-                    getStringFromLocalisedString(ccmod.description ?? 'unknown')
-                ]
-                console.log(arr.join('|'))
-            }
+function printOutChanges(pkgDb: PackageDB, oldPkgDb: PackageDB) {
+    for (const name in pkgDb) {
+        let type: 'New' | 'Update' | undefined
+        const pkg = pkgDb[name]
+        const oldPkg = oldPkgDb[name]
+        if (!oldPkg) type = 'New'
+        else if (semver.gt(pkg.metadataCCMod!.version!, oldPkg.metadataCCMod!.version!)) type = 'Update'
+
+        if (type) {
+            const ccmod = pkg.metadataCCMod!
+            const arr: string[] = [
+                type,
+                ccmod.id,
+                ccmod.version!,
+                getStringFromLocalisedString(ccmod.title ?? 'unknown'),
+                getStringFromLocalisedString(ccmod.description ?? 'unknown'),
+            ]
+            console.log(arr.join('|'))
         }
     }
 }
