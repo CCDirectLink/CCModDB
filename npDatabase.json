@@ -1924,5 +1924,34 @@
         ],
         "stars": 0,
         "lastUpdateTimestamp": 1708583987000
+    },
+    "yoshi-open-circuits": {
+        "metadataCCMod": {
+            "id": "yoshi-open-circuits",
+            "version": "1.0.2",
+            "title": "Open Circuits",
+            "description": "Gives enhanced control over the Circuit Menu.",
+            "repository": "https://github.com/CCDirectLink/cc-open-circuits",
+            "authors": [
+                "EpicYoshiMaster"
+            ],
+            "tags": [
+                "QoL",
+                "cheats"
+            ],
+            "prestart": "prestart.js",
+            "main": "main.js"
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/CCDirectLink/cc-open-circuits/releases/download/v1.0.2/cc-open-circuits-1.0.2.ccmod",
+                "hash": {
+                    "sha256": "d397dbd7d10ac7b98680e5b948cf5327e985f2b87b809bb4dbf807eb920e6266"
+                }
+            }
+        ],
+        "stars": 0,
+        "lastUpdateTimestamp": 1715082341000
     }
 }
