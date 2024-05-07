@@ -19,6 +19,7 @@
 - ~~https://github.com/CCDirectLink/map-watch/pull/3~~
 - https://github.com/CCDirectLink/unified-steps/pull/1
 - https://github.com/CCDirectLink/cc-speedrun-utilities/pull/2
+- ~~https://github.com/CCDirectLink/cc-open-circuits/pull/1~~
 
 ### Nax
 
