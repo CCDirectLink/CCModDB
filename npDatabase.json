@@ -1602,9 +1602,9 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/buanjautista/cc-open-world/releases/download/0.3.2/cc-open-world.v0.3.2.ccmod",
+                "url": "https://github.com/buanjautista/cc-open-world/releases/download/0.3.2/cc-open-world.v0.3.2-smelterfix.ccmod",
                 "hash": {
-                    "sha256": "e00a9a5215e71e40a77f0a6883f6d2856e9c6e36270e6fc0227106bfe64266d0"
+                    "sha256": "02c1714a05a7ff350cd173d5866eb6f244cb55b12596ec1b8ebdf405d83d1cfa"
                 }
             }
         ],
