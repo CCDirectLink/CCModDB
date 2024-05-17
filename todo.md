@@ -2,6 +2,8 @@
 
 # todo
 
+Upload the ccmod.json schema to https://github.com/SchemaStore/schemastore/
+
 ## PR's in progress
 
 ### CCDirectLink
