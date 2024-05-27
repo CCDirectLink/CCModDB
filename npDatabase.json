@@ -894,7 +894,7 @@
     "crossedeyes": {
         "metadataCCMod": {
             "id": "crossedeyes",
-            "version": "0.6.1",
+            "version": "0.6.2",
             "title": "CrossedEyes",
             "description": "Accessibility mod for CrossCode",
             "repository": "https://github.com/CCDirectLink/CrossedEyes",
@@ -910,9 +910,9 @@
             },
             "dependencies": {
                 "input-api": ">=1.0.0",
-                "cc-blitzkrieg": ">=0.5.5",
-                "nax-ccuilib": ">=1.2.6",
-                "ccmodmanager": ">=0.9.10",
+                "cc-blitzkrieg": ">=0.5.6",
+                "nax-ccuilib": ">=1.2.7",
+                "ccmodmanager": ">=0.9.11",
                 "crosscode": ">=1.4.0"
             },
             "plugin": "plugin.js"
@@ -920,14 +920,14 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CCDirectLink/CrossedEyes/releases/download/v0.6.1/crossedeyes-0.6.1.ccmod",
+                "url": "https://github.com/CCDirectLink/CrossedEyes/releases/download/v0.6.2/crossedeyes-0.6.2.ccmod",
                 "hash": {
-                    "sha256": "0ee9e08289804fef27f918e4c86f62aec69f9211f8ba8b3fa17877522312abb7"
+                    "sha256": "a1c273068421073cf63642bea9136984d184361f1a6a9e2e8fd4c52d70565be6"
                 }
             }
         ],
         "stars": 9,
-        "lastUpdateTimestamp": 1715617864000
+        "lastUpdateTimestamp": 1716830259000
     },
     "cursedcode": {
         "metadataCCMod": {
