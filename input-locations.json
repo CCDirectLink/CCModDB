@@ -1,8 +1,8 @@
 [
     {
-        "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.23.2/v2.13.0.zip",
-        "ccmodPath": "CCLoader-2.23.2-v2.13.0/ccloader/ccmod.json",
-        "source": "CCLoader-2.23.2-v2.13.0"
+        "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.24.0/v2.14.0.zip",
+        "ccmodPath": "CCLoader-2.24.0-v2.14.0/ccloader/ccmod.json",
+        "source": "CCLoader-2.24.0-v2.14.0"
     },
     { "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.23.2/v2.13.0.zip", "source": "CCLoader-2.23.2-v2.13.0/assets/mods/simplify" },
     { "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.23.2/v2.13.0.zip", "source": "CCLoader-2.23.2-v2.13.0/assets/mods/ccloader-version-display" },
