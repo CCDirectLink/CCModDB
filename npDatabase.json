@@ -1784,6 +1784,35 @@
         "stars": 1,
         "lastUpdateTimestamp": 1708512139000
     },
+    "unified-steps": {
+        "metadataCCMod": {
+            "id": "unified-steps",
+            "version": "0.1.1",
+            "title": "Unified steps",
+            "description": "Just so everyone can use all the cool new action/event/whatever steps made",
+            "repository": "https://github.com/CCDirectLink/unified-steps",
+            "tags": [
+                "library"
+            ],
+            "authors": [
+                "ac2pic",
+                "bakafish"
+            ],
+            "prestart": "prestart.js"
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/CCDirectLink/unified-steps/archive/refs/heads/master.zip",
+                "source": "unified-steps-master/unified-steps",
+                "hash": {
+                    "sha256": "ea8fe6f9349c6ac602108c32e06ab392913b9921c8c7ef0fde5721f52a3a65c1"
+                }
+            }
+        ],
+        "stars": 1,
+        "lastUpdateTimestamp": 1717098123000
+    },
     "xenons-triblader-mod": {
         "metadataCCMod": {
             "id": "xenons-triblader-mod",
