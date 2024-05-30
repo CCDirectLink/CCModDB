@@ -81,10 +81,10 @@
         "installation": [
             {
                 "type": "modZip",
-                "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.22.1/v2.12.1.zip",
-                "source": "CCLoader-2.22.1-v2.12.1/assets/mods/ccloader-version-display",
+                "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.24.0/v2.14.0.zip",
+                "source": "CCLoader-2.24.0-v2.14.0/assets/mods/ccloader-version-display",
                 "hash": {
-                    "sha256": "7ab3d850b5368dda4593318fd3e957e0bc46128e25844eeda97ca0eec16b343a"
+                    "sha256": "5881caeba8928f968ad38b2ea7b0ba5cb642e25845d30df845eebfab60d5dff9"
                 }
             }
         ]
@@ -112,7 +112,7 @@
                 "type": "ccmod",
                 "url": "https://github.com/lexisother/CCOldMedia/releases/download/v1.0.0/CCOldMedia.ccmod",
                 "hash": {
-                    "sha256": "0791db068d46cf394fc3a512cf3a5bca7744a1550d1e72d07adb39bcea097703"
+                    "sha256": "34e6543b7e56bb99fb68e53bba29b95dc8bae267210be65be8bdad89ad413fa2"
                 }
             }
         ]
@@ -142,7 +142,7 @@
                 "type": "ccmod",
                 "url": "https://github.com/lexisother/CCPostDLC/releases/download/v1.0.0/CCPostDLC.ccmod",
                 "hash": {
-                    "sha256": "eec76c279f1683b415e4f06186d6d4d8ae6e9d247cec845bce1e6a7e6d69cea0"
+                    "sha256": "de939232f9aa884d1986dd4f97023b5f68a2c41b8325e2139ab9a8c015879739"
                 }
             }
         ]
@@ -208,7 +208,7 @@
                 "type": "ccmod",
                 "url": "https://github.com/EL20202/cc-capped-stats/releases/download/v1.0.0/cc-capped-stats.ccmod",
                 "hash": {
-                    "sha256": "34c11a440d7af0857728619e17c7143102cec55a1e16b3dd5c3c16935b8965c2"
+                    "sha256": "afd410d055effb03c46b8604cab4f402a0ec986b2c9394c4af3be3546a594f79"
                 }
             },
             {
@@ -627,7 +627,7 @@
                 "type": "ccmod",
                 "url": "https://github.com/lexisother/cc-quickinfo-exp/releases/download/v1.0.1/cc-quickinfo-exp.ccmod",
                 "hash": {
-                    "sha256": "fcdeeba04a3c3e210353a23031c4396dfa33876f770347e550103a4308e3685a"
+                    "sha256": "4c970477ed0eb168a7e641746df146636f057e803c4f3518880c669680c5ab91"
                 }
             }
         ]
@@ -662,7 +662,7 @@
             "prestart": "prestart.js",
             "plugin": "plugin.js",
             "hidden": true,
-            "version": "2.12.1",
+            "version": "2.14.0",
             "ccmodDependencies": {
                 "ccloader": "^2.22.0",
                 "crosscode": "^1.0.0"
@@ -671,10 +671,10 @@
         "installation": [
             {
                 "type": "modZip",
-                "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.22.1/v2.12.1.zip",
-                "source": "CCLoader-2.22.1-v2.12.1/assets/mods/simplify",
+                "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.24.0/v2.14.0.zip",
+                "source": "CCLoader-2.24.0-v2.14.0/assets/mods/simplify",
                 "hash": {
-                    "sha256": "7ab3d850b5368dda4593318fd3e957e0bc46128e25844eeda97ca0eec16b343a"
+                    "sha256": "5881caeba8928f968ad38b2ea7b0ba5cb642e25845d30df845eebfab60d5dff9"
                 }
             }
         ]
@@ -875,25 +875,6 @@
                 "url": "https://github.com/krypciak/cc-vim/releases/download/v1.5.4/cc-vim-1.5.4.ccmod",
                 "hash": {
                     "sha256": "956b112b9e9928c8de6e8eac68f3e132dd275d31904f3bed607c4aee0ff09eb0"
-                }
-            }
-        ]
-    },
-    "ccloader": {
-        "metadata": {
-            "name": "ccloader",
-            "ccmodHumanName": "CCLoader",
-            "ccmodType": "base",
-            "description": "Modloader for CrossCode. This or a similar modloader is needed for most mods.",
-            "version": "2.22.1"
-        },
-        "installation": [
-            {
-                "type": "modZip",
-                "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.22.1/v2.12.1.zip",
-                "source": "CCLoader-2.22.1-v2.12.1",
-                "hash": {
-                    "sha256": "7ab3d850b5368dda4593318fd3e957e0bc46128e25844eeda97ca0eec16b343a"
                 }
             }
         ]
