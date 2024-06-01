@@ -708,7 +708,7 @@
     "ccloader": {
         "metadataCCMod": {
             "id": "ccloader",
-            "version": "2.24.0",
+            "version": "2.24.1",
             "title": "CCLoader",
             "description": "Modloader for CrossCode. This or a similar modloader is needed for most mods.",
             "repository": "https://github.com/CCDirectLink/CCLoader",
@@ -731,15 +731,15 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.24.0/v2.14.0.zip",
-                "source": "CCLoader-2.24.0-v2.14.0",
+                "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.24.1/v2.14.1.zip",
+                "source": "CCLoader-2.24.1-v2.14.1",
                 "hash": {
-                    "sha256": "5881caeba8928f968ad38b2ea7b0ba5cb642e25845d30df845eebfab60d5dff9"
+                    "sha256": "224360117cdfb870dbf55a6ab41003b101f16db28382de77fb18e99f13fecf14"
                 }
             }
         ],
         "stars": 31,
-        "lastUpdateTimestamp": 1717081777000
+        "lastUpdateTimestamp": 1717191269000
     },
     "ccmodmanager": {
         "metadataCCMod": {
