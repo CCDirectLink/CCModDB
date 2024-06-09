@@ -1813,6 +1813,71 @@
         "stars": 1,
         "lastUpdateTimestamp": 1717098123000
     },
+    "world-map-overhaul": {
+        "metadataCCMod": {
+            "id": "world-map-overhaul",
+            "version": "1.1.3",
+            "title": "World map overhaul",
+            "description": {
+                "en_US": "A better world map",
+                "ru_RU": "Улучшенная карта мира"
+            },
+            "repository": "https://github.com/dmitmel/cc-world-map-overhaul",
+            "tags": [
+                "cosmetic"
+            ],
+            "authors": "dmitmel",
+            "icons": {
+                "24": "icon24.png"
+            },
+            "prestart": "prestart.js",
+            "assets": [
+                "media/gui/better-world-map/overlays/colored/arid.png",
+                "media/gui/better-world-map/overlays/colored/autumn-area.png",
+                "media/gui/better-world-map/overlays/colored/autumn-fall.png",
+                "media/gui/better-world-map/overlays/colored/beach.png",
+                "media/gui/better-world-map/overlays/colored/bergen-trails.png",
+                "media/gui/better-world-map/overlays/colored/final-dng.png",
+                "media/gui/better-world-map/overlays/colored/forest.png",
+                "media/gui/better-world-map/overlays/colored/heat-area.png",
+                "media/gui/better-world-map/overlays/colored/jungle.png",
+                "media/gui/better-world-map/overlays/colored/rookie-harbor.png",
+                "media/gui/better-world-map/overlays/default/arid.png",
+                "media/gui/better-world-map/overlays/default/autumn-area.png",
+                "media/gui/better-world-map/overlays/default/autumn-fall.png",
+                "media/gui/better-world-map/overlays/default/beach.png",
+                "media/gui/better-world-map/overlays/default/bergen-trails.png",
+                "media/gui/better-world-map/overlays/default/final-dng.png",
+                "media/gui/better-world-map/overlays/default/forest.png",
+                "media/gui/better-world-map/overlays/default/heat-area.png",
+                "media/gui/better-world-map/overlays/default/jungle.png",
+                "media/gui/better-world-map/overlays/default/rookie-harbor.png",
+                "media/gui/better-world-map/overlays/reveal/arid.png",
+                "media/gui/better-world-map/overlays/reveal/autumn-area.png",
+                "media/gui/better-world-map/overlays/reveal/autumn-fall.png",
+                "media/gui/better-world-map/overlays/reveal/beach.png",
+                "media/gui/better-world-map/overlays/reveal/bergen-trails.png",
+                "media/gui/better-world-map/overlays/reveal/final-dng.png",
+                "media/gui/better-world-map/overlays/reveal/forest.png",
+                "media/gui/better-world-map/overlays/reveal/heat-area.png",
+                "media/gui/better-world-map/overlays/reveal/jungle.png",
+                "media/gui/better-world-map/overlays/reveal/rookie-harbor.png",
+                "media/gui/better-world-map/patched-area-buttons.png",
+                "media/gui/better-world-map/sea.png"
+            ]
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/krypciak/cc-world-map-overhaul/releases/download/v1.1.3/world-map-overhaul-1.1.3.ccmod",
+                "hash": {
+                    "sha256": "7f68505e1c4b7dd688d0ed18a9a714445084bfa80d36745801ae62f95b387134"
+                }
+            }
+        ],
+        "stars": 1,
+        "lastUpdateTimestamp": 1626540789000
+    },
     "xenons-triblader-mod": {
         "metadataCCMod": {
             "id": "xenons-triblader-mod",

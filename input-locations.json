@@ -62,5 +62,6 @@
     { "url": "https://github.com/lexisother/cc-quickinfo-exp/releases/download/v1.0.1/cc-quickinfo-exp.ccmod" },
     { "url": "https://github.com/lexisother/CCPostDLC/releases/download/v1.0.0/CCPostDLC.ccmod" },
     { "url": "https://github.com/CCDirectLink/cc-open-circuits/releases/download/v1.0.2/cc-open-circuits-1.0.2.ccmod" },
-    { "url": "https://github.com/CCDirectLink/unified-steps/archive/refs/heads/master.zip", "source": "unified-steps-master/unified-steps" }
+    { "url": "https://github.com/CCDirectLink/unified-steps/archive/refs/heads/master.zip", "source": "unified-steps-master/unified-steps" },
+    { "url": "https://github.com/krypciak/cc-world-map-overhaul/releases/download/v1.1.3/world-map-overhaul-1.1.3.ccmod" }
 ]
