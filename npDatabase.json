@@ -565,7 +565,7 @@
     "cc-fancy-crash": {
         "metadataCCMod": {
             "id": "cc-fancy-crash",
-            "version": "1.0.8",
+            "version": "1.0.9",
             "title": "Fancy crash",
             "description": "Better crash message",
             "repository": "https://github.com/krypciak/cc-fancy-crash",
@@ -576,19 +576,22 @@
             "icons": {
                 "24": "icon/icon.png"
             },
+            "dependencies": {
+                "ccmodmanager": ">=0.9.12"
+            },
             "plugin": "plugin.js"
         },
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/cc-fancy-crash/releases/download/v1.0.8/cc-fancy-crash-1.0.8.ccmod",
+                "url": "https://github.com/krypciak/cc-fancy-crash/releases/download/v1.0.9/cc-fancy-crash-1.0.9.ccmod",
                 "hash": {
-                    "sha256": "4072312dfc3d9f99b0b33df61dc8470f96e53453c9b45b71d7e9ef83db24b7aa"
+                    "sha256": "b62e3add8e6a371dbeadc4274e8d2cf29e6c1c6887f995e30d467e4e9ec8cc01"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1708109072000
+        "lastUpdateTimestamp": 1718038372000
     },
     "cc-jetpack-widget": {
         "metadataCCMod": {
