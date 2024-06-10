@@ -29,7 +29,7 @@
                 }
             }
         ],
-        "stars": 31,
+        "stars": 32,
         "lastUpdateTimestamp": 1710069756000
     },
     "CrossCode C Edition": {
@@ -262,7 +262,7 @@
                 }
             }
         ],
-        "stars": 31,
+        "stars": 32,
         "lastUpdateTimestamp": 1710069756000
     },
     "arcane-lab": {
@@ -738,13 +738,13 @@
                 }
             }
         ],
-        "stars": 31,
+        "stars": 32,
         "lastUpdateTimestamp": 1717191269000
     },
     "ccmodmanager": {
         "metadataCCMod": {
             "id": "ccmodmanager",
-            "version": "0.9.11",
+            "version": "0.9.12",
             "title": "CCModManager",
             "description": "Mod manager for CrossCode!",
             "repository": "https://github.com/CCDirectLink/CCModManager",
@@ -765,14 +765,14 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CCDirectLink/CCModManager/releases/download/v0.9.11/ccmodmanager-0.9.11.ccmod",
+                "url": "https://github.com/CCDirectLink/CCModManager/releases/download/v0.9.12/ccmodmanager-0.9.12.ccmod",
                 "hash": {
-                    "sha256": "d0c6dfc540f15b263250aed3f647e5c7034bb373928aa6123429b8dd74f31313"
+                    "sha256": "8c868427c81508bb3ba98073940004159daeb078c8b2fd60cf24d120c958905a"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1716050075000
+        "lastUpdateTimestamp": 1718037908000
     },
     "ccpostdlc": {
         "metadataCCMod": {
