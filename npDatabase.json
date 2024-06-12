@@ -29,7 +29,7 @@
                 }
             }
         ],
-        "stars": 32,
+        "stars": 33,
         "lastUpdateTimestamp": 1710069756000
     },
     "CrossCode C Edition": {
@@ -262,7 +262,7 @@
                 }
             }
         ],
-        "stars": 32,
+        "stars": 33,
         "lastUpdateTimestamp": 1710069756000
     },
     "arcane-lab": {
@@ -405,7 +405,7 @@
     "cc-blitzkrieg": {
         "metadataCCMod": {
             "id": "cc-blitzkrieg",
-            "version": "0.5.7",
+            "version": "0.5.8",
             "title": "Blitzkrieg (WIP)",
             "description": "Puzzle solving, incresed puzzle difficuly, puzzle and boss collection tools",
             "repository": "https://github.com/krypciak/cc-blitzkrieg",
@@ -421,21 +421,21 @@
             "dependencies": {
                 "input-api": ">=1.0.2",
                 "crosscode": ">=1.4.0",
-                "ccmodmanager": ">=0.9.12"
+                "ccmodmanager": ">=0.9.13"
             },
             "plugin": "plugin.js"
         },
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/cc-blitzkrieg/releases/download/v0.5.7/cc-blitzkrieg-0.5.7.ccmod",
+                "url": "https://github.com/krypciak/cc-blitzkrieg/releases/download/v0.5.8/cc-blitzkrieg-0.5.8.ccmod",
                 "hash": {
-                    "sha256": "d114c3fc8e78869a3be767437c9e13fe2e1954b94a4b50277d12a72405322be7"
+                    "sha256": "98a48dc81564f3200ad3e990fc4ab89bfeda6644ffe10e98de5c52bc4c19b7ec"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1718038278000
+        "lastUpdateTimestamp": 1718188190000
     },
     "cc-capped-stats": {
         "metadataCCMod": {
@@ -565,7 +565,7 @@
     "cc-fancy-crash": {
         "metadataCCMod": {
             "id": "cc-fancy-crash",
-            "version": "1.0.9",
+            "version": "1.1.0",
             "title": "Fancy crash",
             "description": "Better crash message",
             "repository": "https://github.com/krypciak/cc-fancy-crash",
@@ -577,21 +577,21 @@
                 "24": "icon/icon.png"
             },
             "dependencies": {
-                "ccmodmanager": ">=0.9.12"
+                "ccmodmanager": ">=0.9.13"
             },
             "plugin": "plugin.js"
         },
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/cc-fancy-crash/releases/download/v1.0.9/cc-fancy-crash-1.0.9.ccmod",
+                "url": "https://github.com/krypciak/cc-fancy-crash/releases/download/v1.1.0/cc-fancy-crash-1.1.0.ccmod",
                 "hash": {
-                    "sha256": "b62e3add8e6a371dbeadc4274e8d2cf29e6c1c6887f995e30d467e4e9ec8cc01"
+                    "sha256": "75327923b7cba31a1a11d9e4e65ee1dd1ed03eda7b9d85914575a3c2a8b30aa7"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1718038372000
+        "lastUpdateTimestamp": 1718187860000
     },
     "cc-jetpack-widget": {
         "metadataCCMod": {
@@ -626,6 +626,38 @@
         ],
         "stars": 0,
         "lastUpdateTimestamp": 1710185123000
+    },
+    "cc-nwjs-manager": {
+        "metadataCCMod": {
+            "id": "cc-nwjs-manager",
+            "version": "1.0.1",
+            "title": "NW.js manager",
+            "description": "Automaticly install or change the NW.js version",
+            "repository": "https://github.com/krypciak/cc-nwjs-manager",
+            "tags": [
+                "dev",
+                "library"
+            ],
+            "authors": "krypek",
+            "icons": {
+                "24": "icon/icon.png"
+            },
+            "dependencies": {
+                "ccmodmanager": ">=0.9.13"
+            },
+            "plugin": "plugin.js"
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/krypciak/cc-nwjs-manager/releases/download/v1.0.1/cc-nwjs-manager-1.0.1.ccmod",
+                "hash": {
+                    "sha256": "f2ee4f791ba526204c1264d1ca00b5d761c686410c395655cc99c805705623fb"
+                }
+            }
+        ],
+        "stars": 0,
+        "lastUpdateTimestamp": 1718188130000
     },
     "cc-oldmedia": {
         "metadataCCMod": {
@@ -680,7 +712,7 @@
     "cc-vim": {
         "metadataCCMod": {
             "id": "cc-vim",
-            "version": "1.6.1",
+            "version": "1.6.2",
             "title": "Vim Command Mode",
             "description": "Adds a popup command prompt",
             "repository": "https://github.com/krypciak/cc-vim",
@@ -694,21 +726,21 @@
             },
             "dependencies": {
                 "input-api": ">=1.0.0",
-                "ccmodmanager": ">=0.9.12"
+                "ccmodmanager": ">=0.9.13"
             },
             "plugin": "plugin.js"
         },
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/cc-vim/releases/download/v1.6.1/cc-vim-1.6.1.ccmod",
+                "url": "https://github.com/krypciak/cc-vim/releases/download/v1.6.2/cc-vim-1.6.2.ccmod",
                 "hash": {
-                    "sha256": "234e06ee3cff741e65f90bf887938d78c13fa19cb86d5a3a43a2da6f09db90ea"
+                    "sha256": "c92d4409b9b1ed0d94671c70c282f2fc9b306379563c189bbc5fc16ccef54fda"
                 }
             }
         ],
         "stars": 1,
-        "lastUpdateTimestamp": 1718038495000
+        "lastUpdateTimestamp": 1718187787000
     },
     "ccloader": {
         "metadataCCMod": {
@@ -743,13 +775,13 @@
                 }
             }
         ],
-        "stars": 32,
+        "stars": 33,
         "lastUpdateTimestamp": 1717191269000
     },
     "ccmodmanager": {
         "metadataCCMod": {
             "id": "ccmodmanager",
-            "version": "0.9.12",
+            "version": "0.9.13",
             "title": "CCModManager",
             "description": "Mod manager for CrossCode!",
             "repository": "https://github.com/CCDirectLink/CCModManager",
@@ -770,14 +802,14 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CCDirectLink/CCModManager/releases/download/v0.9.12/ccmodmanager-0.9.12.ccmod",
+                "url": "https://github.com/CCDirectLink/CCModManager/releases/download/v0.9.13/ccmodmanager-0.9.13.ccmod",
                 "hash": {
-                    "sha256": "8c868427c81508bb3ba98073940004159daeb078c8b2fd60cf24d120c958905a"
+                    "sha256": "d09d4fae19e708b0d25d411698efba7f4f13c002abc093ef509ba1300f0f6e87"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1718037908000
+        "lastUpdateTimestamp": 1718187883000
     },
     "ccpostdlc": {
         "metadataCCMod": {

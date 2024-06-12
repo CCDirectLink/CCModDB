@@ -7,8 +7,8 @@
     { "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.23.2/v2.13.0.zip", "source": "CCLoader-2.23.2-v2.13.0/assets/mods/simplify" },
     { "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.23.2/v2.13.0.zip", "source": "CCLoader-2.23.2-v2.13.0/assets/mods/ccloader-version-display" },
     { "url": "https://github.com/CCDirectLink/input-api/archive/refs/tags/v1.0.2.zip" },
-    { "url": "https://github.com/krypciak/cc-blitzkrieg/releases/download/v0.5.7/cc-blitzkrieg-0.5.7.ccmod" },
-    { "url": "https://github.com/krypciak/cc-fancy-crash/releases/download/v1.0.9/cc-fancy-crash-1.0.9.ccmod" },
+    { "url": "https://github.com/krypciak/cc-blitzkrieg/releases/download/v0.5.8/cc-blitzkrieg-0.5.8.ccmod" },
+    { "url": "https://github.com/krypciak/cc-fancy-crash/releases/download/v1.1.0/cc-fancy-crash-1.1.0.ccmod" },
     { "url": "https://github.com/CCDirectLink/Blades/archive/1.6.0.zip" },
     { "url": "https://github.com/krypciak/cc-jetpack-widget/releases/download/v1.0.3/cc-jetpack-widget-1.0.3.ccmod" },
     { "url": "https://github.com/krypciak/cc-character-widgets/releases/download/v1.0.0/cc-character-widgets-1.0.0.ccmod" },
@@ -16,7 +16,7 @@
     { "url": "https://github.com/krypciak/cc-element-boss/releases/download/v0.1.3/element-boss-0.1.3.ccmod" },
     { "url": "https://github.com/CCDirectLink/item-api/releases/download/v0.4.4/item-api.ccmod" },
     { "url": "https://github.com/krypciak/cc-extra-dialogue/releases/download/v1.0.1/cc-extra-dialogue.ccmod" },
-    { "url": "https://github.com/krypciak/cc-vim/releases/download/v1.6.1/cc-vim-1.6.1.ccmod" },
+    { "url": "https://github.com/krypciak/cc-vim/releases/download/v1.6.2/cc-vim-1.6.2.ccmod" },
     { "url": "https://github.com/Symphiel/CursedCode/archive/refs/tags/0.1.1-2.zip" },
     { "url": "https://github.com/Pyrocorvid/CCNineRooms/archive/refs/tags/v1.0.2.zip", "source": "CCNineRooms-1.0.2/nine-rooms" },
     { "url": "https://github.com/Pyrocorvid/CCNineRooms/archive/refs/tags/v1.0.2.zip", "source": "CCNineRooms-1.0.2/past-booster" },
@@ -46,7 +46,7 @@
     { "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.4.1/CCMultiworldRandomizer-0.4.1.ccmod" },
     { "url": "https://github.com/lubkuluk/lubkuluks-joern-mod/files/14393459/lubkuluks-joern-mod.zip" },
     { "url": "https://github.com/canbora/cc-named-saves/releases/download/v1.0.1/cc-named-saves.ccmod" },
-    { "url": "https://github.com/CCDirectLink/CCModManager/releases/download/v0.9.12/ccmodmanager-0.9.12.ccmod" },
+    { "url": "https://github.com/CCDirectLink/CCModManager/releases/download/v0.9.13/ccmodmanager-0.9.13.ccmod" },
     { "url": "https://github.com/buanjautista/cc-open-world/releases/download/0.3.2/cc-open-world.v0.3.2-smelterfix.ccmod" },
     { "url": "https://github.com/krypciak/nax-module-cache/releases/download/v1.0.2/nax-module-cache.ccmod" },
     { "url": "https://github.com/krypciak/nax-ccuilib/releases/download/v1.2.7/nax-ccuilib.ccmod" },
@@ -64,5 +64,6 @@
     { "url": "https://github.com/CCDirectLink/cc-open-circuits/releases/download/v1.0.2/cc-open-circuits-1.0.2.ccmod" },
     { "url": "https://github.com/CCDirectLink/unified-steps/archive/refs/heads/master.zip", "source": "unified-steps-master/unified-steps" },
     { "url": "https://github.com/krypciak/cc-world-map-overhaul/releases/download/v1.1.3/world-map-overhaul-1.1.3.ccmod" },
-    { "url": "https://github.com/krypciak/crosscode-tweak-pack/releases/download/v1.1.2/crosscode-tweak-pack-1.1.2.ccmod" }
+    { "url": "https://github.com/krypciak/crosscode-tweak-pack/releases/download/v1.1.2/crosscode-tweak-pack-1.1.2.ccmod" },
+    { "url": "https://github.com/krypciak/cc-nwjs-manager/releases/download/v1.0.1/cc-nwjs-manager-1.0.1.ccmod" }
 ]
