@@ -405,7 +405,7 @@
     "cc-blitzkrieg": {
         "metadataCCMod": {
             "id": "cc-blitzkrieg",
-            "version": "0.5.8",
+            "version": "0.5.9",
             "title": "Blitzkrieg (WIP)",
             "description": "Puzzle solving, incresed puzzle difficuly, puzzle and boss collection tools",
             "repository": "https://github.com/krypciak/cc-blitzkrieg",
@@ -428,14 +428,14 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/cc-blitzkrieg/releases/download/v0.5.8/cc-blitzkrieg-0.5.8.ccmod",
+                "url": "https://github.com/krypciak/cc-blitzkrieg/releases/download/v0.5.9/cc-blitzkrieg-0.5.9.ccmod",
                 "hash": {
-                    "sha256": "98a48dc81564f3200ad3e990fc4ab89bfeda6644ffe10e98de5c52bc4c19b7ec"
+                    "sha256": "7eab667c0cc1279616bae5138218063046a264de556b03312077267b2542d391"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1718188190000
+        "lastUpdateTimestamp": 1718307434000
     },
     "cc-capped-stats": {
         "metadataCCMod": {
