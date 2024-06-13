@@ -630,7 +630,7 @@
     "cc-nwjs-manager": {
         "metadataCCMod": {
             "id": "cc-nwjs-manager",
-            "version": "1.0.1",
+            "version": "1.0.3",
             "title": "NW.js manager",
             "description": "Automaticly install or change the NW.js version",
             "repository": "https://github.com/krypciak/cc-nwjs-manager",
@@ -650,14 +650,14 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/cc-nwjs-manager/releases/download/v1.0.1/cc-nwjs-manager-1.0.1.ccmod",
+                "url": "https://github.com/krypciak/cc-nwjs-manager/releases/download/v1.0.3/cc-nwjs-manager-1.0.3.ccmod",
                 "hash": {
-                    "sha256": "f2ee4f791ba526204c1264d1ca00b5d761c686410c395655cc99c805705623fb"
+                    "sha256": "c343e8689c7be7759a3dab9aab79413ad2a5f4f3bb35cce31523a7caca663711"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1718188130000
+        "lastUpdateTimestamp": 1718300781000
     },
     "cc-oldmedia": {
         "metadataCCMod": {
