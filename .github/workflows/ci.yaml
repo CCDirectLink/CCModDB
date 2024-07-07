@@ -1,0 +1,33 @@
+name: CI
+
+on:
+    push:
+    workflow_dispatch:
+
+jobs:
+    check_database:
+        name: Check database
+        runs-on: ubuntu-latest
+
+        steps:
+            - uses: actions/checkout@v4
+              with:
+                ref: master-final
+
+            - uses: actions/checkout@v4
+
+            - run: |
+                git checkout master-final
+
+            - uses: actions/setup-node@v4
+              with:
+                  node-version: 20
+
+            - run: npm ci
+            
+            - name: Test the database
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              run: |
+                export BRANCH="$GITHUB_REF"
+                npm run test
