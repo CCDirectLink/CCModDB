@@ -1,0 +1,62 @@
+name: CI
+
+on:
+    push:
+    workflow_dispatch:
+
+jobs:
+    check_database:
+        name: Check database
+        runs-on: ubuntu-latest
+
+        steps:
+            - uses: actions/checkout@v4
+              with:
+                fetch-depth: 0
+
+            - name: Fetch all branches
+              run: |
+                CURRENT_BRANCH="$(git branch --show-current)"
+                for branch in $(git branch --all | grep '^\s*remotes' | grep -vE "HEAD|$CURRENT_BRANCH"); do
+                    git branch --track "${branch##*/}" "$branch"
+                done
+                git fetch --all
+
+            - name: Checkout master branch
+              run: |
+                git checkout $(git remote show origin | awk '/HEAD branch/ {print $NF}')
+
+            - uses: actions/setup-node@v4
+              with:
+                  node-version: 20
+                  cache: 'npm'
+                  cache-dependency-path: 'package-lock.json'
+
+            - run: npm ci
+            
+            - name: Get Date
+              id: get-date
+              run: |
+                echo "date=$(/bin/date -u "+%Y%m%d")" >> $GITHUB_OUTPUT
+
+            - name: Restore cached mod archives
+              uses: actions/cache/restore@v4
+              with:
+                path: |
+                  build/cache
+                key: mod-cache-${{ steps.get-date.outputs.date }}
+                restore-keys: |
+                  mod-cache-
+
+            - name: Test the database
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                  donttesttools: true
+              run: BRANCH="$GITHUB_REF" npm run test
+                    
+            - name: Save mod archive cache
+              uses: actions/cache/save@v4
+              with:
+                path: |
+                  build/cache
+                key: mod-cache-${{ steps.get-date.outputs.date }}
