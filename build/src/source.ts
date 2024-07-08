@@ -1,11 +1,17 @@
 import stream from 'stream'
 import yauzl from 'yauzl'
 import { download, streamToBuffer } from './download'
-import fs from 'fs'
 import path from 'path'
 import * as github from '@octokit/openapi-types'
-import type { InputLocation, Package, PackageDB, PkgMetadata, ValidPkgCCMod, ZipInputLocation } from './types'
+import type {
+    InputLocation,
+    PackageDB,
+    PkgMetadata,
+    ValidPkgCCMod,
+    ZipInputLocation,
+} from './types'
 import { getRepositoryEntry } from './api'
+import { WriteFunc } from './main'
 
 export type ModMetadatas = {
     ccmod?: ValidPkgCCMod
@@ -13,10 +19,11 @@ export type ModMetadatas = {
 }
 export type ModMetadatasInput = ModMetadatas & { input: InputLocation }
 
-export async function get(input: InputLocation): Promise<ModMetadatasInput> {
+export async function get(input: InputLocation, write: WriteFunc): Promise<ModMetadatasInput> {
     const fileFetchFunc: ((input: any, fileName: string, parseToJson?: boolean) => any) | 'error' =
         input.type === undefined || input.type === 'zip'
-            ? (input: ZipInputLocation, fileName, parseToJson) => getModZipFile<PkgMetadata>(input, fileName, parseToJson)
+            ? (input: ZipInputLocation, fileName, parseToJson) =>
+                  getModZipFile<PkgMetadata>(input, fileName, parseToJson)
             : 'error'
     if (fileFetchFunc === 'error') throw new Error(`Unsupported location type '${input.type}'`)
 
@@ -32,13 +39,12 @@ export async function get(input: InputLocation): Promise<ModMetadatasInput> {
         console.log(e)
         throw e
     }
-    if (!pkg.ccmod && !pkg.meta) throw new Error(`A mod has to either have a package.json or a ccmod.json: ${input.url}`)
+    if (!pkg.ccmod && !pkg.meta)
+        throw new Error(`A mod has to either have a package.json or a ccmod.json: ${input.url}`)
     const iconPath = getModIconPath(pkg)
     if (iconPath) {
         const imgData = await fileFetchFunc(input, iconPath, false)
-        fs.writeFile(`./icons/${pkg.ccmod!.id}.png`, imgData, err => {
-            if (err) throw err
-        })
+        await write(`icons/${pkg.ccmod!.id}.png`, imgData)
     }
     return pkg
 }
@@ -49,7 +55,11 @@ function getModIconPath(pkg: ModMetadatasInput): string | undefined {
     return ccmod.icons['24']
 }
 
-async function getModZipFile<T>(zip: ZipInputLocation, fileName: string, parseToJson: boolean = true): Promise<T | undefined> {
+async function getModZipFile<T>(
+    zip: ZipInputLocation,
+    fileName: string,
+    parseToJson: boolean = true
+): Promise<T | undefined> {
     const file = await download(zip.url)
     const buf = await streamToBuffer(file)
     if (buf.length === 0) return
@@ -82,12 +92,16 @@ function modZipPath(zip: ZipInputLocation, fileName: string): string {
 
 function open(buffer: Buffer): Promise<yauzl.ZipFile> {
     return new Promise((resolve, reject) => {
-        yauzl.fromBuffer(buffer, { autoClose: true, lazyEntries: true, decodeStrings: true }, (err, zip) => {
-            if (err || !zip) {
-                return reject(err)
+        yauzl.fromBuffer(
+            buffer,
+            { autoClose: true, lazyEntries: true, decodeStrings: true },
+            (err, zip) => {
+                if (err || !zip) {
+                    return reject(err)
+                }
+                resolve(zip)
             }
-            resolve(zip)
-        })
+        )
     })
 }
 
@@ -140,26 +154,17 @@ async function findZipRoot(buffer: Buffer): Promise<string | undefined> {
 }
 
 /* this has to be done outside of buildEntry to avoid concurent api requests */
-export async function addStarsAndTimestampsToResults(result: PackageDB, oldDb?: PackageDB) {
+export async function addStarsAndTimestampsToResults(result: PackageDB) {
     for (const id in result) {
         const mod = result[id]
 
         if (!mod) continue
-        let fetchTimestamp = false
-        let oldMod: Package | undefined
-        if (oldDb) {
-            const newVersion = mod.metadataCCMod?.version || mod.metadata?.version
-            oldMod = oldDb[id]
-            const oldVersion = oldMod?.metadataCCMod?.version || oldMod?.metadata?.version
-            fetchTimestamp = oldVersion != newVersion || oldMod?.lastUpdateTimestamp === undefined
-        }
 
-        const res = await getStarsAndTimestamp(mod.metadata, mod.metadataCCMod, fetchTimestamp)
+        const res = await getStarsAndTimestamp(mod.metadata, mod.metadataCCMod)
         if (!res) continue
-        mod.stars = res.stars
 
-        if (!oldDb) continue
-        mod.lastUpdateTimestamp = fetchTimestamp ? res.timestamp : oldMod!.lastUpdateTimestamp
+        mod.stars = res.stars
+        mod.lastUpdateTimestamp = res.timestamp
     }
 }
 
@@ -178,8 +183,7 @@ async function fetchGithub<T>(url: string): Promise<T> {
 
 async function getStarsAndTimestamp(
     meta: PkgMetadata | undefined,
-    ccmod: ValidPkgCCMod | undefined,
-    fetchTimestamp: boolean
+    ccmod: ValidPkgCCMod | undefined
 ): Promise<{ stars: number; timestamp?: number } | undefined> {
     const homepageArr = getRepositoryEntry(ccmod?.repository || meta?.homepage)
     if (homepageArr.length == 0) return
@@ -190,13 +194,12 @@ async function getStarsAndTimestamp(
         const data = await fetchGithub<github.components['schemas']['full-repository']>(apiUrl)
         const stars = data.stargazers_count
 
-        let timestamp: number | undefined
-        if (fetchTimestamp) {
-            const branchApiUrl = data.branches_url.replace(/\{\/branch\}/, `/${data.default_branch}`)
-            const branchData = await fetchGithub<github.components['schemas']['branch-with-protection']>(branchApiUrl)
-            const date = branchData.commit.commit.author!.date!
-            timestamp = new Date(date).getTime()
-        }
+        const branchApiUrl = data.branches_url.replace(/\{\/branch\}/, `/${data.default_branch}`)
+        const branchData =
+            await fetchGithub<github.components['schemas']['branch-with-protection']>(branchApiUrl)
+        const date = branchData.commit.commit.author!.date!
+        const timestamp = new Date(date).getTime()
+
         return { stars, timestamp }
     }
     return

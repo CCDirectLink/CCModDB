@@ -1,11 +1,18 @@
 import semver from 'semver'
 import crypto from 'crypto'
-import fs from 'fs'
 import { download, streamToBuffer } from './download'
 import { ModMetadatasInput, ModMetadatas, addStarsAndTimestampsToResults } from './source'
-import type { PackageDB, InputLocation, InstallMethod, PkgMetadata, PkgCCMod, ValidPkgCCMod } from './types'
+import type {
+    PackageDB,
+    InputLocation,
+    InstallMethod,
+    PkgMetadata,
+    PkgCCMod,
+    ValidPkgCCMod,
+} from './types'
+import { WriteFunc } from './main'
 
-export async function build(packages: ModMetadatasInput[], oldDb?: PackageDB): Promise<PackageDB> {
+export async function build(packages: ModMetadatasInput[]): Promise<PackageDB> {
     const result: PackageDB = {}
     const promises: Promise<void>[] = []
 
@@ -17,23 +24,25 @@ export async function build(packages: ModMetadatasInput[], oldDb?: PackageDB): P
     }
 
     await Promise.all(promises)
-    await addStarsAndTimestampsToResults(result, oldDb)
+    await addStarsAndTimestampsToResults(result)
 
-    return sort(result)
+    return result
 }
 
-export async function write(db: PackageDB): Promise<void> {
-    return new Promise<void>((resolve, reject) => {
-        fs.writeFile('./npDatabase.json', JSON.stringify(db, null, 4), err => {
-            if (err) {
-                return reject(err)
-            }
-            resolve()
-        })
-    })
+export async function write(db: PackageDB, write: WriteFunc): Promise<void> {
+    return write('npDatabase.json', JSON.stringify(db, null, 4))
 }
 
-async function buildEntry(result: PackageDB, meta: PkgMetadata | undefined, ccmod: ValidPkgCCMod | undefined, inputs: InputLocation[]): Promise<void> {
+export async function writeMinified(db: PackageDB, write: WriteFunc): Promise<void> {
+    return write('npDatabase.min.json', JSON.stringify(db))
+}
+
+async function buildEntry(
+    result: PackageDB,
+    meta: PkgMetadata | undefined,
+    ccmod: ValidPkgCCMod | undefined,
+    inputs: InputLocation[]
+): Promise<void> {
     result[ccmod?.id || meta!.name] = {
         // metadata: meta,
         metadataCCMod: ccmod,
@@ -43,7 +52,9 @@ async function buildEntry(result: PackageDB, meta: PkgMetadata | undefined, ccmo
 
 function checkMeta(meta: PkgMetadata): boolean {
     if (meta.dependencies && !meta.ccmodDependencies) {
-        console.warn(`Package has 'dependencies', not 'ccmodDependencies': ${meta.name}; correct ASAP`)
+        console.warn(
+            `Package has 'dependencies', not 'ccmodDependencies': ${meta.name}; correct ASAP`
+        )
         return false
     }
 
@@ -119,7 +130,9 @@ async function generateInstallations(inputs: InputLocation[]): Promise<InstallMe
     return result
 }
 
-async function generateInstallation(input: InputLocation): Promise<InstallMethod[] | InstallMethod | undefined> {
+async function generateInstallation(
+    input: InputLocation
+): Promise<InstallMethod[] | InstallMethod | undefined> {
     switch (input.type) {
         case undefined:
         case 'zip': {
@@ -139,11 +152,15 @@ async function generateInstallation(input: InputLocation): Promise<InstallMethod
     }
 }
 
-function groupByName(packages: ModMetadatasInput[]): Map<string, ModMetadatas & { inputs: InputLocation[] }> {
+function groupByName(
+    packages: ModMetadatasInput[]
+): Map<string, ModMetadatas & { inputs: InputLocation[] }> {
     const result = new Map<string, ModMetadatas & { inputs: InputLocation[] }>()
 
     for (const { meta: pkg, ccmod, input } of packages) {
-        for (const name of [ccmod?.id, pkg?.name, 'nomodlikethiseverwillexist'].filter(Boolean) as string[]) {
+        for (const name of [ccmod?.id, pkg?.name, 'nomodlikethiseverwillexist'].filter(
+            Boolean
+        ) as string[]) {
             if (name == 'nomodlikethiseverwillexist') throw new Error(packages.join())
             if (result.has(name)) {
                 result.get(name)?.inputs.push(input)
@@ -157,7 +174,7 @@ function groupByName(packages: ModMetadatasInput[]): Map<string, ModMetadatas & 
     return result
 }
 
-function sort(db: PackageDB): PackageDB {
+export function sort(db: PackageDB): PackageDB {
     const result: PackageDB = {}
     for (const key of Object.keys(db).sort()) {
         result[key] = db[key]

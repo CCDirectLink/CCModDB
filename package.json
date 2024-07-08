@@ -2,12 +2,16 @@
   "name": "ccmoddb",
   "version": "1.0.0",
   "description": "A build script for ccmoddb",
-  "main": "dist/main.js",
   "scripts": {
-    "start": "bun build/src/main.ts",
-    "test": "npm run build && mocha --parallel --recursive build/tests/",
+    "stable": "tsx build/src/main.ts stable",
+    "stableScratch": "tsx build/src/main.ts stable scratch",
+    "stableTest": "tsx build/src/main.ts stable test",
+    "testing": "tsx build/src/main.ts testing",
+    "testingScratch": "tsx build/src/main.ts testing scratch",
+    "testingTest": "tsx build/src/main.ts testing test",
     "format": "prettier ./build/src -w"
   },
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/CCDirectLink/CCModDB.git"
@@ -18,19 +22,21 @@
   "homepage": "https://github.com/CCDirectLink/CCModDB#readme",
   "devDependencies": {
     "@octokit/types": "github:octokit/types.ts",
-    "@types/node": "^20.11.19",
+    "@types/node": "^20.14.10",
     "@types/yauzl": "^2.10.3",
-    "@typescript-eslint/eslint-plugin": "^7.0.2",
-    "@typescript-eslint/parser": "^7.0.2",
-    "eslint": "^8.56.0",
-    "typescript": "^5.3.3"
+    "@typescript-eslint/eslint-plugin": "^7.15.0",
+    "@typescript-eslint/parser": "^7.15.0",
+    "eslint": "^8.57.0",
+    "typescript": "^5.5.3"
   },
   "dependencies": {
-    "@types/semver": "^7.5.7",
-    "chai": "^5.1.0",
+    "@types/semver": "^7.5.8",
+    "chai": "^5.1.1",
     "dotenv": "^16.4.5",
-    "mocha": "^10.3.0",
-    "semver": "^7.6.0",
-    "yauzl": "^3.1.0"
+    "mocha": "^10.6.0",
+    "semver": "^7.6.2",
+    "simple-git": "^3.25.0",
+    "tsx": "^4.16.2",
+    "yauzl": "^3.1.3"
   }
 }
