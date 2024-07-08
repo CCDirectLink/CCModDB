@@ -3,5 +3,5 @@ node_modules/
 npm-debug.*
 build-cache-zip/*
 !build-cache-zip/here
-dist/
 cache/
+.env

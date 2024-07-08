@@ -5,10 +5,13 @@ import fs from 'fs'
 import semver from 'semver'
 import type { PackageDB } from './types'
 import { getStringFromLocalisedString } from './api'
+import { configDotenv } from 'dotenv'
 
 async function main() {
+    configDotenv()
+
     const GITHUB_TOKEN = process.env['GITHUB_TOKEN']
-    if (!GITHUB_TOKEN) throw new Error('GITHUB_TOKEN enviroment variable is required. To create a token, see https://github.com/settings/tokens?type=beta')
+    if (!GITHUB_TOKEN) throw new Error('GITHUB_TOKEN enviroment variable is required.\n Add it to the .env file or export it.\n To create a token, see https://github.com/settings/tokens?type=beta')  
 
     const locations = await inputLocations.parse()
     const promises: Promise<source.ModMetadatasInput>[] = []
