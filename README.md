@@ -10,7 +10,3 @@ Mod database for CrossCode.
 ## HOW TO ADD YOUR MOD
 
 Read the [contribution guidelines](CONTRIBUTING.md).
-
-## HOW TO GENERATE A SHA256 HASH
-
-Download your mod as a zip folder. Check your sha256 checksum [here](https://emn178.github.io/online-tools/sha256_checksum.html)
