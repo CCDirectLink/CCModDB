@@ -1,12 +1,11 @@
 import * as source from './source'
 import * as db from './db'
 import type { InputLocations, PackageDB } from './types'
-import { getStringFromLocalisedString } from './api'
- 
+
 import * as fs from 'fs'
 import * as path from 'path'
 import { configDotenv } from 'dotenv'
-import simpleGit from 'simple-git'
+import { getRepoBranches, git, gitReadFunc } from './git'
 
 export type ReadFunc = (path: string) => Promise<string | undefined>
 export type WriteFunc = (path: string, data: Buffer | string) => Promise<void>
@@ -24,31 +23,15 @@ async function main() {
 
     const branch: string = process.argv[2]
 
-    let type: 'test' | 'scratch' | undefined = process.argv[3] as any
-    if (type != 'test' && type != 'scratch' && type !== undefined) {
+    let type: 'scratch' | undefined = process.argv[3] as any
+    if (type != 'scratch' && type !== undefined) {
         throw new Error(`Invalid second arguemnt: "${type}"\n`)
     }
 
-    const git = simpleGit()
-    const branches = await git.branchLocal()
-    const repoBranches = branches.all.filter(name => !name.startsWith('master'))
-
+    const repoBranches = await getRepoBranches()
     if (!repoBranches.includes(branch)) {
         console.log(`Branch: ${branch} is invalid.\nAvailable branches: ${repoBranches.join(', ')}`)
         process.exit(1)
-    }
-
-    if (type == 'test') {
-        return
-    }
-
-
-    const gitReadFunc: ReadFunc = async (path: string) => {
-        try {
-            return await git.show(`${branch}:${path}`)
-        } catch (e) {
-            return undefined
-        }
     }
 
     const toWrite: [string, Buffer][] = []
@@ -56,7 +39,11 @@ async function main() {
         toWrite.push([path, typeof data === 'string' ? Buffer.from(data) : data])
     }
 
-    await createNpDatabase(type == 'scratch', gitReadFunc, gitWriteFunc)
+    await createNpDatabase(
+        type == 'scratch',
+        (path: string) => gitReadFunc(branch, path),
+        gitWriteFunc
+    )
 
     await git.checkout(branch)
 

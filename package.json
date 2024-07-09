@@ -5,10 +5,10 @@
   "scripts": {
     "stable": "tsx build/src/main.ts stable",
     "stableScratch": "tsx build/src/main.ts stable scratch",
-    "stableTest": "tsx build/src/main.ts stable test",
+    "stableTest": "BRANCH=stable npx tsx build/tests/run.ts",
     "testing": "tsx build/src/main.ts testing",
     "testingScratch": "tsx build/src/main.ts testing scratch",
-    "testingTest": "tsx build/src/main.ts testing test",
+    "testingTest": "BRANCH=testing PARENT_BRANCHES=\"[\\\"stable\\\"]\" npx tsx build/tests/run.ts",
     "format": "prettier ./build/src -w"
   },
   "type": "module",
@@ -30,6 +30,8 @@
     "typescript": "^5.5.3"
   },
   "dependencies": {
+    "@types/chai": "^4.3.16",
+    "@types/mocha": "^10.0.7",
     "@types/semver": "^7.5.8",
     "chai": "^5.1.1",
     "dotenv": "^16.4.5",
