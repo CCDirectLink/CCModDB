@@ -1,1 +1,98 @@
-{}
+{
+    "SpericalViewer": {
+        "metadataCCMod": {
+            "id": "SpericalViewer",
+            "version": "0.3.7",
+            "title": "SpericalViewer",
+            "description": "Viewer for CrossCode content.",
+            "license": "MIT",
+            "repository": "https://github.com/CCDirectLink/SpericalViewer",
+            "tags": ["externaltool"],
+            "authors": ["streetclaw", "2767mr", "ac2pic", "omegalink12"]
+        },
+        "installation": [
+            {
+                "type": "externaltool",
+                "url": "https://github.com/CCDirectLink/SpericalViewer/archive/v0.3.7.zip",
+                "hash": { "sha256": "aac16a0c9169baae554783ca89a5a890329334e992343a7735313ae076099f2c" }
+            }
+        ],
+        "stars": 2
+    },
+    "ccloader": {
+        "metadataCCMod": {
+            "id": "ccloader",
+            "title": "CCLoader",
+            "version": "2.23.2",
+            "description": "Modloader for CrossCode. This or a similar modloader is needed for most mods.",
+            "licence": "MIT",
+            "tags": ["externaltool"],
+            "repository": "https://github.com/CCDirectLink/CCLoader",
+            "authors": ["2767mr", "dmitmel", "ac2pic", "Vankerkom", "20kdc", "lexisother", "L-Sherry", "elluminance", "omegalink12", "Silverfeelin"]
+        },
+        "installation": [
+            {
+                "type": "externaltool",
+                "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.23.3/v2.13.0.zip",
+                "hash": { "sha256": "f7f7f9c7229985dfb62ac58129799070b6ae0114db043e343f6b20c34a6ff3cd" }
+            }
+        ],
+        "stars": 31
+    },
+    "CCAnimationEditor": {
+        "metadataCCMod": {
+            "id": "CCAnimationEditor",
+            "title": "CCAnimationEditor",
+            "version": "0.2.8",
+            "description": "Animation editor for CrossCode.",
+            "licence": "ISC",
+            "tags": ["externaltool"],
+            "repository": "https://github.com/gregnk/CCAnimationEditor",
+            "authors": ["gregnk"]
+        },
+        "installation": [
+            {
+                "type": "externaltool",
+                "url": "https://github.com/gregnk/CCAnimationEditor/releases/download/v0.2.8/CCAnimationEditor-v0.2.8.zip",
+                "hash": { "sha256": "c1e2da297c88ce679a6d985ba10751ecb657138af03d0387a4fc8042cfcf460b" }
+            }
+        ],
+        "stars": 3
+    },
+    "crosscode-map-editor": {
+        "metadataCCMod": {
+            "id": "CrossCode Map Editor",
+            "title": "CrossCode Map Editor",
+            "version": "1.5.0",
+            "description": "A Map Editor for CrossCode.",
+            "licence": "MIT",
+            "tags": ["externaltool"],
+            "repository": "https://github.com/CCDirectLink/crosscode-map-editor",
+            "authors": ["Vegita2", "2767mr", "ac2pic", "yellowsink", "elluminance", "krypciak", "dmitmel", "keanuplayz", "Fusion86", "Nnubes256"]
+        },
+        "installation": [
+            {
+                "type": "externaltool",
+                "url": "https://github.com/CCDirectLink/crosscode-map-editor/releases/download/v1.5.0/cc-map-editor-1.5.0-win.exe",
+                "hash": { "sha256": "5ff589127a29c0e7dad3f3a4eba107c30dff1824fddd3b03558b78c2eeca140c" },
+                "platform": "win32"
+            }
+        ],
+        "stars": 46
+    },
+    "CCAreaEditor": {
+        "metadataCCMod": {
+            "id": "CCAreaEditor",
+            "title": "CCAreaEditor",
+            "version": "1.0.6",
+            "description": "A CrossCode modding tool that allows you to graphically edit areas.",
+            "licence": "MIT",
+            "tags": ["externaltool"],
+            "homepage": "https://watduhhekbro.github.io/CCAreaEditor",
+            "repository": "https://github.com/WatDuhHekBro/CCAreaEditor",
+            "authors": ["WatDuhHekBro"]
+        },
+        "installation": [],
+        "stars": 1
+    }
+}
