@@ -192,6 +192,11 @@ async function getStarsAndTimestamp(
     if (name == 'GitHub') {
         const apiUrl = `https://api.github.com/repos/${url.substring('https://github.com/'.length)}`
         const data = await fetchGithub<github.components['schemas']['full-repository']>(apiUrl)
+
+        if ('status' in data && data.status == '404') {
+            throw new Error(`Repository: ${url} has been deleted!`)
+        }
+
         const stars = data.stargazers_count
 
         const branchApiUrl = data.branches_url.replace(/\{\/branch\}/, `/${data.default_branch}`)
