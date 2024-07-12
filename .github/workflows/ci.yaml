@@ -8,16 +8,38 @@ jobs:
         name: Check database
         runs-on: ubuntu-latest
 
-        if: "!startsWith(github.event.head_commit.message, 'CCBot: ccbot')"
         steps:
             - uses: actions/checkout@v4
+              with:
+                ref: stable
+
+            - uses: actions/checkout@v4
+              with:
+                ref: testing
+
+            - uses: actions/checkout@v4
+          
+            - name: Checkout branches
+              run: |
+                git checkout stable
+                git checkout testing
+                git checkout $GITHUB_REF
+
             - uses: actions/setup-node@v4
               with:
                   node-version: 20
             - working-directory: build/
               run: npm ci
-            - name: npm run test
+            
+            - name: Test the stable branch
               working-directory: build/
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-              run: npm test
+              run: npm run stableTest
+
+            - name: Test the testing branch
+              working-directory: build/
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              run: npm run testingTest
+
