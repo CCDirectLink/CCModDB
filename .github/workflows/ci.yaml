@@ -28,18 +28,16 @@ jobs:
             - uses: actions/setup-node@v4
               with:
                   node-version: 20
-            - working-directory: build/
-              run: npm ci
+
+            - run: npm ci
             
             - name: Test the stable branch
-              working-directory: build/
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-              run: npm run stableTest
+              run: BRANCH=stable npm run test
 
             - name: Test the testing branch
-              working-directory: build/
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-              run: npm run testingTest
+              run: BRANCH=testing npm run test
 

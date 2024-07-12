@@ -3,12 +3,9 @@
   "version": "1.0.0",
   "description": "A build script for ccmoddb",
   "scripts": {
-    "stable": "tsx build/src/main.ts stable",
-    "stableScratch": "tsx build/src/main.ts stable scratch",
-    "stableTest": "BRANCH=stable npx tsx build/tests/run.ts",
-    "testing": "tsx build/src/main.ts testing",
-    "testingScratch": "tsx build/src/main.ts testing scratch",
-    "testingTest": "BRANCH=testing PARENT_BRANCHES=\"[\\\"stable\\\"]\" npx tsx build/tests/run.ts",
+    "start": "tsx build/src/main.ts $BRANCH",
+    "startScratch": "tsx build/src/main.ts $BRANCH scratch",
+    "test": "eval \"export PARENT_BRANCHES=$(git show $BRANCH:db-info.json | jq '.parentBranches' -c | sed 's/\\\"/\\\\\"/g')\" && npx tsx build/tests/run.ts",
     "format": "prettier ./build/src -w"
   },
   "type": "module",
