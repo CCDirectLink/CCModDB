@@ -1,6 +1,7 @@
 import mocha from 'mocha'
 import { getRepoBranches, gitReadFunc } from '../src/git'
-;(async () => {
+
+async function run() {
     const branch = process.env['BRANCH']!
 
     process.env['input-locations.json'] = await gitReadFunc(branch, 'input-locations.json')
@@ -44,5 +45,17 @@ import { getRepoBranches, gitReadFunc } from '../src/git'
     mo.addFile('build/tests/npDatabase.ts')
     mo.addFile('build/tests/dbBuilt.ts')
 
-    mo.run()
-})()
+    const runner = mo.run()
+
+    const success = await new Promise<boolean>((resolve) => {
+        runner.on('fail', () => resolve(false))
+        runner.on('end', () => resolve(true))
+    })
+
+    if (!success) {
+        process.exitCode = 1
+    }
+}
+
+
+await run()
