@@ -45,6 +45,7 @@ async function main() {
         gitWriteFunc
     )
 
+    // console.log(toWrite.map(e => ([e[0], e[1].toString()])).join("\n"))
     await git.checkout(branch)
 
     await Promise.all(

@@ -7,11 +7,13 @@ import type {
     InputLocation,
     PackageDB,
     PkgMetadata,
+    ReleasePage,
     ValidPkgCCMod,
     ZipInputLocation,
 } from './types'
 import { getRepositoryEntry } from './api'
 import { WriteFunc } from './main'
+import * as semver from 'semver'
 
 export type ModMetadatas = {
     ccmod?: ValidPkgCCMod
@@ -207,5 +209,51 @@ async function getStarsAndTimestamp(
 
         return { stars, timestamp }
     }
+    return
+}
+
+/* this has to be done outside of buildEntry to avoid concurent api requests */
+export async function addReleasePages(result: PackageDB) {
+    for (const id in result) {
+        const mod = result[id]
+
+        if (!mod) continue
+
+        mod.releasePages = await getReleasePages(mod.metadataCCMod!)
+    }
+}
+
+async function getReleasePages(ccmod: ValidPkgCCMod): Promise<ReleasePage[] | undefined> {
+    const homepageArr = getRepositoryEntry(ccmod.repository)
+    if (homepageArr.length == 0) return
+    if (homepageArr.length > 1) throw new Error('Multi page release fetching not supported')
+    const { name, url } = homepageArr[0]
+
+    if (name == 'GitHub') {
+        const apiUrl = `https://api.github.com/repos/${url.substring('https://github.com/'.length)}/releases`
+        const data = await fetchGithub<github.components['schemas']['release'][]>(apiUrl)
+
+        if ('status' in data && data.status == '404') {
+            throw new Error(`Repository: ${url} has been deleted!`)
+        }
+
+        const paresed: ReleasePage[] = data.map(e => {
+            const tagName = e.tag_name
+            let version = tagName
+
+            // Attempt to convert the tag name into a semver
+            if (version.startsWith("v")) version = version.substring("v".length)
+            // Revert to the raw tag name if the semver is stil invalid
+            if (!semver.parse(version)) version = tagName
+
+            return {
+                body: e.body ?? '',
+                version,
+                timestamp: new Date(e.created_at).getTime()
+            }
+        })
+        return paresed
+    }
+
     return
 }

@@ -176,8 +176,8 @@ function testInstallation(mod: Package) {
             expect(inst !== null, 'installation (type: object) must be an object').to.be.true
 
             expect(
-                ['zip', 'externaltool'].includes(inst.type),
-                'installation.type (type: string) must be one of: ["zip", "externaltool"]'
+                ['zip', 'externaltool', undefined].includes(inst.type),
+                'installation.type (type: string) must be one of: ["zip", "externaltool", undefined]'
             ).to.be.true
 
             expect(

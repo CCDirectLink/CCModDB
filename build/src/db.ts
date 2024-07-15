@@ -1,7 +1,7 @@
 import semver from 'semver'
 import crypto from 'crypto'
 import { download, streamToBuffer } from './download'
-import { ModMetadatasInput, ModMetadatas, addStarsAndTimestampsToResults } from './source'
+import { ModMetadatasInput, ModMetadatas, addStarsAndTimestampsToResults, addReleasePages } from './source'
 import type {
     PackageDB,
     InputLocation,
@@ -24,7 +24,10 @@ export async function build(packages: ModMetadatasInput[]): Promise<PackageDB> {
     }
 
     await Promise.all(promises)
+    // Both addStarsAndTimestampsToResults and addReleasePages use the GitHub api 
+    // so it shouldn't be done concurrently
     await addStarsAndTimestampsToResults(result)
+    await addReleasePages(result)
 
     return result
 }

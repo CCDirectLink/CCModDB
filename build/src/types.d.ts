@@ -154,7 +154,7 @@ export type ValidPkgCCMod = {
     /** Require certain mods for the mod to function */
     dependencies?: Record<string, SemverConstraint>
 
-    /** Browser specific. Tell the the game what files to load */
+    /** Browser specific. Tell the game what files to load */
     assets?: FilePath[]
     /** Browser specific */
     assetsDir?: FilePath
@@ -212,7 +212,20 @@ export type InstallMethodExternalTool = InstallMethodBase & {
     type: 'externaltool'
 }
 
-/*
+/**
+ * Represents the release page info fetched from the mods repository
+ **/
+export interface ReleasePage {
+    /** Body of the release in Markdown */
+    body: string
+    /** The tag name. There is an attempt to convert it to a proper semver, but if it fails it 
+     * is just the raw tag name */
+    version: string
+    /** UNIX timestamp of the release */
+    timestamp: number
+}
+
+/**
  * Represents a package in the database.
  **/
 export type Package = {
@@ -226,6 +239,8 @@ export type Package = {
     stars?: number
     /** UNIX timestamp of the project repository last push date. */
     lastUpdateTimestamp?: number
+    /** All repository release page contents */
+    releasePages?: ReleasePage[]
 }
 
 /**
