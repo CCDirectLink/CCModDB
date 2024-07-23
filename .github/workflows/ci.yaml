@@ -32,7 +32,21 @@ jobs:
                   cache-dependency-path: 'package-lock.json'
 
             - run: npm ci
-            
+
+            - name: Get Date
+              id: get-date
+              run: |
+                echo "date=$(/bin/date -u "+%Y%m%d")" >> $GITHUB_OUTPUT
+
+            - name: Restore cached mod archives
+              uses: actions/cache/restore@v4
+              with:
+                path: |
+                  build/cache
+                key: mod-cache-${{ steps.get-date.outputs.date }}
+                restore-keys: |
+                  mod-cache-
+
             - name: Test the stable branch
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -43,3 +57,9 @@ jobs:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
               run: BRANCH=testing npm run test
 
+            - name: Save mod archive cache
+              uses: actions/cache/save@v4
+              with:
+                path: |
+                  build/cache
+                key: mod-cache-${{ steps.get-date.outputs.date }}
