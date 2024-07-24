@@ -30,7 +30,6 @@ describe('NpDatabase', async () => {
     })
 })
 
-
 export function testPackage(mod: Package, name: string) {
     describe(`Package: ${name}`, () => {
         it('Check for required elements', () => {

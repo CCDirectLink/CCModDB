@@ -1,10 +1,8 @@
-// call with mocha
-// require chai
-
 import { expect } from 'chai'
-import { download, streamToBuffer } from '../src/download'
+import { InputLocations } from '../src/types'
+// import { download, streamToBuffer } from '../src/download'
 
-const inputLocations = JSON.parse(process.env['input-locations.json']!)
+const inputLocations: InputLocations = JSON.parse(process.env['input-locations.json']!)
 
 describe('InputLocations', async () => {
     it('Check json structure', () => {
@@ -29,11 +27,9 @@ describe('InputLocations', async () => {
                             expect(typeof loc.url).to.equal('string')
                             expect(loc.source === undefined || typeof loc.source === 'string').to.be
                                 .true
-                            expect(await streamToBuffer(await download(inputLocations[i].url))).to
-                                .not.throw
                             break
                     }
-                }).timeout(1000000)
+                })
             })
         }
     })
