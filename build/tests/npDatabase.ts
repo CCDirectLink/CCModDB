@@ -14,7 +14,6 @@ import {
 } from '../src/types'
 
 const npDatabase: PackageDB = JSON.parse(process.env['npDatabase.json']!)
-const tools: PackageDB = JSON.parse(process.env['tools.json']!)
 const parentNpDatabases: PackageDB = JSON.parse(process.env['parentNpDatabases'] ?? '{}')
 
 describe('NpDatabase', async () => {
@@ -31,19 +30,6 @@ describe('NpDatabase', async () => {
     })
 })
 
-describe('ToolsDB', async () => {
-    it('Check json structure', () => {
-        expect(typeof tools === 'object', 'Json not valid: Not an object').to.be.true
-        expect(Array.isArray(tools), 'Json not valid: Not an object').to.be.false
-        expect(tools !== null, 'Json not valid: Not an object').to.be.true
-    })
-
-    describe('tools', () => {
-        for (const mod of Object.keys(tools)) {
-            testPackage(tools[mod], mod)
-        }
-    })
-})
 
 export function testPackage(mod: Package, name: string) {
     describe(`Package: ${name}`, () => {

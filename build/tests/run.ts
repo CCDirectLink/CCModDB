@@ -43,11 +43,12 @@ async function run() {
 
     mo.addFile('build/tests/input.ts')
     mo.addFile('build/tests/npDatabase.ts')
+    if (!process.env['donttesttools']) mo.addFile('build/tests/tools.ts')
     mo.addFile('build/tests/dbBuilt.ts')
 
     const runner = mo.run()
 
-    const success = await new Promise<boolean>((resolve) => {
+    const success = await new Promise<boolean>(resolve => {
         runner.on('fail', () => resolve(false))
         runner.on('end', () => resolve(true))
     })
@@ -56,6 +57,5 @@ async function run() {
         process.exitCode = 1
     }
 }
-
 
 await run()
