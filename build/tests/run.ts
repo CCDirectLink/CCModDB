@@ -52,7 +52,6 @@ async function run() {
 
     mo.addFile('build/tests/input.ts')
     mo.addFile('build/tests/npDatabase.ts')
-    if (!process.env['donttesttools']) mo.addFile('build/tests/tools.ts')
 
     const runner = mo.run()
 
