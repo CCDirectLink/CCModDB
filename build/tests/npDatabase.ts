@@ -134,16 +134,25 @@ function testMetadataCCMod(ccmod: PkgCCMod) {
                 'ccmod.dependencies (type: object) must be an object'
             ).to.be.true
 
-            for (const dep of Object.keys(ccmod.dependencies!)) {
+            for (const depId in ccmod.dependencies!) {
+                const requiredVersionRange = ccmod.dependencies![depId]
                 expect(
-                    semver.validRange(ccmod.dependencies![dep]),
-                    `dependency ${dep} must be specify a valid range`
+                    semver.validRange(requiredVersionRange),
+                    `dependency ${depId} must be specify a valid range`
                 ).to.not.be.null
 
-                if (skipTheseModDependencies.includes(dep.toLowerCase())) continue
+                if (skipTheseModDependencies.includes(depId.toLowerCase())) continue
 
-                expect(findDependency(dep), `dependency ${dep} must be registered in CCModDb`).to
-                    .not.be.undefined
+                const dep = findDependency(depId)
+                expect(dep, `dependency ${depId} must be registered in CCModDb`).to.not.be.undefined
+
+                if (dep) {
+                    const depDatabaseVersion = dep.metadataCCMod!.version
+                    expect(
+                        semver.satisfies(depDatabaseVersion, requiredVersionRange),
+                        `the version of the dependency ${depId} (database version: ${depDatabaseVersion}) does not satisfy the required range: ${requiredVersionRange}`
+                    ).to.be.true
+                }
             }
         })
     } else {
