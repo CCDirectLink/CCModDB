@@ -1,30 +1,27 @@
 import semver from 'semver'
 import crypto from 'crypto'
 import { download, streamToBuffer } from './download'
-import { ModMetadatasInput, ModMetadatas, addStarsAndTimestampsToResults, addReleasePages } from './source'
-import type {
-    PackageDB,
-    InputLocation,
-    InstallMethod,
-    PkgMetadata,
-    PkgCCMod,
-    ValidPkgCCMod,
-} from './types'
+import {
+    ModMetadatasInput,
+    ModMetadatas,
+    addStarsAndTimestampsToResults,
+    addReleasePages,
+} from './source'
+import type { PackageDB, InputLocation, InstallMethod, PkgCCMod, ValidPkgCCMod } from './types'
 import { WriteFunc } from './main'
 
 export async function build(packages: ModMetadatasInput[]): Promise<PackageDB> {
     const result: PackageDB = {}
     const promises: Promise<void>[] = []
 
-    for (const [, { meta, ccmod, inputs }] of groupByName(packages)) {
+    for (const [, { ccmod, inputs }] of groupByName(packages)) {
         if (ccmod && !checkCCMod(ccmod)) continue
-        if (meta && !checkMeta(meta)) continue
 
-        promises.push(buildEntry(result, meta, ccmod, inputs))
+        promises.push(buildEntry(result, ccmod, inputs))
     }
 
     await Promise.all(promises)
-    // Both addStarsAndTimestampsToResults and addReleasePages use the GitHub api 
+    // Both addStarsAndTimestampsToResults and addReleasePages use the GitHub api
     // so it shouldn't be done concurrently
     await addStarsAndTimestampsToResults(result)
     await addReleasePages(result)
@@ -42,50 +39,13 @@ export async function writeMinified(db: PackageDB, write: WriteFunc): Promise<vo
 
 async function buildEntry(
     result: PackageDB,
-    meta: PkgMetadata | undefined,
-    ccmod: ValidPkgCCMod | undefined,
+    ccmod: ValidPkgCCMod,
     inputs: InputLocation[]
 ): Promise<void> {
-    result[ccmod?.id || meta!.name] = {
-        // metadata: meta,
+    result[ccmod.id] = {
         metadataCCMod: ccmod,
         installation: await generateInstallations(inputs),
     }
-}
-
-function checkMeta(meta: PkgMetadata): boolean {
-    if (meta.dependencies && !meta.ccmodDependencies) {
-        console.warn(
-            `Package has 'dependencies', not 'ccmodDependencies': ${meta.name}; correct ASAP`
-        )
-        return false
-    }
-
-    if (meta.ccmodDependencies) {
-        if (meta.ccmodDependencies.constructor !== Object) {
-            console.warn(`Package has dependencies not an object: ${meta.name}`)
-            return false
-        }
-
-        for (let dep in meta.ccmodDependencies) {
-            if (semver.validRange(meta.ccmodDependencies[dep]) === null) {
-                console.warn(`Package has invalid constraint: ${meta.name}`)
-                return false
-            }
-        }
-    }
-
-    if (!meta.version) {
-        console.warn(`Package is missing version: ${meta.name}`)
-        return false
-    }
-
-    if (semver.parse(meta.version) == null) {
-        console.warn(`Package version invalid: ${meta.name}`)
-        return false
-    }
-
-    return true
 }
 
 function checkCCMod(ccmod: PkgCCMod): ccmod is ValidPkgCCMod {
@@ -160,15 +120,12 @@ function groupByName(
 ): Map<string, ModMetadatas & { inputs: InputLocation[] }> {
     const result = new Map<string, ModMetadatas & { inputs: InputLocation[] }>()
 
-    for (const { meta: pkg, ccmod, input } of packages) {
-        for (const name of [ccmod?.id, pkg?.name, 'nomodlikethiseverwillexist'].filter(
-            Boolean
-        ) as string[]) {
-            if (name == 'nomodlikethiseverwillexist') throw new Error(packages.join())
+    for (const { ccmod, input } of packages) {
+        for (const name of [ccmod!.id]) {
             if (result.has(name)) {
                 result.get(name)?.inputs.push(input)
             } else {
-                result.set(name, { meta: pkg, ccmod, inputs: [input] })
+                result.set(name, { ccmod, inputs: [input] })
             }
             break
         }

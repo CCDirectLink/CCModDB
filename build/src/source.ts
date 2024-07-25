@@ -6,7 +6,6 @@ import * as github from '@octokit/openapi-types'
 import type {
     InputLocation,
     PackageDB,
-    PkgMetadata,
     ReleasePage,
     ValidPkgCCMod,
     ZipInputLocation,
@@ -16,8 +15,7 @@ import { WriteFunc } from './main'
 import * as semver from 'semver'
 
 export type ModMetadatas = {
-    ccmod?: ValidPkgCCMod
-    meta?: PkgMetadata
+    ccmod: ValidPkgCCMod
 }
 export type ModMetadatasInput = ModMetadatas & { input: InputLocation }
 
@@ -25,14 +23,13 @@ export async function get(input: InputLocation, write: WriteFunc): Promise<ModMe
     const fileFetchFunc: ((input: any, fileName: string, parseToJson?: boolean) => any) | 'error' =
         input.type === undefined || input.type === 'zip'
             ? (input: ZipInputLocation, fileName, parseToJson) =>
-                  getModZipFile<PkgMetadata>(input, fileName, parseToJson)
+                  getModZipFile(input, fileName, parseToJson)
             : 'error'
     if (fileFetchFunc === 'error') throw new Error(`Unsupported location type '${input.type}'`)
 
     let pkg
     try {
         pkg = {
-            meta: await fileFetchFunc(input, 'package.json'),
             ccmod: await fileFetchFunc(input, 'ccmod.json'),
             input,
         }
@@ -41,8 +38,7 @@ export async function get(input: InputLocation, write: WriteFunc): Promise<ModMe
         console.log(e)
         throw e
     }
-    if (!pkg.ccmod && !pkg.meta)
-        throw new Error(`A mod has to either have a package.json or a ccmod.json: ${input.url}`)
+    if (!pkg.ccmod) throw new Error(`A mod has to have a ccmod.json: ${input.url}`)
     const iconPath = getModIconPath(pkg)
     if (iconPath) {
         const imgData = await fileFetchFunc(input, iconPath, false)
@@ -162,7 +158,7 @@ export async function addStarsAndTimestampsToResults(result: PackageDB) {
 
         if (!mod) continue
 
-        const res = await getStarsAndTimestamp(mod.metadata, mod.metadataCCMod)
+        const res = await getStarsAndTimestamp(mod.metadataCCMod)
         if (!res) continue
 
         mod.stars = res.stars
@@ -184,10 +180,9 @@ async function fetchGithub<T>(url: string): Promise<T> {
 }
 
 async function getStarsAndTimestamp(
-    meta: PkgMetadata | undefined,
     ccmod: ValidPkgCCMod | undefined
 ): Promise<{ stars: number; timestamp?: number } | undefined> {
-    const homepageArr = getRepositoryEntry(ccmod?.repository || meta?.homepage)
+    const homepageArr = getRepositoryEntry(ccmod?.repository)
     if (homepageArr.length == 0) return
     if (homepageArr.length > 1) throw new Error('Multi page star counting not supported')
     const { name, url } = homepageArr[0]
@@ -242,14 +237,14 @@ async function getReleasePages(ccmod: ValidPkgCCMod): Promise<ReleasePage[] | un
             let version = tagName
 
             // Attempt to convert the tag name into a semver
-            if (version.startsWith("v")) version = version.substring("v".length)
+            if (version.startsWith('v')) version = version.substring('v'.length)
             // Revert to the raw tag name if the semver is stil invalid
             if (!semver.parse(version)) version = tagName
 
             return {
                 body: e.body ?? '',
                 version,
-                timestamp: new Date(e.created_at).getTime()
+                timestamp: new Date(e.created_at).getTime(),
             }
         })
         return paresed

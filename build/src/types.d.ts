@@ -229,8 +229,6 @@ export interface ReleasePage {
  * Represents a package in the database.
  **/
 export type Package = {
-    /** Metadata for the package. */
-    metadata?: PkgMetadata
     /** ccmod.json Metadata for the package. */
     metadataCCMod?: ValidPkgCCMod
     /** Installation methods (try in order) */
