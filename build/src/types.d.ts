@@ -245,3 +245,11 @@ export type Package = {
  * Represents the database. Keys in this Record MUST match their respective `value.metadata.name`
  **/
 export type PackageDB = Record<string, Package>
+
+/**
+ * Database information. Stored in db-info.json
+ **/
+export interface DatabaseInfo {
+    /** Can be either a url to a npDatabase.min.json file or the name of a local repo branch */
+    parentBranches: string[]
+}

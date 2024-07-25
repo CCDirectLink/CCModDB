@@ -6,6 +6,7 @@ import semver from 'semver'
 import crypto from 'crypto'
 import { download, streamToBuffer } from '../src/download'
 import {
+    DatabaseInfo,
     InstallMethodExternalTool,
     InstallMethodZip,
     Package,
@@ -24,8 +25,9 @@ const npDatabasePromise = new Promise<void>(async resolve => {
 
 let parentNpDatabases: PackageDB
 const parentNpDatabasesPromise = new Promise<void>(async resolve => {
-    const parentBranchesRaw = process.env['PARENT_BRANCHES']!
-    if (!parentBranchesRaw) return resolve()
+    const dbInfo: DatabaseInfo = JSON.parse((await gitReadFunc(branch, 'db-info.json'))!)
+    const parentBranches = dbInfo.parentBranches
+    if (!parentBranches) return resolve()
 
     const repoBranches = await getRepoBranches()
 
@@ -43,7 +45,6 @@ const parentNpDatabasesPromise = new Promise<void>(async resolve => {
         }
     }
 
-    const parentBranches: string[] = JSON.parse(parentBranchesRaw)
     const parentDbs = await Promise.all(parentBranches.map(getParentPackageDb))
 
     const merged = parentDbs.reduce((acc, v) => Object.assign(acc, JSON.parse(v)), {})

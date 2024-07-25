@@ -5,7 +5,7 @@
   "scripts": {
     "start": "tsx build/src/main.ts $BRANCH",
     "startScratch": "tsx build/src/main.ts $BRANCH scratch",
-    "test": "eval \"export PARENT_BRANCHES=$(git show $BRANCH:db-info.json | jq '.parentBranches' -c | sed 's/\\\"/\\\\\"/g')\" && npx tsx build/tests/run.ts",
+    "test": "npx tsx build/tests/run.ts",
     "format": "prettier ./build/src -w"
   },
   "type": "module",
