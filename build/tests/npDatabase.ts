@@ -12,18 +12,61 @@ import {
     PackageDB,
     PkgCCMod,
 } from '../src/types'
+import { getRepoBranches, gitReadFunc } from '../src/git'
 
-const npDatabase: PackageDB = JSON.parse(process.env['npDatabase.json']!)
-const parentNpDatabases: PackageDB = JSON.parse(process.env['parentNpDatabases'] ?? '{}')
+const branch = process.env['BRANCH']!
 
-describe('NpDatabase', async () => {
-    it('Check json structure', () => {
+let npDatabase: PackageDB
+const npDatabasePromise = new Promise<void>(async resolve => {
+    npDatabase = JSON.parse((await gitReadFunc(branch, 'npDatabase.min.json'))!)
+    resolve()
+})
+
+let parentNpDatabases: PackageDB
+const parentNpDatabasesPromise = new Promise<void>(async resolve => {
+    const parentBranchesRaw = process.env['PARENT_BRANCHES']!
+    if (!parentBranchesRaw) return resolve()
+
+    const repoBranches = await getRepoBranches()
+
+    async function getParentPackageDb(name: string): Promise<string> {
+        if (repoBranches.includes(name)) {
+            const data = await gitReadFunc(name, 'npDatabase.min.json')
+            if (!data) throw new Error(`npDatabase.json not found on branch "${name}"`)
+            return data
+        }
+
+        try {
+            return (await fetch(name)).text()
+        } catch (e) {
+            throw new Error(`Invalid parent repo npDatatabase.min.json url: "${name}"`, e as Error)
+        }
+    }
+
+    const parentBranches: string[] = JSON.parse(parentBranchesRaw)
+    const parentDbs = await Promise.all(parentBranches.map(getParentPackageDb))
+
+    const merged = parentDbs.reduce((acc, v) => Object.assign(acc, JSON.parse(v)), {})
+
+    parentNpDatabases = merged
+
+    resolve()
+})
+
+describe('NpDatabase', () => {
+    it('Check json structure', async () => {
+        await npDatabasePromise
+        await parentNpDatabasesPromise
+
         expect(typeof npDatabase === 'object', 'Json not valid: Not an object').to.be.true
         expect(Array.isArray(npDatabase), 'Json not valid: Not an object').to.be.false
         expect(npDatabase !== null, 'Json not valid: Not an object').to.be.true
     })
 
-    describe('mods', () => {
+    describe('mods', async () => {
+        await npDatabasePromise
+        await parentNpDatabasesPromise
+
         for (let mod of Object.keys(npDatabase)) {
             testPackage(npDatabase[mod], mod)
         }
@@ -31,16 +74,24 @@ describe('NpDatabase', async () => {
 })
 
 if (!process.env['donttesttools']) {
-    const tools: PackageDB = JSON.parse(process.env['tools.json']!)
+    let tools: PackageDB
+    const toolsPromise = new Promise<void>(async resolve => {
+        tools = JSON.parse((await gitReadFunc(branch, 'tools.json'))!)
+        resolve()
+    })
 
     describe('ToolsDB', async () => {
-        it('Check json structure', () => {
+        it('Check json structure', async () => {
+            await toolsPromise
+
             expect(typeof tools === 'object', 'Json not valid: Not an object').to.be.true
             expect(Array.isArray(tools), 'Json not valid: Not an object').to.be.false
             expect(tools !== null, 'Json not valid: Not an object').to.be.true
         })
 
-        describe('tools', () => {
+        describe('tools', async () => {
+            await toolsPromise
+
             for (const mod of Object.keys(tools)) {
                 testPackage(tools[mod], mod)
             }

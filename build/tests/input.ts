@@ -1,17 +1,26 @@
 import { expect } from 'chai'
 import { InputLocations } from '../src/types'
+import { gitReadFunc } from '../src/git'
 // import { download, streamToBuffer } from '../src/download'
 
-const inputLocations: InputLocations = JSON.parse(process.env['input-locations.json']!)
+let inputLocations: InputLocations
 
-describe('InputLocations', async () => {
-    it('Check json structure', () => {
+const inputLocationsPromise: Promise<void> = new Promise<void>(async resolve => {
+    const branch = process.env['BRANCH']!
+    inputLocations = JSON.parse((await gitReadFunc(branch, 'input-locations.json'))!)
+    resolve()
+})
+
+describe('InputLocations', () => {
+    it('Check json structure', async () => {
+        await inputLocationsPromise
         expect(typeof inputLocations === 'object', 'Json not valid: Not an array').to.be.true
         expect(Array.isArray(inputLocations), 'Json not valid: Not an array').to.be.true
         expect(inputLocations !== null, 'Json not valid: Not an array').to.be.true
     })
 
-    describe('mods', () => {
+    describe('mods', async () => {
+        await inputLocationsPromise
         for (let i = 0; i < inputLocations.length; i++) {
             const loc = inputLocations[i]
             describe(loc.url, () => {
