@@ -242,7 +242,7 @@ export type Package = {
 }
 
 /**
- * Represents the database. Keys in this Record MUST match their respective `value.metadata.name`
+ * Represents the database. Stored in npDatabase.json and npDatabase.min.json
  **/
 export type PackageDB = Record<string, Package>
 
