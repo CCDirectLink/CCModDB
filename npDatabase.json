@@ -1805,7 +1805,7 @@
     "ccmodmanager": {
         "metadataCCMod": {
             "id": "ccmodmanager",
-            "version": "0.9.15",
+            "version": "0.9.16",
             "title": "CCModManager",
             "description": "Mod manager for CrossCode!",
             "repository": "https://github.com/CCDirectLink/CCModManager",
@@ -1826,15 +1826,20 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CCDirectLink/CCModManager/releases/download/v0.9.15/ccmodmanager-0.9.15.ccmod",
+                "url": "https://github.com/CCDirectLink/CCModManager/releases/download/v0.9.16/ccmodmanager-0.9.16.ccmod",
                 "hash": {
-                    "sha256": "928f36de92320c1d735ce3bc9e53da8355b28d1dca60ea744b644fbdfa906576"
+                    "sha256": "79d50dcac018653f81d1a8ab2f6c26e6f4c095600eba8111956812159e464b3f"
                 }
             }
         ],
         "stars": 1,
-        "lastUpdateTimestamp": 1721646179000,
+        "lastUpdateTimestamp": 1722258714000,
         "releasePages": [
+            {
+                "body": "### Changed\n\n- Update the mod database endpoint",
+                "version": "0.9.16",
+                "timestamp": 1722258714000
+            },
             {
                 "body": "### Fixed\n\n- Fixed crash when switching buttons using a mouse on BUTTON_GROUP",
                 "version": "0.9.15",
