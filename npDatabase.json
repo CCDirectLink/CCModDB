@@ -3491,7 +3491,7 @@
     "mw-rando": {
         "metadataCCMod": {
             "id": "mw-rando",
-            "version": "0.4.1",
+            "version": "0.5.0",
             "title": "Multiworld randomizer",
             "description": "Client for CrossCode Archipelago Integration",
             "repository": "https://github.com/CodeTriangle/CCMultiworldRandomizer",
@@ -3502,16 +3502,16 @@
             "authors": "CodeTriangle",
             "plugin": "mw-rando/plugin.js",
             "dependencies": {
-                "open-world": ">=0.1.8",
-                "nax-ccuilib": ">=1.2"
+                "open-world": ">=0.3.2",
+                "nax-ccuilib": ">=1.2.4"
             }
         },
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.4.1/CCMultiworldRandomizer-0.4.1.ccmod",
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.5.0/CCMultiworldRandomizer-0.5.0.ccmod",
                 "hash": {
-                    "sha256": "507105210e9407aea44cead7a057749b79cb3ffbf3caac7c947af1a3c517922e"
+                    "sha256": "11f6bf9ed80345d04ee04c2f7d99f334aadf894d57d118a28f550465ca96b01d"
                 }
             }
         ],
