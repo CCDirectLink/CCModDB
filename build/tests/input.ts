@@ -5,10 +5,11 @@ import { gitReadFunc } from '../src/git'
 
 let inputLocations: InputLocations
 
-const inputLocationsPromise: Promise<void> = new Promise<void>(async resolve => {
-    const branch = process.env['BRANCH']!
-    inputLocations = JSON.parse((await gitReadFunc(branch, 'input-locations.json'))!)
-    resolve()
+const inputLocationsPromise: Promise<void> = gitReadFunc(
+    process.env['BRANCH']!,
+    'input-locations.json'
+).then(data => {
+    inputLocations = JSON.parse(data!)
 })
 
 describe('InputLocations', () => {
@@ -17,7 +18,7 @@ describe('InputLocations', () => {
         expect(typeof inputLocations === 'object', 'Json not valid: Not an array').to.be.true
         expect(Array.isArray(inputLocations), 'Json not valid: Not an array').to.be.true
         expect(inputLocations !== null, 'Json not valid: Not an array').to.be.true
-    }).timeout(30e3)
+    })
 
     describe('mods', async () => {
         await inputLocationsPromise
@@ -41,5 +42,5 @@ describe('InputLocations', () => {
                 })
             })
         }
-    }).timeout(30e3)
+    })
 })

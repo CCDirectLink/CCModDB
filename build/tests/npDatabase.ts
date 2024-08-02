@@ -18,9 +18,8 @@ import { getRepoBranches, gitReadFunc } from '../src/git'
 const branch = process.env['BRANCH']!
 
 let npDatabase: PackageDB
-const npDatabasePromise = new Promise<void>(async resolve => {
-    npDatabase = JSON.parse((await gitReadFunc(branch, 'npDatabase.min.json'))!)
-    resolve()
+const npDatabasePromise = gitReadFunc(branch, 'npDatabase.min.json').then(data => {
+    npDatabase = JSON.parse(data!)
 })
 
 let parentNpDatabases: PackageDB
@@ -34,7 +33,7 @@ const parentNpDatabasesPromise = new Promise<void>(async resolve => {
     async function getParentPackageDb(name: string): Promise<string> {
         if (repoBranches.includes(name)) {
             const data = await gitReadFunc(name, 'npDatabase.min.json')
-            if (!data) throw new Error(`npDatabase.json not found on branch "${name}"`)
+            if (!data) throw new Error(`npDatabase.min.json not found on branch "${name}"`)
             return data
         }
 
@@ -62,8 +61,9 @@ describe('NpDatabase', () => {
         expect(typeof npDatabase === 'object', 'Json not valid: Not an object').to.be.true
         expect(Array.isArray(npDatabase), 'Json not valid: Not an object').to.be.false
         expect(npDatabase !== null, 'Json not valid: Not an object').to.be.true
-    }).timeout(100e3)
+    })
 
+    parentNpDatabases = {}
     describe('mods', async () => {
         await npDatabasePromise
         await parentNpDatabasesPromise
@@ -72,13 +72,19 @@ describe('NpDatabase', () => {
             testPackage(npDatabase[mod], mod)
         }
     })
-}).timeout(500e3)
+})
 
 if (!process.env['donttesttools']) {
     let tools: PackageDB
-    const toolsPromise = new Promise<void>(async resolve => {
-        tools = JSON.parse((await gitReadFunc(branch, 'tools.json'))!)
-        resolve()
+    const toolsPromise = new Promise<void>((resolve, reject) => {
+        const branch = process.env['BRANCH']!
+        gitReadFunc(branch, 'tools.json')
+            .then(data => {
+                if (!data) return reject(`tools.json not found on branch ${branch}`)
+                tools = JSON.parse(data!)
+                resolve()
+            })
+            .catch(err => reject(err))
     })
 
     describe('ToolsDB', async () => {
