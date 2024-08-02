@@ -11,19 +11,16 @@ jobs:
         steps:
             - uses: actions/checkout@v4
               with:
-                ref: stable
+                fetch-depth: 0
 
-            - uses: actions/checkout@v4
-              with:
-                ref: testing
-
-            - uses: actions/checkout@v4
-          
-            - name: Checkout branches
+            - name: Fetch all branches
               run: |
-                git checkout stable
-                git checkout testing
-                git checkout $GITHUB_REF
+                CURRENT_BRANCH="$(git branch --show-current)"
+                for branch in $(git branch --all | grep '^\s*remotes' | grep -vE "HEAD|$CURRENT_BRANCH"); do
+                    git branch --track "${branch##*/}" "$branch"
+                done
+                git fetch --all
+                git checkout $CURRENT_BRANCH
 
             - uses: actions/setup-node@v4
               with:
