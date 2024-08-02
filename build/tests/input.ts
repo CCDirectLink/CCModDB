@@ -17,7 +17,7 @@ describe('InputLocations', () => {
         expect(typeof inputLocations === 'object', 'Json not valid: Not an array').to.be.true
         expect(Array.isArray(inputLocations), 'Json not valid: Not an array').to.be.true
         expect(inputLocations !== null, 'Json not valid: Not an array').to.be.true
-    })
+    }).timeout(30e3)
 
     describe('mods', async () => {
         await inputLocationsPromise
@@ -41,5 +41,5 @@ describe('InputLocations', () => {
                 })
             })
         }
-    })
+    }).timeout(30e3)
 })

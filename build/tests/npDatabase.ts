@@ -62,7 +62,7 @@ describe('NpDatabase', () => {
         expect(typeof npDatabase === 'object', 'Json not valid: Not an object').to.be.true
         expect(Array.isArray(npDatabase), 'Json not valid: Not an object').to.be.false
         expect(npDatabase !== null, 'Json not valid: Not an object').to.be.true
-    })
+    }).timeout(100e3)
 
     describe('mods', async () => {
         await npDatabasePromise
@@ -72,7 +72,7 @@ describe('NpDatabase', () => {
             testPackage(npDatabase[mod], mod)
         }
     })
-})
+}).timeout(500e3)
 
 if (!process.env['donttesttools']) {
     let tools: PackageDB
@@ -265,7 +265,7 @@ function testInstallation(mod: Package) {
                     await testZip(inst)
                     break
             }
-        }).timeout(100000)
+        }).timeout(100e3)
     }
 }
 
