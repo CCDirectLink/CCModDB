@@ -56,7 +56,7 @@
                 "type": "string"
             },
             "minItems": 0,
-            "description": "Array of mod tags. See the full list of official tags: \nhttps://github.com/krypciak/CCModDB/blob/master/CCMOD-STANDARD.md#mod-tag-list"
+            "description": "Array of mod tags. See the full list of official tags: \nhttps://github.com/CCDirectLink/CCModDB/blob/master/CCMOD-STANDARD.md#mod-tag-list"
         },
         "icons": {
             "title": "icons",
