@@ -5,8 +5,13 @@
 
 Mod database for CrossCode.
 
-## [`ccmod.json` standard](./CCMOD-STANDARD.md)
+## Adding your mod to the database
+ 
+See [`CONTRIBUTING.md`](./docs/CONTRIBUTING.md)  
 
-## HOW TO ADD YOUR MOD
+## Documentation
 
-Read the [contribution guidelines](CONTRIBUTING.md).
+- [`CONTRIBUTING.md`](./docs/CONTRIBUTING.md)
+- [`CCMOD-STANDARD.md`](./docs/CCMOD-STANDARD.md)
+- [`DATABASE.md`](./docs/DATABASE.md)
+ 

@@ -66,10 +66,8 @@ For example, CCLoader can only be updated that way.
 ### Self-hosting your own mod database branch
 
 ```bash
-git clone https://github.com/krypciak/CCModDB
+git clone https://github.com/CCDirectLink/CCModDB
 cd CCModDB
-# das
-gh repo set-default krypciak/CCModDB
 # Create a fork of the repository
 gh repo fork --remote
 # Create a new branch called "mymods" based on the "stable" branch
