@@ -61,3 +61,21 @@ For example, CCLoader can only be updated that way.
 12. Run `npm run test` to verify that the mod you're introducing doesn't break the database
 
 - Tools are in `tools.json` (also in the `npDatabase.json` format) and need to be modified manually.
+
+
+### Self-hosting your own mod database branch
+
+```bash
+git clone https://github.com/krypciak/CCModDB
+cd CCModDB
+# das
+gh repo set-default krypciak/CCModDB
+# Create a fork of the repository
+gh repo fork --remote
+# Create a new branch called "mymods" based on the "stable" branch
+git checkout -b mymods upstream/stable
+# Delete all commits besides the first one
+git reset --hard "$(git rev-list --max-parents=0 HEAD)"
+# Push the changes
+git push --set-upstream origin --force
+```
