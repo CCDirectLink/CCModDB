@@ -218,6 +218,23 @@ export async function addReleasePages(result: PackageDB) {
     }
 }
 
+type ReleaseRaw = github.components['schemas']['release']
+
+async function fetchReleasePages(
+    url: string,
+    page: number,
+    perPage: number
+): Promise<ReleaseRaw[]> {
+    const repo = url.substring('https://github.com/'.length)
+    const apiUrl = `https://api.github.com/repos/${repo}/releases?per_page=${perPage}&page=${page}`
+    const data: ReleaseRaw[] = await fetchGithub<ReleaseRaw[]>(apiUrl)
+
+    if ('status' in data && data.status == '404') {
+        throw new Error(`Repository: ${url} has been deleted!`)
+    }
+    return data
+}
+
 async function getReleasePages(ccmod: ValidPkgCCMod): Promise<ReleasePage[] | undefined> {
     const homepageArr = getRepositoryEntry(ccmod.repository)
     if (homepageArr.length == 0) return
@@ -225,14 +242,20 @@ async function getReleasePages(ccmod: ValidPkgCCMod): Promise<ReleasePage[] | un
     const { name, url } = homepageArr[0]
 
     if (name == 'GitHub') {
-        const apiUrl = `https://api.github.com/repos/${url.substring('https://github.com/'.length)}/releases`
-        const data = await fetchGithub<github.components['schemas']['release'][]>(apiUrl)
+        /* github has a maximum of 100 items per page, so keep fetching new pages until the page is empty */
+        const perPage = 100
+        const releasesInfo: ReleaseRaw[] = []
+        let lastReleaseInfoBatch: ReleaseRaw[] | undefined
+        for (let page = 0; ; page++) {
+            lastReleaseInfoBatch = await fetchReleasePages(url, page, perPage)
+            if (lastReleaseInfoBatch.length == 0) break
 
-        if ('status' in data && data.status == '404') {
-            throw new Error(`Repository: ${url} has been deleted!`)
+            releasesInfo.push(...lastReleaseInfoBatch)
+
+            if (lastReleaseInfoBatch.length != perPage) break
         }
 
-        const paresed: ReleasePage[] = data.map(e => {
+        const paresed: ReleasePage[] = releasesInfo.map(e => {
             const tagName = e.tag_name
             let version = tagName
 
