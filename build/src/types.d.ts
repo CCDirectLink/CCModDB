@@ -223,6 +223,8 @@ export interface ReleasePage {
     version: string
     /** UNIX timestamp of the release */
     timestamp: number
+    /** Page url */
+    url: string
 }
 
 /**

@@ -268,6 +268,7 @@ async function getReleasePages(ccmod: ValidPkgCCMod): Promise<ReleasePage[] | un
                 body: e.body ?? '',
                 version,
                 timestamp: new Date(e.created_at).getTime(),
+                url: e.html_url,
             }
         })
         return paresed
