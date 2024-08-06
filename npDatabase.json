@@ -4270,6 +4270,81 @@
         "lastUpdateTimestamp": 1717098123000,
         "releasePages": []
     },
+    "uwuifier": {
+        "metadataCCMod": {
+            "id": "uwuifier",
+            "version": "1.0.2",
+            "title": "uwuifier",
+            "description": "Dynamically uwuifies text.",
+            "repository": "https://github.com/WatDuhHekBro/cc-uwuifier",
+            "tags": [
+                "fun"
+            ],
+            "authors": [
+                "WatDuhHekBro",
+                "dmitmel"
+            ],
+            "prestart": "prestart.js"
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/WatDuhHekBro/cc-uwuifier/releases/download/v1.0.2-1/uwuifier.ccmod",
+                "hash": {
+                    "sha256": "ea3640d48aff58910c543625b42ac505b8f439aa7bdadf071fd3a4c2c00446cd"
+                }
+            }
+        ],
+        "stars": 3,
+        "lastUpdateTimestamp": 1722926240000,
+        "releasePages": [
+            {
+                "body": "Simple update by @krypciak to add CCModManager integration.",
+                "version": "1.0.2-1",
+                "timestamp": 1722926494000
+            },
+            {
+                "body": "Fixes a crash by dmitmel",
+                "version": "1.0.2",
+                "timestamp": 1636657887000
+            },
+            {
+                "body": "",
+                "version": "1.0.1",
+                "timestamp": 1618691957000
+            },
+            {
+                "body": "",
+                "version": "1.0.0",
+                "timestamp": 1618634251000
+            },
+            {
+                "body": "",
+                "version": "0.1.4",
+                "timestamp": 1580666793000
+            },
+            {
+                "body": "",
+                "version": "0.1.3",
+                "timestamp": 1580666621000
+            },
+            {
+                "body": "",
+                "version": "0.1.2",
+                "timestamp": 1580627435000
+            },
+            {
+                "body": "Place the .ccmod file in \"assets/mods/\".",
+                "version": "0.1.1",
+                "timestamp": 1580585381000
+            },
+            {
+                "body": "Place the .ccmod file in \"assets/mods/\". Archive purposes only.",
+                "version": "0.1.0",
+                "timestamp": 1580585155000
+            }
+        ]
+    },
     "world-map-overhaul": {
         "metadataCCMod": {
             "id": "world-map-overhaul",
