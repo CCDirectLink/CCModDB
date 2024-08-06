@@ -42,3 +42,11 @@ For example, here's how you would upload the `1.0.1` version of the mod [input-a
 ```
 
 Now you need to wait for your mod to be approved by one of the database administrators.  
+
+You can also submit the mod to the `testing` branch.  
+That branch is for pre-release mods, that you do not wish to force upon all users.   
+Just append `testing` to the end of the command:  
+
+```
+.cc publish-mod <mod-archive-url> testing
+```
