@@ -3790,7 +3790,7 @@
     "menu-ui-replacer": {
         "metadataCCMod": {
             "id": "menu-ui-replacer",
-            "version": "1.0.4",
+            "version": "1.0.5",
             "title": "menu-ui-replacer",
             "description": "Replace Lea with the character of your choice in the menu!",
             "repository": "https://github.com/CCDirectLink/cc-menu-ui-replacement",
@@ -3810,16 +3810,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CCDirectLink/cc-menu-ui-replacement/archive/refs/tags/v1.0.4.zip",
-                "source": "cc-menu-ui-replacement-1.0.4/cc-menu-ui-replacement",
+                "url": "https://github.com/CCDirectLink/cc-menu-ui-replacement/archive/refs/tags/v1.0.5.zip",
+                "source": "cc-menu-ui-replacement-1.0.5/cc-menu-ui-replacement",
                 "hash": {
-                    "sha256": "03c58361eef15b359d47282cb5ecb4656b269846c21c527bffeb9b0c122fc5d4"
+                    "sha256": "fa7b1ad6524e49c03716d51d036b887ab29868f43ca13a89268be792d083eac9"
                 }
             }
         ],
         "stars": 1,
-        "lastUpdateTimestamp": 1708540517000,
+        "lastUpdateTimestamp": 1722967706000,
         "releasePages": [
+            {
+                "body": "* Fix map floor buttons not reacting to area changes #3 ",
+                "version": "1.0.5",
+                "timestamp": 1722967706000,
+                "url": "https://github.com/CCDirectLink/cc-menu-ui-replacement/releases/tag/v1.0.5"
+            },
             {
                 "body": "",
                 "version": "1.0.4",
