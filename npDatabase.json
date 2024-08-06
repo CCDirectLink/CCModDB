@@ -4083,6 +4083,44 @@
             }
         ]
     },
+    "spin-to-win": {
+        "metadataCCMod": {
+            "id": "spin-to-win",
+            "version": "0.1.0",
+            "title": "Spin to win",
+            "description": "Changes the idle animation to a T-Pose which then spins faster and faster",
+            "repository": "https://github.com/WatDuhHekBro/cc-spin-to-win",
+            "tags": [
+                "cosmetic",
+                "fun"
+            ],
+            "authors": [
+                "WatDuhHekBro"
+            ],
+            "icons": {
+                "24": "icon.png"
+            },
+            "prestart": "prestart.js"
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/WatDuhHekBro/cc-spin-to-win/releases/download/v0.1.0/spin-to-win.ccmod",
+                "hash": {
+                    "sha256": "7e950b5a4fd1d1eb1c2ba8d963ff1fa66dc53840fd417c5ffe2d719124900f81"
+                }
+            }
+        ],
+        "stars": 1,
+        "lastUpdateTimestamp": 1722927895000,
+        "releasePages": [
+            {
+                "body": "CCModManager Integration by @krypciak ",
+                "version": "0.1.0",
+                "timestamp": 1722928003000
+            }
+        ]
+    },
     "timer": {
         "metadataCCMod": {
             "id": "timer",
