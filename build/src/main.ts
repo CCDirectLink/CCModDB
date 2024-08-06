@@ -45,7 +45,7 @@ async function main() {
         gitWriteFunc
     )
 
-    // console.log(toWrite.map(e => ([e[0], e[1].toString()])).join("\n"))
+    // console.log(toWrite.map(e => [e[0], e[1].toString()]).join('\n'))
     await git.checkout(branch)
 
     await Promise.all(
@@ -133,7 +133,8 @@ async function createNpDatabase(fromScratch: boolean, read: ReadFunc, write: Wri
 
         const urlToDbKey = databaseToUrlRecord(dbToMerge)
         for (const url of urlsToRemove) {
-            for (const key of urlToDbKey[url]) {
+            for (const key of urlToDbKey[url] ??
+                [] /* <- this only happens when input-locations.old.json gets changed as a part of a ccbot commit*/) {
                 delete dbToMerge[key]
             }
         }
