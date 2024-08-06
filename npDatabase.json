@@ -891,7 +891,7 @@
     "cc-alybox": {
         "metadataCCMod": {
             "id": "cc-alybox",
-            "version": "1.0.0",
+            "version": "1.1.0",
             "title": "AlyBox",
             "description": "Library mod containing various extra features and fixes.",
             "repository": "https://github.com/lexisother/cc-alybox",
@@ -907,15 +907,21 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/lexisother/cc-alybox/releases/download/v1.0.0/cc-alybox.ccmod",
+                "url": "https://github.com/lexisother/cc-alybox/releases/download/v1.1.0/cc-alybox.ccmod",
                 "hash": {
-                    "sha256": "5ed22aa552404e5a6a6eac083b9fc76603b2be2e5f4621e45cc6398a482b8abe"
+                    "sha256": "06557de9f24974cad9a31f9b78093ac08aeb31f818a02bccb0970849473006e7"
                 }
             }
         ],
         "stars": 1,
-        "lastUpdateTimestamp": 1714119354000,
+        "lastUpdateTimestamp": 1722967918000,
         "releasePages": [
+            {
+                "body": "# Added\r\n\r\n- Added `combat.cnt.{enemyName}` to get the numbers of enemies of a certain type.\r\n\r\n**Full Changelog**: https://github.com/lexisother/cc-alybox/compare/v1.0.0...v1.1.0",
+                "version": "1.1.0",
+                "timestamp": 1722967918000,
+                "url": "https://github.com/lexisother/cc-alybox/releases/tag/v1.1.0"
+            },
             {
                 "body": "Initial release",
                 "version": "1.0.0",
