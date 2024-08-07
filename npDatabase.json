@@ -1,4 +1,50 @@
 {
+    "CCJoystickExt": {
+        "metadataCCMod": {
+            "id": "CCJoystickExt",
+            "version": "1.0.1",
+            "title": "CCJoystickExt",
+            "description": "Adds gamepad bindings on L3 and R3 to easily swap elements",
+            "repository": "https://github.com/tylercamp/CCJoystickExt",
+            "tags": [
+                "QoL"
+            ],
+            "authors": "tylercamp",
+            "prestart": "mod.js"
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/tylercamp/CCJoystickExt/archive/refs/tags/1.0.1-ccmod.zip",
+                "source": "CCJoystickExt-1.0.1-ccmod",
+                "hash": {
+                    "sha256": "060228838fbe375f812beef8ea4bf9be12d6a29e57136f2f0be9c796cf2b4ca7"
+                }
+            }
+        ],
+        "stars": 0,
+        "lastUpdateTimestamp": 1723061757000,
+        "releasePages": [
+            {
+                "body": "",
+                "version": "1.0.1-ccmod",
+                "timestamp": 1723061757000,
+                "url": "https://github.com/tylercamp/CCJoystickExt/releases/tag/1.0.1-ccmod"
+            },
+            {
+                "body": "",
+                "version": "1.0.1",
+                "timestamp": 1575236836000,
+                "url": "https://github.com/tylercamp/CCJoystickExt/releases/tag/1.0.1"
+            },
+            {
+                "body": "First release for CCModDB.",
+                "version": "1.0.0",
+                "timestamp": 1575087003000,
+                "url": "https://github.com/tylercamp/CCJoystickExt/releases/tag/1.0.0"
+            }
+        ]
+    },
     "CCLoader display version": {
         "metadataCCMod": {
             "id": "CCLoader display version",
