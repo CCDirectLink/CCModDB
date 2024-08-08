@@ -2045,7 +2045,7 @@
     "ccmodmanager": {
         "metadataCCMod": {
             "id": "ccmodmanager",
-            "version": "0.9.17",
+            "version": "0.9.18",
             "title": "CCModManager",
             "description": "Mod manager for CrossCode!",
             "repository": "https://github.com/CCDirectLink/CCModManager",
@@ -2066,15 +2066,21 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CCDirectLink/CCModManager/releases/download/v0.9.17/ccmodmanager-0.9.17.ccmod",
+                "url": "https://github.com/CCDirectLink/CCModManager/releases/download/v0.9.18/ccmodmanager-0.9.18.ccmod",
                 "hash": {
-                    "sha256": "d94dd8f89648a66b764990983c952e865d33897f0507ab73bf835226e6f118f6"
+                    "sha256": "f12d8a06932974d427cdb2cbce4cf331f4845ce18a3cf8ef5951fa8b0cf3232b"
                 }
             }
         ],
         "stars": 1,
-        "lastUpdateTimestamp": 1722947390000,
+        "lastUpdateTimestamp": 1723137334000,
         "releasePages": [
+            {
+                "body": "### Added\n \n- Added the \"Reset repositories to default\" button to the CCModManager options\n- Added the \"Clear database cache\" button to the CCModManager options\n- Added a checkbox to keep chromium flags on CCLoader update to the CCModManager options\n- Added a checkbox to unpack installed or updated `.ccmod` mods to the CCModManager options\n- Added a button to reinstall all installed mods to the CCModManager options\n- Added the \"Visit release page\" button to the mod changelog menu\n\n### Changed\n\n- Removed the \"v\" before from the mod update dialog for consistency\n\n### Fixed\n\n- Fixed filters menu back button not being clickable by mouse + other weirdness\n- Fixed manual updating of pre-release mods\n- Fixed mod options BUTTON y spacing\n- Fixed mod installation successful dialog poping up before the installation finished\n- Prevent mod description and mod tags overlapping each other\n- Fixed the confirmation buttons for the mod installation prompt getting off-screen when the mod list is too big\n- Improved ccloader3 compatibility",
+                "version": "0.9.18",
+                "timestamp": 1723137335000,
+                "url": "https://github.com/CCDirectLink/CCModManager/releases/tag/v0.9.18"
+            },
             {
                 "body": "### Added\n\n- Added the mod changelog menu",
                 "version": "0.9.17",
