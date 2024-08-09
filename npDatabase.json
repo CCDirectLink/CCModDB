@@ -2045,7 +2045,7 @@
     "ccmodmanager": {
         "metadataCCMod": {
             "id": "ccmodmanager",
-            "version": "0.9.18",
+            "version": "0.9.19",
             "title": "CCModManager",
             "description": "Mod manager for CrossCode!",
             "repository": "https://github.com/CCDirectLink/CCModManager",
@@ -2066,15 +2066,21 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CCDirectLink/CCModManager/releases/download/v0.9.18/ccmodmanager-0.9.18.ccmod",
+                "url": "https://github.com/CCDirectLink/CCModManager/releases/download/v0.9.19/ccmodmanager-0.9.19.ccmod",
                 "hash": {
-                    "sha256": "f12d8a06932974d427cdb2cbce4cf331f4845ce18a3cf8ef5951fa8b0cf3232b"
+                    "sha256": "a8e9b5134f573449b00f5bc904f110e574877061d131612ef963a52f170b7c3c"
                 }
             }
         ],
         "stars": 1,
-        "lastUpdateTimestamp": 1723137334000,
+        "lastUpdateTimestamp": 1723222246000,
         "releasePages": [
+            {
+                "body": "### Added\n\n- Added mod installation progress indication\n\n### Changed\n\n- Revert the button order in the mod uninstallation popup to \"YES NO\" from \"NO YES\"\n\n### Fixed\n\n- Fixed the mod menu sometimes being blank when reopening it\n- Block exiting from the mod install menu with keys such as escape\n- Don't block dependency mod uninstalling when all parent mods have been uninstalled in the current session\n- Disallow installing mods that depend on missing extensions (such as DLC)",
+                "version": "0.9.19",
+                "timestamp": 1723222247000,
+                "url": "https://github.com/CCDirectLink/CCModManager/releases/tag/v0.9.19"
+            },
             {
                 "body": "### Added\n \n- Added the \"Reset repositories to default\" button to the CCModManager options\n- Added the \"Clear database cache\" button to the CCModManager options\n- Added a checkbox to keep chromium flags on CCLoader update to the CCModManager options\n- Added a checkbox to unpack installed or updated `.ccmod` mods to the CCModManager options\n- Added a button to reinstall all installed mods to the CCModManager options\n- Added the \"Visit release page\" button to the mod changelog menu\n\n### Changed\n\n- Removed the \"v\" before from the mod update dialog for consistency\n\n### Fixed\n\n- Fixed filters menu back button not being clickable by mouse + other weirdness\n- Fixed manual updating of pre-release mods\n- Fixed mod options BUTTON y spacing\n- Fixed mod installation successful dialog poping up before the installation finished\n- Prevent mod description and mod tags overlapping each other\n- Fixed the confirmation buttons for the mod installation prompt getting off-screen when the mod list is too big\n- Improved ccloader3 compatibility",
                 "version": "0.9.18",
