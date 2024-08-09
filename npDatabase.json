@@ -2,7 +2,7 @@
     "mw-rando": {
         "metadataCCMod": {
             "id": "mw-rando",
-            "version": "0.6.0-pre.2",
+            "version": "0.6.0-pre.3",
             "title": "Multiworld randomizer",
             "description": "Client for CrossCode Archipelago Integration",
             "repository": "https://github.com/CodeTriangle/CCMultiworldRandomizer",
@@ -23,15 +23,21 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.0-pre.2/CCMultiworldRandomizer-0.6.0-pre.2.ccmod",
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.0-pre.3/CCMultiworldRandomizer-0.6.0-pre.3.ccmod",
                 "hash": {
-                    "sha256": "e257f240021567a2fcadefa84fee5b6e7136cd63191743aaf26a29b0a4aa95e5"
+                    "sha256": "2aefe38b1b71dcc2ff32f380857cffaec18f4338fda0182e8993b57fd5d0f979"
                 }
             }
         ],
         "stars": 5,
-        "lastUpdateTimestamp": 1723014414000,
+        "lastUpdateTimestamp": 1723180050000,
         "releasePages": [
+            {
+                "body": "## Changes to APWorld\r\n\r\n* Improved Universal Tracker support (Chest Lock Rando should now work).",
+                "version": "0.6.0-pre.3",
+                "timestamp": 1723180050000,
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.6.0-pre.3"
+            },
             {
                 "body": "## Changes to Mod\r\n\r\n* Added a mod icon.\r\n\r\n## Changes to Generation\r\n\r\n* Added four new shops whose checks will be randomized when shop randomization is enabled. The shops are: **Rhombus Items**, **Rhombus Weapons**, **Rhombus Curios**, and **Rhombus Backer Items**.\r\n  * DLC items within these shops are *not* part of the pool.\r\n* Expanded parameters for being able to access Rookie Harbor stores.\r\n  * Previously, they required access to Autumn's Rise specifically. Now, they will be in logic if either Autumn's Rise or Autumn's Fall is in logic.\r\n* Updated some progressive chains for better balance (by @Treeways)\r\n* Added basic support to Universal Tracker for chest lock randomization.\r\n\r\n## Fixes to Mod\r\n\r\n* Fixed a crash that occured when purchasing items from a shop that cannot be shuffled.\r\n\r\n## Fixes to Generation\r\n\r\n* Fixed an issue where, when generating with shop randomization enabled, incorrect progressive item chains would be selected and added to the pool due to an oversight involving items found in arena shops.\r\n* Fixed an issue where, when generating with per-item-type shop sends, slots would be considered in logic whenever the shop could be accessed, regardless of any additional requirements to unlock that item within the shop.\r\n\r\n## Migration Guide\r\n\r\nThis mod version is intended to be backwards compatible with worlds generated using v0.6.0-pre.1. However, you may want to consider restarting your world if you haven't gotten too far into it as this version patches up a few issues you *will* encounter if you are using any of the new features.",
                 "version": "0.6.0-pre.2",
