@@ -2290,6 +2290,43 @@
             }
         ]
     },
+    "char-select": {
+        "metadataCCMod": {
+            "id": "char-select",
+            "title": "CCCharSelect",
+            "version": "1.0.1",
+            "description": "Adds a widget for character selection menu.",
+            "repository": "https://github.com/CCDirectLink/char-select",
+            "tags": [
+                "widget",
+                "character"
+            ],
+            "authors": [
+                "ac2pic",
+                "2767mr",
+                "lexisother",
+                "krypek"
+            ],
+            "dependencies": {
+                "nax-ccuilib": ">=1.2.8"
+            },
+            "preload": "preload.js",
+            "prestart": "prestart.js"
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/CCDirectLink/char-select/archive/refs/heads/master.zip",
+                "source": "char-select-master",
+                "hash": {
+                    "sha256": "c9dc72a8840ed8b95bd7340f870e19132158df1be0a0a39a4b01f0898f0d5968"
+                }
+            }
+        ],
+        "stars": 0,
+        "lastUpdateTimestamp": 1723378287000,
+        "releasePages": []
+    },
     "charged-balls": {
         "metadataCCMod": {
             "id": "charged-balls",
