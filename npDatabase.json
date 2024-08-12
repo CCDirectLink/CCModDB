@@ -1524,6 +1524,49 @@
             }
         ]
     },
+    "cc-newgame-cheats": {
+        "metadataCCMod": {
+            "id": "cc-newgame-cheats",
+            "version": "1.0.0",
+            "title": "New Game+ Cheats",
+            "description": "Adds trophy-point-free NG+ option toggles to CrossCode.",
+            "repository": "https://github.com/Treeways/cc-newgame-cheats",
+            "tags": [
+                "cheats"
+            ],
+            "icons": {
+                "24": "icon.png"
+            },
+            "authors": [
+                "Hsifnus",
+                "ZeikJT"
+            ],
+            "dependencies": {
+                "ccloader": "^2.11.0",
+                "crosscode": ">=1.2"
+            },
+            "postload": "cheats.js"
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/Treeways/cc-newgame-cheats/releases/download/1.0.0/cc-newgame-cheats-1.0.0.ccmod",
+                "hash": {
+                    "sha256": "9d25f359c5f3cd2cf37c31df6190ccc6d483e0457731b18492b66cdfe9863c1f"
+                }
+            }
+        ],
+        "stars": 0,
+        "lastUpdateTimestamp": 1723428207000,
+        "releasePages": [
+            {
+                "body": "The original NG+ Cheats mod, now as a `.ccmod`.\r\n\r\n**Full Changelog**: https://github.com/Treeways/cc-newgame-cheats/commits/1.0.0",
+                "version": "1.0.0",
+                "timestamp": 1723428207000,
+                "url": "https://github.com/Treeways/cc-newgame-cheats/releases/tag/1.0.0"
+            }
+        ]
+    },
     "cc-nwjs-manager": {
         "metadataCCMod": {
             "id": "cc-nwjs-manager",
