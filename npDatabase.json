@@ -2,7 +2,7 @@
     "mw-rando": {
         "metadataCCMod": {
             "id": "mw-rando",
-            "version": "0.6.0-pre.4",
+            "version": "0.6.0-pre.5",
             "title": "Multiworld randomizer",
             "description": "Client for CrossCode Archipelago Integration",
             "repository": "https://github.com/CodeTriangle/CCMultiworldRandomizer",
@@ -23,15 +23,21 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.0-pre.4/CCMultiworldRandomizer-0.6.0-pre.4.ccmod",
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.0-pre.5/CCMultiworldRandomizer-0.6.0-pre.5.ccmod",
                 "hash": {
-                    "sha256": "cd6e2dc1cbd8b2ab56e0db91b076f0b22adf630c0ae11ac0619717e3b67e807c"
+                    "sha256": "243e66a5b9acce5771faa70e085ba11aa2f2913426aa375670331db6750b390d"
                 }
             }
         ],
         "stars": 5,
-        "lastUpdateTimestamp": 1723351714000,
+        "lastUpdateTimestamp": 1723611834000,
         "releasePages": [
+            {
+                "body": "## Changes to Mod\r\n\r\n* (@Treeways) Patched the Quest Hub Menu to show correct icons (as defined by the randomized items)\r\n\r\n## Fixes to Mod\r\n\r\n* Fixed an issue where, when using the left and right buttons to increment or decrement the amount of a randomized shop slot to purchase, the count could increase beyond one or fail to change at all, depending on the item and the contents of the shop.\r\n* Fixed an issue where, when purchasing from specific shops, randomized slots would appear disabled despite possibly being crucial.\r\n* Fixed an issue where, when creating a New Game+ file, it would be impossible to start a new game with no additional perks beyond Randomizer Start without toggling an option on and off.\r\n* (@Treeways) Fixed an issue where, in the Quest Dialog menu, equipment with a level would still show as having the level even if icons were set to be obscured.",
+                "version": "0.6.0-pre.5",
+                "timestamp": 1723613731000,
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.6.0-pre.5"
+            },
             {
                 "body": "## Changes to Mod\r\n\r\n* Modify the Randomizer Start button in the New Game+ options menu to indicate that the option is always on and cannot be toggled.\r\n\r\n## Fixes to Mod\r\n\r\n* Fixed an issue occurring in the base game where, in analyze mode, when playing with a controller, the cursor would not be\r\n  able to reach to all corners of the screen.\r\n* Improved the performance of the networking code (technical details follow):\r\n  * Fixed an issue where, upon connecting to a multiworld, two connections would always be opened, and one of them would\r\n    not be able to be closed by any means other than closing the game.\r\n  * Fixed an issue where, upon checking a location, the full unabridged list of received items would always be sent back\r\n    to the game, despite this information not being necessary.\r\n  * Fixed an issue where, when disconnecting from a multiworld, occasionally the client would still show as connected,\r\n    and the client would become nonfunctional as a result.\r\n  * Fixed an issue where, on every screen transition, unnecessary packets would be sent indicating the player was \"playing\".\r\n    These packets are ignored by Archipelago and are therefore unnecessary.",
                 "version": "0.6.0-pre.4",
