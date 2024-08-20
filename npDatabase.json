@@ -2127,7 +2127,7 @@
     "ccmodmanager": {
         "metadataCCMod": {
             "id": "ccmodmanager",
-            "version": "0.9.20",
+            "version": "0.9.21",
             "title": "CCModManager",
             "description": "Mod manager for CrossCode!",
             "repository": "https://github.com/CCDirectLink/CCModManager",
@@ -2143,20 +2143,29 @@
             "icons": {
                 "24": "icon/icon.png"
             },
+            "dependencies": {
+                "ccloader": ">=3.2.2-alpha || ^2.0.0"
+            },
             "plugin": "plugin.js"
         },
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CCDirectLink/CCModManager/releases/download/v0.9.20/ccmodmanager-0.9.20.ccmod",
+                "url": "https://github.com/CCDirectLink/CCModManager/releases/download/v0.9.21/ccmodmanager-0.9.21.ccmod",
                 "hash": {
-                    "sha256": "d56b47d2f5cb8f3ca2693510a1be8ede44ea7a234ba164303b6d0f4e3a881530"
+                    "sha256": "f287b11348cd1581d62db611720e7d8930bd4f590ac0605db1275fffbf633c67"
                 }
             }
         ],
-        "stars": 1,
-        "lastUpdateTimestamp": 1723377534000,
+        "stars": 2,
+        "lastUpdateTimestamp": 1724154908000,
         "releasePages": [
+            {
+                "body": "### Added\n\n- Enforce the manual on all souls\n\n### Changed\n\n- Mod options can now also be opened with mouse right click\n\n### Fixed\n\n- Fixed mod settings and testing buttons being unpresssable on gamepad when the gamepad bindings are changed",
+                "version": "0.9.21",
+                "timestamp": 1724154909000,
+                "url": "https://github.com/CCDirectLink/CCModManager/releases/tag/v0.9.21"
+            },
             {
                 "body": "### Changed\n\n- Decrease mod size\n- Prevent backspace from quitting the mod manager menu\n- Keep list scroll when entering the mod's options\n- `onPress` and `changeEvent` functions on option entries: `this` is now bound to the option config\n\n### Fixed\n\n- Prevent CCLoader downgrade attempts when using CCLoader3 and downloading a mod that requires CCLoader2\n- Prevent Simplify from installing when using CCLoader3\n- Fixed space being disabled in every menu, not just the mod manager\n- Fixed mod list being unresponsive after exiting out of the filters menu\n- Fixed the mod's options menu sometimes failing to open on keyboard and mouse",
                 "version": "0.9.20",
