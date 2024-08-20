@@ -4299,7 +4299,7 @@
     "nax-ccuilib": {
         "metadataCCMod": {
             "id": "nax-ccuilib",
-            "version": "1.2.8",
+            "version": "1.2.9",
             "title": "CCUILib",
             "description": "Library of additional UI elements as well as making existing ones configurable",
             "repository": "https://github.com/conorlawton/nax-ccuilib",
@@ -4313,16 +4313,16 @@
             ],
             "dependencies": {
                 "nax-module-cache": ">=1.0.0",
-                "ccmodmanager": ">=0.9.15"
+                "ccmodmanager": ">=0.9.21"
             },
             "plugin": "nax-ccuilib/plugin.js"
         },
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/nax-ccuilib/releases/download/v1.2.8/nax-ccuilib.ccmod",
+                "url": "https://github.com/krypciak/nax-ccuilib/releases/download/v1.2.9/nax-ccuilib.ccmod",
                 "hash": {
-                    "sha256": "3dc561ea45c9be67ecf021692c84ac5c93742fff21fcd592d1820352f942efcc"
+                    "sha256": "96af3bb9b23453c65f7abbdd53f7539184c7063f2082b42dc7dd89feec3b7606"
                 }
             }
         ],
