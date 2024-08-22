@@ -2941,7 +2941,7 @@
     "el-tweaks": {
         "metadataCCMod": {
             "id": "el-tweaks",
-            "version": "0.7.5",
+            "version": "0.8.1",
             "title": "EL's Tweaks",
             "description": "A coremod full of useful functionality for modders, as well as many tweaks for players.",
             "repository": "https://github.com/elluminance/el-crosscode-tweaks",
@@ -2958,15 +2958,27 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/elluminance/el-crosscode-tweaks/releases/download/v0.7.5/els-tweaks.ccmod",
+                "url": "https://github.com/elluminance/el-crosscode-tweaks/releases/download/v0.8.1/els-tweaks.ccmod",
                 "hash": {
-                    "sha256": "30421792706ab587c67af19b698609d0c2ae6712adfaa3464bf4d3776ee66c90"
+                    "sha256": "cc92804d72ff66084cd413ec0d4922e9baa0c35f469391029e8266dee812f8c3"
                 }
             }
         ],
-        "stars": 3,
-        "lastUpdateTimestamp": 1708372183000,
+        "stars": 4,
+        "lastUpdateTimestamp": 1724166801000,
         "releasePages": [
+            {
+                "body": "- Fixed issues with music remixes not always loading",
+                "version": "0.8.1",
+                "timestamp": 1724166859000,
+                "url": "https://github.com/elluminance/el-crosscode-tweaks/releases/tag/v0.8.1"
+            },
+            {
+                "body": "- Added music remix selector! This allows multiple modders to add remixes to songs, and users to mix-and-match which remixes they play.\r\n  - The menu is accessible from options, right under the volume settings.\r\n- Added map editor definitions for additions",
+                "version": "0.8.0",
+                "timestamp": 1723954583000,
+                "url": "https://github.com/elluminance/el-crosscode-tweaks/releases/tag/v0.8.0"
+            },
             {
                 "body": "- Added custom head for Sergey if [extendable-severed-heads](https://github.com/CCDirectLink/extendable-severed-heads) is installed.\r\n- Added explicit dependency on ccloader 2. (Certain CCLoader 2 features were being used already, but this adds a proper requirement.)\r\n- Fixed crash if CCUILib was not installed.",
                 "version": "0.7.5",
