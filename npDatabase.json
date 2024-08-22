@@ -1769,6 +1769,102 @@
             }
         ]
     },
+    "cc-remastered-melodies": {
+        "metadataCCMod": {
+            "id": "cc-remastered-melodies",
+            "version": "2.0.2",
+            "title": {
+                "en_US": "Crosscode Remastered Melodies",
+                "de_DE": "Crosscode Remastered Melodies",
+                "fr_FR": "Crosscode Remastered Melodies",
+                "zh_CN": "Crosscode Remastered Melodies",
+                "zh_TW": "Crosscode Remastered Melodies",
+                "ja_JP": "Crosscode Remastered Melodies",
+                "ko_KR": "Crosscode Remastered Melodies"
+            },
+            "description": {
+                "en_US": "Replaces some of the music in CrossCode with remastered versions of the original tracks.",
+                "de_DE": "Ersetzt einige Musikstücke in CrossCode durch remasterte Versionen der Originaltitel.",
+                "fr_FR": "Remplacez certaines musiques de CrossCode par des versions remasterisées des pistes originales.",
+                "zh_CN": "用原始曲目的重新制作版本替换CrossCode中的一些音乐。",
+                "zh_TW": "用原始曲目的重新製作版本替換CrossCode中的一些音樂。",
+                "ja_JP": "CrossCodeの一部の音楽を、オリジナルのトラックのリマスター版に置き換えます。",
+                "ko_KR": "CrossCode의 일부 음악을 원래 트랙의 리마스터 버전으로 대체합니다."
+            },
+            "icons": {
+                "24": "icon/icon.png"
+            },
+            "repository": "https://github.com/Ronkad/CCRemasteredMelodies",
+            "tags": [
+                "music",
+                "OST"
+            ],
+            "authors": [
+                "Ronkad",
+                "elluminance"
+            ],
+            "prestart": "prestart.js",
+            "dependencies": {
+                "crosscode": ">=1.0.0",
+                "el-tweaks": ">=0.8.1"
+            }
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/Ronkad/CCRemasteredMelodies/releases/download/v2.0.2/cc-remastered-melodies-2.0.2.ccmod",
+                "hash": {
+                    "sha256": "6f94688f2712a5f4f493f39917e8ffed74a34b612ea60df83de3ad044ad56252"
+                }
+            }
+        ],
+        "stars": 1,
+        "lastUpdateTimestamp": 1724350218000,
+        "releasePages": [
+            {
+                "body": "Removed the Simplify dependency to work better in the CCModManager",
+                "version": "2.0.2",
+                "timestamp": 1724350218000,
+                "url": "https://github.com/Ronkad/CCRemasteredMelodies/releases/tag/v2.0.2"
+            },
+            {
+                "body": "This Version adds the el-tweaks Version 0.8.1 as a dependency, because without it there can be anomalies",
+                "version": "2.0.1",
+                "timestamp": 1724325229000,
+                "url": "https://github.com/Ronkad/CCRemasteredMelodies/releases/tag/v2.0.1"
+            },
+            {
+                "body": "",
+                "version": "2.0.0",
+                "timestamp": 1723989696000,
+                "url": "https://github.com/Ronkad/CCRemasteredMelodies/releases/tag/v2.0.0"
+            },
+            {
+                "body": "Finally this mod supports .ccmod - the common crosscode mod distribution file.",
+                "version": "1.1.1",
+                "timestamp": 1723708659000,
+                "url": "https://github.com/Ronkad/CCRemasteredMelodies/releases/tag/v1.1.1"
+            },
+            {
+                "body": "",
+                "version": "1.1.0",
+                "timestamp": 1723666069000,
+                "url": "https://github.com/Ronkad/CCRemasteredMelodies/releases/tag/v1.1.0"
+            },
+            {
+                "body": "First Release of Crosscode Remastered Melodies - including 16 songs",
+                "version": "1.0.0",
+                "timestamp": 1723552930000,
+                "url": "https://github.com/Ronkad/CCRemasteredMelodies/releases/tag/v1.0.0"
+            },
+            {
+                "body": "First Release of the Remastered Melodies mod for the game Crosscode",
+                "version": "0.0.1",
+                "timestamp": 1723549157000,
+                "url": "https://github.com/Ronkad/CCRemasteredMelodies/releases/tag/v0.0.1"
+            }
+        ]
+    },
     "cc-vim": {
         "metadataCCMod": {
             "id": "cc-vim",
