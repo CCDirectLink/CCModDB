@@ -2737,9 +2737,9 @@
     "crossedeyes": {
         "metadataCCMod": {
             "id": "crossedeyes",
-            "version": "0.6.3",
+            "version": "0.6.4",
             "title": "CrossedEyes",
-            "description": "Accessibility mod for CrossCode",
+            "description": "Accessibility mod for blind people",
             "repository": "https://github.com/CCDirectLink/CrossedEyes",
             "tags": [
                 "accessibility"
@@ -2754,10 +2754,8 @@
             "dependencies": {
                 "input-api": ">=1.0.0",
                 "cc-blitzkrieg": ">=0.5.9",
-                "nax-ccuilib": ">=1.2.7",
-                "ccmodmanager": ">=0.9.15",
-                "cc-nwjs-manager": ">=1.0.4",
-                "cc-record": ">=1.0.4",
+                "nax-ccuilib": ">=1.2.9",
+                "ccmodmanager": ">=0.9.21",
                 "crosscode": ">=1.4.0"
             },
             "plugin": "plugin.js"
@@ -2765,15 +2763,21 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CCDirectLink/CrossedEyes/releases/download/v0.6.3/crossedeyes-0.6.3.ccmod",
+                "url": "https://github.com/CCDirectLink/CrossedEyes/releases/download/v0.6.4/crossedeyes-0.6.4.ccmod",
                 "hash": {
-                    "sha256": "0241019f4916237ad1f3d1896419d76b19cf7009edd37ef7875bc37ebdc1bb5e"
+                    "sha256": "79fad2ee86c4839ba46091bedeba2473623fd1f698e2919284642714f750eb27"
                 }
             }
         ],
         "stars": 9,
-        "lastUpdateTimestamp": 1719495989000,
+        "lastUpdateTimestamp": 1724760253000,
         "releasePages": [
+            {
+                "body": "### Fixed\n\n- Fix game hard freezes due to NW.js update failures (removed `cc-nwjs-manager` and `cc-record` from dependencies)\n- Fix quick menu layout enforcing",
+                "version": "0.6.4",
+                "timestamp": 1724760254000,
+                "url": "https://github.com/CCDirectLink/CrossedEyes/releases/tag/v0.6.4"
+            },
             {
                 "body": "### Added \n\n- Added gameplay recording and sending functionality\n\n### Changed\n\n- Moved all mod options from the main options menu to the new mod manager options sub-menu\n\n### Fixed\n\n- Fixed NVDA addon installation on some system configurations",
                 "version": "0.6.3",
