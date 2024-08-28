@@ -789,6 +789,67 @@
             }
         ]
     },
+    "al-cs-hotkeys": {
+        "metadataCCMod": {
+            "id": "al-cs-hotkeys",
+            "version": "1.0.1",
+            "title": {
+                "en_US": "AL Skill Hotkeys",
+                "de_DE": "AL Skill Hotkeys",
+                "fr_FR": "AL Skill Hotkeys",
+                "zh_CN": "AL Skill Hotkeys",
+                "zh_TW": "AL Skill Hotkeys",
+                "ja_JP": "AL Skill Hotkeys",
+                "ko_KR": "AL Skill Hotkeys"
+            },
+            "description": {
+                "en_US": "Adds hotkeys for custom skill menu and toggle (default \\c[3]X\\c[0] and \\c[3]C\\c[0])."
+            },
+            "icons": {
+                "24": "icon.png"
+            },
+            "repository": "https://github.com/XenonA7/al-skill-hotkeys",
+            "tags": [
+                "QoL"
+            ],
+            "authors": [
+                "XenonA7",
+                "Lubkuluk",
+                "nax"
+            ],
+            "plugin": "al-cs-hotkeys/plugin.js",
+            "dependencies": {
+                "nax-module-cache": ">=1.0.0",
+                "arcane-lab": ">=0.1.0"
+            }
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/XenonA7/al-skill-hotkeys/archive/refs/tags/1.0.1.zip",
+                "source": "al-skill-hotkeys-1.0.1",
+                "hash": {
+                    "sha256": "025a1224619e797698f9f82e7a668c6dec019616fc06bfad5144d26faf46b536"
+                }
+            }
+        ],
+        "stars": 0,
+        "lastUpdateTimestamp": 1722801866000,
+        "releasePages": [
+            {
+                "body": "Updated readme",
+                "version": "1.0.1",
+                "timestamp": 1722801655000,
+                "url": "https://github.com/XenonA7/al-skill-hotkeys/releases/tag/1.0.1"
+            },
+            {
+                "body": "Initial Release",
+                "version": "1.0.0",
+                "timestamp": 1722801088000,
+                "url": "https://github.com/XenonA7/al-skill-hotkeys/releases/tag/1.0.0"
+            }
+        ]
+    },
     "arcane-lab": {
         "metadataCCMod": {
             "id": "arcane-lab",
@@ -4628,6 +4689,73 @@
             }
         ]
     },
+    "player-clone": {
+        "metadataCCMod": {
+            "id": "player-clone",
+            "version": "1.1.1",
+            "title": {
+                "en_US": "Player Clone",
+                "de_DE": "Player Clone",
+                "fr_FR": "Player Clone",
+                "zh_CN": "Player Clone",
+                "zh_TW": "Player Clone",
+                "ja_JP": "Player Clone",
+                "ko_KR": "Player Clone"
+            },
+            "description": {
+                "en_US": "Adds a custom skill to spawn a \\c[3]PlayerClone\\c[0] entity.",
+                "de_DE": "Adds a custom skill to spawn a \\c[3]PlayerClone\\c[0] entity.",
+                "fr_FR": "Adds a custom skill to spawn a \\c[3]PlayerClone\\c[0] entity.",
+                "zh_CN": "Adds a custom skill to spawn a \\c[3]PlayerClone\\c[0] entity.",
+                "zh_TW": "Adds a custom skill to spawn a \\c[3]PlayerClone\\c[0] entity.",
+                "ja_JP": "Adds a custom skill to spawn a \\c[3]PlayerClone\\c[0] entity.",
+                "ko_KR": "Adds a custom skill to spawn a \\c[3]PlayerClone\\c[0] entity."
+            },
+            "icons": {
+                "24": "icon.png"
+            },
+            "repository": "https://github.com/XenonA7/player-clone",
+            "tags": [
+                "fun",
+                "combat arts"
+            ],
+            "authors": [
+                "eisus",
+                "XenonA7"
+            ],
+            "prestart": "prestart.js",
+            "dependencies": {
+                "arcane-lab": ">=0.1.7",
+                "cc-alybox": ">=1.1.0"
+            }
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/XenonA7/player-clone/archive/refs/tags/1.1.1.zip",
+                "source": "player-clone-1.1.1",
+                "hash": {
+                    "sha256": "494e7b65d8cf7fc9022a2140c4b4235af1789d7decd56309277a18dd897e6d74"
+                }
+            }
+        ],
+        "stars": 0,
+        "lastUpdateTimestamp": 1724476490000,
+        "releasePages": [
+            {
+                "body": "## 1.1.1 (08/23/2024)\r\n- Logic step support changed to xenons-playable-classes",
+                "version": "1.1.1",
+                "timestamp": 1724476490000,
+                "url": "https://github.com/XenonA7/player-clone/releases/tag/1.1.1"
+            },
+            {
+                "body": "Initial release",
+                "version": "1.0.0",
+                "timestamp": 1723616355000,
+                "url": "https://github.com/XenonA7/player-clone/releases/tag/1.0.0"
+            }
+        ]
+    },
     "preset-revival-plus": {
         "metadataCCMod": {
             "id": "preset-revival-plus",
@@ -5105,6 +5233,366 @@
                 "version": "1.0.0",
                 "timestamp": 1585167991000,
                 "url": "https://github.com/dmitmel/cc-world-map-overhaul/releases/tag/v1.0.0"
+            }
+        ]
+    },
+    "xenons-playable-classes": {
+        "metadataCCMod": {
+            "id": "xenons-playable-classes",
+            "version": "2.0.1",
+            "title": {
+                "en_US": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
+                "de_DE": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
+                "fr_FR": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
+                "zh_CN": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
+                "zh_TW": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
+                "ja_JP": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
+                "ko_KR": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]"
+            },
+            "description": {
+                "en_US": "Playable characters, PVP, and more!",
+                "de_DE": "Playable characters, PVP, and more!",
+                "fr_FR": "Playable characters, PVP, and more!",
+                "zh_CN": "Playable characters, PVP, and more!",
+                "zh_TW": "Playable characters, PVP, and more!",
+                "ja_JP": "Playable characters, PVP, and more!",
+                "ko_KR": "Playable characters, PVP, and more!"
+            },
+            "icons": {
+                "24": "icon.png"
+            },
+            "repository": "https://github.com/XenonA7/xenons-playable-classes",
+            "tags": [
+                "player character",
+                "party member",
+                "pvp duel",
+                "arena",
+                "combat arts"
+            ],
+            "authors": [
+                "XenonA7",
+                "HeartLychee",
+                "krypek"
+            ],
+            "prestart": "prestart.js",
+            "poststart": "poststart.js",
+            "dependencies": {
+                "Simplify": ">=2.12.1",
+                "extendable-severed-heads": ">=1.1.0",
+                "cc-alybox": ">=1.1.0",
+                "menu-ui-replacer": ">=1.0.5",
+                "extension-asset-preloader": ">=1.0.0",
+                "crosscode": ">=1.4.0",
+                "post-game": ">=1.4.0"
+            }
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/2.0.1.zip",
+                "source": "xenons-playable-classes-2.0.1",
+                "hash": {
+                    "sha256": "2eb30ed2d74dd108105005e2c843fda188c9238f22547dad5badaff63e580757"
+                }
+            }
+        ],
+        "stars": 19,
+        "lastUpdateTimestamp": 1724569637000,
+        "releasePages": [
+            {
+                "body": "## 2.0.1 (08/25/2024)\r\n### New Content\r\n- Added a \"Quest Debug\" sign to the unused-content map in the Bergen hideout basement\r\n * This can be used to fix the Flamepeng quest retroactively in save files where it was completed in the old XTM\r\n   mod and is now broken in XPC after updating and playing on the same save file.\r\n### Changes\r\n- Added a dialogue box to the character change sign in hideout-north\r\n- Added art-testing-sound-test map to files (unused in-game)\r\n### Fixes\r\n- Fixed xpc-lab props animation timing variation\r\n- Removed old XTM terminology from README.md",
+                "version": "2.0.1",
+                "timestamp": 1724569637000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/2.0.1"
+            },
+            {
+                "body": "## 2.0.0 (08/23/2024)\r\n### Important\r\n- Mod is now known as \"Xenon's Playable Classes\", also known as the \"playable classes mod\"\r\n- Hexacast mod discontinued, all content is now merged here\r\n- Hexacast litter mod updated to 2.0.0 to support XPC\r\n- Save-compatible with old mod versions but progress for mod content will be reset, such as unlocking the triblader arena cup\r\n### Dependency Updates\r\n- Now requires AlyBox 1.1.0 or higher\r\n- Now requires menu-ui-replacer 1.0.5 or higher\r\n- Please uninstall any versions of the old \"xmc-hexacast\" mod you might have\r\n- Please uninstall any versions of the old \"logic-steps\" mod you might have\r\n### Changes\r\n- Hexacast characters are now playable options in the mod intro maps\r\n- Added cutscene option to skip mod intro\r\n- Removed Krypek plugin.js menu option to skip mod intro\r\n- Cut down on BGM bloat\r\n- Renamed BGM scarpsCave to lazCave\r\n- Renamed all internal files and variables to xpc from xtm/xmc\r\n- The Triblader League now has a proper associated quest in post-Ku'lero Rhombus Square\r\n- Updated all mod credits in-game\r\n- Removed DLC assets due to extension-asset-preloader fix:\r\n * \\assets\\media\\entity\\effects\\gynthar-heat-copy.png\r\n * \\assets\\media\\entity\\effects\\rainbow-ring.png\r\n- Added class subdirectories in \\assets\\media\\entity\\effects\r\n- Renamed MULTI_CIRCLE_GUI to RAINBOW_CIRCLE_GUI in combat.tribladerXPC\r\n- Renamed triblader-mm.png to tri-misc.png\r\n- Reduced sound effect volume for molten dagger in blade rink cutscene\r\n- Reduced fail sound effect volume for Wild Gambit\r\n- Removed a lot of text pauses from intro maps\r\n- Changed teleporter labels in unused content maps\r\n- Retrofitted char-select.basement with conditional lights\r\n- Dialogue tweaks in char-select.basement\r\n- Modernized character change signs in info hub and arena lobby\r\n- Slight dialogue tweaks in dark-passage-1\r\n### Fixes\r\n- Fixed internal map names for char-select maps\r\n- Fixed lights in char-select.basement being visible early\r\n- Fixed a typo in hideout-east\r\n- Fixed Apollo 4, Shizuka, and Lily stats being invisible in XPC pvp maps",
+                "version": "2.0.0",
+                "timestamp": 1724475100000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/2.0.0"
+            },
+            {
+                "body": "## 1.3.0 (08/05/2024)\r\n### Important\r\n- Added dependency mod: crosscode-extension-asset-preloader\r\n  * https://github.com/elluminance/crosscode-extension-asset-preloader\r\n### New Content\r\n- Added Triblader, Pentafist, AL, and Lily custom skills to Lea (136 total)\r\n- Added \\patches\\data\\effects\\specials\\wave-custom.json\r\n### Changes\r\n- Imported \\assets\\media\\gui\\custom-skills from hexacast mod\r\n### Fixes\r\n- Fixed Triblader-Lea sprite offset for northeast jump animaitons\r\n- Fixed Triblader-Lea sprite offset for east and southeast throwSpecial animation",
+                "version": "1.3.0",
+                "timestamp": 1722917129000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/1.3.0"
+            },
+            {
+                "body": "### Changes\r\n- Removed remaining content from dev room, migrated to Hexacast mod\r\n- Removed the following maps (now part of Hexacast mod):\r\n  * \\maps\\xtm\\bonus\\guild-war.json\r\n  * \\maps\\xtm\\bonus\\statue-cutscene.json",
+                "version": "1.2.5",
+                "timestamp": 1722760222000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/1.2.5"
+            },
+            {
+                "body": "## 1.2.4 (07/31/2024)\r\n### Changes\r\n- Removed dev room teleporter from Lea's attic; the new dev room is currently in the Hexacast mod\r\n- Deleted \"training-island\" teleporter from dev room\r\n- Deleted \"training-2v2\" teleporter from dev room\r\n- Removed the following maps (now part of Hexacast mod):\r\n  * \\maps\\xtm\\bonus\\training-island.json\r\n  * \\maps\\xtm\\bonus\\training-1v1.json\r\n  * \\maps\\xtm\\bonus\\training-2v2.json",
+                "version": "1.2.4",
+                "timestamp": 1722477420000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/1.2.4"
+            },
+            {
+                "body": "## 1.2.3 (07/14/2024)\r\n### Changes\r\n- Updated XTM dev room combat music settings\r\n- Added effect spikeAuraNPC\r\n- Removed the following maps (now part of Hexacast mod):\r\n  * \\maps\\xtm\\bonus\\art-testing.json\r\n  * \\maps\\xtm\\bonus\\art-testing.-ALjson\r\n  * \\maps\\xtm\\bonus\\art-testing-unused.json\r\n  * \\maps\\xtm\\bonus\\green-screen-room.json\r\n- Deleted \"art-testing\" and \"green-screen-room\" teleporters from dev room",
+                "version": "1.2.3",
+                "timestamp": 1721010538000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/1.2.3"
+            },
+            {
+                "body": "## 1.2.2 (06/26/2024)\r\n### Changes\r\n- Moved WIP maps to Hexacast mod\r\n- Added particle pLight source to Triblader charged ball trails\r\n- Updated charged ball light settings to Hexacast standard\r\n- Added light sources to standard melee attack effects",
+                "version": "1.2.2",
+                "timestamp": 1719417130000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/1.2.2"
+            },
+            {
+                "body": "## 1.2.1 (06/18/2024)\r\n### Fixes\r\n- Added Menu UI Replacer to install instructions",
+                "version": "1.2.1",
+                "timestamp": 1718697731000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/1.2.1"
+            },
+            {
+                "body": "## 1.2.0 (06/18/2024)\r\n### General\r\n- New dependency mod: Menu UI Replacer\r\n  * https://github.com/CCDirectLink/cc-menu-ui-replacement/releases\r\n### New Content\r\n- New menu sprites when playing as Triblader2/3/4/5\r\n  * Original artwork by Orco Pixelado\r\n  * Thanks to Bakafish for library mod support\r\n- Added unfinished map file\r\n### Changes\r\n- Orco Pixelado added to mod credits\r\n- Hue adjustments to Triblader4 portraits\r\n- Updated Triblader4 sprite hue to be more consistent with portraits",
+                "version": "1.2.0",
+                "timestamp": 1718697233000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/1.2.0"
+            },
+            {
+                "body": "## 1.1.1 (06/06/2024)\r\n### Changes\r\n- Blazing Mirage and So'najiz Phalanx clones no longer draw enemy aggro\r\n### Fixes\r\n- Fixed Spectral Legion clones able to consume SP",
+                "version": "1.1.1",
+                "timestamp": 1717684472000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/1.1.1"
+            },
+            {
+                "body": "## 1.1.0 (05/29/2024)\r\n### New Content\r\n- Added green screen map to XTM dev room\r\n### Changes\r\n- Triblader5 DASH_SLOW action is now also steerable\r\n- Added light source to effect waveTriangleTrail (used in Soul Shatter)",
+                "version": "1.1.0",
+                "timestamp": 1716967944000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/1.1.0"
+            },
+            {
+                "body": "## 1.0.3 (05/13/2024)\r\n### New Content\r\n- Added additional font icons needed for Hexacast mod custom skills",
+                "version": "1.0.3",
+                "timestamp": 1715646908000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/1.0.3"
+            },
+            {
+                "body": "## 1.0.2 (05/05/2024)\r\n### New Content\r\n- Added font icons needed for custom skills in Hexacast mod\r\n- Added Lubkuluk to XTM credits for Hexacast KeyPanel code contribution\r\n- Added teleporter to AL dev room from XTM dev room (only works if AL is installed)\r\n- Added map art-testing-AL.json, not implemented by default\r\n### Changes\r\n- Moved the hologram sign slightly in the art-testing map\r\n- Removed the sword icon from the mod's name entry\r\n- Deleted unnecessary proxy groupings \"solarEruptionParts\" and \"solarEruptionGroup\"\r\n- Vermillion Firestorm effect laserSrc changed to laserSrcMega\r\n### Fixes\r\n- Fixed pvp opponents not charging before using Solar Eruption\r\n- Removed all broken animation references to \"attackMirrEnd\"\r\n- Fixed Spectral Legion clones shooting wrong proxy types occasionally",
+                "version": "1.0.2",
+                "timestamp": 1714960561000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/1.0.2"
+            },
+            {
+                "body": "1.0.1 (03/16/2024)\r\n### Changes\r\n- Magnet Storm now resets camera during final strike\r\n- Magnet Storm added sound effect when final strike hits\r\n- Re-worded the description for Magnet Storm\r\n### Fixes\r\n- Blizzard Slash fixed missing HEAVY hit stability\r\n### Balance\r\n- Changes to both player and enemy:\r\n  * Icicle Slash reverted to old punch-style hitbox\r\n  * Icicle Slash hit stability decreased from MASSIVE to HEAVY\r\n  * Blizzard Slash first swing reverted to old punch-style hitbox\r\n  * Blizzard Slash second swing increased hitbox radius from 72 to 88",
+                "version": "1.0.1",
+                "timestamp": 1710647489000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/1.0.1"
+            },
+            {
+                "body": "## 1.0.0 (03/16/2024)\r\n### New Content\r\n- New character: Triblader Lea (sprites by **HeartLychee**)\r\n  * No special modifiers. Custom Daybreak, Wave charge shot, Sunfury particle sprites by **HeartLychee**)\r\n- New Triblader2/3/4/5 block pushing animations by **HeartLychee**)\r\n- Magnet Storm completely reworked\r\n- Added proper PVP enemy death handling in training maps and arena maps for duels with multiple opponents\r\n- Added NPCs to dev room to demonstrate whether or not you have other mods installed (logic steps)\r\n- Added new art-testing map to dev room\r\n- Added effect critical to new PVP death logic: teleport.showFastScale\r\n- Added \\assets\\data\\effects\\teleport.json.patch\r\n### Changes\r\n- Removed the \"beta\" map; You now proceed straight to the Rhombus Dungeon after choosing a character\r\n- PVP enemy healthbars are more compact now, they now overlap to save space (only applies when dueling multiple opponents)\r\n- Reformatted headIdx.json.patch for extendable-severed-heads 1.1.0\r\n- Removed unused \"pvp-lukas-old\" and \"pvp-schneiders\" arena maps\r\n- Added Triblader Lea character option to all XTM character change signs: XTM Dev Room, Rookie Harbor Info Hub, Rhombus Arena Lobby.\r\n- Removed all instances of \"plot.xtm.character\", which is obsolete with AlyBox\r\n- Removed \"characterInitOnce\" EventTrigger from arena lobby patch, which is obsolete with AlyBox\r\n- Removed \"plot.xtm.swapBack\" functionality from arena maps\r\n- Renamed custom-party-members.js to custom-party-options.js\r\n- Updated HeartLychee credits preferences\r\n- Changed BGM setting in \"Blade Rink\" arena match\r\n- Updated all \"XTM Credits\" signs\r\n- Removed unused \"Triblader Prime\" arena round\r\n- Standardized BGM options in training-1v1, training-2v2, and training island maps\r\n- Renamed enemy entities in training island map to XTM standard\r\n- Reformatted the character change sign in the Rookie Harbor info hub to align with all other XTM signs\r\n- Reduced particle count on Icicle Tomb to improve performance\r\n- Dev room changes\r\n  * Dev room teleporters now have spawn conditions, used for the mod crossover tests\r\n  * Removed the hedgehags from the dev room\r\n- Added combat dialogue support to apollo-4 and shizuka nozoom enemy variants (used for \"Ultimate PVP\" map)\r\n- Player walks to starting position when starting the duel on Training Island, instead of running\r\n- Re-worded description for Ice Flak\r\n- Re-worded description for Tower of Tranquility\r\n- Minor graphical tweak to Tower of Tranquility proxy sprites\r\n- Beekeeper: bees now constantly look for the nearest target rather than always chase their original target\r\n- Scorching Rays red screen flash is now less intense\r\n- Added shaking effect right before thawing for Ice Brace, Stasis Stance, and Tower of Tranquility\r\n- All BLUE_SPARKLE particles now have angleVary for all effects that use them\r\n- Player now travels farther during Polar Geyser final slash\r\n- Renamed effect megaTankAuraAltNoCircle to blizzardSlashSnowflakes\r\n- Snowstorm post-attack wait increased from 0.4 seconds to 0.6 seconds\r\n- Avalanche Assault and Frozen Rays initial screen flash is now less intense\r\n- Proxy fireDaggerStuck changed from breakType NEVER to COMBATANT\r\n- Greatly reduced zoom blur effect for Fire Saw\r\n- Moved effects related to proxy ms_main into file ball-shock-xtm.json\r\n- Effect shockLaserSource now moves with target\r\n- Improved effects for the following arts:\r\n  * Scorching Rays\r\n  * Tower of Tranquility (landing effect)\r\n  * Polar Geyser\r\n  * Blizzard Slash\r\n  * Snowstorm\r\n  * Avalanche Assault\r\n  * Calamity's Advent\r\n  * Frigid Hurricane\r\n  * Vermillion Firestorm\r\n  * Magnet Storm\r\n  * Sleet Singularity\r\n### Fixes\r\n- Fixed \"Wet Work\" quests for all Triblader characters by adding the \"STANDARD\" hint property\r\n- Fixed a crash related to gynthar-heat.png (by including gynthar-heat-copy.png in the mod files)\r\n- Fixed PVP enemies headIdx conflict with other mods (thanks to extendable-severed-heads 1.1.0)\r\n- Added a NPBLOCK wall to fix an out-of-bounds JDAC exploit in xtm/char-select/outdoors\r\n- Fixed wrong internal map name for xtm/char-select/outdoors\r\n- Fixed all PVP maps \"Match Point\" AR_MSG text\r\n- Retrofitted all pvp maps with new logic to handle deaths; no more defeated enemies sitting around\r\n- Fixed ice sliding during cutscene after duel in \"Blade Rink\" arena map\r\n- Fixed incorrect loop timing in BGM triangle-prep.ogg\r\n- Fixed a code typo in Wild Gambit\r\n- Fixed Wave Mortar \"status\" description property\r\n- Fixed proxy waveMortar breakType (changed from NEVER to COMBATANT)\r\n- Fixed proxy vitalityCurseDrain breakType (changed from NEVER to COMBATANT)\r\n- Effect \"stasisEffects\" is now centered properly for Stasis Stance and Tower of Tranquility\r\n- Fixed incorrect melee hitbox on Icicle Slash\r\n- Fixed incorrect melee hitbox on first slash of Blizzard Slash\r\n- Fixed looping sound in effect hurricane1 lingering too long\r\n- Fixed proxy lightningRodBolt stun lock release\r\n- Alternating Charge now ignores ice physics\r\n- Fixed an issue where the beam sound effect from Triforce Slash could get interrupted\r\n- Level adjustment switches in training-1v1 and training-2v2 maps now properly hide during duel\r\n- Fixed a softlock in the outdoor area from the mod intro maps caused by reloading during the puzzle\r\n- Fixed player able to be pushed around during Triforce Slash\r\n- Fixed Celestial Constellation status description\r\n- Fixed Celestial Constellation proxies not being DETACH_TIME_PARENT\r\n### Balance\r\n- Changes to PVP enemies only:\r\n  * Enemy First Fractal damage slightly nerfed\r\n  * Enemy Prismatic Meltdown laser chase speed greatly nerfed\r\n  * Enemy Prismatic Meltdown laser lasts 0.5s longer\r\n  * Enemy Frigid Hurricane internal pull force buffed from EASY_ESCAPE to RUN_ESCAPE\r\n  * Enemy Frigid Hurricane added concentric pull force at WALK_ESCAPE strength\r\n  * Enemy Vermillion Firestorm now has a suction effect to make it more difficult to escape\r\n  * Enemy Celestial Constellation new projectiles have higher knockback than player version\r\n  * Enemy Celestial Constellation new projectiles hit a single target, player versions are multiHit\r\n- Changes to player only:\r\n  * Reworked Wave Mortar, it now auto-adjusts the proxy range for enemies in view\r\n  * Wave mortar damage reduced\r\n  * Wave mortar knockback reduced greatly\r\n  * Magnet Storm completely reworked and redesigned\r\n  * Scorching Rays proxy subPierce damage/status increased\r\n  * Scorching Rays initial TACKLE damage increased\r\n  * Scorching Rays looping stun damage increased\r\n  * Tower of Tranquility now spawns icicles upon landing\r\n  * Faraday Formation now stun locks enemies on first hit\r\n  * Faraday Formation executes much faster overall, should be more viable\r\n  * Blade of E'nel activation time reduced from 1.0 seconds to 0.5 seconds\r\n  * Blade of E'nel duration increased from 6 seconds to 7 seconds\r\n  * Shadow Spark proxies orbit duration reduced from 5 seconds to 3 seconds\r\n  * Shadow Spark proxies attack velocity (after orbiting) increased from 300 to 400\r\n  * Frost Rupture final explosion damage greatly increased, crit chance disabled\r\n  * Frost Rupture status infliction increased\r\n  * Kindling Triad now grants weight -1 during counter attack (player no longer affected by push/pull)\r\n  * So'najiz Phalanx reduced delay on clones before shooting lasers\r\n  * Sleet Singularity charge time decreased\r\n- Changes to both player and enemy:\r\n  * Flash Freeze now grants the victim at 130% DEF multiplier while active\r\n  * Icicle Tomb status factor increased greatly\r\n  * Blizzard Slash icicleSmall startDistCollide changed from CLOSER to DROP (major nerf)\r\n  * Blizzard Slash now shoots weaker hail variant that does not bounce\r\n  * Blizzard Slash attack strength decreased from MASSIVE to HEAVY\r\n  * Blizzard Slash melee hitbox radius for final slash slightly increased\r\n  * Blizzard Slash melee damage increased\r\n  * Icicle Slash attack strength decreased from MASSIVE to HEAVY\r\n  * Icicle Slash melee damage slightly increased\r\n  * Molten Daggers damage tick rate cut in half, overall damage slightly reduced\r\n  * Molten Daggers status inflict slightly increased\r\n  * Molten Daggers (specifically fireDaggerStuck) will despawn past a total of 12 active at a time\r\n  * Ki Spin damage decreased\r\n  * Vortex Thrust projectile damage reduced, final slash melee damage increased\r\n  * Vortex Thrust can no longer crit on the final slash\r\n  * Lightning Rod damage slightly increased\r\n  * Thunder Wrath now terminates when running into a solid wall (this removes an exploit against bosses with solid collision)\r\n  * Heavy Slash now grants HEAVY hit stability, making it harder to interrupt\r\n  * Vitality Curse capped at 3 active at a time\r\n  * Celestial Constellation now shoots bonus projectiles as it travels (major buff)\r\n  * Celestial Constellation cc_main and cc_orbiter damage factor reduced",
+                "version": "1.0.0",
+                "timestamp": 1710640708000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/1.0.0"
+            },
+            {
+                "body": "## 0.9.4 (02/07/2024)\r\n### New Content\r\n- Added option to skip the modded intro maps in the options menu (feature by **Krypek**)",
+                "version": "0.9.4",
+                "timestamp": 1707599013000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/0.9.4"
+            },
+            {
+                "body": "## 0.9.3 (02/05/2024)\r\n### General\r\n- Now requires CCLoader2 version 2.22.1 or higher!\r\n- Simplify requirement version increased to 2.12.1\r\n- New dependency mod: AlyBox by Alyxia\r\n   - https://github.com/lexisother/cc-alybox/releases\r\n   - Install instructions have been updated\r\n- Now requires extendable-severed-heads version 1.1.0\r\n   - https://github.com/CCDirectLink/extendable-severed-heads/releases\r\n### New Content\r\n- PVP fixes and improvements by **Krypek**\r\n   - Added variable support for detecting player death and enemy combatant death\r\n   - Game will fast-forward if player is defeated in a duel but has party members remaining\r\n   - Hide healthbars for defeated duel enemies\r\n   - Improvements and fixes to duel GUI rendering when multiple opponents are involved\r\n### Changes\r\n- Removed postload.js (code moved to AlyBox mod)",
+                "version": "0.9.3",
+                "timestamp": 1707195479000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/0.9.3"
+            },
+            {
+                "body": "## 0.9.2 (03/06/2023)\r\n### New Content\r\n- Added a NPC in the mod dev room who will add all vanilla party members to your active party.\r\n   - I will not add support to any of the PVP duels for this, this is just a bonus feature.",
+                "version": "0.9.2",
+                "timestamp": 1678151974000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/0.9.2"
+            },
+            {
+                "body": "## 0.9.1 (02/19/2023)\r\n### Changes\r\n- Triforce Slash ending particle effects changed to guiSprites\r\n- Triforce Slash ending particle effects added pLight property\r\n### Fixes\r\n- Marginal improvement to water collision issue in mod intro outdoor area\r\n- Fixed typo in Triforce Slash particle effects data",
+                "version": "0.9.1",
+                "timestamp": 1676854914000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/0.9.1"
+            },
+            {
+                "body": "## 0.9.0 (02/19/2023)\r\n### New Content\r\n- PVP enemies now use Prismatic Meltdown instead of Triforce Slash (_Shock_Close3)\r\n- PVP enemies now use Beekeeper instead of Shadow Spark (_Shock_Close1)\r\n- Added an extremely hidden secret chest to the outdoor area of the mod intro maps\r\n- Added xtm-areas.json\r\n- Triforce Slash particle effect improvements\r\n### Changes\r\n- Reformatted changelog headings\r\n- Slight reformat to database patch steps\r\n- Moved database patches to \\patches\\data\\database\r\n- Triforce Slash updated description\r\n- Completely reworked the code for Triforce Slash\r\n- Proxy \"bolt\" deleted and replaced with \"triforceTrigger\"\r\n- Triforce Slash trigger proxy changed from BREAK to MASSIVE (player only)\r\n- Triforce Slash only deals MELEE_DMG now\r\n- Triforce Slash now uses brief super armor instead of invinsibility at the start of the attack\r\n- Triforce Slash can't interact with puzzle elements anymore\r\n- Triforce Slash no longer shoots proxies on the final hit\r\n- Triforce Slash has separate targeting methods for enemies with solid collision\r\n### Fixes\r\n- Fixed Ice Flak spawning hail at additional z+12 offset\r\n- Fixed a map bug where you could stand on a water tile in the mod intro area\r\n- Fixed Maroon Valley being revealed on the world map early due to modded maps\r\n- Triforce Slash trigger proxy no nonger pierces and causes targeting confusion\r\n- Fixed ability to shoot Triforce Slash through narrow walls\r\n- Fixed ability to shoot Lightning Strike through narrow walls\r\n- Fixed issue where Triforce Slash would target the wrong enemy\r\n### Balance\r\n- Fire Saw hit strength reduced from MASSIVE to HEAVY (knockback remains MASSIVE)\r\n- Fire Saw damage slightly reduced\r\n- Chilling Thrust status inflict factor reduced\r\n- Chilling Thrust contact damage slightly reduced\r\n- Triforce Slash trigger hitbox changed from 24x24x12 to 16x16x12\r\n- Lightning Strike proxy hitbox changed from 24x24x12 to 16x16x12\r\n- Triforce Slash damage greatly increased to bring it in line with Song of Storms\r\n- Overclock duration increased by 1 second",
+                "version": "0.9.0",
+                "timestamp": 1676846007000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/0.9.0"
+            },
+            {
+                "body": "### Changes\r\n- Faraday Formation is now dash-cancelable",
+                "version": "0.8.5",
+                "timestamp": 1674267590000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/0.8.5"
+            },
+            {
+                "body": "### Fixes\r\n- Fixed a crash that can happen when entering the mod's dev room",
+                "version": "0.8.4",
+                "timestamp": 1674108305000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/0.8.4"
+            },
+            {
+                "body": "### Changes\r\n- Renamed the main effect file to tribladerXTM.json\r\n- Cold particle effects moved to patch file format\r\n- cold-tri.json effect file deleted, data merged into cold.json patch\r\n- Icicle particle effects moved to patch file format\r\n- Heat particle effects moved to patch file format\r\n- Neutral particle effects moved to patch file format\r\n- Shock particle effects moved to patch file format\r\n- Replaced modded vanilla effect \"slowMotionClock\" with modded effect \"slowMotionClockTriblader\"",
+                "version": "0.8.3",
+                "timestamp": 1673904486000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/0.8.3"
+            },
+            {
+                "body": "### New Content\r\n- Added Ice Flak to PVP enemy move pool (they did not previously have a Lv.1 Cold Throw art)\r\n### Changes\r\n- Added a new particle effect when Verdant Infection is inflicted on an enemy\r\n- Warp Decoy can search further for a target to face (visual only)\r\n- Thunder Wrath audio volume slightly reduced\r\n- Removed maxGroundDistance restriction from Thunder Wrath (will work now even if you dash off cliffs)\r\n- Added DETATCH_TIME_PARENT to the following generic proxies:\r\n   - vitalityCurse\r\n   - vitalityCurseDrain\r\n   - bounceOrb\r\n   - vitalitySpring\r\n   - springAbsorbDot\r\n   - waveBomb\r\n   - waveDummy4\r\n   - waveLaserSpawn\r\n   - waveLaser\r\n   - waveMine\r\n   - waveDummy\r\n   - soulShatter\r\n   - waveDummy2\r\n   - spiritfall\r\n   - fallingFaeSmall\r\n   - fallingFaeBig\r\n   - waveTurretBody\r\n   - waveTurret\r\n   - essenceProxy\r\n   - essenceProxyController\r\n   - waveTimeBomb\r\n   - waveTimeBombExploder\r\n- Generic proxies that will remain without DETATCH_TIME_PARENT:\r\n   - waveMortar\r\n   - waveDashBoom\r\n   - exploTrail\r\n   - waveAbsorbDot\r\n### Balance\r\n   - Arcing Fae is now capped at two orbs maximum at a time. Shooting a third will despawn the first one.\r\n   - So'najiz Phalanx increased damage on initial wave bullets\r\n   - So'najiz Phalanx wave bullets attack strength changed from LIGHT to MEDIUM, will be harder to escape\r\n   - So'najiz Phalanx now starts shooting slightly faster (less starting lag)\r\n   - So'najiz Phalanx clones increased HP\r\n   - So'najiz Phalanx final lasers reduced delay between preview and activation",
+                "version": "0.8.2",
+                "timestamp": 1673833639000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/0.8.2"
+            },
+            {
+                "body": "### Changes\r\n- Capitalized Triblader2/3/4/5 names in party menu\r\n- Minor adjustments to Daybreak throw sound effect properties\r\n- Trailblazer can no longer be canceled by dashing until the final spin attack\r\n- Ice Brace audio and effect adjustments\r\n- Schneider/Luke now use their sitting animation for Ice Brace and Stasis Stance\r\n- Schneider/Luke now use their own alternate animations for Tower of Tranquility\r\n- Proxy icicleMediumLineSimple changed to breakType ACTION\r\n- Added DETATCH_TIME_PARENT to the following generic proxies:\r\n   - frozenStar\r\n   - fallingRockBig\r\n   - fallingRockMed\r\n   - rockLine\r\n   - icicleSmall\r\n   - snowballFlurry\r\n   - iceFlak\r\n   - hailBomb\r\n   - iceFreeze\r\n   - icicleBigDmg\r\n- Generic proxies that will remain without DETATCH_TIME_PARENT:\r\n   - polarGeyser\r\n   - frozenRupture\r\n   - avalancheProxy\r\n   - snowHurricaneCharge\r\n   - snowHurricane\r\n   - frozenRay\r\n   - icicleMediumLineSimple\r\n   - icicleSubHit\r\n   - icicleSubHitNoFly\r\n   - icicleHugeDelay\r\n   - towerBase\r\n   - towerWeatherController\r\n   - icePlatform\r\n   - icicleSmallLasting\r\n### Fixes\r\n- Removed duplicate SET_TEMP_TARGET from Recoil Slash\r\n- Recoil Slash particle effects should show on countered enemy more consistently\r\n### Balance\r\n- Recoil Slash now grants super armor (hit resist MASSIVE) while counterattacking\r\n- Verdant Infection now grants super armor (hit resist MASSIVE) while counterattacking\r\n   - Enemy variant already contained this property, only player files updated\r\n- Ice Brace now heals 5% of HP throughout the full duration\r\n- Ice Brace can now be canceled with a dash\r\n- Stasis Stance can now be canceled with a dash\r\n- Added an additional icicle attack to Stasis Stance",
+                "version": "0.8.1",
+                "timestamp": 1673750373000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/0.8.1"
+            },
+            {
+                "body": "### New Content\r\n- Added a warning about modded party members when Triblader2 is recruited at Bergen Trail\r\n- Added a proper story cutscene to unlock the Schneider PVP duel (near end of 3rd day in the DLC story)\r\n   - For save files after this point, the arena cup will be automatically unlocked\r\n   - Added many random assortments of party members that can be present in the stands for the duel\r\n### Changes\r\n- Removed Schneider vs Luke arena cup\r\n- Arena cups are all open to all playable characters now, removed relevant text from descriptions\r\n- Arena lobby EventTrigger for managing character configs remains implemented but is now unused\r\n- Minor Triblader2 party dialogue tweaks\r\n- Adjusted text displays for Triblader League unlock cutscene to be in-line with other arena cup unlocks\r\n- Vermillion Firestorm lasers audio volume reduced\r\n- Flash Freeze audio volume reduced when freezing enemy\r\n- Daybreak proxies changed from breaktype NEVER to COMBATANT\r\n- Added sound effect when Daybreak is thrown\r\n- Daybreak impact sound effect volume increased\r\n- Trailblazer particle effects overhauled\r\n- Proy turbineStunner changed from breaktype NEVER to COMBATANT\r\n- Added DETATCH_TIME_PARENT to the following generic proxies:\r\n   - rudeBuster\r\n   - gleamingSurgeProxy\r\n   - shardAura\r\n   - spikeAura\r\n   - dropShieldOrbit\r\n   - dropShieldStatic\r\n   - defenseAura\r\n   - fireDaggerBombThrow\r\n   - fireDaggerBombStuck\r\n   - fireDaggerThrow\r\n   - fireDaggerStuck\r\n   - daybreakThrow\r\n   - daybreakStuck\r\n   - fireTornado\r\n   - mirageController\r\n   - mirageDummy\r\n   - firePillar\r\n   - firePillarEffect\r\n   - turbineStunner (after rapid spin)\r\n   - turbineDot (after rapid spin)\r\n   - attackBuffProxy\r\n   - flameWall\r\n- Generic proxies that will remain without DETATCH_TIME_PARENT:\r\n   - gambitProxy\r\n   - neutralFreeze\r\n   - neutralLaser\r\n   - subPierce\r\n   - flameHitS\r\n   - solarEruptionTipR\r\n   - solarEruptionTipL\r\n   - solarEruptionHead\r\n   - solarEruptionChainHitbox\r\n   - sunsteelController\r\n   - heatPierce\r\n   - flameHit\r\n   - meteor\r\n   - turbineStunner\r\n   - flamethrowerTriangle\r\n   - enelSwordSummon\r\n   - enelSwordAura\r\n   - firestormBase\r\n   - subPierceWeak\r\n   - flameHitSWeak\r\n   - heatLaser\r\n### Fixes\r\n- Walls 1-3 now destroy with proper effects in mod\\char-select\\beta.json\r\n- Fixed Lily granting exp in training island duels\r\n- Minor typo fix in Bergen Trail entrance modded dialogue\r\n- Fixed a rare issue where Spectral Legion would only spawn 3 clones\r\n- Fixed First Fractal particle effect alignment\r\n### Balance\r\n- Beekeeper total bees reduced by 4, damage per bee increased\r\n- Beekeeper will now despawn any previous bees when used\r\n- First Fractal damage slightly reduced\r\n- Blade of E'nel now grants full super armor (hit resist MASSIVE) while buff is active\r\n- Blade of E'nel now grants a shield that resists 10% of all damage while active\r\n- Homing Shards increased proxy lifetime from 1.5 to 2.0 seconds\r\n- Throwing Knives now shoots 2 additional knives on third volley\r\n- Trailblazer rate of fire increased\r\n- Trailblazer now has additional explosions when fire is spawned, dealing additional damage\r\n- Trailblazer fire contact damage slightly reduced",
+                "version": "0.8.0",
+                "timestamp": 1673157897000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/0.8.0"
+            },
+            {
+                "body": "### Fixes\r\n- Fixed Triblader2 party member contact event story progress threshold\r\n### Balance\r\n- Magnet Prism targeting range increased from 128 to 140",
+                "version": "0.7.1",
+                "timestamp": 1670222024000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/0.7.1"
+            },
+            {
+                "body": "0.7.0 (11/19/2022)\r\n### New Content\r\n- Added a character changing station to the Info Hub in Rookie Harbor\r\n- Triblader2 can now join the player near the start of Bergen Trail as a party member\r\n   - This is in addition to the dev room NPC\r\n   - Level/element/SP scaling will work regardless of when the NPC is recruited in a playthrough\r\n- Added commonEvent logic to manage Triblader2 party member level/SP/element progression throughout the story\r\n- Added modified event step to allow setting party members to variable level values\r\n### Major Changes\r\n- Targeted Surge: If you miss and use it again before the triangles despawn then your first attempt will stack\r\n- Magnet Prism is no longer limited to 1 projectile at a time (2 max), and no longer pierces\r\n### Changes\r\n- Minor audio volume adjustements to Blade Rink first-time cutscene\r\n- Prismatic Meltdown audio volume reduced when it shoots the laser\r\n- Shadow Spark projectile damage type changed from RANGED_DMG to MELEE_DMG\r\n- Lightning Rod final lightning proxy hit changed from RANGEED_DMG to MELEE_DMG\r\n- Proxy magnetBolt changed to breakType COMBATANT\r\n- Proxy thunderMed removed legacy \"hints\" properties\r\n- Proxy thunderMed changed from RANGED_DMG to MELEE_DMG\r\n- Proxy thunderController changed to breakType NEVER\r\n- Thunder Wrath weather effects linger for longer\r\n- Lightning Rod guardable flag changed from FROM_ABOVE to blank (player version only)\r\n- Proxy thunderHeavy guardable flag changed from FROM_ABOVE to blank\r\n- Proxy thunderHeavySkew guardable flag changed from FROM_ABOVE to blank\r\n- Proxy thunderHeavySkew changed from RANGED_DMG to MELEE_DMG\r\n- Added DETATCH_TIME_PARENT to the following generic proxies:\r\n   - bee\r\n   - circleBallShooter\r\n   - circleBall\r\n   - ms_TT\r\n   - tt_ball\r\n   - magnetBoltLong\r\n   - forkBoltSpawn\r\n   - forkBoltSecondary\r\n   - forkBoltHitbox\r\n   - magnetSphere\r\n   - magnetSphereTurret\r\n   - magnetBolt\r\n   - thunderController\r\n   - thunderSpawner\r\n   - thunderSmall\r\n   - thunderHeavy\r\n   - meltdown (only after it shoots the shockLaser proxy)\r\n   - shockLaser\r\n- Proxies that will remain without DETATCH_TIME_PARENT:\r\n   - faradayDummy\r\n   - lightningRodBolt\r\n   - shockSpecial\r\n   - fractalCloneController\r\n   - fractalClone\r\n   - thunderMed\r\n   - meltdownTarget\r\n   - thunderHeavySkew\r\n### Fixes\r\n- Most shock art skillBonus corrections\r\n- Fixed missing stunType, dmgType, and status descriptions for most shock arts\r\n- Fixed minor animation quirk in Blade Rink first-time cutscene\r\n- Fixed Triblader2-specific issue with second projectile of Celestial Constellation\r\n- Fixed ice wind effects from Arctic Blast rendering beneath upper terrain\r\n- Reworked the logic for beekeeper bees, they should no longer linger endlessly on defeated enemies\r\n- Added the attribute \"checkCollision\" for the following (fixes ability to hit through walls):\r\n   - Beekeeper melee attack\r\n   - Faraday Formation final spin attack\r\n   - Lightning Rod lightning bolt\r\n   - Amber Flurry rapid hits\r\n   - Amber Flurry final hit\r\n   - First Fractal final hit\r\n   - Alternating Charge lightning proxies\r\n   - Proxy thunderSmall\r\n   - Proxy thunderHeavy\r\n   - Proxy thunderHeavySkew\r\n   - Prismatic Meltdown laser impact\r\n- Puzzle elements can now interact with:\r\n   - Faraday Formation final spin attack\r\n   - Lightning Strike (added a non-damaging hitbox that can interact with puzzles)\r\n   - Targeted Surge initial projectile (added a non-damaging hitbox that can interact with puzzles)\r\n   - Lightning Fork\r\n### Balance\r\n- Beekeeper bees reduced from MEDIUM hit strength to LIGHT\r\n- Beekeeper bees speed slightly increased\r\n- Slightly reduced beekeeper sword damage\r\n- Shadow Spark no longer inflicts status\r\n- Shadow Spark projectile damage and shoot velocity increased\r\n- Targeted Surge no longer inflicts status\r\n- Targeted Surge now shoots faster and has faster projectiles\r\n- Targeted Surge minor damage reduction\r\n- Lightning Fork damage significantly reduced\r\n- Magnet Prism no longer inflicts status\r\n- Magnet Prism no longer pierces enemies\r\n- Magnet Prism max projectiles increased from 1 to 2\r\n- Magnet Prism rate of fire increased, damage adjusted to balance\r\n- First Fractal damage slightly increased",
+                "version": "0.7.0",
+                "timestamp": 1668917167000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/0.7.0"
+            },
+            {
+                "body": "### Fixes\r\n- Introduced the \"posEntity\" attribute to gambitProxy to prevent Wild Gambit's projectiles from shooting through walls",
+                "version": "0.6.1",
+                "timestamp": 1666515218000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/0.6.1"
+            },
+            {
+                "body": "### New Content\r\n- Added some various Triblader2 party dialogue\r\n### Changes\r\n- All healing combat arts now have their names in green text\r\n- All self-damaging combat arts (Burning Sacrifice) now use red text\r\n- Changed BGM for Blade Rink\r\n- Minor text speed edit to Blade Rink first-time cutscene\r\n- Reformatted some Triblader2 party dialogue event steps\r\n- Modified visual effect for Wild Gambit roll 4\r\n- Wild Gambit roll 4 reduced volume on charging sound\r\n- Wild Gambit roll 7 proxy waveAbsorbBall startDist reduced\r\n- Removed assault proxies from Heavy Slash\r\n- Blade Aura changed from RANGED_DMG to MELEE_DMG\r\n- Laser Barrage executes faster now\r\n### Fixes\r\n- Neutral art skillBonus corrections\r\n- Fixed missing stunType, dmgType, and status descriptions for all neutral arts\r\n- Fixed Laser Barrage bug with laser particle effect lingering on enemies\r\n- Laser Barrage now works properly against walls, fences, and corners\r\n- Added the attribute \"checkCollision\" for the following (fixes ability to hit through walls):\r\n   - Wirbelschlitzer attack hitbox\r\n   - Wild Gambit basic melee hitbox\r\n   - Wild Gambit roll 6 melee attack\r\n   - Wild Gambit roll 8 melee attack\r\n   - Heavy Slash attack hitbox\r\n   - Shrapnel Field spin attack\r\n   - Sky Shredder initial combo starter swing\r\n   - Laser Barrage final strike\r\n- Puzzle elements can now interact with:\r\n   - Wild Gambit roll 6 melee attack\r\n   - Wild Gambit roll 7 melee attack\r\n   - Wild Gambit roll 8 melee attack\r\n- Puzzle elements no longer interact with:\r\n   - Gleaming Surge delayed hits on enemies\r\n   - Sky Shredder falling spin attack\r\n   - Laser Barrage lasers\r\n### Balance\r\n- Heavy Slash damage increased 12%\r\n- Laser Barrage individual laser damage increased 50%\r\n- Laser Barrage total lasers changed from 5 to 6",
+                "version": "0.6.0",
+                "timestamp": 1666514440000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/0.6.0"
+            },
+            {
+                "body": "### Fixes\r\n- Fixed cutscene sound effect positioning in all 5 XTM arena maps\r\n### Changes\r\n- Slightly moved PVP sign in Blade Rink\r\n- Changed initial character animations on cutscene for subsequent Blade Rink rounds\r\n- Made timing adjustment on pvpBrake for Blade Rink in attempt to avoid invisible enemies on round start",
+                "version": "BETA_0.5.2",
+                "timestamp": 1664165784000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/BETA_0.5.2"
+            },
+            {
+                "body": "### Fixes\r\n- Fixed alignment of effect in Blade Rink intro when Triblader5 switches to neutral\r\n- Fixed broken animation in map autumn\\path-3-1.json in cutscene that plays after Vermillion Wasteland\r\n",
+                "version": "BETA_0.5.1",
+                "timestamp": 1664148681000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/BETA_0.5.1"
+            },
+            {
+                "body": "### New Content\r\n- Triblader League round 2: \"Blade Rink\" added\r\n- Cutscene for 1st-time attempt at Blade Rink only\r\n### Fixes\r\n- Removed unused debug spritesheet custom.png\r\n- Compressed file pvp-triblader-league-c.json\r\n- Removed unintentional assault proxies from Blizzard Slash",
+                "version": "BETA_0.5.0",
+                "timestamp": 1664145061000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/BETA_0.5.0"
+            },
+            {
+                "body": "### Changes\r\n- Updated readme\r\n- Reorganized github",
+                "version": "BETA_0.4.3",
+                "timestamp": 1663132337000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/BETA_0.4.3"
+            }
+        ]
+    },
+    "xpc-litter": {
+        "metadataCCMod": {
+            "id": "xpc-litter",
+            "version": "2.0.0",
+            "title": {
+                "en_US": "XPC - Hexacast Litter"
+            },
+            "description": {
+                "en_US": "Makes Hexacast spellcards linger on the ground for a long time \\c[3](visual only)\\c[0]"
+            },
+            "repository": "https://github.com/XenonA7/xmc-hexacast-litter",
+            "tags": [
+                "cosmetic"
+            ],
+            "authors": "XenonA7",
+            "icons": {
+                "24": "icon.png"
+            },
+            "dependencies": {
+                "xenons-playable-classes": ">=2.0.0"
+            }
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/XenonA7/xpc-hexacast-litter/archive/refs/tags/2.0.0.zip",
+                "source": "xpc-hexacast-litter-2.0.0",
+                "hash": {
+                    "sha256": "32a636b48aaf703ca0cfc796019b4a3b3088e35d0f2bad14d7bdd6264f8c0ba6"
+                }
+            }
+        ],
+        "stars": 0,
+        "lastUpdateTimestamp": 1724475869000,
+        "releasePages": [
+            {
+                "body": "2.0.0 (08/23/2024)\r\n- Support for XPC 2.0.0 and higher\r\n- Support for xmc-hexacast discontinued\r\n- Mod ID changed from xmc-litter to xpc-litter",
+                "version": "2.0.0",
+                "timestamp": 1724475869000,
+                "url": "https://github.com/XenonA7/xpc-hexacast-litter/releases/tag/2.0.0"
+            },
+            {
+                "body": "1.0.9 (08/11/2024)\r\n- Support for Hexacast 0.45.0\r\n- Added and standardized \"explodeCardNeutral\" type effects",
+                "version": "1.0.9",
+                "timestamp": 1723429319000,
+                "url": "https://github.com/XenonA7/xpc-hexacast-litter/releases/tag/1.0.9"
+            },
+            {
+                "body": "1.0.8 (02/21/2024)\r\n- Compliance with new version format standard",
+                "version": "1.0.8",
+                "timestamp": 1708583987000,
+                "url": "https://github.com/XenonA7/xpc-hexacast-litter/releases/tag/1.0.8"
+            },
+            {
+                "body": "1.8 (02/19/2024)\r\n- Updated to new ccmod.json standard",
+                "version": "1.8",
+                "timestamp": 1708403478000,
+                "url": "https://github.com/XenonA7/xpc-hexacast-litter/releases/tag/1.8"
+            },
+            {
+                "body": "1.7 (01/01/2024)\r\n- Added support for Polarity Spark (Hexacast mod 0.25.0)",
+                "version": "1.7",
+                "timestamp": 1704159985000,
+                "url": "https://github.com/XenonA7/xpc-hexacast-litter/releases/tag/1.7"
+            },
+            {
+                "body": "1.6 (07/23/2023)\r\n- Added support for Acceleration Mine (Hexacast mod 0.21.0)",
+                "version": "1.6",
+                "timestamp": 1690178874000,
+                "url": "https://github.com/XenonA7/xpc-hexacast-litter/releases/tag/1.6"
+            },
+            {
+                "body": "1.5 (07/15/2023)\r\n- Added support for Ace of Flames (Hexacast mod 0.20.0)",
+                "version": "1.5",
+                "timestamp": 1689405355000,
+                "url": "https://github.com/XenonA7/xpc-hexacast-litter/releases/tag/1.5"
+            },
+            {
+                "body": "1.4 (06/28/2023)\r\n- Tweaked explodeCardDeath velocity parameters",
+                "version": "1.4",
+                "timestamp": 1688019831000,
+                "url": "https://github.com/XenonA7/xpc-hexacast-litter/releases/tag/1.4"
+            },
+            {
+                "body": "- Initial Release",
+                "version": "1.0",
+                "timestamp": 1675656232000,
+                "url": "https://github.com/XenonA7/xpc-hexacast-litter/releases/tag/1.0"
             }
         ]
     },
