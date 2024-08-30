@@ -4390,7 +4390,7 @@
             "version": "1.2.9",
             "title": "CCUILib",
             "description": "Library of additional UI elements as well as making existing ones configurable",
-            "repository": "https://github.com/conorlawton/nax-ccuilib",
+            "repository": "https://github.com/naxane/nax-ccuilib",
             "tags": [
                 "QoL",
                 "library"
@@ -4408,74 +4408,20 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/conorlawton/nax-ccuilib/releases/download/v1.2.9/nax-ccuilib.ccmod",
+                "url": "https://github.com/naxane/nax-ccuilib/releases/download/v1.2.9/nax-ccuilib.ccmod",
                 "hash": {
-                    "sha256": "77819a85893d2edb269bdb5b8d596a35a4601f69764001ad85072eb47954814a"
+                    "sha256": "fed5523fe08d934eea951badd796254a3e2c3f9ad501b4ae11513a1b5bb2d9ab"
                 }
             }
         ],
         "stars": 1,
-        "lastUpdateTimestamp": 1724155769000,
+        "lastUpdateTimestamp": 1725017690000,
         "releasePages": [
             {
-                "body": "# Added\r\n- Enforce the manual\r\n\r\n## What's Changed\r\n* A bunch of quick menu improvements and bug fixes by @krypciak in https://github.com/conorlawton/nax-ccuilib/pull/9\r\n\r\n\r\n**Full Changelog**: https://github.com/conorlawton/nax-ccuilib/compare/v1.2.8...v1.2.9\r\nA huge thank you to Krypek for the changes made.",
+                "body": "**Full Changelog**: https://github.com/naxane/nax-ccuilib/commits/v1.2.9\r\nHuge thank you to Krypek for all his hard work :)",
                 "version": "1.2.9",
-                "timestamp": 1724160124000,
-                "url": "https://github.com/conorlawton/nax-ccuilib/releases/tag/v1.2.9"
-            },
-            {
-                "body": "# Added\r\n- Added CCModManager integration (options menu page)\r\n# Changed\r\n- Moved the help menu from the quick menu to the mod manager mod's options page",
-                "version": "1.2.8",
-                "timestamp": 1724160124000,
-                "url": "https://github.com/conorlawton/nax-ccuilib/releases/tag/v1.2.8"
-            },
-            {
-                "body": "# Changed\r\n- Force initial quick menu button selection to be on the first ring\r\n# Fixed\r\n- Disable ring switching when a popup is over the quick menu",
-                "version": "1.2.7",
-                "timestamp": 1724160124000,
-                "url": "https://github.com/conorlawton/nax-ccuilib/releases/tag/v1.2.7"
-            },
-            {
-                "body": "# Fixed\r\n- Fix quick menu edit mode not activating when `Quick Menu Access` is set to `Hold`",
-                "version": "1.2.6",
-                "timestamp": 1724160124000,
-                "url": "https://github.com/conorlawton/nax-ccuilib/releases/tag/v1.2.6"
-            },
-            {
-                "body": "# Changed\r\n- Save toggle quick menu widgets state to local storage\r\n",
-                "version": "1.2.5",
-                "timestamp": 1724160124000,
-                "url": "https://github.com/conorlawton/nax-ccuilib/releases/tag/v1.2.5"
-            },
-            {
-                "body": "## What's Changed\r\n* Add imageNoCache option to widget config & Add help button by @krypciak in https://github.com/conorlawton/nax-ccuilib/pull/8\r\n\r\n\r\n**Full Changelog**: https://github.com/conorlawton/nax-ccuilib/compare/v.1.2.3...v1.2.4",
-                "version": "1.2.4",
-                "timestamp": 1710106015000,
-                "url": "https://github.com/conorlawton/nax-ccuilib/releases/tag/v1.2.4"
-            },
-            {
-                "body": "",
-                "version": "v.1.2.3",
-                "timestamp": 1709313342000,
-                "url": "https://github.com/conorlawton/nax-ccuilib/releases/tag/v.1.2.3"
-            },
-            {
-                "body": "Fixes #2 ",
-                "version": "1.2.2",
-                "timestamp": 1706800217000,
-                "url": "https://github.com/conorlawton/nax-ccuilib/releases/tag/v1.2.2"
-            },
-            {
-                "body": "",
-                "version": "1.2.1",
-                "timestamp": 1678814077000,
-                "url": "https://github.com/conorlawton/nax-ccuilib/releases/tag/v1.2.1"
-            },
-            {
-                "body": "",
-                "version": "1.2.0",
-                "timestamp": 1678810159000,
-                "url": "https://github.com/conorlawton/nax-ccuilib/releases/tag/1.2.0"
+                "timestamp": 1725017690000,
+                "url": "https://github.com/naxane/nax-ccuilib/releases/tag/v1.2.9"
             }
         ]
     },
@@ -4485,7 +4431,7 @@
             "version": "1.0.2",
             "title": "Module Cache",
             "description": "Caches module paths for ig._loadScript",
-            "repository": "https://github.com/conorlawton/nax-module-cache",
+            "repository": "https://github.com/naxane/nax-module-cache",
             "tags": [
                 "library"
             ],
@@ -4495,26 +4441,20 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/nax-module-cache/releases/download/v1.0.2/nax-module-cache.ccmod",
+                "url": "https://github.com/naxane/nax-module-cache/releases/download/v1.0.2/nax-module-cache.ccmod",
                 "hash": {
-                    "sha256": "86b3fb25b75c8edd5b6079577d7df6748e6494165b1b77d31f73311f577763a8"
+                    "sha256": "fd6d103ddceff381d20c1944d9fafc03b11b43d0ce15bea7b61d7b47bf91aa1f"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1691756237000,
+        "lastUpdateTimestamp": 1724951534000,
         "releasePages": [
             {
-                "body": "",
-                "version": "1.0.1",
-                "timestamp": 1678889882000,
-                "url": "https://github.com/conorlawton/nax-module-cache/releases/tag/v1.0.1"
-            },
-            {
-                "body": "",
-                "version": "1.0.0",
-                "timestamp": 1678810788000,
-                "url": "https://github.com/conorlawton/nax-module-cache/releases/tag/v1.0.0"
+                "body": "**Full Changelog**: https://github.com/naxane/nax-module-cache/compare/v1.0.1...v1.0.2",
+                "version": "1.0.2",
+                "timestamp": 1724253192000,
+                "url": "https://github.com/naxane/nax-module-cache/releases/tag/v1.0.2"
             }
         ]
     },
