@@ -3542,7 +3542,7 @@
     "item-api": {
         "metadataCCMod": {
             "id": "item-api",
-            "version": "0.4.4",
+            "version": "0.4.5",
             "title": "Item API",
             "description": "Allows custom items to be prepared in such a way that they 'just work'.",
             "repository": "https://github.com/CCDirectLink/item-api",
@@ -3564,9 +3564,10 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CCDirectLink/item-api/releases/download/v0.4.4/item-api.ccmod",
+                "url": "https://github.com/CCDirectLink/item-api/releases/download/v0.4.5/item-api.ccmod",
+                "source": "",
                 "hash": {
-                    "sha256": "82523e959809c7b46cce0d7c702f9bf85f1981a80ac999be09782811fcaa33d0"
+                    "sha256": "f0e37b242aaea1375a837638d0b392e27129c7e82fda8ee31c6827bf91bf6880"
                 }
             }
         ],
