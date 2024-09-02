@@ -140,7 +140,9 @@ async function findZipRoot(buffer: Buffer): Promise<string | undefined> {
                 const name = path.basename(entry.fileName)
                 if (name == 'package.json' || name == 'ccmod.json') {
                     zip.close()
-                    resolve(path.dirname(entry.fileName))
+                    let dirPath = path.dirname(entry.fileName)
+                    if (dirPath == '.') dirPath = ''
+                    resolve(dirPath)
                     return
                 }
             }
