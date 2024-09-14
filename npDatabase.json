@@ -5315,7 +5315,7 @@
     "xenons-playable-classes": {
         "metadataCCMod": {
             "id": "xenons-playable-classes",
-            "version": "2.0.1",
+            "version": "2.2.1",
             "title": {
                 "en_US": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
                 "de_DE": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
@@ -5365,16 +5365,34 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/2.0.1.zip",
-                "source": "xenons-playable-classes-2.0.1",
+                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/2.2.1.zip",
+                "source": "xenons-playable-classes-2.2.1",
                 "hash": {
-                    "sha256": "2eb30ed2d74dd108105005e2c843fda188c9238f22547dad5badaff63e580757"
+                    "sha256": "d3fbba2fb5cf555b7d2686ded65138b29d52bd186bcbcb79099538f3ebd3acd7"
                 }
             }
         ],
-        "stars": 19,
-        "lastUpdateTimestamp": 1724569637000,
+        "stars": 20,
+        "lastUpdateTimestamp": 1726301688000,
         "releasePages": [
+            {
+                "body": "## 2.2.1 (09/14/2024)\r\n### Changes\r\n- Removed NPC encounter in beach/path-04 (Rough Lagoon) and replaced it with a new conversation in the same map\r\n- Tweaked player animations during Spell Volley combat art\r\n### Fixes\r\n- Fixed a file path issue in triblader animation sheets\r\n- Fixed Ether Bomb hitbox verticality",
+                "version": "2.2.1",
+                "timestamp": 1726301506000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/2.2.1"
+            },
+            {
+                "body": "## 2.2.0 (09/12/2024)\r\n### New Content\r\n- New Hexacast combat art: Reciprocal Gale (Cold Dash Lv.2A)\r\n- Added a xenodialogue to hideout-north\r\n### Changes\r\n- Icy Gust is now dash-cancelable before the art completes\r\n- Made Beam Blaster hitbox slightly more reliable\r\n- Ashen Inferno no longer stops player at cliff edge\r\n- Reduced light raduis of effect ashenInfernoSweep\r\n### Balance\r\n- Beam Blaster hitbox size slightly increased\r\n- Beam Blaster hitbox now hits 16 below vertically",
+                "version": "2.2.0",
+                "timestamp": 1726142219000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/2.2.0"
+            },
+            {
+                "body": "## 2.1.0 (09/10/2024)\r\n### New Content\r\n- New Hexacast combat art: Icy Gust (Cold Dash Lv.1A)\r\n### Changes\r\n- Tweaked Hexacast character portraits\r\n- Added additional ground detailing to unused-content and enemy-testing maps\r\n- Reduced opacity of hailBullet2 trail\r\n- Deleted Shield Generator combat art\r\n### Fixes\r\n- Fixed typo and text description for custom skill sign in art-testing\r\n- Fixed crash in ultimate-pvp when talking to Triblader3 as Hexacast2\r\n- Fixed effect wavePullHex using WAVE_DOT1 instead of WAVE_DOT2 particles\r\n### Balance\r\n- Added a start delay to Cosmic Recursion\r\n- Kindling Triad now provides a temporary shield during the counter attack",
+                "version": "2.1.0",
+                "timestamp": 1725976962000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/2.1.0"
+            },
             {
                 "body": "## 2.0.1 (08/25/2024)\r\n### New Content\r\n- Added a \"Quest Debug\" sign to the unused-content map in the Bergen hideout basement\r\n * This can be used to fix the Flamepeng quest retroactively in save files where it was completed in the old XTM\r\n   mod and is now broken in XPC after updating and playing on the same save file.\r\n### Changes\r\n- Added a dialogue box to the character change sign in hideout-north\r\n- Added art-testing-sound-test map to files (unused in-game)\r\n### Fixes\r\n- Fixed xpc-lab props animation timing variation\r\n- Removed old XTM terminology from README.md",
                 "version": "2.0.1",
