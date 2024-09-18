@@ -1,4 +1,193 @@
 {
+    "ccmodmanager": {
+        "metadataCCMod": {
+            "id": "ccmodmanager",
+            "version": "0.9.21",
+            "title": "CCModManager",
+            "description": "Mod manager for CrossCode!",
+            "repository": "https://github.com/CCDirectLink/CCModManager",
+            "tags": [
+                "QoL"
+            ],
+            "authors": [
+                "krypek",
+                "dmitmel",
+                "2767mr",
+                "elluminance"
+            ],
+            "icons": {
+                "24": "icon/icon.png"
+            },
+            "dependencies": {
+                "ccloader": ">=3.2.2-alpha || ^2.0.0"
+            },
+            "plugin": "plugin.js"
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/CCDirectLink/CCModManager/releases/download/v0.9.21/ccmodmanager-0.9.21.ccmod",
+                "source": "",
+                "hash": {
+                    "sha256": "f287b11348cd1581d62db611720e7d8930bd4f590ac0605db1275fffbf633c67"
+                }
+            }
+        ],
+        "stars": 2,
+        "lastUpdateTimestamp": 1726389065000,
+        "releasePages": [
+            {
+                "body": "### Added\n\n- Added a tab for mods that have a dedicated settings page\n\n### Changed\n\n- Remember the \"Include local\" and \"Hide library mods\" filter options across game restarts\n- Make the manual enforcer less annoying\n\n### Fixed\n\n- Fixed CCLoader sometimes getting detected as not installed",
+                "version": "0.9.22",
+                "timestamp": 1726389066000,
+                "url": "https://github.com/CCDirectLink/CCModManager/releases/tag/v0.9.22"
+            },
+            {
+                "body": "### Added\n\n- Enforce the manual on all souls\n\n### Changed\n\n- Mod options can now also be opened with mouse right click\n\n### Fixed\n\n- Fixed mod settings and testing buttons being unpresssable on gamepad when the gamepad bindings are changed",
+                "version": "0.9.21",
+                "timestamp": 1724154909000,
+                "url": "https://github.com/CCDirectLink/CCModManager/releases/tag/v0.9.21"
+            },
+            {
+                "body": "### Changed\n\n- Decrease mod size\n- Prevent backspace from quitting the mod manager menu\n- Keep list scroll when entering the mod's options\n- `onPress` and `changeEvent` functions on option entries: `this` is now bound to the option config\n\n### Fixed\n\n- Prevent CCLoader downgrade attempts when using CCLoader3 and downloading a mod that requires CCLoader2\n- Prevent Simplify from installing when using CCLoader3\n- Fixed space being disabled in every menu, not just the mod manager\n- Fixed mod list being unresponsive after exiting out of the filters menu\n- Fixed the mod's options menu sometimes failing to open on keyboard and mouse",
+                "version": "0.9.20",
+                "timestamp": 1723377535000,
+                "url": "https://github.com/CCDirectLink/CCModManager/releases/tag/v0.9.20"
+            },
+            {
+                "body": "### Added\n\n- Added mod installation progress indication\n\n### Changed\n\n- Revert the button order in the mod uninstallation popup to \"YES NO\" from \"NO YES\"\n\n### Fixed\n\n- Fixed the mod menu sometimes being blank when reopening it\n- Block exiting from the mod install menu with keys such as escape\n- Don't block dependency mod uninstalling when all parent mods have been uninstalled in the current session\n- Disallow installing mods that depend on missing extensions (such as DLC)",
+                "version": "0.9.19",
+                "timestamp": 1723222247000,
+                "url": "https://github.com/CCDirectLink/CCModManager/releases/tag/v0.9.19"
+            },
+            {
+                "body": "### Added\n \n- Added the \"Reset repositories to default\" button to the CCModManager options\n- Added the \"Clear database cache\" button to the CCModManager options\n- Added a checkbox to keep chromium flags on CCLoader update to the CCModManager options\n- Added a checkbox to unpack installed or updated `.ccmod` mods to the CCModManager options\n- Added a button to reinstall all installed mods to the CCModManager options\n- Added the \"Visit release page\" button to the mod changelog menu\n\n### Changed\n\n- Removed the \"v\" before from the mod update dialog for consistency\n\n### Fixed\n\n- Fixed filters menu back button not being clickable by mouse + other weirdness\n- Fixed manual updating of pre-release mods\n- Fixed mod options BUTTON y spacing\n- Fixed mod installation successful dialog poping up before the installation finished\n- Prevent mod description and mod tags overlapping each other\n- Fixed the confirmation buttons for the mod installation prompt getting off-screen when the mod list is too big\n- Improved ccloader3 compatibility",
+                "version": "0.9.18",
+                "timestamp": 1723137335000,
+                "url": "https://github.com/CCDirectLink/CCModManager/releases/tag/v0.9.18"
+            },
+            {
+                "body": "### Added\n\n- Added the mod changelog menu",
+                "version": "0.9.17",
+                "timestamp": 1722881434000,
+                "url": "https://github.com/CCDirectLink/CCModManager/releases/tag/v0.9.17"
+            },
+            {
+                "body": "### Changed\n\n- Update the mod database endpoint",
+                "version": "0.9.16",
+                "timestamp": 1722258714000,
+                "url": "https://github.com/CCDirectLink/CCModManager/releases/tag/v0.9.16"
+            },
+            {
+                "body": "### Fixed\n\n- Fixed crash when switching buttons using a mouse on BUTTON_GROUP",
+                "version": "0.9.15",
+                "timestamp": 1719494766000,
+                "url": "https://github.com/CCDirectLink/CCModManager/releases/tag/v0.9.15"
+            },
+            {
+                "body": "",
+                "version": "0.9.14",
+                "timestamp": 1718300866000,
+                "url": "https://github.com/CCDirectLink/CCModManager/releases/tag/v0.9.14"
+            },
+            {
+                "body": "",
+                "version": "0.9.13",
+                "timestamp": 1718187884000,
+                "url": "https://github.com/CCDirectLink/CCModManager/releases/tag/v0.9.13"
+            },
+            {
+                "body": "### Added\n\n- Added a 'Visit repository' button\n- Added a per-mod options sub-menu\n\n### Changed\n\n- The mod manager is now available in demo versions of the game generated by [crosscode-demonizer](https://github.com/krypciak/crosscode-demonizer), but the online tab is unavailable",
+                "version": "0.9.12",
+                "timestamp": 1718037909000,
+                "url": "https://github.com/CCDirectLink/CCModManager/releases/tag/v0.9.12"
+            },
+            {
+                "body": "### Added\n\n- Added testing branch support\n\n### Changes\n\n- Mod installation dialog now displays versions",
+                "version": "0.9.11",
+                "timestamp": 1716050076000,
+                "url": "https://github.com/CCDirectLink/CCModManager/releases/tag/v0.9.11"
+            },
+            {
+                "body": "### Added\n\n- Added mod sha256 digest verification\n\n### Fixed\n\n- Fixed game extensions not being handled",
+                "version": "0.9.10",
+                "timestamp": 1713626437000,
+                "url": "https://github.com/CCDirectLink/CCModManager/releases/tag/v0.9.10"
+            },
+            {
+                "body": "### Changed\n\n- Always use small font for the grid view\n\n### Fixed\n\n- Fixed mod list sorting on enabled and disabled tabs\n- Fixed mod last update date not showing on local mods\n- Fixed tag list clipping out of the mod entry box when the tag list too long",
+                "version": "0.9.9",
+                "timestamp": 1710699328000,
+                "url": "https://github.com/CCDirectLink/CCModManager/releases/tag/v0.9.9"
+            },
+            {
+                "body": "",
+                "version": "0.9.8",
+                "timestamp": 1710348422000,
+                "url": "https://github.com/CCDirectLink/CCModManager/releases/tag/v0.9.8"
+            },
+            {
+                "body": "",
+                "version": "0.9.7",
+                "timestamp": 1710281797000,
+                "url": "https://github.com/CCDirectLink/CCModManager/releases/tag/v0.9.7"
+            },
+            {
+                "body": "",
+                "version": "0.9.6",
+                "timestamp": 1710243976000,
+                "url": "https://github.com/CCDirectLink/CCModManager/releases/tag/v0.9.6"
+            },
+            {
+                "body": "",
+                "version": "0.9.5",
+                "timestamp": 1710069687000,
+                "url": "https://github.com/CCDirectLink/CCModManager/releases/tag/v0.9.5"
+            },
+            {
+                "body": "",
+                "version": "0.9.4",
+                "timestamp": 1710069126000,
+                "url": "https://github.com/CCDirectLink/CCModManager/releases/tag/v0.9.4"
+            },
+            {
+                "body": "",
+                "version": "0.9.3",
+                "timestamp": 1709656740000,
+                "url": "https://github.com/CCDirectLink/CCModManager/releases/tag/v0.9.3"
+            },
+            {
+                "body": "",
+                "version": "0.9.2",
+                "timestamp": 1709575973000,
+                "url": "https://github.com/CCDirectLink/CCModManager/releases/tag/v0.9.2"
+            },
+            {
+                "body": "",
+                "version": "0.9.1",
+                "timestamp": 1709575284000,
+                "url": "https://github.com/CCDirectLink/CCModManager/releases/tag/v0.9.1"
+            },
+            {
+                "body": "",
+                "version": "0.9.0",
+                "timestamp": 1708875168000,
+                "url": "https://github.com/CCDirectLink/CCModManager/releases/tag/v0.9.0"
+            },
+            {
+                "body": "",
+                "version": "0.8.3",
+                "timestamp": 1708719371000,
+                "url": "https://github.com/CCDirectLink/CCModManager/releases/tag/v0.8.3"
+            },
+            {
+                "body": "",
+                "version": "0.8.0",
+                "timestamp": 1708698380000,
+                "url": "https://github.com/CCDirectLink/CCModManager/releases/tag/v0.8.0"
+            }
+        ]
+    },
     "mw-rando": {
         "metadataCCMod": {
             "id": "mw-rando",
