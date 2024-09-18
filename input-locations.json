@@ -1,1 +1,4 @@
-[{ "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.0-pre.5/CCMultiworldRandomizer-0.6.0-pre.5.ccmod" }]
+[
+    { "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.0-pre.5/CCMultiworldRandomizer-0.6.0-pre.5.ccmod" },
+    { "url": "https://github.com/CCDirectLink/CCModManager/releases/download/v0.9.21/ccmodmanager-0.9.21.ccmod", "source": "" }
+]
