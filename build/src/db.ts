@@ -1,225 +1,143 @@
-import semver from 'semver';
-import crypto from 'crypto';
-import fs from 'fs';
-import { download, streamToBuffer } from './download';
+import semver from 'semver'
+import crypto from 'crypto'
+import { download, streamToBuffer } from './download'
+import {
+    ModMetadatasInput,
+    ModMetadatas,
+    addStarsAndTimestampsToResults,
+    addReleasePages,
+} from './source'
+import type { PackageDB, InputLocation, InstallMethod, PkgCCMod, ValidPkgCCMod } from './types'
+import { WriteFunc } from './main'
 
-interface ModDb {
-	[name: string]: {
-		name: string,
-		description: string,
-		license?: string,
-		page: Page[],
-		archive_link: string,
-		hash: {
-			sha256: string,
-		},
-		version: string,
-	}
+export async function build(packages: ModMetadatasInput[]): Promise<PackageDB> {
+    const result: PackageDB = {}
+    const promises: Promise<void>[] = []
+
+    for (const [, { ccmod, inputs }] of groupByName(packages)) {
+        if (ccmod && !checkCCMod(ccmod)) continue
+
+        promises.push(buildEntry(result, ccmod, inputs))
+    }
+
+    await Promise.all(promises)
+    // Both addStarsAndTimestampsToResults and addReleasePages use the GitHub api
+    // so it shouldn't be done concurrently
+    await addStarsAndTimestampsToResults(result)
+    await addReleasePages(result)
+
+    return result
 }
 
-export async function build(packages: [PkgMetadata, InputLocation][]): Promise<PackageDB> {
-	const result: PackageDB = {};
-	const promises: Promise<void>[] = [];
-
-	for (const [, [pkg, inputs]] of groupByName(packages)) {
-		if (!check(pkg)) {
-			continue;
-		}
-
-		promises.push(buildEntry(result, pkg, inputs));
-	}
-
-	await Promise.all(promises);
-
-	return sort(result);
+export async function write(db: PackageDB, write: WriteFunc): Promise<void> {
+    return write('npDatabase.json', JSON.stringify(db, null, 4))
 }
 
-export async function write(db: PackageDB): Promise<void> {
-	return new Promise<void>((resolve, reject) => {
-		fs.writeFile('../npDatabase.json', JSON.stringify(db, null, 4), err => {
-			if (err) {
-				return reject(err);
-			}
-			resolve();
-		});
-	});
+export async function writeMinified(db: PackageDB, write: WriteFunc): Promise<void> {
+    return write('npDatabase.min.json', JSON.stringify(db))
 }
 
-export async function writeMods(db: PackageDB): Promise<void> {
-	const mods: ModDb = {};
-
-	for (const name of Object.keys(db)) {
-		const pkg = db[name];
-
-		if (pkg.metadata.ccmodType === 'base' || pkg.metadata.ccmodType === 'tool') {
-			continue;
-		}
-
-		const install = getInstallation(pkg.installation);
-		if (!install) {
-			continue;
-		}
-
-		mods[name] = {
-			name: pkg.metadata.ccmodHumanName || name,
-			description: pkg.metadata.description || 'A mod. (Description not available; contact mod author and have them add a description to their package.json file)',
-			license: pkg.metadata.license,
-			page: getHomepage(pkg.metadata.homepage),
-			archive_link: install.url,
-			hash: install.hash,
-			version: pkg.metadata.version,
-		};
-	}
-
-	return new Promise<void>((resolve, reject) => {
-		fs.writeFile('../mods.json', JSON.stringify({mods}, null, 4), err => {
-			if (err) {
-				return reject(err);
-			}
-			resolve();
-		});
-	});
+async function buildEntry(
+    result: PackageDB,
+    ccmod: ValidPkgCCMod,
+    inputs: InputLocation[]
+): Promise<void> {
+    result[ccmod.id] = {
+        metadataCCMod: ccmod,
+        installation: await generateInstallations(inputs),
+    }
 }
 
-function getHomepage(url?: string): Page[] {
-	if (!url) {
-		return [];
-	}
+function checkCCMod(ccmod: PkgCCMod): ccmod is ValidPkgCCMod {
+    if (ccmod.dependencies) {
+        if (ccmod.dependencies.constructor !== Object) {
+            console.warn(`Package has dependencies not an object: ${ccmod.id}`)
+            return false
+        }
 
-	let name: string;
-	switch (new URL(url).hostname) {
-	case 'github.com':
-		name = 'GitHub';
-		break;
-	case 'gitlab.com':
-		name = 'GitLab';
-		break;
-	default:
-		name = 'mod\'s homepage';
-	}
+        for (let dep in ccmod.dependencies) {
+            if (semver.validRange(ccmod.dependencies[dep]) === null) {
+                console.warn(`Package has invalid constraint: ${ccmod.id}`)
+                return false
+            }
+        }
+    }
 
-	return [{name, url}];
-}
+    if (!ccmod.version) {
+        console.warn(`Package is missing version: ${ccmod.id}`)
+        return false
+    }
 
-function getInstallation(installations: InstallMethod[]): {url: string, hash: {sha256: string}} | undefined {
-	const zip = installations.find(i => i.type === 'ccmod') as InstallMethodCCMod;
-	if (zip) {
-		return {url: zip.url, hash: zip.hash};
-	}
+    if (semver.parse(ccmod.version) == null) {
+        console.warn(`Package version invalid: ${ccmod.id}`)
+        return false
+    }
 
-	const modZip = installations.find(i => i.type === 'modZip') as InstallMethodModZip;
-	if (modZip) {
-		return {url: modZip.url, hash: modZip.hash};
-	}
-
-	return undefined;
-}
-
-async function buildEntry(result: PackageDB, pkg: PkgMetadata, inputs: InputLocation[]): Promise<void> {
-	result[pkg.name] = {
-		metadata: pkg,
-		installation: await generateInstallations(inputs),
-	};
-}
-
-function check(pkg: PkgMetadata): boolean {
-	if (pkg.dependencies && !pkg.ccmodDependencies) {
-		console.warn(`Package has 'dependencies', not 'ccmodDependencies': ${pkg.name}; correct ASAP`);
-		return false;
-	}
-
-	if (pkg.ccmodDependencies) {
-		if (pkg.ccmodDependencies.constructor !== Object) {
-			console.warn(`Package has dependencies not an object: ${pkg.name}`);
-			return false;
-		}
-
-		for (let dep in pkg.ccmodDependencies) {
-			if (semver.validRange(pkg.ccmodDependencies[dep]) === null) {
-				console.warn(`Package has invalid constraint: ${pkg.name}`);
-				return false;
-			}
-		}
-	}
-
-	if (!pkg.version) {
-		console.warn(`Package is missing version: ${pkg.name}`);
-		return false;
-	}
-
-	if (semver.parse(pkg.version) == null) {
-		console.warn(`Package version invalid: ${pkg.name}`);
-		return false;
-	}
-
-	return true;
+    return true
 }
 
 async function generateInstallations(inputs: InputLocation[]): Promise<InstallMethod[]> {
-	const result = [];
+    const result = []
 
-	for (const input of inputs) {
-		const install = await generateInstallation(input);
-		if (install) {
-			if (install instanceof Array) {
-				result.push(...install);
-			} else {
-				result.push(install);
-			}
-		}
-	}
+    for (const input of inputs) {
+        const install = await generateInstallation(input)
+        if (install) {
+            if (install instanceof Array) {
+                result.push(...install)
+            } else {
+                result.push(install)
+            }
+        }
+    }
 
-	return result;
+    return result
 }
 
-async function generateInstallation(input: InputLocation): Promise<InstallMethod[] | InstallMethod | undefined> {
-	switch (input.type) {
-	case 'modZip': {
-		const data = await streamToBuffer(await download(input.urlZip));
+async function generateInstallation(
+    input: InputLocation
+): Promise<InstallMethod[] | InstallMethod | undefined> {
+    switch (input.type) {
+        case undefined:
+        case 'zip': {
+            const data = await streamToBuffer(await download(input.url))
 
-		return {
-			type: 'modZip',
-			url: input.urlZip,
-			source: input.source,
-			hash: {
-				sha256: crypto.createHash('sha256').update(data).digest('hex'),
-			},
-		};
-	}
-	case 'ccmod': {
-		const data = await streamToBuffer(await download(input.url));
-
-		return {
-			type: 'ccmod',
-			url: input.url,
-			hash: {
-				sha256: crypto.createHash('sha256').update(data).digest('hex'),
-			},
-		};
-	}
-	case 'injected':
-		return input.installation;
-	}
+            return {
+                type: 'zip',
+                url: input.url,
+                source: input.source,
+                hash: {
+                    sha256: crypto.createHash('sha256').update(data).digest('hex'),
+                },
+            }
+        }
+        default:
+            throw new Error('Unsupported type: ' + input.type)
+    }
 }
 
-function groupByName(packages: [PkgMetadata, InputLocation][]) : Map<string, [PkgMetadata, InputLocation[]]> {
-	const result = new Map<string, [PkgMetadata, InputLocation[]]>();
+function groupByName(
+    packages: ModMetadatasInput[]
+): Map<string, ModMetadatas & { inputs: InputLocation[] }> {
+    const result = new Map<string, ModMetadatas & { inputs: InputLocation[] }>()
 
-	for (const [pkg, input] of packages) {
-		if (result.has(pkg.name)) {
-            result.get(pkg.name)?.[1].push(input);
-		} else {
-			result.set(pkg.name, [pkg, [input]]);
-		}
-	}
+    for (const { ccmod, input } of packages) {
+        for (const name of [ccmod!.id]) {
+            if (result.has(name)) {
+                result.get(name)?.inputs.push(input)
+            } else {
+                result.set(name, { ccmod, inputs: [input] })
+            }
+            break
+        }
+    }
 
-	return result;
+    return result
 }
 
-function sort(db: PackageDB): PackageDB {
-	const result: PackageDB = {};
-	for (const key of Object.keys(db).sort()) {
-		result[key] = db[key];
-	}
-	return result;
+export function sort(db: PackageDB): PackageDB {
+    const result: PackageDB = {}
+    for (const key of Object.keys(db).sort()) {
+        result[key] = db[key]
+    }
+    return result
 }

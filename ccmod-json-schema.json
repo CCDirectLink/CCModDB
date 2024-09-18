@@ -1,0 +1,121 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "id": "https://json.schemastore.org/ccmod.json",
+    "additionalProperties": true,
+    "$defs": {
+        "dependency": {
+            "type": "object",
+            "additionalProperties": {
+                "$ref": "#/$defs/semver"
+            }
+        },
+        "semver": {
+            "type": "string"
+        },
+        "localisedString": {
+            "type": ["string", "object"],
+            "properties": {
+                "en_US": { "type": "string" },
+                "de_DE": { "type": "string" },
+                "fr_FR": { "type": "string" },
+                "zh_CN": { "type": "string" },
+                "zh_TW": { "type": "string" },
+                "ja_JP": { "type": "string" },
+                "ko_KR": { "type": "string" }
+            }
+        }
+    },
+    "title": "CCMod Manifest",
+    "description": "Configuration file for a mod manifset file for the game CrossCode",
+    "type": "object",
+    "properties": {
+        "id": {
+            "title": "id",
+            "type": "string",
+            "description": "ID of the mod, used for various fallbacks"
+        },
+        "title": {
+            "title": "title",
+            "$ref": "#/$defs/localisedString",
+            "description": "Title of the mod, what users will see in-game"
+        },
+        "description": {
+            "title": "description",
+            "$ref": "#/$defs/localisedString",
+            "description": "Description of the mod"
+        },
+        "version": {
+            "title": "version",
+            "$ref": "#/$defs/semver",
+            "description": "The version of this mod following semantic versioning (https://semver.org)"
+        },
+        "tags": {
+            "title": "tags",
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "minItems": 0,
+            "description": "Array of mod tags. See the full list of official tags: \nhttps://github.com/CCDirectLink/CCModDB/blob/master/CCMOD-STANDARD.md#mod-tag-list"
+        },
+        "icons": {
+            "title": "icons",
+            "type": "object",
+            "additionalProperties": {
+                "type": "string"
+            },
+            "description": "The icon of the mod. Currently only the 24x24 size is supported"
+        },
+        "homepage": {
+            "title": "homepage",
+            "type": "string",
+            "description": "Mod homepage link"
+        },
+        "repository": {
+            "title": "repository",
+            "type": "string",
+            "description": "Mod repository link"
+        },
+        "authors": {
+            "title": "authors",
+            "type": ["string", "array"],
+            "items": {
+                "type": "string"
+            },
+            "minItems": 1,
+            "description": "A list of the mod's authors"
+        },
+        "dependencies": {
+            "title": "dependencies",
+            "type": "object",
+            "description": "The mods and versions of those mods that this mod depends on",
+            "$ref": "#/$defs/dependency"
+        },
+        "plugin": {
+            "title": "plugin",
+            "type": "string",
+            "description": "Path of the javascript plugin file relative to mod root. This is the recommended method"
+        },
+        "preload": {
+            "title": "preload",
+            "type": "string",
+            "description": "Path of the javascript preload file relative to mod root. The file will be executed at the preload loading stage"
+        },
+        "postload": {
+            "title": "postload",
+            "type": "string",
+            "description": "Path of the javascript preload file relative to mod root. The file will be executed at the postload loading stage"
+        },
+        "prestart": {
+            "title": "prestart",
+            "type": "string",
+            "description": "Path of the javascript prestart file relative to mod root. The file will be executed at the prestart loading stage"
+        },
+        "poststart": {
+            "title": "poststart",
+            "type": "string",
+            "description": "Path of the javascript poststart file relative to mod root. The file will be executed at the poststart loading stage"
+        }
+    },
+    "required": ["id", "version"]
+}

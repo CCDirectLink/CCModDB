@@ -1,0 +1,41 @@
+{
+  "name": "ccmoddb",
+  "version": "1.0.0",
+  "description": "A build script for ccmoddb",
+  "scripts": {
+    "start": "tsx build/src/main.ts $BRANCH",
+    "startScratch": "tsx build/src/main.ts $BRANCH scratch",
+    "test": "npx tsx build/tests/run.ts",
+    "format": "prettier ./build/src -w"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CCDirectLink/CCModDB.git"
+  },
+  "bugs": {
+    "url": "https://github.com/CCDirectLink/CCModDB/issues"
+  },
+  "homepage": "https://github.com/CCDirectLink/CCModDB#readme",
+  "devDependencies": {
+    "@octokit/types": "github:octokit/types.ts",
+    "@types/node": "^20.14.10",
+    "@types/yauzl": "^2.10.3",
+    "@typescript-eslint/eslint-plugin": "^7.15.0",
+    "@typescript-eslint/parser": "^7.15.0",
+    "eslint": "^8.57.0",
+    "typescript": "^5.5.3"
+  },
+  "dependencies": {
+    "@types/chai": "^4.3.16",
+    "@types/mocha": "^10.0.7",
+    "@types/semver": "^7.5.8",
+    "chai": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "mocha": "^10.6.0",
+    "semver": "^7.6.2",
+    "simple-git": "^3.25.0",
+    "tsx": "^4.16.2",
+    "yauzl": "^3.1.3"
+  }
+}
