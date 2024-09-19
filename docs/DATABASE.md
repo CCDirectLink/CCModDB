@@ -62,6 +62,24 @@ For example, CCLoader can only be updated that way.
 
 - Tools are in `tools.json` (also in the `npDatabase.json` format) and need to be modified manually.
 
+### Updating CCLoader
+
+Because CCBot doesn't support updating CCLoader, it has to be done manually.  
+Follow [Steps](#steps) and instead of adding a mod in step 4. replace  
+all occurrences of the old version substring X with the new version string Y.  
+For example:  
+X = `2.24.2-v2.14.1`  
+Y = `2.25.0-v2.14.2`  
+Example replacement:  
+```json
+        "ccmodPath": "CCLoader-2.24.2-v2.14.1/ccloader/ccmod.json",
+```
+=>
+```json
+        "ccmodPath": "CCLoader-2.25.0-v2.14.2/ccloader/ccmod.json",
+```
+Do that for the `ccloader` entry, `Simplify` and `ccloader-version-display`.  
+
 
 ### Self-hosting your own mod database branch
 
