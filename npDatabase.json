@@ -2154,7 +2154,7 @@
     "ccmodmanager": {
         "metadataCCMod": {
             "id": "ccmodmanager",
-            "version": "0.9.22",
+            "version": "1.0.0",
             "title": "CCModManager",
             "description": "Mod manager for CrossCode!",
             "repository": "https://github.com/CCDirectLink/CCModManager",
@@ -2178,16 +2178,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CCDirectLink/CCModManager/releases/download/v0.9.22/ccmodmanager-0.9.22.ccmod",
+                "url": "https://github.com/CCDirectLink/CCModManager/releases/download/v1.0.0/ccmodmanager-1.0.0.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "75bb1340e85ec0737d2d974730103d0f9e1c42053c1c17e73605a5fe89bda211"
+                    "sha256": "8ba0f9a7cff18f0d1627f6877b7659a8dc5aeeb7a912c5677227c4cd58d18135"
                 }
             }
         ],
         "stars": 2,
-        "lastUpdateTimestamp": 1726389065000,
+        "lastUpdateTimestamp": 1726754805000,
         "releasePages": [
+            {
+                "body": "### Changed\n\n- Update the mod repositories to the official (CCDirectLink/CCModDB) from the testing one (krypciak/CCModDB)\n\n### Fixes\n\n- Force CCLoader to update first before any other mods",
+                "version": "1.0.0",
+                "timestamp": 1726754757000,
+                "url": "https://github.com/CCDirectLink/CCModManager/releases/tag/v1.0.0"
+            },
             {
                 "body": "### Added\n\n- Added a tab for mods that have a dedicated settings page\n\n### Changed\n\n- Remember the \"Include local\" and \"Hide library mods\" filter options across game restarts\n- Make the manual enforcer less annoying\n\n### Fixed\n\n- Fixed CCLoader sometimes getting detected as not installed",
                 "version": "0.9.22",
