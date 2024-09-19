@@ -68,16 +68,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.24.2/v2.14.1.zip",
-                "source": "CCLoader-2.24.2-v2.14.1/assets/mods/ccloader-version-display",
+                "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.25.0/v2.14.2.zip",
+                "source": "CCLoader-2.25.0-v2.14.2/assets/mods/ccloader-version-display",
                 "hash": {
-                    "sha256": "935f580e6506c9b51989c227d4c9d3246db7fe4a3f882b11863aaed33e03f90d"
+                    "sha256": "f9331ae6b682090097951cd1b067c314105c7624d682345577e9daa38b505358"
                 }
             }
         ],
-        "stars": 35,
-        "lastUpdateTimestamp": 1721731431000,
+        "stars": 37,
+        "lastUpdateTimestamp": 1726755026000,
         "releasePages": [
+            {
+                "body": "* Added the mod manager made by @krypciak.\r\n* CCLoader will now warn users if a mod with the same name as another is installed.",
+                "version": "v2.25.0/v2.14.2",
+                "timestamp": 1726755026000,
+                "url": "https://github.com/CCDirectLink/CCLoader/releases/tag/v2.25.0/v2.14.2"
+            },
             {
                 "body": "* Made it easier to debug mod errors on startup (only affects mod developers). #110 #109 by @krypciak ",
                 "version": "v2.24.2/v2.14.1",
@@ -580,7 +586,7 @@
     "Simplify": {
         "metadataCCMod": {
             "id": "Simplify",
-            "version": "2.14.1",
+            "version": "2.14.2",
             "title": "Simplify",
             "description": "Library mod for CCLoader2.",
             "repository": "https://github.com/CCDirectLink/CCLoader",
@@ -609,16 +615,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.24.2/v2.14.1.zip",
-                "source": "CCLoader-2.24.2-v2.14.1/assets/mods/simplify",
+                "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.25.0/v2.14.2.zip",
+                "source": "CCLoader-2.25.0-v2.14.2/assets/mods/simplify",
                 "hash": {
-                    "sha256": "935f580e6506c9b51989c227d4c9d3246db7fe4a3f882b11863aaed33e03f90d"
+                    "sha256": "f9331ae6b682090097951cd1b067c314105c7624d682345577e9daa38b505358"
                 }
             }
         ],
-        "stars": 35,
-        "lastUpdateTimestamp": 1721731431000,
+        "stars": 37,
+        "lastUpdateTimestamp": 1726755026000,
         "releasePages": [
+            {
+                "body": "* Added the mod manager made by @krypciak.\r\n* CCLoader will now warn users if a mod with the same name as another is installed.",
+                "version": "v2.25.0/v2.14.2",
+                "timestamp": 1726755026000,
+                "url": "https://github.com/CCDirectLink/CCLoader/releases/tag/v2.25.0/v2.14.2"
+            },
             {
                 "body": "* Made it easier to debug mod errors on startup (only affects mod developers). #110 #109 by @krypciak ",
                 "version": "v2.24.2/v2.14.1",
@@ -1948,7 +1960,7 @@
     "ccloader": {
         "metadataCCMod": {
             "id": "ccloader",
-            "version": "2.24.2",
+            "version": "2.25.0",
             "title": "CCLoader",
             "description": "Modloader for CrossCode. This or a similar modloader is needed for most mods.",
             "repository": "https://github.com/CCDirectLink/CCLoader",
@@ -1971,16 +1983,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.24.2/v2.14.1.zip",
-                "source": "CCLoader-2.24.2-v2.14.1",
+                "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.25.0/v2.14.2.zip",
+                "source": "CCLoader-2.25.0-v2.14.2",
                 "hash": {
-                    "sha256": "935f580e6506c9b51989c227d4c9d3246db7fe4a3f882b11863aaed33e03f90d"
+                    "sha256": "f9331ae6b682090097951cd1b067c314105c7624d682345577e9daa38b505358"
                 }
             }
         ],
-        "stars": 35,
-        "lastUpdateTimestamp": 1721731431000,
+        "stars": 37,
+        "lastUpdateTimestamp": 1726755026000,
         "releasePages": [
+            {
+                "body": "* Added the mod manager made by @krypciak.\r\n* CCLoader will now warn users if a mod with the same name as another is installed.",
+                "version": "v2.25.0/v2.14.2",
+                "timestamp": 1726755026000,
+                "url": "https://github.com/CCDirectLink/CCLoader/releases/tag/v2.25.0/v2.14.2"
+            },
             {
                 "body": "* Made it easier to debug mod errors on startup (only affects mod developers). #110 #109 by @krypciak ",
                 "version": "v2.24.2/v2.14.1",
