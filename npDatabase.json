@@ -5246,6 +5246,65 @@
             }
         ]
     },
+    "vermillion-training-facility": {
+        "metadataCCMod": {
+            "id": "vermillion-training-facility",
+            "version": "1.2.1",
+            "title": {
+                "en_US": "Vermillion Training Facility",
+                "de_DE": "Vermillion Training Facility",
+                "fr_FR": "Vermillion Training Facility",
+                "zh_CN": "Vermillion Training Facility",
+                "zh_TW": "Vermillion Training Facility",
+                "ja_JP": "Vermillion Training Facility",
+                "ko_KR": "Vermillion Training Facility"
+            },
+            "description": {
+                "en_US": "A training facility in vermillion. Access it throught the arena training",
+                "de_DE": "A training facility in vermillion. Access it throught the arena training",
+                "fr_FR": "A training facility in vermillion. Access it throught the arena training",
+                "zh_CN": "A training facility in vermillion. Access it throught the arena training",
+                "zh_TW": "A training facility in vermillion. Access it throught the arena training",
+                "ja_JP": "A training facility in vermillion. Access it throught the arena training",
+                "ko_KR": "A training facility in vermillion. Access it throught the arena training"
+            },
+            "icons": {
+                "24": "icon.png"
+            },
+            "repository": "https://github.com/RookieBr-2/vermillion-training-facility",
+            "tags": [
+                "maps",
+                "dungeon",
+                "equipment",
+                "custom enemies"
+            ],
+            "authors": [
+                "RookieBr"
+            ],
+            "prestart": "prestart.js",
+            "dependencies": {}
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/RookieBr-2/vermillion-training-facility/releases/download/update-1/vermillion-training-facility.ccmod",
+                "source": "",
+                "hash": {
+                    "sha256": "611e113f243f2514374d5b14eed197fc79a073ec5982ecef57154c01b3f71358"
+                }
+            }
+        ],
+        "stars": 0,
+        "lastUpdateTimestamp": 1727043781000,
+        "releasePages": [
+            {
+                "body": "WAVE CORRIDOR\r\n\r\nDo not activate the switch in the training area.\r\nDo noy use any of the dev teleporters i leaved there.",
+                "version": "update-1",
+                "timestamp": 1727039694000,
+                "url": "https://github.com/RookieBr-2/vermillion-training-facility/releases/tag/update-1"
+            }
+        ]
+    },
     "world-map-overhaul": {
         "metadataCCMod": {
             "id": "world-map-overhaul",
