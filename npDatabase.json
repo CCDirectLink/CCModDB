@@ -1260,13 +1260,12 @@
     "cc-character-widgets": {
         "metadataCCMod": {
             "id": "cc-character-widgets",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "title": "Character swap widgets",
             "description": "Adds a character swap quick menu widgets",
             "repository": "https://github.com/krypciak/cc-character-widgets",
             "tags": [
-                "widget",
-                "character"
+                "widget"
             ],
             "authors": "krypek",
             "icons": {
@@ -1280,15 +1279,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/cc-character-widgets/releases/download/v1.0.0/cc-character-widgets-1.0.0.ccmod",
+                "url": "https://github.com/krypciak/cc-character-widgets/releases/download/v1.0.1/cc-character-widgets-1.0.1.ccmod",
+                "source": "",
                 "hash": {
-                    "sha256": "64fe713374289d4e9e164afa6e23b96ab3f397323f0e37977fb6ffc1fd70122b"
+                    "sha256": "cce2328b84cc09ca9dba26decece10c86793b229a5b3448e51b39aa64e71ecd6"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1714575287000,
+        "lastUpdateTimestamp": 1727105757000,
         "releasePages": [
+            {
+                "body": "### Fixed\n\n- Removed invalid mod tag from `ccmod.json`",
+                "version": "1.0.1",
+                "timestamp": 1727105757000,
+                "url": "https://github.com/krypciak/cc-character-widgets/releases/tag/v1.0.1"
+            },
             {
                 "body": "### Added\n\n- Initial release",
                 "version": "1.0.0",
