@@ -116,6 +116,7 @@ export const ValidTags = [
     'puzzle',
     'ng+',
     'cosmetic',
+    'music',
     'fun',
     'cheats',
     'speedrun',
