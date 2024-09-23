@@ -87,7 +87,7 @@ export type PkgMetadata = {
 
 type FilePath = string
 
-type LocalizedString = Record<Locale, string> | string
+export type LocalizedString = Record<Locale, string> | string
 type Locale = string
 
 type Person = /* PersonDetails | */ string
@@ -98,33 +98,41 @@ type Person = /* PersonDetails | */ string
 /**     comment?: LocalizedString */
 /** } */
 
+
 /**
  * Mod tags that are in the ccmod.json standard
  **/
-export type ValidTags =
-    | 'QoL'
-    | 'player character'
-    | 'party member'
-    | 'combat arts'
-    | 'pvp duel'
-    | 'arena'
-    | 'dungeon'
-    | 'quests'
-    | 'maps'
-    | 'boss'
-    | 'puzzle'
-    | 'ng+'
-    | 'cosmetic'
-    | 'fun'
-    | 'cheats'
-    | 'speedrun'
-    | 'widget'
-    | 'language'
-    | 'accessibility'
-    | 'dev'
-    | 'library'
-    | 'base'
-    | 'externaltool'
+export const ValidTags = [
+    'QoL',
+    'player character',
+    'party member',
+    'combat arts',
+    'pvp duel',
+    'arena',
+    'dungeon',
+    'quests',
+    'maps',
+    'boss',
+    'puzzle',
+    'ng+',
+    'cosmetic',
+    'fun',
+    'cheats',
+    'speedrun',
+    'widget',
+    'language',
+    'accessibility',
+    'dev',
+    'library',
+    'base',
+    'externaltool'
+] as const
+
+/**
+ * Mod tags that are in the ccmod.json standard
+ **/
+export type ValidTags = typeof ValidTags[number]
+
 /**
  * All mods in the database must have these fields
  **/
