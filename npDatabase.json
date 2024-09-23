@@ -3000,60 +3000,6 @@
             }
         ]
     },
-    "difficulty-mods": {
-        "metadataCCMod": {
-            "id": "difficulty-mods",
-            "version": "1.0.4",
-            "title": "Difficulty Mods",
-            "description": {
-                "en_US": "Adjust enemy damage, HP, and EXP gain to make the game as difficult as you like."
-            },
-            "repository": "https://github.com/Azure-Lazuline/difficulty-mods",
-            "tags": [
-                "fun"
-            ],
-            "authors": "Azure Lazuline",
-            "icons": {
-                "24": "icon24.png"
-            },
-            "prestart": "src/_prestart.js",
-            "assets": [
-                "data/lang/sc/gui.en_US.json.patch"
-            ]
-        },
-        "installation": [
-            {
-                "type": "zip",
-                "url": "https://github.com/Azure-Lazuline/difficulty-mods/releases/download/1.0.4/difficulty-mods.ccmod",
-                "source": "",
-                "hash": {
-                    "sha256": "965b47e927d63c987676046c68c976674e8fd279f20b1f743112541e776066d5"
-                }
-            }
-        ],
-        "stars": 0,
-        "lastUpdateTimestamp": 1726866108000,
-        "releasePages": [
-            {
-                "body": "fixed a crash with enemy bullets that had no damage info assigned, like monk trial turrets",
-                "version": "1.0.4",
-                "timestamp": 1726866108000,
-                "url": "https://github.com/Azure-Lazuline/difficulty-mods/releases/tag/1.0.4"
-            },
-            {
-                "body": "",
-                "version": "1.0.3",
-                "timestamp": 1726252336000,
-                "url": "https://github.com/Azure-Lazuline/difficulty-mods/releases/tag/1.0.3"
-            },
-            {
-                "body": "first public release",
-                "version": "1.0.2",
-                "timestamp": 1726199234000,
-                "url": "https://github.com/Azure-Lazuline/difficulty-mods/releases/tag/1.0.2"
-            }
-        ]
-    },
     "el-tweaks": {
         "metadataCCMod": {
             "id": "el-tweaks",
