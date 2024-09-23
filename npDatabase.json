@@ -5252,6 +5252,74 @@
             }
         ]
     },
+    "vermillion-training-facility": {
+        "metadataCCMod": {
+            "id": "vermillion-training-facility",
+            "version": "1.2.2",
+            "title": {
+                "en_US": "Vermillion Training Facility",
+                "de_DE": "Vermillion Training Facility",
+                "fr_FR": "Vermillion Training Facility",
+                "zh_CN": "Vermillion Training Facility",
+                "zh_TW": "Vermillion Training Facility",
+                "ja_JP": "Vermillion Training Facility",
+                "ko_KR": "Vermillion Training Facility"
+            },
+            "description": {
+                "en_US": "A training facility in \\c[1]Vermillion\\c[0]. (\\c[2]WIP\\c[0])",
+                "de_DE": "A training facility in \\c[1]Vermillion\\c[0]. (\\c[2]WIP\\c[0])",
+                "fr_FR": "A training facility in \\c[1]Vermillion\\c[0]. (\\c[2]WIP\\c[0])",
+                "zh_CN": "A training facility in \\c[1]Vermillion\\c[0]. (\\c[2]WIP\\c[0])",
+                "zh_TW": "A training facility in \\c[1]Vermillion\\c[0]. (\\c[2]WIP\\c[0])",
+                "ja_JP": "A training facility in \\c[1]Vermillion\\c[0]. (\\c[2]WIP\\c[0])",
+                "ko_KR": "A training facility in \\c[1]Vermillion\\c[0]. (\\c[2]WIP\\c[0])"
+            },
+            "icons": {
+                "24": "icon.png"
+            },
+            "repository": "https://github.com/RookieBr-2/vermillion-training-facility",
+            "tags": [
+                "maps",
+                "dungeon",
+                "boss",
+                "puzzle"
+            ],
+            "authors": [
+                "RookieBr",
+                "2767mr"
+            ],
+            "prestart": "prestart.js",
+            "dependencies": {
+                "item-api": ">=0.4.5"
+            }
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/RookieBr-2/vermillion-training-facility/releases/download/Version-2/vermillion-training-facility.ccmod",
+                "source": "",
+                "hash": {
+                    "sha256": "3d8237ef53665adb77f6a2fd3fb09fabc2b5b2891aee1c67cac447c63295d883"
+                }
+            }
+        ],
+        "stars": 1,
+        "lastUpdateTimestamp": 1727109644000,
+        "releasePages": [
+            {
+                "body": "Updated some things:\r\n\r\nAdded \"(WIP)\" to the title\r\nThe mod now has a dependency of the \"Item-api\" mod",
+                "version": "Version-2",
+                "timestamp": 1727109644000,
+                "url": "https://github.com/RookieBr-2/vermillion-training-facility/releases/tag/Version-2"
+            },
+            {
+                "body": "WAVE CORRIDOR\r\n\r\nDo not activate the switch in the training area.\r\nDo noy use any of the dev teleporters i leaved there.",
+                "version": "update-1",
+                "timestamp": 1727039694000,
+                "url": "https://github.com/RookieBr-2/vermillion-training-facility/releases/tag/update-1"
+            }
+        ]
+    },
     "world-map-overhaul": {
         "metadataCCMod": {
             "id": "world-map-overhaul",
