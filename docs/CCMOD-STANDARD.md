@@ -1,6 +1,6 @@
 <!-- markdownlint-disable MD013 MD034 -->
 
-# `ccmod.json` format standard v1.0.0
+# `ccmod.json` format standard v1.0.1
 
 ## Each option explained
 
@@ -36,6 +36,7 @@
 - `puzzle` - adds new puzzles or something puzzle related
 - `ng+` - adds additional ng+ options
 - `cosmetic` - adds any kind of cosmetic things like skins, pets or menu skins
+- `music` - adds or replaces music and/or sounds
 - `fun` - fun things not necessarily useful
 - `cheats` - do things you're not supposed to do like spawn items or infinite gold
 - `speedrun` - helps speedrunners with speedruns or practice
