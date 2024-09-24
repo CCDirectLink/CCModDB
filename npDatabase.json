@@ -293,6 +293,87 @@
             }
         ]
     },
+    "CrossCode-Brasil": {
+        "metadataCCMod": {
+            "id": "CrossCode-Brasil",
+            "version": "1.1.0",
+            "title": {
+                "en_US": "Tradução em PT-BR",
+                "de_DE": "Tradução em PT-BR",
+                "fr_FR": "Tradução em PT-BR",
+                "zh_CN": "Tradução em PT-BR",
+                "zh_TW": "Tradução em PT-BR",
+                "ja_JP": "Tradução em PT-BR",
+                "ko_KR": "Tradução em PT-BR"
+            },
+            "description": {
+                "en_US": "Experiêncie o CrossCode em Português!",
+                "de_DE": "Experiêncie o CrossCode em Português!",
+                "fr_FR": "Experiêncie o CrossCode em Português!",
+                "zh_CN": "Experiêncie o CrossCode em Português!",
+                "zh_TW": "Experiêncie o CrossCode em Português!",
+                "ja_JP": "Experiêncie o CrossCode em Português!",
+                "ko_KR": "Experiêncie o CrossCode em Português!"
+            },
+            "icons": {
+                "24": "icon.png"
+            },
+            "repository": "https://github.com/RookieBr-2/CrossCode-Brasil-CCloader",
+            "tags": [
+                "language"
+            ],
+            "authors": [
+                "RookieBr",
+                "spacetk00",
+                "Sextare",
+                "Bugaboo2000",
+                "M4sterin",
+                "KingTimer12",
+                "douglasjfarias",
+                "BrTraducoes"
+            ],
+            "prestart": "prestart.js",
+            "dependencies": {}
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/RookieBr-2/CrossCode-Brasil-CCloader/releases/download/1.1.0/CrossCode-Brasil.zip",
+                "source": "",
+                "hash": {
+                    "sha256": "863870a7544f31bd9306ec6665a49b392b43815b375b4df1b52f037cc061f944"
+                }
+            }
+        ],
+        "stars": 1,
+        "lastUpdateTimestamp": 1727137066000,
+        "releasePages": [
+            {
+                "body": "",
+                "version": "1.1.0",
+                "timestamp": 1727137066000,
+                "url": "https://github.com/RookieBr-2/CrossCode-Brasil-CCloader/releases/tag/1.1.0"
+            },
+            {
+                "body": "Versão nova com sala de tradutores e alguns erros corrigidos",
+                "version": "NewVersion",
+                "timestamp": 1718560400000,
+                "url": "https://github.com/RookieBr-2/CrossCode-Brasil-CCloader/releases/tag/NewVersion"
+            },
+            {
+                "body": "Com a DLC funcionando dessa vez.",
+                "version": "QuickFix",
+                "timestamp": 1717293465000,
+                "url": "https://github.com/RookieBr-2/CrossCode-Brasil-CCloader/releases/tag/QuickFix"
+            },
+            {
+                "body": "versão sem nenhum uso do código fonte.\r\n\r\n**Full Changelog**: https://github.com/RookieBr-2/CrossCode-Brasil-CCloader/commits/Release",
+                "version": "Release",
+                "timestamp": 1717280918000,
+                "url": "https://github.com/RookieBr-2/CrossCode-Brasil-CCloader/releases/tag/Release"
+            }
+        ]
+    },
     "Hadouken": {
         "metadataCCMod": {
             "id": "Hadouken",
