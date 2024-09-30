@@ -5042,6 +5042,41 @@
             }
         ]
     },
+    "quicksave": {
+        "metadataCCMod": {
+            "id": "quicksave",
+            "title": "Quicksave",
+            "version": "1.0.0",
+            "plugin": "plugin.js",
+            "description": "Allows you to quicksave and quickload outside of combat.",
+            "repository": "https://github.com/CCDirectLink/CCQuicksave",
+            "tags": [
+                "QoL",
+                "cheats"
+            ],
+            "authors": "2767mr"
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/CCDirectLink/CCQuicksave/releases/download/v1.0.0/CCQuicksave.ccmod",
+                "source": "",
+                "hash": {
+                    "sha256": "2e239851df6a8fef62b4029ec034243671ecc96b0cd65c1a34cedcd37445eaea"
+                }
+            }
+        ],
+        "stars": 0,
+        "lastUpdateTimestamp": 1727721134000,
+        "releasePages": [
+            {
+                "body": "One button to save, one to load. Simple, right?",
+                "version": "1.0.0",
+                "timestamp": 1727721134000,
+                "url": "https://github.com/CCDirectLink/CCQuicksave/releases/tag/v1.0.0"
+            }
+        ]
+    },
     "spin-to-win": {
         "metadataCCMod": {
             "id": "spin-to-win",
