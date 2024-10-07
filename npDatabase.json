@@ -5640,7 +5640,7 @@
     "xenons-playable-classes": {
         "metadataCCMod": {
             "id": "xenons-playable-classes",
-            "version": "2.2.1",
+            "version": "2.3.0",
             "title": {
                 "en_US": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
                 "de_DE": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
@@ -5690,16 +5690,28 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/2.2.1.zip",
-                "source": "xenons-playable-classes-2.2.1",
+                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/2.3.0.zip",
+                "source": "xenons-playable-classes-2.3.0",
                 "hash": {
-                    "sha256": "d3fbba2fb5cf555b7d2686ded65138b29d52bd186bcbcb79099538f3ebd3acd7"
+                    "sha256": "83867f62ab3ddbdb9e1be38bd93f24718fb3ef8b6e66806e23d7088cde521909"
                 }
             }
         ],
         "stars": 20,
-        "lastUpdateTimestamp": 1726301688000,
+        "lastUpdateTimestamp": 1728217672000,
         "releasePages": [
+            {
+                "body": "## 2.3.0 (10/06/2024)\r\n### New Content\r\n- New Hexacast combat art: Celestial Cohort (Wave Dash Lv.3B)\r\n- New Hexacast combat art: Temporal Miasma (Wave Dash Lv.2A)\r\n- New Hexacast custom skill: Miasmic Mortar (Wave Throw Lv.2)\r\n- New Hexacast custom skill: Healing Burst (Wave Melee Lv.1)\r\n- Defined new animation \"chestFrame1\" to Triblader2/3/4/5/Lea\r\n- Added new Hexacast tips to hideout-lobby\r\n- Added a new xenodialogue conversation to hideout-east\r\n### Changes\r\n- Upgrade rooms in Rhombus Dungeon now support XPC characters for animations\r\n- Element unlock rooms in all dungeons now support XPC characters for animations\r\n- Added dialogue to the party member NPC advisor in the unused content room\r\n- Extended hideout-east map width by 2 tiles\r\n- Removed sourceMappingURL line from map-styles.js\r\n- Updated Essence Steal description\r\n- Hexacast homing shots now disabled if any air conditioner enemies are present on the map\r\n- Reduced dot particle count in effect specials.wave-slowDebuff\r\n- Renamed healTargetFXProxy to healMortarFXProxy\r\n### Fixes\r\n- Fixed player disappearing sometimes on Calamity Beacon descent\r\n- Fixed a typo in char-select/basement\r\n- Fixed a typo in hideout-lobby\r\n- Fixed Abandoned Site appearing on world map\r\n- Fixed Lightning Hex to not apply jolt status effect\r\n- Heal Mortar impact is no longer guardable",
+                "version": "2.3.0",
+                "timestamp": 1728217672000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/2.3.0"
+            },
+            {
+                "body": "## 2.2.2 (09/14/2024)\r\n### Changes\r\n- Tweaked Hexacast character portraits\r\n### Fixes\r\n- Re-added missing NPC encounter from Basin Keep",
+                "version": "2.2.2",
+                "timestamp": 1726345236000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/2.2.2"
+            },
             {
                 "body": "## 2.2.1 (09/14/2024)\r\n### Changes\r\n- Removed NPC encounter in beach/path-04 (Rough Lagoon) and replaced it with a new conversation in the same map\r\n- Tweaked player animations during Spell Volley combat art\r\n### Fixes\r\n- Fixed a file path issue in triblader animation sheets\r\n- Fixed Ether Bomb hitbox verticality",
                 "version": "2.2.1",
