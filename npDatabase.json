@@ -3410,6 +3410,54 @@
             }
         ]
     },
+    "element-hair": {
+        "metadataCCMod": {
+            "id": "element-hair",
+            "version": "1.0.3",
+            "title": "Elemental Hair",
+            "description": {
+                "en_US": "Changes Lea's hair color to match her current element."
+            },
+            "repository": "https://github.com/Azure-Lazuline/elemental-hair",
+            "tags": [
+                "cosmetic"
+            ],
+            "authors": "Azure Lazuline",
+            "icons": {
+                "24": "icon24.png"
+            },
+            "prestart": "src/_prestart.js",
+            "assets": [
+                "data/lang/sc/gui.en_US.json.patch"
+            ]
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/Azure-Lazuline/elemental-hair/releases/download/1.0.3/elemental-hair.ccmod",
+                "source": "",
+                "hash": {
+                    "sha256": "42fb9dc9f3cb0d4687721a9d8faa8eb05b44c3adcaa51cca9e965d9efb2405d3"
+                }
+            }
+        ],
+        "stars": 0,
+        "lastUpdateTimestamp": 1726251791000,
+        "releasePages": [
+            {
+                "body": "",
+                "version": "1.0.3",
+                "timestamp": 1726251791000,
+                "url": "https://github.com/Azure-Lazuline/elemental-hair/releases/tag/1.0.3"
+            },
+            {
+                "body": "first public release",
+                "version": "1.0.2",
+                "timestamp": 1726200474000,
+                "url": "https://github.com/Azure-Lazuline/elemental-hair/releases/tag/1.0.2"
+            }
+        ]
+    },
     "extendable-severed-heads": {
         "metadataCCMod": {
             "id": "extendable-severed-heads",
