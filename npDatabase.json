@@ -5924,6 +5924,58 @@
             }
         ]
     },
+    "xpc-hexa-elemental-robe": {
+        "metadataCCMod": {
+            "id": "xpc-hexa-elemental-robe",
+            "version": "1.0.1",
+            "title": "XPC - Elemental Robe \\i[class-hexa]",
+            "description": {
+                "en_US": "Extends the Elemental Hair mod to apply to XPC Hexacasts."
+            },
+            "repository": "https://github.com/XenonA7/xpc-hexa-elemental-robe",
+            "tags": [
+                "cosmetic"
+            ],
+            "authors": [
+                "Azure Lazuline",
+                "XenonA7"
+            ],
+            "icons": {
+                "24": "icon24.png"
+            },
+            "prestart": "_prestart.js",
+            "dependencies": {
+                "element-hair": ">=1.0.0",
+                "xenons-playable-classes": ">=1.0.0"
+            }
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/XenonA7/xpc-hexa-elemental-robe/archive/refs/tags/1.0.1.zip",
+                "source": "xpc-hexa-elemental-robe-1.0.1",
+                "hash": {
+                    "sha256": "4b027e5e18e3c54825e8a42e45ae102b08e3c8da4b433f607f7943542077fb83"
+                }
+            }
+        ],
+        "stars": 0,
+        "lastUpdateTimestamp": 1726352370000,
+        "releasePages": [
+            {
+                "body": "Improved mod icon",
+                "version": "1.0.1",
+                "timestamp": 1726352370000,
+                "url": "https://github.com/XenonA7/xpc-hexa-elemental-robe/releases/tag/1.0.1"
+            },
+            {
+                "body": "Initial Release",
+                "version": "1.0.0",
+                "timestamp": 1726351354000,
+                "url": "https://github.com/XenonA7/xpc-hexa-elemental-robe/releases/tag/1.0.0"
+            }
+        ]
+    },
     "xpc-litter": {
         "metadataCCMod": {
             "id": "xpc-litter",
