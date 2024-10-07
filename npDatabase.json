@@ -3112,6 +3112,72 @@
             }
         ]
     },
+    "difficulty-mods": {
+        "metadataCCMod": {
+            "id": "difficulty-mods",
+            "version": "1.0.6",
+            "title": "Difficulty Mods",
+            "description": {
+                "en_US": "Adjust enemy damage, HP, and EXP gain to make the game as difficult as you like."
+            },
+            "repository": "https://github.com/Azure-Lazuline/difficulty-mods",
+            "tags": [
+                "fun"
+            ],
+            "authors": "Azure Lazuline",
+            "icons": {
+                "24": "icon24.png"
+            },
+            "prestart": "src/_prestart.js",
+            "assets": [
+                "data/lang/sc/gui.en_US.json.patch"
+            ]
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/Azure-Lazuline/difficulty-mods/releases/download/1.0.6/difficulty-mods.ccmod",
+                "source": "",
+                "hash": {
+                    "sha256": "15a6a213f3e18cd1fe66bcffa78b900549e686ad5a1eec30156927a4976864e3"
+                }
+            }
+        ],
+        "stars": 0,
+        "lastUpdateTimestamp": 1728299878000,
+        "releasePages": [
+            {
+                "body": "fixed a bug with the Burn status effect scaling with HP",
+                "version": "1.0.6",
+                "timestamp": 1728299601000,
+                "url": "https://github.com/Azure-Lazuline/difficulty-mods/releases/tag/1.0.6"
+            },
+            {
+                "body": "scales burn damage down if enemy HP is increased, since it's percentage-based and otherwise it was stronger relatively than normal",
+                "version": "1.0.5",
+                "timestamp": 1728296515000,
+                "url": "https://github.com/Azure-Lazuline/difficulty-mods/releases/tag/1.0.5"
+            },
+            {
+                "body": "fixed a crash with enemy bullets that had no damage info assigned, like monk trial turrets",
+                "version": "1.0.4",
+                "timestamp": 1726866108000,
+                "url": "https://github.com/Azure-Lazuline/difficulty-mods/releases/tag/1.0.4"
+            },
+            {
+                "body": "",
+                "version": "1.0.3",
+                "timestamp": 1726252336000,
+                "url": "https://github.com/Azure-Lazuline/difficulty-mods/releases/tag/1.0.3"
+            },
+            {
+                "body": "first public release",
+                "version": "1.0.2",
+                "timestamp": 1726199234000,
+                "url": "https://github.com/Azure-Lazuline/difficulty-mods/releases/tag/1.0.2"
+            }
+        ]
+    },
     "el-tweaks": {
         "metadataCCMod": {
             "id": "el-tweaks",
