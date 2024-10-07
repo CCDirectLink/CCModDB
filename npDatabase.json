@@ -5901,6 +5901,38 @@
             }
         ]
     },
+    "xpc-triblader-trithrow": {
+        "metadataCCMod": {
+            "id": "xpc-triblader-trithrow",
+            "version": "1.0.1",
+            "title": "XPC Triblader Tri-Throw",
+            "description": {
+                "en_US": "Changes XPC's Tribladers to have unique VRPs instead of just Spheromancer's."
+            },
+            "repository": "",
+            "tags": [
+                "fun"
+            ],
+            "authors": "Azure Lazuline",
+            "icons": {
+                "24": "icon24.png"
+            },
+            "prestart": "_prestart.js",
+            "dependencies": {
+                "xenons-playable-classes": ">=1.0.0"
+            }
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/Azure-Lazuline/xpc-triblader-trithrow/releases/download/1.0.1/xpc-triblader-trithrow.ccmod",
+                "source": "",
+                "hash": {
+                    "sha256": "479616412f66918ecb6d3e270358346d5c9eecef16abdf1f1acbbbffcd8e5026"
+                }
+            }
+        ]
+    },
     "yoshi-open-circuits": {
         "metadataCCMod": {
             "id": "yoshi-open-circuits",
