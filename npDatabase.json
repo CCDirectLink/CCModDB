@@ -3413,7 +3413,7 @@
     "element-hair": {
         "metadataCCMod": {
             "id": "element-hair",
-            "version": "1.0.3",
+            "version": "1.0.4",
             "title": "Elemental Hair",
             "description": {
                 "en_US": "Changes Lea's hair color to match her current element."
@@ -3434,18 +3434,24 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/Azure-Lazuline/elemental-hair/releases/download/1.0.3/elemental-hair.ccmod",
+                "url": "https://github.com/Azure-Lazuline/elemental-hair/releases/download/1.0.4/elemental-hair.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "42fb9dc9f3cb0d4687721a9d8faa8eb05b44c3adcaa51cca9e965d9efb2405d3"
+                    "sha256": "4e2fa7771a4d0d520673e994c6145c8a629d273c4dc9d2581e3fc80e273bf2ed"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1726251791000,
+        "lastUpdateTimestamp": 1728569802000,
         "releasePages": [
             {
-                "body": "",
+                "body": "- adds support for Shizuka in the intro.\r\n- for modders: recolors can now apply conditionally (so it doesn't affect the NPC version of a playable character for example), check how i did Shizuka.",
+                "version": "1.0.4",
+                "timestamp": 1728569802000,
+                "url": "https://github.com/Azure-Lazuline/elemental-hair/releases/tag/1.0.4"
+            },
+            {
+                "body": "- general refactoring to make it easier to work with and improve load times",
                 "version": "1.0.3",
                 "timestamp": 1726251791000,
                 "url": "https://github.com/Azure-Lazuline/elemental-hair/releases/tag/1.0.3"
