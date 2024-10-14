@@ -1827,15 +1827,15 @@
     "cc-remastered-melodies": {
         "metadataCCMod": {
             "id": "cc-remastered-melodies",
-            "version": "2.0.2",
+            "version": "2.0.3",
             "title": {
-                "en_US": "Crosscode Remastered Melodies",
-                "de_DE": "Crosscode Remastered Melodies",
-                "fr_FR": "Crosscode Remastered Melodies",
-                "zh_CN": "Crosscode Remastered Melodies",
-                "zh_TW": "Crosscode Remastered Melodies",
-                "ja_JP": "Crosscode Remastered Melodies",
-                "ko_KR": "Crosscode Remastered Melodies"
+                "en_US": "CC Remastered Melodies",
+                "de_DE": "CC Überarbeitete Melodien",
+                "fr_FR": "CC Mélodies remasterisées",
+                "zh_CN": "CC 重新制作的旋律",
+                "zh_TW": "CC 重製旋律",
+                "ja_JP": "CC リマスター・メロディー",
+                "ko_KR": "CC 리마스터링된 멜로디"
             },
             "description": {
                 "en_US": "Replaces some of the music in CrossCode with remastered versions of the original tracks.",
@@ -1851,8 +1851,7 @@
             },
             "repository": "https://github.com/Ronkad/CCRemasteredMelodies",
             "tags": [
-                "music",
-                "OST"
+                "music"
             ],
             "authors": [
                 "Ronkad",
@@ -1867,15 +1866,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/Ronkad/CCRemasteredMelodies/releases/download/v2.0.2/cc-remastered-melodies-2.0.2.ccmod",
+                "url": "https://github.com/Ronkad/CCRemasteredMelodies/releases/download/v2.0.3/cc-remastered-melodies.ccmod",
+                "source": "",
                 "hash": {
-                    "sha256": "6f94688f2712a5f4f493f39917e8ffed74a34b612ea60df83de3ad044ad56252"
+                    "sha256": "52a33e4b56cdf39b7af158f00aaac4d760a3baf02f58952dc004902d62a34c40"
                 }
             }
         ],
         "stars": 1,
-        "lastUpdateTimestamp": 1724350218000,
+        "lastUpdateTimestamp": 1728921514000,
         "releasePages": [
+            {
+                "body": "- better integration with ccmodmanager\r\n- new icon",
+                "version": "2.0.3",
+                "timestamp": 1728921514000,
+                "url": "https://github.com/Ronkad/CCRemasteredMelodies/releases/tag/v2.0.3"
+            },
             {
                 "body": "Removed the Simplify dependency to work better in the CCModManager",
                 "version": "2.0.2",
