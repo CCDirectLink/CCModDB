@@ -3121,7 +3121,7 @@
     "difficulty-mods": {
         "metadataCCMod": {
             "id": "difficulty-mods",
-            "version": "1.0.6",
+            "version": "1.0.7",
             "title": "Difficulty Mods",
             "description": {
                 "en_US": "Adjust enemy damage, HP, and EXP gain to make the game as difficult as you like."
@@ -3142,16 +3142,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/Azure-Lazuline/difficulty-mods/releases/download/1.0.6/difficulty-mods.ccmod",
+                "url": "https://github.com/Azure-Lazuline/difficulty-mods/releases/download/1.0.7/difficulty-mods.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "15a6a213f3e18cd1fe66bcffa78b900549e686ad5a1eec30156927a4976864e3"
+                    "sha256": "be3ed9a00b4b1b32348761a9ac8cefcf17c99b4106c7240051235c44626a4bfe"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1728299878000,
+        "lastUpdateTimestamp": 1728942448000,
         "releasePages": [
+            {
+                "body": "- adjusted Arena scoring (for damage and time) based on the HP scale setting\r\n- HP scale now affects break meter too\r\n- added Enemy Speed setting",
+                "version": "1.0.7",
+                "timestamp": 1728942448000,
+                "url": "https://github.com/Azure-Lazuline/difficulty-mods/releases/tag/1.0.7"
+            },
             {
                 "body": "fixed a bug with the Burn status effect scaling with HP",
                 "version": "1.0.6",
