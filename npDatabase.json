@@ -2526,8 +2526,7 @@
             "description": "Adds a widget for character selection menu.",
             "repository": "https://github.com/CCDirectLink/char-select",
             "tags": [
-                "widget",
-                "character"
+                "widget"
             ],
             "authors": [
                 "ac2pic",
@@ -2547,12 +2546,12 @@
                 "url": "https://github.com/CCDirectLink/char-select/archive/refs/heads/master.zip",
                 "source": "char-select-master",
                 "hash": {
-                    "sha256": "c9dc72a8840ed8b95bd7340f870e19132158df1be0a0a39a4b01f0898f0d5968"
+                    "sha256": "62aa50dc4fb4af2bb5646be15cee4c3c228d0c9c2ab31d61a7d7e9033e1d61aa"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1723378287000,
+        "lastUpdateTimestamp": 1729017518000,
         "releasePages": []
     },
     "charged-balls": {
