@@ -5657,7 +5657,7 @@
     "xenons-playable-classes": {
         "metadataCCMod": {
             "id": "xenons-playable-classes",
-            "version": "2.3.0",
+            "version": "2.4.0",
             "title": {
                 "en_US": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
                 "de_DE": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
@@ -5707,16 +5707,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/2.3.0.zip",
-                "source": "xenons-playable-classes-2.3.0",
+                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/2.4.0.zip",
+                "source": "xenons-playable-classes-2.4.0",
                 "hash": {
-                    "sha256": "83867f62ab3ddbdb9e1be38bd93f24718fb3ef8b6e66806e23d7088cde521909"
+                    "sha256": "7e7330aa354615d8adea7990c70af314fd6a22d412fe96d7eec602ca30861d2c"
                 }
             }
         ],
         "stars": 20,
-        "lastUpdateTimestamp": 1728217672000,
+        "lastUpdateTimestamp": 1729576503000,
         "releasePages": [
+            {
+                "body": "## 2.4.0 (10/21/2024)\r\n### New Content\r\n- Added base Hexacast ranged/attack actions as Lea custom skills\r\n- Added Lea Hexacast attack animation (sprites by HeartLychee)\r\n- Added hideout-hexa map to XPC hideout area and updated Bergen area map\r\n- Added OLV fade in/out effects to xpc-utility effect sheet\r\n- Added weather XPC_SPACE and env particle DARK_DUST_XPC_SPACE\r\n- Added doormat-spawn-fix.js (code by Krypek)\r\n### Changes\r\n- Added Azure Lazuline to mod credits\r\n- Increased dot particle size in effect miasmaBuffAura\r\n- Renamed \\patches\\data\\animations\\player.json to \\patches\\data\\animations\\lea-tri.json\r\n- Deleted unused Hexacast animations\r\n * spinClosedFull\r\n * spinClosedShort\r\n * spinClosedShortRev\r\n### Fixes\r\n- Fixed unintentional charged shots when using Hexacast uncharged throws (code by Azure Lazuline)",
+                "version": "2.4.0",
+                "timestamp": 1729576503000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/2.4.0"
+            },
             {
                 "body": "## 2.3.0 (10/06/2024)\r\n### New Content\r\n- New Hexacast combat art: Celestial Cohort (Wave Dash Lv.3B)\r\n- New Hexacast combat art: Temporal Miasma (Wave Dash Lv.2A)\r\n- New Hexacast custom skill: Miasmic Mortar (Wave Throw Lv.2)\r\n- New Hexacast custom skill: Healing Burst (Wave Melee Lv.1)\r\n- Defined new animation \"chestFrame1\" to Triblader2/3/4/5/Lea\r\n- Added new Hexacast tips to hideout-lobby\r\n- Added a new xenodialogue conversation to hideout-east\r\n### Changes\r\n- Upgrade rooms in Rhombus Dungeon now support XPC characters for animations\r\n- Element unlock rooms in all dungeons now support XPC characters for animations\r\n- Added dialogue to the party member NPC advisor in the unused content room\r\n- Extended hideout-east map width by 2 tiles\r\n- Removed sourceMappingURL line from map-styles.js\r\n- Updated Essence Steal description\r\n- Hexacast homing shots now disabled if any air conditioner enemies are present on the map\r\n- Reduced dot particle count in effect specials.wave-slowDebuff\r\n- Renamed healTargetFXProxy to healMortarFXProxy\r\n### Fixes\r\n- Fixed player disappearing sometimes on Calamity Beacon descent\r\n- Fixed a typo in char-select/basement\r\n- Fixed a typo in hideout-lobby\r\n- Fixed Abandoned Site appearing on world map\r\n- Fixed Lightning Hex to not apply jolt status effect\r\n- Heal Mortar impact is no longer guardable",
                 "version": "2.3.0",
