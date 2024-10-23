@@ -12,6 +12,7 @@ import {
     Package,
     PackageDB,
     PkgCCMod,
+    ValidTags,
 } from '../src/types'
 import { getRepoBranches, gitReadFunc } from '../src/git'
 
@@ -188,6 +189,15 @@ function testMetadataCCMod(ccmod: PkgCCMod) {
             ccmod.tags !== undefined && Array.isArray(ccmod.tags),
             'ccmod.tags (type: array) is missing or has wrong type'
         ).to.be.true
+
+        const tags = (ccmod.tags ?? []).sort()
+        for (let i = 0; i < tags.length; i++) {
+            const tag = tags[i]
+            expect(ValidTags.includes(tag), `ccmod.tags (type: array) has an invalid tag: "${tag}"`)
+                .to.be.true
+            expect(tags[i - 1] != tag, `ccmod.tags (type: array) has a duplicate tag: "${tag}"`).to
+                .be.true
+        }
 
         expect(
             ccmod.authors !== undefined && Array.isArray(ccmod.tags),
