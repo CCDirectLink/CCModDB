@@ -2290,7 +2290,7 @@
     "ccmodmanager": {
         "metadataCCMod": {
             "id": "ccmodmanager",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "title": "CCModManager",
             "description": "Mod manager for CrossCode!",
             "repository": "https://github.com/CCDirectLink/CCModManager",
@@ -2314,16 +2314,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CCDirectLink/CCModManager/releases/download/v1.0.0/ccmodmanager-1.0.0.ccmod",
+                "url": "https://github.com/CCDirectLink/CCModManager/releases/download/v1.0.1/ccmodmanager-1.0.1.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "8ba0f9a7cff18f0d1627f6877b7659a8dc5aeeb7a912c5677227c4cd58d18135"
+                    "sha256": "135e2a490a3b1e1c8210de97088669bd02776fd49833592eff4b0da9153aa084"
                 }
             }
         ],
-        "stars": 2,
-        "lastUpdateTimestamp": 1726754805000,
+        "stars": 4,
+        "lastUpdateTimestamp": 1730139721000,
         "releasePages": [
+            {
+                "body": "",
+                "version": "1.0.1",
+                "timestamp": 1730139722000,
+                "url": "https://github.com/CCDirectLink/CCModManager/releases/tag/v1.0.1"
+            },
             {
                 "body": "### Changed\n\n- Update the mod repositories to the official (CCDirectLink/CCModDB) from the testing one (krypciak/CCModDB)\n\n### Fixes\n\n- Force CCLoader to update first before any other mods",
                 "version": "1.0.0",
