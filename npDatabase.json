@@ -1658,7 +1658,7 @@
     "cc-jetpack-widget": {
         "metadataCCMod": {
             "id": "cc-jetpack-widget",
-            "version": "1.0.4",
+            "version": "1.0.3",
             "title": "Jetpack widget",
             "description": "Adds a jetpack quick menu widget",
             "repository": "https://github.com/krypciak/cc-jetpack-widget",
@@ -1673,21 +1673,22 @@
                 "24": "icon/icon.png"
             },
             "dependencies": {
-                "nax-ccuilib": ">=1.2.8"
+                "nax-ccuilib": ">=1.2.5"
             },
             "plugin": "plugin.js"
         },
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/cc-jetpack-widget/releases/download/v1.0.4/cc-jetpack-widget-1.0.4.ccmod",
+                "url": "https://github.com/krypciak/cc-jetpack-widget/releases/download/v1.0.3/cc-jetpack-widget-1.0.3.ccmod",
+                "source": "",
                 "hash": {
-                    "sha256": "e58551773da5c0be232504b07ac5b29aff4ca386333888bac8ec839dcde94644"
+                    "sha256": "b0d196493a2b3a02ea2b239ea06d2bb350e4ed6b6f5f57ab7c2226e12b7e9570"
                 }
             }
         ],
-        "stars": 0,
-        "lastUpdateTimestamp": 1721731493000,
+        "stars": 1,
+        "lastUpdateTimestamp": 1723311543000,
         "releasePages": [
             {
                 "body": "### Changed\r\n\r\n- Support the latest version of CCUILib",
