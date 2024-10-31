@@ -2350,7 +2350,7 @@
     "ccmodmanager": {
         "metadataCCMod": {
             "id": "ccmodmanager",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "title": "CCModManager",
             "description": "Mod manager for CrossCode!",
             "repository": "https://github.com/CCDirectLink/CCModManager",
@@ -2374,16 +2374,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CCDirectLink/CCModManager/releases/download/v1.0.1/ccmodmanager-1.0.1.ccmod",
+                "url": "https://github.com/CCDirectLink/CCModManager/releases/download/v1.0.2/ccmodmanager-1.0.2.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "135e2a490a3b1e1c8210de97088669bd02776fd49833592eff4b0da9153aa084"
+                    "sha256": "44050d62f41e3d15cd2985f0f186e012afd86ae382e128251fa32627d7a57f76"
                 }
             }
         ],
         "stars": 4,
-        "lastUpdateTimestamp": 1730140612000,
+        "lastUpdateTimestamp": 1730383796000,
         "releasePages": [
+            {
+                "body": "### Added\n\n- Left clicking a mod in the Settings tab opens the mod's settings menu\n- Add \"preventResettingToDefault\" property on changeable options\n- Add \"thumbWidth\" property on OBJECT_SLIDER\n\n### Changed \n\n- OBJECT_SLIDER thumb size now has a minimum of 30px\n- On game start, all OBJECT_SLIDER values will be put in their bounds\n\n### Fixed\n\n- Left clicking a mod in the Settings tab doesn't crash anymore\n- Fix crash when clicking the \"Reset Settings\" button some mod's setting page\n- Fix top bar buttons like \"Help\" becoming uninteractable after resetting the mod's settings\n- Fix OBJECT_SLIDER not working properly with floating point numbers",
+                "version": "1.0.2",
+                "timestamp": 1730383797000,
+                "url": "https://github.com/CCDirectLink/CCModManager/releases/tag/v1.0.2"
+            },
             {
                 "body": "### Changed \r\n\r\n- Clarify the intent in the game start autoupdate prompt\r\n\r\n### Fixed\r\n\r\n- Fix mod list not loading in some very specific cases\r\n\r\n",
                 "version": "1.0.1",
