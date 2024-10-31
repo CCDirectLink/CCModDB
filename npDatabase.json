@@ -3496,7 +3496,7 @@
     "element-hair": {
         "metadataCCMod": {
             "id": "element-hair",
-            "version": "1.0.4",
+            "version": "1.0.5",
             "title": "Elemental Hair",
             "description": {
                 "en_US": "Changes Lea's hair color to match her current element."
@@ -3517,16 +3517,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/Azure-Lazuline/elemental-hair/releases/download/1.0.4/elemental-hair.ccmod",
+                "url": "https://github.com/Azure-Lazuline/elemental-hair/releases/download/1.0.5/elemental-hair.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "4e2fa7771a4d0d520673e994c6145c8a629d273c4dc9d2581e3fc80e273bf2ed"
+                    "sha256": "26f03fa6d5a7ec0023c3df778fb1aaa2ab1a23d8b46283fc7c4264218dc3d105"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1728569802000,
+        "lastUpdateTimestamp": 1730402517000,
         "releasePages": [
+            {
+                "body": "- trims whitespace at the end of image filenames before comparing\r\n- this fixes the sleeping animation, and a few others like Lea landing from big jumps",
+                "version": "1.0.5",
+                "timestamp": 1730402517000,
+                "url": "https://github.com/Azure-Lazuline/elemental-hair/releases/tag/1.0.5"
+            },
             {
                 "body": "- adds support for Shizuka in the intro.\r\n- for modders: recolors can now apply conditionally (so it doesn't affect the NPC version of a playable character for example), check how i did Shizuka.",
                 "version": "1.0.4",
