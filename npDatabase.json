@@ -1941,7 +1941,7 @@
     "cc-staircase-effect-fix": {
         "metadataCCMod": {
             "id": "cc-staircase-effect-fix",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "title": "Staircase Effect Fix",
             "description": "Fixes staircase effect when moving diagonally",
             "repository": "https://github.com/Unarelith/cc-staircase-effect-fix",
@@ -1956,16 +1956,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/Unarelith/cc-staircase-effect-fix/releases/download/v1.0.0/cc-staircase-effect-fix.ccmod",
+                "url": "https://github.com/Unarelith/cc-staircase-effect-fix/releases/download/v1.0.1/cc-staircase-effect-fix.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "e51ae929e1a4232927591d65da7928625df82ad4efc94893da41b4d63b6cf287"
+                    "sha256": "2e499954f3ff77a666da55c388937d3be68c818e33614d641e9cd93e5ff83227"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1730219226000,
+        "lastUpdateTimestamp": 1730251123000,
         "releasePages": [
+            {
+                "body": "- Improved settings menu\r\n- Added option to smooth player camera only",
+                "version": "1.0.1",
+                "timestamp": 1730251123000,
+                "url": "https://github.com/Unarelith/cc-staircase-effect-fix/releases/tag/v1.0.1"
+            },
             {
                 "body": "First version.",
                 "version": "1.0.0",
