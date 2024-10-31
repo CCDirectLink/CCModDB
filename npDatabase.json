@@ -1956,16 +1956,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/Unarelith/cc-staircase-effect-fix/releases/download/v1.0.1/cc-staircase-effect-fix.ccmod",
+                "url": "https://github.com/Unarelith/cc-staircase-effect-fix/releases/download/v1.0.2/cc-staircase-effect-fix-1.0.2.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "2e499954f3ff77a666da55c388937d3be68c818e33614d641e9cd93e5ff83227"
+                    "sha256": "eae06cd1b47d2629a8a2085bac652f832027cc0f070cb2f01cbcbe20a2c2468f"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1730251123000,
+        "lastUpdateTimestamp": 1730393953000,
         "releasePages": [
+            {
+                "body": "Improved settings menu (thanks to updates in mod manager).",
+                "version": "1.0.2",
+                "timestamp": 1730393953000,
+                "url": "https://github.com/Unarelith/cc-staircase-effect-fix/releases/tag/v1.0.2"
+            },
             {
                 "body": "- Improved settings menu\r\n- Added option to smooth player camera only",
                 "version": "1.0.1",
