@@ -5065,7 +5065,7 @@
     "party-element-effects": {
         "metadataCCMod": {
             "id": "party-element-effects",
-            "version": "1.0.1",
+            "version": "1.1.0",
             "title": {
                 "en_US": "Party Element Effects",
                 "de_DE": "Party Element Effects",
@@ -5089,7 +5089,10 @@
                 "cosmetic",
                 "party member"
             ],
-            "authors": "XenonA7",
+            "authors": [
+                "XenonA7",
+                "Azure Lazuline"
+            ],
             "icons": {
                 "24": "icon.png"
             },
@@ -5098,27 +5101,33 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/cc-party-element-effects/archive/refs/tags/1.0.1.zip",
-                "source": "cc-party-element-effects-1.0.1",
+                "url": "https://github.com/XenonA7/party-element-effects/archive/refs/tags/1.1.0.zip",
+                "source": "party-element-effects-1.1.0",
                 "hash": {
-                    "sha256": "d8b2790f6e028fedcb13f68d5824b46aca2b3f2ae8be78f7ab4523cdba4d959c"
+                    "sha256": "64e1bd4d771e982345e6da52bf54617bc1f97aecc284a3088a222ac8ec108c42"
                 }
             }
         ],
         "stars": 2,
-        "lastUpdateTimestamp": 1708402780000,
+        "lastUpdateTimestamp": 1731089927000,
         "releasePages": [
+            {
+                "body": "## 1.1.0 (11/08/2024)\r\n- Additional features by Azure Lazuline:\r\n   * Party members switch back to neutral after combat ends\r\n   * Element aura particle effect now works like Lea's (only shows while character is moving)\r\n- Added changelog.md",
+                "version": "1.1.0",
+                "timestamp": 1731089927000,
+                "url": "https://github.com/XenonA7/party-element-effects/releases/tag/1.1.0"
+            },
             {
                 "body": "Updated ccmod.json to new standard",
                 "version": "1.0.1",
                 "timestamp": 1708402780000,
-                "url": "https://github.com/XenonA7/cc-party-element-effects/releases/tag/1.0.1"
+                "url": "https://github.com/XenonA7/party-element-effects/releases/tag/1.0.1"
             },
             {
                 "body": "Initial release, tested with Crosscode 1.4.2-1 and CCLoader 2.21.0",
                 "version": "1.0.0",
                 "timestamp": 1654592020000,
-                "url": "https://github.com/XenonA7/cc-party-element-effects/releases/tag/1.0.0"
+                "url": "https://github.com/XenonA7/party-element-effects/releases/tag/1.0.0"
             }
         ]
     },
