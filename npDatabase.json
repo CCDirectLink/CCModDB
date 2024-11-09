@@ -5065,7 +5065,7 @@
     "party-element-effects": {
         "metadataCCMod": {
             "id": "party-element-effects",
-            "version": "1.1.0",
+            "version": "1.1.1",
             "title": {
                 "en_US": "Party Element Effects",
                 "de_DE": "Party Element Effects",
@@ -5101,16 +5101,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/party-element-effects/archive/refs/tags/1.1.0.zip",
-                "source": "party-element-effects-1.1.0",
+                "url": "https://github.com/XenonA7/party-element-effects/archive/refs/tags/1.1.1.zip",
+                "source": "party-element-effects-1.1.1",
                 "hash": {
-                    "sha256": "64e1bd4d771e982345e6da52bf54617bc1f97aecc284a3088a222ac8ec108c42"
+                    "sha256": "6b7027f241a00d890ae6dc371cc61934c3b329e91ca62c8449f7d85eb9656746"
                 }
             }
         ],
         "stars": 2,
-        "lastUpdateTimestamp": 1731089927000,
+        "lastUpdateTimestamp": 1731184358000,
         "releasePages": [
+            {
+                "body": "## 1.1.1 (11/09/2024)\r\n- Fix by Azure Lazuline:\r\n   * Fixed a crash that can happen when party members are added",
+                "version": "1.1.1",
+                "timestamp": 1731184358000,
+                "url": "https://github.com/XenonA7/party-element-effects/releases/tag/1.1.1"
+            },
             {
                 "body": "## 1.1.0 (11/08/2024)\r\n- Additional features by Azure Lazuline:\r\n   * Party members switch back to neutral after combat ends\r\n   * Element aura particle effect now works like Lea's (only shows while character is moving)\r\n- Added changelog.md",
                 "version": "1.1.0",
