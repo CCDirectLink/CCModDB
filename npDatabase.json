@@ -5183,7 +5183,7 @@
     "player-clone": {
         "metadataCCMod": {
             "id": "player-clone",
-            "version": "1.1.1",
+            "version": "1.1.2",
             "title": {
                 "en_US": "Player Clone",
                 "de_DE": "Player Clone",
@@ -5223,16 +5223,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/player-clone/archive/refs/tags/1.1.1.zip",
-                "source": "player-clone-1.1.1",
+                "url": "https://github.com/XenonA7/player-clone/archive/refs/tags/1.1.2.zip",
+                "source": "player-clone-1.1.2",
                 "hash": {
-                    "sha256": "494e7b65d8cf7fc9022a2140c4b4235af1789d7decd56309277a18dd897e6d74"
+                    "sha256": "4d1c059163d2c3ffefa2c10a3d1c79165b6b41dc6b3445fb36b8d13799bdadaf"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1724476490000,
+        "lastUpdateTimestamp": 1731112652000,
         "releasePages": [
+            {
+                "body": "## 1.1.2 (11/08/2024)\r\n- Changed custom skill icon color to match XPC cheat skills\r\n- Removed character-specific database implementation\r\n- All XPC characters are now supported if XPC is installed",
+                "version": "1.1.2",
+                "timestamp": 1731112652000,
+                "url": "https://github.com/XenonA7/player-clone/releases/tag/1.1.2"
+            },
             {
                 "body": "## 1.1.1 (08/23/2024)\r\n- Logic step support changed to xenons-playable-classes",
                 "version": "1.1.1",
