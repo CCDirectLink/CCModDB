@@ -3520,10 +3520,10 @@
     "element-hair": {
         "metadataCCMod": {
             "id": "element-hair",
-            "version": "1.0.5",
+            "version": "1.0.6",
             "title": "Elemental Hair",
             "description": {
-                "en_US": "Changes Lea's hair color to match her current element."
+                "en_US": "Changes Lea's hair color based on her element. (Check the repo for customization!)"
             },
             "repository": "https://github.com/Azure-Lazuline/elemental-hair",
             "tags": [
@@ -3533,7 +3533,7 @@
             "icons": {
                 "24": "icon24.png"
             },
-            "prestart": "src/_prestart.js",
+            "prestart": "_prestart.js",
             "assets": [
                 "data/lang/sc/gui.en_US.json.patch"
             ]
@@ -3541,16 +3541,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/Azure-Lazuline/elemental-hair/releases/download/1.0.5/elemental-hair.ccmod",
+                "url": "https://github.com/Azure-Lazuline/elemental-hair/releases/download/1.0.6/elemental-hair.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "26f03fa6d5a7ec0023c3df778fb1aaa2ab1a23d8b46283fc7c4264218dc3d105"
+                    "sha256": "0ab98c1ea5ad246e743b1fc5fbec9a83051f9f3aed44528dbccf4a9f928b170e"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1730402517000,
+        "lastUpdateTimestamp": 1731342821000,
         "releasePages": [
+            {
+                "body": "- adds compatibility with party-elemental-effects mod, applying elemental colors to party members and PVP opponents\r\n- adds custom palettes for Lea's armor too (you can revert to just the hair in the options menu)\r\n- adds boki-colors.zip as an example for adding your own custom palettes",
+                "version": "1.0.6",
+                "timestamp": 1731342338000,
+                "url": "https://github.com/Azure-Lazuline/elemental-hair/releases/tag/1.0.6"
+            },
             {
                 "body": "- trims whitespace at the end of image filenames before comparing\r\n- this fixes the sleeping animation, and a few others like Lea landing from big jumps",
                 "version": "1.0.5",
