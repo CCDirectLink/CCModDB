@@ -1,4 +1,46 @@
 {
+    "Boki Colors": {
+        "metadataCCMod": {
+            "id": "Boki Colors",
+            "version": "1.0.0",
+            "title": "Boki Colors",
+            "description": {
+                "en_US": "Change Lea's palette to Boki's from Copy Kitty, with different ones per-element."
+            },
+            "repository": "https://github.com/Azure-Lazuline/boki-colors",
+            "tags": [
+                "cosmetic"
+            ],
+            "authors": "Azure Lazuline",
+            "icons": {
+                "24": "icon24.png"
+            },
+            "prestart": "_prestart.js",
+            "dependencies": {
+                "element-hair": ">=1.0.0"
+            }
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/Azure-Lazuline/boki-colors/releases/download/1.0.0/boki-colors.ccmod",
+                "source": "",
+                "hash": {
+                    "sha256": "0645050ab903293f9449ec210a09836509a3d87081c4a90f8b8adb769862ed5f"
+                }
+            }
+        ],
+        "stars": 0,
+        "lastUpdateTimestamp": 1731620361000,
+        "releasePages": [
+            {
+                "body": "- first release",
+                "version": "1.0.0",
+                "timestamp": 1731619778000,
+                "url": "https://github.com/Azure-Lazuline/boki-colors/releases/tag/1.0.0"
+            }
+        ]
+    },
     "CCJoystickExt": {
         "metadataCCMod": {
             "id": "CCJoystickExt",
