@@ -3520,7 +3520,7 @@
     "element-hair": {
         "metadataCCMod": {
             "id": "element-hair",
-            "version": "1.0.6",
+            "version": "1.0.7",
             "title": "Elemental Hair",
             "description": {
                 "en_US": "Changes Lea's hair color based on her element. (Check the repo for customization!)"
@@ -3541,16 +3541,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/Azure-Lazuline/elemental-hair/releases/download/1.0.6/elemental-hair.ccmod",
+                "url": "https://github.com/Azure-Lazuline/elemental-hair/releases/download/1.0.7/elemental-hair.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "0ab98c1ea5ad246e743b1fc5fbec9a83051f9f3aed44528dbccf4a9f928b170e"
+                    "sha256": "79a8f268e6fe93e343d4400d9f535332d6cb2c418521ca634a97d45d5ed52e44"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1731342821000,
+        "lastUpdateTimestamp": 1731620154000,
         "releasePages": [
+            {
+                "body": "- Lea's tongue doesn't get recolored if you recolor her outfit\r\n- other small bugfixes\r\n- included some more detailed info for modders making custom palettes for other stuff",
+                "version": "1.0.7",
+                "timestamp": 1731620154000,
+                "url": "https://github.com/Azure-Lazuline/elemental-hair/releases/tag/1.0.7"
+            },
             {
                 "body": "- adds compatibility with party-elemental-effects mod, applying elemental colors to party members and PVP opponents\r\n- adds custom palettes for Lea's armor too (you can revert to just the hair in the options menu)\r\n- adds boki-colors.zip as an example for adding your own custom palettes",
                 "version": "1.0.6",
