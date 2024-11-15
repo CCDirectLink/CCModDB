@@ -3216,10 +3216,10 @@
     "difficulty-mods": {
         "metadataCCMod": {
             "id": "difficulty-mods",
-            "version": "1.0.7",
+            "version": "1.0.8",
             "title": "Difficulty Mods",
             "description": {
-                "en_US": "Adjust enemy damage, HP, and EXP gain to make the game as difficult as you like."
+                "en_US": "Adjust enemy damage, HP, and EXP gain to make the game as easy or hard as you like."
             },
             "repository": "https://github.com/Azure-Lazuline/difficulty-mods",
             "tags": [
@@ -3230,6 +3230,7 @@
                 "24": "icon24.png"
             },
             "prestart": "src/_prestart.js",
+            "poststart": "src/_poststart.js",
             "assets": [
                 "data/lang/sc/gui.en_US.json.patch"
             ]
@@ -3237,16 +3238,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/Azure-Lazuline/difficulty-mods/releases/download/1.0.7/difficulty-mods.ccmod",
+                "url": "https://github.com/Azure-Lazuline/difficulty-mods/releases/download/1.0.8/difficulty-mods.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "be3ed9a00b4b1b32348761a9ac8cefcf17c99b4106c7240051235c44626a4bfe"
+                    "sha256": "d25f2a578687c5eb4d97a1375e179bbbba07aaf0a4e8c0e5c1a307f8fc19d2f8"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1728942448000,
+        "lastUpdateTimestamp": 1731619906000,
         "releasePages": [
+            {
+                "body": "- moved everything to the Assists menu, overwriting the original options there\r\n- all options can be turned in both directions, to make things easier *or* harder\r\n- improved compatibility with other mods that add similar options",
+                "version": "1.0.8",
+                "timestamp": 1731619906000,
+                "url": "https://github.com/Azure-Lazuline/difficulty-mods/releases/tag/1.0.8"
+            },
             {
                 "body": "- adjusted Arena scoring (for damage and time) based on the HP scale setting\r\n- HP scale now affects break meter too\r\n- added Enemy Speed setting",
                 "version": "1.0.7",
