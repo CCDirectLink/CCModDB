@@ -5841,7 +5841,7 @@
     "xenons-playable-classes": {
         "metadataCCMod": {
             "id": "xenons-playable-classes",
-            "version": "2.4.0",
+            "version": "2.5.0",
             "title": {
                 "en_US": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
                 "de_DE": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
@@ -5891,16 +5891,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/2.4.0.zip",
-                "source": "xenons-playable-classes-2.4.0",
+                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/2.5.0.zip",
+                "source": "xenons-playable-classes-2.5.0",
                 "hash": {
-                    "sha256": "7e7330aa354615d8adea7990c70af314fd6a22d412fe96d7eec602ca30861d2c"
+                    "sha256": "a3a8601249ea29202692b173858cf5ca0207a7310b18c980cfa71ca0e1265a26"
                 }
             }
         ],
         "stars": 20,
-        "lastUpdateTimestamp": 1729576503000,
+        "lastUpdateTimestamp": 1731910324000,
         "releasePages": [
+            {
+                "body": "## 2.5.0 (11/17/2024)\r\n### Important\r\n- Do not update if your quests \"Fire Breathing Penguins\" or \"The Triblader League\" are\r\n\tcurrently in progress. It is best to update if these quests are complete or have\r\n\tnot been accepted yet.\r\n### New Content\r\n- New Hexacast combat art: Thundering Sparks (Shock Throw Lv.3B)\r\n- New Hexacast custom skill: Poison Slash (Neutral Melee Lv.2)\r\n- New Hexacast custom skill: Sentry Card (Neutral Throw Lv.1)\r\n- New Hexacast custom skill: Heavy Sentry (Neutral Throw Lv.2)\r\n- Added \"cheat\" custom skills to Lea and all XPC characters + Lea\r\n   * Cursor Teleport (Neutral Throw Lv.1)\r\n   * Cliff Jump 1 (Neutral Melee Lv.1)\r\n   * Cliff Jump 2 (Neutral Melee Lv.1)\r\n   * NoClip (Neutral Dash Lv.1)\r\n- Added new quest to unlock cheat custom skills\r\n   * Available after entering the custom skill hideout room\r\n   * Quest NPC located near the modding hideout landmark\r\n- Added \\patches\\data\\database\\xpc-misc-events.json\r\n- Added N and NE sprites for Hexacast 1/2/3 float animation\r\n### Changes\r\n- Removed \\maps\\bergen\\hideout-hexa-just-platform.json\r\n- Tweaked icon sprites for Lea ranged Hexacast custom skills\r\n- Animation Debugger custom skill is now a neutral guard art instead of a shock guard art\r\n- Animation Debugger moved from character-specific custom skill patches to cheats-universal.json\r\n- Animation Debugger and all other debug custom skills are now locked behind the new quest\r\n- Renamed quest condition labels for existing XPC quests to match task number\r\n- Renamed effect whitheringSlashAir to witheringSlashAir\r\n- Added random top lightning offesets to Hexacast proxy thunderSmall, thunderSmallWeak, and thunderSmallZirvitarDash\r\n- Replaced all Hexacast instances of effect boldSmallNoShake with boldSmallNoShakeHex\r\n- Slightly tweaked Hexacast3 color palette\r\n### Fixes\r\n- Hexacast Arctic Blast custom skill now uses proper sword animation\r\n- Fixed the \"Dash Master\" NG+ functionality for XPC characters by adding the missing DASH_LONG action\r\n- Fixed frame 2 of Hexacast south walk animation having a 1 pixel offset\r\n- Fixed Ethereal Stance showing a circle-shaped effect instead of hexagonal\r\n- Active Wave Recall cards now despawn when combat begins (code by Azure Lazuline)\r\n- Fixed missing SET_ACCEL_SPEED in proxy magnetDeckBoltHitbox\r\n### Balance\r\n- Shine no longer benefits from Pin Body\r\n   * Introduced the same bug as Triblader cold guard arts (pin body disabled until element switch)",
+                "version": "2.5.0",
+                "timestamp": 1731910324000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/2.5.0"
+            },
             {
                 "body": "## 2.4.0 (10/21/2024)\r\n### New Content\r\n- Added base Hexacast ranged/attack actions as Lea custom skills\r\n- Added Lea Hexacast attack animation (sprites by HeartLychee)\r\n- Added hideout-hexa map to XPC hideout area and updated Bergen area map\r\n- Added OLV fade in/out effects to xpc-utility effect sheet\r\n- Added weather XPC_SPACE and env particle DARK_DUST_XPC_SPACE\r\n- Added doormat-spawn-fix.js (code by Krypek)\r\n### Changes\r\n- Added Azure Lazuline to mod credits\r\n- Increased dot particle size in effect miasmaBuffAura\r\n- Renamed \\patches\\data\\animations\\player.json to \\patches\\data\\animations\\lea-tri.json\r\n- Deleted unused Hexacast animations\r\n * spinClosedFull\r\n * spinClosedShort\r\n * spinClosedShortRev\r\n### Fixes\r\n- Fixed unintentional charged shots when using Hexacast uncharged throws (code by Azure Lazuline)",
                 "version": "2.4.0",
