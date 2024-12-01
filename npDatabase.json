@@ -1992,6 +1992,45 @@
             }
         ]
     },
+    "cc-shrimp": {
+        "metadataCCMod": {
+            "id": "cc-shrimp",
+            "version": "1.0.0",
+            "title": "Shrimp",
+            "description": "Shrimp shredder, as shrimple as that",
+            "repository": "https://github.com/krypciak/cc-shrimp",
+            "tags": [
+                "cosmetic",
+                "fun"
+            ],
+            "authors": [
+                "MizuMatthias"
+            ],
+            "icons": {
+                "24": "icon.png"
+            }
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/krypciak/cc-shrimp/releases/download/v1.0.0/cc-shrimp-1.0.0.ccmod",
+                "source": "",
+                "hash": {
+                    "sha256": "8c096fd4bd7fd6493cc78a17201537c575e112d5357ecd1a4fe907b21a989e73"
+                }
+            }
+        ],
+        "stars": 0,
+        "lastUpdateTimestamp": 1733069029000,
+        "releasePages": [
+            {
+                "body": "first shrimp release",
+                "version": "1.0.0",
+                "timestamp": 1733069029000,
+                "url": "https://github.com/krypciak/cc-shrimp/releases/tag/v1.0.0"
+            }
+        ]
+    },
     "cc-staircase-effect-fix": {
         "metadataCCMod": {
             "id": "cc-staircase-effect-fix",
