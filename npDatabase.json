@@ -5886,7 +5886,7 @@
     "xenons-playable-classes": {
         "metadataCCMod": {
             "id": "xenons-playable-classes",
-            "version": "2.6.0",
+            "version": "2.6.1",
             "title": {
                 "en_US": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
                 "de_DE": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
@@ -5936,16 +5936,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/2.6.0.zip",
-                "source": "xenons-playable-classes-2.6.0",
+                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/2.6.1.zip",
+                "source": "xenons-playable-classes-2.6.1",
                 "hash": {
-                    "sha256": "2fcc9612db7e4b4783626335cea3ecaf15d6288c7b93aa558c653aa895f337ae"
+                    "sha256": "98fd41d114124a814b8737bed4f55e62a868d37cce1780ad9227cb8372cf8438"
                 }
             }
         ],
         "stars": 21,
-        "lastUpdateTimestamp": 1732756072000,
+        "lastUpdateTimestamp": 1733212431000,
         "releasePages": [
+            {
+                "body": "## 2.6.1 (12/03/2024)\r\n### Fixes\r\n- Fixed Triblader2 level 99 party member (thanks to Krypek and others)\r\n   * This is not retroactive to existing bugged save files",
+                "version": "2.6.1",
+                "timestamp": 1733212431000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/2.6.1"
+            },
             {
                 "body": "## 2.6.0 (11/27/2024)\r\n### New Content\r\n- New Hexacast combat art: Snow Lance (Cold Melee Lv.1A)\r\n- New Hexacast combat art: Icicle Lance (Cold Melee Lv.2A)\r\n- Added action step DISABLE_SPIKEDMG (code by Azure Lazuline)\r\n- Added action step DISABLE_HEALTHBAR (code by Azure Lazuline)\r\n### Changes\r\n- Deleted broken action step SET_ALL_SPIKE_DAMAGE\r\n- Sorted js files according to contributors\r\n- Updated in-game mod credits\r\n- Improved sprite symmetry in lighter-particle-big-hexagon.png\r\n- Tweaked rumble, audio, screen flash for effect thunderingSparksLightning\r\n- Added more emphasis to effect sentryCard2Shoot\r\n- Minor Apollo dialogue edits to \"cheat codes\" quest\r\n- Renamed effect icePillarTiny to icePillarTinyExplode\r\n- Improved player invisiblity by disabling healthbar in the following arts (special thanks to Azure Lazuline):\r\n   * Phase Jump\r\n   * Ethereal Stance\r\n   * Shock Surge\r\n   * Wave Recall\r\n   * Zir'vitar Strike\r\n### Fixes\r\n- Fixed loop timing for effect fireBarrageHexagons\r\n- Fixed Jolt Mortar trail effect starting too early\r\n- Added \"guardable\": \"NEVER\" property to Healing Burst\r\n- Fixed pin body issue for the following arts (special thanks to Azure Lazuline):\r\n   * Shine\r\n   * Ice Brace\r\n   * Stasis Stance\r\n   * Tower of Tranquility",
                 "version": "2.6.0",
