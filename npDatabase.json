@@ -618,7 +618,7 @@
     "Palicat": {
         "metadataCCMod": {
             "id": "Palicat",
-            "version": "1.0.6",
+            "version": "1.0.7",
             "title": "Palicat",
             "description": "A mod that implement the palico from monster hunter world into the game.",
             "repository": "https://github.com/rioreur/palicat",
@@ -635,16 +635,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/rioreur/palicat/archive/refs/tags/1.0.6.zip",
-                "source": "palicat-1.0.6",
+                "url": "https://github.com/rioreur/palicat/archive/refs/tags/1.0.7.zip",
+                "source": "palicat-1.0.7",
                 "hash": {
-                    "sha256": "049a5afbdd46c3bd168e4abc3406fb1c987be8dc830f4a2ef0ad2b424fd201f1"
+                    "sha256": "c424e84a6e62c1345aaf336f11f45a630ace16b2be6f8c71b0b369835b280b79"
                 }
             }
         ],
         "stars": 1,
-        "lastUpdateTimestamp": 1708372645000,
+        "lastUpdateTimestamp": 1733331473000,
         "releasePages": [
+            {
+                "body": "Quick update to patch a crash",
+                "version": "1.0.7",
+                "timestamp": 1733331665000,
+                "url": "https://github.com/rioreur/palicat/releases/tag/1.0.7"
+            },
             {
                 "body": "Update to comply with the new standard of the mod database",
                 "version": "1.0.6",
