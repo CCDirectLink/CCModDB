@@ -6273,7 +6273,7 @@
     "xpc-litter": {
         "metadataCCMod": {
             "id": "xpc-litter",
-            "version": "2.0.0",
+            "version": "2.1.0",
             "title": {
                 "en_US": "XPC - Hexacast Litter"
             },
@@ -6282,29 +6282,36 @@
             },
             "repository": "https://github.com/XenonA7/xmc-hexacast-litter",
             "tags": [
-                "cosmetic"
+                "cosmetic",
+                "fun"
             ],
             "authors": "XenonA7",
             "icons": {
                 "24": "icon.png"
             },
             "dependencies": {
-                "xenons-playable-classes": ">=2.0.0"
+                "xenons-playable-classes": ">=2.7.0"
             }
         },
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/xpc-hexacast-litter/archive/refs/tags/2.0.0.zip",
-                "source": "xpc-hexacast-litter-2.0.0",
+                "url": "https://github.com/XenonA7/xpc-hexacast-litter/archive/refs/tags/2.1.0.zip",
+                "source": "xpc-hexacast-litter-2.1.0",
                 "hash": {
-                    "sha256": "32a636b48aaf703ca0cfc796019b4a3b3088e35d0f2bad14d7bdd6264f8c0ba6"
+                    "sha256": "e9b25ce36a2adcb35df06feff9964aab58b80727c2c18e55d835e87f38d0ebb1"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1724475869000,
+        "lastUpdateTimestamp": 1733730211000,
         "releasePages": [
+            {
+                "body": "2.1.0 (12/09/2024)\r\n- Updated ccmod.json tags\r\n- Support for XPC 2.7.0 and higher\r\n- Added shadowflame-alts.json.patch",
+                "version": "2.1.0",
+                "timestamp": 1733730211000,
+                "url": "https://github.com/XenonA7/xpc-hexacast-litter/releases/tag/2.1.0"
+            },
             {
                 "body": "2.0.0 (08/23/2024)\r\n- Support for XPC 2.0.0 and higher\r\n- Support for xmc-hexacast discontinued\r\n- Mod ID changed from xmc-litter to xpc-litter",
                 "version": "2.0.0",
