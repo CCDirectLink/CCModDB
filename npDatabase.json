@@ -4996,7 +4996,7 @@
     "open-world": {
         "metadataCCMod": {
             "id": "open-world",
-            "version": "0.3.2",
+            "version": "0.4.1",
             "title": "Open World patches",
             "description": "Open World map patches for randomizer",
             "repository": "https://github.com/buanjautista/cc-open-world",
@@ -5004,20 +5004,36 @@
                 "maps"
             ],
             "authors": "buanjautista",
-            "plugin": "plugin.js"
+            "plugin": "plugin.js",
+            "dependencies": {
+                "ccloader": ">=2.24.0"
+            }
         },
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/buanjautista/cc-open-world/releases/download/0.3.2/cc-open-world.v0.3.2-smelterfix.ccmod",
+                "url": "https://github.com/buanjautista/cc-open-world/releases/download/0.4.1/cc-open-world-v0.4.1.ccmod",
+                "source": "",
                 "hash": {
-                    "sha256": "02c1714a05a7ff350cd173d5866eb6f244cb55b12596ec1b8ebdf405d83d1cfa"
+                    "sha256": "6113cc2e35123c280c1ab90d1d0e10384659c2737076dbd2524bf5763f75c1ed"
                 }
             }
         ],
-        "stars": 2,
-        "lastUpdateTimestamp": 1712386197000,
+        "stars": 3,
+        "lastUpdateTimestamp": 1732103041000,
         "releasePages": [
+            {
+                "body": "Fixes: \r\n- Having Emilie in party on the Rookie Harbor intro cutscene would softlock the game.\r\n- Steamy Booze and Steaks second quest now requires Flame Shade instead of Faj'ro.\r\n- D'kar 5th quest requirements now properly work.\r\n- Fixed typo on Temple Mine key intro cutscene.\r\n- Temple Mine B3 being exitable during the fight if you had Heat.\r\n\r\nChanges:\r\n- Added some extra quick details on B3 key cutscene",
+                "version": "0.4.1",
+                "timestamp": 1712386197000,
+                "url": "https://github.com/buanjautista/cc-open-world/releases/tag/0.4.1"
+            },
+            {
+                "body": "Reworked code and requiring CCLoader v2.24 or higher due to improved patching. (CC-Alybox not needed anymore)\r\n\r\nChanges: \r\n- Removed Green Seed Shade requirement from Para Island entrance\r\n- Old Dojo can be entered without quest now as long as you have the key.\r\n- Trial of Golden Bug quest is now separate from Dojo entry and fights, so its easier to check it's pickup on randomizers\r\n- Autumn's Falls holo-bunny barriers are open by default\r\n- Actual fix for Smelter fight (map patch was wrongly named)\r\n- Fixed Ba'kii Kum NPC bird using wrong requirement for quests (dungeon instead of shade, compared to the other npcs)\r\n- Fixed not being able to use certain functions after returning back to the past.\r\n- Fixed a shop with wrong requirements in database\r\n\r\nAdd:\r\n- Extra Shade barriers on Sapphire Ridge and Gaia's Garden, leading to Autumn's Fall; and Maroon Valley leading to Bergen Trail \r\n- There's now an option to have all maps and areas visited beforehand.\r\n- Added an option to the Open World NPC in RH Info Hub to fix any quick menu limitations\r\n- Added extra sandwiches :)\r\n- Added a new cutscene to show the lower keys requirement in Temple Mine ",
+                "version": "0.4.0-pre3",
+                "timestamp": 1712386197000,
+                "url": "https://github.com/buanjautista/cc-open-world/releases/tag/0.4.0-pre3"
+            },
             {
                 "body": "**IMPORTANT!!!**\r\nThis version requires a new dependency for the new patching changes: CC-Alybox, which you can find **[here](https://github.com/lexisother/cc-alybox/releases/)**. Extra patches WILL NOT WORK without it.\r\n\r\n**Version Changes**\r\nReworked code and added cc-alybox / logic-steps as a dependency for easier patching from now on.\r\n\r\nChanges: \r\n- Removed Green Seed Shade requirement from Para Island entrance\r\n- Old Dojo can be entered without quest now as long as you have the key.\r\n- Trial of Golden Bug quest is now separate from Dojo entry and fights, so its easier to check it's pickup on randomizers\r\n- Autumn's Falls holo-bunny barriers are open by default\r\n- Actual fix for Smelter fight (map patch was wrongly named)\r\n\r\nAdd:\r\n- Extra Shade barriers on Sapphire Ridge and Gaia's Garden, leading to Autumn's Fall; and Maroon Valley leading to Bergen Trail \r\n- There's now an option to have all maps and areas visited beforehand.",
                 "version": "0.4.0-pre",
