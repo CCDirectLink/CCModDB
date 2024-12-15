@@ -1481,6 +1481,43 @@
             }
         ]
     },
+    "cc-combo-weapons": {
+        "metadataCCMod": {
+            "id": "cc-combo-weapons",
+            "version": "0.1.0",
+            "title": "Combo Weapons",
+            "description": "Allows adding equipment that can combo with other equipment.",
+            "repository": "https://github.com/buanjautista/cc-combo-weapons",
+            "tags": [
+                "library"
+            ],
+            "authors": "buanjautista",
+            "dependencies": {
+                "item-api": "^0.4.0"
+            },
+            "prestart": "mod.js"
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/buanjautista/cc-combo-weapons/releases/download/v0.1.0/cc-combo-weapons.v0.1.0.ccmod",
+                "source": "",
+                "hash": {
+                    "sha256": "eb46fbc6fc6489947170ce528fc53051b971e0c230a40e27a9742c31b276dc1d"
+                }
+            }
+        ],
+        "stars": 0,
+        "lastUpdateTimestamp": 1734218687000,
+        "releasePages": [
+            {
+                "body": "Initial release",
+                "version": "0.1.0",
+                "timestamp": 1734216881000,
+                "url": "https://github.com/buanjautista/cc-combo-weapons/releases/tag/v0.1.0"
+            }
+        ]
+    },
     "cc-discord": {
         "metadataCCMod": {
             "id": "cc-discord",
