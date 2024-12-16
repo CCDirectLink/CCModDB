@@ -4650,7 +4650,7 @@
     "mw-rando": {
         "metadataCCMod": {
             "id": "mw-rando",
-            "version": "0.6.2",
+            "version": "0.6.3",
             "title": "Multiworld randomizer",
             "description": "Client for CrossCode Archipelago Integration",
             "repository": "https://github.com/CodeTriangle/CCMultiworldRandomizer",
@@ -4671,16 +4671,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.2/CCMultiworldRandomizer-0.6.2.ccmod",
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.3/CCMultiworldRandomizer-0.6.3.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "559b6bb26b0d325d15e9c0e0cf2fe1aa7eb9d07969911668b7e715b88a1c12c9"
+                    "sha256": "0fd7555dd03d06ba48e33d5c4d89c9ea8316701f0858535104fb0c46161e7df9"
                 }
             }
         ],
         "stars": 10,
         "lastUpdateTimestamp": 1734310554000,
         "releasePages": [
+            {
+                "body": "## Fixes to Mod\r\n\r\n* Roll back experimental changes unintentionally included in 0.6.2.\r\n\r\n## Fixes to YAML\r\n\r\n* Added additional help text indicating that hints are only sent for useful and progression items when Quest Dialog Hints and/or Shop Dialog Hints are enabled.",
+                "version": "0.6.3",
+                "timestamp": 1734310554000,
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.6.3"
+            },
             {
                 "body": "## Changes to APWorld\r\n\r\n* Switch to Archipelago 0.5.1.\r\n\r\n## Changes to Generation\r\n\r\n* Renamed all checks of the pattern **Rookie Harbor Post-[Dungeon]** to **[Dungeon] Circuit Override**.\r\n  * While it is true that the map is located in Rookie Harbor in the game files, this is not obvious to the player as it just appears to be located in space. The names have been changed to reflect their purpose rather than the technical reasoning behind them.\r\n\r\n## Fixes to Generation\r\n\r\n* Fixed a major issue where all shops located in Rhombus Square were considered to be in Sapphire Ridge instead, rendering many games unbeatable.\r\n* Fixed an issue where the chest **Garden: Chilled Den** was considered accessible without Heat.\r\n* Fixed an issue where the shop slots in **Ba'kii Items + Green Seed** were considered accessible without the Green Seed Shade\r\n* Fixed an issue where the quest **Maroon Defeat** was considered accessible without Heat.\r\n* Fixed an issue where the quest **Henry Trailblazing** was considered accessible without Meteor Shade.\r\n* Fixed an issue where the quest **Crocus Pocus** was considered accessible without Meteor Shade.",
                 "version": "0.6.2",
