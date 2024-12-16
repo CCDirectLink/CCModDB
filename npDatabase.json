@@ -4650,7 +4650,7 @@
     "mw-rando": {
         "metadataCCMod": {
             "id": "mw-rando",
-            "version": "0.6.1",
+            "version": "0.6.2",
             "title": "Multiworld randomizer",
             "description": "Client for CrossCode Archipelago Integration",
             "repository": "https://github.com/CodeTriangle/CCMultiworldRandomizer",
@@ -4671,15 +4671,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.1/CCMultiworldRandomizer-0.6.1.ccmod",
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.2/CCMultiworldRandomizer-0.6.2.ccmod",
+                "source": "",
                 "hash": {
-                    "sha256": "cd4ed9a436f615f4a433dff0fec998fd2149aaa355324354a355d00b1ccd557c"
+                    "sha256": "559b6bb26b0d325d15e9c0e0cf2fe1aa7eb9d07969911668b7e715b88a1c12c9"
                 }
             }
         ],
-        "stars": 7,
-        "lastUpdateTimestamp": 1724963325000,
+        "stars": 10,
+        "lastUpdateTimestamp": 1734310554000,
         "releasePages": [
+            {
+                "body": "## Changes to APWorld\r\n\r\n* Switch to Archipelago 0.5.1.\r\n\r\n## Changes to Generation\r\n\r\n* Renamed all checks of the pattern **Rookie Harbor Post-[Dungeon]** to **[Dungeon] Circuit Override**.\r\n  * While it is true that the map is located in Rookie Harbor in the game files, this is not obvious to the player as it just appears to be located in space. The names have been changed to reflect their purpose rather than the technical reasoning behind them.\r\n\r\n## Fixes to Generation\r\n\r\n* Fixed a major issue where all shops located in Rhombus Square were considered to be in Sapphire Ridge instead, rendering many games unbeatable.\r\n* Fixed an issue where the chest **Garden: Chilled Den** was considered accessible without Heat.\r\n* Fixed an issue where the shop slots in **Ba'kii Items + Green Seed** were considered accessible without the Green Seed Shade\r\n* Fixed an issue where the quest **Maroon Defeat** was considered accessible without Heat.\r\n* Fixed an issue where the quest **Henry Trailblazing** was considered accessible without Meteor Shade.\r\n* Fixed an issue where the quest **Crocus Pocus** was considered accessible without Meteor Shade.",
+                "version": "0.6.2",
+                "timestamp": 1734310554000,
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.6.2"
+            },
             {
                 "body": "## Changes to Mod\r\n\r\n* Added a \"locked\" icon to shop slots which are not able to be purchased due to not having received the unlock item for that slot.\r\n\r\n## Changes to Generation\r\n\r\n* Added two previously-unavailable shops: **Vermillion Items** and **Vermillion Weapons**.\r\n\r\n## Fixes to Generation\r\n\r\n* The following locations have had their conditions updated to match what is required by the game:\r\n  * **Bull on Fire** (added requirement for Cold element)\r\n  * **Training with the Master** (added requirement for Blue Ice Shade)\r\n  * **Rooting for Power** (added requirement for Wave element)\r\n  * **Trail: Horncave** (requires access to Goatfather quest conditions)",
                 "version": "0.6.1",
