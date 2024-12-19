@@ -2977,6 +2977,57 @@
             }
         ]
     },
+    "clock-tower": {
+        "metadataCCMod": {
+            "id": "clock-tower",
+            "version": "0.0.5",
+            "title": "Clock Tower",
+            "description": "A custom dungeon located in Gaia's Garden (WIP)",
+            "repository": "https://github.com/buanjautista/cc-shock-quest",
+            "tags": [
+                "maps",
+                "puzzle"
+            ],
+            "authors": "buanjautista",
+            "dependencies": {
+                "item-api": "^0.4.0",
+                "cc-combo-weapons": "^0.1.0"
+            },
+            "prestart": "mod.js"
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/buanjautista/cc-shock-quest/releases/download/v0.0.5-alpha/cc-clocktower-v0.0.5-alpha.ccmod",
+                "source": "",
+                "hash": {
+                    "sha256": "22f028085120afbbf032e8d624f5642b19f6d0eb4351b116d5a046279982244f"
+                }
+            }
+        ],
+        "stars": 2,
+        "lastUpdateTimestamp": 1734615002000,
+        "releasePages": [
+            {
+                "body": "\r\n- Fixed the other enemy AI freeze on right side of F1.\r\n- Opened last puzzle room for showing purposes until the dungeon is finished.\r\n- Moved combo weapons to a separate dependency library\r\n",
+                "version": "0.0.5-alpha",
+                "timestamp": 1734615002000,
+                "url": "https://github.com/buanjautista/cc-shock-quest/releases/tag/v0.0.5-alpha"
+            },
+            {
+                "body": "Fixes: \r\n- Enemy AI freezing after going through the floor 1 left room fight\r\n- Rails in Harbor Parkour now work (darn the fence only working with 8-multiple size)\r\n\r\nNew: \r\n- Item combos now work, for now only the Twin Edge combo\r\n- A few crafters in Silent Pond\r\n\r\nChanges:\r\n- Details on Silent Pond and other maps\r\n- The area is now on a separate floor inside Gaia's Garden",
+                "version": "0.0.4-alpha",
+                "timestamp": 1714433493000,
+                "url": "https://github.com/buanjautista/cc-shock-quest/releases/tag/v0.0.4-alpha"
+            },
+            {
+                "body": "A small first alpha version of the features of the mod.\r\n\r\nContains early versions of the Clock Tower dungeon, a rough layout of the parkour maps, and extra maps/items added in Gaia's Garden.\r\n\r\nalpha3: hopefully fixes compatibility with other mods\r\n\r\nRequires item-api: https://github.com/CCDirectLink/item-api/releases",
+                "version": "0.0.3-alpha",
+                "timestamp": 1705364401000,
+                "url": "https://github.com/buanjautista/cc-shock-quest/releases/tag/v0.0.3-alpha"
+            }
+        ]
+    },
     "crosscode-tweak-pack": {
         "metadataCCMod": {
             "id": "crosscode-tweak-pack",
