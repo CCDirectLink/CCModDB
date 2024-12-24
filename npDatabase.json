@@ -4550,6 +4550,35 @@
             }
         ]
     },
+    "lub-summoner-frame": {
+        "metadataCCMod": {
+            "id": "lub-summoner-frame",
+            "version": "0.0.2",
+            "title": {
+                "en_US": "Lubkuluk's Summoner Frame"
+            },
+            "description": {
+                "en_US": "A mod that implements a code to make advanced changes to enemies"
+            },
+            "icons": {
+                "24": "icon.png"
+            },
+            "prestart": "prestart.js",
+            "dependencies": {
+                "Simplify": ">=2.12.1"
+            }
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/user-attachments/files/18241046/lub-summoner-frame.zip",
+                "source": "lub-summoner-frame",
+                "hash": {
+                    "sha256": "5db4dc7bfa8eff899d1f4f30a8c83871ad796023a1bd6b1190d13279a1e438de"
+                }
+            }
+        ]
+    },
     "map-watch": {
         "metadataCCMod": {
             "id": "map-watch",
