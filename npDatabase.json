@@ -4452,17 +4452,19 @@
     "lqm-joern-mod": {
         "metadataCCMod": {
             "id": "lqm-joern-mod",
-            "version": "0.5.73",
+            "version": "0.5.74",
             "title": {
-                "en_US": "Lubkuluk's \\c[7]Quadroguard\\c[0] Mod \\i[class-quadro] \\c[1](WIP)"
+                "en_US": "Lubkuluk's Playable Classes \\i[class-quadro] \\c[1](WIP)"
             },
             "description": {
-                "en_US": "Adds Playable Quadroguards and Custom PvP content. \\c[1]Is in early access, expect some bugs.\\c[0]"
+                "en_US": "Adds Playable Quadroguards alongside Summoners and Custom PvP content. \\c[1]Is in early access, expect some bugs.\\c[0]"
             },
             "repository": "https://github.com/lubkuluk/lubkuluks-joern-mod",
             "tags": [
                 "player character",
-                "party member"
+                "party member",
+                "pvp duel",
+                "combat arts"
             ],
             "authors": [
                 "Lubkuluk",
@@ -4478,22 +4480,31 @@
             "poststart": "poststart.js",
             "dependencies": {
                 "extendable-severed-heads": ">=1.1.0",
-                "xenons-playable-classes": ">=2.0.0"
+                "xenons-playable-classes": ">=2.0.0",
+                "cc-alybox": ">=1.0.0",
+                "post-game": ">=1.4.0",
+                "lub-summoner-frame": ">=0.0.2"
             }
         },
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/lubkuluk/lubkuluks-joern-mod/releases/download/0.5.73/lubkuluks-quadroguard-mod.zip",
-                "source": "lubkuluks-quadroguard-mod",
+                "url": "https://github.com/user-attachments/files/18240801/lubkuluks-playable-classes.zip",
+                "source": "lubkuluks-playable-classes",
                 "hash": {
-                    "sha256": "ec78d505aa0570a9c8225689843f37bf7ff56a57bca94ef8e51e8e4c3fd5a69e"
+                    "sha256": "2ac12dc9547c4f70e3c77d1650b6cb2ac30612c645a6d449156dc48eff101a0d"
                 }
             }
         ],
         "stars": 1,
         "lastUpdateTimestamp": 1712076955000,
         "releasePages": [
+            {
+                "body": "[lubkuluks-playable-classes.zip](https://github.com/user-attachments/files/18240801/lubkuluks-playable-classes.zip)\r\n",
+                "version": "0.5.74",
+                "timestamp": 1712076955000,
+                "url": "https://github.com/lubkuluk/lubkuluks-joern-mod/releases/tag/0.5.74"
+            },
             {
                 "body": "",
                 "version": "0.5.73",
