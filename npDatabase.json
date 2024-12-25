@@ -4452,17 +4452,19 @@
     "lqm-joern-mod": {
         "metadataCCMod": {
             "id": "lqm-joern-mod",
-            "version": "0.5.73",
+            "version": "0.5.74",
             "title": {
-                "en_US": "Lubkuluk's \\c[7]Quadroguard\\c[0] Mod \\i[class-quadro] \\c[1](WIP)"
+                "en_US": "Lubkuluk's Playable Classes \\i[class-quadro] \\c[1](WIP)"
             },
             "description": {
-                "en_US": "Adds Playable Quadroguards and Custom PvP content. \\c[1]Is in early access, expect some bugs.\\c[0]"
+                "en_US": "Adds Playable Quadroguards alongside Summoners and Custom PvP content. \\c[1]Is in early access, expect some bugs.\\c[0]"
             },
             "repository": "https://github.com/lubkuluk/lubkuluks-joern-mod",
             "tags": [
                 "player character",
-                "party member"
+                "party member",
+                "pvp duel",
+                "combat arts"
             ],
             "authors": [
                 "Lubkuluk",
@@ -4478,22 +4480,31 @@
             "poststart": "poststart.js",
             "dependencies": {
                 "extendable-severed-heads": ">=1.1.0",
-                "xenons-playable-classes": ">=2.0.0"
+                "xenons-playable-classes": ">=2.0.0",
+                "cc-alybox": ">=1.0.0",
+                "post-game": ">=1.4.0",
+                "lub-summoner-frame": ">=0.0.2"
             }
         },
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/lubkuluk/lubkuluks-joern-mod/releases/download/0.5.73/lubkuluks-quadroguard-mod.zip",
-                "source": "lubkuluks-quadroguard-mod",
+                "url": "https://github.com/lubkuluk/lubkuluks-joern-mod/releases/download/0.5.74/lubkuluks-playable-classes.zip",
+                "source": "lubkuluks-playable-classes",
                 "hash": {
-                    "sha256": "ec78d505aa0570a9c8225689843f37bf7ff56a57bca94ef8e51e8e4c3fd5a69e"
+                    "sha256": "2ac12dc9547c4f70e3c77d1650b6cb2ac30612c645a6d449156dc48eff101a0d"
                 }
             }
         ],
         "stars": 1,
         "lastUpdateTimestamp": 1712076955000,
         "releasePages": [
+            {
+                "body": "0.5.74\r\n\r\n\r\n## Important Change\r\n\r\n- Now merged with the previosuly unreleased Starcaller Mod, which included a summoner class\r\n- Completely reverted Hammer/Axe melee attacks, hammer throw combat arts no longer change melee attacks\r\n- Reworked ranged attacks to shoot wide waves slowly\r\n- Introduced an \"Empowered\" Mechanic which works by absorbing damage with shield to strengthen your attacks\r\n- Hammer Throw combat art type discontinued (Arts are present, I'll just not do Hammer Throw related arts)\r\n\r\n## New Content\r\n\r\n- A WIP Maroon Valley PvP implemented before the Apollo fight consisting of 2 unique fights\r\n\r\n## Combat Art Changes\r\n\r\n- Added WIP Combat Art: Amber Slash\r\n\r\n### Misc Changes\r\n\r\n- Enemy Retreating bgm loop fixed by XenonA7 (thank you)\r\n\r\n### Buffs\r\n\r\n- Buffed each Ramping Strike's hits slightly and buffed the final slash's damage more\r\n- Ramping Strike's dash distance and duration per slash decreased, making it easier to land each hit\r\n- When Command: Attack is active, the hammer periodicaly shoots out hammers as if you landed a charged hit, total duration is decreased by 5 seconds to compensate\r\n- Electro-Charged Fortress' lightnings now properly move forward if no target is detected\r\n\r\n### Nerfs\r\n\r\n- Bergen Trail pvp enemy joern is no longer immortal (significantly nerfed his shield which he likes to use a lot)\r\n- The nerf above also now allows his shield to be properly broken, so try pressuring him when he keeps doing that\r\n- Bergen Trail pvp enemy joern is now a bit less evasive and spams his shield a bit less\r\n\r\n### Fixes\r\n\r\n- Fixed wip Joern PvP not using correct animations\r\n- Also fixed him using an undefined action, which used to crash the game\r\n- Fixed bergen trail accidentaly using the enemy version of Emilie, which crashed the game after the PvP ended\r\n- Fixed emilie not regenerating properly, which was caused by the same reason",
+                "version": "0.5.74",
+                "timestamp": 1712076955000,
+                "url": "https://github.com/lubkuluk/lubkuluks-joern-mod/releases/tag/0.5.74"
+            },
             {
                 "body": "",
                 "version": "0.5.73",
