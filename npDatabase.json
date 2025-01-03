@@ -4564,7 +4564,7 @@
     "lub-summoner-frame": {
         "metadataCCMod": {
             "id": "lub-summoner-frame",
-            "version": "0.0.2",
+            "version": "0.0.2-1",
             "title": {
                 "en_US": "Lubkuluk's Summoner Frame"
             },
@@ -4578,9 +4578,6 @@
                 "library"
             ],
             "repository": "https://github.com/lubkuluk/lub-summoner-frame",
-            "icons": {
-                "24": "icon.png"
-            },
             "prestart": "prestart.js",
             "dependencies": {
                 "Simplify": ">=2.12.1"
@@ -4589,16 +4586,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/lubkuluk/lub-summoner-frame/releases/download/0.0.2/lub-summoner-frame.zip",
+                "url": "https://github.com/lubkuluk/lub-summoner-frame/releases/download/0.0.2-1/lub-summoner-frame.zip",
                 "source": "lub-summoner-frame",
                 "hash": {
-                    "sha256": "b32ef52afb5c80afddd16111e7a107673a2f56eaac8916b1b2f8a59193b69122"
+                    "sha256": "309ca64103c6d23a1568f61d21e666aa48c76a06ffd294c7444df79c456fdc1f"
                 }
             }
         ],
         "stars": 0,
         "lastUpdateTimestamp": 1735059617000,
         "releasePages": [
+            {
+                "body": "Fixed missing icon in ccmod.json by removing the entry",
+                "version": "0.0.2-1",
+                "timestamp": 1735059617000,
+                "url": "https://github.com/lubkuluk/lub-summoner-frame/releases/tag/0.0.2-1"
+            },
             {
                 "body": "\r\n",
                 "version": "0.0.2",
