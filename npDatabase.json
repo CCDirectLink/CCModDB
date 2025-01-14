@@ -4761,7 +4761,7 @@
     "mw-rando": {
         "metadataCCMod": {
             "id": "mw-rando",
-            "version": "0.6.3",
+            "version": "0.6.4",
             "title": "Multiworld randomizer",
             "description": "Client for CrossCode Archipelago Integration",
             "repository": "https://github.com/CodeTriangle/CCMultiworldRandomizer",
@@ -4782,16 +4782,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.3/CCMultiworldRandomizer-0.6.3.ccmod",
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.4/CCMultiworldRandomizer-0.6.4.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "0fd7555dd03d06ba48e33d5c4d89c9ea8316701f0858535104fb0c46161e7df9"
+                    "sha256": "0586a7dec4cbc68faf6bdf666f1df74c1d9716a68fb9f02b9f07595a8b525aa1"
                 }
             }
         ],
         "stars": 10,
-        "lastUpdateTimestamp": 1734310554000,
+        "lastUpdateTimestamp": 1736817956000,
         "releasePages": [
+            {
+                "body": "## Changes to Mod\r\n\r\n* Added new password option to connection settings menu.\r\n\r\n## Changes to APWorld\r\n\r\n* Added the following **item groups**:\r\n  * `fillerCommonCons`\r\n  * `fillerCommonDrop`\r\n  * `fillerRareCons`\r\n  * `fillerRareDrop`\r\n  * `fillerEpicCons`\r\n  * `fillerEpicDrop`\r\n  * `fillerLegendary`\r\n  * `required` (note that this one may behave strangely because it contains the set of all items that may be required under any set of options)\r\n  * `pets`\r\n* Added **location groups** for each major area, containing that area's **chests and cutscenes**.\r\n  * `Rookie Harbor`\r\n  * `Autumn's Rise`\r\n  * `Autumn's Fall`\r\n  * `Bergen Trail`\r\n  * `Bergen Village`\r\n  * `Temple Mine`\r\n  * `Maroon Valley`\r\n  * `Faj'ro Temple`\r\n  * `Ba'kii Kum`\r\n  * `Gaia's Garden`\r\n  * `Basin Keep`\r\n  * `Zir'vitar Temple`\r\n  * `Grand Krys'kajo`\r\n  * `So'najiz Temple`\r\n  * `Rhombus Square`\r\n  * `Vermillion Wasteland`",
+                "version": "0.6.4",
+                "timestamp": 1736817956000,
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.6.4"
+            },
             {
                 "body": "## Fixes to Mod\r\n\r\n* Roll back experimental changes unintentionally included in 0.6.2.\r\n\r\n## Fixes to YAML\r\n\r\n* Added additional help text indicating that hints are only sent for useful and progression items when Quest Dialog Hints and/or Shop Dialog Hints are enabled.",
                 "version": "0.6.3",
@@ -4799,7 +4805,7 @@
                 "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.6.3"
             },
             {
-                "body": "## Changes to APWorld\r\n\r\n* Switch to Archipelago 0.5.1.\r\n\r\n## Changes to Generation\r\n\r\n* Renamed all checks of the pattern **Rookie Harbor Post-[Dungeon]** to **[Dungeon] Circuit Override**.\r\n  * While it is true that the map is located in Rookie Harbor in the game files, this is not obvious to the player as it just appears to be located in space. The names have been changed to reflect their purpose rather than the technical reasoning behind them.\r\n\r\n## Fixes to Generation\r\n\r\n* Fixed a major issue where all shops located in Rhombus Square were considered to be in Sapphire Ridge instead, rendering many games unbeatable.\r\n* Fixed an issue where the chest **Garden: Chilled Den** was considered accessible without Heat.\r\n* Fixed an issue where the shop slots in **Ba'kii Items + Green Seed** were considered accessible without the Green Seed Shade\r\n* Fixed an issue where the quest **Maroon Defeat** was considered accessible without Heat.\r\n* Fixed an issue where the quest **Henry Trailblazing** was considered accessible without Meteor Shade.\r\n* Fixed an issue where the quest **Crocus Pocus** was considered accessible without Meteor Shade.",
+                "body": "## Warning\r\n\r\nThis version contains experimental code implementing portions of an upcoming in-game text client. These changes were not meant to be packaged and may be unstable. Use at your own risk.\r\n\r\n## Changes to APWorld\r\n\r\n* Switch to Archipelago 0.5.1.\r\n\r\n## Changes to Generation\r\n\r\n* Renamed all checks of the pattern **Rookie Harbor Post-[Dungeon]** to **[Dungeon] Circuit Override**.\r\n  * While it is true that the map is located in Rookie Harbor in the game files, this is not obvious to the player as it just appears to be located in space. The names have been changed to reflect their purpose rather than the technical reasoning behind them.\r\n\r\n## Fixes to Generation\r\n\r\n* Fixed a major issue where all shops located in Rhombus Square were considered to be in Sapphire Ridge instead, rendering many games unbeatable.\r\n* Fixed an issue where the chest **Garden: Chilled Den** was considered accessible without Heat.\r\n* Fixed an issue where the shop slots in **Ba'kii Items + Green Seed** were considered accessible without the Green Seed Shade\r\n* Fixed an issue where the quest **Maroon Defeat** was considered accessible without Heat.\r\n* Fixed an issue where the quest **Henry Trailblazing** was considered accessible without Meteor Shade.\r\n* Fixed an issue where the quest **Crocus Pocus** was considered accessible without Meteor Shade.",
                 "version": "0.6.2",
                 "timestamp": 1734310554000,
                 "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.6.2"
