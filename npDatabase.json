@@ -110,16 +110,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.25.2/v2.14.2.zip",
-                "source": "CCLoader-2.25.2-v2.14.2/assets/mods/ccloader-version-display",
+                "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.25.2/v2.14.3.zip",
+                "source": "CCLoader-2.25.2-v2.14.3/assets/mods/ccloader-version-display",
                 "hash": {
-                    "sha256": "4d70053d315086677467e57485a0e88f18c08817e4d36bad2417e98dfbf559ba"
+                    "sha256": "089a259e250c462868d9eba80ecf0f42c6a2f5ba209bc88233327bbdc308ac47"
                 }
             }
         ],
-        "stars": 39,
-        "lastUpdateTimestamp": 1730456553000,
+        "stars": 43,
+        "lastUpdateTimestamp": 1737199170000,
         "releasePages": [
+            {
+                "body": "* Fixed bugs in the \"simplify\" mod:\r\n  *  `simplify.resources.generatePatches` will no longer throw errors for image assets.\r\n  *  `simplify.resources.generatePatch` will now load an unpatched version of the asset when provided with an asset path.",
+                "version": "v2.25.2/v2.14.3",
+                "timestamp": 1737199170000,
+                "url": "https://github.com/CCDirectLink/CCLoader/releases/tag/v2.25.2/v2.14.3"
+            },
             {
                 "body": "* Updated the mod manager made by @krypciak.",
                 "version": "v2.25.2/v2.14.2",
@@ -752,7 +758,7 @@
     "Simplify": {
         "metadataCCMod": {
             "id": "Simplify",
-            "version": "2.14.2",
+            "version": "2.14.3",
             "title": "Simplify",
             "description": "Library mod for CCLoader2.",
             "repository": "https://github.com/CCDirectLink/CCLoader",
@@ -781,16 +787,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.25.2/v2.14.2.zip",
-                "source": "CCLoader-2.25.2-v2.14.2/assets/mods/simplify",
+                "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.25.2/v2.14.3.zip",
+                "source": "CCLoader-2.25.2-v2.14.3/assets/mods/simplify",
                 "hash": {
-                    "sha256": "4d70053d315086677467e57485a0e88f18c08817e4d36bad2417e98dfbf559ba"
+                    "sha256": "089a259e250c462868d9eba80ecf0f42c6a2f5ba209bc88233327bbdc308ac47"
                 }
             }
         ],
-        "stars": 39,
-        "lastUpdateTimestamp": 1730456553000,
+        "stars": 43,
+        "lastUpdateTimestamp": 1737199170000,
         "releasePages": [
+            {
+                "body": "* Fixed bugs in the \"simplify\" mod:\r\n  *  `simplify.resources.generatePatches` will no longer throw errors for image assets.\r\n  *  `simplify.resources.generatePatch` will now load an unpatched version of the asset when provided with an asset path.",
+                "version": "v2.25.2/v2.14.3",
+                "timestamp": 1737199170000,
+                "url": "https://github.com/CCDirectLink/CCLoader/releases/tag/v2.25.2/v2.14.3"
+            },
             {
                 "body": "* Updated the mod manager made by @krypciak.",
                 "version": "v2.25.2/v2.14.2",
@@ -2303,16 +2315,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.25.2/v2.14.2.zip",
-                "source": "CCLoader-2.25.2-v2.14.2",
+                "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.25.2/v2.14.3.zip",
+                "source": "CCLoader-2.25.2-v2.14.3",
                 "hash": {
-                    "sha256": "4d70053d315086677467e57485a0e88f18c08817e4d36bad2417e98dfbf559ba"
+                    "sha256": "089a259e250c462868d9eba80ecf0f42c6a2f5ba209bc88233327bbdc308ac47"
                 }
             }
         ],
-        "stars": 39,
-        "lastUpdateTimestamp": 1730456553000,
+        "stars": 43,
+        "lastUpdateTimestamp": 1737199170000,
         "releasePages": [
+            {
+                "body": "* Fixed bugs in the \"simplify\" mod:\r\n  *  `simplify.resources.generatePatches` will no longer throw errors for image assets.\r\n  *  `simplify.resources.generatePatch` will now load an unpatched version of the asset when provided with an asset path.",
+                "version": "v2.25.2/v2.14.3",
+                "timestamp": 1737199170000,
+                "url": "https://github.com/CCDirectLink/CCLoader/releases/tag/v2.25.2/v2.14.3"
+            },
             {
                 "body": "* Updated the mod manager made by @krypciak.",
                 "version": "v2.25.2/v2.14.2",
