@@ -4588,7 +4588,7 @@
     "lub-summoner-frame": {
         "metadataCCMod": {
             "id": "lub-summoner-frame",
-            "version": "0.0.3",
+            "version": "0.0.4",
             "title": {
                 "en_US": "Lubkuluk's Summoner Frame"
             },
@@ -4610,16 +4610,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/lubkuluk/lub-summoner-frame/releases/download/0.0.3/lub-summoner-frame.zip",
+                "url": "https://github.com/lubkuluk/lub-summoner-frame/releases/download/0.0.4/lub-summoner-frame.zip",
                 "source": "lub-summoner-frame",
                 "hash": {
-                    "sha256": "ef95ecbef056e346584ff0bf9a7b0d8f93c772d9d2ccc6910f0c5cee108ceb6b"
+                    "sha256": "b8aed45938aa721f0395e224a8ee74da33168952ad960a8528965d194de42b65"
                 }
             }
         ],
         "stars": 0,
         "lastUpdateTimestamp": 1735059617000,
         "releasePages": [
+            {
+                "body": "Fixed a bug that interrupts the flow of pvp logic not related to this mod",
+                "version": "0.0.4",
+                "timestamp": 1735059617000,
+                "url": "https://github.com/lubkuluk/lub-summoner-frame/releases/tag/0.0.4"
+            },
             {
                 "body": "Fixed missing icon in ccmod.json by removing the entry",
                 "version": "0.0.3",
