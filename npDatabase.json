@@ -1,4 +1,49 @@
 {
+    "Azure's Adjustments": {
+        "metadataCCMod": {
+            "id": "Azure's Adjustments",
+            "version": "1.0.4",
+            "title": "Azure's Adjustments",
+            "description": {
+                "en_US": "Lots of small fixes, balancing, and other tweaks, recommended for a first playthrough."
+            },
+            "repository": "https://github.com/Azure-Lazuline/azures-adjustments",
+            "tags": [
+                "cosmetic",
+                "fun",
+                "QoL"
+            ],
+            "authors": "Azure Lazuline",
+            "icons": {
+                "24": "icon24.png"
+            },
+            "prestart": "_prestart.js",
+            "poststart": "_poststart.js",
+            "dependencies": {
+                "extension-asset-preloader": ">=1.0.0"
+            }
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/Azure-Lazuline/azures-adjustments/releases/download/1.0.4/azures-adjustments.ccmod",
+                "source": "",
+                "hash": {
+                    "sha256": "4ef43e102329dd0ab30209863f5dd818da68e028110ae28964d6a3acbc2194c3"
+                }
+            }
+        ],
+        "stars": 0,
+        "lastUpdateTimestamp": 1737908094000,
+        "releasePages": [
+            {
+                "body": "- First release in the database. Check the repository for the full list of changes made by the mod.",
+                "version": "1.0.4",
+                "timestamp": 1737908094000,
+                "url": "https://github.com/Azure-Lazuline/azures-adjustments/releases/tag/1.0.4"
+            }
+        ]
+    },
     "Boki Colors": {
         "metadataCCMod": {
             "id": "Boki Colors",
