@@ -4836,7 +4836,7 @@
     "mw-rando": {
         "metadataCCMod": {
             "id": "mw-rando",
-            "version": "0.6.4",
+            "version": "0.6.5",
             "title": "Multiworld randomizer",
             "description": "Client for CrossCode Archipelago Integration",
             "repository": "https://github.com/CodeTriangle/CCMultiworldRandomizer",
@@ -4850,23 +4850,29 @@
                 "24": "icon-24.png"
             },
             "dependencies": {
-                "open-world": ">=0.3.2",
+                "open-world": ">=0.4.1",
                 "nax-ccuilib": ">=1.2.4"
             }
         },
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.4/CCMultiworldRandomizer-0.6.4.ccmod",
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.5/CCMultiworldRandomizer-0.6.5.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "0586a7dec4cbc68faf6bdf666f1df74c1d9716a68fb9f02b9f07595a8b525aa1"
+                    "sha256": "c5713ddfb82099776511891a3f68eae0aca8770fc011876d345ef7f5469b26fa"
                 }
             }
         ],
         "stars": 10,
-        "lastUpdateTimestamp": 1736817956000,
+        "lastUpdateTimestamp": 1738010031000,
         "releasePages": [
+            {
+                "body": "## Changes to APWorld\r\n\r\n* Added the following new options:\r\n  * `force_filler_local`: If selected, forces all filler items to be placed in your own world.\r\n* Modified **location groups** to be much more helpful. There are now location groups named after each major area which include **all chests, cutscenes, elements, quests, and shops** from those areas. Also, there are now location groups for each area containing **just the checks of each of those categories** if any exist in that area. In total, the location groups of this format now include:\r\n  * `Autumn's Fall`, `Autumn's Fall Chests`, `Autumn's Fall Quests`\r\n  * `Autumn's Rise`, `Autumn's Rise Chests`, `Autumn's Rise Cutscenes`, `Autumn's Rise Quests`\r\n  * `Ba'kii Kum`, `Ba'kii Kum Chests`, `Ba'kii Kum Cutscenes`, `Ba'kii Kum Quests`, `Ba'kii Kum Shops`\r\n  * `Basin Keep`, `Basin Keep Chests`, `Basin Keep Cutscenes`, `Basin Keep Quests`, `Basin Keep Shops`\r\n  * `Bergen Trail`, `Bergen Trail Chests`, `Bergen Trail Quests`, `Bergen Trail Shops`\r\n  * `Bergen Village`, `Bergen Village Chests`, `Bergen Village Cutscenes`, `Bergen Village Quests`, `Bergen Village Shops`\r\n  * `Faj'ro Temple`, `Faj'ro Temple Chests`, `Faj'ro Temple Cutscenes`, `Faj'ro Temple Elements`\r\n  * `Gaia's Garden`, `Gaia's Garden Chests`, `Gaia's Garden Quests`\r\n  * `Grand Krys'kajo`, `Grand Krys'kajo Chests`, `Grand Krys'kajo Cutscenes`\r\n  * `Maroon Valley`, `Maroon Valley Chests`, `Maroon Valley Quests`\r\n  * `Rhombus Square`, `Rhombus Square Chests`, `Rhombus Square Quests`, `Rhombus Square Shops`\r\n  * `Rookie Harbor`, `Rookie Harbor Chests`, `Rookie Harbor Cutscenes`, `Rookie Harbor Quests`, `Rookie Harbor Shops`\r\n  * `Sapphire Ridge`, `Sapphire Ridge Chests`, `Sapphire Ridge Cutscenes`, `Sapphire Ridge Quests`, `Sapphire Ridge Shops`\r\n  * `So'najiz Temple`, `So'najiz Temple Chests`, `So'najiz Temple Cutscenes`, `So'najiz Temple Elements`\r\n  * `Temple Mine`, `Temple Mine Chests`, `Temple Mine Cutscenes`, `Temple Mine Elements`\r\n  * `Vermillion Wasteland`, `Vermillion Wasteland Chests`, `Vermillion Wasteland Shops`\r\n  * `Zir'vitar Temple`, `Zir'vitar Temple Chests`, `Zir'vitar Temple Cutscenes`, `Zir'vitar Temple Elements`",
+                "version": "0.6.5",
+                "timestamp": 1738010031000,
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.6.5"
+            },
             {
                 "body": "## Changes to Mod\r\n\r\n* Added new password option to connection settings menu.\r\n\r\n## Changes to APWorld\r\n\r\n* Added the following **item groups**:\r\n  * `fillerCommonCons`\r\n  * `fillerCommonDrop`\r\n  * `fillerRareCons`\r\n  * `fillerRareDrop`\r\n  * `fillerEpicCons`\r\n  * `fillerEpicDrop`\r\n  * `fillerLegendary`\r\n  * `required` (note that this one may behave strangely because it contains the set of all items that may be required under any set of options)\r\n  * `pets`\r\n* Added **location groups** for each major area, containing that area's **chests and cutscenes**.\r\n  * `Rookie Harbor`\r\n  * `Autumn's Rise`\r\n  * `Autumn's Fall`\r\n  * `Bergen Trail`\r\n  * `Bergen Village`\r\n  * `Temple Mine`\r\n  * `Maroon Valley`\r\n  * `Faj'ro Temple`\r\n  * `Ba'kii Kum`\r\n  * `Gaia's Garden`\r\n  * `Basin Keep`\r\n  * `Zir'vitar Temple`\r\n  * `Grand Krys'kajo`\r\n  * `So'najiz Temple`\r\n  * `Rhombus Square`\r\n  * `Vermillion Wasteland`",
                 "version": "0.6.4",
