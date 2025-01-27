@@ -5724,6 +5724,63 @@
             }
         ]
     },
+    "starcaller-2": {
+        "metadataCCMod": {
+            "id": "starcaller-2",
+            "version": "0.1.0",
+            "title": {
+                "en_US": "Starcaller 2",
+                "de_DE": "Starcaller 2",
+                "fr_FR": "Starcaller 2",
+                "zh_CN": "Starcaller 2",
+                "zh_TW": "Starcaller 2",
+                "ja_JP": "Starcaller 2",
+                "ko_KR": "Starcaller 2"
+            },
+            "description": {
+                "en_US": "XenonA7's take on HeartLychee's \\c[3]Starcaller\\c[0] character.",
+                "de_DE": "XenonA7's take on HeartLychee's \\c[3]Starcaller\\c[0] character.",
+                "fr_FR": "XenonA7's take on HeartLychee's \\c[3]Starcaller\\c[0] character.",
+                "zh_CN": "XenonA7's take on HeartLychee's \\c[3]Starcaller\\c[0] character.",
+                "zh_TW": "XenonA7's take on HeartLychee's \\c[3]Starcaller\\c[0] character.",
+                "ja_JP": "XenonA7's take on HeartLychee's \\c[3]Starcaller\\c[0] character.",
+                "ko_KR": "XenonA7's take on HeartLychee's \\c[3]Starcaller\\c[0] character."
+            },
+            "icons": {
+                "24": "icon.png"
+            },
+            "repository": "",
+            "tags": [
+                "player character",
+                "combat arts"
+            ],
+            "authors": [
+                "HeartLychee",
+                "XenonA7",
+                "Lubkuluk"
+            ],
+            "prestart": "prestart.js",
+            "poststart": "poststart.js",
+            "dependencies": {
+                "crosscode": ">=1.4.0",
+                "post-game": ">=1.4.0",
+                "Simplify": ">=2.12.1",
+                "extendable-severed-heads": ">=1.1.0",
+                "extension-asset-preloader": ">=1.0.0",
+                "cc-alybox": ">=1.1.0"
+            }
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/XenonA7/starcaller-2/archive/refs/tags/0.1.0.zip",
+                "source": "starcaller-2-0.1.0",
+                "hash": {
+                    "sha256": "3bf69227c28fedfaadc91643638d3163022272a072d83a65e384137afb92fe52"
+                }
+            }
+        ]
+    },
     "timer": {
         "metadataCCMod": {
             "id": "timer",
