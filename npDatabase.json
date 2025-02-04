@@ -3771,7 +3771,7 @@
     "element-hair": {
         "metadataCCMod": {
             "id": "element-hair",
-            "version": "1.0.7",
+            "version": "1.1.0",
             "title": "Elemental Hair",
             "description": {
                 "en_US": "Changes Lea's hair color based on her element. (Check the repo for customization!)"
@@ -3784,6 +3784,7 @@
             "icons": {
                 "24": "icon24.png"
             },
+            "postload": "_postload.js",
             "prestart": "_prestart.js",
             "assets": [
                 "data/lang/sc/gui.en_US.json.patch"
@@ -3792,16 +3793,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/Azure-Lazuline/elemental-hair/releases/download/1.0.7/elemental-hair.ccmod",
+                "url": "https://github.com/Azure-Lazuline/elemental-hair/releases/download/1.1.0/elemental-hair.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "79a8f268e6fe93e343d4400d9f535332d6cb2c418521ca634a97d45d5ed52e44"
+                    "sha256": "512fc654cc67efae8e204a0abcb8ba1faf684b219c1cf93539ec1765dcc2ada6"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1731620154000,
+        "lastUpdateTimestamp": 1738698904000,
         "releasePages": [
+            {
+                "body": "- Makes palettes apply to certain cutscenes that were missed before, like looking at Vermillion Tower.\r\n- Improved palettes for a few party members.\r\n- Adds built-in support for all playable characters in Xenon's Playable Classes.\r\n- Lots of new functionality for modders wanting to extend this.",
+                "version": "1.1.0",
+                "timestamp": 1738698904000,
+                "url": "https://github.com/Azure-Lazuline/elemental-hair/releases/tag/1.1.0"
+            },
             {
                 "body": "- Lea's tongue doesn't get recolored if you recolor her outfit\r\n- other small bugfixes\r\n- included some more detailed info for modders making custom palettes for other stuff",
                 "version": "1.0.7",
