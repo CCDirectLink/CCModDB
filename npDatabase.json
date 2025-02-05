@@ -47,7 +47,7 @@
     "Boki Colors": {
         "metadataCCMod": {
             "id": "Boki Colors",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "title": "Boki Colors",
             "description": {
                 "en_US": "Change Lea's palette to Boki's from Copy Kitty, with different ones per-element."
@@ -68,16 +68,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/Azure-Lazuline/boki-colors/releases/download/1.0.0/boki-colors.ccmod",
+                "url": "https://github.com/Azure-Lazuline/boki-colors/releases/download/1.0.1/boki-colors.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "0645050ab903293f9449ec210a09836509a3d87081c4a90f8b8adb769862ed5f"
+                    "sha256": "8a22a8c10e716cffac2d9dc3c5544d8f37012552761a80c659d22432e3142a09"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1731620361000,
+        "lastUpdateTimestamp": 1738711667000,
         "releasePages": [
+            {
+                "body": "- Added recolors to some cutscenes that were missing them\r\n- Fixed incorrect colors on a few obscure animations",
+                "version": "1.0.1",
+                "timestamp": 1738711667000,
+                "url": "https://github.com/Azure-Lazuline/boki-colors/releases/tag/1.0.1"
+            },
             {
                 "body": "- first release",
                 "version": "1.0.0",
