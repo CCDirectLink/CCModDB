@@ -2,10 +2,10 @@
     "Azure's Adjustments": {
         "metadataCCMod": {
             "id": "Azure's Adjustments",
-            "version": "1.0.4",
-            "title": "Azure's Adjustments",
+            "version": "1.1.0",
+            "title": "Azure's Balancing & Extras",
             "description": {
-                "en_US": "Lots of small fixes, balancing, and other tweaks, recommended for a first playthrough."
+                "en_US": "Tons of small fixes, balancing, and UI additions, made with a first playthrough in mind."
             },
             "repository": "https://github.com/Azure-Lazuline/azures-adjustments",
             "tags": [
@@ -20,22 +20,29 @@
             "prestart": "_prestart.js",
             "poststart": "_poststart.js",
             "dependencies": {
+                "cc-alybox": ">=1.1.0",
                 "extension-asset-preloader": ">=1.0.0"
             }
         },
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/Azure-Lazuline/azures-adjustments/releases/download/1.0.4/azures-adjustments.ccmod",
+                "url": "https://github.com/Azure-Lazuline/azures-adjustments/releases/download/1.1.0/azures-adjustments.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "4ef43e102329dd0ab30209863f5dd818da68e028110ae28964d6a3acbc2194c3"
+                    "sha256": "2ca85ee37116ffb9e3f6d40ebfadd6eab101ed1dd45728d3e273d9619d5730de"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1737908094000,
+        "lastUpdateTimestamp": 1739378705000,
         "releasePages": [
+            {
+                "body": "- Traders now show item locations directly in the trade menu. \r\n- You can favorite consumables in the quick menu instead of needing to pause.\r\n- Many other small changes, check the repo for a full list of everything the mod does.",
+                "version": "1.1.0",
+                "timestamp": 1739378705000,
+                "url": "https://github.com/Azure-Lazuline/azures-adjustments/releases/tag/1.1.0"
+            },
             {
                 "body": "- First release in the database. Check the repository for the full list of changes made by the mod.",
                 "version": "1.0.4",
