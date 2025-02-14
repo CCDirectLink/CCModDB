@@ -5280,10 +5280,10 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/buanjautista/cc-open-world/releases/download/0.4.2/cc-open-world-v0.4.2.ccmod",
+                "url": "https://github.com/buanjautista/cc-open-world/releases/download/0.4.2/cc-open-world-v0.4.2-hotfix1.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "4e2de49721ce439d62ead9f991ea3379b82614a37ca6cec6b7938274275fd39f"
+                    "sha256": "8c22266eb19c8243977118407ec64cca3bc417a2afb82e8a698f802b3d93b4ce"
                 }
             }
         ],
