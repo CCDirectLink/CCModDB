@@ -5280,16 +5280,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/buanjautista/cc-open-world/releases/download/0.4.2/cc-open-world-v0.4.2.ccmod",
+                "url": "https://github.com/buanjautista/cc-open-world/releases/download/0.4.2-hotfix1/cc-open-world-v0.4.2-hotfix1.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "4e2de49721ce439d62ead9f991ea3379b82614a37ca6cec6b7938274275fd39f"
+                    "sha256": "8c22266eb19c8243977118407ec64cca3bc417a2afb82e8a698f802b3d93b4ce"
                 }
             }
         ],
         "stars": 3,
         "lastUpdateTimestamp": 1739529392000,
         "releasePages": [
+            {
+                "body": "HOTFIX: \r\n- update plugin file",
+                "version": "0.4.2-hotfix1",
+                "timestamp": 1739529392000,
+                "url": "https://github.com/buanjautista/cc-open-world/releases/tag/0.4.2-hotfix1"
+            },
             {
                 "body": "Fixes: \r\n- Fixed getting stuck on the chest in Maroon Valley's Torn Road if you don't have the corresponding lock.\r\n- Made the visuals for Para Island barrier actually correlate to the barrier deactivated.\r\n- Removed Schneider interactions on guild area to avoid softlocking the Guild Pass check. Guild area should still be accesible with Guild Pass, and First Scholars with Guild Pass and Schneider check (which requires Mine Pass).\r\n- Removed the Quiz and some remainders from First Scholars. It will be more flat than before sorry about that.\r\n\r\nAdd: \r\n- Having maps visited by default should now be a YAML setting for Archipelago CCMultiworldRandomizer, or an option toggeable in Options for CCItemRandomizer.",
                 "version": "0.4.2",
