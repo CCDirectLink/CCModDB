@@ -5264,7 +5264,7 @@
     "open-world": {
         "metadataCCMod": {
             "id": "open-world",
-            "version": "0.4.1",
+            "version": "0.4.2",
             "title": "Open World patches",
             "description": "Open World map patches for randomizer",
             "repository": "https://github.com/buanjautista/cc-open-world",
@@ -5280,16 +5280,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/buanjautista/cc-open-world/releases/download/0.4.1/cc-open-world-v0.4.1.ccmod",
+                "url": "https://github.com/buanjautista/cc-open-world/releases/download/0.4.2/cc-open-world-v0.4.2.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "6113cc2e35123c280c1ab90d1d0e10384659c2737076dbd2524bf5763f75c1ed"
+                    "sha256": "4e2de49721ce439d62ead9f991ea3379b82614a37ca6cec6b7938274275fd39f"
                 }
             }
         ],
         "stars": 3,
-        "lastUpdateTimestamp": 1732103041000,
+        "lastUpdateTimestamp": 1739529392000,
         "releasePages": [
+            {
+                "body": "Fixes: \r\n- Fixed getting stuck on the chest in Maroon Valley's Torn Road if you don't have the corresponding lock.\r\n- Made the visuals for Para Island barrier actually correlate to the barrier deactivated.\r\n- Removed Schneider interactions on guild area to avoid softlocking the Guild Pass check. Guild area should still be accesible with Guild Pass, and First Scholars with Guild Pass and Schneider check (which requires Mine Pass).\r\n- Removed the Quiz and some remainders from First Scholars. It will be more flat than before sorry about that.\r\n\r\nAdd: \r\n- Having maps visited by default should now be a YAML setting for Archipelago CCMultiworldRandomizer, or an option toggeable in Options for CCItemRandomizer.",
+                "version": "0.4.2",
+                "timestamp": 1739529392000,
+                "url": "https://github.com/buanjautista/cc-open-world/releases/tag/0.4.2"
+            },
             {
                 "body": "Fixes: \r\n- Having Emilie in party on the Rookie Harbor intro cutscene would softlock the game.\r\n- Steamy Booze and Steaks second quest now requires Flame Shade instead of Faj'ro.\r\n- D'kar 5th quest requirements now properly work.\r\n- Fixed typo on Temple Mine key intro cutscene.\r\n- Temple Mine B3 being exitable during the fight if you had Heat.\r\n\r\nChanges:\r\n- Added some extra quick details on B3 key cutscene",
                 "version": "0.4.1",
