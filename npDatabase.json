@@ -4856,7 +4856,7 @@
     "mw-rando": {
         "metadataCCMod": {
             "id": "mw-rando",
-            "version": "0.6.5",
+            "version": "0.6.6",
             "title": "Multiworld randomizer",
             "description": "Client for CrossCode Archipelago Integration",
             "repository": "https://github.com/CodeTriangle/CCMultiworldRandomizer",
@@ -4877,16 +4877,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.5/CCMultiworldRandomizer-0.6.5.ccmod",
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.6/CCMultiworldRandomizer-0.6.6.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "c5713ddfb82099776511891a3f68eae0aca8770fc011876d345ef7f5469b26fa"
+                    "sha256": "7382fdb294bc8282b6ab472ffe65fe02b4661c89461be025e62a939597a2d282"
                 }
             }
         ],
         "stars": 10,
-        "lastUpdateTimestamp": 1738010031000,
+        "lastUpdateTimestamp": 1739656510000,
         "releasePages": [
+            {
+                "body": "## Changes to Logic\r\n\r\n* **Chasing the Hologram Frobbit** now requires Heat and Cold.\r\n  * Note that this quest is possible to complete without any elements. You will just no longer be forced to fight the boss without them.\r\n\r\n## Changes to APWorld\r\n\r\n* Added the following options:\r\n  * `exclude_always_quests`: Certain quests are always in the location pool because they hold progression items when playing vanilla CrossCode. If this option is selected (and quest rando is disabled), this option will ensure that none of those locations are populated with progression or useful items. It will also prohibit items from being placed on NPC interactions that give progression items but require working through part of a questline to get to.",
+                "version": "0.6.6",
+                "timestamp": 1739656510000,
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.6.6"
+            },
             {
                 "body": "## Changes to APWorld\r\n\r\n* Added the following new options:\r\n  * `force_filler_local`: If selected, forces all filler items to be placed in your own world.\r\n* Modified **location groups** to be much more helpful. There are now location groups named after each major area which include **all chests, cutscenes, elements, quests, and shops** from those areas. Also, there are now location groups for each area containing **just the checks of each of those categories** if any exist in that area. In total, the location groups of this format now include:\r\n  * `Autumn's Fall`, `Autumn's Fall Chests`, `Autumn's Fall Quests`\r\n  * `Autumn's Rise`, `Autumn's Rise Chests`, `Autumn's Rise Cutscenes`, `Autumn's Rise Quests`\r\n  * `Ba'kii Kum`, `Ba'kii Kum Chests`, `Ba'kii Kum Cutscenes`, `Ba'kii Kum Quests`, `Ba'kii Kum Shops`\r\n  * `Basin Keep`, `Basin Keep Chests`, `Basin Keep Cutscenes`, `Basin Keep Quests`, `Basin Keep Shops`\r\n  * `Bergen Trail`, `Bergen Trail Chests`, `Bergen Trail Quests`, `Bergen Trail Shops`\r\n  * `Bergen Village`, `Bergen Village Chests`, `Bergen Village Cutscenes`, `Bergen Village Quests`, `Bergen Village Shops`\r\n  * `Faj'ro Temple`, `Faj'ro Temple Chests`, `Faj'ro Temple Cutscenes`, `Faj'ro Temple Elements`\r\n  * `Gaia's Garden`, `Gaia's Garden Chests`, `Gaia's Garden Quests`\r\n  * `Grand Krys'kajo`, `Grand Krys'kajo Chests`, `Grand Krys'kajo Cutscenes`\r\n  * `Maroon Valley`, `Maroon Valley Chests`, `Maroon Valley Quests`\r\n  * `Rhombus Square`, `Rhombus Square Chests`, `Rhombus Square Quests`, `Rhombus Square Shops`\r\n  * `Rookie Harbor`, `Rookie Harbor Chests`, `Rookie Harbor Cutscenes`, `Rookie Harbor Quests`, `Rookie Harbor Shops`\r\n  * `Sapphire Ridge`, `Sapphire Ridge Chests`, `Sapphire Ridge Cutscenes`, `Sapphire Ridge Quests`, `Sapphire Ridge Shops`\r\n  * `So'najiz Temple`, `So'najiz Temple Chests`, `So'najiz Temple Cutscenes`, `So'najiz Temple Elements`\r\n  * `Temple Mine`, `Temple Mine Chests`, `Temple Mine Cutscenes`, `Temple Mine Elements`\r\n  * `Vermillion Wasteland`, `Vermillion Wasteland Chests`, `Vermillion Wasteland Shops`\r\n  * `Zir'vitar Temple`, `Zir'vitar Temple Chests`, `Zir'vitar Temple Cutscenes`, `Zir'vitar Temple Elements`",
                 "version": "0.6.5",
