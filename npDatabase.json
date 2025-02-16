@@ -2580,7 +2580,7 @@
     "ccmodmanager": {
         "metadataCCMod": {
             "id": "ccmodmanager",
-            "version": "1.0.2",
+            "version": "1.0.3",
             "title": "CCModManager",
             "description": "Mod manager for CrossCode!",
             "repository": "https://github.com/CCDirectLink/CCModManager",
@@ -2604,16 +2604,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CCDirectLink/CCModManager/releases/download/v1.0.2/ccmodmanager-1.0.2.ccmod",
+                "url": "https://github.com/CCDirectLink/CCModManager/releases/download/v1.0.3/ccmodmanager-1.0.3.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "44050d62f41e3d15cd2985f0f186e012afd86ae382e128251fa32627d7a57f76"
+                    "sha256": "3ea020ccbe470b69bba2c73ccd134940b76270941e2f5e20fe1444d97ec1f5e6"
                 }
             }
         ],
         "stars": 4,
-        "lastUpdateTimestamp": 1730383796000,
+        "lastUpdateTimestamp": 1739698188000,
         "releasePages": [
+            {
+                "body": "### Changed\n\n- Library mods are now shown by default\n- Also print the extension name when it's missing and a mod requires it\n- For CCLoader3, the mod installation dir is now `modloader.config.modsDirs`\n- Improved behavior when there's no internet\n\n### Fixed\n\n- Close mod installation menu on error",
+                "version": "1.0.3",
+                "timestamp": 1739698188000,
+                "url": "https://github.com/CCDirectLink/CCModManager/releases/tag/v1.0.3"
+            },
             {
                 "body": "### Added\n\n- Left clicking a mod in the Settings tab opens the mod's settings menu\n- Add \"preventResettingToDefault\" property on changeable options\n- Add \"thumbWidth\" property on OBJECT_SLIDER\n\n### Changed \n\n- OBJECT_SLIDER thumb size now has a minimum of 30px\n- On game start, all OBJECT_SLIDER values will be put in their bounds\n\n### Fixed\n\n- Left clicking a mod in the Settings tab doesn't crash anymore\n- Fix crash when clicking the \"Reset Settings\" button some mod's setting page\n- Fix top bar buttons like \"Help\" becoming uninteractable after resetting the mod's settings\n- Fix OBJECT_SLIDER not working properly with floating point numbers",
                 "version": "1.0.2",
