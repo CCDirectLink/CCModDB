@@ -420,7 +420,7 @@
     "CrossCode-Brasil": {
         "metadataCCMod": {
             "id": "CrossCode-Brasil",
-            "version": "1.4.1",
+            "version": "1.4.2",
             "title": {
                 "en_US": "Tradução em PT-BR",
                 "de_DE": "Tradução em PT-BR",
@@ -463,16 +463,28 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/RookieBr-2/CrossCode-Brasil-CCloader/releases/download/1.4.1/CrossCode-Brasil.ccmod",
+                "url": "https://github.com/RookieBr-2/CrossCode-Brasil-CCloader/releases/download/v1.4.2/CrossCode-Brasil.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "c48c0cc42a275467a01f8d65d2f70850ca18a579c967a6540ead15fa59cc1cea"
+                    "sha256": "581e79816c9ad3620f568515be407cf3873e763466051371ed63d8cb542c7ce3"
                 }
             }
         ],
-        "stars": 2,
-        "lastUpdateTimestamp": 1728235308000,
+        "stars": 3,
+        "lastUpdateTimestamp": 1737847605000,
         "releasePages": [
+            {
+                "body": "",
+                "version": "1.4.2",
+                "timestamp": 1737847605000,
+                "url": "https://github.com/RookieBr-2/CrossCode-Brasil-CCloader/releases/tag/v1.4.2"
+            },
+            {
+                "body": "Arrumado alguns erros de escrita e E.T.C",
+                "version": "1.4.2",
+                "timestamp": 1737847605000,
+                "url": "https://github.com/RookieBr-2/CrossCode-Brasil-CCloader/releases/tag/1.4.2"
+            },
             {
                 "body": "Arrumado erro de crashes e mais.",
                 "version": "1.4.1",
