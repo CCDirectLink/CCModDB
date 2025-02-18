@@ -5813,7 +5813,7 @@
     "starcaller-2": {
         "metadataCCMod": {
             "id": "starcaller-2",
-            "version": "0.3.0",
+            "version": "0.4.0",
             "title": {
                 "en_US": "Starcaller 2",
                 "de_DE": "Starcaller 2",
@@ -5859,10 +5859,10 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/starcaller-2/archive/refs/tags/0.3.0.zip",
-                "source": "starcaller-2-0.3.0",
+                "url": "https://github.com/XenonA7/starcaller-2/archive/refs/tags/0.4.0.zip",
+                "source": "starcaller-2-0.4.0",
                 "hash": {
-                    "sha256": "493035b2e81463242367083b39e627565eff544a05547a5b6e2481e258bbc3d6"
+                    "sha256": "74cf1a82f489dcd43f6d1a085ecbefe63ae300cfd19b867c1841ea914805fe84"
                 }
             }
         ]
