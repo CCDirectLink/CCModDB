@@ -181,8 +181,8 @@ function testMetadataCCMod(ccmod: PkgCCMod) {
         ).to.be.true
 
         expect(
-            typeof ccmod.repository === 'string',
-            'ccmod.repository (type: string) is missing or has wrong type'
+            typeof ccmod.repository === 'string' && ccmod.repository.length > 0,
+            'ccmod.repository (type: string) is missing, is empty or has wrong type'
         ).to.be.true
 
         expect(
