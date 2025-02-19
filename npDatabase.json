@@ -5813,7 +5813,7 @@
     "starcaller-2": {
         "metadataCCMod": {
             "id": "starcaller-2",
-            "version": "0.3.0",
+            "version": "0.4.1",
             "title": {
                 "en_US": "Starcaller 2",
                 "de_DE": "Starcaller 2",
@@ -5835,7 +5835,7 @@
             "icons": {
                 "24": "icon.png"
             },
-            "repository": "",
+            "repository": "https://github.com/XenonA7/starcaller-2",
             "tags": [
                 "player character",
                 "combat arts"
@@ -5859,11 +5859,45 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/starcaller-2/archive/refs/tags/0.3.0.zip",
-                "source": "starcaller-2-0.3.0",
+                "url": "https://github.com/XenonA7/starcaller-2/archive/refs/tags/0.4.1.zip",
+                "source": "starcaller-2-0.4.1",
                 "hash": {
-                    "sha256": "493035b2e81463242367083b39e627565eff544a05547a5b6e2481e258bbc3d6"
+                    "sha256": "63ccb7c0cd50e7525d959eaed3e03d42c5800f17a3b30a8cf78b360182b36884"
                 }
+            }
+        ],
+        "stars": 0,
+        "lastUpdateTimestamp": 1739930043000,
+        "releasePages": [
+            {
+                "body": "## 0.4.1 (02/18/25)\r\n### Fixes\r\n- Added missing \"repository\" field in ccmod.json",
+                "version": "0.4.1",
+                "timestamp": 1739930043000,
+                "url": "https://github.com/XenonA7/starcaller-2/releases/tag/0.4.1"
+            },
+            {
+                "body": "## 0.4.0 (02/17/25)\r\n### New Content\r\n- New combat art: Blast Zone (Heat Melee Lv.2B)\r\n- New combat art: Moth Strike (Heat Dash Lv.1B)\r\n- New combat art: Frozen Spike (Cold Throw Lv.1A)\r\n- New combat art: Ice Grinder (Cold Guard Lv.1A)\r\n- New ally option: Pumpkin (Heat summon tier 1)\r\n### Changes\r\n- Renamed Tornadic Updraft to Burning Updraft\r\n- Renamed Stardust Rush to Stardust Embers\r\n- Sun Beetle summon ID changed from 1 to 2\r\n- Increased the size of the HEAT_BIG_STAR_GUI particle in effect burningUpdraftPlayerFX\r\n- Added randFlip property to all FLAME1 and FLAME2 particles in all heat effects\r\n- Added a pulsing HEAT_BIG_CIRCLE_GUI to effect burningUpdraftHeatwave\r\n### Fixes\r\n- Fixed ATTACK_FINISHER hitbox to rotate CCW\r\n- Fixed missing BALL_BOUNCE particle in neutral/heat effects starBallBounce\r\n### Balance\r\n- Blazing Star delay between shooting blazingStarWall decreased from 0.10 to 0.09\r\n- Flaming Salvo now grants HEAVY hit stability",
+                "version": "0.4.0",
+                "timestamp": 1739854251000,
+                "url": "https://github.com/XenonA7/starcaller-2/releases/tag/0.4.0"
+            },
+            {
+                "body": "## 0.3.0 (02/09/25)\r\n### New Content\r\n- New combat art: Blazing Star (Heat Throw Lv.2A)\r\n- New combat art: Kindling Rush (Heat Dash Lv.2A)\r\n- New combat art: Tornadic Updraft (Heat Guard Lv.2A)\r\n### Changes\r\n- Deleted spritesheet \"starcaller2 - old.png\"\r\n- Changed animation \"bowl\" sprite timing from 0.1 to 0.075\r\n- Renamed effect flamingSalvoAura to flamingSalvoPlayerFX\r\n### Balance\r\n- Increased Shimmering Bombs cone of fire from 0.02 to 0.03\r\n- Flaming Salvo rock landing distance increased from 40 to 48\r\n- Flaming Salvo damage increased",
+                "version": "0.3.0",
+                "timestamp": 1739086740000,
+                "url": "https://github.com/XenonA7/starcaller-2/releases/tag/0.3.0"
+            },
+            {
+                "body": "## 0.2.0 (02/01/25)\r\n### New Content\r\n- New combat art: Shimmering Bombs (Heat Throw Lv.1A)\r\n- New combat art: Flare Blast (Heat Melee Lv.1B)\r\n- New combat art: Stardust Rush (Heat Dash Lv.1A)\r\n- New combat art: Flaming Salvo (Heat Guard Lv.1A)\r\n- New combat art: Pulsing Flames (Heat Guard Lv.1B)\r\n- New ally option: Sun Beetle (Heat summon tier 2)\r\n### Changes\r\n- Made all SIGNAL hitboxes unguardable\r\n- Deleted cheat-animationViewerProxy from starcaller2 player file\r\n### Fixes\r\n- Fixed allies not properly recognizing when combat ends\r\n- Fixed Hillkat Alley and Rockin' Rampage melee hitbox zHeight\r\n- Fixed Wave Security Brute HP cost not being 25%\r\n### Balance\r\n- Nerfed dice mage ally's status inflict factors for dice attacks\r\n- Increased ally decay factor from 0.008 to 0.009",
+                "version": "0.2.0",
+                "timestamp": 1738457584000,
+                "url": "https://github.com/XenonA7/starcaller-2/releases/tag/0.2.0"
+            },
+            {
+                "body": "## 0.1.0 (01/26/2025)\r\n- Initial Release!\r\n- 14 neutral combat arts\r\n- 3 neutral allies\r\n- 1 wave ally",
+                "version": "0.1.0",
+                "timestamp": 1737953997000,
+                "url": "https://github.com/XenonA7/starcaller-2/releases/tag/0.1.0"
             }
         ]
     },
