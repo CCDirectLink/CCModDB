@@ -4571,7 +4571,7 @@
     "lqm-joern-mod": {
         "metadataCCMod": {
             "id": "lqm-joern-mod",
-            "version": "0.5.75",
+            "version": "0.5.77",
             "title": {
                 "en_US": "Lubkuluk's Playable Classes \\i[class-quadro] \\c[1](WIP)"
             },
@@ -4608,16 +4608,28 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/lubkuluk/lubkuluks-joern-mod/releases/download/0.5.75/lubkuluks-playable-classes.zip",
+                "url": "https://github.com/lubkuluk/lubkuluks-joern-mod/releases/download/0.5.77/lubkuluks-playable-classes.zip",
                 "source": "lubkuluks-playable-classes",
                 "hash": {
-                    "sha256": "e6bd614e8560d167c03821063e7e7f9044af6010051cc2958e34116b8f68231e"
+                    "sha256": "16d59748b03bc21dd514c8cd65f4e748d27397cbd9cf007a5c8af1be66ca1849"
                 }
             }
         ],
         "stars": 1,
-        "lastUpdateTimestamp": 1712076955000,
+        "lastUpdateTimestamp": 1740389979000,
         "releasePages": [
+            {
+                "body": "0.5.77\r\n\r\n## New Content\r\n\r\n- Added a playable Gaia's Garden Team Duel, to participate in it, say Yes and Yes to following prompts\r\n\r\n### New Combat Arts\r\n\r\n- Chilling Slash (Cold Melee Lv1.A)\r\n\r\n- Indigo Advance (Cold Dash Lv2.A) (WIP)\r\n\r\n### Buffs\r\n\r\n- Maroon Valley Emilie can now use Crimson Strike before getting close to melee attack wit 1/2 chance\r\n\r\n### Nerfs\r\n\r\n- Nerfed Maroon Valley Emilie by adding a 3 second cooldown to consecutive guard art usage\r\n- Slightly nerfed Emilie's attack stat and increased hp stat as compensation (overall nerf)\r\n\r\n### Misc Changes\r\n\r\n- Modified every LPC-added pvp enemy to display the corresponding combat art name on use (I may have missed some)",
+                "version": "0.5.77",
+                "timestamp": 1740389389000,
+                "url": "https://github.com/lubkuluk/lubkuluks-joern-mod/releases/tag/0.5.77"
+            },
+            {
+                "body": "##0.5.76\r\n\r\n### Combat Art Changes\r\n\r\n- Added a pulse effect to the start of Crimson Sentinel\r\n- Cube Of Steel damage buffed from 3.75 to 4\r\n\r\n### New Combat Arts\r\n\r\n- Iron Spike (Neutral Throw Lv1.A)\r\n- Winter's Bite (Cold Throw Lv1.A)\r\n- Sure Strike (Neutral Guard Lv1.A)\r\n- Steel Shackle (Neutral Throw Lv2.A)\r\n- Stone Barricade (Neutral Guard Lv2.A)\r\n- Armor Cleaver (Neutral Attack Lv1.B)\r\n\r\n### Buffs\r\n\r\n- Gravity Explode now uses the explosion version on the player itself and now benefits from Brawler modifier instead of Shooter modifier\r\n- Charge! now has a shorter and faster travel, a shorter startup and instead of the hammer effects, it is now a simple dash arts that deals extra damage if the enemy is knocked into a wall\r\n\r\n### Nerfs\r\n\r\n- Empowered Stacks of each type (e.g. Melee/Ranged/Combat Arts) can only be gained up to 4\r\n\r\n### Misc Changes\r\n\r\n- Added \"lighter\" render mode to default and empowered throw attacks (visual change)",
+                "version": "0.5.76",
+                "timestamp": 1712076955000,
+                "url": "https://github.com/lubkuluk/lubkuluks-joern-mod/releases/tag/0.5.76"
+            },
             {
                 "body": "0.5.75\r\n\r\n## New Combat Arts\r\n\r\n- Whirlwind (Neutral Dash Lv1.B)\r\n\r\n### Fixes\r\n\r\n- Removed leftover debug action steps from Ground Fissure which included being able to change joern's combatant party",
                 "version": "0.5.75",
