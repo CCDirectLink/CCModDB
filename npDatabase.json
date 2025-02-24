@@ -4689,7 +4689,7 @@
     "lub-summoner-frame": {
         "metadataCCMod": {
             "id": "lub-summoner-frame",
-            "version": "0.0.4",
+            "version": "0.0.5",
             "title": {
                 "en_US": "Lubkuluk's Summoner Frame"
             },
@@ -4711,16 +4711,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/lubkuluk/lub-summoner-frame/releases/download/0.0.4/lub-summoner-frame.zip",
+                "url": "https://github.com/lubkuluk/lub-summoner-frame/releases/download/0.0.5/lub-summoner-frame.zip",
                 "source": "lub-summoner-frame",
                 "hash": {
-                    "sha256": "b8aed45938aa721f0395e224a8ee74da33168952ad960a8528965d194de42b65"
+                    "sha256": "954dd30c317530280d26179bf000eb53383cacb299f4348b4d233282a46ac1f1"
                 }
             }
         ],
         "stars": 0,
         "lastUpdateTimestamp": 1735059617000,
         "releasePages": [
+            {
+                "body": "Made a small adjustment to the vanilla PvP system to ignore some rules if a variable is true",
+                "version": "0.0.5",
+                "timestamp": 1735059617000,
+                "url": "https://github.com/lubkuluk/lub-summoner-frame/releases/tag/0.0.5"
+            },
             {
                 "body": "Fixed a bug that interrupts the flow of pvp logic not related to this mod",
                 "version": "0.0.4",
