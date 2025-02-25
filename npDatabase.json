@@ -4698,6 +4698,49 @@
             }
         ]
     },
+    "lub-barrier-gui": {
+        "metadataCCMod": {
+            "id": "lub-barrier-gui",
+            "version": "0.0.1",
+            "title": {
+                "en_US": "Lubkuluk's Barrier GUI"
+            },
+            "description": {
+                "en_US": "A mod that implements a code modify to hp bar for barriers"
+            },
+            "authors": [
+                "Lubkuluk"
+            ],
+            "tags": [
+                "library"
+            ],
+            "repository": "https://github.com/lubkuluk/lub-barrier-gui",
+            "prestart": "prestart.js",
+            "dependencies": {
+                "Simplify": ">=2.12.1"
+            }
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/lubkuluk/lub-barrier-gui/releases/download/0.0.1/lub-barrier-gui.zip",
+                "source": "lub-barrier-gui",
+                "hash": {
+                    "sha256": "69d3d798cd007be906731af4420e1ed01d9e49411783e7e7c2d819dd288abfb4"
+                }
+            }
+        ],
+        "stars": 0,
+        "lastUpdateTimestamp": 1740480632000,
+        "releasePages": [
+            {
+                "body": "- Release",
+                "version": "0.0.1",
+                "timestamp": 1740480632000,
+                "url": "https://github.com/lubkuluk/lub-barrier-gui/releases/tag/0.0.1"
+            }
+        ]
+    },
     "lub-summoner-frame": {
         "metadataCCMod": {
             "id": "lub-summoner-frame",
