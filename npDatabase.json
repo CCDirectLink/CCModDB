@@ -5874,7 +5874,7 @@
     "starcaller-2": {
         "metadataCCMod": {
             "id": "starcaller-2",
-            "version": "0.4.1",
+            "version": "0.5.1",
             "title": {
                 "en_US": "Starcaller 2",
                 "de_DE": "Starcaller 2",
@@ -5920,16 +5920,28 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/starcaller-2/archive/refs/tags/0.4.1.zip",
-                "source": "starcaller-2-0.4.1",
+                "url": "https://github.com/XenonA7/starcaller-2/archive/refs/tags/0.5.1.zip",
+                "source": "starcaller-2-0.5.1",
                 "hash": {
-                    "sha256": "63ccb7c0cd50e7525d959eaed3e03d42c5800f17a3b30a8cf78b360182b36884"
+                    "sha256": "c44aaad0601684e5f5c6fac56188328dc072b17d2ad9994fd349153a5fbed400"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1739930043000,
+        "lastUpdateTimestamp": 1740894260000,
         "releasePages": [
+            {
+                "body": "## 0.5.1 (03/01/25)\r\n### Changes\r\n- Bees now have collideCancel 1\r\n### Balance\r\n- Glacial Hive now grants HEAVY hit stability during the art",
+                "version": "0.5.1",
+                "timestamp": 1740894260000,
+                "url": "https://github.com/XenonA7/starcaller-2/releases/tag/0.5.1"
+            },
+            {
+                "body": "## 0.5.0 (03/01/25)\r\n### New Content\r\n- New combat art: Bullet Hail (Cold Throw Lv.1A)\r\n- New combat art: Frigid Spikes (Cold Throw Lv.2B)\r\n- New combat art: Icy Star (Cold Dash Lv.1A)\r\n- New combat art: Crystalline Armor (Cold Guard Lv.1B)\r\n- New combat art: Volatile Ice (Cold Melee Lv.1A)\r\n- New combat art: Glacial Hive (Cold Melee Lv.2A)\r\n### Changes\r\n- Frozen Spike changed from THROW_SPECIAL1_A to THROW_SPECIAL1_B\r\n### Fixes\r\n- Fixed proxy frozenSpikeBullet wrong shadow size",
+                "version": "0.5.0",
+                "timestamp": 1740893222000,
+                "url": "https://github.com/XenonA7/starcaller-2/releases/tag/0.5.0"
+            },
             {
                 "body": "## 0.4.1 (02/18/25)\r\n### Fixes\r\n- Added missing \"repository\" field in ccmod.json",
                 "version": "0.4.1",
