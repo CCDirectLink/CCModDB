@@ -5874,7 +5874,7 @@
     "starcaller-2": {
         "metadataCCMod": {
             "id": "starcaller-2",
-            "version": "0.5.1",
+            "version": "0.6.0",
             "title": {
                 "en_US": "Starcaller 2",
                 "de_DE": "Starcaller 2",
@@ -5920,16 +5920,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/starcaller-2/archive/refs/tags/0.5.1.zip",
-                "source": "starcaller-2-0.5.1",
+                "url": "https://github.com/XenonA7/starcaller-2/archive/refs/tags/0.6.0.zip",
+                "source": "starcaller-2-0.6.0",
                 "hash": {
-                    "sha256": "c44aaad0601684e5f5c6fac56188328dc072b17d2ad9994fd349153a5fbed400"
+                    "sha256": "a18410f19feb7a76871d87ed718c8682749bc01466f7874d657eac5aa80a1918"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1740894260000,
+        "lastUpdateTimestamp": 1740954777000,
         "releasePages": [
+            {
+                "body": "## 0.6.0 (03/02/25)\r\n### New Content\r\n- New ally option: Echinonix (Cold summon tier 1)\r\n- New ally option: Karrotank (Cold summon tier 2)\r\n### Changes\r\n- Improved effect beeTrail particle alignment\r\n- Standardized pumpkin targetDetect settings\r\n### Fixes\r\n- Fixed light duration in effect glacialHiveAppear \r\n- Fixed light size in effect glacialHiveFinalExplode",
+                "version": "0.6.0",
+                "timestamp": 1740954777000,
+                "url": "https://github.com/XenonA7/starcaller-2/releases/tag/0.6.0"
+            },
             {
                 "body": "## 0.5.1 (03/01/25)\r\n### Changes\r\n- Bees now have collideCancel 1\r\n### Balance\r\n- Glacial Hive now grants HEAVY hit stability during the art",
                 "version": "0.5.1",
