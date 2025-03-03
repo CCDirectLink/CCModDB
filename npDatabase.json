@@ -6400,7 +6400,7 @@
     "xenons-playable-classes": {
         "metadataCCMod": {
             "id": "xenons-playable-classes",
-            "version": "2.7.0",
+            "version": "2.7.1",
             "title": {
                 "en_US": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
                 "de_DE": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
@@ -6450,16 +6450,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/2.7.0.zip",
-                "source": "xenons-playable-classes-2.7.0",
+                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/2.7.1.zip",
+                "source": "xenons-playable-classes-2.7.1",
                 "hash": {
-                    "sha256": "7aa8edf3514f86a8eae402ce9f79ee845d715075e0a46e71dc4f8ef1473ebc97"
+                    "sha256": "bfa30fddb2b53c3a9129d6dbe2e8fdc53dc4b3f021f659f72387be66320a0cb3"
                 }
             }
         ],
-        "stars": 22,
-        "lastUpdateTimestamp": 1733730438000,
+        "stars": 23,
+        "lastUpdateTimestamp": 1740970472000,
         "releasePages": [
+            {
+                "body": "## 2.7.1 (03/02/2025)\r\n### New Content\r\n- Added Lubkuluk code to pvp-gui-fix.js to disable speedup on player death using variable tmp.speedUpBlock\r\n- Added sprites for missing directions in Hexacast \"float\" animation\r\n### Changes\r\n- Tweaked the shadowflame version of effect calamityCopyTrail\r\n- Changed rendermode of all neutral SHINE_SPARKLE particles to lighter\r\n- Changed all healing custom skill hitboxes to use the SIGNAL limiter\r\n- Changed cameraInBounds to false for map pvp-triblader-league-c\r\n- Proxies waveRecallCardA and waveRecallCardB are no longer considered threats by enemies\r\n- Added SNOW_BURST particles to start of effect hailBullet2Aura\r\n- Increased SNOWFLAKE1 startDist in effect frigidFlurrySweep1\r\n- Improved vertical alignment/shape for explosion hitbox in proxy frigidFlurryCard\r\n- Ashen Hex, Ashen Inferno, Spark Stream, and Creeping Cold improved vertical hitbox (includes shadowflame variants)\r\n### Fixes\r\n- Fixed issue caused by moving immediately when coming up the elevator in hideout-lobby\r\n- Fixed Icicle Lance missing description\r\n- Fixed instances of string bool values in Hexacast player files\r\n- Fixed instances of file path space padding in Hexacast/Triblader/CustomSkill/Enemy files\r\n- Fixed FADE_COLOR step not working in effect aceOfFlamesCharge\r\n- Deleted duplicate SNOW_BURST_GUI entry in effect file cold.json.patch\r\n- Fixed missing shadow size for proxies hailBullet1, hailBullet2, hailBullet3\r\n### Balance\r\n- Flame Tackle TACKLE hit strength changed from MEDIUM to HEAVY\r\n- Fire Barrage TACKLE hit strength changed from HEAVY to MASSIVE",
+                "version": "2.7.1",
+                "timestamp": 1740970472000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/2.7.1"
+            },
             {
                 "body": "## 2.7.0 (12/09/2024)\r\n### General\r\n- Hexacast litter mod updated to 2.1.0\r\n### New Content\r\n- Added shadowflame variants to all Hexacast heat arts\r\n- Added new penguin-heat-alt enemy (modified sprites by Orco Pixelado), unique attacks not yet implemented\r\n- Added shadowflame-alts.json efffect sheet\r\n### Changes\r\n- Reworked Flamepeng element resist values (now mostly weak to cold, not shock)\r\n- Added \"kills\" value to flamepeng database entry\r\n- Debris particles in effect meteorFinalExplode changed to guiSprites\r\n- Proxy thunderSmallTS now uses new effect boldSmallTS instead of boldSmallNoShakeHex\r\n- Reduced shadowflame melee travel distance\r\n- Moved the following effects to sheet shadowflame-alts\r\n  * firebrandAttackDark \r\n  * augmentedFlamesCharge\r\n  * augmentedFlamesBoom\r\n- Reduced particle count for effect darkFireBoom\r\n### Fixes\r\n- Fixed triblader JADC - no longer stops before edge on standard melee attacks\r\n- Fixed hexacast JADC\r\n- Fixed shadowflame JADC\r\n- Fixed a duplicate json entry for for effect thunderingSparksLightning\r\n- Fixed duplicate grouping for effect icicleLancePlayerHexagons\r\n- Fixed particle delay mismatch in effect icicleLancePillarHexagons\r\n- Fixed shadowflame melee finisher radius being too large\r\n### Balance\r\n- Shadowflame Firebrand is now the powered-up version of Firebrand\r\n- Icicle Lance start delay increased from 0.35s to 0.42s\r\n- Icicle Lance width decreased from 32 to 24\r\n- Icicle Lance final icicles no longer stun enemies\r\n- Shadowflame melee attack rate increased\r\n- Shadowflame melee attack damage slightly decreased",
                 "version": "2.7.0",
