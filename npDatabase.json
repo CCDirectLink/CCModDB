@@ -378,6 +378,44 @@
             }
         ]
     },
+    "CrackCode": {
+        "metadataCCMod": {
+            "id": "CrackCode",
+            "version": "0.0.1",
+            "title": "CrackCode",
+            "description": {
+                "en_US": "A dangerous mod that puts the game on crack, best suited for Prepare To Hi and Arena."
+            },
+            "repository": "https://github.com/Principles1/CrackCode",
+            "tags": [
+                "QoL"
+            ],
+            "authors": "principle",
+            "icons": {},
+            "prestart": "_prestart.js",
+            "dependencies": {}
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/Principles1/CrackCode/archive/refs/tags/v0.0.1.zip",
+                "source": "CrackCode-0.0.1",
+                "hash": {
+                    "sha256": "3a656ff81de4084308ecd3815c0af998a14833d142b93ed4879ce05c44e75a08"
+                }
+            }
+        ],
+        "stars": 0,
+        "lastUpdateTimestamp": 1742068376000,
+        "releasePages": [
+            {
+                "body": "initial mod release",
+                "version": "0.0.1",
+                "timestamp": 1742068376000,
+                "url": "https://github.com/Principles1/CrackCode/releases/tag/v0.0.1"
+            }
+        ]
+    },
     "CrossCode C Edition": {
         "metadataCCMod": {
             "id": "CrossCode C Edition",
