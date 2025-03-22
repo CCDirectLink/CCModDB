@@ -4609,7 +4609,7 @@
     "lqm-joern-mod": {
         "metadataCCMod": {
             "id": "lqm-joern-mod",
-            "version": "0.5.77",
+            "version": "0.5.78",
             "title": {
                 "en_US": "Lubkuluk's Playable Classes \\i[class-quadro] \\c[1](WIP)"
             },
@@ -4646,16 +4646,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/lubkuluk/lubkuluks-joern-mod/releases/download/0.5.77/lubkuluks-playable-classes.zip",
+                "url": "https://github.com/lubkuluk/lubkuluks-joern-mod/releases/download/0.5.78/lubkuluks-playable-classes.zip",
                 "source": "lubkuluks-playable-classes",
                 "hash": {
-                    "sha256": "16d59748b03bc21dd514c8cd65f4e748d27397cbd9cf007a5c8af1be66ca1849"
+                    "sha256": "039a92327d2080ad771330ac5dbefb1fc81686569a97a7328d0ef2162b1a0659"
                 }
             }
         ],
-        "stars": 1,
+        "stars": 2,
         "lastUpdateTimestamp": 1740389979000,
         "releasePages": [
+            {
+                "body": "0.5.78\r\n\r\n## New Content\r\n\r\n- Added a pre fight GUI (parallax) to Bergen Trail team pvp\r\n\r\n### New Combat Arts\r\n\r\n- Chains of Frost (Cold Guard Lv2B)\r\n- Polar Swirl (Cold Melee Lv2A)\r\n\r\n### Buffs\r\n\r\n\r\n\r\n### Nerfs\r\n\r\n\r\n### Misc Changes\r\n\r\n- Added new startup effect on Magma Whirl (Heat dash Lv1A)\r\n- Removed the mention of hammer interractions on several arts, since the idea is discontinued\r\n\r\n## Fixes\r\n\r\n- Fixed a crash caused by joern2 (player) and joern2 (enemy) who had proxies mentioning an image from Arcane Lab which isn't a dependancy\r\n",
+                "version": "0.5.78",
+                "timestamp": 1740389979000,
+                "url": "https://github.com/lubkuluk/lubkuluks-joern-mod/releases/tag/0.5.78"
+            },
             {
                 "body": "0.5.77\r\n\r\n## New Content\r\n\r\n- Added a playable Gaia's Garden Team Duel, to participate in it, say Yes and Yes to following prompts\r\n\r\n### New Combat Arts\r\n\r\n- Chilling Slash (Cold Melee Lv1.A)\r\n\r\n- Indigo Advance (Cold Dash Lv2.A) (WIP)\r\n\r\n### Buffs\r\n\r\n- Maroon Valley Emilie can now use Crimson Strike before getting close to melee attack wit 1/2 chance\r\n\r\n### Nerfs\r\n\r\n- Nerfed Maroon Valley Emilie by adding a 3 second cooldown to consecutive guard art usage\r\n- Slightly nerfed Emilie's attack stat and increased hp stat as compensation (overall nerf)\r\n\r\n### Misc Changes\r\n\r\n- Modified every LPC-added pvp enemy to display the corresponding combat art name on use (I may have missed some)",
                 "version": "0.5.77",
