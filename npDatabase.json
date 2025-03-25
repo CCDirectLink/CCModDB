@@ -6450,7 +6450,7 @@
     "xenons-playable-classes": {
         "metadataCCMod": {
             "id": "xenons-playable-classes",
-            "version": "2.7.1",
+            "version": "2.8.0",
             "title": {
                 "en_US": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
                 "de_DE": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
@@ -6500,16 +6500,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/2.7.1.zip",
-                "source": "xenons-playable-classes-2.7.1",
+                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/2.8.0.zip",
+                "source": "xenons-playable-classes-2.8.0",
                 "hash": {
-                    "sha256": "bfa30fddb2b53c3a9129d6dbe2e8fdc53dc4b3f021f659f72387be66320a0cb3"
+                    "sha256": "00add465dea7f966a7db7aaff98b0cd3e753d118a0b6bd9fbb39720946f66a83"
                 }
             }
         ],
         "stars": 23,
-        "lastUpdateTimestamp": 1740970472000,
+        "lastUpdateTimestamp": 1742885775000,
         "releasePages": [
+            {
+                "body": "## 2.8.0 (03/24/2025)\r\n### Important\r\n- Any equipped custom skills on Hexacast1/2 will need to be re-equipped in the menu after updating\r\n### New Content\r\n- Added the file \"info-for-modders.md\" which documents all code/technical features of XPC\r\n- New Triblader combat art: Shattering Blade (Neutral Melee Lv.1B), Wild Gambit converted to custom skill\r\n- Added limited Triblader custom skill support for old combat arts\r\n- Added teleporters between hideout-southwest and starcaller2 lobby - only active if the Starcaller2 mod is also installed\r\n### Changes\r\n- Reformatted all internal names for Hexacast custom skills belonging to Tri/Sphero from \"csTriblader...\" to \"csHexacastTriblader...\"\r\n- Cursor Teleport no longer has a 0.5 second delay between teleporting and when you are able to walk\r\n- Edited dialogue in hideout-outide cutscene questFirstEntrance to remove post-bergen lea words\r\n- Changed center wall decoration in hideout-hexa to be more hexagonal\r\n- Added new particle effects to triblader effect beeTrail\r\n- Deleted particle BEE_RIPPLE_REV from combat.tribladerXPC effect sheet\r\n- Added pitch variance to all Triblader/Hexacast bee buzzing effects\r\n- Created new effects for Rude Buster\r\n- Proxy rudeBuster modernized as BALL proxy (replaced ancient primitive code)\r\n- Improved triblader effect frozenRayTrail\r\n- Removed plot.xpc.tempQuest (placeholder in flamepeng enemy files)\r\n- Removed unused action step REMOVE_ALL_PROXIES\r\n- Overhauled Blade Aura's effects\r\n- Improved Triforce Slash effects sweepShockDouble and sweepShockDoubleRev\r\n- Added basic throw effect to Spike Ball\r\n- Changed effects, description, and animations for Lightning Strike\r\n- Tribladers now use the same animations in Homing Shards as Lea/Hexacast did in the custom skill version\r\n- Updated effects for proxy neutralKnife (Throwing Knives)\r\n- Deleted ttyd_disapproval.ogg\r\n- Updated effects for Wirbelschlitzer\r\n- Added +2 to all offset z values of Triblader double sweep effects\r\n- Improved and reformatted effects sweepNeutralDouble and sweepNeutralDoubleRev\r\n- Updated sweepNeutralDouble effect alignment in Laser Barrage\r\n- Spike Ball now shows a more complete throw animation\r\n### Fixes\r\n- Fixed animation issue following initial conversation (apollo version) in cheat codes quest\r\n- Fixed repeating 1-frame animations for all particle effects\r\n- Fixed repeating 1-frame animations for all player/enemy/customSkill proxies\r\n- Fixed Rude Buster proxy start position\r\n- Removed unused proxy specialSmall from tribladers\r\n- Fixed all instances of WAIT for time 0.01 in all files (increased to 0.02 minimum standard)\r\n- Fixed Blade Aura effect by showing it on user instead of proxy\r\n- Fixed Blade Aura hitbox offset\r\n- Fixed proxy triforceTrigger sliding on walls for a short time\r\n- Fixed pLight for effect triforceShatter\r\n- Fixed Throwing Knives startDistCollide settings\r\n- Fixed Wirbelschlitzer SWORD1_END particle timing\r\n- Fixed Fire Whirl hitbox zHeight\r\n### Balance\r\n- Rude Buster explosion radius reduced from 24+48 to 24+32\r\n- Blade Aura duration increased from 6 to 8\r\n- Homing Shards now takes half the time to shoot\r\n- Homing Shards damage decreased\r\n- Throwing Knives now has bigger projectiles\r\n- Wirbelschlitzer start delay reduced, damage reduced, hit strength decreased from MASSIVE to HEAVY",
+                "version": "2.8.0",
+                "timestamp": 1742885775000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/2.8.0"
+            },
             {
                 "body": "## 2.7.1 (03/02/2025)\r\n### New Content\r\n- Added Lubkuluk code to pvp-gui-fix.js to disable speedup on player death using variable tmp.speedUpBlock\r\n- Added sprites for missing directions in Hexacast \"float\" animation\r\n### Changes\r\n- Tweaked the shadowflame version of effect calamityCopyTrail\r\n- Changed rendermode of all neutral SHINE_SPARKLE particles to lighter\r\n- Changed all healing custom skill hitboxes to use the SIGNAL limiter\r\n- Changed cameraInBounds to false for map pvp-triblader-league-c\r\n- Proxies waveRecallCardA and waveRecallCardB are no longer considered threats by enemies\r\n- Added SNOW_BURST particles to start of effect hailBullet2Aura\r\n- Increased SNOWFLAKE1 startDist in effect frigidFlurrySweep1\r\n- Improved vertical alignment/shape for explosion hitbox in proxy frigidFlurryCard\r\n- Ashen Hex, Ashen Inferno, Spark Stream, and Creeping Cold improved vertical hitbox (includes shadowflame variants)\r\n### Fixes\r\n- Fixed issue caused by moving immediately when coming up the elevator in hideout-lobby\r\n- Fixed Icicle Lance missing description\r\n- Fixed instances of string bool values in Hexacast player files\r\n- Fixed instances of file path space padding in Hexacast/Triblader/CustomSkill/Enemy files\r\n- Fixed FADE_COLOR step not working in effect aceOfFlamesCharge\r\n- Deleted duplicate SNOW_BURST_GUI entry in effect file cold.json.patch\r\n- Fixed missing shadow size for proxies hailBullet1, hailBullet2, hailBullet3\r\n### Balance\r\n- Flame Tackle TACKLE hit strength changed from MEDIUM to HEAVY\r\n- Fire Barrage TACKLE hit strength changed from HEAVY to MASSIVE",
                 "version": "2.7.1",
