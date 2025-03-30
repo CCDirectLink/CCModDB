@@ -197,6 +197,10 @@ async function getStarsAndTimestamp(
         }
 
         const stars = data.stargazers_count
+        if (!data.branches_url) {
+            console.log(data)
+            throw new Error(`branches_url not found? mod id: ${ccmod?.id}`)
+        }
 
         const branchApiUrl = data.branches_url.replace(/\{\/branch\}/, `/${data.default_branch}`)
         const branchData =
