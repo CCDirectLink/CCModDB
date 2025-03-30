@@ -5876,6 +5876,77 @@
             }
         ]
     },
+    "restored-easter-bunny": {
+        "metadataCCMod": {
+            "id": "restored-easter-bunny",
+            "version": "0.1.5",
+            "title": {
+                "en_US": "Return of the Easter Bunny",
+                "de_DE": "Return of the Easter Bunny",
+                "fr_FR": "Return of the Easter Bunny",
+                "zh_CN": "Return of the Easter Bunny",
+                "zh_TW": "Return of the Easter Bunny",
+                "ja_JP": "Return of the Easter Bunny",
+                "ko_KR": "Return of the Easter Bunny"
+            },
+            "description": {
+                "en_US": "Makes the removed Easter Bunny from an old version return!",
+                "de_DE": "Makes the removed Easter Bunny from an old version return!",
+                "fr_FR": "Makes the removed Easter Bunny from an old version return!",
+                "zh_CN": "Makes the removed Easter Bunny from an old version return!",
+                "zh_TW": "Makes the removed Easter Bunny from an old version return!",
+                "ja_JP": "Makes the removed Easter Bunny from an old version return!",
+                "ko_KR": "Makes the removed Easter Bunny from an old version return!"
+            },
+            "icons": {
+                "24": "icon.png"
+            },
+            "repository": "https://github.com/RookieBr-2/easter-bunny-restored",
+            "prestart": "prestart.js",
+            "tags": [
+                "quests"
+            ],
+            "authors": [
+                "RookieBr",
+                "Lachsen"
+            ],
+            "dependencies": {
+                "item-api": ">=0.4.5"
+            }
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/RookieBr-2/easter-bunny-restored/releases/download/V0.1.5/easter-bunny-restored.ccmod",
+                "source": "",
+                "hash": {
+                    "sha256": "4c23b8b4ae037d44749c4baf31d409f8b14ba8245a4cf5cd71dbfd2040fef669"
+                }
+            }
+        ],
+        "stars": 0,
+        "lastUpdateTimestamp": 1743331808000,
+        "releasePages": [
+            {
+                "body": "Fixed some bugs",
+                "version": "V0.1.5-Easter2",
+                "timestamp": 1743296590000,
+                "url": "https://github.com/RookieBr-2/easter-bunny-restored/releases/tag/V0.1.5-Easter2"
+            },
+            {
+                "body": "Makes the Easter \"Bunny\" return from 2015",
+                "version": "V0.1.5",
+                "timestamp": 1743331808000,
+                "url": "https://github.com/RookieBr-2/easter-bunny-restored/releases/tag/V0.1.5"
+            },
+            {
+                "body": "Easter Bunny that was removed form 2015 returned",
+                "version": "V0.1.5-Easter",
+                "timestamp": 1743289232000,
+                "url": "https://github.com/RookieBr-2/easter-bunny-restored/releases/tag/V0.1.5-Easter"
+            }
+        ]
+    },
     "spin-to-win": {
         "metadataCCMod": {
             "id": "spin-to-win",
