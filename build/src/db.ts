@@ -14,13 +14,18 @@ export async function build(packages: ModMetadatasInput[]): Promise<PackageDB> {
     const result: PackageDB = {}
     const promises: Promise<void>[] = []
 
+    let anyFailed = false
     for (const [, { ccmod, inputs }] of groupByName(packages)) {
-        if (ccmod && !checkCCMod(ccmod)) continue
+        if (ccmod && !checkCCMod(ccmod)) {
+            anyFailed = true
+            continue
+        }
 
         promises.push(buildEntry(result, ccmod, inputs))
     }
 
     await Promise.all(promises)
+    if (anyFailed) throw new Error('ccmod.json errors found, exiting')
     // Both addStarsAndTimestampsToResults and addReleasePages use the GitHub api
     // so it shouldn't be done concurrently
     await addStarsAndTimestampsToResults(result)
