@@ -5885,15 +5885,15 @@
     "restored-easter-bunny": {
         "metadataCCMod": {
             "id": "restored-easter-bunny",
-            "version": "0.1.5",
+            "version": "0.1.6",
             "title": {
-                "en_US": "Return of the Easter Bunny",
-                "de_DE": "Return of the Easter Bunny",
-                "fr_FR": "Return of the Easter Bunny",
-                "zh_CN": "Return of the Easter Bunny",
-                "zh_TW": "Return of the Easter Bunny",
-                "ja_JP": "Return of the Easter Bunny",
-                "ko_KR": "Return of the Easter Bunny"
+                "en_US": "Return of the Easter Bunny (V0.1.5-Easter)",
+                "de_DE": "Return of the Easter Bunny (V0.1.5-Easter)",
+                "fr_FR": "Return of the Easter Bunny (V0.1.5-Easter)",
+                "zh_CN": "Return of the Easter Bunny (V0.1.5-Easter)",
+                "zh_TW": "Return of the Easter Bunny (V0.1.5-Easter)",
+                "ja_JP": "Return of the Easter Bunny (V0.1.5-Easter)",
+                "ko_KR": "Return of the Easter Bunny (V0.1.5-Easter)"
             },
             "description": {
                 "en_US": "Makes the removed Easter Bunny from an old version return!",
@@ -5923,16 +5923,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/RookieBr-2/easter-bunny-restored/releases/download/V0.1.5/easter-bunny-restored.ccmod",
+                "url": "https://github.com/RookieBr-2/easter-bunny-restored/releases/download/0.1.6/easter-bunny-restored.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "4c23b8b4ae037d44749c4baf31d409f8b14ba8245a4cf5cd71dbfd2040fef669"
+                    "sha256": "bdd23213705e341e54e5f27780355bbf3fb09f17decb544fee25fdfd26b1e067"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1743331808000,
+        "lastUpdateTimestamp": 1743439728000,
         "releasePages": [
+            {
+                "body": "Made some changes to fix text and patched `autumn/path-01`",
+                "version": "0.1.6",
+                "timestamp": 1743439728000,
+                "url": "https://github.com/RookieBr-2/easter-bunny-restored/releases/tag/0.1.6"
+            },
             {
                 "body": "Fixed some bugs",
                 "version": "V0.1.5-Easter2",
