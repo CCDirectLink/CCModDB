@@ -2,7 +2,7 @@
     "Azure's Adjustments": {
         "metadataCCMod": {
             "id": "Azure's Adjustments",
-            "version": "1.1.0",
+            "version": "1.1.1",
             "title": "Azure's Balancing & Extras",
             "description": {
                 "en_US": "Tons of small fixes, balancing, and UI additions, made with a first playthrough in mind."
@@ -27,16 +27,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/Azure-Lazuline/azures-adjustments/releases/download/1.1.0/azures-adjustments.ccmod",
+                "url": "https://github.com/Azure-Lazuline/azures-adjustments/releases/download/1.1.1/azures-adjustments.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "2ca85ee37116ffb9e3f6d40ebfadd6eab101ed1dd45728d3e273d9619d5730de"
+                    "sha256": "1afdcb645f7fdbb8e2f94e8b2d9b9dd150610c2ad591fb5ab1d1718b3e8ba7a5"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1739378705000,
+        "lastUpdateTimestamp": 1743384472000,
         "releasePages": [
+            {
+                "body": "- fixed a potential mod conflict\r\n- fixed a few minor visual bugs",
+                "version": "1.1.1",
+                "timestamp": 1743384472000,
+                "url": "https://github.com/Azure-Lazuline/azures-adjustments/releases/tag/1.1.1"
+            },
             {
                 "body": "- Traders now show item locations directly in the trade menu. \r\n- You can favorite consumables in the quick menu instead of needing to pause.\r\n- Many other small changes, check the repo for a full list of everything the mod does.",
                 "version": "1.1.0",
