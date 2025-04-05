@@ -5297,10 +5297,10 @@
     "nax-ccuilib": {
         "metadataCCMod": {
             "id": "nax-ccuilib",
-            "version": "1.2.9",
+            "version": "1.3.0",
             "title": "CCUILib",
             "description": "Library of additional UI elements as well as making existing ones configurable",
-            "repository": "https://github.com/naxane/nax-ccuilib",
+            "repository": "https://github.com/krypciak/nax-ccuilib",
             "tags": [
                 "QoL",
                 "library"
@@ -5318,20 +5318,56 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/naxane/nax-ccuilib/releases/download/v1.2.9/nax-ccuilib.ccmod",
+                "url": "https://github.com/krypciak/nax-ccuilib/releases/download/v1.3.0/nax-ccuilib.ccmod",
                 "hash": {
-                    "sha256": "fed5523fe08d934eea951badd796254a3e2c3f9ad501b4ae11513a1b5bb2d9ab"
+                    "sha256": "03db3d674708d542e12da305db7e4e12c01e1e0dbc1241d723b72a4fec60d036"
                 }
             }
         ],
-        "stars": 1,
-        "lastUpdateTimestamp": 1725017690000,
+        "stars": 0,
+        "lastUpdateTimestamp": 1743837238000,
         "releasePages": [
             {
-                "body": "**Full Changelog**: https://github.com/naxane/nax-ccuilib/commits/v1.2.9\r\nHuge thank you to Krypek for all his hard work :)",
+                "body": "### Fixed\r\n\r\n- Fix crash after clicking an invisible quick menu widget button (#11)\r\n- Switch mod url to krypciak/nax-ccuilib (naxane/ccuilib was archived)\r\n- Fix quick menu widget on focus sounds still playing even if the widget is invisible",
+                "version": "1.3.0",
+                "timestamp": 1743837238000,
+                "url": "https://github.com/krypciak/nax-ccuilib/releases/tag/v1.3.0"
+            },
+            {
+                "body": "### Added\r\n\r\n- Enforce the manual",
                 "version": "1.2.9",
-                "timestamp": 1725017690000,
-                "url": "https://github.com/naxane/nax-ccuilib/releases/tag/v1.2.9"
+                "timestamp": 1724155786000,
+                "url": "https://github.com/krypciak/nax-ccuilib/releases/tag/v1.2.9"
+            },
+            {
+                "body": "### Added \r\n\r\n- Added CCModManager integration (options menu page)\r\n\r\n### Changed\r\n\r\n- Moved the help menu from the quick menu to the mod manager mod's options page",
+                "version": "1.2.8",
+                "timestamp": 1721731239000,
+                "url": "https://github.com/krypciak/nax-ccuilib/releases/tag/v1.2.8"
+            },
+            {
+                "body": "### Changed\r\n\r\n- Force initial quick menu button selection to be on the first ring\r\n\r\n### Fixed\r\n\r\n- Disable ring switching when a popup is over the quick menu\r\n\r\n",
+                "version": "1.2.7",
+                "timestamp": 1716132225000,
+                "url": "https://github.com/krypciak/nax-ccuilib/releases/tag/v1.2.7"
+            },
+            {
+                "body": "### Fixed\r\n\r\n- Fix quick menu edit mode not activating when `Quick Menu Access` is set to `Hold`",
+                "version": "1.2.6",
+                "timestamp": 1711965831000,
+                "url": "https://github.com/krypciak/nax-ccuilib/releases/tag/v1.2.6"
+            },
+            {
+                "body": "",
+                "version": "1.2.5",
+                "timestamp": 1710185033000,
+                "url": "https://github.com/krypciak/nax-ccuilib/releases/tag/v1.2.5"
+            },
+            {
+                "body": "",
+                "version": "1.2.4",
+                "timestamp": 1709654549000,
+                "url": "https://github.com/krypciak/nax-ccuilib/releases/tag/v1.2.4"
             }
         ]
     },
