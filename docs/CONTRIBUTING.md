@@ -18,6 +18,31 @@ You have to publish the mod's source code on a hosting platform.
 Currently, only [GitHub](https://github.com/) is supported.  
 See a guide on how to use GitHub [here](https://docs.github.com/en/get-started/start-your-journey).  
 
+## Packaging
+
+You can package the mod as as either a `.ccmod` or a `.zip`.  
+A `.ccmod` file is really just an `.zip` file with an changed extension to `.ccmod`.  
+Note that `ccmod.json` HAS to be at the root of the archive for a `.ccmod` to work,   
+aka it has to be at the very top of the archive folder structure.  
+
+#### Example
+Good ️✅
+```
+mymod.ccmod/
+  ccmod.json
+  icon.png
+  plugin.js
+```
+
+Bad ❌
+```
+mymod.ccmod/
+  mymod/
+    ccmod.json
+    icon.png
+    plugin.js
+```
+
 ## How to add your mod with LeaBot
 
 [LeaBot](https://github.com/CCDirectLink/ccbot) is the preferred and easiest way to add and update your mod.  
