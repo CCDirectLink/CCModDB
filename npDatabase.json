@@ -6569,7 +6569,7 @@
     "xenons-playable-classes": {
         "metadataCCMod": {
             "id": "xenons-playable-classes",
-            "version": "2.9.0",
+            "version": "2.10.0",
             "title": {
                 "en_US": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
                 "de_DE": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
@@ -6619,16 +6619,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/2.9.0.zip",
-                "source": "xenons-playable-classes-2.9.0",
+                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/2.10.0.zip",
+                "source": "xenons-playable-classes-2.10.0",
                 "hash": {
-                    "sha256": "d4b0887ba7b1f0699f93b46896daa93d96293b47dafbeb52ddea1a1b5800ad7b"
+                    "sha256": "3df33ef9a7a91c69504d50b8d1a4aad8c172ae9690875ad37e550ab0d5902d2a"
                 }
             }
         ],
         "stars": 23,
-        "lastUpdateTimestamp": 1743367460000,
+        "lastUpdateTimestamp": 1743907370000,
         "releasePages": [
+            {
+                "body": "## 2.10.0 (04/05/2025)\r\n### New Content\r\n- New Triblader combat art: Solar Thrust (Heat Melee Lv.1B), Flame Stab converted to custom skill\r\n### Changes\r\n- Added sound effects to Flame Stab (was previously silent)\r\n- Improved effect for Flame Stab\r\n- Reduced screen flash intensity of effect doubleWhirlShoot\r\n- Added subtle screen shake to effects doubleWhirlSweep and doubleWhirlSweepRev\r\n- Improved effect tribladerSweepSmall\r\n- Added particleDurVariance to triangle particles in effect doubleWhirlShoot\r\n- Added weather particles to Flame Turbine\r\n- Improved Flame Turbine effect airSweepLoopTri\r\n- Flame Turbine now jumps back towards a marker placed at the start of the dash instead of blindly backwards\r\n- Improved hitbox vertical offset for proxies flameHitS and flameHitSWeak\r\n- Added snowflake trail to Frozen Rays\r\n- Improved effect snowSweepSpin\r\n- Snowstorm now grants IGNORE collType during melee attack\r\n### Fixes\r\n- Flame Turbine rework should fix all instances where it was previously possible to climb out of bounds\r\n- Fixed Trailblazer missing light source\r\n- Fixed Vermillion Firestorm effect light sources\r\n- Fixed Snowstorm hitbox zHeight\r\n### Balance\r\n- Scorching Rays overall damage slightly increased\r\n- PVP enemies only: Lava Sweep pull force strength increased from RUN_ESCAPE to DASH_ESCAPE\r\n- Frost Rupture delay between swings reduced by 0.8 seconds\r\n- Frozen Rays damage factor increased from 6.4x3 to 7x3\r\n- Snowstorm frozen stars now use startDistCollide DROP instead of CLOSER (won't spawn in walls)",
+                "version": "2.10.0",
+                "timestamp": 1743907370000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/2.10.0"
+            },
             {
                 "body": "## 2.9.0 (03/30/2025)\r\n### New Content\r\n- New Triblader combat art: Double Whirl (Heat Melee Lv.2A), Solar Eruption converted to custom skill\r\n- Added triblader animations spinLongFast and spinLongFastRev\r\n### Changes\r\n- Lea (spheromancer) now uses Triblader-Lea unique effect sprites when using Triblader custom skills\r\n  * Daybreak\r\n  * Sunfury\r\n  * Wave charged shot\r\n- Modernized action steps for Recoil Slash\r\n- Removed camera steps from Recoil Slash\r\n- Overhauled effects for Recoil Slash\r\n- Adjusted lighting parameters for effect rudeBusterExplode\r\n- Deleted smack.ogg, changed hit sound for Gleaming Surge\r\n- Removed camera steps from Lava Sweep\r\n- Lava Sweep pull force now has minimum radius 32 (was 0)\r\n- Improved effect heatSpecialSweepBig (Lava Sweep, Vermillion Firestorm, Trailblazer)\r\n- Improved effect flameWallTriblader\r\n- Improved effect bigSweepDaybreak, reduced screen flash intensity\r\n- Classified Daybreak as INTERRUPT\r\n- Added light sources to the following triblader effects:\r\n  * wirbelschlitzerSweep\r\n  * spikeBallShoot\r\n  * sweepNeutralDouble\r\n  * sweepNeutralDoubleRev\r\n  * triProjectile\r\n  * wervynSweep\r\n  * stabNeutral\r\n  * finisherNeutralBig\r\n  * sweepHeatDouble\r\n  * sweepHeatDoubleRev\r\n  * heatCounterGuard2\r\n  * stabHeatLoopFast\r\n  * daybreakSparks\r\n  * daybreakSparksLite\r\n### Fixes\r\n- Fixed triblader-lea unique sprites for Daybreak, wave charged shot, and Solar Eruption (now a custom skill)\r\n- Fixed Triblader animation spinLongRev having different frame duration thatn spinLong\r\n- Fixed 2.8.0 Wirbelschlitzer changes not applying to some PVP triblader variants\r\n- Fixed Recoil Slash stun and hitbox inconsistencies\r\n- Fixed Kindling Triad stun mechanics and final hit knockback\r\n- Removed inert stun steps from triblader proxy \"flame\"\r\n- Fixed light radius for Fire Saw, Lava Sweep, and Daybreak\r\n- Fixed two instances of name string space padding in Triblader REMOVE_SHIELD steps\r\n- Lava Sweep lingering fire now benefits from MELEE_DMG skillBonus\r\n- Daybreak collateral hitbox zHeight fix\r\n### Balance\r\n- Wirbelschlitzer knockback increased from HEAVY to MASSIVE\r\n- Kindling Triad proxy flamethrowerTriangle is now breakType ACTION (will not continue if player cancels attack)\r\n- Kindling Triad total damage slightly increased\r\n- Recoil Slash damage factor decreased from 6 to 5.25\r\n- Lava Sweep no longer provides a shield to the user, now grants HEAVY hit stability\r\n- Lava Sweep no longer stun locks enemies\r\n- Lava Sweep hit strength decreased from MASSIVE to HEAVY\r\n- Lava Sweep melee damage factor increased from 1.5 to 2.5\r\n- Lava Sweep pull force decreased from DASH_ESCAPE to RUN_ESCAPE\r\n- Lava Sweep lingering fire damage decreased\r\n- Daybreak projectile speed decreased from 800 to 600\r\n- Daybreak impact damage factor decreased from 2 to 0.5\r\n- Daybreak collateral damage factor decreased from 0.8 to 0.6\r\n- Daybreak tick damage factor decreased from 0.4 to 0.275",
                 "version": "2.9.0",
