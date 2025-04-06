@@ -69,7 +69,7 @@ jobs:
                   echo "description: $DESCRIPTION"
 
                   REPO="$(echo "$DATA" | jq -r '.repository')"
-                  RELEASE_NOTES="$(echo "$OUT"" | jq '.[]' | jq -rs '.[0].releasePages[0].body')"
+                  RELEASE_NOTES="$(echo "$OUT" | jq '.[]' | jq -rs '.[0].releasePages[0].body')"
 
                   gh pr edit "${{ github.event.pull_request.number }}" --title "CCBot mod: ${ID}"
                   gh pr comment "${{ github.event.pull_request.number }}" --body "$(printf "Mod info:\n${REPO}\n${TITLE} v${VERSION}\n${DESCRIPTION}")"
