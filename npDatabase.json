@@ -6569,7 +6569,7 @@
     "xenons-playable-classes": {
         "metadataCCMod": {
             "id": "xenons-playable-classes",
-            "version": "2.10.0",
+            "version": "2.11.0",
             "title": {
                 "en_US": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
                 "de_DE": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
@@ -6619,16 +6619,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/2.10.0.zip",
-                "source": "xenons-playable-classes-2.10.0",
+                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/2.11.0.zip",
+                "source": "xenons-playable-classes-2.11.0",
                 "hash": {
-                    "sha256": "3df33ef9a7a91c69504d50b8d1a4aad8c172ae9690875ad37e550ab0d5902d2a"
+                    "sha256": "a137171affb6c2a7fea1addbb01a2caeedaecbe5d4dc48fa17693302e9a61b4e"
                 }
             }
         ],
         "stars": 23,
-        "lastUpdateTimestamp": 1743907370000,
+        "lastUpdateTimestamp": 1744085195000,
         "releasePages": [
+            {
+                "body": "## 2.11.0 (04/07/2025)\r\n### New Content\r\n- New Triblader combat art: Plasma Thrust (Shock Melee Lv.1B), Shadow Spark converted to custom skill\r\n- Added custom levelup animation to triblader-lea. Thanks to Krypek for code framework and HeartLychee for original animation.\r\n- Added a custom head icon and character file for triblader-lea\r\n### Changes\r\n- Recolored all triblader-lea spritesheets, changed the shades of green to be darker than Lychee's original\r\n- Made edits to Triblader2/3/4/5 menu portrait based on suggestions from Rioreur (long overdue)\r\n- Unified color palettes between Triblader4 menu and dialogue portraits\r\n- Updated character-specific custom skill totals listed in the hideout-east info sign\r\n- Spectral Swordsman and Spectral Legion no longer share proxy groups, now possible to use both at once\r\n- Reduced screen flash intensity for effect shockImpactSmall\r\n- Added new spawn effect for Spectral Swordsman\r\n### Fixes\r\n- Fixed proxy fireDaggerStuck rendering too high\r\n- Deleted unused _Shock_Close1Alt (Shadow Spark) from triblader pvp enemies\r\n- The backwards-moving part of Vortex Thrust no longer travels off ledges\r\n- Fixed Phase Jump landing hitbox zHeight and entity alignment\r\n### Balance\r\n- Added a SET_DAMAGE_CEILING to Scorching Rays due to its tendancy to be inconsistnet\r\n- Phase Jump landing damage factor increased from 3 to 8 with no critfactor (huge buff)\r\n- Verdant Infection greatly weakened pull force strength prior to exploding\r\n- Spectral Swordsman now deals quite a bit more damage\r\n- Spectral Swordsman now allows up to 2 active at a time",
+                "version": "2.11.0",
+                "timestamp": 1744085195000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/2.11.0"
+            },
             {
                 "body": "## 2.10.0 (04/05/2025)\r\n### New Content\r\n- New Triblader combat art: Solar Thrust (Heat Melee Lv.1B), Flame Stab converted to custom skill\r\n### Changes\r\n- Added sound effects to Flame Stab (was previously silent)\r\n- Improved effect for Flame Stab\r\n- Reduced screen flash intensity of effect doubleWhirlShoot\r\n- Added subtle screen shake to effects doubleWhirlSweep and doubleWhirlSweepRev\r\n- Improved effect tribladerSweepSmall\r\n- Added particleDurVariance to triangle particles in effect doubleWhirlShoot\r\n- Added weather particles to Flame Turbine\r\n- Improved Flame Turbine effect airSweepLoopTri\r\n- Flame Turbine now jumps back towards a marker placed at the start of the dash instead of blindly backwards\r\n- Improved hitbox vertical offset for proxies flameHitS and flameHitSWeak\r\n- Added snowflake trail to Frozen Rays\r\n- Improved effect snowSweepSpin\r\n- Snowstorm now grants IGNORE collType during melee attack\r\n### Fixes\r\n- Flame Turbine rework should fix all instances where it was previously possible to climb out of bounds\r\n- Fixed Trailblazer missing light source\r\n- Fixed Vermillion Firestorm effect light sources\r\n- Fixed Snowstorm hitbox zHeight\r\n### Balance\r\n- Scorching Rays overall damage slightly increased\r\n- PVP enemies only: Lava Sweep pull force strength increased from RUN_ESCAPE to DASH_ESCAPE\r\n- Frost Rupture delay between swings reduced by 0.8 seconds\r\n- Frozen Rays damage factor increased from 6.4x3 to 7x3\r\n- Snowstorm frozen stars now use startDistCollide DROP instead of CLOSER (won't spawn in walls)",
                 "version": "2.10.0",
