@@ -1365,6 +1365,50 @@
             }
         ]
     },
+    "cc-bgm-crossfade": {
+        "metadataCCMod": {
+            "id": "cc-bgm-crossfade",
+            "version": "1.0.2",
+            "title": "Music crossfade",
+            "description": "Adds API for smoothly switching between the regular and battle background music",
+            "repository": "https://github.com/krypciak/cc-bgm-crossfade",
+            "tags": [
+                "library",
+                "music"
+            ],
+            "authors": "krypek",
+            "icons": {
+                "24": "icon/icon.png"
+            },
+            "plugin": "plugin.js"
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/krypciak/cc-bgm-crossfade/releases/download/v1.0.2/cc-bgm-crossfade-1.0.2.ccmod",
+                "source": "",
+                "hash": {
+                    "sha256": "eace7cfb4449889f523a9f7ef68f58e4163052825f7104972180a83aed02a6da"
+                }
+            }
+        ],
+        "stars": 0,
+        "lastUpdateTimestamp": 1746177436000,
+        "releasePages": [
+            {
+                "body": "### Fixed\n\n- typo fix in 'fieldBattleCrossfade'",
+                "version": "1.0.2",
+                "timestamp": 1746177437000,
+                "url": "https://github.com/krypciak/cc-bgm-crossfade/releases/tag/v1.0.2"
+            },
+            {
+                "body": "Initial release",
+                "version": "1.0.1",
+                "timestamp": 1746176763000,
+                "url": "https://github.com/krypciak/cc-bgm-crossfade/releases/tag/v1.0.1"
+            }
+        ]
+    },
     "cc-blitzkrieg": {
         "metadataCCMod": {
             "id": "cc-blitzkrieg",
