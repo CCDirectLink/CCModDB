@@ -1365,44 +1365,6 @@
             }
         ]
     },
-    "cc-bgm-crossover": {
-        "metadataCCMod": {
-            "id": "cc-bgm-crossover",
-            "version": "1.0.1",
-            "title": "Music crossover",
-            "description": "Adds API for smoothly switching between the regular and battle background music",
-            "repository": "https://github.com/krypciak/cc-bgm-crossover",
-            "tags": [
-                "library",
-                "music"
-            ],
-            "authors": "krypek",
-            "icons": {
-                "24": "icon/icon.png"
-            },
-            "plugin": "plugin.js"
-        },
-        "installation": [
-            {
-                "type": "zip",
-                "url": "https://github.com/krypciak/cc-bgm-crossover/releases/download/v1.0.1/cc-bgm-crossover-1.0.1.ccmod",
-                "source": "",
-                "hash": {
-                    "sha256": "369532f4b9e0141a127fb56fee3fc31c4e984aa5c9e62b7503f55ef6ff2e5af9"
-                }
-            }
-        ],
-        "stars": 0,
-        "lastUpdateTimestamp": 1746176762000,
-        "releasePages": [
-            {
-                "body": "Initial release",
-                "version": "1.0.1",
-                "timestamp": 1746176763000,
-                "url": "https://github.com/krypciak/cc-bgm-crossover/releases/tag/v1.0.1"
-            }
-        ]
-    },
     "cc-blitzkrieg": {
         "metadataCCMod": {
             "id": "cc-blitzkrieg",
