@@ -5047,7 +5047,7 @@
     "mw-rando": {
         "metadataCCMod": {
             "id": "mw-rando",
-            "version": "0.6.6",
+            "version": "0.6.7",
             "title": "Multiworld randomizer",
             "description": "Client for CrossCode Archipelago Integration",
             "repository": "https://github.com/CodeTriangle/CCMultiworldRandomizer",
@@ -5068,18 +5068,24 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.6/CCMultiworldRandomizer-0.6.6.ccmod",
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.7/CCMultiworldRandomizer-0.6.7.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "7382fdb294bc8282b6ab472ffe65fe02b4661c89461be025e62a939597a2d282"
+                    "sha256": "ea1069c02e00b3c189a47f702a783e46e8aa7e25a687674f45150890a9c8b3a1"
                 }
             }
         ],
         "stars": 10,
-        "lastUpdateTimestamp": 1739656510000,
+        "lastUpdateTimestamp": 1746391581000,
         "releasePages": [
             {
-                "body": "## Changes to Logic\r\n\r\n* **Chasing the Hologram Frobbit** now requires Heat and Cold.\r\n  * Note that this quest is possible to complete without any elements. You will just no longer be forced to fight the boss without them.\r\n\r\n## Changes to APWorld\r\n\r\n* Added the following options:\r\n  * `exclude_always_quests`: Certain quests are always in the location pool because they hold progression items when playing vanilla CrossCode. If this option is selected (and quest rando is disabled), this option will ensure that none of those locations are populated with progression or useful items. It will also prohibit items from being placed on NPC interactions that give progression items but require working through part of a questline to get to.",
+                "body": "## Changes to APWorld\r\n\r\n* Removed option `force_filler_local`\r\n\r\n## Fixes to APWorld\r\n\r\n* Fixed an issue where, with certain options, additional copies of certain gear items would be added to the item pool.\r\n\r\n## Fixes to Mod\r\n\r\n* Removed a section of code that breaks with new installations of CCUILib.\r\n* The mod now sends more up-to-date version data to the server, which will be required for Archipelago servers in future releases.",
+                "version": "0.6.7",
+                "timestamp": 1746391581000,
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.6.7"
+            },
+            {
+                "body": "## Changes to Logic\r\n\r\n* **Chase the Hologram Frobbit** now requires Heat and Cold.\r\n  * Note that this quest is possible to complete without any elements. You will just no longer be forced to fight the boss without them.\r\n\r\n## Changes to APWorld\r\n\r\n* Added the following options:\r\n  * `exclude_always_quests`: Certain quests are always in the location pool because they hold progression items when playing vanilla CrossCode. If this option is selected (and quest rando is disabled), this option will ensure that none of those locations are populated with progression or useful items. It will also prohibit items from being placed on NPC interactions that give progression items but require working through part of a questline to get to.\r\n* Added item groups:\r\n  * `Always Quests`: Used internally by `exclude_always_quests`. Contains:\r\n    * `Talatu Introductions`\r\n    * `Bergen Mine Detector`\r\n    * `Ba'kii Shade Statue`\r\n    * `Chase the Hologram Frobbit`\r\n    * `Mushroom Kingdom`.",
                 "version": "0.6.6",
                 "timestamp": 1739656510000,
                 "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.6.6"
