@@ -5341,7 +5341,7 @@
     "nax-ccuilib": {
         "metadataCCMod": {
             "id": "nax-ccuilib",
-            "version": "1.3.0",
+            "version": "1.4.0",
             "title": "CCUILib",
             "description": "Library of additional UI elements as well as making existing ones configurable",
             "repository": "https://github.com/krypciak/nax-ccuilib",
@@ -5354,23 +5354,29 @@
                 "krypek"
             ],
             "dependencies": {
-                "nax-module-cache": ">=1.0.0",
                 "ccmodmanager": ">=0.9.21"
             },
-            "plugin": "nax-ccuilib/plugin.js"
+            "plugin": "plugin.js"
         },
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/nax-ccuilib/releases/download/v1.3.0/nax-ccuilib.ccmod",
+                "url": "https://github.com/krypciak/nax-ccuilib/releases/download/v1.4.0/nax-ccuilib-1.4.0.ccmod",
+                "source": "",
                 "hash": {
-                    "sha256": "03db3d674708d542e12da305db7e4e12c01e1e0dbc1241d723b72a4fec60d036"
+                    "sha256": "b0733385f8b30f4d7fd405b141eac3854166cbe4620872605ee32ef10398e6bd"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1743837238000,
+        "lastUpdateTimestamp": 1746360018000,
         "releasePages": [
+            {
+                "body": "### Added\n\n- Add `nax.ccuilib.InputField#setText`\n\n### Changed\n\n- Rewritten mod to not use impact modules\n- No longer requires the mod `nax-module-cache`\n\n### Fixed\n\n- Fixed random loading inconsistencies on some systems",
+                "version": "1.4.0",
+                "timestamp": 1746359799000,
+                "url": "https://github.com/krypciak/nax-ccuilib/releases/tag/v1.4.0"
+            },
             {
                 "body": "### Fixed\r\n\r\n- Fix crash after clicking an invisible quick menu widget button (#11)\r\n- Switch mod url to krypciak/nax-ccuilib (naxane/ccuilib was archived)\r\n- Fix quick menu widget on focus sounds still playing even if the widget is invisible",
                 "version": "1.3.0",
