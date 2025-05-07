@@ -1368,7 +1368,7 @@
     "cc-bgm-crossfade": {
         "metadataCCMod": {
             "id": "cc-bgm-crossfade",
-            "version": "1.0.2",
+            "version": "1.0.3",
             "title": "Music crossfade",
             "description": "Adds API for smoothly switching between the regular and battle background music",
             "repository": "https://github.com/krypciak/cc-bgm-crossfade",
@@ -1385,16 +1385,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/cc-bgm-crossfade/releases/download/v1.0.2/cc-bgm-crossfade-1.0.2.ccmod",
+                "url": "https://github.com/krypciak/cc-bgm-crossfade/releases/download/v1.0.3/cc-bgm-crossfade-1.0.3.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "eace7cfb4449889f523a9f7ef68f58e4163052825f7104972180a83aed02a6da"
+                    "sha256": "10accacf09493d5dd75e4eca03b27eda1854c045ca5667fab4f1082235025113"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1746177436000,
+        "lastUpdateTimestamp": 1746611166000,
         "releasePages": [
+            {
+                "body": "### Fixed\n\n- Fix BGM stopping when `rankBattle` == `sRankBattle` (#1)\n- Fix BGM not pausing when the game is unfocused mid-transition",
+                "version": "1.0.3",
+                "timestamp": 1746611166000,
+                "url": "https://github.com/krypciak/cc-bgm-crossfade/releases/tag/v1.0.3"
+            },
             {
                 "body": "### Fixed\n\n- typo fix in 'fieldBattleCrossfade'",
                 "version": "1.0.2",
