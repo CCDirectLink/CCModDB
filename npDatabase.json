@@ -6637,7 +6637,7 @@
     "xenons-playable-classes": {
         "metadataCCMod": {
             "id": "xenons-playable-classes",
-            "version": "2.11.1",
+            "version": "2.11.2",
             "title": {
                 "en_US": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
                 "de_DE": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
@@ -6687,16 +6687,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/2.11.1.zip",
-                "source": "xenons-playable-classes-2.11.1",
+                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/2.11.2.zip",
+                "source": "xenons-playable-classes-2.11.2",
                 "hash": {
-                    "sha256": "8ac52579fd4f51fef418a5245804c78004875b7340129a43438b4fdb02d2ddd8"
+                    "sha256": "ef56b30ec26e4cbbcc775e161c346167a3373326495819fc19a291fe5a34115b"
                 }
             }
         ],
         "stars": 23,
-        "lastUpdateTimestamp": 1746171736000,
+        "lastUpdateTimestamp": 1747516447000,
         "releasePages": [
+            {
+                "body": "## 2.11.2 (05/17/2025)\r\n### Changes\r\n- Modernized Spectral Legion clones to use SELECT_RANDOM steps instead of overcomplicated SET_RANDOM_VAR_NUMBER\r\n- Added more triangles to Ether Bomb effects\r\n- Added pLight property to SNOWFLAKE1 particles in effect frozenRayTrail2\r\n- Added SHOCK_SHADOW particles to the rapid attacks in Amber Flurry\r\n- Deleted \\media\\entity\\effects\\darkSwirl.png, particle now uses DLC spritesheet via extension-asset-preloader\r\n- Renamed penguin-heat-alt.json to penguin-heat-elder.json\r\n- Renamed triblader2-freq-arts.json to triblader2-spam.json\r\n- \"Frequent Combat Arts\" arena cup renamed to \"Trigger Happy\"\r\n- PVP tribladers: removed unused dialogue variable from COUNTER_COUNTER reaction\r\n- PVP tribladers: changed optional wait at the end of throw action to be random between 0.2 and 0.5 but not optional\r\n- PVP tribladers now use full bastion shields when they guard with the cold element active\r\n- PVP tribladers can now use the ATTACK_GUARD reaction while throwing default VRPs\r\n- PVP tribladers now swap strategies after getting melee countered\r\n- PVP tribladers no longer move forward while doing ATTACK and ATTACK_REV if they are close enough\r\n### Fixes\r\n- Fixed missing or incorrect light sources for all remaining triblader cold/shock/wave effects\r\n- Fixed hideout-cheat tile data on area map\r\n- Added missing area map data for 2v2 triblader training arena\r\n- Added delay to the end of effect snowBallLandSmall to add delay when looped\r\n- Fixed typo in beekeeperCharge effect name\r\n- Fixed broken loop implementation for effect boldPreLight\r\n- PVP tribladers: fixed missing dust particles on some dodge and navigation actions\r\n- PVP tribladers: fixed rare issue of moving too fast while throwing standard VRPs\r\n- PVP tribladers no longer continue to face towards their target while doing an ATTACK_FINISHER\r\n### Balance\r\n- Vermillion Firestorm now has reversed knockback on the initial sweep\r\n- Ether Bomb explosion damage doubled from 4.0 to 8.0\r\n- Ether Bomb explosion now has critFactor 0.5\r\n- Ether Bomb status factor changed from 2 to 1\r\n- Enemy Vitality Curse HP absorb factor buffed from 0.05 to 0.075 (does not affect player version)\r\n- Enemy Vitality Curse projectile speed buffed from 300 to 400 (does not affect player version)",
+                "version": "2.11.2",
+                "timestamp": 1747516447000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/2.11.2"
+            },
             {
                 "body": "## 2.11.1 (05/02/2025)\r\n### Changes\r\n- Schneider's arena cup lowered to level 70 (closer to the point in the story where it is unlocked)\r\n- Updated Triblader-Lea gif on readme to use new sprites\r\n- Updated Arcane Lab recommended version on readme to 0.1.8\r\n- Chilling Thrust now cancels after the first frozen star if used to dash into a wall\r\n- Updated descriptions in XPC character change signs for triblader lea and characters with custom skills\r\n- Added dust effects to all Triblader neutral arts\r\n- Azure Charge starting effect now uses a triangle particle\r\n- Adjusted sound effect for Gleaming Surge enemy impact\r\n- Improved player trail effect for Heavy Slash\r\n- Removed art-testing-AL.json, which was a quick edit used for testing AL modifier cards\r\n- Removed art-testing-sound-test.json, which was only for a quick feature test in the past\r\n- Changed particles in effect triforceShatter to be renderMode lighter\r\n### Fixes\r\n- Fixed ability to shoot Spike Ball through narrow walls/fences by adding backwards recoil\r\n- Deleted unused legacy triblader proxies noSpikeDmgProxy3s, noSpikeDmgProxy6s, and noSpikeDmgProxy10s\r\n- Removed unused REMOVE_PROXIES references to legacy spikeDmgGroup proxies\r\n- Lea and Hexacasts now show the proper triblader guard animation when using Scattering Shards\r\n- Proxy sentryCardBullet now uses correct renderMode \"lighter\"\r\n- Fixed swapped \"match point\" messages in Schneider's arena duel\r\n### Balance\r\n- Hexacast Sentry Card dash action block reduced from 0.25 to 0.15",
                 "version": "2.11.1",
