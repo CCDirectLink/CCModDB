@@ -5053,7 +5053,7 @@
     "mw-rando": {
         "metadataCCMod": {
             "id": "mw-rando",
-            "version": "0.6.7",
+            "version": "0.6.8",
             "title": "Multiworld randomizer",
             "description": "Client for CrossCode Archipelago Integration",
             "repository": "https://github.com/CodeTriangle/CCMultiworldRandomizer",
@@ -5074,16 +5074,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.7/CCMultiworldRandomizer-0.6.7.ccmod",
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.8/CCMultiworldRandomizer-0.6.8.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "ea1069c02e00b3c189a47f702a783e46e8aa7e25a687674f45150890a9c8b3a1"
+                    "sha256": "c0a66d86a59dc95490ce0a1ee9e3926cef5cb3a8d58f22aae0e8d54698a1cc39"
                 }
             }
         ],
         "stars": 10,
-        "lastUpdateTimestamp": 1746391581000,
+        "lastUpdateTimestamp": 1747541802000,
         "releasePages": [
+            {
+                "body": "## Fixes to Generation\r\n\r\n* Fixed an issue where, when Quest Randomization was enabled, no quests would be included.",
+                "version": "0.6.8",
+                "timestamp": 1747541802000,
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.6.8"
+            },
             {
                 "body": "## Changes to APWorld\r\n\r\n* Removed option `force_filler_local`\r\n\r\n## Fixes to APWorld\r\n\r\n* Fixed an issue where, with certain options, additional copies of certain gear items would be added to the item pool.\r\n\r\n## Fixes to Mod\r\n\r\n* Removed a section of code that breaks with new installations of CCUILib.\r\n* The mod now sends more up-to-date version data to the server, which will be required for Archipelago servers in future releases.",
                 "version": "0.6.7",
