@@ -4560,6 +4560,45 @@
             }
         ]
     },
+    "load-from-pause": {
+        "metadataCCMod": {
+            "id": "load-from-pause",
+            "version": "1.0.0",
+            "title": "Load from Pause",
+            "description": "Adds a 'Load Game' button to the pause menu.",
+            "repository": "https://github.com/Leo40Git/cc-load-from-pause",
+            "tags": [
+                "QoL"
+            ],
+            "authors": [
+                "ADudeCalledLeo"
+            ],
+            "icons": {
+                "24": "icon24.png"
+            },
+            "prestart": "prestart.js"
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/Leo40Git/cc-load-from-pause/releases/download/v1.0.0/load-from-pause.ccmod",
+                "source": "",
+                "hash": {
+                    "sha256": "e094f8db4d712cba2d486bef058bd65ff6dc9910c6ee671fff88691b4eabff9f"
+                }
+            }
+        ],
+        "stars": 0,
+        "lastUpdateTimestamp": 1747931814000,
+        "releasePages": [
+            {
+                "body": "Initial release.",
+                "version": "1.0.0",
+                "timestamp": 1747931814000,
+                "url": "https://github.com/Leo40Git/cc-load-from-pause/releases/tag/v1.0.0"
+            }
+        ]
+    },
     "localize-me": {
         "metadataCCMod": {
             "id": "localize-me",
