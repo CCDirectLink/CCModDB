@@ -4560,6 +4560,51 @@
             }
         ]
     },
+    "load-from-pause": {
+        "metadataCCMod": {
+            "id": "load-from-pause",
+            "version": "1.0.1",
+            "title": "Load from Pause",
+            "description": "Adds a 'Load Game' button to the pause menu.",
+            "repository": "https://github.com/Leo40Git/cc-load-from-pause",
+            "tags": [
+                "QoL"
+            ],
+            "authors": [
+                "ADudeCalledLeo"
+            ],
+            "icons": {
+                "24": "icon24.png"
+            },
+            "prestart": "prestart.js"
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/Leo40Git/cc-load-from-pause/releases/download/v1.0.1/load-from-pause.ccmod",
+                "source": "",
+                "hash": {
+                    "sha256": "043370484b63942055a579a9ec8ebb428782c99e5bd0c322cd8ef5e20a87484f"
+                }
+            }
+        ],
+        "stars": 0,
+        "lastUpdateTimestamp": 1747936508000,
+        "releasePages": [
+            {
+                "body": "- Fix compatibility with Cheats mod",
+                "version": "1.0.1",
+                "timestamp": 1747936508000,
+                "url": "https://github.com/Leo40Git/cc-load-from-pause/releases/tag/v1.0.1"
+            },
+            {
+                "body": "Initial release.",
+                "version": "1.0.0",
+                "timestamp": 1747931814000,
+                "url": "https://github.com/Leo40Git/cc-load-from-pause/releases/tag/v1.0.0"
+            }
+        ]
+    },
     "localize-me": {
         "metadataCCMod": {
             "id": "localize-me",
