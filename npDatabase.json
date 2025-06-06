@@ -5098,7 +5098,7 @@
     "mw-rando": {
         "metadataCCMod": {
             "id": "mw-rando",
-            "version": "0.6.8",
+            "version": "0.6.9",
             "title": "Multiworld randomizer",
             "description": "Client for CrossCode Archipelago Integration",
             "repository": "https://github.com/CodeTriangle/CCMultiworldRandomizer",
@@ -5119,16 +5119,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.8/CCMultiworldRandomizer-0.6.8.ccmod",
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.9/CCMultiworldRandomizer-0.6.9.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "c0a66d86a59dc95490ce0a1ee9e3926cef5cb3a8d58f22aae0e8d54698a1cc39"
+                    "sha256": "b664fba76f8c604327f0dbbb9c410af062a13d406476307c6974c79652f83435"
                 }
             }
         ],
-        "stars": 10,
-        "lastUpdateTimestamp": 1747541802000,
+        "stars": 11,
+        "lastUpdateTimestamp": 1749187781000,
         "releasePages": [
+            {
+                "body": "## Changes to Logic\r\n\r\n* The chest **Fall: Para Island 1** no longer requires Green Seed Shade, pursuant to a change in CC-Open-World.\r\n* The quest **Henry Trailblazing** now requires Shock, since the path to the boss fight and the boss fight itself require it.\r\n* The quest **Heating the Hermit** now requires access to Temple Mine, since access to the basement of the Hermit's Hut requires Metal Gears, which are only available in the dungeon.\r\n* The quest **You've Got Mail** now, when Shop Randomization is enabled, requires either Bronze Mail or access to the Bronze Mail slot in the Rookie Harbor Weapons shop.\r\n\r\n## Known Unfixed Logic Errors\r\n\r\n* The item **Shiny Orb** is not in the pool when Quest Randomization is enabled, making it impossible to acquire **Ba'kii Kum Shade Statue**.\r\n  * This remains unfixed as the ideal solution may require some changes to CC-Open-World which I am unsure of right now.",
+                "version": "0.6.9",
+                "timestamp": 1749187781000,
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.6.9"
+            },
             {
                 "body": "## Fixes to Generation\r\n\r\n* Fixed an issue where, when Quest Randomization was enabled, no quests would be included.",
                 "version": "0.6.8",
