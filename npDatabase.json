@@ -7083,7 +7083,7 @@
     "xpc-litter": {
         "metadataCCMod": {
             "id": "xpc-litter",
-            "version": "2.1.0",
+            "version": "2.1.1",
             "title": {
                 "en_US": "XPC - Hexacast Litter"
             },
@@ -7106,16 +7106,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/xpc-hexacast-litter/archive/refs/tags/2.1.0.zip",
-                "source": "xpc-hexacast-litter-2.1.0",
+                "url": "https://github.com/XenonA7/xpc-hexacast-litter/archive/refs/tags/2.1.1.zip",
+                "source": "xpc-hexacast-litter-2.1.1",
                 "hash": {
-                    "sha256": "e9b25ce36a2adcb35df06feff9964aab58b80727c2c18e55d835e87f38d0ebb1"
+                    "sha256": "48d9553cc86143fb69e9aed7775c62c711b6c4f5f5c48b8d42de06bd2393f506"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1733730211000,
+        "lastUpdateTimestamp": 1749454008000,
         "releasePages": [
+            {
+                "body": "2.1.1 (06/09/2025)\r\n- Support for ball-shock.stasisStormCardDeath (XPC 2.13.0)",
+                "version": "2.1.1",
+                "timestamp": 1749454008000,
+                "url": "https://github.com/XenonA7/xpc-hexacast-litter/releases/tag/2.1.1"
+            },
             {
                 "body": "2.1.0 (12/09/2024)\r\n- Updated ccmod.json tags\r\n- Support for XPC 2.7.0 and higher\r\n- Added shadowflame-alts.json.patch",
                 "version": "2.1.0",
