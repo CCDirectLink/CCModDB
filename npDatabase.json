@@ -2,7 +2,7 @@
     "mw-rando": {
         "metadataCCMod": {
             "id": "mw-rando",
-            "version": "0.7.0-pre.1",
+            "version": "0.7.0-pre.2",
             "title": "Multiworld randomizer",
             "description": "Client for CrossCode Archipelago Integration",
             "repository": "https://github.com/CodeTriangle/CCMultiworldRandomizer",
@@ -24,16 +24,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.7.0-pre.1/CCMultiworldRandomizer-0.7.0-pre.1.ccmod",
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.7.0-pre.2/CCMultiworldRandomizer-0.7.0-pre.2.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "9efc8f5a822856a54533abfe58cc1c69583c649b06855f603a8135fcb341e30a"
+                    "sha256": "ee4fcf58acc3a90e03597c5fce8c13382d8837e2b1387d762c81966204abd9e0"
                 }
             }
         ],
         "stars": 11,
         "lastUpdateTimestamp": 1749187781000,
         "releasePages": [
+            {
+                "body": "## Changes to Mod\r\n\r\n* Chest markers no longer display on all floors of the map screen regardless of which floor the actual chest is on.\r\n* The \"Edit Options\" button in the login dialog can no longer be interacted with while the connection with the Archipelago server is being finalized.",
+                "version": "0.7.0-pre.2",
+                "timestamp": 1749508628000,
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.7.0-pre.2"
+            },
             {
                 "body": "## Changes to Mod\r\n\r\n* Updated backend to archipelago.js 2.x.\r\n* Added **Text Client** Menu which shows incoming messages from the server.\r\n* Massively renovated login flow.\r\n* Add logicless chest tracker to map.\r\n* Updated Archipelago chest icons (thanks to Celio Hogane for the help with these sprites).\r\n\r\n## Migration Guide\r\n\r\n* The following should be **FULLY SUPPORTED**. If you encounter issues with this, please [report it as an error](https://github.com/CodeTriangle/CCMultiworldRandomizer/wiki/Setup#how-to-get-support).\r\n  * Using version 0.7.x of CCMultiworldRandomizer to play a world generated using the 0.6.x APWorld.\r\n  * Loading save games started on version 0.6.x of CCMultiworldRandomizer in version 0.7.x.\r\n* The following are **NOT SUPPORTED**:\r\n  * Using version 0.6.x of CCMultiworldRandomizer to play a world generated using the 0.7.x APWorld.\r\n  * Loading save games started on version 0.7.x of CCMultiworldRandomizer in version 0.6.x.",
                 "version": "0.7.0-pre.1",
