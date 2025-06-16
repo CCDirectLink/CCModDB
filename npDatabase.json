@@ -6694,7 +6694,7 @@
     "xenons-playable-classes": {
         "metadataCCMod": {
             "id": "xenons-playable-classes",
-            "version": "2.12.0",
+            "version": "2.13.1",
             "title": {
                 "en_US": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
                 "de_DE": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
@@ -6744,16 +6744,28 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/2.12.0.zip",
-                "source": "xenons-playable-classes-2.12.0",
+                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/2.13.1.zip",
+                "source": "xenons-playable-classes-2.13.1",
                 "hash": {
-                    "sha256": "6a6dab533c38a8c23fb3d6770f9ef937eaef79abec047e117d51db3a724c157d"
+                    "sha256": "d3183083021f54313aae05ec465c4871eec59662aefb7cd30938618f10f0140a"
                 }
             }
         ],
         "stars": 23,
-        "lastUpdateTimestamp": 1748836052000,
+        "lastUpdateTimestamp": 1750041337000,
         "releasePages": [
+            {
+                "body": "## 2.13.1 (06/15/2025)\r\n### Fixes\r\n- Fixed Stasis Storm trigger inconsistency when player has a timeflow buff",
+                "version": "2.13.1",
+                "timestamp": 1750041337000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/2.13.1"
+            },
+            {
+                "body": "## 2.13.0 (06/15/2025)\r\n### General\r\n- Hexacast litter mod updated to 2.1.1\r\n### New Content\r\n- New Hexacast combat art: Stasis Storm (Shock Melee Lv.3A)\r\n- Added new Hexacast class tips to hideout-lobby\r\n### Changes\r\n- Updated all PLAY_ANIM_RANGE effect steps in the mod to use `\"alongY\": true`\r\n- Deleted unused proxy stasisStormDummy\r\n- Added randFlip property to all Hexacast CYBER_BOLT_SHOCK particles\r\n### Fixes\r\n- Fixed hoverText for Hexacast1 sign in unused-content\r\n### Balance\r\n- Hexacast2 homing charged shots damageFactor reduced to 1.0 (normal is 1.3)",
+                "version": "2.13.0",
+                "timestamp": 1750039769000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/2.13.0"
+            },
             {
                 "body": "## 2.12.0 (06/01/2025)\r\n### New Content\r\n- New Hexacast combat art: Blade Curse (Neutral Dash Lv.1B)\r\n- New Hexacast combat art: Sorcerer's Sawmill (Neutral Dash Lv.2B)\r\n- New Hexacast custom skill: Acceleration Mine (Neutral Dash Lv.1)\r\n- New Hexacast custom skill: Meteor Flare (Ranged) (Heat Throw Lv.1) (shadowflame support)\r\n- New Hexacast custom skill: Meteor Storm (Ranged) (Heat Throw Lv.2) (shadowflame support)\r\n- Added a sign in the \"unused content\" room to add party member Hexacast1\r\n- Added shadowflame alt variant to Flame Mortar (improved radius, status inflict, and damage)\r\n### Changes\r\n- Acceleration Mine removed from main Hexacast player file, it is now a custom skill\r\n- Acceleration Mine never worked for directional knockback, description and effects are now updated to reflect that\r\n- Improved spritework for shadowflame particle DARK_BIG_HEXAGON\r\n- Improved spritework for shadowflame particle CIRCLE_STATIC\r\n- Reduced size of CIRCLE_STATIC particles in shadowflame alt effect ashenInfernoExplode\r\n- Replaced CIRCLE_STATIC particles in shadowflame alt effects meteorFinalExplode and meteorDebrisDiagonalBig\r\n- Meteor Flare reworked by removing initial chargeup, now tosses a card on the ground\r\n- Added BLINK_COLOR and FADE_COLOR steps to effect blueColdTrail\r\n- Proxy frigidFlurryCard now uses `\"waitUntil\": \"entity.onGround\"` to move forward\r\n- Proxy faeSpike (pentafist) now uses `\"waitUntil\": \"entity.onGround\"` to move forward\r\n- Proxy faeSpike (pentafist) now falls to the ground before exploding if the player is interrupted before spiking it\r\n- Improved trail effects for proxies frigidFlurryCard and blizzardRushCard\r\n- Blizzard Rush cards now travel faster, should now all explode before or during player final attack\r\n- Reduced snowflake particle count for effects ballWallKillIcyGust and ballAirKillIcyGust\r\n- Acceleration Mine now works using a TACKLE hit detection method rather than a targeting method\r\n- Horizontally flipped the icon sprite for Healing Burst\r\n- Adjusted sweep particle rotation in effect spellVolleySweep\r\n### Fixes\r\n- Fixed missing file \\assets\\data\\maps\\xpc\\bonus\\dev.json\r\n- Fixed Meteor Flare, Meteor Storm, and Calamity Beacon torch pillars bugging out when used directly against a wall\r\n- Fixed hitbox timing for Snow lance\r\n- Improved Icicile Lance knockback values to keep enemies inside more consistently\r\n- Fixed loop structure for effect blueColdTrail\r\n- Fixed proxy sprite z offset for all Hexacast spellcards that stick in the ground\r\n- Fixed proxy flameMini (Flame Mortar) not lasting long enough to play full animation\r\n- Fixed inconsistent MELEE/RANGED damage types in Meteor Storm\r\n### Balance\r\n- Meteor Flare reduced delay duration before meteor impact\r\n- Meteor Flare damageFactor decreased from 6.2 to 5.65\r\n- Meteor Flare (shadowflame variant) damageFactor decreased from 9 to 8\r\n- Meteor Storm initial charge time reduced from 0.75 seconds to 0.65 seconds\r\n- Meteor Storm meteors now come out faster after card lands\r\n- Ice Blitz damageFactor reduced from 1.75 to 1.25 for the first two sweeps\r\n- Ice Blitz damageFactor reduced from 2.15 to 1.85 for the final hit\r\n- Snow Lance overall damage increased\r\n- Added a DAMAGE_CEILING to Snow Lance, only really affects massive enemies that can be hit by all proxies at once\r\n- Icicle Lance overall damage increased\r\n- Icicle Lance proxy hitbox radius increased from 20 to 28\r\n- Frigid Flurry overall damage increased\r\n- Frigid Flurry spellcard travel time reduced\r\n- Frigid Flurry spellcard explosion radius reduced from 80 to 72 (should match the effect better)\r\n- Acceleration Mine now allows for 6 active at a time\r\n- Acceleration Mine damageFactor increased from 2.0 to 4.5\r\n- Flame Mortar status inflict reduced\r\n- Flame Mortar damage reduced\r\n- Spell Tag dash speed increased from 300 to 350\r\n- Shock Surge end lag (delay before player is actionable) reduced by 0.05 seconds",
                 "version": "2.12.0",
