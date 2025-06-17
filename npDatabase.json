@@ -2,7 +2,7 @@
     "mw-rando": {
         "metadataCCMod": {
             "id": "mw-rando",
-            "version": "0.7.0-pre.2",
+            "version": "0.7.0-pre.3",
             "title": "Multiworld randomizer",
             "description": "Client for CrossCode Archipelago Integration",
             "repository": "https://github.com/CodeTriangle/CCMultiworldRandomizer",
@@ -24,16 +24,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.7.0-pre.2/CCMultiworldRandomizer-0.7.0-pre.2.ccmod",
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.7.0-pre.3/CCMultiworldRandomizer-0.7.0-pre.3.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "ee4fcf58acc3a90e03597c5fce8c13382d8837e2b1387d762c81966204abd9e0"
+                    "sha256": "4068f669d6d1310167f4fdfa500d59aba6415f1b30fddf075b61c2701ccf1246"
                 }
             }
         ],
         "stars": 11,
         "lastUpdateTimestamp": 1749187781000,
         "releasePages": [
+            {
+                "body": "## Fixes to Mod\r\n\r\n* Fix an issue where, after playing offline and then reconnecting, all items would claim to be from the player's own world and their names would be incorrect.\r\n* Fix an issue where, if elements, SP upgrades, or certain other items which do not represent in-game items were received before starting the game, these items would be reset before entering the game.\r\n  * If you were affected by this issue, this release does NOT fix your current save. Contact your room administrator to resend copies of these items or ask for help on the CrossCode Archipelago Discord Server to cheat in your items.\r\n* Fix a visual issue where items tagged with both Progressive and Useful would display as deep blue in-world but green in the marker.\r\n  * Now, they appear green in both situations. There is an ongoing discussion about how these may be made visually distinct from both progressive and useful items, if at all. Please share your feedback in the Discord server.\r\n* Fix a visual issue where Trap items would display as deep blue in-game but light blue on the map.\r\n  * Now, they appear deep blue in both situations.\r\n* Fix an issue where, while chest lock randomization is enabled, chests that contain keys in a vanilla playthrough are always shown as having no lock, regardless of the lock type they were assigned.\r\n* Fix an issue where, after updating the connection details from the main menu, all known chest markers would be lost and display as if they were unknown.\r\n\r\n## Migration Guide\r\n\r\n* I **strongly** recommend making a backup of your save file before trying this version.",
+                "version": "0.7.0-pre.3",
+                "timestamp": 1750145435000,
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.7.0-pre.3"
+            },
             {
                 "body": "## Changes to Mod\r\n\r\n* Chest markers no longer display on all floors of the map screen regardless of which floor the actual chest is on.\r\n* The \"Edit Options\" button in the login dialog can no longer be interacted with while the connection with the Archipelago server is being finalized.",
                 "version": "0.7.0-pre.2",
