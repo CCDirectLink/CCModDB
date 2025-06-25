@@ -1228,6 +1228,68 @@
             }
         ]
     },
+    "autumns-genesis": {
+        "metadataCCMod": {
+            "id": "autumns-genesis",
+            "version": "0.2.7",
+            "title": {
+                "en_US": "Autumn's Genesis",
+                "de_DE": "Autumn's Genesis",
+                "fr_FR": "Autumn's Genesis",
+                "zh_CN": "Autumn's Genesis",
+                "zh_TW": "Autumn's Genesis",
+                "ja_JP": "Autumn's Genesis",
+                "ko_KR": "Autumn's Genesis"
+            },
+            "description": {
+                "en_US": "Originally a Dungeon/Quest expansion to CrossCode, adds high-difficulty Arena fights as well as new Combat Arts and mechanics",
+                "de_DE": "Originally a Dungeon/Quest expansion to CrossCode, adds high-difficulty Arena fights as well as new Combat Arts and mechanics",
+                "fr_FR": "Originally a Dungeon/Quest expansion to CrossCode, adds high-difficulty Arena fights as well as new Combat Arts and mechanics",
+                "zh_CN": "Originally a Dungeon/Quest expansion to CrossCode, adds high-difficulty Arena fights as well as new Combat Arts and mechanics",
+                "zh_TW": "Originally a Dungeon/Quest expansion to CrossCode, adds high-difficulty Arena fights as well as new Combat Arts and mechanics",
+                "ja_JP": "Originally a Dungeon/Quest expansion to CrossCode, adds high-difficulty Arena fights as well as new Combat Arts and mechanics",
+                "ko_KR": "Originally a Dungeon/Quest expansion to CrossCode, adds high-difficulty Arena fights as well as new Combat Arts and mechanics"
+            },
+            "repository": "https://github.com/Hsifnus/autumns-genesis",
+            "tags": [
+                "arena",
+                "combat arts",
+                "boss",
+                "puzzle"
+            ],
+            "authors": [
+                "Bakafish"
+            ],
+            "prestart": "mod.js",
+            "dependencies": {
+                "item-api": "^0.*",
+                "extendable-severed-heads": "^1.0.0",
+                "modifier-api": "^0.1.0",
+                "crosscode": ">=1.4.0",
+                "post-game": ">=1.4.0"
+            }
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/Hsifnus/autumns-genesis/archive/refs/tags/v0.2.7.zip",
+                "source": "autumns-genesis-0.2.7",
+                "hash": {
+                    "sha256": "a5e3cc92cddfabc2088d40dc02947ad86f6779be3c7c002bce7946e62ef7e572"
+                }
+            }
+        ],
+        "stars": 19,
+        "lastUpdateTimestamp": 1750858752000,
+        "releasePages": [
+            {
+                "body": "# v0.2.7 (2025/06/25)\r\n\r\nThis is the first proper GItHub release of Autumn's Genesis, so a non-exhaustive summary of features added to the mod so far is provided below\r\n\r\n## Features\r\n\r\n- Add several high-difficulty \"Master Trial\" boss fights to the Arena.\r\n  - A special encore round appears in the \"Retro Master Trial Cup\" if the initial six rounds are cleared and the CrossCode DLC dungeon has been cleared.\r\n- Add new custom equipment tied to first-clear rewards from the new boss fights.\r\n  - Equipment can be redeemed using the \"Coquelicot\" NPC found in the Arena lobby.\r\n  - The equipment gives Lea new Combat Arts and sometimes new custom modifiers as well.\r\n- Add new mechanics used during the new boss fights.\r\n  - Static\r\n    - Status effect that increases when Lea is hit by certain attacks and decreases over time or sometimes when Lea over-dashes. \r\n    - Accumulate too many stacks of Static and Lea is struck by powerful lightning.\r\n  - Pressure\r\n    - Status effect that increases over time and decreases when Lea uses Combat Arts.\r\n    - Increasing Pressure decreases movement speed but also increases Combat Art power and SP gain.\r\n    - Accumulate too many stacks of Pressure and Lea is crushed by excessive pressure.\r\n  - Wind\r\n    - Environmental effect that when active pushes Lea and her projectiles left or right.\r\n  - Daze\r\n    - Elemental status effect tied to the Neutral element.\r\n    - Afflicted targets are stunned and are unable to move for the duration of the effect.\r\n    - Effect duration affected by strength of the effecting attack as well as attacks made to the affected target.\r\n  - Wind Bubble\r\n    - Puzzle element that spawns in similar fashion to the water bubble puzzle element.\r\n    - Absorbs elemental power of the player's charged shot to become primed, after which the player's next charged shot causes the wind bubble to burst with a charged shot matching the direction of the player's shot.",
+                "version": "0.2.7",
+                "timestamp": 1750861051000,
+                "url": "https://github.com/Hsifnus/autumns-genesis/releases/tag/v0.2.7"
+            }
+        ]
+    },
     "blades": {
         "metadataCCMod": {
             "id": "blades",
