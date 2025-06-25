@@ -5098,7 +5098,7 @@
     "mw-rando": {
         "metadataCCMod": {
             "id": "mw-rando",
-            "version": "0.6.9",
+            "version": "0.6.10",
             "title": "Multiworld randomizer",
             "description": "Client for CrossCode Archipelago Integration",
             "repository": "https://github.com/CodeTriangle/CCMultiworldRandomizer",
@@ -5119,16 +5119,40 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.9/CCMultiworldRandomizer-0.6.9.ccmod",
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.10/CCMultiworldRandomizer-0.6.10.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "b664fba76f8c604327f0dbbb9c410af062a13d406476307c6974c79652f83435"
+                    "sha256": "8c787130a98ee30f5ba39417c5e9f1a55017ba757b4e427ae67b4551192100ed"
                 }
             }
         ],
         "stars": 11,
-        "lastUpdateTimestamp": 1749187781000,
+        "lastUpdateTimestamp": 1750835003000,
         "releasePages": [
+            {
+                "body": "## Fixes to Logic\r\n\r\n* **Ba'kii Shade Statue** now requires **Shiny Orb** to coincide with in-game behavior.\r\n  * Additionally, **Shiny Orb** has been added to the pool to make this possible.",
+                "version": "0.6.10",
+                "timestamp": 1750835003000,
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.6.10"
+            },
+            {
+                "body": "## Fixes to Mod\r\n\r\n* Fix an issue where, after playing offline and then reconnecting, all items would claim to be from the player's own world and their names would be incorrect.\r\n* Fix an issue where, if elements, SP upgrades, or certain other items which do not represent in-game items were received before starting the game, these items would be reset before entering the game.\r\n  * If you were affected by this issue, this release does NOT fix your current save. Contact your room administrator to resend copies of these items or ask for help on the CrossCode Archipelago Discord Server to cheat in your items.\r\n* Fix a visual issue where items tagged with both Progressive and Useful would display as deep blue in-world but green in the marker.\r\n  * Now, they appear green in both situations. There is an ongoing discussion about how these may be made visually distinct from both progressive and useful items, if at all. Please share your feedback in the Discord server.\r\n* Fix a visual issue where Trap items would display as deep blue in-game but light blue on the map.\r\n  * Now, they appear deep blue in both situations.\r\n* Fix an issue where, while chest lock randomization is enabled, chests that contain keys in a vanilla playthrough are always shown as having no lock, regardless of the lock type they were assigned.\r\n* Fix an issue where, after updating the connection details from the main menu, all known chest markers would be lost and display as if they were unknown.\r\n\r\n## Migration Guide\r\n\r\n* I **strongly** recommend making a backup of your save file before trying this version.",
+                "version": "0.7.0-pre.3",
+                "timestamp": 1750145435000,
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.7.0-pre.3"
+            },
+            {
+                "body": "## Changes to Mod\r\n\r\n* Chest markers no longer display on all floors of the map screen regardless of which floor the actual chest is on.\r\n* The \"Edit Options\" button in the login dialog can no longer be interacted with while the connection with the Archipelago server is being finalized.",
+                "version": "0.7.0-pre.2",
+                "timestamp": 1749508628000,
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.7.0-pre.2"
+            },
+            {
+                "body": "## Changes to Mod\r\n\r\n* Updated backend to archipelago.js 2.x.\r\n* Added **Text Client** Menu which shows incoming messages from the server.\r\n* Massively renovated login flow.\r\n* Add logicless chest tracker to map.\r\n* Updated Archipelago chest icons (thanks to Celio Hogane for the help with these sprites).\r\n\r\n## Migration Guide\r\n\r\n* The following should be **FULLY SUPPORTED**. If you encounter issues with this, please [report it as an error](https://github.com/CodeTriangle/CCMultiworldRandomizer/wiki/Setup#how-to-get-support).\r\n  * Using version 0.7.x of CCMultiworldRandomizer to play a world generated using the 0.6.x APWorld.\r\n  * Loading save games started on version 0.6.x of CCMultiworldRandomizer in version 0.7.x.\r\n* The following are **NOT SUPPORTED**:\r\n  * Using version 0.6.x of CCMultiworldRandomizer to play a world generated using the 0.7.x APWorld.\r\n  * Loading save games started on version 0.7.x of CCMultiworldRandomizer in version 0.6.x.",
+                "version": "0.7.0-pre.1",
+                "timestamp": 1749192622000,
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.7.0-pre.1"
+            },
             {
                 "body": "## Changes to Logic\r\n\r\n* The chest **Fall: Para Island 1** no longer requires Green Seed Shade, pursuant to a change in CC-Open-World.\r\n* The quest **Henry Trailblazing** now requires Shock, since the path to the boss fight and the boss fight itself require it.\r\n* The quest **Heating the Hermit** now requires access to Temple Mine, since access to the basement of the Hermit's Hut requires Metal Gears, which are only available in the dungeon.\r\n* The quest **You've Got Mail** now, when Shop Randomization is enabled, requires either Bronze Mail or access to the Bronze Mail slot in the Rookie Harbor Weapons shop.\r\n\r\n## Known Unfixed Logic Errors\r\n\r\n* The item **Shiny Orb** is not in the pool when Quest Randomization is enabled, making it impossible to acquire **Ba'kii Kum Shade Statue**.\r\n  * This remains unfixed as the ideal solution may require some changes to CC-Open-World which I am unsure of right now.",
                 "version": "0.6.9",
