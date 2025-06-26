@@ -5520,7 +5520,7 @@
     "nax-ccuilib": {
         "metadataCCMod": {
             "id": "nax-ccuilib",
-            "version": "1.4.1",
+            "version": "1.5.0",
             "title": "CCUILib",
             "description": "Library of additional UI elements as well as making existing ones configurable",
             "repository": "https://github.com/krypciak/nax-ccuilib",
@@ -5540,16 +5540,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/nax-ccuilib/releases/download/v1.4.1/nax-ccuilib-1.4.1.ccmod",
+                "url": "https://github.com/krypciak/nax-ccuilib/releases/download/v1.5.0/nax-ccuilib-1.5.0.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "e9e01ccb3f8a7137c6823ed969bf4147555429872531cb39124a15096a027c88"
+                    "sha256": "7dd67b4c06acff3a9ba16419d69772d738147132af4bc3900dbfabb153bb878b"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1746380246000,
+        "lastUpdateTimestamp": 1750934014000,
         "releasePages": [
+            {
+                "body": "- Add pause screen api",
+                "version": "1.5.0",
+                "timestamp": 1750934014000,
+                "url": "https://github.com/krypciak/nax-ccuilib/releases/tag/v1.5.0"
+            },
             {
                 "body": "### Fixed\n\n- Fixed `CCMultiworldRandomizer` crash (sorry)",
                 "version": "1.4.1",
