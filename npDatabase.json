@@ -4649,7 +4649,7 @@
     "load-from-pause": {
         "metadataCCMod": {
             "id": "load-from-pause",
-            "version": "1.0.1",
+            "version": "1.1.0",
             "title": "Load from Pause",
             "description": "Adds a 'Load Game' button to the pause menu.",
             "repository": "https://github.com/Leo40Git/cc-load-from-pause",
@@ -4662,21 +4662,30 @@
             "icons": {
                 "24": "icon24.png"
             },
+            "dependencies": {
+                "nax-ccuilib": ">=1.5.0"
+            },
             "prestart": "prestart.js"
         },
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/Leo40Git/cc-load-from-pause/releases/download/v1.0.1/load-from-pause.ccmod",
+                "url": "https://github.com/Leo40Git/cc-load-from-pause/releases/download/v1.1.0/load-from-pause.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "043370484b63942055a579a9ec8ebb428782c99e5bd0c322cd8ef5e20a87484f"
+                    "sha256": "bd500c4581666aa9439c51a171c466fc6d21176034dcb835b22c04f9faafeb47"
                 }
             }
         ],
-        "stars": 0,
-        "lastUpdateTimestamp": 1747936508000,
+        "stars": 1,
+        "lastUpdateTimestamp": 1750939656000,
         "releasePages": [
+            {
+                "body": "- Use the new [nax-ccuilib](https://github.com/krypciak/nax-ccuilib) pause screen API.\r\n    - This allows us to be compatible with other mods that add buttons to the pause screen.\r\n    - The \"Load Game\" button has been moved to the side as a result of this.",
+                "version": "1.1.0",
+                "timestamp": 1750939656000,
+                "url": "https://github.com/Leo40Git/cc-load-from-pause/releases/tag/v1.1.0"
+            },
             {
                 "body": "- Fix compatibility with Cheats mod",
                 "version": "1.0.1",
