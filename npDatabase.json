@@ -5193,7 +5193,7 @@
     "mw-rando": {
         "metadataCCMod": {
             "id": "mw-rando",
-            "version": "0.6.10",
+            "version": "0.6.11",
             "title": "Multiworld randomizer",
             "description": "Client for CrossCode Archipelago Integration",
             "repository": "https://github.com/CodeTriangle/CCMultiworldRandomizer",
@@ -5214,16 +5214,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.10/CCMultiworldRandomizer-0.6.10.ccmod",
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.11/CCMultiworldRandomizer-0.6.11.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "8c787130a98ee30f5ba39417c5e9f1a55017ba757b4e427ae67b4551192100ed"
+                    "sha256": "abbb2161844048a72a5bc1b842fae68708d07a2d0a7dc9143fc9c52b3d8c0695"
                 }
             }
         ],
         "stars": 11,
-        "lastUpdateTimestamp": 1750835003000,
+        "lastUpdateTimestamp": 1750956022000,
         "releasePages": [
+            {
+                "body": "## Fixes to Mod\r\n\r\n* Fixed an issue reintroduced in 0.6.10 where, during the loading process, the mod would fail due to missing a dependency that is no longer required.",
+                "version": "0.6.11",
+                "timestamp": 1750956022000,
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.6.11"
+            },
             {
                 "body": "## Fixes to Logic\r\n\r\n* **Ba'kii Shade Statue** now requires **Shiny Orb** to coincide with in-game behavior.\r\n  * Additionally, **Shiny Orb** has been added to the pool to make this possible.",
                 "version": "0.6.10",
