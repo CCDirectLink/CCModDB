@@ -6825,7 +6825,7 @@
     "xenons-playable-classes": {
         "metadataCCMod": {
             "id": "xenons-playable-classes",
-            "version": "2.13.1",
+            "version": "2.14.0",
             "title": {
                 "en_US": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
                 "de_DE": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
@@ -6875,16 +6875,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/2.13.1.zip",
-                "source": "xenons-playable-classes-2.13.1",
+                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/2.14.0.zip",
+                "source": "xenons-playable-classes-2.14.0",
                 "hash": {
-                    "sha256": "d3183083021f54313aae05ec465c4871eec59662aefb7cd30938618f10f0140a"
+                    "sha256": "0e338c8faa41b3424b9bd0f534412a699e1112bad1a945e02323828391692b9a"
                 }
             }
         ],
-        "stars": 23,
-        "lastUpdateTimestamp": 1750041337000,
+        "stars": 24,
+        "lastUpdateTimestamp": 1751159838000,
         "releasePages": [
+            {
+                "body": "## 2.14.0 (06/28/2025)\r\n### New Content\r\n- New Hexacast combat art: Storm Chaser (Shock Dash Lv.3A)\r\n### Changes\r\n- Cleaned up effect stasisStormLaserImpact\r\n- Improved laser src effect for proxy stasisStormCard\r\n### Fixes\r\n- Added missing NO_PUZZLE property to final melee hit of Stasis Storm",
+                "version": "2.14.0",
+                "timestamp": 1751159838000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/2.14.0"
+            },
             {
                 "body": "## 2.13.1 (06/15/2025)\r\n### Fixes\r\n- Fixed Stasis Storm trigger inconsistency when player has a timeflow buff",
                 "version": "2.13.1",
