@@ -393,16 +393,17 @@
     "CrackCode": {
         "metadataCCMod": {
             "id": "CrackCode",
-            "version": "0.0.1",
+            "version": "0.0.2",
             "title": "CrackCode",
             "description": {
-                "en_US": "A dangerous mod that puts the game on crack, best suited for Prepare To Hi and Arena."
+                "en_US": "Makes death, arena, transitions and more instant, custom tailored for PtH and Arena."
             },
             "repository": "https://github.com/Principles1/CrackCode",
             "tags": [
-                "QoL"
+                "QoL",
+                "Arena"
             ],
-            "authors": "principle",
+            "authors": "Principle",
             "icons": {},
             "prestart": "_prestart.js",
             "dependencies": {}
@@ -410,16 +411,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/Principles1/CrackCode/archive/refs/tags/v0.0.1.zip",
-                "source": "CrackCode-0.0.1",
+                "url": "https://github.com/Principles1/CrackCode/archive/refs/tags/v0.0.2.zip",
+                "source": "CrackCode-0.0.2",
                 "hash": {
-                    "sha256": "3a656ff81de4084308ecd3815c0af998a14833d142b93ed4879ce05c44e75a08"
+                    "sha256": "58db3d9210a24e2d53297775bc7b6f39532003fbb337385aa6872d3a5625f3f4"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1742068376000,
+        "lastUpdateTimestamp": 1751473748000,
         "releasePages": [
+            {
+                "body": "Fixed various issues that emerged from making several sequences instant, such as pvp projectiles hitting the player in the next round and dying from environment not instantly resetting the user in arena, as well as implemented solutions to reduce the visual effects for a multitude of things which have been configured to occur instantly.",
+                "version": "0.0.2",
+                "timestamp": 1751473748000,
+                "url": "https://github.com/Principles1/CrackCode/releases/tag/v0.0.2"
+            },
             {
                 "body": "initial mod release",
                 "version": "0.0.1",
