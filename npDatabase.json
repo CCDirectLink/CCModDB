@@ -6838,7 +6838,7 @@
     "xenons-playable-classes": {
         "metadataCCMod": {
             "id": "xenons-playable-classes",
-            "version": "2.14.0",
+            "version": "2.15.1",
             "title": {
                 "en_US": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
                 "de_DE": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
@@ -6888,16 +6888,28 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/2.14.0.zip",
-                "source": "xenons-playable-classes-2.14.0",
+                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/2.15.1.zip",
+                "source": "xenons-playable-classes-2.15.1",
                 "hash": {
-                    "sha256": "0e338c8faa41b3424b9bd0f534412a699e1112bad1a945e02323828391692b9a"
+                    "sha256": "f0c8d602f83ba69424e37c636621c43422d66de81576853f75b333b775dfafe4"
                 }
             }
         ],
-        "stars": 24,
-        "lastUpdateTimestamp": 1751159838000,
+        "stars": 25,
+        "lastUpdateTimestamp": 1751859491000,
         "releasePages": [
+            {
+                "body": "## 2.15.1 (07/06/2025)\r\n### Changes\r\n- Added new effect eruptionFinalPulse to the end of Verdant Eruption\r\n- Adjusted Verdant Eruption ACTION_BLOCK timings\r\n### Balance\r\n- Added a startup delay to Verdant Eruption\r\n- Increased duration of Verdant Eruption's \"eruption\" segment by 0.4 seconds",
+                "version": "2.15.1",
+                "timestamp": 1751859491000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/2.15.1"
+            },
+            {
+                "body": "## 2.15.0 (07/06/2025)\r\n### New Content\r\n- New Hexacast combat art: Verdant Eruption (Wave Dash Lv.3A)\r\n- Added custom skills to Hexacast1/2 for homing/straight charged shots (opposite of their default)\r\n### Changes\r\n- Celestial Cohort changed from DASH_SPECIAL3_B to DASH_SPECIAL3_A\r\n- Reduced size of the second hexagon particle in effect stormChaserFlyActivate\r\n- Adjusted audio and added particles for Triblader effect shockLaserShoot (Prismatic Meltdown)\r\n- Shortened description for Shadowflame Sorcery\r\n- Improved wall decorations for enemy-testing map\r\n- Adjusted offset for effect dummyAuraEndHex\r\n- Increased size of effect stasisStormCardLaserSrc\r\n- Triblader effect triforceShatter now comes out in an arc instead of 360°\r\n- Increased light radius of effect rayLaserBeam\r\n- Added pLight property to effect rayGroundArrows\r\n- Improved alignment of effect groundIndicatorTiny for proxy iceCardSmall\r\n### Fixes\r\n- Schneider now uses the new Phase Jump landing effect added in XPC v2.11.2 for the ultimate pvp intro cutscene\r\n- Fixed Hexacast non-neutral uncharged VRPs inconsistent damageFactor (buffed to standard 0.6)\r\n### Balance\r\n- Shadowflame Sorcery movement speed buff decreased from +45% to +25%\r\n- Stand-alone trap version of Wave Detonation now has a 5-second delay before it arms itself\r\n- Stand-alone trap version of Wave Detonation damage increased\r\n- Wave Detonation (all variants) increased status inflict factor",
+                "version": "2.15.0",
+                "timestamp": 1751855422000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/2.15.0"
+            },
             {
                 "body": "## 2.14.0 (06/28/2025)\r\n### New Content\r\n- New Hexacast combat art: Storm Chaser (Shock Dash Lv.3A)\r\n### Changes\r\n- Cleaned up effect stasisStormLaserImpact\r\n- Improved laser src effect for proxy stasisStormCard\r\n### Fixes\r\n- Added missing NO_PUZZLE property to final melee hit of Stasis Storm",
                 "version": "2.14.0",
