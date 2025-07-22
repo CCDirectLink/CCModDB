@@ -6845,7 +6845,7 @@
     "xenons-playable-classes": {
         "metadataCCMod": {
             "id": "xenons-playable-classes",
-            "version": "2.17.0",
+            "version": "2.17.1",
             "title": {
                 "en_US": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
                 "de_DE": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
@@ -6895,16 +6895,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/2.17.0.zip",
-                "source": "xenons-playable-classes-2.17.0",
+                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/2.17.1.zip",
+                "source": "xenons-playable-classes-2.17.1",
                 "hash": {
-                    "sha256": "1aeadce62b13e4068059e52b3251fc811d21ce0e61aa86c09f1525a94d425629"
+                    "sha256": "1e1547fe4bf9fa20431253ed91cf85b1986ea2114046f47a3aea22da4cc08459"
                 }
             }
         ],
-        "stars": 25,
-        "lastUpdateTimestamp": 1753043591000,
+        "stars": 26,
+        "lastUpdateTimestamp": 1753166145000,
         "releasePages": [
+            {
+                "body": "## 2.17.1 (07/21/2025)\r\n### New Content\r\n- Added proper chakram animations for Hexacasts when using Spheromancer custom skills\r\n### Changes\r\n- Glaring Shine renamed to Blinding Glare",
+                "version": "2.17.1",
+                "timestamp": 1753166145000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/2.17.1"
+            },
             {
                 "body": "## 2.17.0 (07/20/2025)\r\n### New Content\r\n- New Hexacast combat art: Glaring Shine (Neutral Guard Lv.2A)\r\n- New Hexacast custom skill: Gradual Hive Missile (Neutral Throw Lv.2)\r\n- Added hexacast animation dashRevFast\r\n### Changes\r\n- Stunning Glare removed from main Hexacast player file, it is now a custom skill\r\n- Added light source to effect glareFlash\r\n### Fixes\r\n- Fixed missing walkAnimSet definitions from XPC character files\r\n### Balance\r\n- Stunning Glare damageFactor reduced from 8.5 to 7.0",
                 "version": "2.17.0",
