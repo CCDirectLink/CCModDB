@@ -5555,7 +5555,7 @@
     "nax-ccuilib": {
         "metadataCCMod": {
             "id": "nax-ccuilib",
-            "version": "1.5.0",
+            "version": "1.5.1",
             "title": "CCUILib",
             "description": "Library of additional UI elements as well as making existing ones configurable",
             "repository": "https://github.com/krypciak/nax-ccuilib",
@@ -5575,16 +5575,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/nax-ccuilib/releases/download/v1.5.0/nax-ccuilib-1.5.0.ccmod",
+                "url": "https://github.com/krypciak/nax-ccuilib/releases/download/v1.5.1/nax-ccuilib-1.5.1.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "7dd67b4c06acff3a9ba16419d69772d738147132af4bc3900dbfabb153bb878b"
+                    "sha256": "e46c98c52d2ae2fee3e2515c39b6813787575dca5d5776381ddafd2fa6a2f9bc"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1750934172000,
+        "lastUpdateTimestamp": 1753170308000,
         "releasePages": [
+            {
+                "body": "### Added\n\n- Add option to pass your own `sc.TextGui` to `nax.ccuilib.pauseScreen.addText`",
+                "version": "1.5.1",
+                "timestamp": 1753170309000,
+                "url": "https://github.com/krypciak/nax-ccuilib/releases/tag/v1.5.1"
+            },
             {
                 "body": "- Add pause screen api\r\n- Move `nax.ccuilib.InputField` to `ccmodmanager` (`nax.ccuilib.InputField` is linked to `modmanager.gui.InputField` for backwards compatibility)",
                 "version": "1.5.0",
