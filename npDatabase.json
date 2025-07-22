@@ -5206,7 +5206,7 @@
     "mw-rando": {
         "metadataCCMod": {
             "id": "mw-rando",
-            "version": "0.6.11",
+            "version": "0.7.0",
             "title": "Multiworld randomizer",
             "description": "Client for CrossCode Archipelago Integration",
             "repository": "https://github.com/CodeTriangle/CCMultiworldRandomizer",
@@ -5221,22 +5221,29 @@
             },
             "dependencies": {
                 "open-world": ">=0.4.1",
-                "nax-ccuilib": ">=1.2.4"
+                "nax-ccuilib": ">=1.2.4",
+                "font-utils": ">=1.2.0"
             }
         },
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.6.11/CCMultiworldRandomizer-0.6.11.ccmod",
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.7.0/CCMultiworldRandomizer-0.7.0.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "abbb2161844048a72a5bc1b842fae68708d07a2d0a7dc9143fc9c52b3d8c0695"
+                    "sha256": "174cce2c1490a7a0be7730d16378aea5ac39a264e5d5b6f52ca9d9cccbebe0e8"
                 }
             }
         ],
         "stars": 11,
-        "lastUpdateTimestamp": 1750956022000,
+        "lastUpdateTimestamp": 1752128468000,
         "releasePages": [
+            {
+                "body": "# Changes since 0.6.11\r\n\r\n## Changes to Mod\r\n\r\n* Updated backend to archipelago.js 2.x.\r\n* Added **Text Client** Menu which shows incoming messages from the server.\r\n* Massively renovated login flow.\r\n* Add logicless chest tracker to map.\r\n* Updated Archipelago chest icons (thanks to Celio Hogane for the help with these sprites).\r\n\r\n## Changes to APWorld\r\n\r\n* Removed linear logic.\r\n  * If you used linear logic before, you are encouraged to switch to using Progressive Area Unlocks.\r\n\r\n## Fixes to APWorld\r\n\r\n* Fixed an issue where, when using item link with null replacement, the multiworld would fail to generate.\r\n\r\n## Migration Guide\r\n\r\n* The following should be **FULLY SUPPORTED**. If you encounter issues with this, please [report it as an error](https://github.com/CodeTriangle/CCMultiworldRandomizer/wiki/Setup#how-to-get-support).\r\n  * Using version 0.7.x of CCMultiworldRandomizer to play a world generated using the 0.6.x APWorld.\r\n  * Loading save games started on version 0.6.x of CCMultiworldRandomizer in version 0.7.x.\r\n* The following are **NOT SUPPORTED**:\r\n  * Using version 0.6.x of CCMultiworldRandomizer to play a world generated using the 0.7.x APWorld.\r\n  * Loading save games started on version 0.7.x of CCMultiworldRandomizer in version 0.6.x.\r\n\r\n# Changes since 0.7.0 Prerelease 3\r\n\r\n## Fixes to Mod\r\n\r\n* Fixed an issue where, when chest lock rando was enabled, key chests would appear with misleading symbols and would not have the correct lock.",
+                "version": "0.7.0",
+                "timestamp": 1752128468000,
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.7.0"
+            },
             {
                 "body": "## Fixes to Mod\r\n\r\n* Fixed an issue reintroduced in 0.6.10 where, during the loading process, the mod would fail due to missing a dependency that is no longer required.",
                 "version": "0.6.11",
