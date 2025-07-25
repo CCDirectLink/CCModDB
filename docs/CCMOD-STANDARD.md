@@ -1,10 +1,11 @@
 <!-- markdownlint-disable MD013 MD034 -->
 
-# `ccmod.json` format standard v1.0.1
+# `ccmod.json` format standard v1.1.0
 
 ## Each option explained
 
-- `id` - Mod unique identifier. Not shown to the user
+- `id` - Mod unique identifier. Not shown to the user.  
+   Must consist only of one or more alphanumeric characters, hyphens `-` or underscores `_`  
 - `version` - Uses the [semver](https://semver.org/) format
 - `title` - Title shown to users. Can be localized
 - `description` - Description shown to users. Can be localized
