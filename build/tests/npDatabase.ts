@@ -157,9 +157,25 @@ function findDependency(depName: string) {
     }
 }
 
+/* see https://github.com/CCDirectLink/CCLoader3/issues/18 for details */
+const ccmodIdValidationExceptions: string[] = [
+    'CrossCode Map Editor',
+    "Azure's Adjustments",
+    'Boki Colors',
+    'CCLoader display version',
+    'CrossCode C Edition',
+    'New game++',
+]
 function testMetadataCCMod(ccmod: PkgCCMod) {
     it('Test ccmod.json', () => {
         expect(typeof ccmod.id === 'string', 'ccmod.id (type: string) required').to.be.true
+
+        expect(
+            ccmod.id.length > 0 &&
+                (/^[a-zA-Z0-9_-]+$/.test(ccmod.id) ||
+                    ccmodIdValidationExceptions.includes(ccmod.id)),
+            'ccmod.id (type: string) must consist only of one or more alphanumberic characters, hyphens or underscores'
+        ).to.be.true
 
         expect(
             typeof ccmod.version === 'string' && semver.valid(ccmod.version) !== null,
