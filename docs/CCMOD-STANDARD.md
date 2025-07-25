@@ -53,20 +53,18 @@
 
 ```json
 {
-    "id": "crossedeyes",
-    "version": "0.5.7",
-    "title": "CrossedEyes",
-    "description": "Accessibility mod for CrossCode",
-    "repository": "https://github.com/CCDirectLink/CrossedEyes",
-    "tags": ["accessibility"],
-    "authors": ["krypek", "2767mr"],
+    "id": "ccmodmanager",
+    "version": "1.0.4",
+    "title": "CCModManager",
+    "description": "Mod manager for CrossCode!",
+    "repository": "https://github.com/CCDirectLink/CCModManager",
+    "tags": ["QoL"],
+    "authors": ["krypek", "dmitmel", "2767mr", "elluminance"],
     "icons": {
-        "24": "icon.png"
+        "24": "icon/icon.png"
     },
     "dependencies": {
-        "input-api": ">=1.0.0",
-        "cc-blitzkrieg": ">=0.4.7",
-        "crosscode": ">=1.4.0"
+        "ccloader": ">=3.2.2-alpha || ^2.0.0"
     },
     "plugin": "plugin.js"
 }
