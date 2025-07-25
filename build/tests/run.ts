@@ -1,4 +1,9 @@
 import mocha from 'mocha'
+
+if (!process.env['BRANCH']) {
+    throw new Error(`enviroment variable BRANCH not set`)
+}
+
 const mo = new mocha()
 mo.parallelMode(true)
 
