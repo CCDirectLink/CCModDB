@@ -70,5 +70,7 @@
 }
 ```
 
-Typescript types for this can be found under [`build/src/types.d.ts`](/build/src/types.d.ts) `ValidPkgCCMod`.  
-[JSON Schema](https://json-schema.org/) for `ccmod.json` can be found [here](/ccmod-json-schema.json).
+Typescript types for this can be found under [`build/src/types.ts`](/build/src/types.ts) `ValidPkgCCMod`.  
+[JSON Schema](https://json-schema.org/) for `ccmod.json` can be found [here](/ccmod-json-schema.json).  
+The JSON Schema is uploaded to [JSON Schema Store](https://www.schemastore.org/).  
+
