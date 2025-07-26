@@ -5555,7 +5555,7 @@
     "nax-ccuilib": {
         "metadataCCMod": {
             "id": "nax-ccuilib",
-            "version": "1.5.1",
+            "version": "1.5.2",
             "title": "CCUILib",
             "description": "Library of additional UI elements as well as making existing ones configurable",
             "repository": "https://github.com/krypciak/nax-ccuilib",
@@ -5575,16 +5575,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/nax-ccuilib/releases/download/v1.5.1/nax-ccuilib-1.5.1.ccmod",
+                "url": "https://github.com/krypciak/nax-ccuilib/releases/download/v1.5.2/nax-ccuilib-1.5.2.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "e46c98c52d2ae2fee3e2515c39b6813787575dca5d5776381ddafd2fa6a2f9bc"
+                    "sha256": "7b93ef300fec79442d42d2ecd53b773a0d96eafa353482e05a7e61ac4a1c4fdc"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1753170308000,
+        "lastUpdateTimestamp": 1753537707000,
         "releasePages": [
+            {
+                "body": "### Added\n\n- Added `enabled` option to widget API\n\n### Fixed\n\n- Fixed default buttons being enabled most of the time (for example the map button was not disabled during combat)\n- Fix quick menu keyboard button navigation with wasd attempting to focus hidden buttons",
+                "version": "1.5.2",
+                "timestamp": 1753537708000,
+                "url": "https://github.com/krypciak/nax-ccuilib/releases/tag/v1.5.2"
+            },
             {
                 "body": "### Added\n\n- Add option to pass your own `sc.TextGui` to `nax.ccuilib.pauseScreen.addText`",
                 "version": "1.5.1",
