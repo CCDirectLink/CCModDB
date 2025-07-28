@@ -7294,7 +7294,7 @@
     "xpc-litter": {
         "metadataCCMod": {
             "id": "xpc-litter",
-            "version": "2.1.1",
+            "version": "2.1.2",
             "title": {
                 "en_US": "XPC - Hexacast Litter"
             },
@@ -7317,16 +7317,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/xpc-hexacast-litter/archive/refs/tags/2.1.1.zip",
-                "source": "xpc-hexacast-litter-2.1.1",
+                "url": "https://github.com/XenonA7/xpc-hexacast-litter/archive/refs/tags/2.1.2.zip",
+                "source": "xpc-hexacast-litter-2.1.2",
                 "hash": {
-                    "sha256": "48d9553cc86143fb69e9aed7775c62c711b6c4f5f5c48b8d42de06bd2393f506"
+                    "sha256": "f9491b05ff61de0f17ebc43577cc8a9989fad061da465b62974b46e73e976a6f"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1749454008000,
+        "lastUpdateTimestamp": 1753664866000,
         "releasePages": [
+            {
+                "body": "2.1.2 (07/27/2025)\r\n- Support for specials.neutral.neutralCardTripleDeath (XPC 2.18.0)",
+                "version": "2.1.2",
+                "timestamp": 1753664866000,
+                "url": "https://github.com/XenonA7/xpc-hexacast-litter/releases/tag/2.1.2"
+            },
             {
                 "body": "2.1.1 (06/09/2025)\r\n- Support for ball-shock.stasisStormCardDeath (XPC 2.13.0)",
                 "version": "2.1.1",
