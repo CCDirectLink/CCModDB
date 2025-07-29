@@ -6325,7 +6325,7 @@
     "starcaller-2": {
         "metadataCCMod": {
             "id": "starcaller-2",
-            "version": "0.6.0",
+            "version": "0.6.1",
             "title": {
                 "en_US": "Starcaller 2",
                 "de_DE": "Starcaller 2",
@@ -6371,16 +6371,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/starcaller-2/archive/refs/tags/0.6.0.zip",
-                "source": "starcaller-2-0.6.0",
+                "url": "https://github.com/XenonA7/starcaller-2/archive/refs/tags/0.6.1.zip",
+                "source": "starcaller-2-0.6.1",
                 "hash": {
-                    "sha256": "a18410f19feb7a76871d87ed718c8682749bc01466f7874d657eac5aa80a1918"
+                    "sha256": "8696f02ee9639fb19b4e03035b302820a7a75c0da0d79e154306b6ccc821a005"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1740954777000,
+        "lastUpdateTimestamp": 1753765527000,
         "releasePages": [
+            {
+                "body": "## 0.6.1 (07/28/25)\r\n### New Content\r\n- XPC's cheat code custom skills are now usable by Starcaller2 if both XPC and ArcaneLab are installed and the quest is complete\r\n- Added Starcaller1 cameo to summoner lobby if Lubkuluk's Playable Classes is installed (low chance to appear)\r\n### Changes\r\n- Stellar Blade now has the NO_PUZZLE property\r\n- Added audio pitch variance to effect beeTrail\r\n- Updated all PLAY_ANIM_RANGE effect steps in the mod to use `\"alongY\": true`\r\n### Fixes\r\n- All status conditions granted by Starcaller2 combat arts now have functional timers on the GUI (code by Azure Lazuline)\r\n- Fixed instances of file path space padding in effect data sheets\r\n- Fixed repeating 1-frame animations for all particle effects\r\n- Fixed repeating 1-frame animations for all player proxies\r\n- Fixed all instances of WAIT for time 0.01 in all files (increased to 0.02 minimum standard)\r\n- Set withElse value to false for Disarming Shield and Disintegration Shield\r\n- Fixed ENV_STAR2_DARK particles not rotating in effect vengeancePulsePulse\r\n### Balance\r\n- Stellar Blade healing increased from 0.0075 to 0.0175 per hit\r\n- Stellar Blade can no longer be used to target yourself when facing a wall (startDistCollide NONE)",
+                "version": "0.6.1",
+                "timestamp": 1753765527000,
+                "url": "https://github.com/XenonA7/starcaller-2/releases/tag/0.6.1"
+            },
             {
                 "body": "## 0.6.0 (03/02/25)\r\n### New Content\r\n- New ally option: Echinonix (Cold summon tier 1)\r\n- New ally option: Karrotank (Cold summon tier 2)\r\n### Changes\r\n- Improved effect beeTrail particle alignment\r\n- Standardized pumpkin targetDetect settings\r\n### Fixes\r\n- Fixed light duration in effect glacialHiveAppear \r\n- Fixed light size in effect glacialHiveFinalExplode",
                 "version": "0.6.0",
