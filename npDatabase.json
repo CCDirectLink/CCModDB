@@ -6863,7 +6863,7 @@
     "xenons-playable-classes": {
         "metadataCCMod": {
             "id": "xenons-playable-classes",
-            "version": "2.17.1",
+            "version": "2.18.0",
             "title": {
                 "en_US": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
                 "de_DE": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
@@ -6913,16 +6913,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/2.17.1.zip",
-                "source": "xenons-playable-classes-2.17.1",
+                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/2.18.0.zip",
+                "source": "xenons-playable-classes-2.18.0",
                 "hash": {
-                    "sha256": "1e1547fe4bf9fa20431253ed91cf85b1986ea2114046f47a3aea22da4cc08459"
+                    "sha256": "bce7437572040505117085cfec5e0120cbde83692e3cfb57615a1388d4fe675d"
                 }
             }
         ],
         "stars": 26,
-        "lastUpdateTimestamp": 1753166145000,
+        "lastUpdateTimestamp": 1754253808000,
         "releasePages": [
+            {
+                "body": "## 2.18.0 (08/03/2025)\r\n### General\r\n- Hexacast litter mod updated to 2.1.2\r\n### New Content\r\n- New Hexacast combat art: Ruinous Pulse (Neutral Guard Lv.2A)\r\n- Added new Hexacast sprite animations: handUpPre, handUpLoop, handUpPreAir, handUpLoopAir\r\n- Added some cheat skill icons although they are currently unused\r\n- Added \\js\\azure-lazuline\\action-buff-timers.js (code by Azure Lazuline)\r\n- Added additional \"class tips\" dialogue for Hexacast in hideout-lobby\r\n### Changes\r\n- Ampere Cloak reworked to explode on contact rather than doing repeating damage\r\n- Blinding Glare will now only proceed if you hit at least one enemy with the initial hit\r\n- Blinding Glare description rewritten\r\n- Hexacast now uses handUp animation for Freeze Rays, Polar Pirouette, Ignite Embers, and Ragnarök\r\n- Improved Hexacast animation/effect alignment for Ragnarök\r\n- The enemy-testing map now has EXP gain disabled by default\r\n- Triblader League quest reward changed from neutral CP to 3 \"One Up\" items\r\n- Temporal Miasma's ally-targeting zone hitbox changed from limiter NO_DAMAGE to SIGNAL\r\n- Added custom effect freezeRaysPlayerPulse to the start of Freeze Rays\r\n- Adjusted the duration/movement of the SHOCK_EXPLODE particles in effect thunderJacketExplode\r\n### Fixes\r\n- Corrected some illegal colors in spritesheet hexacast2.png\r\n- All action buffs granted by XPC combat arts now have functional timers on the GUI (code by Azure Lazuline)\r\n- Fixed player Triblader ATTACK and ATTACK_REV actions having too short post-melee WAIT times for neutral versions\r\n- Player Triblader4 changed to have proper post-melee WAIT times, with speed now coming from shorter \"attack\" action block time\r\n- Fixed Spectral Swordsman first melee hit having wrong/low damageFactor\r\n- Fixed Spectral Swordsman/Legion not having checkCollision for melee attacks\r\n- Chilling Thrust no longer categorized as \"INTERRUPT\"\r\n- Fixed Fire Saw hitbox zHeight\r\n- Fixed Shining Shield using old name in Hexacast class tips dialogue\r\n- Fixed text formatting error in Hexacast class tip #29\r\n### Balance (Triblader)\r\n- Unified player triblader damageFactor values for default melee attacks across elements (1.05 standard, 0.925 for Triblader4)\r\n  * It was previously 1.05 for neutral, 1.15 for other elements\r\n- Enemy triblader non-finisher melee sweeps damageFactor reduced from 1.15 to 1.05\r\n- Player triblader ATTACK and ATTACK_REV \"attack\" action block reduced from 0.3 to 0.28\r\n- Player Triblader4 ATTACK and ATTACK_REV \"attack\" action block reduced from 0.3 to 0.24\r\n- Player Triblader4 ATTACK and ATTACK_REV damageFactor increased from 0.85 to 0.925\r\n- Trailblazer firePillar proxy removed initial spawn explosion hitbox\r\n- Trailblazer firePillar proxy increased contact damageFactor from 0.25 to 0.40\r\n- Trailblazer firePillar proxy status inflict factor increased from 1.0 to 2.5\r\n- Trailblazer dash hitbox damageFactor increased from 0.35 to 0.60\r\n- Trailblazer final spin attack damageFactor increased from 1.5 to 2.5\r\n- Trailblazer final spin attack knockback increased from HEAVY to MASSIVE\r\n- Double Whirl reduced delay after first sweep by 0.1 seconds\r\n- Spectral Swordsman hpFactor increased from 2.5 to 2.65 (will survive 2 charged shots now)\r\n- Chilling Thrust initial hitbox made smaller and reduced from MASSIVE to HEAVY\r\n- Fire Saw strength reduced from HEAVY to MEDIUM\r\n- Fire Saw knockback reduced from MEDIUM to HEAVY\r\n- Fire Saw damageFactor reduced from 2.7 to 2.25\r\n- Frost Rupture now grants MEDIUM hit stability during initial hits, MASSIVE stability during final thrust\r\n### Balance (Hexacast)\r\n- Shock Surge damageFactor increased from 3 to 5\r\n- Icicle Deck trigger delay reduced from 0.05 to 0.02 seconds",
+                "version": "2.18.0",
+                "timestamp": 1754253808000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/2.18.0"
+            },
             {
                 "body": "## 2.17.1 (07/21/2025)\r\n### New Content\r\n- Added proper chakram animations for Hexacasts when using Spheromancer custom skills\r\n### Changes\r\n- Glaring Shine renamed to Blinding Glare",
                 "version": "2.17.1",
