@@ -6863,7 +6863,7 @@
     "xenons-playable-classes": {
         "metadataCCMod": {
             "id": "xenons-playable-classes",
-            "version": "2.18.1",
+            "version": "2.18.2",
             "title": {
                 "en_US": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
                 "de_DE": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
@@ -6913,16 +6913,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/2.18.1.zip",
-                "source": "xenons-playable-classes-2.18.1",
+                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/2.18.2.zip",
+                "source": "xenons-playable-classes-2.18.2",
                 "hash": {
-                    "sha256": "74be8fecaa39ae8a55880c29766e1bd9d822c0307138557d086a09c9d923e21c"
+                    "sha256": "a827862540123e9137427037c0c8902bd0ccaa34ad1ac4fe86f3203fc71f8ee4"
                 }
             }
         ],
         "stars": 26,
-        "lastUpdateTimestamp": 1754371343000,
+        "lastUpdateTimestamp": 1754775442000,
         "releasePages": [
+            {
+                "body": "## 2.18.2 (08/09/2025)\r\n### New Content\r\n- Added \\js\\azure-lazuline\\postshoot-delay.js (code by Azure Lazuline)\r\n### Changes\r\n- Re-sprited Hexacast east postShoot1H animation\r\n- Split all 128 instances of Hexacast postShoot animations into 1-handed and 2-handed versions to improve animation flow\r\n- Added preIdle ending animation to most Hexacast arts not ending in postShoot\r\n- Increased player flash color brightness for effects brittleBarrierGlow and healCardGlow\r\n- Removed preIdle animation step from the end of Lea Hexacast base throwing custom skills to fix animation glitch\r\n- Changed Icicle Lance ending animation to preIdle instead of postShoot\r\n- Increased action wait time for Thunder Jacket to improve animation alignment (no affect on casting time)\r\n- Added a 0.1 second animation delay after the end of Celestial Cohort's final hit\r\n- Meteor Storm (ranged edition) now spawns the projectile card at startDist offset -48 instead of 0\r\n- Hexacast now uses triblader battleIdle animation for Overclock\r\n### Fixes\r\n- Fixed the \"aim\" animation glitch which occurs after Hexacast throw attacks/arts (code by Azure Lazuline)\r\n### Balance\r\n- Frozen Fortress first attack knockback changed from reverse MEDIUM to straight MASSIVE",
+                "version": "2.18.2",
+                "timestamp": 1754775442000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/2.18.2"
+            },
             {
                 "body": "## 2.18.1 (08/04/2025)\r\n### (not)New Content\r\n- Split all Hexacast postShoot animations into distinct 1-handed and 2-handed versions (new sprites)\r\n- This exacerbates the issue caused by the game's forced aim->preidle->idle animation performed after any throw art or throw attack\r\n- As a result, added the original postShoot animations back while keeping the new ones as unused\r\n### Changes\r\n- Adjusted animation timing for Hexacast Ragnarök (visual only)\r\n- Improved effect scorchingSwirlHexagons2\r\n- Proxy spellTagCard now appears further away from its target before attacking\r\n- Repositioned floatEC sheet within Hexacast spritesheet\r\n- Added hover and hoverMove walkAnim definitions to Hexacast player/character files\r\n### Fixes\r\n- Fixed particle pScale timings for effects spiritBlastHexagons and spiritBlastHexagonsRev\r\n- Deleted redundant \"hovering\" sheet in Hexacast animation files\r\n### Balance\r\n- Spell Tag dash speed decreased from 350 to 325",
                 "version": "2.18.1",
