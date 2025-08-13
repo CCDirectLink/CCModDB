@@ -4954,7 +4954,7 @@
     "lub-barrier-gui": {
         "metadataCCMod": {
             "id": "lub-barrier-gui",
-            "version": "0.0.1",
+            "version": "0.0.3",
             "title": {
                 "en_US": "Lubkuluk's Barrier GUI"
             },
@@ -4976,16 +4976,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/lubkuluk/lub-barrier-gui/releases/download/0.0.1/lub-barrier-gui.zip",
+                "url": "https://github.com/lubkuluk/lub-barrier-gui/releases/download/0.0.3/lub-barrier-gui.zip",
                 "source": "lub-barrier-gui",
                 "hash": {
-                    "sha256": "69d3d798cd007be906731af4420e1ed01d9e49411783e7e7c2d819dd288abfb4"
+                    "sha256": "71b77eef2658faf6431a20f434a152448591dee2bbeea8f6e5ac843eff70179f"
                 }
             }
         ],
         "stars": 0,
         "lastUpdateTimestamp": 1740480632000,
         "releasePages": [
+            {
+                "body": "## Changes\r\n\r\n- Changed how the internal variable interaction with the gui works\r\n- Changed how the GUI is displayed",
+                "version": "0.0.3",
+                "timestamp": 1740480632000,
+                "url": "https://github.com/lubkuluk/lub-barrier-gui/releases/tag/0.0.3"
+            },
             {
                 "body": "- Release",
                 "version": "0.0.1",
