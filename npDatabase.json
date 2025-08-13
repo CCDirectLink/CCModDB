@@ -4818,7 +4818,7 @@
     "lqm-joern-mod": {
         "metadataCCMod": {
             "id": "lqm-joern-mod",
-            "version": "0.5.78",
+            "version": "0.6.0",
             "title": {
                 "en_US": "Lubkuluk's Playable Classes \\i[class-quadro] \\c[1](WIP)"
             },
@@ -4830,7 +4830,7 @@
                 "player character",
                 "party member",
                 "pvp duel",
-                "combat arts"
+                "combat arts, arena"
             ],
             "authors": [
                 "Lubkuluk",
@@ -4848,23 +4848,33 @@
                 "extendable-severed-heads": ">=1.1.0",
                 "xenons-playable-classes": ">=2.0.0",
                 "cc-alybox": ">=1.0.0",
-                "post-game": ">=1.4.0",
-                "lub-summoner-frame": ">=0.0.2"
+                "lub-summoner-frame": ">=0.0.2",
+                "font-utils": ">=1.2.0",
+                "lub-barrier-gui": ">=0.0.3",
+                "extension-asset-preloader": ">=1.0.0",
+                "crosscode": ">=1.4.0",
+                "post-game": ">=1.4.0"
             }
         },
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/lubkuluk/lubkuluks-joern-mod/releases/download/0.5.78/lubkuluks-playable-classes.zip",
+                "url": "https://github.com/lubkuluk/lubkuluks-joern-mod/releases/download/0.6.0/lubkuluks-playable-classes.zip",
                 "source": "lubkuluks-playable-classes",
                 "hash": {
-                    "sha256": "039a92327d2080ad771330ac5dbefb1fc81686569a97a7328d0ef2162b1a0659"
+                    "sha256": "9a59a5ab24e9d7ba175dbf7e8e694dc44b269ffce5ccb9cba126a7e1138a9e2c"
                 }
             }
         ],
         "stars": 2,
         "lastUpdateTimestamp": 1740389979000,
         "releasePages": [
+            {
+                "body": "0.6.0\r\n\r\n## Important Change\r\n\r\n- Added a new arena cup featuring a much harder Apollo fight, and a new cup that is enabled if you beat him while having triblader cup unlocked\r\n\r\n- Added a dev room that can be accessed via Maroon Valley - Vivid Path which features a very customizable pvp combat simulator\r\n\r\n- Joern2 has been reworked (again), the previous prototype where you guard attacks to gain power has been fully turned into a central mechanic, introducing \"Power Up!\"\r\nBy Guarding attacks and using some arts, Joern2 can gain Energy which is a new resource unique to him. By double-tapping the guard button, you can go into Power Up mode, consuming previously gathered energy and sacrificing some durability for a great increase in Attack and Focus, the Attack and Focus gained this way ties to how much defence and hp (as a stat) you sacrificed and how much energy you gathered, meaning the buff is significantly stronger for defensive builds\r\n\r\nAfter 10 seconds the buff ends and Joern2 reverts to normal stats he had, alternatively you can end the effect early if you think you need the hp and defence more than the Attack and Focus by double tapping guard again\r\n\r\nJoern can always go into Power Up mode and it doesn't cost SP to do so, however doing so with no energy will cause a greater sacrifice in durability and not so great increase in offense, gather lots of energy (up to 100) to make the best out of this\r\n\r\nGuarding Melee attacks, guarding enough damage or hit (as in hit count) generates energy\r\n\r\n### New Combat Arts\r\n\r\n- Alternating Strike (Shock Throw Lv1.B)\r\n\r\n### Buffs\r\n\r\n- Flame Hammer overall damage increased, slightly decreased dash damage and significantly increased hammer damage, the hammer now also lingers more to deal damage\r\n- Chilling Slash lingering damage area is half as long and it's total damage is slightly increased\r\n- Chilling Slash lingering damage area now inflicts status effects\r\n- Lightning Crash stun now lasts longer so that pvp enemies don't evade the actual hit anymore\r\n- Rookie Harbour C'tron duel now uses the updated Meteor Flare which comes out faster\r\n- Rookie Harbour C'tron duel now uses the updated Spell Tag (dash speed increased from 300 to 350)\r\n- Indigo Advance damageFactor increased from 12 to 14\r\n- The following combat arts now grant energy when their special conditions are met:\r\n\t- Charge!\r\n\t- Armor Cleaver\r\n\t- Sure Strike\r\n\t- Ashen Mark\r\n- Buffed Bergen Trail Emilie (unused in the story) to match more with the other bergen trail enemies added by LPC\r\n- Buffed (Or fixed) Maroon Valley Joern's aim which sometimes made him shoot unintendedly due to a lack of instant rotation\r\n- Buffed Maroon Valley Emilie to be more likely to use her level 2 neutral arts\r\n- Buffed Maroon Valley Apollo, Gaia's Garden Apollo and Shizuka to utilieze their assault modifiers properly\r\n- Apollo5 is now more likely to use higher level arts if he has the sp for it, instead of sticking to lower level arts and hoarding sp\r\n- Apollo5 guarding logic enhanced\r\n- Increased Apollo5's brawler and shooter modifiers\r\n- Apollo5 will now use ranged combat arts more frequently while firing charged shot\r\n- Bergen Trail Joern can now try to trap his enemies to his hammer earlier to the fight\r\n\r\n### Nerfs\r\n\r\n- Amber Slash hammer final lightning damage slightly nerfed\r\n- Bergen Trail Joern no longer notifies apollo to use ball of steel when an enemy is damaged by his gravity explosion (hammer version gravity pull)\r\n\r\n### Misc Changes\r\n\r\n- New dependency mod: Font Utils, extension-assets-preloader\r\n- Electro-Charged Fortress lightnings now have a collideCancel value of 1, making them no longer linger on walls upon miss\r\n- Added missing empowered throw vfx for shock and wave\r\n- Fixed Gaia's Garden Hexacast NPC falling down at map start due to incorrect Z positioning\r\n- Increased hammer slam screen shake intensity and added new sounds\r\n- Chronobreak now has proper camera movement during its use\r\n- Chronobreak now has some new visual effects\r\n- Double Bolt and Chronobreak moved to B tree from A tree in the skilltree\r\n- Maroon Valley Joern can now use his protective spells on any pvp ally and not just apollo-2 (lpc)\r\n- Created ally versions of pvp enemies added by lpc by checking for an attribute to decide whether to take the player's or the enemy's points for changing strategy\r\n- Vanguard's Resolve and Protective Storm now function for enemies from the player party during pvp if lub-summoner-frame supported variable tmp.teamPvp is active\r\n- Added a new tag \"arena\" into the ccmod.json\r\n- Added a number of new bgm entries\r\n\r\n### Fixes\r\n\r\n- Fixed PvP fights added by LPC crashing due to an incorrect formatting of the custom SHOW_COMBAT_MSG entry now SHOW_COMBAT_MSG_CUSTOM is used instead\r\n- Joern and Joern2 now have itemEatSlow and itemEatFastest to properly display fast or slow consumed items\r\n- Vanguard's Resolve shield now doesn't persist infinitely and fixed up the code a little\r\n- Apollo5 will no longer stack Burning Pulse on top of each other (hopefully)",
+                "version": "0.6.0",
+                "timestamp": 1740389979000,
+                "url": "https://github.com/lubkuluk/lubkuluks-joern-mod/releases/tag/0.6.0"
+            },
             {
                 "body": "0.5.78\r\n\r\n## New Content\r\n\r\n- Added a pre fight GUI (parallax) to Bergen Trail team pvp\r\n\r\n### New Combat Arts\r\n\r\n- Chains of Frost (Cold Guard Lv2B)\r\n- Polar Swirl (Cold Melee Lv2A)\r\n\r\n### Buffs\r\n\r\n\r\n\r\n### Nerfs\r\n\r\n\r\n### Misc Changes\r\n\r\n- Added new startup effect on Magma Whirl (Heat dash Lv1A)\r\n- Removed the mention of hammer interractions on several arts, since the idea is discontinued\r\n\r\n## Fixes\r\n\r\n- Fixed a crash caused by joern2 (player) and joern2 (enemy) who had proxies mentioning an image from Arcane Lab which isn't a dependancy\r\n",
                 "version": "0.5.78",
