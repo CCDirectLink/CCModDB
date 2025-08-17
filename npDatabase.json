@@ -2803,7 +2803,7 @@
     "ccmodmanager": {
         "metadataCCMod": {
             "id": "ccmodmanager",
-            "version": "1.0.4",
+            "version": "1.1.0",
             "title": "CCModManager",
             "description": "Mod manager for CrossCode!",
             "repository": "https://github.com/CCDirectLink/CCModManager",
@@ -2827,16 +2827,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CCDirectLink/CCModManager/releases/download/v1.0.4/ccmodmanager-1.0.4.ccmod",
+                "url": "https://github.com/CCDirectLink/CCModManager/releases/download/v1.1.0/ccmodmanager-1.1.0.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "6c00c4f795edf0cb10411580bbce62255f5722c281c25a0eea5a1393a3c095f3"
+                    "sha256": "d73d399cab16c44d8d8d6caa340e72dc09b3511eec55ca28c8f0bb56bb6f01a3"
                 }
             }
         ],
         "stars": 6,
-        "lastUpdateTimestamp": 1750932616000,
+        "lastUpdateTimestamp": 1755431863000,
         "releasePages": [
+            {
+                "body": "### Added\n\n- Added new mod option field `noNamePadding` that disables the padding after the option name\n- `INPUT_FIELD` can now have a name\n- Added optional `onInit` and `onDeinit` functions to visible mod options\n- Added CCModManager badge to README.md\n\n### Changed\n\n- Added spacing between `INPUT_FIELD` and `INFO` \n\n### Fixed\n\n- Improve browser compatibility\n- Improve menu opening performance\n- Fix mod icon loading sometimes throwing errors on CCLoader3\n- Improve compatibility with CrossCode v1.0.2-2 (speedrunner branch)\n- Fix game crash when trying to enable a mod that has missing dependencies\n- Show a prompt to enable installed mod dependencies when they are disabled after installation\n- Fix an error message being printed when in mod options menu that contains an `OBJECT_SLIDER` and resizing a window\n- Don't install library mods that are built into CCLoader3 (`input-api`, `extension-assert-preloader`, `nax-module-cache`) \n- Fix game freeze when inputting large nonsense repository url\n- Fix focus highlight of `INPUT_FIELD` without validation being shorter than the input field\n- Fixed `INPUT_FIELD`, `BUTTON` and `INFO` mod option types eating their header\n- Fix menu stack getting popped too many times on opening the mod manager help menu resulting in the game being stuck in the mod manager menu\n- Fix mod tags and authors not showing up on mod that aren't in the database\n- Fix mod tags overflowing out of bounds when they are too long",
+                "version": "1.1.0",
+                "timestamp": 1755431864000,
+                "url": "https://github.com/CCDirectLink/CCModManager/releases/tag/v1.1.0"
+            },
             {
                 "body": "### Added\n\n- Added new mod option type `INPUT_FIELD`\n\n### Changed\n\n- Move repository adding from a popup to a separate tab in CCModManager's options\n- Move `nax.ccuilib.InputField` implementation from `nax-ccuilib` to here (now named `modmanager.gui.InputField`)\n\n### Fixed\n\n- Improve browser compatibility\n- Fix mod menu sometimes opening empty\n- Improve cc-instanceinator compatibility\n- Fix mod options menu title showing the mod title instead of the title defined when registering the mod",
                 "version": "1.0.4",
