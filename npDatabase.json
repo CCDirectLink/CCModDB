@@ -174,16 +174,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.25.4/v2.14.2.zip",
-                "source": "CCLoader-2.25.4-v2.14.2/assets/mods/ccloader-version-display",
+                "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.25.5/v2.14.2.zip",
+                "source": "CCLoader-2.25.5-v2.14.2/assets/mods/ccloader-version-display",
                 "hash": {
-                    "sha256": "7243f787bc1f8128327d572dbb380e0c684b0254d9b512dd06182025b9cd30f2"
+                    "sha256": "fef5fec0dc2a2ad50e725318263833caf36582cf05f4239b1d50168542fe0362"
                 }
             }
         ],
-        "stars": 50,
-        "lastUpdateTimestamp": 1750932859000,
+        "stars": 53,
+        "lastUpdateTimestamp": 1755432041000,
         "releasePages": [
+            {
+                "body": "- Update ccmodmanager.ccmod to v1.1.0\r\n- Improve startup time (~0.5 seconds)",
+                "version": "v2.25.5/v2.14.2",
+                "timestamp": 1755432041000,
+                "url": "https://github.com/CCDirectLink/CCLoader/releases/tag/v2.25.5/v2.14.2"
+            },
             {
                 "body": "- Update ccmodmanager.ccmod to v1.0.4",
                 "version": "v2.25.4/v2.14.2",
@@ -926,16 +932,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.25.4/v2.14.2.zip",
-                "source": "CCLoader-2.25.4-v2.14.2/assets/mods/simplify",
+                "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.25.5/v2.14.2.zip",
+                "source": "CCLoader-2.25.5-v2.14.2/assets/mods/simplify",
                 "hash": {
-                    "sha256": "7243f787bc1f8128327d572dbb380e0c684b0254d9b512dd06182025b9cd30f2"
+                    "sha256": "fef5fec0dc2a2ad50e725318263833caf36582cf05f4239b1d50168542fe0362"
                 }
             }
         ],
-        "stars": 50,
-        "lastUpdateTimestamp": 1750932859000,
+        "stars": 53,
+        "lastUpdateTimestamp": 1755432041000,
         "releasePages": [
+            {
+                "body": "- Update ccmodmanager.ccmod to v1.1.0\r\n- Improve startup time (~0.5 seconds)",
+                "version": "v2.25.5/v2.14.2",
+                "timestamp": 1755432041000,
+                "url": "https://github.com/CCDirectLink/CCLoader/releases/tag/v2.25.5/v2.14.2"
+            },
             {
                 "body": "- Update ccmodmanager.ccmod to v1.0.4",
                 "version": "v2.25.4/v2.14.2",
@@ -2561,7 +2573,7 @@
     "ccloader": {
         "metadataCCMod": {
             "id": "ccloader",
-            "version": "2.25.4",
+            "version": "2.25.5",
             "title": "CCLoader",
             "description": "Modloader for CrossCode. This or a similar modloader is needed for most mods.",
             "repository": "https://github.com/CCDirectLink/CCLoader",
@@ -2584,16 +2596,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.25.4/v2.14.2.zip",
-                "source": "CCLoader-2.25.4-v2.14.2",
+                "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.25.5/v2.14.2.zip",
+                "source": "CCLoader-2.25.5-v2.14.2",
                 "hash": {
-                    "sha256": "7243f787bc1f8128327d572dbb380e0c684b0254d9b512dd06182025b9cd30f2"
+                    "sha256": "fef5fec0dc2a2ad50e725318263833caf36582cf05f4239b1d50168542fe0362"
                 }
             }
         ],
-        "stars": 50,
-        "lastUpdateTimestamp": 1750932859000,
+        "stars": 53,
+        "lastUpdateTimestamp": 1755432041000,
         "releasePages": [
+            {
+                "body": "- Update ccmodmanager.ccmod to v1.1.0\r\n- Improve startup time (~0.5 seconds)",
+                "version": "v2.25.5/v2.14.2",
+                "timestamp": 1755432041000,
+                "url": "https://github.com/CCDirectLink/CCLoader/releases/tag/v2.25.5/v2.14.2"
+            },
             {
                 "body": "- Update ccmodmanager.ccmod to v1.0.4",
                 "version": "v2.25.4/v2.14.2",

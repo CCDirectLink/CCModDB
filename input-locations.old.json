@@ -1,11 +1,11 @@
 [
     {
-        "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.25.4/v2.14.2.zip",
-        "ccmodPath": "CCLoader-2.25.4-v2.14.2/ccloader/ccmod.json",
-        "source": "CCLoader-2.25.4-v2.14.2"
+        "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.25.5/v2.14.2.zip",
+        "ccmodPath": "CCLoader-2.25.5-v2.14.2/ccloader/ccmod.json",
+        "source": "CCLoader-2.25.5-v2.14.2"
     },
-    { "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.25.4/v2.14.2.zip", "source": "CCLoader-2.25.4-v2.14.2/assets/mods/simplify" },
-    { "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.25.4/v2.14.2.zip", "source": "CCLoader-2.25.4-v2.14.2/assets/mods/ccloader-version-display" },
+    { "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.25.5/v2.14.2.zip", "source": "CCLoader-2.25.5-v2.14.2/assets/mods/simplify" },
+    { "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.25.5/v2.14.2.zip", "source": "CCLoader-2.25.5-v2.14.2/assets/mods/ccloader-version-display" },
     { "url": "https://github.com/CCDirectLink/input-api/archive/refs/tags/v1.0.2.zip" },
     { "url": "https://github.com/krypciak/cc-blitzkrieg/releases/download/v0.5.9/cc-blitzkrieg-0.5.9.ccmod" },
     { "url": "https://github.com/krypciak/cc-fancy-crash/releases/download/v1.1.0/cc-fancy-crash-1.1.0.ccmod" },
