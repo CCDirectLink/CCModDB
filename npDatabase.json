@@ -2358,7 +2358,7 @@
     "cc-staircase-effect-fix": {
         "metadataCCMod": {
             "id": "cc-staircase-effect-fix",
-            "version": "1.0.2",
+            "version": "1.0.3",
             "title": "Staircase Effect Fix",
             "description": "Fixes staircase effect when moving diagonally",
             "repository": "https://github.com/Unarelith/cc-staircase-effect-fix",
@@ -2373,16 +2373,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/Unarelith/cc-staircase-effect-fix/releases/download/v1.0.2/cc-staircase-effect-fix-1.0.2.ccmod",
+                "url": "https://github.com/Unarelith/cc-staircase-effect-fix/releases/download/v1.0.3/cc-staircase-effect-fix-1.0.3.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "b139a4ed798c1bd8180b4323ea91d580624d4d46dd535cd80bc6da422d8e2caf"
+                    "sha256": "b9a41fec51bb663e20e69ee568623ce2986d75711050ff3e22ecce83637571a6"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1730401966000,
+        "lastUpdateTimestamp": 1755393532000,
         "releasePages": [
+            {
+                "body": "- Small tweak on \"light\" maps (fixed #2 and #3)\r\n- Removed physics rounding entirely\r\n- Changed default settings\r\n    - Disabled timer precision improvement\r\n    - Enabled smoothing for all cameras (fixed #4)",
+                "version": "1.0.3",
+                "timestamp": 1755393532000,
+                "url": "https://github.com/Unarelith/cc-staircase-effect-fix/releases/tag/v1.0.3"
+            },
             {
                 "body": "Improved settings menu (thanks to updates in mod manager).",
                 "version": "1.0.2",
