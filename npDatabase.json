@@ -6916,7 +6916,7 @@
     "xenons-playable-classes": {
         "metadataCCMod": {
             "id": "xenons-playable-classes",
-            "version": "2.20.0",
+            "version": "2.20.1",
             "title": {
                 "en_US": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
                 "de_DE": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
@@ -6966,16 +6966,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/2.20.0.zip",
-                "source": "xenons-playable-classes-2.20.0",
+                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/2.20.1.zip",
+                "source": "xenons-playable-classes-2.20.1",
                 "hash": {
-                    "sha256": "eacc8790a3c2a524ab207cecacb55c86d6d14bbe9332b0eb6e6d6c3a4d28b5e4"
+                    "sha256": "4c8be1e0e77c6d8622007e627ab4a2918c339b3878abffb78c44c7562ac761cb"
                 }
             }
         ],
         "stars": 26,
-        "lastUpdateTimestamp": 1755940344000,
+        "lastUpdateTimestamp": 1755979904000,
         "releasePages": [
+            {
+                "body": "## 2.20.1 (08/23/2025)\r\n### Changes\r\n- Heal Battery now shows an indicator effect if it charges while over distance 200 from the player\r\n### Fixes\r\n- Fixed Triblader Warp Decoy wrong collision type\r\n- Minimized proxy healBatteryCard's signal hitbox visual damage effect issue with new manual collType management\r\n### Balance\r\n- Heal Battery is now interruptible during the first 0.75 seconds of casting\r\n- Heal Battery dash cancel delay increased from 0.25 to 0.9\r\n- Heal Battery subsequent heal strength increased from 4% to 6% (initial heal is 5%)",
+                "version": "2.20.1",
+                "timestamp": 1755979904000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/2.20.1"
+            },
             {
                 "body": "## 2.20.0 (08/23/2025)\r\n### New Content\r\n- New Hexacast combat art: Heal Battery (Wave Guard Lv.2B)\r\n- Added a teleporter to LPC's new dev room in hideout-southwest (only if the LPC mod is detected as installed)\r\n### Changes\r\n- Ethereal Stance removed from main Hexacast player file (replaced by Heal Battery), it is now a custom skill\r\n- Updated install instructions in README.md\r\n- Proxy slowDebuffProxy renamed to etherealSlowDebuffProxy\r\n- Map hideout-hexa now has a \"guard rail\" system to prevent enemy navigation going off the edge when platform is up\r\n- Re-ordered some teleporter positions in hideout-southwest\r\n- Improved animation/effect implementation of Hexacast Sphere Storm\r\n- Proxy beamBlasterLaser split into beamBlasterHitbox and beamBlasterTelegraph to improve hit reliability\r\n- Beam Blaster now uses two effect instances of beamBlasterLaserSource and one of beamBlasterLaser\r\n- Added some additional particles to Beam Blaster\r\n- Made pScale end more gradual for effect spiritBlastFinalHexagons\r\n- Improved effect waveTeleportTrail (used by Triblader Phase Jump)\r\n- Improved effect waveCircleJump (used by Triblader Phase Jump)\r\n- Added effect freezeRayLaserGroundHexagons to Freeze Rays\r\n- Reduced audio volume for effect freezeRayLaser\r\n- Re-worded Blaster Sentry description\r\n- Triblader Warp Decoy reworked from being inert with HP factor 1.5 to explode on death with HP factor 0.05\r\n- Triblader Warp Decoy updated description\r\n- Triblader Warp Decoy added as Lea custom skill\r\n- Triblader Warp Decoy added as Hexacast custom skill and separated from spheromancer Warp Decoy custom skill\r\n- Hexacast THROW_NORMAL_REV now shoots clockwise\r\n- Added a pRotate to effect ruinousDebuffStartHexagons\r\n### Fixes\r\n- Fixed party members not being allowed in 2v2 Triblader training map\r\n- Fixed Triblader2/3/4/5 NE jump/fall sprite frame offset\r\n- Fixed triblader effect etherBombExplode to use moveWithTarget 0 for all particles\r\n### Balance\r\n- Kindling Dance fireball damageFactor decreased from 0.55 to 0.50\r\n- Arcane Volley initial projectile speeds increased from 300/400 to 375/475 (travels further)\r\n- Storm Chaser speed progression changed from 140-160-180-200-250-300-600 to 120-130-150-180-250-300-600\r\n- Stasis Rune target DEF buff increased from +150% to +200%\r\n- Blaster Sentry (and static custom skill variant) now has a 0.5 second delay before the first shot is fired\r\n- Freeze Rays rotateTime decreased from 1.7 to 1.5 (rotates faster around player)\r\n- Triblader Warp Decoy is now slightly nerfed due to the rework (can be more easily destroyed)",
                 "version": "2.20.0",
