@@ -4043,7 +4043,7 @@
     "element-hair": {
         "metadataCCMod": {
             "id": "element-hair",
-            "version": "1.1.0",
+            "version": "1.1.1",
             "title": "Elemental Hair",
             "description": {
                 "en_US": "Changes Lea's hair color based on her element. (Check the repo for customization!)"
@@ -4065,16 +4065,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/Azure-Lazuline/elemental-hair/releases/download/1.1.0/elemental-hair.ccmod",
+                "url": "https://github.com/Azure-Lazuline/elemental-hair/releases/download/1.1.1/elemental-hair.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "512fc654cc67efae8e204a0abcb8ba1faf684b219c1cf93539ec1765dcc2ada6"
+                    "sha256": "b0bfe49ad001c653dd2cc8d4e529a60ae6529984fa2c3868b84b57c918796d32"
                 }
             }
         ],
-        "stars": 0,
+        "stars": 3,
         "lastUpdateTimestamp": 1738698904000,
         "releasePages": [
+            {
+                "body": "- fixed one missing pose that shows up in one cutscene\r\n- fixed Apollo not getting palette swaps during one of the PvP battles (with party-element-effects active)",
+                "version": "1.1.1",
+                "timestamp": 1738698904000,
+                "url": "https://github.com/Azure-Lazuline/elemental-hair/releases/tag/1.1.1"
+            },
             {
                 "body": "- Makes palettes apply to certain cutscenes that were missed before, like looking at Vermillion Tower.\r\n- Improved palettes for a few party members.\r\n- Adds built-in support for all playable characters in Xenon's Playable Classes.\r\n- Lots of new functionality for modders wanting to extend this.",
                 "version": "1.1.0",
