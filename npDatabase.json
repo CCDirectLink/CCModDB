@@ -6490,6 +6490,46 @@
             }
         ]
     },
+    "teleport-limits": {
+        "metadataCCMod": {
+            "id": "teleport-limits",
+            "version": "1.0.1",
+            "title": "Teleport Limits",
+            "description": {
+                "en_US": "Adds a cooldown to your map teleport. Learn the map and make good use of CrossCentral!"
+            },
+            "repository": "https://github.com/Azure-Lazuline/teleport-limits",
+            "tags": [
+                "QoL"
+            ],
+            "authors": "Azure Lazuline",
+            "icons": {
+                "24": "icon24.png"
+            },
+            "prestart": "_prestart.js",
+            "poststart": "_poststart.js"
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/Azure-Lazuline/teleport-limits/releases/download/1.0.1/teleport-limits.ccmod",
+                "source": "",
+                "hash": {
+                    "sha256": "3b995e54887dfcf33b2456725766bcb7cf04b7bf782c7dc2ca93fc6bbdd32829"
+                }
+            }
+        ],
+        "stars": 0,
+        "lastUpdateTimestamp": 1756173609000,
+        "releasePages": [
+            {
+                "body": "- initial public release",
+                "version": "1.0.1",
+                "timestamp": 1756173609000,
+                "url": "https://github.com/Azure-Lazuline/teleport-limits/releases/tag/1.0.1"
+            }
+        ]
+    },
     "timer": {
         "metadataCCMod": {
             "id": "timer",
