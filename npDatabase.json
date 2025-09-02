@@ -6974,7 +6974,7 @@
     "xenons-playable-classes": {
         "metadataCCMod": {
             "id": "xenons-playable-classes",
-            "version": "2.20.1",
+            "version": "2.21.0",
             "title": {
                 "en_US": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
                 "de_DE": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
@@ -7024,16 +7024,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/2.20.1.zip",
-                "source": "xenons-playable-classes-2.20.1",
+                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/2.21.0.zip",
+                "source": "xenons-playable-classes-2.21.0",
                 "hash": {
-                    "sha256": "4c8be1e0e77c6d8622007e627ab4a2918c339b3878abffb78c44c7562ac761cb"
+                    "sha256": "e42f673a1629cc7f9028e007c82670cb111fede59ba28a16e3e7be120ba02779"
                 }
             }
         ],
         "stars": 26,
-        "lastUpdateTimestamp": 1755979904000,
+        "lastUpdateTimestamp": 1756794968000,
         "releasePages": [
+            {
+                "body": "## 2.21.0 (09/01/2025)\r\n### New Content\r\n- New Hexacast combat art: Lateral Sublimation (Cold Melee Lv.3A)\r\n- Added three new Hexacast tips in hideout-lobby\r\n### Changes\r\n- Darkened north exit shadows for maps dark-passage-1 and dark-passage-2 to increased visibility\r\n- Icicle Lance will now fail and refund SP if you use it too close to a wall such that no proxies actually spawn\r\n- Ruinous Pulse hitbox is now handled by a controller proxy to allow the full pulse to continue after the art is canceled mid-pulse\r\n- Proxy healBatteryPrimer now uses new effect healBatteryCardAppear instead of beamBlasterCardAppear\r\n- Reduced screen flash intensity for effect coldExplodeBigHexagon\r\n### Fixes\r\n- Heal Battery signal hitbox height reduced from 48 to 32 to prevent harvesting plants on cliffs\r\n- Removed offset from effect healBatteryTriggerZone\r\n- Fixed light source duration for effect kindlingDancePushArea (and shadowflame alt effect)\r\n- Fixed light source duration for effect healBatteryInitialHealPulse\r\n- Fixed Phase Jump proxy exploTrail not having DETACH_TIME_PARENT\r\n### Balance\r\n- Heal Battery recharge time reduced from 8 seconds to 6 seconds\r\n- Heal Battery subsequent heal strength increased from 6% to 7.5% (initial heal is 5%)\r\n- Heal Battery lifetime decreased from 60 seconds to 50 seconds\r\n- Ruinous Pulse now has a 0.5 second window where it cannot be canceled starting when the pulse begins",
+                "version": "2.21.0",
+                "timestamp": 1756794968000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/2.21.0"
+            },
             {
                 "body": "## 2.20.1 (08/23/2025)\r\n### Changes\r\n- Heal Battery now shows an indicator effect if it charges while over distance 200 from the player\r\n### Fixes\r\n- Fixed Triblader Warp Decoy wrong collision type\r\n- Minimized proxy healBatteryCard's signal hitbox visual damage effect issue with new manual collType management\r\n### Balance\r\n- Heal Battery is now interruptible during the first 0.75 seconds of casting\r\n- Heal Battery dash cancel delay increased from 0.25 to 0.9\r\n- Heal Battery subsequent heal strength increased from 4% to 6% (initial heal is 5%)",
                 "version": "2.20.1",
