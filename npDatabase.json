@@ -2,7 +2,7 @@
     "Azure's Adjustments": {
         "metadataCCMod": {
             "id": "Azure's Adjustments",
-            "version": "1.1.1",
+            "version": "1.1.2",
             "title": "Azure's Balancing & Extras",
             "description": {
                 "en_US": "Tons of small fixes, balancing, and UI additions, made with a first playthrough in mind."
@@ -27,16 +27,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/Azure-Lazuline/azures-adjustments/releases/download/1.1.1/azures-adjustments.ccmod",
+                "url": "https://github.com/Azure-Lazuline/azures-adjustments/releases/download/1.1.2/azures-adjustments.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "b92546816c8b198a790bca11f983930cb68b5a82a289598c41495e853fee23ed"
+                    "sha256": "dfe71ccb9b7f2ca7c46aad6ae9ed04cd558f67b7a24b92e415192259c0413300"
                 }
             }
         ],
-        "stars": 0,
-        "lastUpdateTimestamp": 1743385025000,
+        "stars": 4,
+        "lastUpdateTimestamp": 1759054018000,
         "releasePages": [
+            {
+                "body": "- fixed small menu bug that happened with the new CrossCode version",
+                "version": "1.1.2",
+                "timestamp": 1759054018000,
+                "url": "https://github.com/Azure-Lazuline/azures-adjustments/releases/tag/1.1.2"
+            },
             {
                 "body": "- fixed a potential mod conflict\r\n- fixed a few minor visual bugs",
                 "version": "1.1.1",
