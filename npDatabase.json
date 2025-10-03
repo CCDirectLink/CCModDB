@@ -180,16 +180,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.25.6/v2.14.2.zip",
-                "source": "CCLoader-2.25.6-v2.14.2/assets/mods/ccloader-version-display",
+                "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.25.7/v2.14.2.zip",
+                "source": "CCLoader-2.25.7-v2.14.2/assets/mods/ccloader-version-display",
                 "hash": {
-                    "sha256": "3ba5491a451fec145e049d651680464c5ffe982f0a4e02c9bd19300507c6fce4"
+                    "sha256": "0fb8b7d965fb1fc5772e0971ffd6efe530f3ab65679c9023ced2113edb2b2da5"
                 }
             }
         ],
         "stars": 54,
-        "lastUpdateTimestamp": 1756756764000,
+        "lastUpdateTimestamp": 1759502125000,
         "releasePages": [
+            {
+                "body": "- Update ccmodmanager.ccmod to v1.1.1",
+                "version": "v2.25.7/v2.14.2",
+                "timestamp": 1759502125000,
+                "url": "https://github.com/CCDirectLink/CCLoader/releases/tag/v2.25.7/v2.14.2"
+            },
             {
                 "body": "* CCLoader now properly logs crashes and unhandled errors.",
                 "version": "v2.25.6/v2.14.2",
@@ -944,16 +950,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.25.6/v2.14.2.zip",
-                "source": "CCLoader-2.25.6-v2.14.2/assets/mods/simplify",
+                "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.25.7/v2.14.2.zip",
+                "source": "CCLoader-2.25.7-v2.14.2/assets/mods/simplify",
                 "hash": {
-                    "sha256": "3ba5491a451fec145e049d651680464c5ffe982f0a4e02c9bd19300507c6fce4"
+                    "sha256": "0fb8b7d965fb1fc5772e0971ffd6efe530f3ab65679c9023ced2113edb2b2da5"
                 }
             }
         ],
         "stars": 54,
-        "lastUpdateTimestamp": 1756756764000,
+        "lastUpdateTimestamp": 1759502125000,
         "releasePages": [
+            {
+                "body": "- Update ccmodmanager.ccmod to v1.1.1",
+                "version": "v2.25.7/v2.14.2",
+                "timestamp": 1759502125000,
+                "url": "https://github.com/CCDirectLink/CCLoader/releases/tag/v2.25.7/v2.14.2"
+            },
             {
                 "body": "* CCLoader now properly logs crashes and unhandled errors.",
                 "version": "v2.25.6/v2.14.2",
@@ -2591,7 +2603,7 @@
     "ccloader": {
         "metadataCCMod": {
             "id": "ccloader",
-            "version": "2.25.6",
+            "version": "2.25.7",
             "title": "CCLoader",
             "description": "Modloader for CrossCode. This or a similar modloader is needed for most mods.",
             "repository": "https://github.com/CCDirectLink/CCLoader",
@@ -2614,16 +2626,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.25.6/v2.14.2.zip",
-                "source": "CCLoader-2.25.6-v2.14.2",
+                "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.25.7/v2.14.2.zip",
+                "source": "CCLoader-2.25.7-v2.14.2",
                 "hash": {
-                    "sha256": "3ba5491a451fec145e049d651680464c5ffe982f0a4e02c9bd19300507c6fce4"
+                    "sha256": "0fb8b7d965fb1fc5772e0971ffd6efe530f3ab65679c9023ced2113edb2b2da5"
                 }
             }
         ],
         "stars": 54,
-        "lastUpdateTimestamp": 1756756764000,
+        "lastUpdateTimestamp": 1759502125000,
         "releasePages": [
+            {
+                "body": "- Update ccmodmanager.ccmod to v1.1.1",
+                "version": "v2.25.7/v2.14.2",
+                "timestamp": 1759502125000,
+                "url": "https://github.com/CCDirectLink/CCLoader/releases/tag/v2.25.7/v2.14.2"
+            },
             {
                 "body": "* CCLoader now properly logs crashes and unhandled errors.",
                 "version": "v2.25.6/v2.14.2",
