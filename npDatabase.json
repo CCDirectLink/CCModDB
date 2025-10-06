@@ -7011,7 +7011,7 @@
     "xenons-playable-classes": {
         "metadataCCMod": {
             "id": "xenons-playable-classes",
-            "version": "2.23.0",
+            "version": "2.24.0",
             "title": {
                 "en_US": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
                 "de_DE": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
@@ -7061,16 +7061,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/2.23.0.zip",
-                "source": "xenons-playable-classes-2.23.0",
+                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/2.24.0.zip",
+                "source": "xenons-playable-classes-2.24.0",
                 "hash": {
-                    "sha256": "5bfc92bf6fc1c928a587ad827bd59991d85732d577da125bc770cd2d5244621d"
+                    "sha256": "08d927e81622af1fd7099397cd086ca82ca1053f3100a73a6cce440a4588cf0d"
                 }
             }
         ],
-        "stars": 26,
-        "lastUpdateTimestamp": 1759120534000,
+        "stars": 24,
+        "lastUpdateTimestamp": 1759728412000,
         "releasePages": [
+            {
+                "body": "## 2.24.0 (10/05/2025)\r\n### General\r\n- Hexacast litter mod updated to 2.1.4\r\n### New Content\r\n- New Hexacast custom skill: Embrittlement (Cold Throw Lv.2)\r\n- New Hexacast custom skill: Kindling Mine (Heat Dash Lv.1)\r\n- New Hexacast custom skill: Mundane Scatter (Neutral Throw Lv.1)\r\n- New Hexacast custom skill: Ancient Power (Neutral Throw Lv.2)\r\n### Changes\r\n- Changed BGM option 21 in training-apollo-5 to use MEDIUM instead of IMMEDIATELY\r\n### Fixes\r\n- Fixed Ice Mortar explosion hitbox zHeight\r\n- Extended joltHexProxy hitbox zHeight to Z=-16 offset\r\n- Increased Stasis Storm \"stasisStormHugeSweep\" hitbox sizes from 120 to 140 to better match the effect",
+                "version": "2.24.0",
+                "timestamp": 1759728412000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/2.24.0"
+            },
             {
                 "body": "## 2.23.0 (09/28/2025)\r\n### New Content\r\n- Added a teleporter in hideout-northwest to fight Apollo5 in a modified Hexacast training arena map (LPC must be installed)\r\n- Added code features from Azure Lazuline:\r\n  * guarding-variable.js\r\n  * puzzle-aim-detection.js\r\n- Hexacast throws now automatically disable homing when aimed at a puzzle element (feature by Azure Lazuline)\r\n- Added custom-attack-limiters.js along with the limiter NO_HIT_PROXY_NO_DAMAGE\r\n### Changes\r\n- Shadowflame Sorcery DARK_DUST and SPOOKY_DUST environment particles reduced, added COAL_SPARKS particles\r\n- Improved Thundering Sparks effect boldSmallTS (more particles, screen shake)\r\n- Minor tweak to icon.png\r\n### Fixes\r\n- Added WAIT_UNTIL_ON_GROUND conditions to pvpBrake and pvpEnd in xpc/bonus/training-apollo-5 and ultimate-pvp\r\n- Fixed shadowflame Ashen Hex to do MELEE_DMG instead of RANGED_DMG\r\n- Fixed all Hexacast meteor hitbox zHeight settings (changed from 0 to 32 with Z=-16 offset)\r\n- Fixed Triblader Molten Daggers and Daybreak not able to melt ice (added NO_HIT_PROXY_NO_DAMAGE hitbox)\r\n### Balance\r\n- Increased overall size of Hexing Blast by 15% (updated proxy hexingBlastSmall and its effects)\r\n- Increased damage of Hex Vortex (proxy hexingBlastHuge damageFactor increased from 1.6 to 3.6)\r\n- Ashen Hex no longer does melee contact damage during the dash\r\n- Ashen Hex damageFactor increased from 3.0 to 3.35 (shadowflame version unchanged)\r\n- Icy Gust status factor increased from 1.45 to 2.0\r\n- Reciprocal Gale wind status factor increased from 0.88 to 1.0\r\n- Curse of Vanishing debuff duration increased from 6 to 8 seconds\r\n- Augmented Flames uncharged throw proxy count reduced from 16x2 to 8x2 per action\r\n- Augmented Flames uncharged throw proxy flameWeak damageFactor increased from 0.04 to 0.05",
                 "version": "2.23.0",
