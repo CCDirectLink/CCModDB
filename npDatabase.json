@@ -7011,7 +7011,7 @@
     "xenons-playable-classes": {
         "metadataCCMod": {
             "id": "xenons-playable-classes",
-            "version": "2.24.0",
+            "version": "2.24.1",
             "title": {
                 "en_US": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
                 "de_DE": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
@@ -7061,16 +7061,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/2.24.0.zip",
-                "source": "xenons-playable-classes-2.24.0",
+                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/2.24.1.zip",
+                "source": "xenons-playable-classes-2.24.1",
                 "hash": {
-                    "sha256": "08d927e81622af1fd7099397cd086ca82ca1053f3100a73a6cce440a4588cf0d"
+                    "sha256": "0f21f2c138aa1b41070d70a7d7c252c419073e54d8159b0ffc9e0a75d1d579bb"
                 }
             }
         ],
         "stars": 24,
-        "lastUpdateTimestamp": 1759728412000,
+        "lastUpdateTimestamp": 1759846347000,
         "releasePages": [
+            {
+                "body": "## 2.24.1 (10/07/2025)\r\n### Changes\r\n- Updated info-for-modders.md with new Azure features from 2.23.0\r\n- Improved Hexacast effects recallTeleportTrail and cohortTeleportTrail\r\n- Snow Lance hitbox zHeight increased from 16 to 24\r\n- Adjusted SHOW_EFFECT offset for blasterSentryHexagons (in both Blaster Sentry and Celestial Cohort)\r\n- Increased visibility of mundaneScatterCard's trail effect\r\n- Reduced rock hover time from 1.8 to 1.3 seconds when Ancient Power is interrupted\r\n- Split mireProxy attack into two separate hitboxes for damage and debuff application\r\n### Balance\r\n- Ice Blitz now applies a stun lock\r\n- waveDetonatoinRemote status factor increased from 0.45 to 0.575\r\n- waveDetonationTrap status factor increased from 0.45 to 0.525\r\n- Meteor Storm offsetArea reduced from 192x192 to 96x96\r\n- Meteor Storm meteors now have reversed knockback\r\n- Meteor Storm meteor damageFactor reduced from 6.2/4.25 to 5.0/3.75 (shadowflame versions unchanged)\r\n- Embrittlement now has a non-bouncing piercing projectile, able to hit multiple enemies\r\n- Giga Drain projectile impact damageFactor increased from 0.5 to 2.5\r\n- Toxic Mire proxy damage tick speed increased from 0.25 to 0.4 seconds\r\n- Toxic Mire dash length slightly extended, proxies are more spread out",
+                "version": "2.24.1",
+                "timestamp": 1759846347000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/2.24.1"
+            },
             {
                 "body": "## 2.24.0 (10/05/2025)\r\n### General\r\n- Hexacast litter mod updated to 2.1.4\r\n### New Content\r\n- New Hexacast custom skill: Embrittlement (Cold Throw Lv.2)\r\n- New Hexacast custom skill: Kindling Mine (Heat Dash Lv.1)\r\n- New Hexacast custom skill: Mundane Scatter (Neutral Throw Lv.1)\r\n- New Hexacast custom skill: Ancient Power (Neutral Throw Lv.2)\r\n### Changes\r\n- Changed BGM option 21 in training-apollo-5 to use MEDIUM instead of IMMEDIATELY\r\n### Fixes\r\n- Fixed Ice Mortar explosion hitbox zHeight\r\n- Extended joltHexProxy hitbox zHeight to Z=-16 offset\r\n- Increased Stasis Storm \"stasisStormHugeSweep\" hitbox sizes from 120 to 140 to better match the effect",
                 "version": "2.24.0",
