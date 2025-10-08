@@ -5307,7 +5307,7 @@
     "mw-rando": {
         "metadataCCMod": {
             "id": "mw-rando",
-            "version": "0.7.1",
+            "version": "0.7.2",
             "title": "Multiworld randomizer",
             "description": "Client for CrossCode Archipelago Integration",
             "repository": "https://github.com/CodeTriangle/CCMultiworldRandomizer",
@@ -5330,16 +5330,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.7.1/CCMultiworldRandomizer-0.7.1.ccmod",
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.7.2/CCMultiworldRandomizer-0.7.2.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "8def20a1ff6657aa808d8562366218e0dec5d607043283b1a8ab1394c72af33e"
+                    "sha256": "13afd752f1acb5ad12b5fbd2405db1f6dbe001c5a295d68e5dd8138a4d2d6efb"
                 }
             }
         ],
         "stars": 12,
-        "lastUpdateTimestamp": 1757660541000,
+        "lastUpdateTimestamp": 1759887514000,
         "releasePages": [
+            {
+                "body": "## Changes to Mod\r\n\r\n* Added a feature that allows automatic switching of tabs in PopTracker.\r\n\r\n## Fixes to Mod\r\n\r\n* Fixed an issue where certain games would not have their datapackages cached correctly due to their names containing characters not suitable for filenames on certain platforms.\r\n* Fixed an issue where certain attempts to connect to the server would fail due to mismatched checksums when no such problems exist.\r\n* Fixed an issue where, upon reconnecting to the server while in game, chest icons newly added during the play session would appear as unknown.\r\n\r\n## Fixes to Logic\r\n\r\n* The locations **New Metal** and **The Observatory** now require **Mine Pass**.\r\n* Added **Vagabond Dojo Key** to the list of Always Quests, meaning that it will never contain progressive or useful items when quest randomization is enabled.",
+                "version": "0.7.2",
+                "timestamp": 1759887514000,
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.7.2"
+            },
             {
                 "body": "## Changes to Mod\r\n\r\n* Switched Archipelago button to use new CCUILib API (@krypciak).\r\n\r\n## Fixes to Logic\r\n\r\n* Various locations now require **Wave** (@buanjautista), including:\r\n  * **Waves of Sand**\r\n  * **Garden: Grand Krys'kajo Entrance**\r\n  * **Garden: Ringing River Lower**\r\n  * **Garden: Ringing River Upper**\r\n  * **Garden: Old Timber**\r\n* All Rhombus Square Shops now require the ability to grind enemies.\r\n* The quest **Wet Work** now requires **Red Flame Shade**.\r\n\r\n## Fixes to Mod\r\n\r\n* Fixed an issue where the game would fail to load when there were no preexisting save files.",
                 "version": "0.7.1",
