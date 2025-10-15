@@ -2863,7 +2863,7 @@
     "ccmodmanager": {
         "metadataCCMod": {
             "id": "ccmodmanager",
-            "version": "1.1.1",
+            "version": "1.1.2",
             "title": "CCModManager",
             "description": "Mod manager for CrossCode!",
             "repository": "https://github.com/CCDirectLink/CCModManager",
@@ -2887,16 +2887,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CCDirectLink/CCModManager/releases/download/v1.1.1/ccmodmanager-1.1.1.ccmod",
+                "url": "https://github.com/CCDirectLink/CCModManager/releases/download/v1.1.2/ccmodmanager-1.1.2.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "aafd8eb118cebb04c97c3a92118cd88d71b3b2e26bc6f52e06c91d92d9b56985"
+                    "sha256": "ddf1b19266dad09c920e2c4689edc933afc8858c44460b6bd154298e81194607"
                 }
             }
         ],
-        "stars": 8,
-        "lastUpdateTimestamp": 1759500736000,
+        "stars": 7,
+        "lastUpdateTimestamp": 1760544022000,
         "releasePages": [
+            {
+                "body": "### Fixed\n\n- Fix mod updates not getting detected sometimes\n- Do not ask to enable mod dependencies after auto update",
+                "version": "1.1.2",
+                "timestamp": 1760544023000,
+                "url": "https://github.com/CCDirectLink/CCModManager/releases/tag/v1.1.2"
+            },
             {
                 "body": "### Fixed\r\n\r\n- Fix mod updates not getting detected due to browser caching\r\n- Throw failed to fetch error instead of digest mismatch error when mod download response has a status code >=400\r\n",
                 "version": "1.1.1",
