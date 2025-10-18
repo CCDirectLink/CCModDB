@@ -5693,7 +5693,7 @@
     "nax-ccuilib": {
         "metadataCCMod": {
             "id": "nax-ccuilib",
-            "version": "1.5.2",
+            "version": "1.5.3",
             "title": "CCUILib",
             "description": "Library of additional UI elements as well as making existing ones configurable",
             "repository": "https://github.com/krypciak/nax-ccuilib",
@@ -5713,16 +5713,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/nax-ccuilib/releases/download/v1.5.2/nax-ccuilib-1.5.2.ccmod",
+                "url": "https://github.com/krypciak/nax-ccuilib/releases/download/v1.5.3/nax-ccuilib-1.5.3.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "7b93ef300fec79442d42d2ecd53b773a0d96eafa353482e05a7e61ac4a1c4fdc"
+                    "sha256": "b358a5adf9b1dcd9119694b4eaef67b161964189893dc75a86ccf2b2fe9edd1f"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1753537707000,
+        "lastUpdateTimestamp": 1760783856000,
         "releasePages": [
+            {
+                "body": "### Fixed\n\n- Fix default widgets being enabled when they shouldn't be (again, sorry)",
+                "version": "1.5.3",
+                "timestamp": 1760783856000,
+                "url": "https://github.com/krypciak/nax-ccuilib/releases/tag/v1.5.3"
+            },
             {
                 "body": "### Added\n\n- Added `enabled` option to widget API\n\n### Fixed\n\n- Fixed default buttons being enabled most of the time (for example the map button was not disabled during combat)\n- Fix quick menu keyboard button navigation with wasd attempting to focus hidden buttons",
                 "version": "1.5.2",
