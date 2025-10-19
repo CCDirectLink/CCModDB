@@ -92,5 +92,6 @@
     { "url": "https://github.com/krypciak/cc-bgm-crossfade/releases/download/v1.0.3/cc-bgm-crossfade-1.0.3.ccmod", "source": "" },
     { "url": "https://github.com/Leo40Git/cc-load-from-pause/releases/download/v1.1.0/load-from-pause.ccmod", "source": "" },
     { "url": "https://github.com/Hsifnus/autumns-genesis/archive/refs/tags/v0.2.7.zip", "source": "" },
-    { "url": "https://github.com/Azure-Lazuline/teleport-limits/releases/download/1.0.1/teleport-limits.ccmod", "source": "" }
+    { "url": "https://github.com/Azure-Lazuline/teleport-limits/releases/download/1.0.1/teleport-limits.ccmod", "source": "" },
+    { "url": "https://github.com/Azure-Lazuline/dungeon-revisits/releases/download/1.0.1/dungeon-revisits.ccmod", "source": "" }
 ]
