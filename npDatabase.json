@@ -7102,7 +7102,7 @@
     "xenons-playable-classes": {
         "metadataCCMod": {
             "id": "xenons-playable-classes",
-            "version": "2.25.0",
+            "version": "2.25.1",
             "title": {
                 "en_US": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
                 "de_DE": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
@@ -7135,7 +7135,8 @@
             "authors": [
                 "XenonA7",
                 "HeartLychee",
-                "krypek"
+                "krypek",
+                "Azure Lazuline"
             ],
             "prestart": "prestart.js",
             "poststart": "poststart.js",
@@ -7152,16 +7153,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/2.25.0.zip",
-                "source": "xenons-playable-classes-2.25.0",
+                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/2.25.1.zip",
+                "source": "xenons-playable-classes-2.25.1",
                 "hash": {
-                    "sha256": "7f4cf7a9cae6191882afccdb4c764f55adabb6f5414d19e3428e7f2d2943e2d2"
+                    "sha256": "f453c781272200129903163d778a2f118bfa4df90bb1f6d758bf22147042705d"
                 }
             }
         ],
         "stars": 24,
-        "lastUpdateTimestamp": 1760863952000,
+        "lastUpdateTimestamp": 1760866330000,
         "releasePages": [
+            {
+                "body": "## 2.25.1 (10/19/2025)\r\n### Changes\r\n- Hexacast homing fixes and improvements by Azure Lazuline\r\n- Hexacast player files (and Lea custom skill) now only checks for !combat.facingPuzzle, element turret exception moved to JS\r\n- Updated info-for-modders.md documentation for noHomingWhenAimingAtThis\r\n- Added \"Azure Lazuline\" to author list\r\n- Changed the CHANGE_SCALE to EASE_OUT_STRONG in effect fajroDeckAppear and increased duration from 0.3 seconds to 0.45 seconds\r\n### Balance\r\n- Major buff to shadowflame version of Faj'ro Flush, it should roughly do double the damage as the normal version now",
+                "version": "2.25.1",
+                "timestamp": 1760866330000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/2.25.1"
+            },
             {
                 "body": "## 2.25.0 (10/19/2025)\r\n### General\r\n- Hexacast litter mod updated to 2.1.6\r\n### New Content\r\n- New Hexacast combat art: Faj'ro Flush (Heat Guard Lv.3B)\r\n- Added a new Hexacast tip in hideout-lobby\r\n- Added hexa-vrp font icon\r\n### Changes\r\n- All Hexacast homing is now disabled if there are any bergen monk turrets present in the current map (cold.turret-monks-invinc)\r\n- Removed the \"repeat\" property from ss-meteorMedFirst and ss-meteorMed (it didn't wait long enough for multiple hits anyway)\r\n- Added a 0.80 CHANGE_SCALE to effect embrittlementCardTrail\r\n- Toxic Mire dash hitbox changed from full duration non-repeating to 0.04 duration repeating\r\n- Toxic Mire dash hitbox no longer has reversed knockback\r\n- Toxic Mire now has a SET_DAMAGE_CEILING value of 4\r\n- Further improved Thundering Sparks effect boldSmallTS\r\n- Shining Shield audio volume decreased from 0.8 to 0.6\r\n- Lowered audio volume of effect lightningHexChargeup\r\n- Proxy meteorFinalExplosionOnly hitbox z offset changed from -16 to -32\r\n- Renamed EXPLOSION_BIG_FAST to DARK_EXPLOSION_BIG_FAST in shadowflame-alts for consistency\r\n- Increased CIRCLE_STATIC startDist in shadowflame version of effect meteorFinalExplode\r\n### Fixes\r\n- Fixed big hexagon particle rotation direction in effect stasisStormFinisher\r\n- Removed unused proxy group for healBatteryTrigger\r\n### Balance\r\n- Hexacast uncharged default shots now have a statusFactor of 0.55 (previously had none)\r\n- Freeze Rays: damageFactor increased from 0.30 to 0.40 (big damage increase)\r\n- Freeze Rays: status factor decreased from 1.5 to 1.25\r\n- Toxic Mire dash duration reverted back to 0.4 seconds\r\n- Toxic Mire now deals all damage during the dash, the lingering mire now only applies the slowness debuff\r\n- Toxic Mortar no longer deals any damage\r\n- Toxic Mortar overall radius increased by 8 (mire proxies are spawned slightly farther out)\r\n- Twin Spirit damageFactor increased from 1.55 to 1.75\r\n- Temporal Miasma duration increased from 10.5 seconds to 14 seconds\r\n- Blizzard Rush chargeup time reduced from 0.7 seconds to 0.4 seconds\r\n- Giga Drain absorption factor reduced from 0.08 to 0.05\r\n- Lightning Hex charge time reduced from 3 seconds to 2.5 seconds\r\n- Fire Barrage loop count reduced from 10 to 8 (less fireballs), total loop duration increased from 0.1 to 0.12",
                 "version": "2.25.0",
