@@ -7611,7 +7611,7 @@
     "xpc-litter": {
         "metadataCCMod": {
             "id": "xpc-litter",
-            "version": "2.1.4",
+            "version": "2.1.5",
             "title": {
                 "en_US": "XPC - Hexacast Litter"
             },
@@ -7634,16 +7634,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/xpc-hexacast-litter/archive/refs/tags/2.1.4.zip",
-                "source": "xpc-hexacast-litter-2.1.4",
+                "url": "https://github.com/XenonA7/xpc-hexacast-litter/archive/refs/tags/2.1.5.zip",
+                "source": "xpc-hexacast-litter-2.1.5",
                 "hash": {
-                    "sha256": "109f31a74bef66db54529ce3d014bc66df22a22ab7b7c62bbd1702cd41942d61"
+                    "sha256": "6d40ca3dce33e649591bb1e0566b62b7b61968e9c97d12d749c899b5e8b8b402"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1759614436000,
+        "lastUpdateTimestamp": 1760846474000,
         "releasePages": [
+            {
+                "body": "2.1.5 (10/18/2025)\r\n- Support for Faj'ro Flush effects (XPC 2.25.0)\r\n  * specials.heat.heatCardDeckDeath\r\n  * specials.heat.explosiveHeatDeckDeath",
+                "version": "2.1.5",
+                "timestamp": 1760846474000,
+                "url": "https://github.com/XenonA7/xpc-hexacast-litter/releases/tag/2.1.5"
+            },
             {
                 "body": "2.1.4 (10/04/2025)\r\n- Minor tweak to icon.png\r\n- Support for Embrittlement effects (XPC 2.24.0)\r\n  * ball-cold.coldCardWallDeath\r\n  * ball-cold.coldCardAirDeath\r\n  * ball-coldCardDeathFar",
                 "version": "2.1.4",
