@@ -3886,6 +3886,55 @@
             }
         ]
     },
+    "dungeon-revisits": {
+        "metadataCCMod": {
+            "id": "dungeon-revisits",
+            "version": "1.0.1",
+            "title": "Dungeon Revisits",
+            "description": "Play any dungeon as much as you want, scaled up to endgame levels.",
+            "repository": "https://github.com/Azure-Lazuline/dungeon-revisits",
+            "tags": [
+                "dungeon"
+            ],
+            "authors": "Azure Lazuline",
+            "icons": {
+                "24": "icon24.png"
+            },
+            "prestart": "prestart.js"
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/Azure-Lazuline/dungeon-revisits/releases/download/1.0.1/dungeon-revisits.ccmod",
+                "source": "",
+                "hash": {
+                    "sha256": "06369251aac14b42ca0ee430405777a6c596189fbfa7de6fd0211d0c05a16aac"
+                }
+            }
+        ],
+        "stars": 0,
+        "lastUpdateTimestamp": 1760832210000,
+        "releasePages": [
+            {
+                "body": "- fixed a few miscellaneous flags being overwritten mid-dungeon",
+                "version": "1.0.1",
+                "timestamp": 1760832210000,
+                "url": "https://github.com/Azure-Lazuline/dungeon-revisits/releases/tag/1.0.1"
+            },
+            {
+                "body": "- added Ku'lero Temple\r\n- fixed a few bugs",
+                "version": "1.0.0",
+                "timestamp": 1760521695000,
+                "url": "https://github.com/Azure-Lazuline/dungeon-revisits/releases/tag/1.0.0"
+            },
+            {
+                "body": "- WIP, all main game dungeons done",
+                "version": "0.9.0",
+                "timestamp": 1760452103000,
+                "url": "https://github.com/Azure-Lazuline/dungeon-revisits/releases/tag/0.9.0"
+            }
+        ]
+    },
     "el-tweaks": {
         "metadataCCMod": {
             "id": "el-tweaks",
