@@ -7102,7 +7102,7 @@
     "xenons-playable-classes": {
         "metadataCCMod": {
             "id": "xenons-playable-classes",
-            "version": "2.24.1",
+            "version": "2.25.0",
             "title": {
                 "en_US": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
                 "de_DE": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
@@ -7152,16 +7152,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/2.24.1.zip",
-                "source": "xenons-playable-classes-2.24.1",
+                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/2.25.0.zip",
+                "source": "xenons-playable-classes-2.25.0",
                 "hash": {
-                    "sha256": "0f21f2c138aa1b41070d70a7d7c252c419073e54d8159b0ffc9e0a75d1d579bb"
+                    "sha256": "7f4cf7a9cae6191882afccdb4c764f55adabb6f5414d19e3428e7f2d2943e2d2"
                 }
             }
         ],
         "stars": 24,
-        "lastUpdateTimestamp": 1759846347000,
+        "lastUpdateTimestamp": 1760863952000,
         "releasePages": [
+            {
+                "body": "## 2.25.0 (10/19/2025)\r\n### General\r\n- Hexacast litter mod updated to 2.1.6\r\n### New Content\r\n- New Hexacast combat art: Faj'ro Flush (Heat Guard Lv.3B)\r\n- Added a new Hexacast tip in hideout-lobby\r\n- Added hexa-vrp font icon\r\n### Changes\r\n- All Hexacast homing is now disabled if there are any bergen monk turrets present in the current map (cold.turret-monks-invinc)\r\n- Removed the \"repeat\" property from ss-meteorMedFirst and ss-meteorMed (it didn't wait long enough for multiple hits anyway)\r\n- Added a 0.80 CHANGE_SCALE to effect embrittlementCardTrail\r\n- Toxic Mire dash hitbox changed from full duration non-repeating to 0.04 duration repeating\r\n- Toxic Mire dash hitbox no longer has reversed knockback\r\n- Toxic Mire now has a SET_DAMAGE_CEILING value of 4\r\n- Further improved Thundering Sparks effect boldSmallTS\r\n- Shining Shield audio volume decreased from 0.8 to 0.6\r\n- Lowered audio volume of effect lightningHexChargeup\r\n- Proxy meteorFinalExplosionOnly hitbox z offset changed from -16 to -32\r\n- Renamed EXPLOSION_BIG_FAST to DARK_EXPLOSION_BIG_FAST in shadowflame-alts for consistency\r\n- Increased CIRCLE_STATIC startDist in shadowflame version of effect meteorFinalExplode\r\n### Fixes\r\n- Fixed big hexagon particle rotation direction in effect stasisStormFinisher\r\n- Removed unused proxy group for healBatteryTrigger\r\n### Balance\r\n- Hexacast uncharged default shots now have a statusFactor of 0.55 (previously had none)\r\n- Freeze Rays: damageFactor increased from 0.30 to 0.40 (big damage increase)\r\n- Freeze Rays: status factor decreased from 1.5 to 1.25\r\n- Toxic Mire dash duration reverted back to 0.4 seconds\r\n- Toxic Mire now deals all damage during the dash, the lingering mire now only applies the slowness debuff\r\n- Toxic Mortar no longer deals any damage\r\n- Toxic Mortar overall radius increased by 8 (mire proxies are spawned slightly farther out)\r\n- Twin Spirit damageFactor increased from 1.55 to 1.75\r\n- Temporal Miasma duration increased from 10.5 seconds to 14 seconds\r\n- Blizzard Rush chargeup time reduced from 0.7 seconds to 0.4 seconds\r\n- Giga Drain absorption factor reduced from 0.08 to 0.05\r\n- Lightning Hex charge time reduced from 3 seconds to 2.5 seconds\r\n- Fire Barrage loop count reduced from 10 to 8 (less fireballs), total loop duration increased from 0.1 to 0.12",
+                "version": "2.25.0",
+                "timestamp": 1760863952000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/2.25.0"
+            },
             {
                 "body": "## 2.24.1 (10/07/2025)\r\n### Changes\r\n- Updated info-for-modders.md with new Azure features from 2.23.0\r\n- Improved Hexacast effects recallTeleportTrail and cohortTeleportTrail\r\n- Snow Lance hitbox zHeight increased from 16 to 24\r\n- Adjusted SHOW_EFFECT offset for blasterSentryHexagons (in both Blaster Sentry and Celestial Cohort)\r\n- Increased visibility of mundaneScatterCard's trail effect\r\n- Reduced rock hover time from 1.8 to 1.3 seconds when Ancient Power is interrupted\r\n- Split mireProxy attack into two separate hitboxes for damage and debuff application\r\n### Balance\r\n- Ice Blitz now applies a stun lock\r\n- waveDetonatoinRemote status factor increased from 0.45 to 0.575\r\n- waveDetonationTrap status factor increased from 0.45 to 0.525\r\n- Meteor Storm offsetArea reduced from 192x192 to 96x96\r\n- Meteor Storm meteors now have reversed knockback\r\n- Meteor Storm meteor damageFactor reduced from 6.2/4.25 to 5.0/3.75 (shadowflame versions unchanged)\r\n- Embrittlement now has a non-bouncing piercing projectile, able to hit multiple enemies\r\n- Giga Drain projectile impact damageFactor increased from 0.5 to 2.5\r\n- Toxic Mire proxy damage tick speed increased from 0.25 to 0.4 seconds\r\n- Toxic Mire dash length slightly extended, proxies are more spread out",
                 "version": "2.24.1",
