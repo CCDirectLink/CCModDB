@@ -5748,7 +5748,7 @@
     "nax-ccuilib": {
         "metadataCCMod": {
             "id": "nax-ccuilib",
-            "version": "1.5.3",
+            "version": "1.5.4",
             "title": "CCUILib",
             "description": "Library of additional UI elements as well as making existing ones configurable",
             "repository": "https://github.com/krypciak/nax-ccuilib",
@@ -5768,16 +5768,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/nax-ccuilib/releases/download/v1.5.3/nax-ccuilib-1.5.3.ccmod",
+                "url": "https://github.com/krypciak/nax-ccuilib/releases/download/v1.5.4/nax-ccuilib-1.5.4.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "b358a5adf9b1dcd9119694b4eaef67b161964189893dc75a86ccf2b2fe9edd1f"
+                    "sha256": "2569627a2f5ad375722004f32e00c02e356c7ff862748841ddf40b25c73f6fb8"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1760783856000,
+        "lastUpdateTimestamp": 1761122230000,
         "releasePages": [
+            {
+                "body": "### Fixed \n\n- Fix game crashing sometimes when opening the quick menu",
+                "version": "1.5.4",
+                "timestamp": 1761122231000,
+                "url": "https://github.com/krypciak/nax-ccuilib/releases/tag/v1.5.4"
+            },
             {
                 "body": "### Fixed\n\n- Fix default widgets being enabled when they shouldn't be (again, sorry)",
                 "version": "1.5.3",
