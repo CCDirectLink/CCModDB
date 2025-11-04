@@ -5748,7 +5748,7 @@
     "nax-ccuilib": {
         "metadataCCMod": {
             "id": "nax-ccuilib",
-            "version": "1.5.4",
+            "version": "1.5.5",
             "title": "CCUILib",
             "description": "Library of additional UI elements as well as making existing ones configurable",
             "repository": "https://github.com/krypciak/nax-ccuilib",
@@ -5768,16 +5768,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/nax-ccuilib/releases/download/v1.5.4/nax-ccuilib-1.5.4.ccmod",
+                "url": "https://github.com/krypciak/nax-ccuilib/releases/download/v1.5.5/nax-ccuilib-1.5.5.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "2569627a2f5ad375722004f32e00c02e356c7ff862748841ddf40b25c73f6fb8"
+                    "sha256": "a2e608570bef708ed75714a41453a8b39c0634d13897e7392962929d1a63e8a2"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1761122230000,
+        "lastUpdateTimestamp": 1762289555000,
         "releasePages": [
+            {
+                "body": "### Fixed\n\n- Fix memory leak with cc-instanceinator",
+                "version": "1.5.5",
+                "timestamp": 1762289557000,
+                "url": "https://github.com/krypciak/nax-ccuilib/releases/tag/v1.5.5"
+            },
             {
                 "body": "### Fixed \n\n- Fix game crashing sometimes when opening the quick menu",
                 "version": "1.5.4",
