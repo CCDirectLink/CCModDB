@@ -3810,7 +3810,7 @@
     "difficulty-mods": {
         "metadataCCMod": {
             "id": "difficulty-mods",
-            "version": "1.0.8",
+            "version": "1.0.9",
             "title": "Difficulty Mods",
             "description": {
                 "en_US": "Adjust enemy damage, HP, and EXP gain to make the game as easy or hard as you like."
@@ -3832,16 +3832,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/Azure-Lazuline/difficulty-mods/releases/download/1.0.8/difficulty-mods.ccmod",
+                "url": "https://github.com/Azure-Lazuline/difficulty-mods/releases/download/1.0.9/difficulty-mods.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "d25f2a578687c5eb4d97a1375e179bbbba07aaf0a4e8c0e5c1a307f8fc19d2f8"
+                    "sha256": "10346f2ac26d9a771186b95cd4feb8c6ff8af92145411b73b53a59311bd5f265"
                 }
             }
         ],
-        "stars": 0,
-        "lastUpdateTimestamp": 1731619906000,
+        "stars": 1,
+        "lastUpdateTimestamp": 1762845702000,
         "releasePages": [
+            {
+                "body": "- Enemy Damage now affects status infliction rate too\r\n- Enemy Speed applies more consistently across different enemy types\r\n- some sliders capped a little lower, so all of them max out at at reasonable (but very hard) amounts",
+                "version": "1.0.9",
+                "timestamp": 1762845702000,
+                "url": "https://github.com/Azure-Lazuline/difficulty-mods/releases/tag/1.0.9"
+            },
             {
                 "body": "- moved everything to the Assists menu, overwriting the original options there\r\n- all options can be turned in both directions, to make things easier *or* harder\r\n- improved compatibility with other mods that add similar options",
                 "version": "1.0.8",
