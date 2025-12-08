@@ -7126,7 +7126,7 @@
     "xenons-playable-classes": {
         "metadataCCMod": {
             "id": "xenons-playable-classes",
-            "version": "2.26.3",
+            "version": "2.27.0",
             "title": {
                 "en_US": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
                 "de_DE": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
@@ -7177,16 +7177,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/2.26.3.zip",
-                "source": "xenons-playable-classes-2.26.3",
+                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/2.27.0.zip",
+                "source": "xenons-playable-classes-2.27.0",
                 "hash": {
-                    "sha256": "bd25ee79da42644d79d713a7877895461195059d1d5959906b18208b90477922"
+                    "sha256": "49de4aebce2916f67cf5cad5316588a187e0e234489e58e606126f3250053250"
                 }
             }
         ],
         "stars": 26,
-        "lastUpdateTimestamp": 1763690816000,
+        "lastUpdateTimestamp": 1765158946000,
         "releasePages": [
+            {
+                "body": "## 2.27.0 (12/07/2025)\r\n### New Content\r\n- New Hexacast combat art: Glacial Cataclysm (Cold Guard Lv.3B)\r\n- Added new ENV particles:\r\n  * COLD_CRYSTALS_RISING\r\n  * COLD_CRYSTALS_RISING_FAST\r\n  * SNOW_FLAKES_RISING\r\n  * SNOW_FLAKES_RISING_FAST\r\n### Changes\r\n- Tweaked descriptions for Freeze Rays, Frigid Flurry, Magic Missile, Frozen Fortress, Brittle Barrier, Shock Surge, Magnet Deck\r\n### Fixes\r\n- Updated all weather controller proxies (Triblader, Hexacast) to be invisible: true\r\n- Throttle Hex dmgType label updated to MIXED\r\n### Balance\r\n- Added a short, interruptible delay to the start of Ashen Frenzy\r\n- Throttle Hex contact damageFactor reduced from 4.0 to 3.0\r\n- Throttle Hex proxy thunderSmallWeak damageFactor reduced from 0.8 to 0.65",
+                "version": "2.27.0",
+                "timestamp": 1765158946000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/2.27.0"
+            },
             {
                 "body": "## 2.26.3 (11/20/2025)\r\n### Changes\r\n- Unfinished progress on Hexacast Cold Guard Lv.3B\r\n- Hexacast standard attack logic now uses the ELEMENT_MODE combat condition instead of player.element\r\n- Calamity Beacon initial card throw now respects polarityThrowType\r\n- Increased size and visibility of effects waveDetonationTimer and kindlingMineTimer\r\n- Freeze Rays now uses proper recolored laser sprites instead of neutral laser sprites\r\n### Fixes\r\n- Fixed properties of proxy waveDetonationTrap's initial stunning hitbox and all hitbox zHeight settings\r\n- Fixed waveDetonationRemote hitbox zHeight properties\r\n- Fix pvp bar duplication when using cc-multibakery (Fix by Krypek in pvp-gui-fix.js)\r\n### Balance\r\n- Ashen Frenzy dash attacks damageFactor reduced from 3.5 to 2.5\r\n- Ashen Frenzy card spin attack damageFactor reduced from 0.75 to 0.60",
                 "version": "2.26.3",
