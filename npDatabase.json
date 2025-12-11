@@ -7126,7 +7126,7 @@
     "xenons-playable-classes": {
         "metadataCCMod": {
             "id": "xenons-playable-classes",
-            "version": "2.27.0",
+            "version": "2.27.1",
             "title": {
                 "en_US": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
                 "de_DE": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
@@ -7177,16 +7177,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/2.27.0.zip",
-                "source": "xenons-playable-classes-2.27.0",
+                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/2.27.1.zip",
+                "source": "xenons-playable-classes-2.27.1",
                 "hash": {
-                    "sha256": "49de4aebce2916f67cf5cad5316588a187e0e234489e58e606126f3250053250"
+                    "sha256": "5e503327096d68d13801051404d9421371a83037cb471990f7064ce65c7594d5"
                 }
             }
         ],
         "stars": 26,
-        "lastUpdateTimestamp": 1765158946000,
+        "lastUpdateTimestamp": 1765439123000,
         "releasePages": [
+            {
+                "body": "## 2.27.1 (12/11/2025)\r\n### New Content\r\n- Added shadowflame support for Ashen Frenzy\r\n### Changes\r\n- Made the COPY_SPRITE more prominent in effect ashenFrenzyCharge\r\n- Reduced pAlpha for DARK_BALL_GUI particles (rising lines) in effect cataclysmLaserManual1\r\n- Increased startDist for initial CIRCLE_SOURCE_COLD_GUI particles in effect cataclysmLaserManual1\r\n- Extended initial trigger hitbox of proxy cataclysmExplosionAuto to Z=-32 to match the beam hitboxes\r\n- Tweaked audio settigns for effect ssActivate\r\n- Added pLight property to DARK_FIRE_SMALL particles in effect ssActivate\r\n- Proxy mireSlowDebuff duration increased from 0.25 to 0.50 to smooth out debuff refreshing\r\n### Fixes\r\n- Fixed Ashen Frenzy being unable to shoot fireballs at enemies with solid collision or at multi-part bosses\r\n- Fixed all shadowflame \"fireballBig\" proxies to have the noLightGlow property\r\n- Reworked mireProxy and mireSlowDebuff to improve seamless debuff refresh, although still not perfect\r\n- Increased zHeight for miasmaProxy and miasmaProxy2 from 32 to 64 (to accomodate Shadowflame Sorcery casting)\r\n### Balance\r\n- Toxic Mire proxy radius increased from 28 to 34\r\n- Hive Missile card impact damageFactor increased from 1.5 to 4.5",
+                "version": "2.27.1",
+                "timestamp": 1765439123000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/2.27.1"
+            },
             {
                 "body": "## 2.27.0 (12/07/2025)\r\n### New Content\r\n- New Hexacast combat art: Glacial Cataclysm (Cold Guard Lv.3B)\r\n- Added new ENV particles:\r\n  * COLD_CRYSTALS_RISING\r\n  * COLD_CRYSTALS_RISING_FAST\r\n  * SNOW_FLAKES_RISING\r\n  * SNOW_FLAKES_RISING_FAST\r\n### Changes\r\n- Tweaked descriptions for Freeze Rays, Frigid Flurry, Magic Missile, Frozen Fortress, Brittle Barrier, Shock Surge, Magnet Deck\r\n### Fixes\r\n- Updated all weather controller proxies (Triblader, Hexacast) to be invisible: true\r\n- Throttle Hex dmgType label updated to MIXED\r\n### Balance\r\n- Added a short, interruptible delay to the start of Ashen Frenzy\r\n- Throttle Hex contact damageFactor reduced from 4.0 to 3.0\r\n- Throttle Hex proxy thunderSmallWeak damageFactor reduced from 0.8 to 0.65",
                 "version": "2.27.0",
