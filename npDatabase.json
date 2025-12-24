@@ -6429,6 +6429,51 @@
             }
         ]
     },
+    "rebind-aim": {
+        "metadataCCMod": {
+            "id": "rebind-aim",
+            "title": "Rebind Aim",
+            "version": "1.0.1",
+            "description": "Allows you to rebind the aim key to your preferred key.",
+            "repository": "https://github.com/2767mr/cc-rebind-aim",
+            "authors": [
+                "2767mr"
+            ],
+            "plugin": "plugin.js",
+            "tags": [
+                "QoL"
+            ],
+            "dependencies": {
+                "input-api": "^1.0.2"
+            }
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/2767mr/cc-rebind-aim/releases/download/1.0.1/rebind-aim.ccmod",
+                "source": "",
+                "hash": {
+                    "sha256": "d27b118bfd3dcc469f13dfdace9ba07087b36e47976da8aa5cbf80c1f424769d"
+                }
+            }
+        ],
+        "stars": 0,
+        "lastUpdateTimestamp": 1766579988000,
+        "releasePages": [
+            {
+                "body": "Allows you to rebind aim and dash",
+                "version": "1.0.1",
+                "timestamp": 1766579988000,
+                "url": "https://github.com/2767mr/cc-rebind-aim/releases/tag/1.0.1"
+            },
+            {
+                "body": "Allows you to rebind aim and dash",
+                "version": "1.0.0",
+                "timestamp": 1766569139000,
+                "url": "https://github.com/2767mr/cc-rebind-aim/releases/tag/1.0.0"
+            }
+        ]
+    },
     "restored-easter-bunny": {
         "metadataCCMod": {
             "id": "restored-easter-bunny",
