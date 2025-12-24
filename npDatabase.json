@@ -6429,6 +6429,32 @@
             }
         ]
     },
+    "rebind-aim": {
+        "metadataCCMod": {
+            "id": "rebind-aim",
+            "title": "Rebind Aim",
+            "version": "1.0.0",
+            "description": "Allows you to rebind the aim key to your preferred key.",
+            "author": "2767mr",
+            "plugin": "plugin.js",
+            "tags": [
+                "QoL"
+            ],
+            "dependencies": {
+                "input-api": "^1.0.2"
+            }
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/2767mr/cc-rebind-aim/releases/download/1.0.0/rebind-aim.ccmod",
+                "source": "",
+                "hash": {
+                    "sha256": "7d00292d257ee9047fb14cbd47eb48491e9041be84db84973bae20958a8e3c78"
+                }
+            }
+        ]
+    },
     "restored-easter-bunny": {
         "metadataCCMod": {
             "id": "restored-easter-bunny",
