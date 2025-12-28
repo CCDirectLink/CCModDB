@@ -5398,7 +5398,7 @@
     "mw-rando": {
         "metadataCCMod": {
             "id": "mw-rando",
-            "version": "0.7.3",
+            "version": "0.7.4",
             "title": "Multiworld randomizer",
             "description": "Client for CrossCode Archipelago Integration",
             "repository": "https://github.com/CodeTriangle/CCMultiworldRandomizer",
@@ -5421,18 +5421,24 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.7.3/CCMultiworldRandomizer-0.7.3.ccmod",
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.7.4/CCMultiworldRandomizer-0.7.4.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "b9265a6f26dcbf70e0d6cdb45fe0273e964c82768014327088911026315e2b5a"
+                    "sha256": "7a53ab2b76c34f2db37c6603f6e9815dc60a6e35c355c9f2356d65130b1d069a"
                 }
             }
         ],
         "stars": 12,
-        "lastUpdateTimestamp": 1766914689000,
+        "lastUpdateTimestamp": 1766953431000,
         "releasePages": [
             {
-                "body": "## Fixes to Mod\r\n\r\n* Fixed an issue where the goal would not correctly be sent upon entering Meta Space.\r\n* Fixed another issue where the old !! and + symbols would appear on chests.\r\n\r\n## Fixes to Logic\r\n\r\n* The quest **New Metal** is no longer considered accessible directly after receiving the mine pass.\r\n* The quest **A Promise is a Promise 3** now no longer requires full completion of the check, similar to the rest of the quests in the line.\r\n* Third-level Rookie Harbor quests no longer require Blue Ice Shade to be made available.\r\n\r\n## Miscellaneous Improvements\r\n\r\n* Changed the bundling process such that an APWorld manifest is generated.",
+                "body": "## Fixes to Generation\r\n\r\n* Fixed an issue caused by the new bundling setup preventing games from generating.",
+                "version": "0.7.4",
+                "timestamp": 1766953431000,
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.7.4"
+            },
+            {
+                "body": "## Fixes to Mod\r\n\r\n* Fixed an issue where the goal would not correctly be sent upon entering Meta Space.\r\n* Fixed another issue where the old !! and + symbols would appear on chests.\r\n\r\n## Fixes to Logic\r\n\r\n* The quest **New Metal** is no longer considered accessible directly after receiving the mine pass.\r\n* The quest **A Promise is a Promise 3** now no longer requires full completion of the check, similar to the rest of the quests in the line.\r\n* Third-level Rookie Harbor quests no longer require Blue Ice Shade to be made available.\r\n* Per-shop receives from all shops should no longer be marked as accessible if only one unlock for a shop carrying that item is found.\r\n\r\n## Miscellaneous Improvements\r\n\r\n* Changed the bundling process such that an APWorld manifest is generated, ensuring compatibility with future versions of Archipelago.",
                 "version": "0.7.3",
                 "timestamp": 1766914689000,
                 "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.7.3"
