@@ -5398,7 +5398,7 @@
     "mw-rando": {
         "metadataCCMod": {
             "id": "mw-rando",
-            "version": "0.7.2",
+            "version": "0.7.3",
             "title": "Multiworld randomizer",
             "description": "Client for CrossCode Archipelago Integration",
             "repository": "https://github.com/CodeTriangle/CCMultiworldRandomizer",
@@ -5421,16 +5421,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.7.2/CCMultiworldRandomizer-0.7.2.ccmod",
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.7.3/CCMultiworldRandomizer-0.7.3.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "13afd752f1acb5ad12b5fbd2405db1f6dbe001c5a295d68e5dd8138a4d2d6efb"
+                    "sha256": "b9265a6f26dcbf70e0d6cdb45fe0273e964c82768014327088911026315e2b5a"
                 }
             }
         ],
         "stars": 12,
-        "lastUpdateTimestamp": 1759887514000,
+        "lastUpdateTimestamp": 1766914689000,
         "releasePages": [
+            {
+                "body": "## Fixes to Mod\r\n\r\n* Fixed an issue where the goal would not correctly be sent upon entering Meta Space.\r\n* Fixed another issue where the old !! and + symbols would appear on chests.\r\n\r\n## Fixes to Logic\r\n\r\n* The quest **New Metal** is no longer considered accessible directly after receiving the mine pass.\r\n* The quest **A Promise is a Promise 3** now no longer requires full completion of the check, similar to the rest of the quests in the line.\r\n* Third-level Rookie Harbor quests no longer require Blue Ice Shade to be made available.\r\n\r\n## Miscellaneous Improvements\r\n\r\n* Changed the bundling process such that an APWorld manifest is generated.",
+                "version": "0.7.3",
+                "timestamp": 1766914689000,
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.7.3"
+            },
             {
                 "body": "## Changes to Mod\r\n\r\n* Added a feature that allows automatic switching of tabs in PopTracker.\r\n\r\n## Fixes to Mod\r\n\r\n* Fixed an issue where certain games would not have their datapackages cached correctly due to their names containing characters not suitable for filenames on certain platforms.\r\n* Fixed an issue where certain attempts to connect to the server would fail due to mismatched checksums when no such problems exist.\r\n* Fixed an issue where, upon reconnecting to the server while in game, chest icons newly added during the play session would appear as unknown.\r\n\r\n## Fixes to Logic\r\n\r\n* The locations **New Metal** and **The Observatory** now require **Mine Pass**.\r\n* Added **Vagabond Dojo Key** to the list of Always Quests, meaning that it will never contain progressive or useful items when quest randomization is enabled.",
                 "version": "0.7.2",
