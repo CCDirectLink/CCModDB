@@ -11,7 +11,7 @@ export type ReadFunc = (path: string) => Promise<string | undefined>
 export type WriteFunc = (path: string, data: Buffer | string) => Promise<void>
 
 async function main() {
-    configDotenv()
+    configDotenv({ quiet: true })
 
     const GITHUB_TOKEN = process.env['GITHUB_TOKEN']
     if (!GITHUB_TOKEN)
