@@ -329,5 +329,177 @@
                 "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.1.0"
             }
         ]
+    },
+    "open-world": {
+        "metadataCCMod": {
+            "id": "open-world",
+            "version": "0.5.0",
+            "title": "Open World patches",
+            "description": "Open World map patches for randomizer",
+            "repository": "https://github.com/buanjautista/cc-open-world",
+            "tags": [
+                "maps"
+            ],
+            "authors": "buanjautista",
+            "plugin": "plugin.js",
+            "dependencies": {
+                "ccloader": ">=2.24.0",
+                "crosscode": ">=1.4.0",
+                "cc-alybox": ">=1.0.0",
+                "item-api": "^0.4.0"
+            }
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/buanjautista/cc-open-world/releases/download/0.5.0-pre2/CC-Open-World-v0.5.0-pre2.ccmod",
+                "source": "",
+                "hash": {
+                    "sha256": "31dca9bdc4ef960059c2e339012780d2527b57d7d386b56c159ee18ab108538c"
+                }
+            }
+        ],
+        "stars": 3,
+        "lastUpdateTimestamp": 1767606075000,
+        "releasePages": [
+            {
+                "body": "New:\r\n- Golden Bug quests are now separated from the Vagabond quest, which requires now 4 Golden Bug items instead of trial completion.\r\n- Fixed option to enable all maps as visited on new game. (In Options -> General)\r\n- Compat for DLC Quests\r\n- New options to disable Open World tips, and enable unavailable quests info in the hub. (In Options -> General)\r\n\r\nFixes:\r\n- Maroon Valley chest which respawned on room entry\r\n- Removed barrier event in Para Island since barrier has been removed\r\n- Vermillion Wasteland Hub is not inaccessible until a use is given to it (also to prevent crashes)\r\n- So'najiz Temple gauntlet barrier now opens after the fight instead of after opening the chests\r\n- Visited maps option now works, on creating a new save file\r\n- Fixed a lock inside Zir'vitar that happens by triggering the Sloth cutscene in Gaia's Garden\r\n- Meta Space patches not loading due to bad index\r\n- Fixed Master Sensei dialogue asking for Heat and Cold instead of the respective shades.\r\n- Removed rocks on Wheel Passage to ensure access to northern Sapphire Ridge (it was easily skippable and confusing)\r\n- Reworked Maroon Tree questline interactions so no member issues or weird stuff happens.\r\n- Removing cutscene in Temple Mine B3 Center and the two bottom sets of key pillars to ease the key confusion in runs.\r\n- Changed how Mick and the Black Market NPC to just work when having the Pass or Wave\r\n\r\nExtra Patches:\r\n- Extra Barriers: Adds new ways to move around from Rhombus Square, also adding reverse barriers to make some shades more usable from the get go\r\n- Closed Gaia: Adds more options to divide Gaia's Garden areas with the new East/West Gaia Passes, and the Azure Drop / Purple Bolt Shades\r\n- DLC: Base DLC (mostly dungeon) compatbility prepared for future patches\r\n- Extra Quests: Vermillion Trial Buildings, Gastropolis, Fall's Trailblazing, Sephisloth, and one more quest in Vermillion.\r\n\r\nCompatibility:\r\n- Re-added CC-Alybox as dependency\r\n- Added Item-Api as dependency for handling custom items (ex. new Gaia Passes)\r\n- Separated CCItemRandomizer compatibility into its own branch",
+                "version": "0.5.0-pre2",
+                "timestamp": 1767606075000,
+                "url": "https://github.com/buanjautista/cc-open-world/releases/tag/0.5.0-pre2"
+            },
+            {
+                "body": "# v0.5.0\r\nNew:\r\n- Golden Bug quests are now separated from the Vagabond quest, which requires now 4 Golden Bug items instead of trial completion.\r\n- Fixed option to enable all maps as visited on new game. (In Options -> General)\r\n\r\nFixes:\r\n- Maroon Valley chest which respawned on room entry\r\n- Removed barrier event in Para Island since barrier has been removed\r\n- Vermillion Wasteland Hub is not inaccessible until a use is given to it (also to prevent crashes)\r\n- So'najiz Temple gauntlet barrier now opens after the fight instead of after opening the chests\r\n\r\nExtra Patches:\r\n- Extra Barriers: Adds new ways to move around from Rhombus Square, also adding reverse barriers to make some shades more usable from the get go\r\n- Closed Gaia: Adds more options to divide Gaia's Garden areas with the new East/West Gaia Passes, and the Azure Drop / Purple Bolt Shades\r\n- DLC: Base DLC (mostly dungeon) compatbility prepared for future patches\r\n\r\nCompatibility:\r\n- Re-added CC-Alybox as dependency\r\n- Separated CCItemRandomizer compatibility into its own branch",
+                "version": "0.5.0",
+                "timestamp": 1753533204000,
+                "url": "https://github.com/buanjautista/cc-open-world/releases/tag/0.5.0"
+            },
+            {
+                "body": "bumping for plugin.js hotfix",
+                "version": "0.4.3",
+                "timestamp": 1739529392000,
+                "url": "https://github.com/buanjautista/cc-open-world/releases/tag/0.4.3"
+            },
+            {
+                "body": "HOTFIX: \r\n- update plugin file",
+                "version": "0.4.2-hotfix1",
+                "timestamp": 1739529392000,
+                "url": "https://github.com/buanjautista/cc-open-world/releases/tag/0.4.2-hotfix1"
+            },
+            {
+                "body": "Fixes: \r\n- Fixed getting stuck on the chest in Maroon Valley's Torn Road if you don't have the corresponding lock.\r\n- Made the visuals for Para Island barrier actually correlate to the barrier deactivated.\r\n- Removed Schneider interactions on guild area to avoid softlocking the Guild Pass check. Guild area should still be accesible with Guild Pass, and First Scholars with Guild Pass and Schneider check (which requires Mine Pass).\r\n- Removed the Quiz and some remainders from First Scholars. It will be more flat than before sorry about that.\r\n\r\nAdd: \r\n- Having maps visited by default should now be a YAML setting for Archipelago CCMultiworldRandomizer, or an option toggeable in Options for CCItemRandomizer.",
+                "version": "0.4.2",
+                "timestamp": 1739529392000,
+                "url": "https://github.com/buanjautista/cc-open-world/releases/tag/0.4.2"
+            },
+            {
+                "body": "Fixes: \r\n- Having Emilie in party on the Rookie Harbor intro cutscene would softlock the game.\r\n- Steamy Booze and Steaks second quest now requires Flame Shade instead of Faj'ro.\r\n- D'kar 5th quest requirements now properly work.\r\n- Fixed typo on Temple Mine key intro cutscene.\r\n- Temple Mine B3 being exitable during the fight if you had Heat.\r\n\r\nChanges:\r\n- Added some extra quick details on B3 key cutscene",
+                "version": "0.4.1",
+                "timestamp": 1712386197000,
+                "url": "https://github.com/buanjautista/cc-open-world/releases/tag/0.4.1"
+            },
+            {
+                "body": "Reworked code and requiring CCLoader v2.24 or higher due to improved patching. (CC-Alybox not needed anymore)\r\n\r\nChanges: \r\n- Removed Green Seed Shade requirement from Para Island entrance\r\n- Old Dojo can be entered without quest now as long as you have the key.\r\n- Trial of Golden Bug quest is now separate from Dojo entry and fights, so its easier to check it's pickup on randomizers\r\n- Autumn's Falls holo-bunny barriers are open by default\r\n- Actual fix for Smelter fight (map patch was wrongly named)\r\n- Fixed Ba'kii Kum NPC bird using wrong requirement for quests (dungeon instead of shade, compared to the other npcs)\r\n- Fixed not being able to use certain functions after returning back to the past.\r\n- Fixed a shop with wrong requirements in database\r\n\r\nAdd:\r\n- Extra Shade barriers on Sapphire Ridge and Gaia's Garden, leading to Autumn's Fall; and Maroon Valley leading to Bergen Trail \r\n- There's now an option to have all maps and areas visited beforehand.\r\n- Added an option to the Open World NPC in RH Info Hub to fix any quick menu limitations\r\n- Added extra sandwiches :)\r\n- Added a new cutscene to show the lower keys requirement in Temple Mine ",
+                "version": "0.4.0-pre3",
+                "timestamp": 1712386197000,
+                "url": "https://github.com/buanjautista/cc-open-world/releases/tag/0.4.0-pre3"
+            },
+            {
+                "body": "**IMPORTANT!!!**\r\nThis version requires a new dependency for the new patching changes: CC-Alybox, which you can find **[here](https://github.com/lexisother/cc-alybox/releases/)**. Extra patches WILL NOT WORK without it.\r\n\r\n**Version Changes**\r\nReworked code and added cc-alybox / logic-steps as a dependency for easier patching from now on.\r\n\r\nChanges: \r\n- Removed Green Seed Shade requirement from Para Island entrance\r\n- Old Dojo can be entered without quest now as long as you have the key.\r\n- Trial of Golden Bug quest is now separate from Dojo entry and fights, so its easier to check it's pickup on randomizers\r\n- Autumn's Falls holo-bunny barriers are open by default\r\n- Actual fix for Smelter fight (map patch was wrongly named)\r\n\r\nAdd:\r\n- Extra Shade barriers on Sapphire Ridge and Gaia's Garden, leading to Autumn's Fall; and Maroon Valley leading to Bergen Trail \r\n- There's now an option to have all maps and areas visited beforehand.",
+                "version": "0.4.0-pre",
+                "timestamp": 1712386197000,
+                "url": "https://github.com/buanjautista/cc-open-world/releases/tag/0.4.0-pre"
+            },
+            {
+                "body": "Update related to upcoming Mod Manager compatibility, with minor fixes/changes\r\n\r\nFixes:\r\n- Schneider doesn't spawn and fall into the void in Vermillion Basement\r\n- Smelter Digmo patch is now correctly named and works\r\n\r\nChanges:\r\n- Henry quest (Bergen, Maroon, Gaia) and Promise is a Promise (Bergen, Maroon, Gaia) quests can be started without the prerequisites\r\n- Moved the trigger that doesn't let you enter Guild HQ to First Scholars area instead of the whole guilds area. This allows doing Last Minute Heroes quest without issues",
+                "version": "0.3.2",
+                "timestamp": 1710166002000,
+                "url": "https://github.com/buanjautista/cc-open-world/releases/tag/0.3.2"
+            },
+            {
+                "body": "Mostly fixes from previous update changes\r\n\r\nFixes:\r\n- Fixed weird collision issues with barrier blocks in Autumn's Fall entrance \r\n- Made the DLC maps requirements dependant on randomizer DLC activate options, for any possible dlc applications in the future\r\n- Fixed the Meteor Shade cutscene having wrong conditions which made the player softlock in RH expo space\r\n- Added a emergency exit NPC on Rookie Harbor expo space in case player gets stuck there\r\n- Fixed an error with shop index in database patch",
+                "version": "0.3.1",
+                "timestamp": 1707895517000,
+                "url": "https://github.com/buanjautista/cc-open-world/releases/tag/0.3.1"
+            },
+            {
+                "body": "New:\r\n- DLC areas access first implementation. Now you should be able to get to these areas as soon as you gain access to their locations. This also includes being able to do the raid (for no reason yet)\r\n- **Enhanced Skip Beginning:** Allows skipping Rhombus Dungeon and start right away in Rookie Harbor quest hub.\r\n\r\nChanges:\r\n- Added visuals to determine when VT barrier is locked by boss or shades\r\n- Less clutter in Expo Space for easier maintenance later\r\n- Lower puzzle in Sinus Transmit room in Zir'vitar doesn't hard-require heat and cold anymore, and can be solved with any element (elements spawned by default)\r\n**- Entrances to So'najiz and Zir'vitar are active by default**\r\n**- Temple Mine B3 and B4 key locks only require 1 key each instead of 3 and 4 keys respectively**\r\n**- So'najiz Trial of Persistence only uses a key to open both South and North hallways**\r\n- Changed certain shop conditions for shop randomizer purposes\r\n- Added a Meteor Shade prop to show Rhombus Square also opens with the shade\r\n\r\nFixes:\r\n- Meta Space (after finishing the game), will send you back to CrossCentral instead of guild to avoid any weird potential issues\r\n- Removed extra unnecessary story events from Guild HQ \r\n- Fixed a locked door in Vermillion Wasteland Lea's Room (not a softlock but its inconvenient)\r\n- Hide Apollo cutscene in Autumn's Rise if you already done/meet him on Gaia's Garden\r\n- Hide Emilie on Bergen Trail entrance",
+                "version": "0.3.0",
+                "timestamp": 1706113363000,
+                "url": "https://github.com/buanjautista/cc-open-world/releases/tag/0.3.0"
+            },
+            {
+                "body": "New:\r\n- DLC areas access first implementation. Now you should be able to get to these areas as soon as you gain access to their locations. This also includes being able to do the raid (for no reason yet)\r\n\r\nChanges:\r\n- Added visuals to determine when VT barrier is locked by boss or shades\r\n- Less clutter in Expo Space for easier maintenance later\r\n- Lower puzzle in Sinus Transmit room in Zir'vitar doesn't hard-require heat and cold anymore, and can be solved with any element (elements spawned by default)\r\n- Entrances to So'najiz and Zir'vitar are active by default\r\n- Temple Mine B3 and B4 key locks only require 1 key each instead of 3 and 4 keys respectively\r\n- So'najiz Trial of Persistence only uses a key to open both South and North hallways\r\n\r\nFixes:\r\n- Meta Space (after finishing the game), will send you back to CrossCentral instead of guild to avoid any weird potential issues\r\n- Removed extra unnecessary story events from Guild HQ \r\n- Fixed a locked door in Vermillion Wasteland Lea's Room (not a softlock but its inconvenient)\r\n- Hide Apollo cutscene in Autumn's Rise if you already done/meet him on Gaia's Garden\r\n- Hide Emilie on Bergen Trail entrance",
+                "version": "0.3.0-pre2",
+                "timestamp": 1705515098000,
+                "url": "https://github.com/buanjautista/cc-open-world/releases/tag/0.3.0-pre2"
+            },
+            {
+                "body": "New:\r\n- DLC areas access first implementation. Now you should be able to get to these areas as soon as you gain access to their locations. This also includes being able to do the raid (for no reason yet)\r\n\r\nChanges:\r\n- Added visuals to determine when VT barrier is locked by boss or shades\r\n- Less clutter in Expo Space for easier maintenance later\r\n- Lower puzzle in Sinus Transmit room in Zir'vitar doesn't hard-require heat and cold anymore, and can be solved with any element (elements spawned by default)\r\n- Entrances to So'najiz and Zir'vitar are active by default\r\n- Temple Mine B3 and B4 key locks only require 1 key each instead of 3 and 4 keys respectively\r\n- So'najiz Trial of Persistence only uses a key to open both South and North hallways",
+                "version": "0.3.0-pre1",
+                "timestamp": 1704957424000,
+                "url": "https://github.com/buanjautista/cc-open-world/releases/tag/0.3.0-pre1"
+            },
+            {
+                "body": "Fixes:\r\n- More guild fixes (hopefully) to prevent softlocks due to NPCs not spawning\r\n\r\nChanges: \r\n- A NPC to remove any party-locks has been introduced in Rookie Harbor - Info Hub GF\r\n- All SP upgrades are now incremental instead of fixed (which also includes a small \"fix\" of game code)\r\n- Kit quest (An unfortunate series of features) can now be started with party\r\n- VT Boss&Shade barrier can now be set to be only boss, only shades or both\r\n\r\nCC-Item-Randomizer specific:\r\n- Any toggles are now saved into storage.\r\n- GUI is hopefully now fixed (again) since .ccmod files don't read directories?",
+                "version": "0.2.2",
+                "timestamp": 1703453380000,
+                "url": "https://github.com/buanjautista/cc-open-world/releases/tag/0.2.2"
+            },
+            {
+                "body": "Grab only the .ccmod release, unless something goes wrong and you need the folder version.\r\n\r\nFixes:\r\n    Emilie now is not locked anymore if she joins through the guild cutscene in Old Obelisk\r\n    Guild intro is now completable\r\n    Hlin should be present for observatory quest intro in Guild HQ (it was locked to plot being around post-meteor shade events)\r\n    V'rda Vil NPCs should now hide properly\r\n    Smelter Digmo only activates when entering the room after having Infected Digmo killed\r\n\r\nChanges:\r\n    All the shareholder events in Rhombus Square can be now done as soon as you gain access to Rhombus Square, and finish the guild intro\r\n",
+                "version": "0.2.1",
+                "timestamp": 1701800218000,
+                "url": "https://github.com/buanjautista/cc-open-world/releases/tag/0.2.1"
+            },
+            {
+                "body": "Fixes:\r\n- Emilie now is not locked anymore if she joins through the guild cutscene in Old Obelisk\r\n- Guild intro is now completable (and works properly in pre3 hopefully)\r\n- Hlin should be present for observatory quest intro in Guild HQ (it was locked to plot being around post-meteor shade events)\r\n- V'rda Vil NPCs should now hide properly\r\n- Smelter Digmo only activates when entering the room after having Infected Digmo killed (pre-2)\r\n\r\nChanges:\r\n- All the shareholder events in Rhombus Square can be now done as soon as you gain access to Rhombus Square, and finish the guild intro (pre-2)",
+                "version": "0.2.1-pre",
+                "timestamp": 1699828815000,
+                "url": "https://github.com/buanjautista/cc-open-world/releases/tag/0.2.1-pre"
+            },
+            {
+                "body": "New Patches:\r\n- Open Faj'ro (still a prototype, could be quite messy)\r\n- Meteor Wasteland (Locks Vermillion Wasteland passage behind a Meteor Shade barrier)\r\n\r\nChanges:\r\n- Made the VTower-ShadeLock barriers 2 instead of 4 for clarity (and it looked kind of awful to be honest)\r\n- Can explore Sephisloth cave now and beat the boss\r\n- Changed Emilie being Offline after starting the Maroon Tree until you finished it.\r\n- Changed Faj'ro Top cutscene to be a single cutscene rather than 2 \r\n\r\nFixes:\r\n- Fixed the compatiblity between multiple extra patches, which wasn't working at all since VT Skip patch was added\r\n- Fixed a few V'rda Vil mentions about the cat plague, and also removed the cat plague outside Elder's House (there's still a few outside K'tara's House lets pretend these are their pets)\r\n- Fixed a wrong variable that didn't let you start Mr. Nomsworth second quest in Rookie Harbor\r\n- Fixed the Black Market guard despawning after talking to him once\r\n- Fixed the missing GUI labels for Item-Rando menus for Open World finally. (pre2)\r\n- Fixed a small issue that arise from meeting Sephisloth, that raised a barrier in Zir'vitar entrance\r\n- A few Open Faj'ro fixes (pre2)",
+                "version": "0.2.0",
+                "timestamp": 1697926092000,
+                "url": "https://github.com/buanjautista/cc-open-world/releases/tag/0.2.0"
+            },
+            {
+                "body": "First patch for quest rando implementation.\r\n\r\nNew patches:\r\n- Vermillion Tower floor skips: Enables all Tower floors once you finish the ground floor fight. This allows skipping the entirety of Vermillion Tower up to the last fight before the boss\r\n\r\nFixes:\r\n- Sprouting Business quest is not longer locked if you open the black market barriers first (still tied to obtaining Wave)\r\n- Meteor Shade cutscene wasn't tracking conditions properly \r\n- Added a check to not start Apollo fight if you have a party \r\n- Extra conditions checks in V'rda Vil area that were missing \r\n\r\nChanges:\r\n- Rookie Harbor quests after Faj'ro Temple, now unlock when you obtain Red Flame Shade\r\n- Bergen Village quests after Temple Mine, now unlock after obtaining Blue Ice Shade\r\n- Ba'kii Kum quests after Faj'ro Temple, now unlock after obtaining Red Flame Shade\r\n- Basin Keep quests after So'najiz and Zir'vitar, now unlock after obtaining Azure Drop Shade and Purple Bolt Shade instead\r\n- Last Minute Heroes quest unlocked after obtaining Meteor Shade",
+                "version": "0.1.8",
+                "timestamp": 1694329306000,
+                "url": "https://github.com/buanjautista/cc-open-world/releases/tag/0.1.8"
+            },
+            {
+                "body": "- Made access to Guild Area tied to meeting Schneider after getting Mine Pass, and not tied to plot.line\r\n- Changed Meteor Shade room cutscenes in Sapphire Ridge's Old Dojo to not be tied to plot.line\r\n- Made the Vermillion Tower stealth section only completable up till the basement to allow grabbing chest, but not enter Vermillion Tower from there\r\n\r\n- Removed the dependencies entirely, for compatibility with either CCItemRando, CCMultiworldRandomizer, or standalone purposes.\r\n- Added Shade Lock option compatibility for Multiworld",
+                "version": "0.1.7",
+                "timestamp": 1693975626000,
+                "url": "https://github.com/buanjautista/cc-open-world/releases/tag/0.1.7"
+            },
+            {
+                "body": "- Changed how the shade-boss lock patch in Vermillion Tower works. Extra event patches per dungeon not needed anymore.\r\n- Fixed a remaining save fix issue that locks landmarks after a certain point of the plot.line\r\n- Fixed two dungeon end maps that had wrong key info\r\n\r\n\r\n- Added a secondary version that doesn't require item-rando as dependency.",
+                "version": "0.1.6",
+                "timestamp": 1690754369000,
+                "url": "https://github.com/buanjautista/cc-open-world/releases/tag/0.1.6"
+            },
+            {
+                "body": "- Open World now requires Item Randomizer mod 0.4.3+ to be loaded.\r\n- Add a optional feature to patch the end of Vermillion Tower to have boss and shade locks.\r\n- Fix for Basin Keep center not loading patch correctly",
+                "version": "0.1.5",
+                "timestamp": 1690754369000,
+                "url": "https://github.com/buanjautista/cc-open-world/releases/tag/0.1.5"
+            },
+            {
+                "body": "- Fixes a bug with the end cutscene in Vermillion Tower entrance not playing.\r\n- Fixes a syntax error in Rhombus Dungeon entrance.\r\n- Adds a few barriers in Vermillion Tower Entrance that require beating the 4 element dungeon bosses and getting each of its shades.\r\n- Fixes the barrier in Autumn Fall not having visuals",
+                "version": "0.1.4",
+                "timestamp": 1690685296000,
+                "url": "https://github.com/buanjautista/cc-open-world/releases/tag/0.1.4"
+            },
+            {
+                "body": "Patches to remove barriers, and story progress. Plus extra changes\r\n\r\n- Removes save fix prompts and story updates.\r\n- More party invite options and less locked team layouts.\r\n- Optional duels between Apollo and Shizuka.\r\n- Vermilion Wasteland access available at any time.",
+                "version": "0.1.3",
+                "timestamp": 1690600634000,
+                "url": "https://github.com/buanjautista/cc-open-world/releases/tag/0.1.3"
+            }
+        ]
     }
 }
