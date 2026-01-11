@@ -7183,7 +7183,7 @@
     "xenons-playable-classes": {
         "metadataCCMod": {
             "id": "xenons-playable-classes",
-            "version": "2.27.1",
+            "version": "2.28.0",
             "title": {
                 "en_US": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
                 "de_DE": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
@@ -7234,16 +7234,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/2.27.1.zip",
-                "source": "xenons-playable-classes-2.27.1",
+                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/2.28.0.zip",
+                "source": "xenons-playable-classes-2.28.0",
                 "hash": {
-                    "sha256": "5e503327096d68d13801051404d9421371a83037cb471990f7064ce65c7594d5"
+                    "sha256": "14944602a1a45c371b4c3ede840b7e93454d2ae76aa26094b97447afdd5e2dab"
                 }
             }
         ],
         "stars": 26,
-        "lastUpdateTimestamp": 1765439123000,
+        "lastUpdateTimestamp": 1768083513000,
         "releasePages": [
+            {
+                "body": "## 2.28.0 (01/10/2026)\r\n### New Content\r\n- New Hexacast combat art: Branding Blaze (Heat Melee Lv.3A)\r\n- Added \"tmp.xpcDisableHoming\" to allow homing being disabled on THROW_NORMAL, THROW_CHARGED, and Kindling Dance\r\n  * Unused by default, this is only for certain scenarios like Multibakery pvp\r\n### Changes\r\n- Minor audio tweaks to effect cataclysmLaserManual1\r\n- Removed some unused animations from Triblader2/3/4/5/Lea animation files\r\n- Removed some unused frames from Triblader2/3/4/5/Lea sprite sheets\r\n- Shortened and revised Triblader2 disclaimer about modded party members\r\n- Minor dialogue edit to npcModder in hideout-lobby\r\n- Added hacking effects to PRD teleporter in hideout-southwest\r\n- Added SHOW_AR_MSG to art-testing light switch\r\n- Added additional particles to Hexacast Ki Thrust and Spirit Blast\r\n- Reduced screen flash intensity of Hexacast effect wavePunch2Hex (Spirit Blast)\r\n- Removed particleDuration setting from FLAME1 particles in effects firebrandAura1 and firebrandAura2\r\n- Added randFlip to FLAME1 particles in effects firebrandAura1 and firebrandAura2\r\n- Increased WAIT timing from 0.45 to 0.60 when Faj'ro Flush doesn't hit anything\r\n- Slightly improved effect hiveMissileImpact\r\n- Amber Hex shockShot effect now moves with target\r\n- Scorching Swirl first hitbox zHeight increased from 16 to 24\r\n- Increased pAlpha of GOD_HEXAGON_HEAT particles in effect tempestSweep from 0.6 to 0.8\r\n- Added randFlip to ICE_SHARD, DEBRISHEAT, DIRT, and ROCK_SMALL particles in all XPC effects\r\n### Fixes\r\n- Fixed menu order of Hexacast neutral guard Lv.2 custom skills\r\n- Fixed extra hailCard1Death effect when using cataclysmExplosionManual\r\n- Fixed a typo in triblader2-events\r\n- Fixed FLAME2 particles in effect fajroFinalExplode missing particleRotate property\r\n- Added the Z_FLAT shapeType to all ROCK_CRATER particles\r\n- Removed unused duplicate effect cataclysmLaserHexagons\r\n- Removed old combat.cnt conditions from Hexacast default throw custom skills\r\n### Balance\r\n- Kindling Dance fireball steerDegree reduced from 0.20 to 0.08 (shadowflame version unchanged)\r\n- Hive Missile charge time reduced from 0.4 to 0.19 seconds\r\n- Triblader Celestial Constellation ccBullet/ccBullet2 lifetime increased from 1.8/2.0 to 2.4/2.8 seconds\r\n- Calamity Beacon proxy flameWeakMelee damageFactor reduced from 0.12 to 0.06 (shadowflame variant 0.12 to 0.10)\r\n- Calamity Beacon controller proxy ground impact damageFactor reduced from 3.5 to 1.5\r\n- Faj'ro Flush reduced delay after second sweep by 0.15 seconds before jump",
+                "version": "2.28.0",
+                "timestamp": 1768083513000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/2.28.0"
+            },
             {
                 "body": "## 2.27.1 (12/11/2025)\r\n### New Content\r\n- Added shadowflame support for Ashen Frenzy\r\n### Changes\r\n- Made the COPY_SPRITE more prominent in effect ashenFrenzyCharge\r\n- Reduced pAlpha for DARK_BALL_GUI particles (rising lines) in effect cataclysmLaserManual1\r\n- Increased startDist for initial CIRCLE_SOURCE_COLD_GUI particles in effect cataclysmLaserManual1\r\n- Extended initial trigger hitbox of proxy cataclysmExplosionAuto to Z=-32 to match the beam hitboxes\r\n- Tweaked audio settigns for effect ssActivate\r\n- Added pLight property to DARK_FIRE_SMALL particles in effect ssActivate\r\n- Proxy mireSlowDebuff duration increased from 0.25 to 0.50 to smooth out debuff refreshing\r\n### Fixes\r\n- Fixed Ashen Frenzy being unable to shoot fireballs at enemies with solid collision or at multi-part bosses\r\n- Fixed all shadowflame \"fireballBig\" proxies to have the noLightGlow property\r\n- Reworked mireProxy and mireSlowDebuff to improve seamless debuff refresh, although still not perfect\r\n- Increased zHeight for miasmaProxy and miasmaProxy2 from 32 to 64 (to accomodate Shadowflame Sorcery casting)\r\n### Balance\r\n- Toxic Mire proxy radius increased from 28 to 34\r\n- Hive Missile card impact damageFactor increased from 1.5 to 4.5",
                 "version": "2.27.1",
