@@ -7183,7 +7183,7 @@
     "xenons-playable-classes": {
         "metadataCCMod": {
             "id": "xenons-playable-classes",
-            "version": "2.28.0",
+            "version": "2.29.0",
             "title": {
                 "en_US": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
                 "de_DE": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
@@ -7234,16 +7234,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/2.28.0.zip",
-                "source": "xenons-playable-classes-2.28.0",
+                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/2.29.0.zip",
+                "source": "xenons-playable-classes-2.29.0",
                 "hash": {
-                    "sha256": "14944602a1a45c371b4c3ede840b7e93454d2ae76aa26094b97447afdd5e2dab"
+                    "sha256": "cf8a75880b3268c209e2b6f84221bc9664f4b993f6c66f22020f547412edb592"
                 }
             }
         ],
         "stars": 26,
-        "lastUpdateTimestamp": 1768083513000,
+        "lastUpdateTimestamp": 1768206318000,
         "releasePages": [
+            {
+                "body": "## 2.29.0 (01/12/2026)\r\n### New Content\r\n- New Hexacast combat art: Virulent Corruption (Wave Dash Lv.3A)\r\n- Added a custom skill icon for Celestial Cohort\r\n### Changes\r\n- Celestial Cohort removed from main Hexacast player file, it is now a custom skill\r\n- Reduced startDist from 48 to 32 for GOD_HEXAGON_HEAT particles in effect brandingGroundImpact\r\n- Increased pScale of GOD_HEXAGON_HEAT particles in effect brandingUpdraft\r\n- Added a SCREEN_FLASH to effect brandingFloorHexagons2\r\n- Changed effect brandingSweep3 to incrementally speed up s2tsa1700 sound effects and reduced variance from 0.25 to 0.075\r\n- Increased FADE_COLOR time for effect cohortWavePunch\r\n### Fixes\r\n- Fixed Verdant Blast (Lily custom skill) data classification to be dmgType MELEE\r\n- Fixed effect witheringSlashAir not showing properly\r\n- Fixed cohortWavePunch SHOW_EFFECT to use actionDetached: false",
+                "version": "2.29.0",
+                "timestamp": 1768206318000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/2.29.0"
+            },
             {
                 "body": "## 2.28.0 (01/10/2026)\r\n### New Content\r\n- New Hexacast combat art: Branding Blaze (Heat Melee Lv.3A)\r\n- Added \"tmp.xpcDisableHoming\" to allow homing being disabled on THROW_NORMAL, THROW_CHARGED, and Kindling Dance\r\n  * Unused by default, this is only for certain scenarios like Multibakery pvp\r\n### Changes\r\n- Minor audio tweaks to effect cataclysmLaserManual1\r\n- Removed some unused animations from Triblader2/3/4/5/Lea animation files\r\n- Removed some unused frames from Triblader2/3/4/5/Lea sprite sheets\r\n- Shortened and revised Triblader2 disclaimer about modded party members\r\n- Minor dialogue edit to npcModder in hideout-lobby\r\n- Added hacking effects to PRD teleporter in hideout-southwest\r\n- Added SHOW_AR_MSG to art-testing light switch\r\n- Added additional particles to Hexacast Ki Thrust and Spirit Blast\r\n- Reduced screen flash intensity of Hexacast effect wavePunch2Hex (Spirit Blast)\r\n- Removed particleDuration setting from FLAME1 particles in effects firebrandAura1 and firebrandAura2\r\n- Added randFlip to FLAME1 particles in effects firebrandAura1 and firebrandAura2\r\n- Increased WAIT timing from 0.45 to 0.60 when Faj'ro Flush doesn't hit anything\r\n- Slightly improved effect hiveMissileImpact\r\n- Amber Hex shockShot effect now moves with target\r\n- Scorching Swirl first hitbox zHeight increased from 16 to 24\r\n- Increased pAlpha of GOD_HEXAGON_HEAT particles in effect tempestSweep from 0.6 to 0.8\r\n- Added randFlip to ICE_SHARD, DEBRISHEAT, DIRT, and ROCK_SMALL particles in all XPC effects\r\n### Fixes\r\n- Fixed menu order of Hexacast neutral guard Lv.2 custom skills\r\n- Fixed extra hailCard1Death effect when using cataclysmExplosionManual\r\n- Fixed a typo in triblader2-events\r\n- Fixed FLAME2 particles in effect fajroFinalExplode missing particleRotate property\r\n- Added the Z_FLAT shapeType to all ROCK_CRATER particles\r\n- Removed unused duplicate effect cataclysmLaserHexagons\r\n- Removed old combat.cnt conditions from Hexacast default throw custom skills\r\n### Balance\r\n- Kindling Dance fireball steerDegree reduced from 0.20 to 0.08 (shadowflame version unchanged)\r\n- Hive Missile charge time reduced from 0.4 to 0.19 seconds\r\n- Triblader Celestial Constellation ccBullet/ccBullet2 lifetime increased from 1.8/2.0 to 2.4/2.8 seconds\r\n- Calamity Beacon proxy flameWeakMelee damageFactor reduced from 0.12 to 0.06 (shadowflame variant 0.12 to 0.10)\r\n- Calamity Beacon controller proxy ground impact damageFactor reduced from 3.5 to 1.5\r\n- Faj'ro Flush reduced delay after second sweep by 0.15 seconds before jump",
                 "version": "2.28.0",
