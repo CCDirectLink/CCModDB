@@ -2,7 +2,7 @@
     "mw-rando": {
         "metadataCCMod": {
             "id": "mw-rando",
-            "version": "0.7.0-pre.3",
+            "version": "0.8.0-pre.1",
             "title": "Multiworld randomizer",
             "description": "Client for CrossCode Archipelago Integration",
             "repository": "https://github.com/CodeTriangle/CCMultiworldRandomizer",
@@ -16,24 +16,73 @@
                 "24": "icon-24.png"
             },
             "dependencies": {
-                "open-world": ">=0.4.1",
-                "nax-ccuilib": ">=1.2.4",
+                "open-world": ">=0.5.0",
+                "nax-ccuilib": ">=1.5.1",
+                "ccmodmanager": ">=1.0.4",
                 "font-utils": ">=1.2.0"
             }
         },
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.7.0-pre.3/CCMultiworldRandomizer-0.7.0-pre.3.ccmod",
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.8.0-pre.1/CCMultiworldRandomizer-0.8.0-pre.1.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "4068f669d6d1310167f4fdfa500d59aba6415f1b30fddf075b61c2701ccf1246"
+                    "sha256": "4d983c9a8f745a32d95bf92789def3dad503ae32654fb5227a412583fea3261a"
                 }
             }
         ],
-        "stars": 11,
-        "lastUpdateTimestamp": 1749187781000,
+        "stars": 12,
+        "lastUpdateTimestamp": 1768175754000,
         "releasePages": [
+            {
+                "body": "## Changes to Options\r\n* Added Option **Closed Gaia**, allowing players to block areas of Gaia's Garden until additional items are found. (@buanjautista)\r\n* Added Option **Rhombus Hub Unlock**, allowing players to enter areas like Gaia's Garden as soon as the correct shade is found. (@AdamStagg)\r\n* Added Option **Goal**, allowing players to choose between creator goal (Vermillion Tower) and monkey goal (Grand Krys'kajo). (@CodeTriangle)\r\n\r\n## Changes to Mod\r\n* Added **Deathlink** support to the mod, accessible through the Archipelago Settings UI. (@heartles)",
+                "version": "0.8.0-pre.1",
+                "timestamp": 1768175754000,
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.8.0-pre.1"
+            },
+            {
+                "body": "## Fixes to Generation\r\n\r\n* Fixed an issue caused by the new bundling setup preventing games from generating.",
+                "version": "0.7.4",
+                "timestamp": 1766953431000,
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.7.4"
+            },
+            {
+                "body": "## Fixes to Mod\r\n\r\n* Fixed an issue where the goal would not correctly be sent upon entering Meta Space.\r\n* Fixed another issue where the old !! and + symbols would appear on chests.\r\n\r\n## Fixes to Logic\r\n\r\n* The quest **New Metal** is no longer considered accessible directly after receiving the mine pass (@buanjautista).\r\n* The quest **A Promise is a Promise 3** now no longer requires full completion of the check, similar to the rest of the quests in the line.\r\n* Third-level Rookie Harbor quests no longer require Blue Ice Shade to be made available (@FuyumiSogeki).\r\n* Per-shop receives from all shops should no longer be marked as accessible if only one unlock for a shop carrying that item is found.\r\n\r\n## Miscellaneous Improvements\r\n\r\n* Changed the bundling process such that an APWorld manifest is generated, ensuring compatibility with future versions of Archipelago.",
+                "version": "0.7.3",
+                "timestamp": 1766914689000,
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.7.3"
+            },
+            {
+                "body": "## Changes to Mod\r\n\r\n* Added a feature that allows automatic switching of tabs in PopTracker.\r\n\r\n## Fixes to Mod\r\n\r\n* Fixed an issue where certain games would not have their datapackages cached correctly due to their names containing characters not suitable for filenames on certain platforms.\r\n* Fixed an issue where certain attempts to connect to the server would fail due to mismatched checksums when no such problems exist.\r\n* Fixed an issue where, upon reconnecting to the server while in game, chest icons newly added during the play session would appear as unknown.\r\n\r\n## Fixes to Logic\r\n\r\n* The locations **New Metal** and **The Observatory** now require **Mine Pass**.\r\n* Added **Vagabond Dojo Key** to the list of Always Quests, meaning that it will never contain progressive or useful items when quest randomization is enabled.",
+                "version": "0.7.2",
+                "timestamp": 1759887514000,
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.7.2"
+            },
+            {
+                "body": "## Changes to Mod\r\n\r\n* Switched Archipelago button to use new CCUILib API (@krypciak).\r\n\r\n## Fixes to Logic\r\n\r\n* Various locations now require **Wave** (@buanjautista), including:\r\n  * **Waves of Sand**\r\n  * **Garden: Grand Krys'kajo Entrance**\r\n  * **Garden: Ringing River Lower**\r\n  * **Garden: Ringing River Upper**\r\n  * **Garden: Old Timber**\r\n* All Rhombus Square Shops now require the ability to grind enemies.\r\n* The quest **Wet Work** now requires **Red Flame Shade**.\r\n\r\n## Fixes to Mod\r\n\r\n* Fixed an issue where the game would fail to load when there were no preexisting save files.",
+                "version": "0.7.1",
+                "timestamp": 1757660541000,
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.7.1"
+            },
+            {
+                "body": "# Changes since 0.6.11\r\n\r\n## Changes to Mod\r\n\r\n* Updated backend to archipelago.js 2.x.\r\n* Added **Text Client** Menu which shows incoming messages from the server.\r\n* Massively renovated login flow.\r\n* Add logicless chest tracker to map.\r\n* Updated Archipelago chest icons (thanks to Celio Hogane for the help with these sprites).\r\n\r\n## Changes to APWorld\r\n\r\n* Removed linear logic.\r\n  * If you used linear logic before, you are encouraged to switch to using Progressive Area Unlocks.\r\n\r\n## Fixes to APWorld\r\n\r\n* Fixed an issue where, when using item link with null replacement, the multiworld would fail to generate.\r\n\r\n## Migration Guide\r\n\r\n* The following should be **FULLY SUPPORTED**. If you encounter issues with this, please [report it as an error](https://github.com/CodeTriangle/CCMultiworldRandomizer/wiki/Setup#how-to-get-support).\r\n  * Using version 0.7.x of CCMultiworldRandomizer to play a world generated using the 0.6.x APWorld.\r\n  * Loading save games started on version 0.6.x of CCMultiworldRandomizer in version 0.7.x.\r\n* The following are **NOT SUPPORTED**:\r\n  * Using version 0.6.x of CCMultiworldRandomizer to play a world generated using the 0.7.x APWorld.\r\n  * Loading save games started on version 0.7.x of CCMultiworldRandomizer in version 0.6.x.\r\n\r\n# Changes since 0.7.0 Prerelease 3\r\n\r\n## Fixes to Mod\r\n\r\n* Fixed an issue where, when chest lock rando was enabled, key chests would appear with misleading symbols and would not have the correct lock.",
+                "version": "0.7.0",
+                "timestamp": 1752128468000,
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.7.0"
+            },
+            {
+                "body": "## Fixes to Mod\r\n\r\n* Fixed an issue reintroduced in 0.6.10 where, during the loading process, the mod would fail due to missing a dependency that is no longer required.",
+                "version": "0.6.11",
+                "timestamp": 1750956022000,
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.6.11"
+            },
+            {
+                "body": "## Fixes to Logic\r\n\r\n* **Ba'kii Shade Statue** now requires **Shiny Orb** to coincide with in-game behavior.\r\n  * Additionally, **Shiny Orb** has been added to the pool to make this possible.",
+                "version": "0.6.10",
+                "timestamp": 1750835003000,
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.6.10"
+            },
             {
                 "body": "## Fixes to Mod\r\n\r\n* Fix an issue where, after playing offline and then reconnecting, all items would claim to be from the player's own world and their names would be incorrect.\r\n* Fix an issue where, if elements, SP upgrades, or certain other items which do not represent in-game items were received before starting the game, these items would be reset before entering the game.\r\n  * If you were affected by this issue, this release does NOT fix your current save. Contact your room administrator to resend copies of these items or ask for help on the CrossCode Archipelago Discord Server to cheat in your items.\r\n* Fix a visual issue where items tagged with both Progressive and Useful would display as deep blue in-world but green in the marker.\r\n  * Now, they appear green in both situations. There is an ongoing discussion about how these may be made visually distinct from both progressive and useful items, if at all. Please share your feedback in the Discord server.\r\n* Fix a visual issue where Trap items would display as deep blue in-game but light blue on the map.\r\n  * Now, they appear deep blue in both situations.\r\n* Fix an issue where, while chest lock randomization is enabled, chests that contain keys in a vanilla playthrough are always shown as having no lock, regardless of the lock type they were assigned.\r\n* Fix an issue where, after updating the connection details from the main menu, all known chest markers would be lost and display as if they were unknown.\r\n\r\n## Migration Guide\r\n\r\n* I **strongly** recommend making a backup of your save file before trying this version.",
                 "version": "0.7.0-pre.3",
