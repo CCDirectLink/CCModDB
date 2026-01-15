@@ -94,5 +94,6 @@
     { "url": "https://github.com/Hsifnus/autumns-genesis/archive/refs/tags/v0.2.7.zip", "source": "" },
     { "url": "https://github.com/Azure-Lazuline/teleport-limits/releases/download/1.0.1/teleport-limits.ccmod", "source": "" },
     { "url": "https://github.com/Azure-Lazuline/dungeon-revisits/releases/download/1.0.2/dungeon-revisits.ccmod", "source": "" },
-    { "url": "https://github.com/2767mr/cc-rebind-aim/releases/download/1.0.1/rebind-aim.ccmod", "source": "" }
+    { "url": "https://github.com/2767mr/cc-rebind-aim/releases/download/1.0.1/rebind-aim.ccmod", "source": "" },
+    { "url": "https://github.com/CaseyCashman/cc-save-descriptions/releases/download/v1.0.1/save-descriptions-1.0.1.ccmod", "source": "" }
 ]
