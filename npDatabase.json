@@ -6563,6 +6563,46 @@
             }
         ]
     },
+    "save-descriptions": {
+        "metadataCCMod": {
+            "id": "save-descriptions",
+            "version": "1.0.1",
+            "title": "Save Descriptions",
+            "description": "Add small descriptions to your save files.",
+            "repository": "https://github.com/CaseyCashman/cc-save-descriptions",
+            "tags": [
+                "QoL"
+            ],
+            "authors": "Casey Cashman",
+            "prestart": "prestart.js"
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/CaseyCashman/cc-save-descriptions/releases/download/v1.0.1/save-descriptions-1.0.1.ccmod",
+                "source": "",
+                "hash": {
+                    "sha256": "20399e170f1271f8bb6e57d2be02d6ccf787d1220855653a729c4bd760bae9ec"
+                }
+            }
+        ],
+        "stars": 0,
+        "lastUpdateTimestamp": 1768513834000,
+        "releasePages": [
+            {
+                "body": "- Fixed a crash\r\n- Minor visual tweak\r\n- Changed .zip file extension to .ccmod",
+                "version": "1.0.1",
+                "timestamp": 1768513834000,
+                "url": "https://github.com/CaseyCashman/cc-save-descriptions/releases/tag/v1.0.1"
+            },
+            {
+                "body": "",
+                "version": "1.0.0",
+                "timestamp": 1768511420000,
+                "url": "https://github.com/CaseyCashman/cc-save-descriptions/releases/tag/v1.0.0"
+            }
+        ]
+    },
     "spin-to-win": {
         "metadataCCMod": {
             "id": "spin-to-win",
