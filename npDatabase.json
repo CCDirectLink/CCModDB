@@ -2,7 +2,7 @@
     "mw-rando": {
         "metadataCCMod": {
             "id": "mw-rando",
-            "version": "0.8.0-pre.1",
+            "version": "0.8.0-pre.2",
             "title": "Multiworld randomizer",
             "description": "Client for CrossCode Archipelago Integration",
             "repository": "https://github.com/CodeTriangle/CCMultiworldRandomizer",
@@ -25,18 +25,24 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.8.0-pre.1/CCMultiworldRandomizer-0.8.0-pre.1.ccmod",
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.8.0-pre.2/CCMultiworldRandomizer-0.8.0-pre.2.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "4d983c9a8f745a32d95bf92789def3dad503ae32654fb5227a412583fea3261a"
+                    "sha256": "797087a7e702bf10bba659ce45d2759feb6d60131b7d5dcaa966a3bcc4b64d46"
                 }
             }
         ],
         "stars": 12,
-        "lastUpdateTimestamp": 1768175754000,
+        "lastUpdateTimestamp": 1768552360000,
         "releasePages": [
             {
-                "body": "## Changes to Options\r\n* Added Option **Closed Gaia**, allowing players to block areas of Gaia's Garden until additional items are found. (@buanjautista)\r\n* Added Option **Rhombus Hub Unlock**, allowing players to enter areas like Gaia's Garden as soon as the correct shade is found. (@AdamStagg)\r\n* Added Option **Goal**, allowing players to choose between creator goal (Vermillion Tower) and monkey goal (Grand Krys'kajo). (@CodeTriangle)\r\n\r\n## Changes to Mod\r\n* Added **Deathlink** support to the mod, accessible through the Archipelago Settings UI. (@heartles)",
+                "body": "## Changes to Mod\r\n\r\n* Added a new menu, accessible from the text client menu, that displays various important YAML settings (@CodeTriangle)\r\n\r\n## Fixes to Logic\r\n\r\n* Update the regions of certain chests in Gaia's Garden when Closed Gaia is enabled (@FuyumiSogeki, @CodeTriangle)\r\n\r\n## Fixes to Mod\r\n\r\n* Fixed an issue where the game would crash when sending goal while disconnected (@CodeTriangle)",
+                "version": "0.8.0-pre.2",
+                "timestamp": 1768552411000,
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.8.0-pre.2"
+            },
+            {
+                "body": "## Changes to Options\r\n* Added Option **Closed Gaia**, allowing players to block areas of Gaia's Garden until additional items are found. (@buanjautista)\r\n* Added Option **Rhombus Hub Unlock**, allowing players to enter areas like Gaia's Garden as soon as the correct shade is found. (@AdamStagg)\r\n* Added Option **Goal**, allowing players to choose between creator goal (Vermillion Tower) and monkey goal (Grand Krys'kajo). (@CodeTriangle)\r\n\r\n## Changes to Mod\r\n* Added **Deathlink** support to the mod, accessible through the Archipelago Settings UI. (@heartles)\r\n\r\n## Migration Guide\r\n* I *do not recommend* continuing a previous world from 0.7.x in this patch. Certain new features are liable to change forms somewhat before the release of 0.8.0.",
                 "version": "0.8.0-pre.1",
                 "timestamp": 1768175754000,
                 "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.8.0-pre.1"
