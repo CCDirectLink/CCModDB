@@ -5398,7 +5398,7 @@
     "mw-rando": {
         "metadataCCMod": {
             "id": "mw-rando",
-            "version": "0.7.4",
+            "version": "0.8.0-pre.2",
             "title": "Multiworld randomizer",
             "description": "Client for CrossCode Archipelago Integration",
             "repository": "https://github.com/CodeTriangle/CCMultiworldRandomizer",
@@ -5412,7 +5412,7 @@
                 "24": "icon-24.png"
             },
             "dependencies": {
-                "open-world": ">=0.4.1",
+                "open-world": ">=0.5.0",
                 "nax-ccuilib": ">=1.5.1",
                 "ccmodmanager": ">=1.0.4",
                 "font-utils": ">=1.2.0"
@@ -5421,16 +5421,28 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.7.4/CCMultiworldRandomizer-0.7.4.ccmod",
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.8.0-pre.2/CCMultiworldRandomizer-0.8.0-pre.2.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "7a53ab2b76c34f2db37c6603f6e9815dc60a6e35c355c9f2356d65130b1d069a"
+                    "sha256": "797087a7e702bf10bba659ce45d2759feb6d60131b7d5dcaa966a3bcc4b64d46"
                 }
             }
         ],
         "stars": 12,
-        "lastUpdateTimestamp": 1766953431000,
+        "lastUpdateTimestamp": 1768552360000,
         "releasePages": [
+            {
+                "body": "## Changes to Mod\r\n\r\n* Added a new menu, accessible from the text client menu, that displays various important YAML settings (@CodeTriangle)\r\n\r\n## Fixes to Logic\r\n\r\n* Update the regions of certain chests in Gaia's Garden when Closed Gaia is enabled (@FuyumiSogeki, @CodeTriangle)\r\n\r\n## Fixes to Mod\r\n\r\n* Fixed an issue where the game would crash when sending goal while disconnected (@CodeTriangle)",
+                "version": "0.8.0-pre.2",
+                "timestamp": 1768552411000,
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.8.0-pre.2"
+            },
+            {
+                "body": "## Changes to Options\r\n* Added Option **Closed Gaia**, allowing players to block areas of Gaia's Garden until additional items are found. (@buanjautista)\r\n* Added Option **Rhombus Hub Unlock**, allowing players to enter areas like Gaia's Garden as soon as the correct shade is found. (@AdamStagg)\r\n* Added Option **Goal**, allowing players to choose between creator goal (Vermillion Tower) and monkey goal (Grand Krys'kajo). (@CodeTriangle)\r\n\r\n## Changes to Mod\r\n* Added **Deathlink** support to the mod, accessible through the Archipelago Settings UI. (@heartles)\r\n\r\n## Migration Guide\r\n* I *do not recommend* continuing a previous world from 0.7.x in this patch. Certain new features are liable to change forms somewhat before the release of 0.8.0.",
+                "version": "0.8.0-pre.1",
+                "timestamp": 1768175754000,
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.8.0-pre.1"
+            },
             {
                 "body": "## Fixes to Generation\r\n\r\n* Fixed an issue caused by the new bundling setup preventing games from generating.",
                 "version": "0.7.4",
@@ -5438,7 +5450,7 @@
                 "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.7.4"
             },
             {
-                "body": "## Fixes to Mod\r\n\r\n* Fixed an issue where the goal would not correctly be sent upon entering Meta Space.\r\n* Fixed another issue where the old !! and + symbols would appear on chests.\r\n\r\n## Fixes to Logic\r\n\r\n* The quest **New Metal** is no longer considered accessible directly after receiving the mine pass.\r\n* The quest **A Promise is a Promise 3** now no longer requires full completion of the check, similar to the rest of the quests in the line.\r\n* Third-level Rookie Harbor quests no longer require Blue Ice Shade to be made available.\r\n* Per-shop receives from all shops should no longer be marked as accessible if only one unlock for a shop carrying that item is found.\r\n\r\n## Miscellaneous Improvements\r\n\r\n* Changed the bundling process such that an APWorld manifest is generated, ensuring compatibility with future versions of Archipelago.",
+                "body": "## Fixes to Mod\r\n\r\n* Fixed an issue where the goal would not correctly be sent upon entering Meta Space.\r\n* Fixed another issue where the old !! and + symbols would appear on chests.\r\n\r\n## Fixes to Logic\r\n\r\n* The quest **New Metal** is no longer considered accessible directly after receiving the mine pass (@buanjautista).\r\n* The quest **A Promise is a Promise 3** now no longer requires full completion of the check, similar to the rest of the quests in the line.\r\n* Third-level Rookie Harbor quests no longer require Blue Ice Shade to be made available (@FuyumiSogeki).\r\n* Per-shop receives from all shops should no longer be marked as accessible if only one unlock for a shop carrying that item is found.\r\n\r\n## Miscellaneous Improvements\r\n\r\n* Changed the bundling process such that an APWorld manifest is generated, ensuring compatibility with future versions of Archipelago.",
                 "version": "0.7.3",
                 "timestamp": 1766914689000,
                 "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.7.3"
