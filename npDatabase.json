@@ -7771,7 +7771,7 @@
     "xpc-litter": {
         "metadataCCMod": {
             "id": "xpc-litter",
-            "version": "2.1.6",
+            "version": "2.1.7",
             "title": {
                 "en_US": "XPC - Hexacast Litter"
             },
@@ -7794,16 +7794,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/xpc-hexacast-litter/archive/refs/tags/2.1.6.zip",
-                "source": "xpc-hexacast-litter-2.1.6",
+                "url": "https://github.com/XenonA7/xpc-hexacast-litter/archive/refs/tags/2.1.7.zip",
+                "source": "xpc-hexacast-litter-2.1.7",
                 "hash": {
-                    "sha256": "df7ffe6788cc15dc2a8ccc937a4bdb73f9462ec322c1da78e9b6d904a7861e5a"
+                    "sha256": "8c8aa2f6839b29713412cafe105ba7c0dd944cf20f9d8fa1997055f72d7a2b05"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1760863545000,
+        "lastUpdateTimestamp": 1768691598000,
         "releasePages": [
+            {
+                "body": "2.1.7 (01/17/2025)\r\n- Support for Furious Dissonance effects (XPC 3.0.0)\r\n  * ball-wave.dissonanceCardAirDeath\r\n  * ball-wave.dissonanceCardWallDeath",
+                "version": "2.1.7",
+                "timestamp": 1768691598000,
+                "url": "https://github.com/XenonA7/xpc-hexacast-litter/releases/tag/2.1.7"
+            },
             {
                 "body": "2.1.6 (10/19/2025)\r\n- Updated explosiveHeatDeckDeath zSpeed settings to match the final XPC version\r\n- Included shadowflame-alts versions of heatCardDeckDeath and explosiveHeatDeckDeath",
                 "version": "2.1.6",
