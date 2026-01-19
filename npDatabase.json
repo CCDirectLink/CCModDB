@@ -5186,6 +5186,52 @@
             }
         ]
     },
+    "lub-dungeon-skip": {
+        "metadataCCMod": {
+            "id": "lub-dungeon-skip",
+            "version": "0.0.1",
+            "title": {
+                "en_US": "Dungeon Puzzle Skipper"
+            },
+            "description": {
+                "en_US": "A mod that implements some NPCs to allow skipping puzzles in dungeons"
+            },
+            "authors": [
+                "Lubkuluk"
+            ],
+            "tags": [
+                "qol"
+            ],
+            "icons": {
+                "24": "icon.png"
+            },
+            "repository": "https://github.com/lubkuluk/lub-dungeon-skip",
+            "prestart": "prestart.js",
+            "dependencies": {
+                "Simplify": ">=2.12.1"
+            }
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/lubkuluk/lub-dungeon-skip/releases/download/0.0.1/lub-dungeon-skip.zip",
+                "source": "lub-dungeon-skip",
+                "hash": {
+                    "sha256": "238b500a326afb7a1763780be5c06941618ac28330265e747a4f74d1006d133c"
+                }
+            }
+        ],
+        "stars": 0,
+        "lastUpdateTimestamp": 1768834534000,
+        "releasePages": [
+            {
+                "body": "0.0.1\r\n\r\n## Release Update",
+                "version": "0.0.1",
+                "timestamp": 1768834534000,
+                "url": "https://github.com/lubkuluk/lub-dungeon-skip/releases/tag/0.0.1"
+            }
+        ]
+    },
     "lub-summoner-frame": {
         "metadataCCMod": {
             "id": "lub-summoner-frame",
