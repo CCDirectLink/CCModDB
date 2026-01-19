@@ -7251,7 +7251,7 @@
     "xenons-playable-classes": {
         "metadataCCMod": {
             "id": "xenons-playable-classes",
-            "version": "3.0.0",
+            "version": "3.0.1",
             "title": {
                 "en_US": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
                 "de_DE": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
@@ -7302,16 +7302,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/3.0.0.zip",
-                "source": "xenons-playable-classes-3.0.0",
+                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/3.0.1.zip",
+                "source": "xenons-playable-classes-3.0.1",
                 "hash": {
-                    "sha256": "4e627bde8e970289eb65142c327d61402a68bd92af64a6b36e2f950ab3794a87"
+                    "sha256": "7a8f6d04b1fac0fc833cfdfee3481efe5da88d2a9415362474213ac3626af784"
                 }
             }
         ],
         "stars": 27,
-        "lastUpdateTimestamp": 1768792842000,
+        "lastUpdateTimestamp": 1768845958000,
         "releasePages": [
+            {
+                "body": "## 3.0.1 (01/19/2026)\r\n### General\r\n- Hexacast litter mod updated to 2.1.8\r\n### Changes\r\n- Added pAlpha fadeout to WAVE_SPARKLE particles in effect dissonanceFinalCardFX\r\n- Changed the WAVE_BIG_HEXAGON_GUI particle in effect dissonanceFinalImpact to be much faster and larger\r\n- Proxy dissonanceCard2 now uses new death effects dissonanceCard2WallDeath and dissonanceCard2AirDeath\r\n### Balance\r\n- Furious Dissonance reduced delay before final sequence by 0.15 seconds",
+                "version": "3.0.1",
+                "timestamp": 1768845958000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/3.0.1"
+            },
             {
                 "body": "## 3.0.0 (01/18/2026)\r\n### General\r\n- Hexacast moveset is now complete!\r\n- Hexacast litter mod updated to 2.1.7\r\n### New Content\r\n- New Hexacast combat art: Furious Dissonance (Wave Throw Lv.3B)\r\n- Added two new Hexacast tips to hideout-lobby\r\n### Changes\r\n- Shifted Hexacast \"fanPre\" and \"fanLoop\" spritesheet frame offsets to match \"groundClosed\"\r\n- Added new effect virulentSparkle to Virulent Corruption\r\n- Player collision now changes back to VIRTUAL after landing on the ground during Virulent Corruption\r\n- Proxies cataclysmCard, iceCardSmall, kindlingMineCard, and waveDetonationTrap are now considered a \"threat\" once armed\r\n- Adjusted pScale parameters of HEXA_SHOCK particles in effect sparkStreamHexagons to shrink more gradually\r\n- Renamed custom particle CIRCLE_BIG_WAVE_GUI to CIRCLE_BIG_WAVE_NOGUI\r\n### Fixes\r\n- Fixed typo with some EASE_IN_OUT spline valies in wave-hexa.json\r\n- Fixed incorrect moveDist for GOD_HEXAGON particles in all godThrow___Rev effects\r\n- Fixed Gradual Hive Missile to use effect hiveMissileChargeOld",
                 "version": "3.0.0",
