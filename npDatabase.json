@@ -7201,7 +7201,7 @@
     "xenons-playable-classes": {
         "metadataCCMod": {
             "id": "xenons-playable-classes",
-            "version": "2.29.0",
+            "version": "3.0.0",
             "title": {
                 "en_US": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
                 "de_DE": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
@@ -7252,16 +7252,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/2.29.0.zip",
-                "source": "xenons-playable-classes-2.29.0",
+                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/3.0.0.zip",
+                "source": "xenons-playable-classes-3.0.0",
                 "hash": {
-                    "sha256": "cf8a75880b3268c209e2b6f84221bc9664f4b993f6c66f22020f547412edb592"
+                    "sha256": "4e627bde8e970289eb65142c327d61402a68bd92af64a6b36e2f950ab3794a87"
                 }
             }
         ],
-        "stars": 26,
-        "lastUpdateTimestamp": 1768206318000,
+        "stars": 27,
+        "lastUpdateTimestamp": 1768792842000,
         "releasePages": [
+            {
+                "body": "## 3.0.0 (01/18/2026)\r\n### General\r\n- Hexacast moveset is now complete!\r\n- Hexacast litter mod updated to 2.1.7\r\n### New Content\r\n- New Hexacast combat art: Furious Dissonance (Wave Throw Lv.3B)\r\n- Added two new Hexacast tips to hideout-lobby\r\n### Changes\r\n- Shifted Hexacast \"fanPre\" and \"fanLoop\" spritesheet frame offsets to match \"groundClosed\"\r\n- Added new effect virulentSparkle to Virulent Corruption\r\n- Player collision now changes back to VIRTUAL after landing on the ground during Virulent Corruption\r\n- Proxies cataclysmCard, iceCardSmall, kindlingMineCard, and waveDetonationTrap are now considered a \"threat\" once armed\r\n- Adjusted pScale parameters of HEXA_SHOCK particles in effect sparkStreamHexagons to shrink more gradually\r\n- Renamed custom particle CIRCLE_BIG_WAVE_GUI to CIRCLE_BIG_WAVE_NOGUI\r\n### Fixes\r\n- Fixed typo with some EASE_IN_OUT spline valies in wave-hexa.json\r\n- Fixed incorrect moveDist for GOD_HEXAGON particles in all godThrow___Rev effects\r\n- Fixed Gradual Hive Missile to use effect hiveMissileChargeOld",
+                "version": "3.0.0",
+                "timestamp": 1768792842000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/3.0.0"
+            },
             {
                 "body": "## 2.29.0 (01/12/2026)\r\n### New Content\r\n- New Hexacast combat art: Virulent Corruption (Wave Dash Lv.3A)\r\n- Added a custom skill icon for Celestial Cohort\r\n### Changes\r\n- Celestial Cohort removed from main Hexacast player file, it is now a custom skill\r\n- Reduced startDist from 48 to 32 for GOD_HEXAGON_HEAT particles in effect brandingGroundImpact\r\n- Increased pScale of GOD_HEXAGON_HEAT particles in effect brandingUpdraft\r\n- Added a SCREEN_FLASH to effect brandingFloorHexagons2\r\n- Changed effect brandingSweep3 to incrementally speed up s2tsa1700 sound effects and reduced variance from 0.25 to 0.075\r\n- Increased FADE_COLOR time for effect cohortWavePunch\r\n### Fixes\r\n- Fixed Verdant Blast (Lily custom skill) data classification to be dmgType MELEE\r\n- Fixed effect witheringSlashAir not showing properly\r\n- Fixed cohortWavePunch SHOW_EFFECT to use actionDetached: false",
                 "version": "2.29.0",
