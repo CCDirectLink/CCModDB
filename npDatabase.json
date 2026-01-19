@@ -7777,7 +7777,7 @@
     "xpc-litter": {
         "metadataCCMod": {
             "id": "xpc-litter",
-            "version": "2.1.7",
+            "version": "2.1.8",
             "title": {
                 "en_US": "XPC - Hexacast Litter"
             },
@@ -7800,16 +7800,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/xpc-hexacast-litter/archive/refs/tags/2.1.7.zip",
-                "source": "xpc-hexacast-litter-2.1.7",
+                "url": "https://github.com/XenonA7/xpc-hexacast-litter/archive/refs/tags/2.1.8.zip",
+                "source": "xpc-hexacast-litter-2.1.8",
                 "hash": {
-                    "sha256": "8c8aa2f6839b29713412cafe105ba7c0dd944cf20f9d8fa1997055f72d7a2b05"
+                    "sha256": "fa75995e483a7ae342e0daab0f315fe280472431fad4d09a8a1a9d7568df89aa"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1768691598000,
+        "lastUpdateTimestamp": 1768845837000,
         "releasePages": [
+            {
+                "body": "2.1.8 (01/17/2025)\r\n- Support for new dissonanceCard2 effects (XPC 3.0.1)\r\n  * ball-wave.dissonanceCard2AirDeath\r\n  * ball-wave.dissonanceCard2WallDeath",
+                "version": "2.1.8",
+                "timestamp": 1768845837000,
+                "url": "https://github.com/XenonA7/xpc-hexacast-litter/releases/tag/2.1.8"
+            },
             {
                 "body": "2.1.7 (01/17/2025)\r\n- Support for Furious Dissonance effects (XPC 3.0.0)\r\n  * ball-wave.dissonanceCardAirDeath\r\n  * ball-wave.dissonanceCardWallDeath",
                 "version": "2.1.7",
