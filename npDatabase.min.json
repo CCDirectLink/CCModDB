@@ -5189,7 +5189,7 @@
     "lub-dungeon-skip": {
         "metadataCCMod": {
             "id": "lub-dungeon-skip",
-            "version": "0.0.2",
+            "version": "0.0.3",
             "title": {
                 "en_US": "Dungeon Puzzle Skipper"
             },
@@ -5215,7 +5215,7 @@
                 "url": "https://github.com/lubkuluk/lub-dungeon-skip/releases/download/0.0.3/lub-dungeon-skip.zip",
                 "source": "lub-dungeon-skip",
                 "hash": {
-                    "sha256": "b9fe83bc74e86c9e91092bd4fd3aafcf95b86a91e3769343977768c18078d74c"
+                    "sha256": "39122e18fcc26b4b60f69e56f9c2f6c842bbe93c0a4392dbab137e6e63315602"
                 }
             }
         ],
