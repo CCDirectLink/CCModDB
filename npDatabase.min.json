@@ -5212,16 +5212,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/lubkuluk/lub-dungeon-skip/releases/download/0.0.2/lub-dungeon-skip.zip",
+                "url": "https://github.com/lubkuluk/lub-dungeon-skip/releases/download/0.0.3/lub-dungeon-skip.zip",
                 "source": "lub-dungeon-skip",
                 "hash": {
-                    "sha256": "ce31ad0c28ba998b21ffa107458cdd0c13b0cdf423eaffc577bc1abd5bb91e55"
+                    "sha256": "b9fe83bc74e86c9e91092bd4fd3aafcf95b86a91e3769343977768c18078d74c"
                 }
             }
         ],
         "stars": 0,
         "lastUpdateTimestamp": 1768834534000,
         "releasePages": [
+            {
+                "body": "Adjusted some NPCs in the Cold and Heat dungeons for better experience",
+                "version": "0.0.3",
+                "timestamp": 1768834534000,
+                "url": "https://github.com/lubkuluk/lub-dungeon-skip/releases/tag/0.0.3"
+            },
             {
                 "body": "Fixed code related labeling and removed unneeded dependancy",
                 "version": "0.0.2",
