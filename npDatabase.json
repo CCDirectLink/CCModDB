@@ -388,7 +388,7 @@
     "open-world": {
         "metadataCCMod": {
             "id": "open-world",
-            "version": "0.5.0",
+            "version": "0.5.0-pre3",
             "title": "Open World patches",
             "description": "Open World map patches for randomizer",
             "repository": "https://github.com/buanjautista/cc-open-world",
@@ -407,16 +407,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/buanjautista/cc-open-world/releases/download/0.5.0-pre2/CC-Open-World-v0.5.0-pre2.ccmod",
+                "url": "https://github.com/buanjautista/cc-open-world/releases/download/0.5.0-pre3/CC-Open-World-v0.5.0-pre3.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "31dca9bdc4ef960059c2e339012780d2527b57d7d386b56c159ee18ab108538c"
+                    "sha256": "06a68defa2fd9db08d13984c900b0f5b1f06b1414bdf884a8e7a0261337dd08f"
                 }
             }
         ],
         "stars": 3,
-        "lastUpdateTimestamp": 1767606075000,
+        "lastUpdateTimestamp": 1769054286000,
         "releasePages": [
+            {
+                "body": "- Hoodwink anti-softlock\r\n- Closed Gaia missing barriers in Grove\r\n- Fix Mick quest prompt in Basin Keep\r\n- Fix barrier missing in Autumn Fall to Ridge (Rhombus Hub Unlock)\r\n- Fix Jungle Entrance patch errors",
+                "version": "0.5.0-pre3",
+                "timestamp": 1769054286000,
+                "url": "https://github.com/buanjautista/cc-open-world/releases/tag/0.5.0-pre3"
+            },
             {
                 "body": "New:\r\n- Golden Bug quests are now separated from the Vagabond quest, which requires now 4 Golden Bug items instead of trial completion.\r\n- Fixed option to enable all maps as visited on new game. (In Options -> General)\r\n- Compat for DLC Quests\r\n- New options to disable Open World tips, and enable unavailable quests info in the hub. (In Options -> General)\r\n\r\nFixes:\r\n- Maroon Valley chest which respawned on room entry\r\n- Removed barrier event in Para Island since barrier has been removed\r\n- Vermillion Wasteland Hub is not inaccessible until a use is given to it (also to prevent crashes)\r\n- So'najiz Temple gauntlet barrier now opens after the fight instead of after opening the chests\r\n- Visited maps option now works, on creating a new save file\r\n- Fixed a lock inside Zir'vitar that happens by triggering the Sloth cutscene in Gaia's Garden\r\n- Meta Space patches not loading due to bad index\r\n- Fixed Master Sensei dialogue asking for Heat and Cold instead of the respective shades.\r\n- Removed rocks on Wheel Passage to ensure access to northern Sapphire Ridge (it was easily skippable and confusing)\r\n- Reworked Maroon Tree questline interactions so no member issues or weird stuff happens.\r\n- Removing cutscene in Temple Mine B3 Center and the two bottom sets of key pillars to ease the key confusion in runs.\r\n- Changed how Mick and the Black Market NPC to just work when having the Pass or Wave\r\n\r\nExtra Patches:\r\n- Extra Barriers: Adds new ways to move around from Rhombus Square, also adding reverse barriers to make some shades more usable from the get go\r\n- Closed Gaia: Adds more options to divide Gaia's Garden areas with the new East/West Gaia Passes, and the Azure Drop / Purple Bolt Shades\r\n- DLC: Base DLC (mostly dungeon) compatbility prepared for future patches\r\n- Extra Quests: Vermillion Trial Buildings, Gastropolis, Fall's Trailblazing, Sephisloth, and one more quest in Vermillion.\r\n\r\nCompatibility:\r\n- Re-added CC-Alybox as dependency\r\n- Added Item-Api as dependency for handling custom items (ex. new Gaia Passes)\r\n- Separated CCItemRandomizer compatibility into its own branch",
                 "version": "0.5.0-pre2",
