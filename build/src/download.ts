@@ -1,6 +1,5 @@
 import https from 'https'
 import http from 'http'
-import urlModule from 'url'
 import stream from 'stream'
 import * as cache from './cache'
 
@@ -53,18 +52,16 @@ function body(url: string): Promise<http.IncomingMessage> {
 }
 
 async function getUsingMethod(url: string, method: string): Promise<http.IncomingMessage> {
-    const uri = urlModule.parse(url)
-    const { get } = uri.protocol === 'https:' ? https : http
+    const parsedUrl = new URL(url)
+    const client = parsedUrl.protocol === 'https:' ? https : http
 
     const options: http.RequestOptions = {
         method,
     }
 
-    return new Promise((resolve, reject) =>
-        get(url, options)
-            .on('response', resp => resolve(resp))
-            .on('error', err => reject(err))
-    )
+    return new Promise((resolve, reject) => {
+        client.get(parsedUrl, options, resolve).on('error', reject)
+    })
 }
 
 function getTag(head: http.IncomingMessage): string {
