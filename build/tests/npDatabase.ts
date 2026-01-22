@@ -251,7 +251,9 @@ function testMetadataCCMod(ccmod: PkgCCMod) {
                 if (dep) {
                     const depDatabaseVersion = dep.metadataCCMod!.version
                     expect(
-                        semver.satisfies(depDatabaseVersion, requiredVersionRange),
+                        semver.satisfies(depDatabaseVersion, requiredVersionRange, {
+                            includePrerelease: true,
+                        }),
                         `the version of the dependency ${depId} (database version: ${depDatabaseVersion}) does not satisfy the required range: ${requiredVersionRange}`
                     ).to.be.true
                 }
