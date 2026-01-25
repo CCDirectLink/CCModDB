@@ -2905,7 +2905,7 @@
     "ccmodmanager": {
         "metadataCCMod": {
             "id": "ccmodmanager",
-            "version": "1.1.2",
+            "version": "1.1.3",
             "title": "CCModManager",
             "description": "Mod manager for CrossCode!",
             "repository": "https://github.com/CCDirectLink/CCModManager",
@@ -2929,16 +2929,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CCDirectLink/CCModManager/releases/download/v1.1.2/ccmodmanager-1.1.2.ccmod",
+                "url": "https://github.com/CCDirectLink/CCModManager/releases/download/v1.1.3/ccmodmanager-1.1.3.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "ddf1b19266dad09c920e2c4689edc933afc8858c44460b6bd154298e81194607"
+                    "sha256": "2346acbe4db496ff3397f3e4520fac68c4269c961aea0c0a8a0fe05fb5719998"
                 }
             }
         ],
-        "stars": 7,
-        "lastUpdateTimestamp": 1760544022000,
+        "stars": 9,
+        "lastUpdateTimestamp": 1769108542000,
         "releasePages": [
+            {
+                "body": "### Fixed\n\n- Fix error when installing a mod that depends on a testing dependency",
+                "version": "1.1.3",
+                "timestamp": 1769108542000,
+                "url": "https://github.com/CCDirectLink/CCModManager/releases/tag/v1.1.3"
+            },
             {
                 "body": "### Fixed\n\n- Fix mod updates not getting detected sometimes\n- Do not ask to enable mod dependencies after auto update",
                 "version": "1.1.2",
