@@ -3895,7 +3895,7 @@
     "dungeon-revisits": {
         "metadataCCMod": {
             "id": "dungeon-revisits",
-            "version": "1.0.2",
+            "version": "1.0.3",
             "title": "Dungeon Revisits",
             "description": "Play any dungeon as much as you want, scaled up to endgame levels.",
             "repository": "https://github.com/Azure-Lazuline/dungeon-revisits",
@@ -3911,16 +3911,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/Azure-Lazuline/dungeon-revisits/releases/download/1.0.2/dungeon-revisits.ccmod",
+                "url": "https://github.com/Azure-Lazuline/dungeon-revisits/releases/download/1.0.3/dungeon-revisits.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "724d751158531c7d2eda2e8ea23fa2bcd18bc70be47944a574bf4d4eef84e0b3"
+                    "sha256": "e95a1fc3844149f88dc46d1c0e81bb908124b9e28288802c2ce66a96290f0eaa"
                 }
             }
         ],
         "stars": 0,
         "lastUpdateTimestamp": 1762583182000,
         "releasePages": [
+            {
+                "body": "- fixed a softlock at the end of Krys'kajo during the main playthrough",
+                "version": "1.0.3",
+                "timestamp": 1762583182000,
+                "url": "https://github.com/Azure-Lazuline/dungeon-revisits/releases/tag/1.0.3"
+            },
             {
                 "body": "- adjusted enemy damage/HP so it more closely matches the difficulty of the first visit\r\n- added a basic difficulty selection screen if you want it to be harder\r\n- added a chest counter to the results screen\r\n- a few small bugfixes",
                 "version": "1.0.2",
