@@ -5873,6 +5873,48 @@
             }
         ]
     },
+    "nax-art-switch": {
+        "metadataCCMod": {
+            "id": "nax-art-switch",
+            "version": "1.0.1",
+            "title": "Art Switch",
+            "icons": {
+                "24": "icon.png"
+            },
+            "repository": "https://github.com/naxane/nax-art-switch",
+            "tags": [
+                "QoL"
+            ],
+            "authors": [
+                "nax"
+            ],
+            "description": "Swaps combart arts given a keybind (Defaults to F and left stick click) (This will break your circuit tree!)",
+            "plugin": "nax-art-switch/plugin.js",
+            "dependencies": {
+                "nax-module-cache": "^1.0.0"
+            }
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/naxane/nax-art-switch/releases/download/v1.0.1/nax-art-switch.ccmod",
+                "source": "",
+                "hash": {
+                    "sha256": "b6e4fd6ede4b149d6aeef1f3dd401c1608e8fa5a0953ce1b998dd54b4cf52902"
+                }
+            }
+        ],
+        "stars": 1,
+        "lastUpdateTimestamp": 1724957698000,
+        "releasePages": [
+            {
+                "body": "**Full Changelog**: https://github.com/naxane/nax-art-switch/commits/v1.0.1",
+                "version": "1.0.1",
+                "timestamp": 1724957698000,
+                "url": "https://github.com/naxane/nax-art-switch/releases/tag/v1.0.1"
+            }
+        ]
+    },
     "nax-ccuilib": {
         "metadataCCMod": {
             "id": "nax-ccuilib",
