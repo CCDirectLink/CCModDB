@@ -95,5 +95,6 @@
     { "url": "https://github.com/Azure-Lazuline/teleport-limits/releases/download/1.0.1/teleport-limits.ccmod", "source": "" },
     { "url": "https://github.com/Azure-Lazuline/dungeon-revisits/releases/download/1.0.3/dungeon-revisits.ccmod", "source": "" },
     { "url": "https://github.com/2767mr/cc-rebind-aim/releases/download/1.0.1/rebind-aim.ccmod", "source": "" },
-    { "url": "https://github.com/lubkuluk/lub-dungeon-skip/releases/download/0.0.3/lub-dungeon-skip.zip", "source": "" }
+    { "url": "https://github.com/lubkuluk/lub-dungeon-skip/releases/download/0.0.3/lub-dungeon-skip.zip", "source": "" },
+    { "url": "https://github.com/naxane/nax-art-switch/releases/download/v1.0.1/nax-art-switch.ccmod", "source": "" }
 ]
