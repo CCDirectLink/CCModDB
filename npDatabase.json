@@ -2,7 +2,7 @@
     "Azure's Adjustments": {
         "metadataCCMod": {
             "id": "Azure's Adjustments",
-            "version": "1.1.3",
+            "version": "1.1.4",
             "title": "Azure's Balancing & Extras",
             "description": {
                 "en_US": "Tons of small fixes, balancing, and UI additions, made with a first playthrough in mind."
@@ -27,16 +27,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/Azure-Lazuline/azures-adjustments/releases/download/1.1.3/azures-adjustments.ccmod",
+                "url": "https://github.com/Azure-Lazuline/azures-adjustments/releases/download/1.1.4/azures-adjustments.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "a2c270781979d60717c55f2f895abbf5d46976c75432454ae2406f87d4d8acef"
+                    "sha256": "a550bbfee10005b234f784f31a0d7cd6e3219800aa551dbba16c36a75cbb737d"
                 }
             }
         ],
-        "stars": 4,
-        "lastUpdateTimestamp": 1760805022000,
+        "stars": 5,
+        "lastUpdateTimestamp": 1769416226000,
         "releasePages": [
+            {
+                "body": "- added more obvious attack tells to a few more enemies (most notably Ku'lero pillars)\r\n- Brisk Barrier and its upgrades last longer and are more durable",
+                "version": "1.1.4",
+                "timestamp": 1769415872000,
+                "url": "https://github.com/Azure-Lazuline/azures-adjustments/releases/tag/1.1.4"
+            },
             {
                 "body": "- max consumable favorites raised to 32\r\n- fixed a vanilla bug that would cause your favorites to reset sometimes\r\n- fixed a bug where the bonus boss at the beach would stop moving for a whole phase sometimes",
                 "version": "1.1.3",
