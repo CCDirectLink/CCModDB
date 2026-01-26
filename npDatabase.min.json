@@ -2,7 +2,7 @@
     "Azure's Adjustments": {
         "metadataCCMod": {
             "id": "Azure's Adjustments",
-            "version": "1.1.4",
+            "version": "1.1.5",
             "title": "Azure's Balancing & Extras",
             "description": {
                 "en_US": "Tons of small fixes, balancing, and UI additions, made with a first playthrough in mind."
@@ -27,16 +27,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/Azure-Lazuline/azures-adjustments/releases/download/1.1.4/azures-adjustments.ccmod",
+                "url": "https://github.com/Azure-Lazuline/azures-adjustments/releases/download/1.1.5/azures-adjustments.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "a550bbfee10005b234f784f31a0d7cd6e3219800aa551dbba16c36a75cbb737d"
+                    "sha256": "e63eea0b223cb5e074f6efa9b71d739625e7a145ab3b3138d680eb2a3507c75b"
                 }
             }
         ],
         "stars": 5,
-        "lastUpdateTimestamp": 1769416226000,
+        "lastUpdateTimestamp": 1769417942000,
         "releasePages": [
+            {
+                "body": "- added more obvious attack tells to a few more enemies (most notably Ku'lero pillars)\r\n- Brisk Barrier and its upgrades last longer and are more durable",
+                "version": "1.1.5",
+                "timestamp": 1769417942000,
+                "url": "https://github.com/Azure-Lazuline/azures-adjustments/releases/tag/1.1.5"
+            },
             {
                 "body": "- added more obvious attack tells to a few more enemies (most notably Ku'lero pillars)\r\n- Brisk Barrier and its upgrades last longer and are more durable",
                 "version": "1.1.4",
