@@ -7329,7 +7329,7 @@
     "xenons-playable-classes": {
         "metadataCCMod": {
             "id": "xenons-playable-classes",
-            "version": "3.0.2",
+            "version": "3.1.0",
             "title": {
                 "en_US": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
                 "de_DE": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
@@ -7380,16 +7380,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/3.0.2.zip",
-                "source": "xenons-playable-classes-3.0.2",
+                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/3.1.0.zip",
+                "source": "xenons-playable-classes-3.1.0",
                 "hash": {
-                    "sha256": "58b0e7a11a348cca9076053d7fc1155430650e51ccdf3be93b8e8fcba10a8f7b"
+                    "sha256": "f3dad54d5c2bb1332838aab86edd970c5d39d03ac7e176c3a27f8d867f0d6d72"
                 }
             }
         ],
         "stars": 27,
-        "lastUpdateTimestamp": 1768857910000,
+        "lastUpdateTimestamp": 1769414531000,
         "releasePages": [
+            {
+                "body": "## 3.1.0 (01/26/2026)\r\n### New Content\r\n- Added Hexacast level-up action\r\n### Changes\r\n- Increased the GOD_HEXAGON_WAVE pScale end time from 0.5 to 0.8 in effect dissonanceDetonationBoom\r\n### Balance\r\n- Hail Spears rework: No longer pierces enemies, causes small explosions on hit\r\n- Hail Spears overall damage increased by roughly 20%",
+                "version": "3.1.0",
+                "timestamp": 1769414531000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/3.1.0"
+            },
             {
                 "body": "## 3.0.2 (01/19/2026)\r\n### Changes\r\n- Added SCREEN_FLASH to effect dissonanceDetonationBoom for explosion duration\r\n### Fixes\r\n- Updated README.md to remote Hexacast WIP note\r\n- Proxy dissonanceTarget lifetime increased from 0.4 to 0.8 seconds",
                 "version": "3.0.2",
