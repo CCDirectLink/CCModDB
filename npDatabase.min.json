@@ -4224,7 +4224,7 @@
     "element-hair": {
         "metadataCCMod": {
             "id": "element-hair",
-            "version": "1.1.1",
+            "version": "1.1.2",
             "title": "Elemental Hair",
             "description": {
                 "en_US": "Changes Lea's hair color based on her element. (Check the repo for customization!)"
@@ -4246,16 +4246,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/Azure-Lazuline/elemental-hair/releases/download/1.1.1/elemental-hair.ccmod",
+                "url": "https://github.com/Azure-Lazuline/elemental-hair/releases/download/1.1.2/elemental-hair.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "b0bfe49ad001c653dd2cc8d4e529a60ae6529984fa2c3868b84b57c918796d32"
+                    "sha256": "863174b13f2cefa934bd113ce919430ae637c9149ae7099257332136216096d9"
                 }
             }
         ],
         "stars": 3,
-        "lastUpdateTimestamp": 1738698904000,
+        "lastUpdateTimestamp": 1769603955000,
         "releasePages": [
+            {
+                "body": "- added Lily\r\n- now applies in XPC's Lukas fight PvP\r\n- fixed a small bug interacting with \"Dungeon Revisits\" mod",
+                "version": "1.1.2",
+                "timestamp": 1769603955000,
+                "url": "https://github.com/Azure-Lazuline/elemental-hair/releases/tag/1.1.2"
+            },
             {
                 "body": "- fixed one missing pose that shows up in one cutscene\r\n- fixed Apollo not getting palette swaps during one of the PvP battles (with party-element-effects active)",
                 "version": "1.1.1",
