@@ -3931,7 +3931,7 @@
     "dungeon-revisits": {
         "metadataCCMod": {
             "id": "dungeon-revisits",
-            "version": "1.0.3",
+            "version": "1.0.4",
             "title": "Dungeon Revisits",
             "description": "Play any dungeon as much as you want, scaled up to endgame levels.",
             "repository": "https://github.com/Azure-Lazuline/dungeon-revisits",
@@ -3947,16 +3947,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/Azure-Lazuline/dungeon-revisits/releases/download/1.0.3/dungeon-revisits.ccmod",
+                "url": "https://github.com/Azure-Lazuline/dungeon-revisits/releases/download/1.0.4/dungeon-revisits.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "e95a1fc3844149f88dc46d1c0e81bb908124b9e28288802c2ce66a96290f0eaa"
+                    "sha256": "ebf56f4e64f0941442d935d549d41b050576820984075bd7752e01f422a67636"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1762583182000,
+        "lastUpdateTimestamp": 1769604305000,
         "releasePages": [
+            {
+                "body": "- modded characters do their custom levelup animation when beating a dungeon\r\n- lowered enemy HP during the first half of Temple Mine and Faj'ro Temple (before getting the element)",
+                "version": "1.0.4",
+                "timestamp": 1769604305000,
+                "url": "https://github.com/Azure-Lazuline/dungeon-revisits/releases/tag/1.0.4"
+            },
             {
                 "body": "- fixed a softlock at the end of Krys'kajo during the main playthrough",
                 "version": "1.0.3",
