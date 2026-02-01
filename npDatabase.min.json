@@ -5508,7 +5508,7 @@
     "mw-rando": {
         "metadataCCMod": {
             "id": "mw-rando",
-            "version": "0.7.5",
+            "version": "0.7.6",
             "title": "Multiworld randomizer",
             "description": "Client for CrossCode Archipelago Integration",
             "repository": "https://github.com/CodeTriangle/CCMultiworldRandomizer",
@@ -5531,16 +5531,28 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.7.5/CCMultiworldRandomizer-0.7.5.ccmod",
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.7.6/CCMultiworldRandomizer-0.7.6.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "42d8ef68f88644b59aa183028cbd3dac5eaf37e1fa9f0e180d43337f822dd4b3"
+                    "sha256": "d8db5699ab491273c15250fabbc9e5dd1f75a893e7709cd32a88ac69a55a513f"
                 }
             }
         ],
         "stars": 12,
-        "lastUpdateTimestamp": 1768552360000,
+        "lastUpdateTimestamp": 1769928869000,
         "releasePages": [
+            {
+                "body": "## Fixes to Logic\r\n\r\n* Regions of certain chests in Gaia's Garden when Closed Gaia is enabled have been changed back to their behavior before 0.8.0-pre.2. (@FuyumiSogeki)\r\n* **Mushroom Kingdom** now requires access to the **Infested Region** of Gaia's Garden. (@CodeTriangle)\r\n\r\n## Fixes to Mod\r\n\r\n* The info screen will no longer report the goal as \"UNKNOWN LABEL\" when running a world generated on APWorlds version 0.7.x or below. (@CodeTriangle)\r\n\r\n## Changes to APWorld\r\n\r\n* Fixed an issue preventing unit tests from running correctly.\r\n  * This should mean that third-party sites who pulled support for CrossCode due to failing tests should be able to reintegrate CrossCode support. (@CodeTriangle)\r\n* Fixed an issue where the downloadable `.apworld` file would not be compressed. (@CodeTriangle)",
+                "version": "0.8.0-pre.3",
+                "timestamp": 1769928869000,
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.8.0-pre.3"
+            },
+            {
+                "body": "## Changes to APWorld\r\n\r\n* Fixed an issue preventing unit tests from running correctly.\r\n  * This should mean that third-party sites who pulled support for CrossCode due to failing tests should be able to reintegrate CrossCode support. (@CodeTriangle)\r\n* Fixed an issue where the downloadable `.apworld` file would not be compressed. (@CodeTriangle)",
+                "version": "0.7.6",
+                "timestamp": 1769929510000,
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.7.6"
+            },
             {
                 "body": "## Changes to Mod\r\n\r\n* Added a new menu, accessible from the text client menu, that displays various important YAML settings (@CodeTriangle)\r\n\r\n## Fixes to Logic\r\n\r\n* Update the regions of certain chests in Gaia's Garden when Closed Gaia is enabled (@FuyumiSogeki, @CodeTriangle)\r\n\r\n## Fixes to Mod\r\n\r\n* Fixed an issue where the game would crash when sending goal while disconnected (@CodeTriangle)",
                 "version": "0.8.0-pre.2",
