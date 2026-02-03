@@ -5508,7 +5508,7 @@
     "mw-rando": {
         "metadataCCMod": {
             "id": "mw-rando",
-            "version": "0.7.6",
+            "version": "0.7.7",
             "title": "Multiworld randomizer",
             "description": "Client for CrossCode Archipelago Integration",
             "repository": "https://github.com/CodeTriangle/CCMultiworldRandomizer",
@@ -5531,10 +5531,10 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.7.6/CCMultiworldRandomizer-0.7.6.ccmod",
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.7.7/CCMultiworldRandomizer-0.7.7.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "d8db5699ab491273c15250fabbc9e5dd1f75a893e7709cd32a88ac69a55a513f"
+                    "sha256": "180ac72eb947dd7e5336c041963d3f96fb34eedf4c6c17ffe1c6b08219b86d78"
                 }
             }
         ],
@@ -5546,6 +5546,12 @@
                 "version": "0.8.0-pre.3",
                 "timestamp": 1769928869000,
                 "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.8.0-pre.3"
+            },
+            {
+                "body": "## Changes to Generation\r\n\r\n* Games that have **Chest Lock Randomization** enabled and **Chest Key Shuffle** set to either **original dungeons** or **own dungeons** will no longer generate.\r\n  * These worlds have an extremely low chance to generate due to the conflicting nature of the chosen options. Preventing these combinations from generating at all will lead to fewer instances of large multiworlds failing to generate late in the fill phase.\r\n\r\n## Fixes to Generation\r\n\r\n* Fixed an issue where generating a game with a given seed would not produce the same game every run.\r\n\r\n## Notes\r\n\r\nThis release is notable for **unbreaking determinism**. Since 0.7.0, due to an oversight, generating two games with the same seed would produce different results. This is *not* meant to happen in Archipelago.\r\n\r\nThese changes will not take effect for multiworlds already generated; however, for all upcoming multiworlds, I *strongly* advise generating with version 0.7.7 or above of the APWorld.",
+                "version": "0.7.7",
+                "timestamp": 1769988655000,
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.7.7"
             },
             {
                 "body": "## Changes to APWorld\r\n\r\n* Fixed an issue preventing unit tests from running correctly.\r\n  * This should mean that third-party sites who pulled support for CrossCode due to failing tests should be able to reintegrate CrossCode support. (@CodeTriangle)\r\n* Fixed an issue where the downloadable `.apworld` file would not be compressed. (@CodeTriangle)",
