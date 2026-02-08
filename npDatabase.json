@@ -7371,7 +7371,7 @@
     "xenons-playable-classes": {
         "metadataCCMod": {
             "id": "xenons-playable-classes",
-            "version": "3.2.0",
+            "version": "3.2.1",
             "title": {
                 "en_US": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
                 "de_DE": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
@@ -7422,16 +7422,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/3.2.0.zip",
-                "source": "xenons-playable-classes-3.2.0",
+                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/3.2.1.zip",
+                "source": "xenons-playable-classes-3.2.1",
                 "hash": {
-                    "sha256": "1c7e00c81c91930298ecc8c864829f6830a00ffdf152b6076bd044f10d50dc8f"
+                    "sha256": "ee91be574059ff475e067e39ba3fa54a043aca187a735e1d67dbd042bf39d6c5"
                 }
             }
         ],
         "stars": 28,
-        "lastUpdateTimestamp": 1770529882000,
+        "lastUpdateTimestamp": 1770573494000,
         "releasePages": [
+            {
+                "body": "## 3.2.1 (02/08/2026)\r\n### New Content\r\n- Added floatEyeClosed animation for Triblader2/3/4/5 and Triblader-Lea (for vanilla cutscenes)\r\n### Changes\r\n- Renamed Hexacast animation floatEyesClosed to floatEyeClosed to match vanilla standard\r\n- Changed Triblader2/3/4/5 animations in element unlock map patches to use floatSword and landOnGround\r\n- Triblader2/3/4/5 now shows battleDamage animation in event arena-player-death-pre",
+                "version": "3.2.1",
+                "timestamp": 1770573494000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/3.2.1"
+            },
             {
                 "body": "## 3.2.0 (02/07/2026)\r\n### New Content\r\n- Added \\js\\azure-lazuline\\extern-anim-fix.js, code by Azure Lazuline\r\n  * Adds SHOW_EXTERN_ANIM support for non-Lea characters if their main animation file contains an animation by the same name\r\n  * Hexacast1/2, Triblader2/3/4/5, and Triblader Lea now support \"access denied\" gate cutscenes among others\r\n- Added arena defeat animation support for Hexacast1/2/3, Schneider, Luke, Triblader2/3/4/5, and Triblader Lea\r\n- Added Triblader2/3/4/5 animation defeatPre and defeat (thanks to V1tr4 and Orco for spritework help)\r\n- Added Triblader2/3/4/5 south landOnGround sprite\r\n- Added Hexacast animation definition fanPreFast\r\n### Changes\r\n- New replacement sprites for Triblader Lea east battleRun/battleJump/battleFall animations\r\n- Condensed Hexacast1/2/3 main spritesheets to remove unused levelUp placeholder row\r\n- Extended triblader-lea-extra.png to include landOnGround animation\r\n- Deleted unused \"level\" animation sheet from Hexacast1/2/3\r\n- Reduced audio volume for Hexacast levelUpFX___ effects\r\n- Split Hexacast levelUp effects into levelUpFX___ and levelUpRising___, added DUST_SLOW particles\r\n- Hexacast level-up hover height and float params reduced\r\n### Fixes\r\n- Fixed proxy dissonanceFinalCard not showing effect dissonanceFinalCardCharge2 (timing issue)\r\n- Fixed Triblader Lea east chest opening animations having wrong eye color\r\n### Balance\r\n- Proxy dissonanceCardExplosion damageFactor increased from 0.80 to 0.90\r\n- Proxy dissonanceCardExplosion2 progressive repeating damageFactor increased from 0.90/1.35/1.80 to 1.0/1.50/2.0\r\n- Ray of G'oni laser status factor increased from 0.4 to 0.55 (better at inflicting status)",
                 "version": "3.2.0",
