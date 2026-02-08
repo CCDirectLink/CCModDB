@@ -7371,7 +7371,7 @@
     "xenons-playable-classes": {
         "metadataCCMod": {
             "id": "xenons-playable-classes",
-            "version": "3.1.0",
+            "version": "3.2.0",
             "title": {
                 "en_US": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
                 "de_DE": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
@@ -7422,16 +7422,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/3.1.0.zip",
-                "source": "xenons-playable-classes-3.1.0",
+                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/3.2.0.zip",
+                "source": "xenons-playable-classes-3.2.0",
                 "hash": {
-                    "sha256": "f3dad54d5c2bb1332838aab86edd970c5d39d03ac7e176c3a27f8d867f0d6d72"
+                    "sha256": "1c7e00c81c91930298ecc8c864829f6830a00ffdf152b6076bd044f10d50dc8f"
                 }
             }
         ],
-        "stars": 27,
-        "lastUpdateTimestamp": 1769414531000,
+        "stars": 28,
+        "lastUpdateTimestamp": 1770529882000,
         "releasePages": [
+            {
+                "body": "## 3.2.0 (02/07/2026)\r\n### New Content\r\n- Added \\js\\azure-lazuline\\extern-anim-fix.js, code by Azure Lazuline\r\n  * Adds SHOW_EXTERN_ANIM support for non-Lea characters if their main animation file contains an animation by the same name\r\n  * Hexacast1/2, Triblader2/3/4/5, and Triblader Lea now support \"access denied\" gate cutscenes among others\r\n- Added arena defeat animation support for Hexacast1/2/3, Schneider, Luke, Triblader2/3/4/5, and Triblader Lea\r\n- Added Triblader2/3/4/5 animation defeatPre and defeat (thanks to V1tr4 and Orco for spritework help)\r\n- Added Triblader2/3/4/5 south landOnGround sprite\r\n- Added Hexacast animation definition fanPreFast\r\n### Changes\r\n- New replacement sprites for Triblader Lea east battleRun/battleJump/battleFall animations\r\n- Condensed Hexacast1/2/3 main spritesheets to remove unused levelUp placeholder row\r\n- Extended triblader-lea-extra.png to include landOnGround animation\r\n- Deleted unused \"level\" animation sheet from Hexacast1/2/3\r\n- Reduced audio volume for Hexacast levelUpFX___ effects\r\n- Split Hexacast levelUp effects into levelUpFX___ and levelUpRising___, added DUST_SLOW particles\r\n- Hexacast level-up hover height and float params reduced\r\n### Fixes\r\n- Fixed proxy dissonanceFinalCard not showing effect dissonanceFinalCardCharge2 (timing issue)\r\n- Fixed Triblader Lea east chest opening animations having wrong eye color\r\n### Balance\r\n- Proxy dissonanceCardExplosion damageFactor increased from 0.80 to 0.90\r\n- Proxy dissonanceCardExplosion2 progressive repeating damageFactor increased from 0.90/1.35/1.80 to 1.0/1.50/2.0\r\n- Ray of G'oni laser status factor increased from 0.4 to 0.55 (better at inflicting status)",
+                "version": "3.2.0",
+                "timestamp": 1770529882000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/3.2.0"
+            },
             {
                 "body": "## 3.1.0 (01/26/2026)\r\n### New Content\r\n- Added Hexacast level-up action\r\n### Changes\r\n- Increased the GOD_HEXAGON_WAVE pScale end time from 0.5 to 0.8 in effect dissonanceDetonationBoom\r\n### Balance\r\n- Hail Spears rework: No longer pierces enemies, causes small explosions on hit\r\n- Hail Spears overall damage increased by roughly 20%",
                 "version": "3.1.0",
