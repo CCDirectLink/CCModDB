@@ -4230,7 +4230,7 @@
     "element-hair": {
         "metadataCCMod": {
             "id": "element-hair",
-            "version": "1.1.2",
+            "version": "1.1.3",
             "title": "Elemental Hair",
             "description": {
                 "en_US": "Changes Lea's hair color based on her element. (Check the repo for customization!)"
@@ -4252,16 +4252,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/Azure-Lazuline/elemental-hair/releases/download/1.1.2/elemental-hair.ccmod",
+                "url": "https://github.com/Azure-Lazuline/elemental-hair/releases/download/1.1.3/elemental-hair.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "863174b13f2cefa934bd113ce919430ae637c9149ae7099257332136216096d9"
+                    "sha256": "2ae6f461aec694b93ebdce2d5cfbdb901c8dfc84179112e44854beddf32242a3"
                 }
             }
         ],
-        "stars": 3,
-        "lastUpdateTimestamp": 1769603955000,
+        "stars": 4,
+        "lastUpdateTimestamp": 1770958261000,
         "releasePages": [
+            {
+                "body": "- fixed it not working with XPC hexacasts using certain custom skills",
+                "version": "1.1.3",
+                "timestamp": 1770958261000,
+                "url": "https://github.com/Azure-Lazuline/elemental-hair/releases/tag/1.1.3"
+            },
             {
                 "body": "- added Lily\r\n- now applies in XPC's Lukas fight PvP\r\n- fixed a small bug interacting with \"Dungeon Revisits\" mod",
                 "version": "1.1.2",
