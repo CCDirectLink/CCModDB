@@ -5520,7 +5520,7 @@
     "mw-rando": {
         "metadataCCMod": {
             "id": "mw-rando",
-            "version": "0.7.7",
+            "version": "0.7.8",
             "title": "Multiworld randomizer",
             "description": "Client for CrossCode Archipelago Integration",
             "repository": "https://github.com/CodeTriangle/CCMultiworldRandomizer",
@@ -5543,16 +5543,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.7.7/CCMultiworldRandomizer-0.7.7.ccmod",
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.7.8/CCMultiworldRandomizer-0.7.8.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "180ac72eb947dd7e5336c041963d3f96fb34eedf4c6c17ffe1c6b08219b86d78"
+                    "sha256": "4a2690768e02b0bc47ed701d2290922e88ec2bad6a5c4b167c63b85b29f90b29"
                 }
             }
         ],
         "stars": 12,
         "lastUpdateTimestamp": 1769928869000,
         "releasePages": [
+            {
+                "body": "## Changes to Generation\r\n\r\n* Modified the pre-fill process to reduce the incidence of generation errors when `element_shuffle`, `,small_key_shuffle`, and `master_key_shuffle` are set to options other than `any_world` (@Mysteryem).\r\n* Stabilized the order in which items and locations are added to the world, eliminating remaining situations where generation is nondeterministic (@Mysteryem}.\r\n* Update several other aspects of generation to ensure future stability.",
+                "version": "0.7.8",
+                "timestamp": 1771812187000,
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.7.8"
+            },
             {
                 "body": "## Fixes to Logic\r\n\r\n* Regions of certain chests in Gaia's Garden when Closed Gaia is enabled have been changed back to their behavior before 0.8.0-pre.2. (@FuyumiSogeki)\r\n* **Mushroom Kingdom** now requires access to the **Infested Region** of Gaia's Garden. (@CodeTriangle)\r\n\r\n## Fixes to Mod\r\n\r\n* The info screen will no longer report the goal as \"UNKNOWN LABEL\" when running a world generated on APWorlds version 0.7.x or below. (@CodeTriangle)\r\n\r\n## Changes to APWorld\r\n\r\n* Fixed an issue preventing unit tests from running correctly.\r\n  * This should mean that third-party sites who pulled support for CrossCode due to failing tests should be able to reintegrate CrossCode support. (@CodeTriangle)\r\n* Fixed an issue where the downloadable `.apworld` file would not be compressed. (@CodeTriangle)",
                 "version": "0.8.0-pre.3",
