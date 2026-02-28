@@ -7389,7 +7389,7 @@
     "xenons-playable-classes": {
         "metadataCCMod": {
             "id": "xenons-playable-classes",
-            "version": "3.3.1",
+            "version": "3.3.2",
             "title": {
                 "en_US": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
                 "de_DE": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
@@ -7440,16 +7440,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/3.3.1.zip",
-                "source": "xenons-playable-classes-3.3.1",
+                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/3.3.2.zip",
+                "source": "xenons-playable-classes-3.3.2",
                 "hash": {
-                    "sha256": "ad3373055fb482cfa588a3e2a53d459540ee211336b97d67ca04c52dcda21dcb"
+                    "sha256": "bf794551c876473d648d5e97c00b392c90493e0624467ea31b2fa603e35fbb66"
                 }
             }
         ],
-        "stars": 30,
-        "lastUpdateTimestamp": 1771753782000,
+        "stars": 31,
+        "lastUpdateTimestamp": 1772254499000,
         "releasePages": [
+            {
+                "body": "## 3.3.2 (02/27/2026)\r\n### Changes\r\n- Hexacast art Furious Dissonance renamed to Aberrant Dissonance\r\n- Minor tweaks to Hexacast levelUpStand sprites\r\n- Ancient Power is now dash-cancelable after 0.15 seconds (rocks will fall back down)\r\n- Ancient Power ACTION_BLOCK dash delay during final shoot reduced from 0.25 to 0.15 seconds\r\n- AncientRockSmall/AncientRockMed trigger wait time reduced from 1.3 to 0.8 seconds\r\n- Removed the Triblader2 placeholder animation from Schneider/Luke Burning Sacrifice, Vermillion Firestorm\r\n- Removed Schneider/Luke animation sheets extra1, extra2, extra3\r\n- Deleted schneiderExtra.png, lukeExtra.png\r\n### Fixes\r\n- \"Trigger Happy\" arena triblader duel is now properly set to level 75 rather than scaling to the player's level",
+                "version": "3.3.2",
+                "timestamp": 1772254499000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/3.3.2"
+            },
             {
                 "body": "## 3.3.1 (02/22/2026)\r\n### Fixes\r\n- Fixed Shadowflame Sorcery standard melee attacks SET_PLAYER_ACTION_BLOCK inconsistencies among custom skill melee variants\r\n- Fixed Github release issue",
                 "version": "3.3.1",
