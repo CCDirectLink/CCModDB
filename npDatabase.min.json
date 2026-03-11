@@ -5600,7 +5600,7 @@
     "mw-rando": {
         "metadataCCMod": {
             "id": "mw-rando",
-            "version": "0.7.8",
+            "version": "0.8.0",
             "title": "Multiworld randomizer",
             "description": "Client for CrossCode Archipelago Integration",
             "repository": "https://github.com/CodeTriangle/CCMultiworldRandomizer",
@@ -5614,7 +5614,7 @@
                 "24": "icon-24.png"
             },
             "dependencies": {
-                "open-world": ">=0.4.1",
+                "open-world": ">=0.5.1-pre1",
                 "nax-ccuilib": ">=1.5.1",
                 "ccmodmanager": ">=1.0.4",
                 "font-utils": ">=1.2.0"
@@ -5623,16 +5623,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.7.8/CCMultiworldRandomizer-0.7.8.ccmod",
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.8.0/CCMultiworldRandomizer-0.8.0.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "4a2690768e02b0bc47ed701d2290922e88ec2bad6a5c4b167c63b85b29f90b29"
+                    "sha256": "747d757fd08e0b829d3785488f4645ed48781f3ac92aa0c51437e3462236c6ee"
                 }
             }
         ],
         "stars": 12,
-        "lastUpdateTimestamp": 1769928869000,
+        "lastUpdateTimestamp": 1773185764000,
         "releasePages": [
+            {
+                "body": "# Changes from 0.7.8\r\n\r\n## Changes to Options\r\n* Added Option **Closed Gaia**, allowing players to block areas of Gaia's Garden until additional items are found. (@buanjautista)\r\n* Added Option **Rhombus Hub Unlock**, allowing players to enter areas like Gaia's Garden as soon as the correct shade is found. (@AdamStagg)\r\n* Added Option **Goal**, allowing players to choose between creator goal (Vermillion Tower) and monkey goal (Grand Krys'kajo). (@CodeTriangle)\r\n\r\n## Changes to Mod\r\n* Added **Deathlink** support to the mod, accessible through the Archipelago Settings UI. (@heartles)\r\n\r\n# Changes from 0.8.0-pre.3\r\n\r\n## Changes to Logic\r\n\r\n* Made **Maroon Tree Defender** an Always Quest.\r\n\r\n## Changes to Generation\r\n\r\n* The APWorld now emits an OptionError when generating with Observatory Goal but no Quest Randomization.\r\n\r\n# Migration Guide\r\n\r\n* Players coming from 0.7.8 and 0.8.0-pre.3 should see no adverse side effects from upgrading to 0.8.0. Please contact us if you do.",
+                "version": "0.8.0",
+                "timestamp": 1773185764000,
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.8.0"
+            },
             {
                 "body": "## Changes to Generation\r\n\r\n* Modified the pre-fill process to reduce the incidence of generation errors when `element_shuffle`, `,small_key_shuffle`, and `master_key_shuffle` are set to options other than `any_world` (@Mysteryem).\r\n* Stabilized the order in which items and locations are added to the world, eliminating remaining situations where generation is nondeterministic (@Mysteryem}.\r\n* Update several other aspects of generation to ensure future stability.",
                 "version": "0.7.8",
