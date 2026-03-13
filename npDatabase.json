@@ -5600,7 +5600,7 @@
     "mw-rando": {
         "metadataCCMod": {
             "id": "mw-rando",
-            "version": "0.8.0",
+            "version": "0.8.1",
             "title": "Multiworld randomizer",
             "description": "Client for CrossCode Archipelago Integration",
             "repository": "https://github.com/CodeTriangle/CCMultiworldRandomizer",
@@ -5623,18 +5623,24 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.8.0/CCMultiworldRandomizer-0.8.0.ccmod",
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.8.1/CCMultiworldRandomizer-0.8.1.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "747d757fd08e0b829d3785488f4645ed48781f3ac92aa0c51437e3462236c6ee"
+                    "sha256": "ae020041ef1d6f59e557fab1e1a30ba429749c2f34e271e214faf99cbfd70109"
                 }
             }
         ],
         "stars": 12,
-        "lastUpdateTimestamp": 1773185764000,
+        "lastUpdateTimestamp": 1773387462000,
         "releasePages": [
             {
-                "body": "# Changes from 0.7.8\r\n\r\n## Changes to Options\r\n* Added Option **Closed Gaia**, allowing players to block areas of Gaia's Garden until additional items are found. (@buanjautista)\r\n* Added Option **Rhombus Hub Unlock**, allowing players to enter areas like Gaia's Garden as soon as the correct shade is found. (@AdamStagg)\r\n* Added Option **Goal**, allowing players to choose between creator goal (Vermillion Tower) and monkey goal (Grand Krys'kajo). (@CodeTriangle)\r\n\r\n## Changes to Mod\r\n* Added **Deathlink** support to the mod, accessible through the Archipelago Settings UI. (@heartles)\r\n\r\n# Changes from 0.8.0-pre.3\r\n\r\n## Changes to Logic\r\n\r\n* Made **Maroon Tree Defender** an Always Quest.\r\n\r\n## Changes to Generation\r\n\r\n* The APWorld now emits an OptionError when generating with Observatory Goal but no Quest Randomization.\r\n\r\n# Migration Guide\r\n\r\n* Players coming from 0.7.8 and 0.8.0-pre.3 should see no adverse side effects from upgrading to 0.8.0. Please contact us if you do.",
+                "body": "## Changes to Generation\r\n\r\n* Made changes to item groups (@CodeTriangle)\r\n  * Renamed certain item groups to be more user-friendly (i.e. `fillerCommonCons` -> `Common Consumables`).\r\n  * Added several item groups to better classify common items.\r\n  * Removed the `required` item group, whose name is misleading and whose contents are varied and don't group together well.\r\n  * **PLEASE NOTE**: These changes will only be available in worlds generated using 0.8.1 of the APWorld or greater.\r\n* Raise `OptionError` if both consumable_weight and drop_weight are zero (@gerbiljames)\r\n  * Currently, doing this will result in an unhelpful generic python error.\r\n\r\n## Changes to Logic\r\n\r\n* Updated logic around the **Crocus Pocus** questline and associated locations (@CodeTriangle)\r\n  * Logic now actually tracks the number of plants the player is able to farm instead of trying to work around it using regions.\r\n\r\n## Fixes to Logic\r\n\r\n* **Gaia's Garden Collect** now requires access to the Grove and Infested areas of Gaia's Garden (@FuyumiSogeki)\r\n* Update logic surrounding Ascension Temple to no longer require Shock (@kumquat-ir)\r\n  * This is due to a change in CC-Open-World where the rocks in Wheel Passage were removed,.\r\n* Update logic surrounding the lower floors of Temple Mine (@kumquat-ir)\r\n  * Multiple doors can be reached upon acquiring heat but the randomizer assumes that one unlocks after the other.",
+                "version": "0.8.1",
+                "timestamp": 1773387462000,
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.8.1"
+            },
+            {
+                "body": "# Changes from 0.7.8\r\n\r\n## Changes to Options\r\n* Added Option **Closed Gaia**, allowing players to block areas of Gaia's Garden until additional items are found. (@buanjautista)\r\n* Added Option **Rhombus Hub Unlock**, allowing players to enter areas like Gaia's Garden as soon as the correct shade is found. (@AdamStagg)\r\n* Added Option **Goal**, allowing players to choose between creator goal (Vermillion Tower) and monkey goal (Grand Krys'kajo). (@CodeTriangle)\r\n\r\n## Changes to Mod\r\n* Added **Deathlink** support to the mod, accessible through the Archipelago Settings UI. (@heartles)\r\n\r\n# Changes from 0.8.0-pre.3\r\n\r\n## Changes to Logic\r\n\r\n* Made **Maroon Tree Defender** an Always Quest.\r\n\r\n## Changes to Generation\r\n\r\n* The APWorld now emits an OptionError when generating with Observatory Goal but no Quest Randomization.\r\n\r\n# Migration Guide\r\n\r\n* Players using versions 0.7.8 and 0.8.0-pre.3 of the mod should see no adverse side effects from upgrading to 0.8.0 of the mod. Please contact us if you do.",
                 "version": "0.8.0",
                 "timestamp": 1773185764000,
                 "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.8.0"
