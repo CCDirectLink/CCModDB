@@ -3944,7 +3944,7 @@
     "dungeon-revisits": {
         "metadataCCMod": {
             "id": "dungeon-revisits",
-            "version": "1.0.5",
+            "version": "1.0.6",
             "title": "Dungeon Revisits",
             "description": "Play any dungeon as much as you want, scaled up to endgame levels.",
             "repository": "https://github.com/Azure-Lazuline/dungeon-revisits",
@@ -3960,16 +3960,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/Azure-Lazuline/dungeon-revisits/releases/download/1.0.5/dungeon-revisits.ccmod",
+                "url": "https://github.com/Azure-Lazuline/dungeon-revisits/releases/download/1.0.6/dungeon-revisits.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "4396fa9e6cf2ba79a923a686905d48409f4cce7bd65d56d887d5d175308e2af2"
+                    "sha256": "59bb6b447ca1e33e1368bd73ddf654df6309ec0360b94d22eef68a65d849ffae"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1769604305000,
+        "lastUpdateTimestamp": 1773450153000,
         "releasePages": [
+            {
+                "body": "- fixed a rare crash",
+                "version": "1.0.6",
+                "timestamp": 1773450153000,
+                "url": "https://github.com/Azure-Lazuline/dungeon-revisits/releases/tag/1.0.6"
+            },
             {
                 "body": "- the menu shows custom character portraits if you're not Lea",
                 "version": "1.0.5",
