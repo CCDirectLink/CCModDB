@@ -1542,6 +1542,54 @@
             }
         ]
     },
+    "cc-ava": {
+        "metadataCCMod": {
+            "id": "cc-ava",
+            "version": "1.2.1",
+            "title": "CrossCode Artificial Voice Acting (TTS)",
+            "description": "Adds AI-generated voice acting to CrossCode using the ElevenLabs text-to-speech API.",
+            "repository": "https://github.com/cyelis1224/cc-ava",
+            "tags": [
+                "voice",
+                "audio",
+                "tts"
+            ],
+            "authors": [
+                "Dagyr"
+            ],
+            "dependencies": {
+                "crosscode": "^1.0.0"
+            },
+            "prestart": "prestart.js",
+            "poststart": "poststart.js"
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/cyelis1224/cc-ava/archive/refs/tags/v1.2.1.zip",
+                "source": "cc-ava-1.2.1",
+                "hash": {
+                    "sha256": "1f49648caa2256631982f07e055fd12630723d33806fe6b46836dac9bcc1caf8"
+                }
+            }
+        ],
+        "stars": 0,
+        "lastUpdateTimestamp": 1774820284000,
+        "releasePages": [
+            {
+                "body": "## What's New in v1.2.1\n\n### Side Message Sync (Fixed)\n- Completely rewrote the side message voice system - no more queue desync\n- Voice lines now read directly from what is displayed on screen\n- Added sequence counter to discard stale async TTS results when skipping dialog\n\n### Dialog Pre-Caching\n- Cutscene dialog now pre-generates the next line TTS in the background\n- By the time you advance dialog, the audio is already cached\n\n### Cutscene Skip Support\n- Skipping a cutscene now immediately stops all voice playback\n\n### Text Cleaning Improvements\n- Fixed bracket stripping: game terms like Seeker and Bergen Village now preserved\n- Numbers in brackets no longer stripped\n\n### UI Polish\n- Debug overlay Close button now matches other button styles\n- First-run template deployment auto-copies mod-data on initial install\n\n### Debug System\n- Global debug flag for reliable toggle without restart issues",
+                "version": "1.2.1",
+                "timestamp": 1774820284000,
+                "url": "https://github.com/cyelis1224/cc-ava/releases/tag/v1.2.1"
+            },
+            {
+                "body": "Initial release of the Artificial Voice Acting TTS mod for CrossCode. Still experimental but working.",
+                "version": "v1.0",
+                "timestamp": 1774748444000,
+                "url": "https://github.com/cyelis1224/cc-ava/releases/tag/v1.0"
+            }
+        ]
+    },
     "cc-bgm-crossfade": {
         "metadataCCMod": {
             "id": "cc-bgm-crossfade",
