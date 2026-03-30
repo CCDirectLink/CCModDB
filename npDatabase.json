@@ -5606,7 +5606,7 @@
     "mw-rando": {
         "metadataCCMod": {
             "id": "mw-rando",
-            "version": "0.8.1",
+            "version": "0.8.2",
             "title": "Multiworld randomizer",
             "description": "Client for CrossCode Archipelago Integration",
             "repository": "https://github.com/CodeTriangle/CCMultiworldRandomizer",
@@ -5629,16 +5629,28 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.8.1/CCMultiworldRandomizer-0.8.1.ccmod",
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.8.2/CCMultiworldRandomizer-0.8.2.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "ae020041ef1d6f59e557fab1e1a30ba429749c2f34e271e214faf99cbfd70109"
+                    "sha256": "c7d1b3e940548e254456007bc805c11fcaf21784ff9bd01a23f2df8ecc99da25"
                 }
             }
         ],
-        "stars": 12,
-        "lastUpdateTimestamp": 1773387462000,
+        "stars": 15,
+        "lastUpdateTimestamp": 1773908655000,
         "releasePages": [
+            {
+                "body": "# Changes from 0.8.1\r\n\r\n## Changes to Generation\r\n\r\n* Replaced the check **Vagabond Dojo Key** with **Trials of the Golden Bugs** (@CodeTriangle).\r\n  * This change turns the check that gives the Dojo Key in vanilla into a quest reward so that the item hidden behind it can be previewed.\r\n  * This new location has the same ID as the previous one, so this change only affects where in the cutscene the item is acquired.\r\n\r\n## Changes to Mod\r\n\r\n* Applied a series of changes to the Archipelago menus to make creating and playing games more intuitive (@CodeTriangle):\r\n  - Allow any NG+ options to be selected regardless of previous save file completion.\r\n  - No longer load into a game without NG+ enabled when exiting the text client menu using cancel button.\r\n  - Add a clearer indication that NG+ options can be edited from the New Game Plus menu found in the Archipelago menu.\r\n  - Block out \"carry over\" section of NG+ when editing options to indicate that they cannot be modified after save file creation.\r\n  - Stop the game from blocking infinitely when entering new login information after previously entering login information and disconnecting.\r\n\r\n# Changes from 0.8.2-pre.1\r\n\r\n## Changes to Logic\r\n\r\n* **Steamy Booze** now requires access to Bergen Trail so that Bergen Ice can be acquired (@CodeTriangle).\r\n* **Gaia's Garden Defeat** now requires access to East Gaia in Closed Gaia mode since enemies native to that area are necessary to the quest's completion (@CodeTriangle).",
+                "version": "0.8.2",
+                "timestamp": 1774855108000,
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.8.2"
+            },
+            {
+                "body": "## Changes to Generation\r\n\r\n* Replaced the check **Vagabond Dojo Key** with **Trials of the Golden Bugs** (@CodeTriangle).\r\n  * This change turns the check that gives the Dojo Key in vanilla into a quest reward so that the item hidden behind it can be previewed.\r\n  * This new location has the same ID as the previous one, so this change only affects where in the cutscene the item is acquired.\r\n\r\n## Changes to Mod\r\n\r\n* Applied a series of changes to the Archipelago menus to make creating and playing games more intuitive (@CodeTriangle):\r\n  - Allow any NG+ options to be selected regardless of previous save file completion.\r\n  - No longer load into a game without NG+ enabled when exiting the text client menu using cancel button.\r\n  - Add a clearer indication that NG+ options can be edited from the New Game Plus menu found in the Archipelago menu.\r\n  - Block out \"carry over\" section of NG+ when editing options to indicate that they cannot be modified after save file creation.\r\n  - Stop the game from blocking infinitely when entering new login information after previously entering login information and disconnecting.\r\n\r\n## Migration Guide\r\n\r\nThis version of the mod and apworld **should be safe** to upgrade to from 0.8.1, 0.8.0, or 0.7.x. There is **some slight risk** involved in both of the changes made. You should not be in any serious danger.\r\n* There is a slight chance that some interactions break due to the generation change (but this can be fixed easily).\r\n* There is a small chance that a user interface may becomes unresponsive in a strange situation.",
+                "version": "0.8.2-pre.1",
+                "timestamp": 1774415444000,
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.8.2-pre.1"
+            },
             {
                 "body": "## Changes to Generation\r\n\r\n* Made changes to item groups (@CodeTriangle)\r\n  * Renamed certain item groups to be more user-friendly (i.e. `fillerCommonCons` -> `Common Consumables`).\r\n  * Added several item groups to better classify common items.\r\n  * Removed the `required` item group, whose name is misleading and whose contents are varied and don't group together well.\r\n  * **PLEASE NOTE**: These changes will only be available in worlds generated using 0.8.1 of the APWorld or greater.\r\n* Raise `OptionError` if both consumable_weight and drop_weight are zero (@gerbiljames)\r\n  * Currently, doing this will result in an unhelpful generic python error.\r\n\r\n## Changes to Logic\r\n\r\n* Updated logic around the **Crocus Pocus** questline and associated locations (@CodeTriangle)\r\n  * Logic now actually tracks the number of plants the player is able to farm instead of trying to work around it using regions.\r\n\r\n## Fixes to Logic\r\n\r\n* **Gaia's Garden Collect** now requires access to the Grove and Infested areas of Gaia's Garden (@FuyumiSogeki)\r\n* Update logic surrounding Ascension Temple to no longer require Shock (@kumquat-ir)\r\n  * This is due to a change in CC-Open-World where the rocks in Wheel Passage were removed,.\r\n* Update logic surrounding the lower floors of Temple Mine (@kumquat-ir)\r\n  * Multiple doors can be reached upon acquiring heat but the randomizer assumes that one unlocks after the other.",
                 "version": "0.8.1",
