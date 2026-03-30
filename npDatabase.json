@@ -1542,6 +1542,59 @@
             }
         ]
     },
+    "cc-ava": {
+        "metadataCCMod": {
+            "id": "cc-ava",
+            "version": "1.2.2",
+            "title": "CrossCode Artificial Voice Acting (TTS)",
+            "description": "Adds AI-generated voice acting to CrossCode using the ElevenLabs text-to-speech API.",
+            "repository": "https://github.com/cyelis1224/cc-ava",
+            "tags": [
+                "accessibility",
+                "music"
+            ],
+            "authors": [
+                "Dagyr"
+            ],
+            "dependencies": {
+                "crosscode": "^1.0.0"
+            },
+            "prestart": "prestart.js",
+            "poststart": "poststart.js"
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/cyelis1224/cc-ava/archive/refs/tags/v1.2.2.zip",
+                "source": "cc-ava-1.2.2",
+                "hash": {
+                    "sha256": "bffea5e93d7833a1d20a623f123ca62ae3a612a4397d7a4c5d05cf0a15e5181e"
+                }
+            }
+        ],
+        "stars": 1,
+        "lastUpdateTimestamp": 1774878456000,
+        "releasePages": [
+            {
+                "body": "## What's New in v1.2.2\n\n### Per-Voice Volume Control\n- Each voice now supports an individual volume level (0-100)\n- Balance loud and quiet voices independently without affecting the master volume\n- Set via the debug overlay: Set Voice ID now prompts for Voice ID, Pitch, and Volume\n- Saved per-character in voice-config.json\n\n### Previous (v1.2.1) Changes\n- Queue-free side message sync (reads directly from game display)\n- Sequence counter to discard stale TTS on dialog skip\n- Cutscene skip stops all voice playback\n- Bracket text preserved for TTS (Seeker, Bergen Village, etc.)\n- Dialog pre-caching via _nextStep look-ahead\n- First-run template auto-deployment",
+                "version": "1.2.2",
+                "timestamp": 1774878456000,
+                "url": "https://github.com/cyelis1224/cc-ava/releases/tag/v1.2.2"
+            },
+            {
+                "body": "## What's New in v1.2.1\n\n### Side Message Sync (Fixed)\n- Completely rewrote the side message voice system - no more queue desync\n- Voice lines now read directly from what is displayed on screen\n- Added sequence counter to discard stale async TTS results when skipping dialog\n\n### Dialog Pre-Caching\n- Cutscene dialog now pre-generates the next line TTS in the background\n- By the time you advance dialog, the audio is already cached\n\n### Cutscene Skip Support\n- Skipping a cutscene now immediately stops all voice playback\n\n### Text Cleaning Improvements\n- Fixed bracket stripping: game terms like Seeker and Bergen Village now preserved\n- Numbers in brackets no longer stripped\n\n### UI Polish\n- Debug overlay Close button now matches other button styles\n- First-run template deployment auto-copies mod-data on initial install\n\n### Debug System\n- Global debug flag for reliable toggle without restart issues",
+                "version": "1.2.1",
+                "timestamp": 1774820284000,
+                "url": "https://github.com/cyelis1224/cc-ava/releases/tag/v1.2.1"
+            },
+            {
+                "body": "Initial release of the Artificial Voice Acting TTS mod for CrossCode. Still experimental but working.",
+                "version": "v1.0",
+                "timestamp": 1774748444000,
+                "url": "https://github.com/cyelis1224/cc-ava/releases/tag/v1.0"
+            }
+        ]
+    },
     "cc-bgm-crossfade": {
         "metadataCCMod": {
             "id": "cc-bgm-crossfade",
