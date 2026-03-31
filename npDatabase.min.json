@@ -1565,20 +1565,20 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/cyelis1224/cc-ava/archive/refs/tags/v1.2.3.zip",
-                "source": "cc-ava-1.2.3",
+                "url": "https://github.com/cyelis1224/cc-ava/releases/download/v1.2.3/cc-ava-v1.2.3.zip",
+                "source": "cc-ava",
                 "hash": {
-                    "sha256": "20aa4f2a05ac4753536e680a10207f54445dd7477ab1643843337f3ac1967cc2"
+                    "sha256": "c1a75d02179d1298c44fb4cb66fbb8291deac555b65104126ffb0f6c97ecf3b0"
                 }
             }
         ],
         "stars": 2,
-        "lastUpdateTimestamp": 1774900944000,
+        "lastUpdateTimestamp": 1774901829000,
         "releasePages": [
             {
                 "body": "## What's New in v1.2.3\n\n### Critical Fix\n- **Fixed mod manager breaking** - The voice volume slider was replacing the game's options object, causing CCModManager to lose track of which mods are enabled/disabled on restart. Now inserts the slider in-place without replacing the object.\n\n### Per-Voice Volume Control\n- Each voice now supports an individual volume level (0-100)\n- Balance loud and quiet voices independently\n- Set via debug overlay or mod settings: Voice ID, Pitch, and Volume\n\n### IPA Pronunciations (community contribution by QuieType)\n- Dungeon names now use proper IPA notation for accurate pronunciation\n- Added: Zir'vitar, So'najiz, Krys'kajo, Ku'lero\n- Pronunciations and transcription overrides only apply on the v3 model\n\n### Options Sync Fix\n- Moved CCModManager options sync to after registration to prevent undefined errors",
                 "version": "1.2.3",
-                "timestamp": 1774900944000,
+                "timestamp": 1774901829000,
                 "url": "https://github.com/cyelis1224/cc-ava/releases/tag/v1.2.3"
             },
             {
