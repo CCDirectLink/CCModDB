@@ -62,44 +62,34 @@ describe('NpDatabase', () => {
     })
 
     describe('mods', () => {
-        for (let mod of Object.keys(npDatabase)) {
+        for (const mod of Object.keys(npDatabase)) {
             testPackage(npDatabase[mod], mod)
         }
     })
 })
-//
-// if (!process.env['donttesttools']) {
-//     let tools: PackageDB
-//     const toolsPromise = new Promise<void>((resolve, reject) => {
-//         const branch = process.env['BRANCH']!
-//         gitReadFunc(branch, 'tools.json')
-//             .then(data => {
-//                 if (!data) return reject(`tools.json not found on branch ${branch}`)
-//                 tools = JSON.parse(data!)
-//                 resolve()
-//             })
-//             .catch(err => reject(err))
-//     })
-//
-//     describe('ToolsDB', async () => {
-//         it('Check json structure', async () => {
-//             await toolsPromise
-//
-//             expect(typeof tools === 'object', 'Json not valid: Not an object').toBeTrue()
-//             expect(Array.isArray(tools), 'Json not valid: Not an object').to.be.false
-//             expect(tools !== null, 'Json not valid: Not an object').toBeTrue()
-//         })
-//
-//         describe('tools', async () => {
-//             await toolsPromise
-//
-//             for (const mod of Object.keys(tools)) {
-//                 testPackage(tools[mod], mod)
-//             }
-//         })
-//     })
-// }
-//
+
+if (!process.env['donttesttools']) {
+    const branch = process.env['BRANCH']!
+    const tools = await gitReadFunc(branch, 'tools.json').then(data => {
+        if (!data) throw new Error(`tools.json not found on branch ${branch}`)
+        return JSON.parse(data!) as PackageDB
+    })
+
+    describe('ToolsDB', async () => {
+        test('json structure', async () => {
+            expect(typeof tools === 'object', 'Json not valid: Not an object').toBeTrue()
+            expect(Array.isArray(tools), 'Json not valid: Not an object').toBeFalse()
+            expect(tools !== null, 'Json not valid: Not an object').toBeTrue()
+        })
+
+        describe('tools', () => {
+            for (const mod of Object.keys(tools)) {
+                testPackage(tools[mod], mod)
+            }
+        })
+    })
+}
+
 export function testPackage(mod: Package, name: string) {
     describe(name, () => {
         test('required elements', () => {
@@ -226,47 +216,42 @@ function testMetadataCCMod(ccmod: PkgCCMod) {
 
     if (ccmod.dependencies) {
         test('mod dependencies', () => {
-            if (ccmod.dependencies) {
-                expect(
-                    typeof ccmod.dependencies === 'object',
-                    'ccmod.dependencies (type: object) must be an object'
-                ).toBeTrue()
-                expect(
-                    Array.isArray(ccmod.dependencies),
-                    'ccmod.dependencies (type: object) must be an object'
-                ).toBeFalse()
-                expect(
-                    ccmod.dependencies !== null,
-                    'ccmod.dependencies (type: object) must be an object'
-                ).toBeTrue()
+            expect(!ccmod.dependencies || typeof ccmod.dependencies == 'object').toBeTrue()
 
-                for (const depId in ccmod.dependencies!) {
-                    const requiredVersionRange = ccmod.dependencies![depId]
+            expect(
+                typeof ccmod.dependencies === 'object',
+                'ccmod.dependencies (type: object) must be an object'
+            ).toBeTrue()
+            expect(
+                Array.isArray(ccmod.dependencies),
+                'ccmod.dependencies (type: object) must be an object'
+            ).toBeFalse()
+            expect(
+                ccmod.dependencies !== null,
+                'ccmod.dependencies (type: object) must be an object'
+            ).toBeTrue()
+
+            for (const depId in ccmod.dependencies!) {
+                const requiredVersionRange = ccmod.dependencies![depId]
+                expect(
+                    semver.validRange(requiredVersionRange),
+                    `dependency ${depId} must be specify a valid range`
+                ).toBeTruthy()
+
+                if (skipTheseModDependencies.includes(depId.toLowerCase())) continue
+
+                const dep = findDependency(depId)
+                expect(dep, `dependency ${depId} must be registered in CCModDb`).toBeTruthy()
+
+                if (dep) {
+                    const depDatabaseVersion = dep.metadataCCMod!.version
                     expect(
-                        semver.validRange(requiredVersionRange),
-                        `dependency ${depId} must be specify a valid range`
-                    ).toBeTruthy()
-
-                    if (skipTheseModDependencies.includes(depId.toLowerCase())) continue
-
-                    const dep = findDependency(depId)
-                    expect(dep, `dependency ${depId} must be registered in CCModDb`).toBeTruthy()
-
-                    if (dep) {
-                        const depDatabaseVersion = dep.metadataCCMod!.version
-                        expect(
-                            semver.satisfies(depDatabaseVersion, requiredVersionRange, {
-                                includePrerelease: true,
-                            }),
-                            `the version of the dependency ${depId} (database version: ${depDatabaseVersion}) does not satisfy the required range: ${requiredVersionRange}`
-                        ).toBeTrue()
-                    }
+                        semver.satisfies(depDatabaseVersion, requiredVersionRange, {
+                            includePrerelease: true,
+                        }),
+                        `the version of the dependency ${depId} (database version: ${depDatabaseVersion}) does not satisfy the required range: ${requiredVersionRange}`
+                    ).toBeTrue()
                 }
-            } else {
-                expect(
-                    ccmod.dependencies === undefined,
-                    'ccmod.dependencies must not be used'
-                ).toBeTrue()
             }
         })
     }
