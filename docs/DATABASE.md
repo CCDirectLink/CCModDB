@@ -49,16 +49,16 @@ For example, CCLoader can only be updated that way.
 6. Switch back to the `master` branch.  
    To do that, run `git checkout master`
 7. Now to update the `npDatabase.json` file, run:  
-	- Run `npm install`  
+	- Run `bun ci`  
 	- Now you have two choices:
 	  - If you just want to have the entry you just changed updated, run:  
-	    `npm run start`    
+	    `bun run start`    
 	  - If you want to re-generate the entire database from scratch, run:  
-	    `npm run startScratch`  
+	    `bun run startScratch`  
 8. If successful, you should be checked-out on the selected branch
 10. Amend the last commit to also include the current changes
 11. Switch back to the `master` branch
-12. Run `npm run test` to verify that the mod you're introducing doesn't break the database
+12. Run `bun run test` to verify that the mod you're introducing doesn't break the database
 
 - Tools are in `tools.json` (also in the `npDatabase.json` format) and need to be modified manually.
 
