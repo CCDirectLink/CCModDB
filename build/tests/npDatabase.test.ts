@@ -226,44 +226,49 @@ function testMetadataCCMod(ccmod: PkgCCMod) {
 
     if (ccmod.dependencies) {
         test('mod dependencies', () => {
-            expect(
-                typeof ccmod.dependencies === 'object',
-                'ccmod.dependencies (type: object) must be an object'
-            ).toBeTrue()
-            expect(
-                Array.isArray(ccmod.dependencies),
-                'ccmod.dependencies (type: object) must be an object'
-            ).toBeFalse()
-            expect(
-                ccmod.dependencies !== null,
-                'ccmod.dependencies (type: object) must be an object'
-            ).toBeTrue()
-
-            for (const depId in ccmod.dependencies!) {
-                const requiredVersionRange = ccmod.dependencies![depId]
+            if (ccmod.dependencies) {
                 expect(
-                    semver.validRange(requiredVersionRange),
-                    `dependency ${depId} must be specify a valid range`
-                ).toBeTruthy()
+                    typeof ccmod.dependencies === 'object',
+                    'ccmod.dependencies (type: object) must be an object'
+                ).toBeTrue()
+                expect(
+                    Array.isArray(ccmod.dependencies),
+                    'ccmod.dependencies (type: object) must be an object'
+                ).toBeFalse()
+                expect(
+                    ccmod.dependencies !== null,
+                    'ccmod.dependencies (type: object) must be an object'
+                ).toBeTrue()
 
-                if (skipTheseModDependencies.includes(depId.toLowerCase())) continue
-
-                const dep = findDependency(depId)
-                expect(dep, `dependency ${depId} must be registered in CCModDb`).toBeTruthy()
-
-                if (dep) {
-                    const depDatabaseVersion = dep.metadataCCMod!.version
+                for (const depId in ccmod.dependencies!) {
+                    const requiredVersionRange = ccmod.dependencies![depId]
                     expect(
-                        semver.satisfies(depDatabaseVersion, requiredVersionRange, {
-                            includePrerelease: true,
-                        }),
-                        `the version of the dependency ${depId} (database version: ${depDatabaseVersion}) does not satisfy the required range: ${requiredVersionRange}`
-                    ).toBeTrue()
+                        semver.validRange(requiredVersionRange),
+                        `dependency ${depId} must be specify a valid range`
+                    ).toBeTruthy()
+
+                    if (skipTheseModDependencies.includes(depId.toLowerCase())) continue
+
+                    const dep = findDependency(depId)
+                    expect(dep, `dependency ${depId} must be registered in CCModDb`).toBeTruthy()
+
+                    if (dep) {
+                        const depDatabaseVersion = dep.metadataCCMod!.version
+                        expect(
+                            semver.satisfies(depDatabaseVersion, requiredVersionRange, {
+                                includePrerelease: true,
+                            }),
+                            `the version of the dependency ${depId} (database version: ${depDatabaseVersion}) does not satisfy the required range: ${requiredVersionRange}`
+                        ).toBeTrue()
+                    }
                 }
+            } else {
+                expect(
+                    ccmod.dependencies === undefined,
+                    'ccmod.dependencies must not be used'
+                ).toBeTrue()
             }
         })
-    } else {
-        expect(ccmod.dependencies === undefined, 'ccmod.dependencies must not be used').toBeTrue()
     }
 }
 
