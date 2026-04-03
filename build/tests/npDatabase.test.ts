@@ -14,7 +14,8 @@ import {
 import { getRepoBranches, gitReadFunc } from '../src/git'
 
 async function loadNpDatabases() {
-    const branch = process.env['BRANCH']!
+    const branch = process.env['BRANCH']
+    if (!branch) throw new Error('enviroment variable BRANCH is not set!')
 
     const npDatabasePromise = gitReadFunc(branch, 'npDatabase.min.json').then(
         data => JSON.parse(data!) as PackageDB

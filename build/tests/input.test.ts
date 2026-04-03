@@ -2,8 +2,10 @@ import { expect, describe, test } from 'bun:test'
 import { InputLocations } from '../src/types'
 import { gitReadFunc } from '../src/git'
 
+const branch = process.env['BRANCH']
+if (!branch) throw new Error('enviroment variable BRANCH is not set!')
 const inputLocationsPromise: Promise<InputLocations> = await gitReadFunc(
-    process.env['BRANCH']!,
+    branch,
     'input-locations.json'
 ).then(data => JSON.parse(data!))
 
