@@ -62,13 +62,13 @@ jobs:
 
             - name: Test the stable branch
               env:
-                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-              run: BRANCH=stable bun run test
+                  BRANCH: stable
+              run: bun run test
 
             - name: Test the testing branch
               env:
-                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-              run: BRANCH=testing bun run test
+                  BRANCH: testing
+              run: bun run test
 
             - name: Save mod archive cache
               uses: actions/cache/save@v4
