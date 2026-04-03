@@ -34,13 +34,11 @@ jobs:
                   token: ${{ secrets.PAT }}
                   fetch-depth: 0
 
-            - uses: actions/setup-node@v4
+            - uses: oven-sh/setup-bun@v2
               with:
-                  node-version: 20
-                  cache: 'npm'
-                  cache-dependency-path: 'package-lock.json'
+                bun-version: latest
 
-            - run: npm ci
+            - run: bun ci
 
             - name: Checkout
               run: |
@@ -54,7 +52,7 @@ jobs:
               run: |
                   set -e
 
-                  OUT="$(npm run --silent start)"
+                  OUT="$(bun run --silent start)"
 
                   DATA="$(echo "$OUT" | jq '.[]' | jq -s '.[0].metadataCCMod')"
 
