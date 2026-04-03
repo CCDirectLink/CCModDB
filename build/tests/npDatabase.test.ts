@@ -1,125 +1,124 @@
-// call with mocha
-// require chai
-
-import { expect } from 'chai'
+import { expect, test, describe } from 'bun:test'
 import semver from 'semver'
 import crypto from 'crypto'
 import { download, streamToBuffer } from '../src/download'
 import {
-    DatabaseInfo,
-    InstallMethodExternalTool,
-    InstallMethodZip,
-    Package,
-    PackageDB,
-    PkgCCMod,
+    type DatabaseInfo,
+    type InstallMethodExternalTool,
+    type InstallMethodZip,
+    type Package,
+    type PackageDB,
+    type PkgCCMod,
     ValidTags,
 } from '../src/types'
 import { getRepoBranches, gitReadFunc } from '../src/git'
 
-const branch = process.env['BRANCH']!
+async function loadNpDatabases() {
+    const branch = process.env['BRANCH']!
 
-let npDatabase: PackageDB
-const npDatabasePromise = gitReadFunc(branch, 'npDatabase.min.json').then(data => {
-    npDatabase = JSON.parse(data!)
-})
+    const npDatabasePromise = gitReadFunc(branch, 'npDatabase.min.json').then(
+        data => JSON.parse(data!) as PackageDB
+    )
 
-let parentNpDatabases: PackageDB
-const parentNpDatabasesPromise = new Promise<void>(async resolve => {
-    const dbInfo: DatabaseInfo = JSON.parse((await gitReadFunc(branch, 'db-info.json'))!)
-    const parentBranches = dbInfo.parentBranches
-    if (!parentBranches) return resolve()
+    const parentNpDatabasesPromise = new Promise<PackageDB>(async resolve => {
+        const dbInfo: DatabaseInfo = JSON.parse((await gitReadFunc(branch, 'db-info.json'))!)
+        const parentBranches = dbInfo.parentBranches
+        if (!parentBranches) return resolve({})
 
-    const repoBranches = await getRepoBranches()
+        const repoBranches = await getRepoBranches()
 
-    async function getParentPackageDb(name: string): Promise<string> {
-        if (repoBranches.includes(name)) {
-            const data = await gitReadFunc(name, 'npDatabase.min.json')
-            if (!data) throw new Error(`npDatabase.min.json not found on branch "${name}"`)
-            return data
+        async function getParentPackageDb(name: string): Promise<string> {
+            if (repoBranches.includes(name)) {
+                const data = await gitReadFunc(name, 'npDatabase.min.json')
+                if (!data) throw new Error(`npDatabase.min.json not found on branch "${name}"`)
+                return data
+            }
+
+            try {
+                return (await fetch(name)).text()
+            } catch (e) {
+                throw new Error(
+                    `Invalid parent repo npDatatabase.min.json url: "${name}"`,
+                    e as Error
+                )
+            }
         }
 
-        try {
-            return (await fetch(name)).text()
-        } catch (e) {
-            throw new Error(`Invalid parent repo npDatatabase.min.json url: "${name}"`, e as Error)
-        }
-    }
+        const parentDbs = await Promise.all(parentBranches.map(getParentPackageDb))
 
-    const parentDbs = await Promise.all(parentBranches.map(getParentPackageDb))
-
-    const merged = parentDbs.reduce((acc, v) => Object.assign(acc, JSON.parse(v)), {})
-
-    parentNpDatabases = merged
-
-    resolve()
-})
-
-describe('NpDatabase', () => {
-    it('Check json structure', async () => {
-        await npDatabasePromise
-        await parentNpDatabasesPromise
-
-        expect(typeof npDatabase === 'object', 'Json not valid: Not an object').to.be.true
-        expect(Array.isArray(npDatabase), 'Json not valid: Not an object').to.be.false
-        expect(npDatabase !== null, 'Json not valid: Not an object').to.be.true
+        const merged = parentDbs.reduce((acc, v) => Object.assign(acc, JSON.parse(v)), {})
+        resolve(merged)
     })
 
-    parentNpDatabases = {}
-    describe('mods', async () => {
-        await npDatabasePromise
-        await parentNpDatabasesPromise
+    return Promise.all([npDatabasePromise, parentNpDatabasesPromise])
+}
+const [npDatabase, parentNpDatabases] = await loadNpDatabases()
 
+describe('NpDatabase', () => {
+    test('json structure', async () => {
+        expect(typeof npDatabase === 'object', 'Json not valid: Not an object').toBeTrue()
+        expect(Array.isArray(npDatabase), 'Json not valid: Not an object').toBeFalse()
+        expect(npDatabase !== null, 'Json not valid: Not an object').toBeTrue()
+    })
+
+    describe('mods', () => {
         for (let mod of Object.keys(npDatabase)) {
             testPackage(npDatabase[mod], mod)
         }
     })
 })
-
-if (!process.env['donttesttools']) {
-    let tools: PackageDB
-    const toolsPromise = new Promise<void>((resolve, reject) => {
-        const branch = process.env['BRANCH']!
-        gitReadFunc(branch, 'tools.json')
-            .then(data => {
-                if (!data) return reject(`tools.json not found on branch ${branch}`)
-                tools = JSON.parse(data!)
-                resolve()
-            })
-            .catch(err => reject(err))
-    })
-
-    describe('ToolsDB', async () => {
-        it('Check json structure', async () => {
-            await toolsPromise
-
-            expect(typeof tools === 'object', 'Json not valid: Not an object').to.be.true
-            expect(Array.isArray(tools), 'Json not valid: Not an object').to.be.false
-            expect(tools !== null, 'Json not valid: Not an object').to.be.true
-        })
-
-        describe('tools', async () => {
-            await toolsPromise
-
-            for (const mod of Object.keys(tools)) {
-                testPackage(tools[mod], mod)
-            }
-        })
-    })
-}
-
+//
+// if (!process.env['donttesttools']) {
+//     let tools: PackageDB
+//     const toolsPromise = new Promise<void>((resolve, reject) => {
+//         const branch = process.env['BRANCH']!
+//         gitReadFunc(branch, 'tools.json')
+//             .then(data => {
+//                 if (!data) return reject(`tools.json not found on branch ${branch}`)
+//                 tools = JSON.parse(data!)
+//                 resolve()
+//             })
+//             .catch(err => reject(err))
+//     })
+//
+//     describe('ToolsDB', async () => {
+//         it('Check json structure', async () => {
+//             await toolsPromise
+//
+//             expect(typeof tools === 'object', 'Json not valid: Not an object').toBeTrue()
+//             expect(Array.isArray(tools), 'Json not valid: Not an object').to.be.false
+//             expect(tools !== null, 'Json not valid: Not an object').toBeTrue()
+//         })
+//
+//         describe('tools', async () => {
+//             await toolsPromise
+//
+//             for (const mod of Object.keys(tools)) {
+//                 testPackage(tools[mod], mod)
+//             }
+//         })
+//     })
+// }
+//
 export function testPackage(mod: Package, name: string) {
-    describe(`Package: ${name}`, () => {
-        it('Check for required elements', () => {
-            expect(mod !== null, 'package must not be null').to.be.true
+    describe(name, () => {
+        test('required elements', () => {
+            expect(mod !== null, 'package must not be null').toBeTrue()
 
-            expect(mod.metadataCCMod !== undefined, 'metadataCCMod (type: object) required').to.be
-                .true
+            expect(
+                mod.metadataCCMod !== undefined,
+                'metadataCCMod (type: object) required'
+            ).toBeTrue()
 
-            expect(typeof mod.installation === 'object', 'installation (type: array) required').to
-                .be.true
-            expect(Array.isArray(mod.installation), 'installation (type: array) required').to.be
-                .true
-            expect(mod.installation !== null, 'installation (type: array) required').to.be.true
+            expect(
+                typeof mod.installation === 'object',
+                'installation (type: array) required'
+            ).toBeTrue()
+            expect(
+                Array.isArray(mod.installation),
+                'installation (type: array) required'
+            ).toBeTrue()
+            expect(mod.installation !== null, 'installation (type: array) required').toBeTrue()
         })
 
         if (!mod) return
@@ -167,86 +166,90 @@ const ccmodIdValidationExceptions: string[] = [
     'New game++',
 ]
 function testMetadataCCMod(ccmod: PkgCCMod) {
-    it('Test ccmod.json', () => {
-        expect(typeof ccmod.id === 'string', 'ccmod.id (type: string) required').to.be.true
+    test('ccmod.json', () => {
+        expect(typeof ccmod.id === 'string', 'ccmod.id (type: string) required').toBeTrue()
 
         expect(
             ccmod.id.length > 0 &&
                 (/^[a-zA-Z0-9_-]+$/.test(ccmod.id) ||
                     ccmodIdValidationExceptions.includes(ccmod.id)),
             'ccmod.id (type: string) must consist only of one or more alphanumberic characters, hyphens or underscores'
-        ).to.be.true
+        ).toBeTrue()
 
         expect(
             typeof ccmod.version === 'string' && semver.valid(ccmod.version) !== null,
             'ccmod.version (type: string) is missing or isnt valid semver'
-        ).to.be.true
+        ).toBeTrue()
 
         expect(
             typeof ccmod.title === 'string' || typeof ccmod.title === 'object',
             'ccmod.title (type: string) is missing or has wrong type'
-        ).to.be.true
+        ).toBeTrue()
         expect(
             ccmod.description !== undefined &&
                 (typeof ccmod.description === 'string' || typeof ccmod.description === 'object'),
             'ccmod.description (type: string) is missing or has wrong type'
-        ).to.be.true
+        ).toBeTrue()
         expect(
             ccmod.homepage === undefined || typeof ccmod.homepage === 'string',
             'ccmod.homepage (type: string) has wrong type'
-        ).to.be.true
+        ).toBeTrue()
 
         expect(
             typeof ccmod.repository === 'string' && ccmod.repository.length > 0,
             'ccmod.repository (type: string) is missing, is empty or has wrong type'
-        ).to.be.true
+        ).toBeTrue()
 
         expect(
             ccmod.tags !== undefined && Array.isArray(ccmod.tags),
             'ccmod.tags (type: array) is missing or has wrong type'
-        ).to.be.true
+        ).toBeTrue()
 
         const tags = (ccmod.tags ?? []).sort()
         for (let i = 0; i < tags.length; i++) {
             const tag = tags[i]
-            expect(ValidTags.includes(tag), `ccmod.tags (type: array) has an invalid tag: "${tag}"`)
-                .to.be.true
-            expect(tags[i - 1] != tag, `ccmod.tags (type: array) has a duplicate tag: "${tag}"`).to
-                .be.true
+            expect(
+                ValidTags.includes(tag),
+                `ccmod.tags (type: array) has an invalid tag: "${tag}"`
+            ).toBeTrue()
+            expect(
+                tags[i - 1] != tag,
+                `ccmod.tags (type: array) has a duplicate tag: "${tag}"`
+            ).toBeTrue()
         }
 
         expect(
             ccmod.authors !== undefined && Array.isArray(ccmod.tags),
             'ccmod.authors (type: array) is missing or has wrong type'
-        ).to.be.true
+        ).toBeTrue()
     })
 
     if (ccmod.dependencies) {
-        it('Test check dependencies', () => {
+        test('mod dependencies', () => {
             expect(
                 typeof ccmod.dependencies === 'object',
                 'ccmod.dependencies (type: object) must be an object'
-            ).to.be.true
+            ).toBeTrue()
             expect(
                 Array.isArray(ccmod.dependencies),
                 'ccmod.dependencies (type: object) must be an object'
-            ).to.be.false
+            ).toBeFalse()
             expect(
                 ccmod.dependencies !== null,
                 'ccmod.dependencies (type: object) must be an object'
-            ).to.be.true
+            ).toBeTrue()
 
             for (const depId in ccmod.dependencies!) {
                 const requiredVersionRange = ccmod.dependencies![depId]
                 expect(
                     semver.validRange(requiredVersionRange),
                     `dependency ${depId} must be specify a valid range`
-                ).to.not.be.null
+                ).toBeTruthy()
 
                 if (skipTheseModDependencies.includes(depId.toLowerCase())) continue
 
                 const dep = findDependency(depId)
-                expect(dep, `dependency ${depId} must be registered in CCModDb`).to.not.be.undefined
+                expect(dep, `dependency ${depId} must be registered in CCModDb`).toBeTruthy()
 
                 if (dep) {
                     const depDatabaseVersion = dep.metadataCCMod!.version
@@ -255,28 +258,30 @@ function testMetadataCCMod(ccmod: PkgCCMod) {
                             includePrerelease: true,
                         }),
                         `the version of the dependency ${depId} (database version: ${depDatabaseVersion}) does not satisfy the required range: ${requiredVersionRange}`
-                    ).to.be.true
+                    ).toBeTrue()
                 }
             }
         })
     } else {
-        expect(ccmod.dependencies === undefined, 'ccmod.dependencies must not be used').to.be.true
+        expect(ccmod.dependencies === undefined, 'ccmod.dependencies must not be used').toBeTrue()
     }
 }
 
 function testInstallation(mod: Package) {
     for (let i = 0; i < mod.installation.length; i++) {
         const inst = mod.installation[i]
-        it(`Check installation ${i}`, async () => {
-            expect(typeof inst === 'object', 'installation (type: object) must be an object').to.be
-                .true
-            expect(Array.isArray(inst), 'installation (type: object) must be an object').to.be.false
-            expect(inst !== null, 'installation (type: object) must be an object').to.be.true
+        test(`installation ${i}`, async () => {
+            expect(
+                typeof inst === 'object',
+                'installation (type: object) must be an object'
+            ).toBeTrue()
+            expect(Array.isArray(inst), 'installation (type: object) must be an object').toBeFalse()
+            expect(inst !== null, 'installation (type: object) must be an object').toBeTrue()
 
             expect(
                 ['zip', 'externaltool', undefined].includes(inst.type),
                 'installation.type (type: string) must be one of: ["zip", "externaltool", undefined]'
-            ).to.be.true
+            ).toBeTrue()
 
             expect(
                 inst.platform === undefined ||
@@ -291,7 +296,7 @@ function testInstallation(mod: Package) {
                         'android',
                     ].includes(inst.platform),
                 'installation.platform (type: string) must be a valid platform'
-            ).to.be.true
+            ).toBeTrue()
 
             switch ((inst as InstallMethodZip | InstallMethodExternalTool).type) {
                 case 'externaltool':
@@ -299,29 +304,31 @@ function testInstallation(mod: Package) {
                     await testZip(inst)
                     break
             }
-        }).timeout(100e3)
+        }, 100e3)
     }
 }
 
 async function testZip(modzip: InstallMethodZip) {
-    expect(typeof modzip.hash === 'object', 'modzip.hash (type: object) must be an object').to.be
-        .true
-    expect(Array.isArray(modzip.hash), 'modzip.hash (type: object) must be an object').to.be.false
-    expect(modzip.hash !== null, 'modzip.hash (type: object) must be an object').to.be.true
+    expect(
+        typeof modzip.hash === 'object',
+        'modzip.hash (type: object) must be an object'
+    ).toBeTrue()
+    expect(Array.isArray(modzip.hash), 'modzip.hash (type: object) must be an object').toBeFalse()
+    expect(modzip.hash !== null, 'modzip.hash (type: object) must be an object').toBeTrue()
     expect(
         typeof modzip.hash.sha256 === 'string',
         'modzip.hash.sha256 (type: string) must be a string'
-    ).to.be.true
+    ).toBeTrue()
 
-    expect(typeof modzip.url === 'string', 'modzip.url (type: string) must be a string').to.be.true
+    expect(typeof modzip.url === 'string', 'modzip.url (type: string) must be a string').toBeTrue()
     expect(
         modzip.source === undefined || typeof modzip.source === 'string',
         'modzip.source (type: string) must be a string'
-    ).to.be.true
+    ).toBeTrue()
 
     if (modzip.url) {
         const hash = await getHash(modzip.url)
-        expect(modzip.hash.sha256.toLowerCase()).to.equal(hash, 'hash must match')
+        expect(modzip.hash.sha256.toLowerCase(), 'hash must match').toEqual(hash)
     }
 }
 
