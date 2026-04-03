@@ -2568,7 +2568,7 @@
     "cc-vim": {
         "metadataCCMod": {
             "id": "cc-vim",
-            "version": "1.6.2",
+            "version": "1.6.3",
             "title": "Vim Command Mode",
             "description": "Adds a popup command prompt",
             "repository": "https://github.com/krypciak/cc-vim",
@@ -2589,15 +2589,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/cc-vim/releases/download/v1.6.2/cc-vim-1.6.2.ccmod",
+                "url": "https://github.com/krypciak/cc-vim/releases/download/v1.6.3/cc-vim-1.6.3.ccmod",
+                "source": "",
                 "hash": {
-                    "sha256": "c92d4409b9b1ed0d94671c70c282f2fc9b306379563c189bbc5fc16ccef54fda"
+                    "sha256": "05f00fe2d73df649f583d8d845cb48d1c40813a8b3fbd5ed45c80802cab1f8ff"
                 }
             }
         ],
-        "stars": 1,
-        "lastUpdateTimestamp": 1718187787000,
+        "stars": 2,
+        "lastUpdateTimestamp": 1775205399000,
         "releasePages": [
+            {
+                "body": "### Fixed\n\n- Add cc-instanceinator compatibility",
+                "version": "1.6.3",
+                "timestamp": 1775205400000,
+                "url": "https://github.com/krypciak/cc-vim/releases/tag/v1.6.3"
+            },
             {
                 "body": "",
                 "version": "1.6.2",
