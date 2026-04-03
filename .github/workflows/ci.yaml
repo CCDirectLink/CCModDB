@@ -40,13 +40,11 @@ jobs:
                 git branch -v
                 echo --------
 
-            - uses: actions/setup-node@v4
+            - uses: oven-sh/setup-bun@v2
               with:
-                  node-version: 20
-                  cache: 'npm'
-                  cache-dependency-path: 'package-lock.json'
+                bun-version: latest
 
-            - run: npm ci
+            - run: bun ci
 
             - name: Get Date
               id: get-date
@@ -65,12 +63,12 @@ jobs:
             - name: Test the stable branch
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-              run: BRANCH=stable npm run test
+              run: BRANCH=stable bun run test
 
             - name: Test the testing branch
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-              run: BRANCH=testing npm run test
+              run: BRANCH=testing bun run test
 
             - name: Save mod archive cache
               uses: actions/cache/save@v4
