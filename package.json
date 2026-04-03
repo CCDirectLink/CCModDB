@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "A build script for ccmoddb",
   "scripts": {
-    "start": "tsx build/src/main.ts $BRANCH",
-    "startScratch": "tsx build/src/main.ts $BRANCH scratch",
+    "start": "bun build/src/main.ts $BRANCH",
+    "startScratch": "bun build/src/main.ts $BRANCH scratch",
     "test": "bun test",
     "format": "prettier ./build/src -w"
   },
@@ -32,7 +32,6 @@
     "dotenv": "^17.4.0",
     "semver": "^7.7.4",
     "simple-git": "^3.33.0",
-    "tsx": "^4.21.0",
     "yauzl": "^3.3.0",
     "bun": "^1.3.11"
   }
