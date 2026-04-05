@@ -4988,7 +4988,7 @@
     "kit-mod": {
         "metadataCCMod": {
             "id": "kit-mod",
-            "version": "1.0.1",
+            "version": "1.1.1",
             "title": {
                 "en_US": "Kit Mod",
                 "de_DE": "Kit Mod",
@@ -5022,22 +5022,35 @@
             ],
             "prestart": "prestart.js",
             "dependencies": {
-                "extendable-severed-heads": ">=1.1.0"
+                "extendable-severed-heads": ">=1.1.0",
+                "menu-ui-replacer": ">=1.0.5"
             }
         },
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/kit-mod/archive/refs/tags/1.0.1.zip",
-                "source": "kit-mod-1.0.1",
+                "url": "https://github.com/XenonA7/kit-mod/archive/refs/tags/1.1.1.zip",
+                "source": "kit-mod-1.1.1",
                 "hash": {
-                    "sha256": "6831f84f415e32805dcbdc12a900fc376c7d392f95650b5752c1776023582095"
+                    "sha256": "5f95af16c46509d8a74d6947b88e1ea1070c04d91813cc6217b318b4d84e2d01"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1772394209000,
+        "lastUpdateTimestamp": 1775341910000,
         "releasePages": [
+            {
+                "body": "## 1.1.1 (04/04/2026)\r\n- Re-upload to fix github release issue",
+                "version": "1.1.1",
+                "timestamp": 1775341910000,
+                "url": "https://github.com/XenonA7/kit-mod/releases/tag/1.1.1"
+            },
+            {
+                "body": "## 1.1.0 (04/04/2026)\r\n- New dependency mod: https://github.com/CCDirectLink/cc-menu-ui-replacement\r\n- Added new menu sprite assets from BountyXSnipe: \\assets\\media\\gui\\menu-kit.png\r\n- Added changelog",
+                "version": "1.1.0",
+                "timestamp": 1775341589000,
+                "url": "https://github.com/XenonA7/kit-mod/releases/tag/1.1.0"
+            },
             {
                 "body": "Fixed repo link in ccmod.json",
                 "version": "1.0.1",
