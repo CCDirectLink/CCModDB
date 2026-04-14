@@ -4,15 +4,12 @@ import type { InputLocations, PackageDB } from './types'
 
 import * as fs from 'fs'
 import * as path from 'path'
-import { configDotenv } from 'dotenv'
 import { getRepoBranches, git, gitReadFunc } from './git'
 
 export type ReadFunc = (path: string) => Promise<string | undefined>
 export type WriteFunc = (path: string, data: Buffer | string) => Promise<void>
 
 async function main() {
-    configDotenv({ quiet: true })
-
     const GITHUB_TOKEN = process.env['GITHUB_TOKEN']
     if (!GITHUB_TOKEN)
         throw new Error(
