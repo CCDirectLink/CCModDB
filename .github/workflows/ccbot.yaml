@@ -76,6 +76,8 @@ jobs:
 
                   echo "ID=$ID" >> $GITHUB_ENV
 
+                  rm -r "$OUT_FILE"
+
             - name: Commit changes 
               env:
                   GITHUB_TOKEN: ${{ secrets.PAT }}
