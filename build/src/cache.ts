@@ -4,6 +4,8 @@ import crypto from 'crypto'
 const cacheDir = './build/cache'
 
 const cache: Record<string, () => Promise<Buffer>> = {}
+
+await fs.promises.mkdir(cacheDir, { recursive: true })
 for (const path of await fs.promises.readdir(cacheDir)) {
     const tagHash = path.slice(0, -'.cache'.length)
     cache[tagHash] = () => readFromDisk(tagHash)
@@ -33,7 +35,6 @@ export async function get(tag: string, download: () => Promise<Buffer>): Promise
 }
 
 async function write(tagHash: string, data: Buffer) {
-    await fs.promises.mkdir(cacheDir, { recursive: true })
     await fs.promises.writeFile(file(tagHash), data)
 }
 
