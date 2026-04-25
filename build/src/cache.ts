@@ -1,59 +1,44 @@
-import stream from 'stream'
 import fs from 'fs'
 import crypto from 'crypto'
 
-// Do not use cache for files that were not there when the execution started because it always goes wrong for some reason. If you can make it work, feel free to do so.
-const excluded: string[] = []
+const cacheDir = './build/cache'
 
-export async function get(tag: string): Promise<stream.Readable | undefined> {
-    if (!(await has(tag))) {
-        return undefined
+const cache: Record<string, () => Promise<Buffer>> = {}
+for (const path of await fs.promises.readdir(cacheDir)) {
+    const tagHash = path.slice(0, -'.cache'.length)
+    cache[tagHash] = () => readFromDisk(tagHash)
+}
+
+async function readFromDisk(tagHash: string): Promise<Buffer> {
+    // console.log('cache hit!', tagHash)
+    const readPromise = fs.promises.readFile(file(tagHash))
+    cache[tagHash] = () => {
+        // console.log('cache await hit!', tagHash)
+        return readPromise
     }
-
-    return fs.createReadStream(file(tag))
+    return readPromise
 }
 
-export async function put(tag: string, content: stream.Readable): Promise<void> {
-    if (await has(tag)) {
-        return
-    }
+export async function get(tag: string, download: () => Promise<Buffer>): Promise<Buffer> {
+    const tagHash = hash(tag)
+    if (cache[tagHash]) return cache[tagHash]()
+    // console.log('cache miss!', tagHash)
 
-    createDir()
+    const downloadPromise = download()
+    cache[tagHash] = () => downloadPromise
 
-    excluded.push(tag)
-    await new Promise<void>((resolve, reject) => {
-        const fstream = fs.createWriteStream(file(tag))
-        content
-            .on('error', err => reject(err))
-            .on('end', () => {
-                fstream.close()
-                resolve()
-            })
-            .pipe(fstream, { end: true })
-    })
+    const data = await downloadPromise
+    await write(tagHash, data)
+    return data
 }
 
-export async function has(tag: string): Promise<boolean> {
-    if (tag === '' || excluded.includes(tag)) {
-        return false
-    }
-
-    return new Promise<boolean>(resolve => {
-        fs.stat(file(tag), (err, stat) => {
-            if (err || !stat) {
-                return resolve(false)
-            }
-            resolve(stat.isFile())
-        })
-    })
+async function write(tagHash: string, data: Buffer) {
+    await fs.promises.mkdir(cacheDir, { recursive: true })
+    await fs.promises.writeFile(file(tagHash), data)
 }
 
-function createDir(): Promise<void> {
-    return new Promise(resolve => fs.mkdir('./build/cache/', () => resolve()))
-}
-
-function file(tag: string): string {
-    return './build/cache/' + hash(tag) + '.cache'
+function file(tagHash: string): string {
+    return cacheDir + '/' + tagHash + '.cache'
 }
 
 function hash(tag: string): string {

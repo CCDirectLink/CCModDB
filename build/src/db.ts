@@ -105,7 +105,7 @@ async function generateInstallation(
     switch (input.type) {
         case undefined:
         case 'zip': {
-            const data = await streamToBuffer(await download(input.url))
+            const data = await download(input.url)
 
             return {
                 type: 'zip',

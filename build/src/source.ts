@@ -58,8 +58,7 @@ async function getModZipFile<T>(
     fileName: string,
     parseToJson: boolean = true
 ): Promise<T | undefined> {
-    const file = await download(zip.url)
-    const buf = await streamToBuffer(file)
+    const buf = await download(zip.url)
     if (buf.length === 0) return
     const archive = await open(buf)
 

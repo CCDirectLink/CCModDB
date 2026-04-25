@@ -324,7 +324,6 @@ async function testZip(modzip: InstallMethodZip) {
 }
 
 async function getHash(url: string) {
-    const file = await download(url)
-    const buf = await streamToBuffer(file)
+    const buf = await download(url)
     return crypto.createHash('sha256').update(buf).digest('hex')
 }

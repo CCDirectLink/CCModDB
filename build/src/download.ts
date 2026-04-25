@@ -8,18 +8,15 @@ import * as cache from './cache'
  * @param url
  * @returns path to file
  */
-export async function download(url: string): Promise<stream.Readable> {
+export async function download(url: string): Promise<Buffer> {
     const [head, realUrl] = await follow(url)
     const etag = getTag(head)
 
-    const cached = await cache.get(etag)
-    if (cached) {
-        return cached
-    }
-
-    const resp = await body(realUrl)
-    cache.put(etag, resp.pipe(new stream.PassThrough()))
-    return resp.pipe(new stream.PassThrough())
+    return cache.get(etag, () => actualDownload(realUrl))
+}
+async function actualDownload(url: string) {
+    const resp = await body(url)
+    return streamToBuffer(resp.pipe(new stream.PassThrough()))
 }
 
 export function streamToBuffer(readable: stream.Readable): Promise<Buffer> {
