@@ -51,9 +51,10 @@ jobs:
               run: |
                   set -e
 
-                  OUT="$(bun run --silent start)"
+                  OUT_FILE='out.json'
+                  bun run --silent start > "$OUT_FILE"
 
-                  DATA="$(echo "$OUT" | jq '.[]' | jq -s '.[0].metadataCCMod')"
+                  DATA="$(cat "$OUT_FILE" | jq '.[]' | jq -s '.[0].metadataCCMod')"
 
                   ID="$(echo "$DATA" | jq -r '.id')"
                   VERSION="$(echo "$DATA" | jq -r '.version')"
@@ -67,7 +68,7 @@ jobs:
                   echo "description: $DESCRIPTION"
 
                   REPO="$(echo "$DATA" | jq -r '.repository')"
-                  RELEASE_NOTES="$(echo "$OUT" | jq '.[]' | jq -rs '.[0].releasePages[0].body')"
+                  RELEASE_NOTES="$(cat "$OUT_FILE" | jq '.[]' | jq -rs '.[0].releasePages[0].body')"
 
                   gh pr edit "${{ github.event.pull_request.number }}" --title "CCBot mod: ${ID}"
                   gh pr comment "${{ github.event.pull_request.number }}" --body "$(printf "Mod info:\n${REPO}\n${TITLE} v${VERSION}\n${DESCRIPTION}")"
