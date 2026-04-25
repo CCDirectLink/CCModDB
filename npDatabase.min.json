@@ -5685,7 +5685,7 @@
     "mw-rando": {
         "metadataCCMod": {
             "id": "mw-rando",
-            "version": "0.8.2",
+            "version": "0.8.3",
             "title": "Multiworld randomizer",
             "description": "Client for CrossCode Archipelago Integration",
             "repository": "https://github.com/CodeTriangle/CCMultiworldRandomizer",
@@ -5708,18 +5708,30 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.8.2/CCMultiworldRandomizer-0.8.2.ccmod",
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.8.3/CCMultiworldRandomizer-0.8.3.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "c7d1b3e940548e254456007bc805c11fcaf21784ff9bd01a23f2df8ecc99da25"
+                    "sha256": "2e5f4f82c965a1a9d7c4cb7b90b881fd6c1c2e02a568bbdcf131d26754e33041"
                 }
             }
         ],
-        "stars": 15,
-        "lastUpdateTimestamp": 1773908655000,
+        "stars": 16,
+        "lastUpdateTimestamp": 1777108765000,
         "releasePages": [
             {
-                "body": "# Changes from 0.8.1\r\n\r\n## Changes to Generation\r\n\r\n* Replaced the check **Vagabond Dojo Key** with **Trials of the Golden Bugs** (@CodeTriangle).\r\n  * This change turns the check that gives the Dojo Key in vanilla into a quest reward so that the item hidden behind it can be previewed.\r\n  * This new location has the same ID as the previous one, so this change only affects where in the cutscene the item is acquired.\r\n\r\n## Changes to Mod\r\n\r\n* Applied a series of changes to the Archipelago menus to make creating and playing games more intuitive (@CodeTriangle):\r\n  - Allow any NG+ options to be selected regardless of previous save file completion.\r\n  - No longer load into a game without NG+ enabled when exiting the text client menu using cancel button.\r\n  - Add a clearer indication that NG+ options can be edited from the New Game Plus menu found in the Archipelago menu.\r\n  - Block out \"carry over\" section of NG+ when editing options to indicate that they cannot be modified after save file creation.\r\n  - Stop the game from blocking infinitely when entering new login information after previously entering login information and disconnecting.\r\n\r\n# Changes from 0.8.2-pre.1\r\n\r\n## Changes to Logic\r\n\r\n* **Steamy Booze** now requires access to Bergen Trail so that Bergen Ice can be acquired (@CodeTriangle).\r\n* **Gaia's Garden Defeat** now requires access to East Gaia in Closed Gaia mode since enemies native to that area are necessary to the quest's completion (@CodeTriangle).",
+                "body": "## Additions\r\n\r\n* Added support for **Botanics** (@CodeTriangle):\r\n  * If enabled, acquiring all the information about each plant by collecting drops is a location.\r\n  * Enable the `botanity` option to use this feature.\r\n  * Along with this, you can also change how many plants are required to complete **Crocus Pocus** and the three intermediary locations.\r\n* Added support for the **A New Home** expansion (@kumquat-ir):\r\n  * Chests, quests, cutscenes, and shops added by the DLC are all now available as potential locations.\r\n  * Enable the `enable_dlc` option to use this feature.\r\n  * A new goal has been added (`diorbis`) that requires the player to descend Ku'lero Temple.\r\n\r\n## Migration Guide\r\n\r\nI **do not** recommend migrating to this release if you started your save file on 0.8.x or earlier. All of t",
+                "version": "0.9.0-pre.1",
+                "timestamp": 1777108765000,
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.9.0-pre.1"
+            },
+            {
+                "body": "## Changes to Mod\r\n\r\n* Added several sanity checks when connecting to the server, including (@CodeTriangle):\r\n  * was the world generated with a future version of the apworld?\r\n  * is the game's seed the same as the one this game was previously connected to?\r\n  * is the game's slot number the same as the on this game was previously connected to?\r\n\r\n## Fixes to Mod\r\n* Fixed an issue where all but the first instance of disconnection from the login dialog would erroneously notify the player of an unplanned disconnection (@CodeTriangle).",
+                "version": "0.8.3",
+                "timestamp": 1777103670000,
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.8.3"
+            },
+            {
+                "body": "# Changes from 0.8.1\r\n\r\n## Changes to Generation\r\n\r\n* Replaced the check **Vagabond Dojo Key** with **Trials of the Golden Bugs** (@CodeTriangle).\r\n  * This change turns the check that gives the Dojo Key in vanilla into a quest reward so that the item hidden behind it can be previewed.\r\n  * This new location has the same ID as the previous one, so this change only affects where in the cutscene the item is acquired.\r\n\r\n## Changes to Mod\r\n\r\n* Applied a series of changes to the Archipelago menus to make creating and playing games more intuitive (@CodeTriangle):\r\n  - Allow any NG+ options to be selected regardless of previous save file completion.\r\n  - No longer load into a game without NG+ enabled when exiting the text client menu using cancel button.\r\n  - Add a clearer indication that NG+ options can be edited from the New Game Plus menu found in the Archipelago menu.\r\n  - Block out \"carry over\" section of NG+ when editing options to indicate that they cannot be modified after save file creation.\r\n  - Stop the game from blocking infinitely when entering new login information after previously entering login information and disconnecting.\r\n\r\n# Changes from 0.8.2-pre.1\r\n\r\n## Changes to Logic\r\n\r\n* **Steamy Booze** now requires access to Bergen Trail so that Bergen Ice can be acquired (@CodeTriangle).\r\n* **Gaia's Garden Defeat** now requires access to East Gaia in Closed Gaia mode since enemies native to that area are necessary to the quest's completion (@CodeTriangle).\r\n\r\n# Important note\r\n\r\nDO NOT attempt to install this mod manually by copying the ccmod into the downloads folder. Instead, please carefully follow the [setup guide](https://github.com/CodeTriangle/CCMultiworldRandomizer/wiki/Setup) on the wiki.",
                 "version": "0.8.2",
                 "timestamp": 1774855108000,
                 "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.8.2"
