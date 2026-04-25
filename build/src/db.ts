@@ -39,7 +39,7 @@ export async function write(db: PackageDB, write: WriteFunc): Promise<void> {
 }
 
 export async function writeMinified(db: PackageDB, write: WriteFunc): Promise<void> {
-    // dont actually minify since minification causes confilicts
+    // don't actually minify since minification causes conflicts
     return write('npDatabase.min.json', JSON.stringify(db, null, 4))
 }
 

@@ -13,7 +13,7 @@ async function main() {
     const GITHUB_TOKEN = process.env['GITHUB_TOKEN']
     if (!GITHUB_TOKEN)
         throw new Error(
-            'GITHUB_TOKEN enviroment variable is required.\n' +
+            'GITHUB_TOKEN environment variable is required.\n' +
                 'Add it to the .env file or export it.\n' +
                 'To create a token, see https://github.com/settings/tokens?type=beta'
         )
