@@ -7623,7 +7623,7 @@
     "xenons-playable-classes": {
         "metadataCCMod": {
             "id": "xenons-playable-classes",
-            "version": "3.3.2",
+            "version": "3.3.3",
             "title": {
                 "en_US": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
                 "de_DE": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
@@ -7674,16 +7674,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/3.3.2.zip",
-                "source": "xenons-playable-classes-3.3.2",
+                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/3.3.3.zip",
+                "source": "xenons-playable-classes-3.3.3",
                 "hash": {
-                    "sha256": "bf794551c876473d648d5e97c00b392c90493e0624467ea31b2fa603e35fbb66"
+                    "sha256": "b334449f5a5420edfaf4d1c0be0b605e95f50738ea24e6022d6b16c6e9e0d325"
                 }
             }
         ],
-        "stars": 31,
-        "lastUpdateTimestamp": 1772254499000,
+        "stars": 32,
+        "lastUpdateTimestamp": 1777174771000,
         "releasePages": [
+            {
+                "body": "## 3.3.3 (04/25/2026)\r\n### New Content\r\n- Patches a return teleporter to XPC's hideout at the entrance of Autumn's Terminus if Autumn's Genesis is installed\r\n- Added multibakery slower, weaker version of Hexacast fireballSmall proxy with steerDegree of 0.30 instead of 0.55, used during multiplayer pvp (tmp.xpcDisableHoming)\r\n- Added a sign option to spawn an element turret in the XPC art testing room\r\n### Changes\r\n- XPC mod teleporter to Autumn's Terminus now links to XPC TeleportField instead of the map entrance\r\n- Added the timeConnect property to proxy dissonanceCard\r\n- Removed DETATCH_TIME_PARENT from proxy dissonanceCardExplosion\r\n- Added rock crater effects to Faj'ro Flush and Calamity Beacon\r\n- Brittle Barrier contact damage now categorized as RANGED_DMG (previously was uncategorized)\r\n- Reduced crystalCarnageCard suction duration from 1.8 to 1.2\r\n- Effect crystalCarnageSuction loop timing adjusted\r\n- Reduced Zir'vitar Strike delay after initial dash by 0.1 second\r\n- Added ground dust effects to Calamity Beacon's jump\r\n- Reduced audio volume of mc-exp/mc-hit sound effects in Meteor Flare and Meteor Storm\r\n- Added a maxTime failsafe to Spectral Legion waveDummy3 activation in case the player dash is interrupted\r\n- Improved effect stormChaserCardActivate\r\n- Increased darkness fadeIn duration for effect stormChaserCenterImpact\r\n- Edited rock crater sprites to be slightly more transparent\r\n### Fixes\r\n- Fixed missing crystalCarnageHailActive trigger, hailSeeker3 proxies should activate sooner in Crystal Carnage\r\n- Fixed all rock crater particles being able to render in front of entities by adding the gfxOffset property\r\n- Fixed broken SCREEN_FLASH in effect stormChaserCardActivate\r\n- Fixed Triblader Soul Shatter having extra SET_HIT_STABLE: MASSIVE, now it just uses the HEAVY step at the start\r\n- Shock Surge no longer grants the neutralization property when combat.cnt.arid/element-turret >= 1\r\n- Combat arts able to bypass element turrets downgraded from MASSIVE hit stability to HEAVY when combat.cnt.arid/element-turret >= 1\r\n  * Blizzard Rush\r\n  * Ashen Frenzy\r\n  * Shock Surge\r\n  * Celestial Cohort\r\n  * Azure Charge (includes custom skill variants)\r\n  * Gleaming Surge (includes custom skill variants)\r\n  * Frost Rupture (includes custom skill variants)\r\n  * Frigid Hurricane (includes custom skill and enemy variants)\r\n  * Avalanche Assault (includes custom skill variants)\r\n  * Trailblazer (includes custom skill variants)\r\n  * Spectral Legion (includes custom skill and enemy variants)\r\n### Balance\r\n- Aberrant Dissonance now applies a 60% speed slow motion effect (player unaffected) during the first three volleys\r\n- Proxy dissonanceCardExplosion damageFactor increased from 0.9 to 1.10\r\n- Brittle Barrier expiration projectiles (hailBullet1Weak) damageFactor increased from 0.4 to 0.6\r\n- Brittle Barrier proxy brittleBarrierHail contact damageFactor increased from 0.08 to 0.10\r\n- Frozen Fortress proxy fortressHail contact damageFactor increased from 0.12 to 0.225\r\n- Frozen Fortress ending hail explosion damageFactor increased from 1.0 to 1.5\r\n- Crystal Carnage explosion when hitting a wall or timing out damageFactor increased from 4.75 to 8.5\r\n- Meteor Storm proxy meteorMed damageFactor increased from 3.75 to 4.25, shadowflame version increased from 4.5 to 5.25\r\n- Triblader Fire Saw hit stability downgraded from MASSIVE to HEAVY\r\n- Triblader Spectral Legion hit stability downgraded from MASSIVE to HEAVY during initial chargeup\r\n- Zir'vitar Strike: reduced grace period where player could move before the target appears from 1.1 seconds to 0.5 seconds (must wait for 0.6 first)\r\n- Zir'vitar Strike: targeting time reduced by 0.5 seconds",
+                "version": "3.3.3",
+                "timestamp": 1777174771000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/3.3.3"
+            },
             {
                 "body": "## 3.3.2 (02/27/2026)\r\n### Changes\r\n- Hexacast art Furious Dissonance renamed to Aberrant Dissonance\r\n- Minor tweaks to Hexacast levelUpStand sprites\r\n- Ancient Power is now dash-cancelable after 0.15 seconds (rocks will fall back down)\r\n- Ancient Power ACTION_BLOCK dash delay during final shoot reduced from 0.25 to 0.15 seconds\r\n- AncientRockSmall/AncientRockMed trigger wait time reduced from 1.3 to 0.8 seconds\r\n- Removed the Triblader2 placeholder animation from Schneider/Luke Burning Sacrifice, Vermillion Firestorm\r\n- Removed Schneider/Luke animation sheets extra1, extra2, extra3\r\n- Deleted schneiderExtra.png, lukeExtra.png\r\n### Fixes\r\n- \"Trigger Happy\" arena triblader duel is now properly set to level 75 rather than scaling to the player's level",
                 "version": "3.3.2",
