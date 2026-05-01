@@ -5685,7 +5685,7 @@
     "mw-rando": {
         "metadataCCMod": {
             "id": "mw-rando",
-            "version": "0.8.3",
+            "version": "0.8.4",
             "title": "Multiworld randomizer",
             "description": "Client for CrossCode Archipelago Integration",
             "repository": "https://github.com/CodeTriangle/CCMultiworldRandomizer",
@@ -5708,18 +5708,30 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.8.3/CCMultiworldRandomizer-0.8.3.ccmod",
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.8.4/CCMultiworldRandomizer-0.8.4.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "2e5f4f82c965a1a9d7c4cb7b90b881fd6c1c2e02a568bbdcf131d26754e33041"
+                    "sha256": "5a00fc7c472365e2e4c8791d6f7dda455774002fed7baf570fe969088f4d85d2"
                 }
             }
         ],
-        "stars": 16,
-        "lastUpdateTimestamp": 1777108765000,
+        "stars": 17,
+        "lastUpdateTimestamp": 1777625505000,
         "releasePages": [
             {
-                "body": "## Additions\r\n\r\n* Added support for **Botanics** (@CodeTriangle):\r\n  * If enabled, acquiring all the information about each plant by collecting drops is a location.\r\n  * Enable the `botanity` option to use this feature.\r\n  * Along with this, you can also change how many plants are required to complete **Crocus Pocus** and the three intermediary locations.\r\n* Added support for the **A New Home** expansion (@kumquat-ir):\r\n  * Chests, quests, cutscenes, and shops added by the DLC are all now available as potential locations.\r\n  * Enable the `enable_dlc` option to use this feature.\r\n  * A new goal has been added (`diorbis`) that requires the player to descend Ku'lero Temple.\r\n\r\n## Migration Guide\r\n\r\nI **do not** recommend migrating to this release if you started your save file on 0.8.x or earlier. All of t",
+                "body": "## Note\r\n\r\nThis release includes everything changed in release 0.8.4 (@CodeTriangle, @buanjautista).\r\n\r\n## Fixes to Logic\r\n\r\n* Changed the region where **Vivid Puff Plants** are found to East Gaia (@CodeTriangle, #59).\r\n* Fixed an issue where, regardless of the value set by **Botanics Completion Amount**, logic would still assume that 77 plants were required for botanics completion (@CodeTriangle, CodeTriangle/Archipelago#18).",
+                "version": "0.9.0-pre.2",
+                "timestamp": 1777625505000,
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.9.0-pre.2"
+            },
+            {
+                "body": "## Changes to Mod\r\n\r\n* Correctly reference internal buffer of checks to send on reconnection (@CodeTriangle, #56).\r\n* Resend chests that are open upon reconnection to the server (@CodeTriangle, #56).\r\n\r\n## Changes to Generation\r\n\r\n* Add Mine Detector to the pool and make it required to complete **Digging Up the Past** (@CodeTriangle, #57).\r\n* Added the option **Circuit Overrides**, adds a number of **Circuit Override** items to the pool (@CodeTriangle, CodeTriangle/Archipelago#17)\r\n\r\n## Fixes to Logic\r\n\r\n* **Calzone Shop** is now considered in logic after acquiring **Pond Slums Pass** (@buanjautista, #60).\r\n* Fix an issue where the final boss room of **Grand Krys'kajo** erroneously expected two **Krys'kajo Key** items (@CodeTriangle, #58).",
+                "version": "0.8.4",
+                "timestamp": 1777622587000,
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.8.4"
+            },
+            {
+                "body": "## Additions\r\n\r\n* Added support for **Botanics** (@CodeTriangle):\r\n  * If enabled, acquiring all the information about each plant by collecting drops is a location.\r\n  * Enable the `botanity` option to use this feature.\r\n  * Along with this, you can also change how many plants are required to complete **Crocus Pocus** and the three intermediary locations.\r\n* Added support for the **A New Home** expansion (@kumquat-ir):\r\n  * Chests, quests, cutscenes, and shops added by the DLC are all now available as potential locations.\r\n  * Enable the `enable_dlc` option to use this feature.\r\n  * A new goal has been added (`diorbis`) that requires the player to descend Ku'lero Temple.\r\n\r\n## Migration Guide\r\n\r\nI **do not** recommend migrating to this release if you started your save file on 0.8.x or earlier.",
                 "version": "0.9.0-pre.1",
                 "timestamp": 1777108765000,
                 "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.9.0-pre.1"
