@@ -6395,7 +6395,7 @@
     "open-world": {
         "metadataCCMod": {
             "id": "open-world",
-            "version": "0.5.3",
+            "version": "0.5.4",
             "title": "Open World patches",
             "description": "Open World map patches for randomizer",
             "repository": "https://github.com/buanjautista/cc-open-world",
@@ -6414,16 +6414,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/buanjautista/cc-open-world/releases/download/0.5.3/CC-Open-World-v0.5.3.ccmod",
+                "url": "https://github.com/buanjautista/cc-open-world/releases/download/0.5.4/CC-Open-World-v0.5.4.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "2d07393697880f4d7a8c13c67b3efff95bf6229765330e442e6567ef47549de7"
+                    "sha256": "5bd9053938af3a36286e0e2807ada8336ed3f93bba5a918be81def94257f9ed9"
                 }
             }
         ],
         "stars": 4,
-        "lastUpdateTimestamp": 1777627558000,
+        "lastUpdateTimestamp": 1777902060000,
         "releasePages": [
+            {
+                "body": "Fix:\r\n- Vagabond Quest trigger was replaced by mistake making the quest unobtainable\r\n- Removed NPCs from Ku'lero entrance when DLC is active, and added a small Ancient Shade icon to indicate you can enter.\r\n- A Promise is a Promise 5 was not startable due to missing requirement.\r\n- Unlocked Vermillion Tower entrance when plot is after a certain point.",
+                "version": "0.5.4",
+                "timestamp": 1777902060000,
+                "url": "https://github.com/buanjautista/cc-open-world/releases/tag/0.5.4"
+            },
             {
                 "body": "New:\r\n- Calzone Shop only requires Pond Slums Pass now.\r\n- Added a sign to Guild Area entrance once you have to meet Schneider so its less prone to be missed.\r\n- Removed some current tasks from certain events (dojo entry, apollo first encounter)\r\n- Made Promise 5 and Trailblazing 5 not require the pre-reqs to see the quest / NPC (will still require for completing them)\r\n- Crocus Pocus requires Disc of Flora to be completed now (it didn't, interesting right?)\r\n- Added a small guide to the Vermillion Hidden Passage tip, marking it with a stamp in the map (can disable with Disable Open World Tips)",
                 "version": "0.5.3",
