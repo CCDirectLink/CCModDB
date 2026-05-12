@@ -468,16 +468,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/Principles1/CrackCode/releases/download/v0.1.0/CrackCode.ccmod",
+                "url": "https://github.com/Principles1/CrackCode/releases/download/v0.1.0a/CrackCode.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "e3d1fee59ebf0e30b21d8fe55e9f9bcf379808a31e3e181caab068a549420499"
+                    "sha256": "04f2d2993af0c6e8e0b6b0dd4cbf999c346896927ba9f6e791b3241683ecbff0"
                 }
             }
         ],
         "stars": 1,
-        "lastUpdateTimestamp": 1777917872000,
+        "lastUpdateTimestamp": 1778580823000,
         "releasePages": [
+            {
+                "body": "Very minor bug fix",
+                "version": "v0.1.0a",
+                "timestamp": 1778580532000,
+                "url": "https://github.com/Principles1/CrackCode/releases/tag/v0.1.0a"
+            },
             {
                 "body": "Good day, it's been a while, it was very long ago that I originally wrote this mod and I was pretty new to JS at the time, it was long overdue for an overhaul, and finally I decided to spare the time to give it exactly that.\r\n\r\nOverhauled every togglable the mod used, they should now all serve their purposes better and be much more optimized.\r\n\r\nAuto-Skip Cutscenes will nearly always continue skipping cutscenes regardless of whatever interaction they contain.\r\n\r\nSkip Arena Score Counting has been optimized and has had unnecessary sequences removed, in addition a bug where time wouldn't be saved has been resolved.\r\n\r\nShort Cinematics now work throughout the whole game, instead of only in arena, and should no longer cause any issues in the base-game outside of arena.\r\nIt is always possible I've missed some problematic map thought, if so contact me.\r\n\r\nInstant-transitions now speeds up more transitions.\r\n\r\n\r\nAdded Quick save and Combat lock button to the players menu, intended for expanding the mod's utility within the base-game, bringing more usage to the mod outside of arena.\r\n\r\n\r\nAdded patches for a few maps, which are toggled by Short Cinematics on startup, they speed up a few maps where there are tedious or waiting sequences where the player isn't in danger and is just waiting, especially if they needs to be repeated every time the player dies.\r\n\r\n\r\nAdded a thumbnail to the mod and overhauled readme.\r\n\r\n\r\nMinor bug fixes.\r\n\r\nNo more changes or additions planned, but feel free to message me with feedback or suggestions.",
                 "version": "0.1.0",
