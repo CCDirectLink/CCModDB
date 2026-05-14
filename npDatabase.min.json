@@ -6212,7 +6212,7 @@
     "nax-ccuilib": {
         "metadataCCMod": {
             "id": "nax-ccuilib",
-            "version": "1.5.5",
+            "version": "1.5.6",
             "title": "CCUILib",
             "description": "Library of additional UI elements as well as making existing ones configurable",
             "repository": "https://github.com/krypciak/nax-ccuilib",
@@ -6232,16 +6232,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/nax-ccuilib/releases/download/v1.5.5/nax-ccuilib-1.5.5.ccmod",
+                "url": "https://github.com/krypciak/nax-ccuilib/releases/download/v1.5.6/nax-ccuilib-1.5.6.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "a2e608570bef708ed75714a41453a8b39c0634d13897e7392962929d1a63e8a2"
+                    "sha256": "57842df0d7c8f7170edca9f56e4318a7808d856b3ec25f960fb71ddaee230d77"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1762289555000,
+        "lastUpdateTimestamp": 1778783362000,
         "releasePages": [
+            {
+                "body": "### Fixed\n\n- Fix quick menu edit mode activating on right click analysis menu exit",
+                "version": "1.5.6",
+                "timestamp": 1778783363000,
+                "url": "https://github.com/krypciak/nax-ccuilib/releases/tag/v1.5.6"
+            },
             {
                 "body": "### Fixed\n\n- Fix memory leak with cc-instanceinator",
                 "version": "1.5.5",
