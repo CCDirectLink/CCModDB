@@ -2532,6 +2532,25 @@
             }
         ]
     },
+    "cc-spacebar-dialogue": {
+        "metadataCCMod": {
+            "id": "cc-spacebar-dialogue",
+            "version": "1.0.0",
+            "name": "Spacebar Dialogue",
+            "description": "Allows advancing dialogue using the spacebar",
+            "poststart": "src/poststart.js"
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/lexisother/cc-spacebar-dialogue/releases/download/v1.0.0/cc-spacebar-dialogue.ccmod",
+                "source": "",
+                "hash": {
+                    "sha256": "25de191ec6e17a7b8327765060ad97bdaa1cdc3aa90cf56c7f4aaf271a9f0f52"
+                }
+            }
+        ]
+    },
     "cc-staircase-effect-fix": {
         "metadataCCMod": {
             "id": "cc-staircase-effect-fix",
