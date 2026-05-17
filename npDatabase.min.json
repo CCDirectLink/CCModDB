@@ -2562,16 +2562,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/lexisother/cc-spacebar-dialogue/releases/download/v1.0.1/cc-spacebar-dialogue.ccmod",
+                "url": "https://github.com/lexisother/cc-spacebar-dialogue/releases/download/v1.0.2/cc-spacebar-dialogue.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "6f88f199325827f244bad8f14606cda3ccf382de1faef247d3a544c5f7368377"
+                    "sha256": "bc5f1d1b3ee04773f14497a4b1045b9dea9fcbd272e035b9a8a11e36e0e5d812"
                 }
             }
         ],
         "stars": 2,
-        "lastUpdateTimestamp": 1778925353000,
+        "lastUpdateTimestamp": 1779050601000,
         "releasePages": [
+            {
+                "body": "Fix other keys no longer advancing dialogue",
+                "version": "1.0.2",
+                "timestamp": 1779050601000,
+                "url": "https://github.com/lexisother/cc-spacebar-dialogue/releases/tag/v1.0.2"
+            },
             {
                 "body": "Fixed ccmod.json",
                 "version": "1.0.1",
