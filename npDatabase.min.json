@@ -2,7 +2,7 @@
     "mw-rando": {
         "metadataCCMod": {
             "id": "mw-rando",
-            "version": "0.9.0-pre.2",
+            "version": "0.9.0-pre.3",
             "title": "Multiworld randomizer",
             "description": "Client for CrossCode Archipelago Integration",
             "repository": "https://github.com/CodeTriangle/CCMultiworldRandomizer",
@@ -25,16 +25,28 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.9.0-pre.2/CCMultiworldRandomizer-0.9.0-pre.2.ccmod",
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.9.0-pre.3/CCMultiworldRandomizer-0.9.0-pre.3.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "509ab1f7cf6db98e0c79c6596fe04aadd0a10939106d2ffcd1ebb9a3051beb7a"
+                    "sha256": "37a519165e2801ff967d04c43d0e6b0c9ac2c2b457d7c1cd95bc084c45cb1033"
                 }
             }
         ],
         "stars": 17,
-        "lastUpdateTimestamp": 1777625505000,
+        "lastUpdateTimestamp": 1779615190000,
         "releasePages": [
+            {
+                "body": "## Note\r\n\r\nThis release includes everything from 0.8.5 (@CodeTriangle)\r\n\r\n## Fixes to Logic\r\n\r\n* Changed the requirement of the quest **Salty Detox** from **Lakeside Escort** to **Rooting for Power**. (@CodeTriangle, #67)\r\n* Made **Beach Fight** require access to the first fight against Son of the East in Grand Krys'kajo. (@CodeTriangle, #67)\r\n* Added a requirement on **Azure Archipelago Pass** to: (@kumquat-ir, #62)\r\n  * **Beach Fight**\r\n  * **Trial of Ascension**\r\n  * **Spiritual Drinks**\r\n  * **Salty Detox**\r\n  * **Wrath of Goat**\r\n  * **In Cawhoofs**\r\n  * **Riches with Fridges**\r\n  * **Lost and On the Run**\r\n  * **Trouble on the Highway**\r\n  * **Tremors of the Past**\r\n  * **Wetter Work**",
+                "version": "0.9.0-pre.3",
+                "timestamp": 1779615190000,
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.9.0-pre.3"
+            },
+            {
+                "body": "## Changes to Mod\r\n\r\n* Added information about the following options to the Archipelago Info Menu: (@CodeTriangle, #69)\r\n  * **Shop Receive Mode**\r\n  * **Progressive Equipment**\r\n\r\n## Changes to Logic\r\n\r\n* Moved **Grand Krys'kajo** to the end of Gaia's Garden rather than the beginning. (@CodeTriangle, #66)\r\n* Made the quest **Gaia Defeat** require **East Gaia Pass** in addition to its current requirements. (@CodeTriangle, #66)\r\n* Made the quest **Raising the Steaks** require access to **Autumn's Fall** in addition to its current requirements. (@CodeTriangle, #66)\r\n* Made the quest **The Observatory** require **Guild Pass** instead of **Mine Pass**. (@CodeTriangle, #66).\r\n\r\n## Fixes to Mod\r\n\r\n* Fixed an issue where, when connecting to a world after having previously been connected to another world in the same play session, all of the locations from the previous world would be sent to the next world. (@CodeTriangle, #70)\r\n* Fixed an issue where, when selecting New Game+ options, the begin game button was disabled by default (@CodeTriangle, #69)\r\n* Fixed an issue where, when entering a shop with **Shop Receive Mode** set to **None**, no shop slots would be purchaseable. (@CodeTriangle, #69)",
+                "version": "0.8.5",
+                "timestamp": 1779613834000,
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.8.5"
+            },
             {
                 "body": "## Note\r\n\r\nThis release includes everything changed in release 0.8.4 (@CodeTriangle, @buanjautista).\r\n\r\n## Fixes to Logic\r\n\r\n* Changed the region where **Vivid Puff Plants** are found to East Gaia (@CodeTriangle, #59).\r\n* Fixed an issue where, regardless of the value set by **Botanics Completion Amount**, logic would still assume that 77 plants were required for botanics completion (@CodeTriangle, CodeTriangle/Archipelago#18).",
                 "version": "0.9.0-pre.2",
