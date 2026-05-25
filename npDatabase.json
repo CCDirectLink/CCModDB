@@ -7022,6 +7022,52 @@
             }
         ]
     },
+    "qt-restart-from-pause": {
+        "metadataCCMod": {
+            "id": "qt-restart-from-pause",
+            "version": "1.0.4",
+            "title": "Restart from Pause",
+            "description": "Adds a 'Restart Game' button to the pause menu.",
+            "repository": "https://github.com/QuieType/qt-restart-from-pause",
+            "tags": [
+                "QoL",
+                "dev"
+            ],
+            "authors": [
+                "QuieType"
+            ],
+            "dependencies": {
+                "nax-ccuilib": ">=1.5.0"
+            },
+            "prestart": "prestart.js"
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/QuieType/qt-restart-from-pause/releases/download/v1.0.4/qt-restart-from-pause.min.ccmod",
+                "source": "",
+                "hash": {
+                    "sha256": "20c725b96c88e4c567a8b57b1d7c039d596bcb632853604cc87a58821e3b8381"
+                }
+            }
+        ],
+        "stars": 1,
+        "lastUpdateTimestamp": 1779667919000,
+        "releasePages": [
+            {
+                "body": "Uh so this version barely adds anything. I updated one tag in the ccmod.json.",
+                "version": "1.0.4",
+                "timestamp": 1779667919000,
+                "url": "https://github.com/QuieType/qt-restart-from-pause/releases/tag/v1.0.4"
+            },
+            {
+                "body": "First release! This mod does what it does pretty unambiguously, so nothing to write here! Let me know if there's a bug or whatever.\r\n\r\nDunno why I made an optimized version, this mod is so small it doesn't actually matter. 'tis cool that it's 840 bytes though",
+                "version": "1.0.3",
+                "timestamp": 1776867501000,
+                "url": "https://github.com/QuieType/qt-restart-from-pause/releases/tag/v1.0.3"
+            }
+        ]
+    },
     "rebind-aim": {
         "metadataCCMod": {
             "id": "rebind-aim",
