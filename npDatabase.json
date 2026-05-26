@@ -2,7 +2,7 @@
     "Azure's Adjustments": {
         "metadataCCMod": {
             "id": "Azure's Adjustments",
-            "version": "1.2.0",
+            "version": "1.2.1",
             "title": "Azure's Balancing & Extras",
             "description": {
                 "en_US": "Tons of small fixes, balancing, and UI additions, made with a first playthrough in mind."
@@ -27,16 +27,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/Azure-Lazuline/azures-adjustments/releases/download/1.2.0/azures-adjustments.ccmod",
+                "url": "https://github.com/Azure-Lazuline/azures-adjustments/releases/download/1.2.1/azures-adjustments.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "872b63bbe2b26a967400c3fe9b086e190277d64ad3053a138dc0809da0191b15"
+                    "sha256": "6b730bb39b55ecb11239cca1e204b8d14c9c793e82eca93b64ca31026b6a9af5"
                 }
             }
         ],
         "stars": 6,
         "lastUpdateTimestamp": 1778431847000,
         "releasePages": [
+            {
+                "body": "- fixed a crash with trader item display, when other mods added enemies with incomplete drop tables",
+                "version": "1.2.1",
+                "timestamp": 1778431847000,
+                "url": "https://github.com/Azure-Lazuline/azures-adjustments/releases/tag/1.2.1"
+            },
             {
                 "body": "- Blade Sphere larger radius and a little more damage\r\n- added aiming line to ferrofluid ice disk\r\n- completing the DLC gives you a new special icon on the file select, similar to completing the main game\r\n- the last sliding block puzzle in Temple Mine requires one less repetition\r\n- 5 jelly room in Faj'ro Temple replaced with 3 jelly 2 shark",
                 "version": "1.2.0",
