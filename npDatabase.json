@@ -5575,7 +5575,7 @@
     "lub-summoner-frame": {
         "metadataCCMod": {
             "id": "lub-summoner-frame",
-            "version": "0.0.5",
+            "version": "0.0.6",
             "title": {
                 "en_US": "Lubkuluk's Summoner Frame"
             },
@@ -5597,16 +5597,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/lubkuluk/lub-summoner-frame/releases/download/0.0.5/lub-summoner-frame.zip",
+                "url": "https://github.com/lubkuluk/lub-summoner-frame/releases/download/0.0.6/lub-summoner-frame.zip",
                 "source": "lub-summoner-frame",
                 "hash": {
-                    "sha256": "954dd30c317530280d26179bf000eb53383cacb299f4348b4d233282a46ac1f1"
+                    "sha256": "4a52f7c13f395bf60b6ed4dc48364e450fce088c1394396a543e25676d85813c"
                 }
             }
         ],
         "stars": 0,
         "lastUpdateTimestamp": 1735059617000,
         "releasePages": [
+            {
+                "body": "Rewrote the code so that instead of targeting combatants from the player party, enemies will target combatants from parties that is NOT the enemy party, they can and will target players from OTHER and undefiend parties (test for multibakery)",
+                "version": "0.0.6",
+                "timestamp": 1735059617000,
+                "url": "https://github.com/lubkuluk/lub-summoner-frame/releases/tag/0.0.6"
+            },
             {
                 "body": "Made a small adjustment to the vanilla PvP system to ignore some rules if a variable is true",
                 "version": "0.0.5",
