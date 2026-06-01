@@ -5790,7 +5790,7 @@
     "mw-rando": {
         "metadataCCMod": {
             "id": "mw-rando",
-            "version": "0.8.5",
+            "version": "0.9.0",
             "title": "Multiworld randomizer",
             "description": "Client for CrossCode Archipelago Integration",
             "repository": "https://github.com/CodeTriangle/CCMultiworldRandomizer",
@@ -5813,20 +5813,26 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.8.5/CCMultiworldRandomizer-0.8.5.ccmod",
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.9.0/CCMultiworldRandomizer-0.9.0.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "c1fa4d272403638bc72320d74705e84ff8541e8766c703002a39adbd85fb5b89"
+                    "sha256": "7ec2b0c3515807ab5c1401ae44d39c948bb4fa0dbd574eda24d3170cb7aeb7b2"
                 }
             }
         ],
         "stars": 17,
-        "lastUpdateTimestamp": 1779615190000,
+        "lastUpdateTimestamp": 1780258410000,
         "releasePages": [
+            {
+                "body": "# Changes from 0.8.5\r\n\r\n## Additions\r\n\r\n* Added support for **Botanics** (@CodeTriangle):\r\n  * If enabled, acquiring all the information about each plant by collecting drops is a location.\r\n  * Enable the `botanity` option to use this feature.\r\n  * Along with this, you can also change how many plants are required to complete **Crocus Pocus** and the three intermediary locations.\r\n* Added support for the **A New Home** expansion (@kumquat-ir):\r\n  * Chests, quests, cutscenes, and shops added by the DLC are all now available as potential locations.\r\n  * Enable the `enable_dlc` option to use this feature.\r\n  * A new goal has been added (`diorbis`) that requires the player to descend Ku'lero Temple.\r\n\r\n# Changes from 0.9.0 Prerelease 3\r\n\r\n## Fixes to Logic\r\n\r\n* Added a requirement for **Azure Archipelago Pass** to **Trouble on the Highway**\r\n\r\n## Additions\r\n\r\n* Added **Cross Gear** shop slots to **Homestedt Weapons**.\r\n\r\n# Migration Guide\r\n\r\nThis is the new stable version. All players should update to 0.9.0, regardless of whether their worlds were generated on 0.8 or a 0.9 prerelease.",
+                "version": "0.9.0",
+                "timestamp": 1780258410000,
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.9.0"
+            },
             {
                 "body": "## Note\r\n\r\nThis release includes everything from 0.8.5 (@CodeTriangle)\r\n\r\n## Fixes to Logic\r\n\r\n* Changed the requirement of the quest **Salty Detox** from **Lakeside Escort** to **Rooting for Power**. (@CodeTriangle, #67)\r\n* Made **Beach Fight** require access to the first fight against Son of the East in Grand Krys'kajo. (@CodeTriangle, #67)\r\n* Added a requirement on **Azure Archipelago Pass** to: (@kumquat-ir, #62)\r\n  * **Beach Fight**\r\n  * **Trial of Ascension**\r\n  * **Spiritual Drinks**\r\n  * **Salty Detox**\r\n  * **Wrath of Goat**\r\n  * **In Cawhoofs**\r\n  * **Riches with Fridges**\r\n  * **Lost and On the Run**\r\n  * **Trouble on the Highway**\r\n  * **Tremors of the Past**\r\n  * **Wetter Work**",
                 "version": "0.9.0-pre.3",
-                "timestamp": 1779613333000,
+                "timestamp": 1779699702000,
                 "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.9.0-pre.3"
             },
             {
