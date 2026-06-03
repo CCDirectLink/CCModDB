@@ -5790,7 +5790,7 @@
     "mw-rando": {
         "metadataCCMod": {
             "id": "mw-rando",
-            "version": "0.9.0",
+            "version": "0.9.1",
             "title": "Multiworld randomizer",
             "description": "Client for CrossCode Archipelago Integration",
             "repository": "https://github.com/CodeTriangle/CCMultiworldRandomizer",
@@ -5813,16 +5813,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.9.0/CCMultiworldRandomizer-0.9.0.ccmod",
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.9.1/CCMultiworldRandomizer-0.9.1.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "7ec2b0c3515807ab5c1401ae44d39c948bb4fa0dbd574eda24d3170cb7aeb7b2"
+                    "sha256": "4f5b66b055de34c574d1510efb8d54607e216b049b44f9c78275987f92018043"
                 }
             }
         ],
         "stars": 17,
-        "lastUpdateTimestamp": 1780258410000,
+        "lastUpdateTimestamp": 1780467324000,
         "releasePages": [
+            {
+                "body": "## Changes to Options\r\n\r\n* Added the following new options (@Bluepinkdragon):\r\n  * **Chest Reveal**:  If enabled, shows the category of all chests without having to reach the room chests are in first.\r\n\r\n## Fixes to Logic\r\n\r\n* Fixed an issue where, when **Allow Booster Grinding** was enabled alongside **Enable DLC**, it would be impossible to grind certain areas because of a lack of **Everlasting Amber** (@CodeTriangle).\r\n* Fixed an issue where, when **Shop Receive Mode** was set to **per_shop** and **Enable DLC** was off, certain items in Rhombus Weapons would fail to place (@CodeTriangle).",
+                "version": "0.9.1",
+                "timestamp": 1780467324000,
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.9.1"
+            },
             {
                 "body": "# Changes from 0.8.5\r\n\r\n## Additions\r\n\r\n* Added support for **Botanics** (@CodeTriangle):\r\n  * If enabled, acquiring all the information about each plant by collecting drops is a location.\r\n  * Enable the `botanity` option to use this feature.\r\n  * Along with this, you can also change how many plants are required to complete **Crocus Pocus** and the three intermediary locations.\r\n* Added support for the **A New Home** expansion (@kumquat-ir):\r\n  * Chests, quests, cutscenes, and shops added by the DLC are all now available as potential locations.\r\n  * Enable the `enable_dlc` option to use this feature.\r\n  * A new goal has been added (`diorbis`) that requires the player to descend Ku'lero Temple.\r\n\r\n# Changes from 0.9.0 Prerelease 3\r\n\r\n## Fixes to Logic\r\n\r\n* Added a requirement for **Azure Archipelago Pass** to **Trouble on the Highway**\r\n\r\n## Additions\r\n\r\n* Added **Cross Gear** shop slots to **Homestedt Weapons**.\r\n\r\n# Migration Guide\r\n\r\nThis is the new stable version. All players should update to 0.9.0, regardless of whether their worlds were generated on 0.8 or a 0.9 prerelease.",
                 "version": "0.9.0",
