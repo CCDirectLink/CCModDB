@@ -5790,7 +5790,7 @@
     "mw-rando": {
         "metadataCCMod": {
             "id": "mw-rando",
-            "version": "0.9.1",
+            "version": "0.9.2",
             "title": "Multiworld randomizer",
             "description": "Client for CrossCode Archipelago Integration",
             "repository": "https://github.com/CodeTriangle/CCMultiworldRandomizer",
@@ -5813,16 +5813,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.9.1/CCMultiworldRandomizer-0.9.1.ccmod",
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.9.2/CCMultiworldRandomizer-0.9.2.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "4f5b66b055de34c574d1510efb8d54607e216b049b44f9c78275987f92018043"
+                    "sha256": "0b77014f8a4dfc62c15cbe2653934365f24581d29fbabd54d2edf70b057ee455"
                 }
             }
         ],
-        "stars": 17,
-        "lastUpdateTimestamp": 1780467324000,
+        "stars": 18,
+        "lastUpdateTimestamp": 1781118400000,
         "releasePages": [
+            {
+                "body": "## Fixes to Mod\r\n\r\n* Fixed an issue in bundling where certain files would not be found in the archive (@CodeTriangle, #75).\r\n",
+                "version": "0.9.2",
+                "timestamp": 1781118400000,
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.9.2"
+            },
             {
                 "body": "## Changes to Options\r\n\r\n* Added the following new options (@Bluepinkdragon):\r\n  * **Chest Reveal**:  If enabled, shows the category of all chests without having to reach the room chests are in first.\r\n\r\n## Fixes to Logic\r\n\r\n* Fixed an issue where, when **Allow Booster Grinding** was enabled alongside **Enable DLC**, it would be impossible to grind certain areas because of a lack of **Everlasting Amber** (@CodeTriangle).\r\n* Fixed an issue where, when **Shop Receive Mode** was set to **per_shop** and **Enable DLC** was off, certain items in Rhombus Weapons would fail to place (@CodeTriangle).",
                 "version": "0.9.1",
