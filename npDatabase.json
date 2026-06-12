@@ -7588,6 +7588,40 @@
             }
         ]
     },
+    "tips-and-tricks": {
+        "metadataCCMod": {
+            "id": "tips-and-tricks",
+            "version": "0.1.0",
+            "title": "Tips and Tricks",
+            "description": "An extensible framework for displaying mod-specific tips and tricks",
+            "repository": "https://github.com/CodeTriangle/cc-tips-and-tricks",
+            "tags": [
+                "QoL"
+            ],
+            "authors": "CodeTriangle",
+            "plugin": "plugin.js"
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/CodeTriangle/cc-tips-and-tricks/releases/download/0.1.0/tips-and-tricks.ccmod",
+                "source": "",
+                "hash": {
+                    "sha256": "0041e92c2ca92eadc1735bcff37a5f2e58f8837d56cf1d674e6e95055a066f50"
+                }
+            }
+        ],
+        "stars": 1,
+        "lastUpdateTimestamp": 1781255245000,
+        "releasePages": [
+            {
+                "body": "Initial release; see readme for capabilities\n",
+                "version": "0.1.0",
+                "timestamp": 1781255245000,
+                "url": "https://github.com/CodeTriangle/cc-tips-and-tricks/releases/tag/0.1.0"
+            }
+        ]
+    },
     "uwuifier": {
         "metadataCCMod": {
             "id": "uwuifier",
