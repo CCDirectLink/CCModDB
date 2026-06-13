@@ -5694,6 +5694,40 @@
             }
         ]
     },
+    "marquee": {
+        "metadataCCMod": {
+            "id": "marquee",
+            "version": "0.1.0",
+            "title": "Marquee",
+            "description": "A scrolling marquee GUI element",
+            "repository": "https://github.com/CodeTriangle/cc-marquee",
+            "tags": [
+                "library"
+            ],
+            "authors": "CodeTriangle",
+            "plugin": "plugin.js"
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/CodeTriangle/cc-marquee/releases/download/0.1.0/marquee.ccmod",
+                "source": "",
+                "hash": {
+                    "sha256": "792dca7fd51d6a2700a09bde844d6acca31aeb67c141a3792dee0773426e0536"
+                }
+            }
+        ],
+        "stars": 0,
+        "lastUpdateTimestamp": 1781318741000,
+        "releasePages": [
+            {
+                "body": "Initial release; see readme for details",
+                "version": "0.1.0",
+                "timestamp": 1781318741000,
+                "url": "https://github.com/CodeTriangle/cc-marquee/releases/tag/0.1.0"
+            }
+        ]
+    },
     "menu-ui-replacer": {
         "metadataCCMod": {
             "id": "menu-ui-replacer",
