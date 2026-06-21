@@ -7916,7 +7916,7 @@
     "xenons-playable-classes": {
         "metadataCCMod": {
             "id": "xenons-playable-classes",
-            "version": "3.3.3",
+            "version": "3.3.4",
             "title": {
                 "en_US": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
                 "de_DE": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
@@ -7967,16 +7967,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/3.3.3.zip",
-                "source": "xenons-playable-classes-3.3.3",
+                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/3.3.4.zip",
+                "source": "xenons-playable-classes-3.3.4",
                 "hash": {
-                    "sha256": "b334449f5a5420edfaf4d1c0be0b605e95f50738ea24e6022d6b16c6e9e0d325"
+                    "sha256": "abdafc6de98cdec8f8e31b2110965db2209495c617460e0907d9c3508917f7cd"
                 }
             }
         ],
-        "stars": 32,
-        "lastUpdateTimestamp": 1777174771000,
+        "stars": 33,
+        "lastUpdateTimestamp": 1782008334000,
         "releasePages": [
+            {
+                "body": "## 3.3.4 (06/20/2026)\r\n### New Content\r\n- Added map \\xpc\\bonus\\map-editor-thumbnail to unused content room\r\n- Added \"bouncy\" joke base throwing attack as Lea/Hexacast custom skill\r\n### Changes\r\n- Hexacast art Aberrant Dissonance renamed to Aberrant Onslaught\r\n- The \"spawn element turret\" option in the art-testing map now spawns it with a random element\r\n- Added triangle particles to the projectile trail effect for Arcing Fae and Wave Mortar\r\n- Added triangle shockwave effects to the explosions of Arcing Fae and Wave Mortar\r\n- Added a sound effect to Triblader effect spikeBallShoot\r\n- Increased sound volume and variance for effect triProjetileBounce\r\n- Renamed proxy bounceOrb to arcingFae\r\n- Renamed effect frobbitLandLight to arcingFaeFinalExplode\r\n- Replaced all player.element conditions in base throw/melee custom skills with ELEMENT_MODE combat conditions\r\n- Added Z=-8 offset to amberCard2 hitboxes\r\n### Balance\r\n- Triblader Lightning Strike can now be dash-canceled after 0.4 seconds instead of 0.5\r\n- Proxy aberrantCardExplosion damageFactor reduced from 1.10 to 1.0\r\n- Crystal Carnage proxy hailSeeker3 random delay before shooting hailBullet3 increased fro 0-0.75 to 0-1\r\n- Amber Hex proxy amberCard2 looping hitbox damageFactor increased from 1.0 to 1.1",
+                "version": "3.3.4",
+                "timestamp": 1782008334000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/3.3.4"
+            },
             {
                 "body": "## 3.3.3 (04/25/2026)\r\n### New Content\r\n- Patches a return teleporter to XPC's hideout at the entrance of Autumn's Terminus if Autumn's Genesis is installed\r\n- Added multibakery slower, weaker version of Hexacast fireballSmall proxy with steerDegree of 0.30 instead of 0.55, used during multiplayer pvp (tmp.xpcDisableHoming)\r\n- Added a sign option to spawn an element turret in the XPC art testing room\r\n### Changes\r\n- XPC mod teleporter to Autumn's Terminus now links to XPC TeleportField instead of the map entrance\r\n- Added the timeConnect property to proxy dissonanceCard\r\n- Removed DETATCH_TIME_PARENT from proxy dissonanceCardExplosion\r\n- Added rock crater effects to Faj'ro Flush and Calamity Beacon\r\n- Brittle Barrier contact damage now categorized as RANGED_DMG (previously was uncategorized)\r\n- Reduced crystalCarnageCard suction duration from 1.8 to 1.2\r\n- Effect crystalCarnageSuction loop timing adjusted\r\n- Reduced Zir'vitar Strike delay after initial dash by 0.1 second\r\n- Added ground dust effects to Calamity Beacon's jump\r\n- Reduced audio volume of mc-exp/mc-hit sound effects in Meteor Flare and Meteor Storm\r\n- Added a maxTime failsafe to Spectral Legion waveDummy3 activation in case the player dash is interrupted\r\n- Improved effect stormChaserCardActivate\r\n- Increased darkness fadeIn duration for effect stormChaserCenterImpact\r\n- Edited rock crater sprites to be slightly more transparent\r\n### Fixes\r\n- Fixed missing crystalCarnageHailActive trigger, hailSeeker3 proxies should activate sooner in Crystal Carnage\r\n- Fixed all rock crater particles being able to render in front of entities by adding the gfxOffset property\r\n- Fixed broken SCREEN_FLASH in effect stormChaserCardActivate\r\n- Fixed Triblader Soul Shatter having extra SET_HIT_STABLE: MASSIVE, now it just uses the HEAVY step at the start\r\n- Shock Surge no longer grants the neutralization property when combat.cnt.arid/element-turret >= 1\r\n- Combat arts able to bypass element turrets downgraded from MASSIVE hit stability to HEAVY when combat.cnt.arid/element-turret >= 1\r\n  * Blizzard Rush\r\n  * Ashen Frenzy\r\n  * Shock Surge\r\n  * Celestial Cohort\r\n  * Azure Charge (includes custom skill variants)\r\n  * Gleaming Surge (includes custom skill variants)\r\n  * Frost Rupture (includes custom skill variants)\r\n  * Frigid Hurricane (includes custom skill and enemy variants)\r\n  * Avalanche Assault (includes custom skill variants)\r\n  * Trailblazer (includes custom skill variants)\r\n  * Spectral Legion (includes custom skill and enemy variants)\r\n### Balance\r\n- Aberrant Dissonance now applies a 60% speed slow motion effect (player unaffected) during the first three volleys\r\n- Proxy dissonanceCardExplosion damageFactor increased from 0.9 to 1.10\r\n- Brittle Barrier expiration projectiles (hailBullet1Weak) damageFactor increased from 0.4 to 0.6\r\n- Brittle Barrier proxy brittleBarrierHail contact damageFactor increased from 0.08 to 0.10\r\n- Frozen Fortress proxy fortressHail contact damageFactor increased from 0.12 to 0.225\r\n- Frozen Fortress ending hail explosion damageFactor increased from 1.0 to 1.5\r\n- Crystal Carnage explosion when hitting a wall or timing out damageFactor increased from 4.75 to 8.5\r\n- Meteor Storm proxy meteorMed damageFactor increased from 3.75 to 4.25, shadowflame version increased from 4.5 to 5.25\r\n- Triblader Fire Saw hit stability downgraded from MASSIVE to HEAVY\r\n- Triblader Spectral Legion hit stability downgraded from MASSIVE to HEAVY during initial chargeup\r\n- Zir'vitar Strike: reduced grace period where player could move before the target appears from 1.1 seconds to 0.5 seconds (must wait for 0.6 first)\r\n- Zir'vitar Strike: targeting time reduced by 0.5 seconds",
                 "version": "3.3.3",
@@ -7994,6 +8000,12 @@
                 "version": "3.3.1",
                 "timestamp": 1771753782000,
                 "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/3.3.1"
+            },
+            {
+                "body": "## 3.3.0 (02/22/2026)\r\n### New Content\r\n- Added inaccessible SHOW_SIDE_MSG event in art-testing map file\r\n- Added sprites for Triblader-Lea animations: sit, sitFaceUpRight, sitFaceDownLeft, floatLab\r\n- Added Triblader-Lea, Schneider, Luke, Hexacast1/2/3 support for events arena-end-round, arena-new-record\r\n- Added Hexacast1/2/3 new animations for levelUpPre, levelUpStand (for arena victory only)\r\n- Added Hexacast1/2/3 new animations for levelUpPreJump, levelUpJump (used only in a few vanilla cutscenes) \r\n### Changes\r\n- Shortened Wave Recall, Heal Card, and Stasis Rune descriptions to make them fit inside the status screen textbox\r\n- Added CIRCLE_BIG_WAVE_NOGUI particles to effect dissonanceDetonationBoom\r\n- Added sword to Triblader-Lea battleDamage animation frames (used for Bruning Sacrifice)\r\n- Shadowflame Sorcery standard melee attacks now travel further forward to match knockback on enemies (speed 125 to 175)\r\n- Shadowflame Sorcery standard melee finisher move speed increased from 200 to 250\r\n### Fixes\r\n- Fixed outdated Hail Spears description\r\n- Fixed typo in hideout-lobby NPC dialogue\r\n- Virulent Corruption now properly has MELEE_DMG label and skillBonus for all damage sources\r\n### Balance\r\n- Furious Dissonance cone of fire reduced from 0.01 to 0.005 (it is now twice as accurate)\r\n- Essence Steal card impact damageFactor increased from 0.5 to 2.75\r\n- Lightning Hex now activates slow motion for everyone except itself and the player while charging\r\n- Ether Singularity damageFactor increased from 5.5/4.5 to 6.0/5.0",
+                "version": "3.3.0",
+                "timestamp": 1771752779000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/3.3.0"
             },
             {
                 "body": "## 3.2.1 (02/08/2026)\r\n### New Content\r\n- Added floatEyeClosed animation for Triblader2/3/4/5 and Triblader-Lea (for vanilla cutscenes)\r\n### Changes\r\n- Renamed Hexacast animation floatEyesClosed to floatEyeClosed to match vanilla standard\r\n- Changed Triblader2/3/4/5 animations in element unlock map patches to use floatSword and landOnGround\r\n- Triblader2/3/4/5 now shows battleDamage animation in event arena-player-death-pre",
