@@ -7916,7 +7916,7 @@
     "xenons-playable-classes": {
         "metadataCCMod": {
             "id": "xenons-playable-classes",
-            "version": "3.3.4",
+            "version": "3.4.0",
             "title": {
                 "en_US": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
                 "de_DE": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
@@ -7967,16 +7967,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/3.3.4.zip",
-                "source": "xenons-playable-classes-3.3.4",
+                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/3.4.0.zip",
+                "source": "xenons-playable-classes-3.4.0",
                 "hash": {
-                    "sha256": "abdafc6de98cdec8f8e31b2110965db2209495c617460e0907d9c3508917f7cd"
+                    "sha256": "9e49b184b970958f3f5db4e4cab12ff3f90ec014fcb56c497b9905872ff90013"
                 }
             }
         ],
         "stars": 33,
-        "lastUpdateTimestamp": 1782008334000,
+        "lastUpdateTimestamp": 1782592619000,
         "releasePages": [
+            {
+                "body": "## 3.4.0 (06/27/2026)\r\n### New Content\r\n- New Triblader combat art: Flaming Flurry (Heat Melee Lv.2A), Double Whirl converted to custom skill\r\n### Changes\r\n- Triblader pvp enemies now use Flaming Flurry instead of Double Whirl\r\n- Triblader pvp enemies now have a chance to follow up default throws with melee arts if target is close during rangedSpecial strats\r\n- Increased FADE_COLOR fadeIn duration for effect heatSubChargeTriFast\r\n- Slightly increased SCREEN_FLASH intensity of effect doubleWhirlShoot\r\n- Added SCREEN_FLASH to effects ca-sweep and ca-sweepRev\r\n- Lightning Strike proxy shockSpecial now uses fixPos for the shockBolt effect\r\n- Slightly increased audio volume of mc-exp/mc-hit sound effects in Meteor Flare and Meteor Storm\r\n- Triblader Fire Whirl now uses custom effect fireWhirlSweepTri instead of vanilla effect mediumSweep\r\n- Increased HEAT_SHADOW particle size in combat.tribladerXPC effect fireWhirl\r\n### Balance\r\n- Lightning Strike ending delay reduced from 0.72 seconds to 0.55 seconds\r\n- Scorching Rays multi-hit segment damageFactor increased from 0.58 to 0.8\r\n- Scorching Rays multi-hit segment status factor increased from 0 to 0.6\r\n- Scorching Rays multi-hit segment strength increased from LIGHT to MEDIUM\r\n- Scorching Rays initial TACKLE hit damageFactor increased from 2.0 to 4.0",
+                "version": "3.4.0",
+                "timestamp": 1782592619000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/3.4.0"
+            },
             {
                 "body": "## 3.3.4 (06/20/2026)\r\n### New Content\r\n- Added map \\xpc\\bonus\\map-editor-thumbnail to unused content room\r\n- Added \"bouncy\" joke base throwing attack as Lea/Hexacast custom skill\r\n### Changes\r\n- Hexacast art Aberrant Dissonance renamed to Aberrant Onslaught\r\n- The \"spawn element turret\" option in the art-testing map now spawns it with a random element\r\n- Added triangle particles to the projectile trail effect for Arcing Fae and Wave Mortar\r\n- Added triangle shockwave effects to the explosions of Arcing Fae and Wave Mortar\r\n- Added a sound effect to Triblader effect spikeBallShoot\r\n- Increased sound volume and variance for effect triProjetileBounce\r\n- Renamed proxy bounceOrb to arcingFae\r\n- Renamed effect frobbitLandLight to arcingFaeFinalExplode\r\n- Replaced all player.element conditions in base throw/melee custom skills with ELEMENT_MODE combat conditions\r\n- Added Z=-8 offset to amberCard2 hitboxes\r\n### Balance\r\n- Triblader Lightning Strike can now be dash-canceled after 0.4 seconds instead of 0.5\r\n- Proxy aberrantCardExplosion damageFactor reduced from 1.10 to 1.0\r\n- Crystal Carnage proxy hailSeeker3 random delay before shooting hailBullet3 increased fro 0-0.75 to 0-1\r\n- Amber Hex proxy amberCard2 looping hitbox damageFactor increased from 1.0 to 1.1",
                 "version": "3.3.4",
