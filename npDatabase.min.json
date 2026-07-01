@@ -2083,7 +2083,7 @@
     "cc-extra-dialogue": {
         "metadataCCMod": {
             "id": "cc-extra-dialogue",
-            "version": "1.0.2",
+            "version": "1.0.3",
             "title": "CrossCode Extra Dialogue",
             "description": "Adds more lore-friendly dialogue for party members.",
             "repository": "https://github.com/krypciak/cc-extra-dialogue",
@@ -2099,15 +2099,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/cc-extra-dialogue/releases/download/v1.0.2/cc-extra-dialogue.ccmod",
+                "url": "https://github.com/krypciak/cc-extra-dialogue/releases/download/v1.0.3/cc-extra-dialogue.ccmod",
+                "source": "",
                 "hash": {
-                    "sha256": "a86d29a68960d9b71be1c47bcfea104ac050303f2a8d6bf21fa43f8336c122fd"
+                    "sha256": "9e133ef53cc814c41edb7d7e807d13124ddec460a10cc5a22def928e739b34cf"
                 }
             }
         ],
-        "stars": 0,
-        "lastUpdateTimestamp": 1720793527000,
+        "stars": 9,
+        "lastUpdateTimestamp": 1782907555000,
         "releasePages": [
+            {
+                "body": "- Fix typos and clean up some language (author: QuieType)\r\n- Fix typos (author: krypek)",
+                "version": "1.0.3",
+                "timestamp": 1782907555000,
+                "url": "https://github.com/krypciak/cc-extra-dialogue/releases/tag/v1.0.3"
+            },
             {
                 "body": "",
                 "version": "1.0.2",
