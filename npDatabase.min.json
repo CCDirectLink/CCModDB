@@ -5477,38 +5477,36 @@
     "lub-barrier-gui": {
         "metadataCCMod": {
             "id": "lub-barrier-gui",
-            "version": "0.0.3",
-            "title": {
-                "en_US": "Lubkuluk's Barrier GUI"
-            },
-            "description": {
-                "en_US": "A mod that implements a code modify to hp bar for barriers"
-            },
+            "version": "0.0.4",
+            "title": "DEPRECATED - Lubkuluk's Barrier GUI",
+            "description": "Unused dependency, please uninstall me",
             "authors": [
                 "Lubkuluk"
             ],
             "tags": [
                 "library"
             ],
-            "repository": "https://github.com/lubkuluk/lub-barrier-gui",
-            "prestart": "prestart.js",
-            "dependencies": {
-                "Simplify": ">=2.12.1"
-            }
+            "repository": "https://github.com/lubkuluk/lub-barrier-gui"
         },
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/lubkuluk/lub-barrier-gui/releases/download/0.0.3/lub-barrier-gui.zip",
+                "url": "https://github.com/lubkuluk/lub-barrier-gui/releases/download/0.0.4/lub-barrier-gui.zip",
                 "source": "lub-barrier-gui",
                 "hash": {
-                    "sha256": "71b77eef2658faf6431a20f434a152448591dee2bbeea8f6e5ac843eff70179f"
+                    "sha256": "141f19bf773659ac19d0b7aa8565b99a913afa1d504b7e41302bdfd85a9b8b75"
                 }
             }
         ],
         "stars": 0,
         "lastUpdateTimestamp": 1740480632000,
         "releasePages": [
+            {
+                "body": "-## This mod is now depracted, the update removes the existing code to ensure stability and prevent crashes, please uninstall this mod",
+                "version": "0.0.4",
+                "timestamp": 1740480632000,
+                "url": "https://github.com/lubkuluk/lub-barrier-gui/releases/tag/0.0.4"
+            },
             {
                 "body": "## Changes\r\n\r\n- Changed how the internal variable interaction with the gui works\r\n- Changed how the GUI is displayed",
                 "version": "0.0.3",
