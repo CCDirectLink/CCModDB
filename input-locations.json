@@ -106,5 +106,6 @@
     { "url": "https://github.com/QuieType/qt-restart-from-pause/releases/download/v1.0.4/qt-restart-from-pause.min.ccmod", "source": "" },
     { "url": "https://github.com/CodeTriangle/cc-tips-and-tricks/releases/download/0.1.0/tips-and-tricks.ccmod", "source": "" },
     { "url": "https://github.com/CodeTriangle/cc-marquee/releases/download/0.1.0/marquee.ccmod", "source": "" },
-    { "url": "https://github.com/QuieType/qt-refund-circuits/releases/download/v1.0.0/qt-refund-circuits.ccmod", "source": "" }
+    { "url": "https://github.com/QuieType/qt-refund-circuits/releases/download/v1.0.0/qt-refund-circuits.ccmod", "source": "" },
+    { "url": "https://github.com/fatetrait/crosscode-shadow-riposte-sbbf-mod/releases/download/1.0.1/shadow_riposte.ccmod", "source": "" }
 ]
