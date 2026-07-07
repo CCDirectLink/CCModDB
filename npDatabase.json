@@ -7110,6 +7110,43 @@
             }
         ]
     },
+    "qt-refund-circuits": {
+        "metadataCCMod": {
+            "id": "qt-refund-circuits",
+            "version": "1.0.0",
+            "title": "Refund Circuits",
+            "description": "Allows refunding cp and undoing circuit purchases (without the choice of fully editing trees), using code copied from EpicYoshiMaster's mod.",
+            "repository": "https://github.com/quietype/qt-refund-circuits",
+            "authors": [
+                "EpicYoshiMaster",
+                "QuieType"
+            ],
+            "tags": [
+                "QoL"
+            ],
+            "prestart": "prestart.js"
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/QuieType/qt-refund-circuits/releases/download/v1.0.0/qt-refund-circuits.ccmod",
+                "source": "",
+                "hash": {
+                    "sha256": "f9f31ddf2d6d73b869d85ff413d2b9d78b94f4a1234162ed58e3b79c093ec575"
+                }
+            }
+        ],
+        "stars": 0,
+        "lastUpdateTimestamp": 1783398416000,
+        "releasePages": [
+            {
+                "body": "Well, the mod exists now, which is always good news.\r\n\r\nRelease Notes:\r\n - Most functionality copied from yoshi-open-circuits\r\n - In expo-space after the temple mine, added a line to that cutscene saying that circuit resets are now useless.\r\n - Wrote a README\r\n\r\nI don't know why I persist in making minified and not-minified versions. If anyone wants a dev copy, they can use the source code zip instead of the ccmod. And the difference is 3KB, because %98 of the space comes from the map file anyway.",
+                "version": "1.0.0",
+                "timestamp": 1783397683000,
+                "url": "https://github.com/QuieType/qt-refund-circuits/releases/tag/v1.0.0"
+            }
+        ]
+    },
     "qt-restart-from-pause": {
         "metadataCCMod": {
             "id": "qt-restart-from-pause",
