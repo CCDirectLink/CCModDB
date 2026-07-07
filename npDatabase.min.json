@@ -7315,6 +7315,49 @@
             }
         ]
     },
+    "shadowriposte": {
+        "metadataCCMod": {
+            "id": "shadowriposte",
+            "title": "Shadow Riposte Mod",
+            "version": "1.0.1",
+            "description": "Changes your guard/perfectguard to shadowriposte. Purely visual...INSIGNIFICANT CHEATER, ENDING OF DAYS, SHADOW RIPOTSE",
+            "icons": {
+                "24": "icon-24.png"
+            },
+            "authors": "fatetraitor",
+            "tags": [
+                "cosmetic",
+                "fun"
+            ],
+            "repository": "https://github.com/fatetrait/crosscode-shadow-riposte-sbbf-mod"
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/fatetrait/crosscode-shadow-riposte-sbbf-mod/releases/download/1.0.1/shadow_riposte.ccmod",
+                "source": "",
+                "hash": {
+                    "sha256": "cd95ef108fdfc6be86d2fc5bda7a1dca35b5b8449c40a332bd38eb8a0c76f90f"
+                }
+            }
+        ],
+        "stars": 0,
+        "lastUpdateTimestamp": 1783409766000,
+        "releasePages": [
+            {
+                "body": "fixed the text not showing up on guard/perfect guard",
+                "version": "1.0.1",
+                "timestamp": 1783389833000,
+                "url": "https://github.com/fatetrait/crosscode-shadow-riposte-sbbf-mod/releases/tag/1.0.1"
+            },
+            {
+                "body": "## Requirements\r\n* [CCLoader](https://github.com/CCDirectLink/CCLoader/releases/latest) (Download `Source code (zip)`)\r\nthen drag the ccmod file into your game folder: CrossCode/assets/mods",
+                "version": "1.0.0",
+                "timestamp": 1783389592000,
+                "url": "https://github.com/fatetrait/crosscode-shadow-riposte-sbbf-mod/releases/tag/1.0.0"
+            }
+        ]
+    },
     "spin-to-win": {
         "metadataCCMod": {
             "id": "spin-to-win",
