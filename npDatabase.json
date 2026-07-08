@@ -658,5 +658,54 @@
                 "url": "https://github.com/buanjautista/cc-open-world/releases/tag/0.1.3"
             }
         ]
+    },
+    "qt-starter-pack": {
+        "metadataCCMod": {
+            "id": "qt-starter-pack",
+            "version": "1.0.0",
+            "title": "Mod Starter Pack",
+            "description": "A collection of tweaks and QoL mods that minimally change the game's core experience, geared for new players. Select \\c[3]Visit Repository\\c[0] for more information.",
+            "repository": "https://github.com/quietype/qt-starter-pack",
+            "authors": [
+                "QuieType"
+            ],
+            "tags": [
+                "QoL"
+            ],
+            "dependencies": {
+                "New game++": ">=1.4.0",
+                "Azure's Adjustments": ">=1.2.0",
+                "el-tweaks": ">=0.8.1",
+                "Named-Saves": ">=1.0.0",
+                "cc-discord": ">=1.0.2",
+                "cc-extra-dialogue": ">=1.0.3",
+                "cc-fancy-crash": ">=1.1.0",
+                "dungeon-revisits": ">=1.0.6",
+                "junolea": ">=1.0.0",
+                "load-from-pause": ">=1.1.0",
+                "world-map-overhaul": ">=1.1.2",
+                "qt-refund-circuits": ">=1.0.0"
+            }
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/QuieType/qt-starter-pack/releases/download/v1.0.0/qt-starter-pack.min.ccmod",
+                "source": "",
+                "hash": {
+                    "sha256": "e2a8c7749225731082a6b12ba58eca23675ca48204c1d3939c9230cc8eb66468"
+                }
+            }
+        ],
+        "stars": 1,
+        "lastUpdateTimestamp": 1783472837000,
+        "releasePages": [
+            {
+                "body": "Well, this is done too. Nice. Now I have to go back to debugging custom puzzle torches that behave wrong for no reason. Yay.",
+                "version": "1.0.0",
+                "timestamp": 1783472837000,
+                "url": "https://github.com/QuieType/qt-starter-pack/releases/tag/v1.0.0"
+            }
+        ]
     }
 }
