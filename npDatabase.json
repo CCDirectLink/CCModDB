@@ -6922,6 +6922,62 @@
             }
         ]
     },
+    "playable-apollo": {
+        "metadataCCMod": {
+            "id": "playable-apollo",
+            "version": "1.0.0",
+            "title": {
+                "en_US": "Playable Apollo",
+                "de_DE": "Playable Apollo",
+                "fr_FR": "Playable Apollo",
+                "zh_CN": "Playable Apollo",
+                "zh_TW": "Playable Apollo",
+                "ja_JP": "Playable Apollo",
+                "ko_KR": "Playable Apollo"
+            },
+            "description": {
+                "en_US": "Adds support for all combat arts to Apollo",
+                "de_DE": "Adds support for all combat arts to Apollo",
+                "fr_FR": "Adds support for all combat arts to Apollo",
+                "zh_CN": "Adds support for all combat arts to Apollo",
+                "zh_TW": "Adds support for all combat arts to Apollo",
+                "ja_JP": "Adds support for all combat arts to Apollo",
+                "ko_KR": "Adds support for all combat arts to Apollo"
+            },
+            "icons": {
+                "24": "icon.png"
+            },
+            "repository": "https://github.com/XenonA7/playable-apollo",
+            "tags": [
+                "player character",
+                "party member"
+            ],
+            "authors": [
+                "XenonA7"
+            ],
+            "dependencies": {}
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/XenonA7/playable-apollo/archive/refs/tags/1.0.0.zip",
+                "source": "playable-apollo-1.0.0",
+                "hash": {
+                    "sha256": "eb2aeafcc3980a3ee3b9417b8c098172724db5fe2e54f3e71fae0ffba516bcbe"
+                }
+            }
+        ],
+        "stars": 0,
+        "lastUpdateTimestamp": 1783756857000,
+        "releasePages": [
+            {
+                "body": "## 1.0.0 (07/11/2026)\r\n- Initial release\r\n",
+                "version": "1.0.0",
+                "timestamp": 1783756857000,
+                "url": "https://github.com/XenonA7/playable-apollo/releases/tag/1.0.0"
+            }
+        ]
+    },
     "player-clone": {
         "metadataCCMod": {
             "id": "player-clone",
