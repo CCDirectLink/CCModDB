@@ -8009,7 +8009,7 @@
     "xenons-playable-classes": {
         "metadataCCMod": {
             "id": "xenons-playable-classes",
-            "version": "3.5.1",
+            "version": "3.5.2",
             "title": {
                 "en_US": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
                 "de_DE": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
@@ -8060,16 +8060,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/3.5.1.zip",
-                "source": "xenons-playable-classes-3.5.1",
+                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/3.5.2.zip",
+                "source": "xenons-playable-classes-3.5.2",
                 "hash": {
-                    "sha256": "ef198191f5f5a20ae5c5ad8de2850d8025f1c7d79897d722e4be42befe69c27a"
+                    "sha256": "694b93d70cd10e3691a850657459c0d266469efd5ab263b31726eddf61858bc5"
                 }
             }
         ],
-        "stars": 33,
-        "lastUpdateTimestamp": 1783053660000,
+        "stars": 34,
+        "lastUpdateTimestamp": 1783924236000,
         "releasePages": [
+            {
+                "body": "## 3.5.2 (07/12/2026)\r\n### New Content\r\n- Added a new scene to the NPCs in hideout-north that has a 25% chance of happening when entering the map\r\n- Added \\assets\\data\\enemies\\proxy-library-xpc.json",
+                "version": "3.5.2",
+                "timestamp": 1783924236000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/3.5.2"
+            },
             {
                 "body": "## 3.5.1 (07/02/2026)\r\n### Fixes\r\n- Fixed frame issue with Hexacast Lea aniamtions postShoot1H and postShoot1HSlow\r\n- Fixed version number mismatch",
                 "version": "3.5.1",
