@@ -250,17 +250,16 @@ async function getReleasePages(ccmod: ValidPkgCCMod): Promise<ReleasePage[] | un
         /* github has a maximum of 100 items per page, so keep fetching new pages until the page is empty */
         const perPage = 100
         const releasesInfo: ReleaseRaw[] = []
-        let lastReleaseInfoBatch: ReleaseRaw[] | undefined
-        for (let page = 0; ; page++) {
-            lastReleaseInfoBatch = await fetchReleasePages(url, page, perPage)
-            if (lastReleaseInfoBatch.length == 0) break
+        for (let page = 1; ; page++) {
+            const pages = await fetchReleasePages(url, page, perPage)
+            if (pages.length == 0) break
 
-            releasesInfo.push(...lastReleaseInfoBatch)
+            releasesInfo.push(...pages)
 
-            if (lastReleaseInfoBatch.length != perPage) break
+            if (pages.length < perPage) break
         }
 
-        const paresed: ReleasePage[] = releasesInfo.map(e => {
+        const parsed: ReleasePage[] = releasesInfo.map(e => {
             const tagName = e.tag_name
             let version = tagName
 
@@ -276,7 +275,7 @@ async function getReleasePages(ccmod: ValidPkgCCMod): Promise<ReleasePage[] | un
                 url: e.html_url,
             }
         })
-        return paresed
+        return parsed
     }
 
     return
