@@ -8015,7 +8015,7 @@
     "xenons-playable-classes": {
         "metadataCCMod": {
             "id": "xenons-playable-classes",
-            "version": "3.5.2",
+            "version": "3.5.3",
             "title": {
                 "en_US": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
                 "de_DE": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
@@ -8066,16 +8066,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/3.5.2.zip",
-                "source": "xenons-playable-classes-3.5.2",
+                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/3.5.3.zip",
+                "source": "xenons-playable-classes-3.5.3",
                 "hash": {
-                    "sha256": "694b93d70cd10e3691a850657459c0d266469efd5ab263b31726eddf61858bc5"
+                    "sha256": "d56892695c11406cc3332ce5b678e6d71f6a20776ce78d398af2f02ef28bd604"
                 }
             }
         ],
         "stars": 34,
-        "lastUpdateTimestamp": 1783924236000,
+        "lastUpdateTimestamp": 1784008410000,
         "releasePages": [
+            {
+                "body": "## 3.5.3 (07/13/2026)\r\n### Fixes\r\n- Added TouchTrigger zones to hideout-north to trigger sandbag failsafe when the player enters from the south\r\n- Failsafe is now also triggered at the end of signModder NPC dialogue during scene 4\r\n- Fixed effect bombHeatTrailSilent for proxy daybreakThrow to be BOTTOM align instead of BASE, reduced offset",
+                "version": "3.5.3",
+                "timestamp": 1784008410000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/3.5.3"
+            },
             {
                 "body": "## 3.5.2 (07/12/2026)\r\n### New Content\r\n- Added a new scene to the NPCs in hideout-north that has a 25% chance of happening when entering the map\r\n- Added \\assets\\data\\enemies\\proxy-library-xpc.json",
                 "version": "3.5.2",
