@@ -5781,7 +5781,7 @@
     "mw-rando": {
         "metadataCCMod": {
             "id": "mw-rando",
-            "version": "0.9.3",
+            "version": "0.9.4",
             "title": "Multiworld randomizer",
             "description": "Client for CrossCode Archipelago Integration",
             "repository": "https://github.com/CodeTriangle/CCMultiworldRandomizer",
@@ -5806,18 +5806,24 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.9.3/CCMultiworldRandomizer-0.9.3.ccmod",
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.9.4/CCMultiworldRandomizer-0.9.4.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "8ebf02d9e984d4371f9347d8f729c8a7b7f0d185a7af145fe32d17aa4520eb0d"
+                    "sha256": "b0c94d9ed13f88b237e2a1c55b7c32f16b8e93c25929525f30592b769bc5c1dc"
                 }
             }
         ],
         "stars": 18,
-        "lastUpdateTimestamp": 1781503918000,
+        "lastUpdateTimestamp": 1784427764000,
         "releasePages": [
             {
-                "body": "## Additions\n\n* Added a new **Tips** system to display useful information on the pause screen (@CodeTriangle, #77).\n  * These tips replace the Task HUD which is usually inaccurate in rando due to its overreliance on linear plot points.\n  * Got a tip idea? Submit it to CodeTriangle on Discord.\n\n## Changes to Dependencies\n\n* Added a new dependency on CodeTriangle's [`tips-and-tricks`](https://github.com/CodeTriangle/cc-tips-and-tricks).\n* Removed marquee functionality and added a new dependency on CodeTriangle's [`marquee`](https://github.com/CodeTriangle/cc-marquee/).\n\n## Fixes to Mod\n\n* Fixed an issue where locations would appear to be checked multiple times when acquiring items from pedestals (@CodeTriangle, #79).\n* Circumvent a visual issue that arises when floor 3 of Grand Krys'kajo is skipped by fighting Son of the East immediately (@CodeTriangle, #80).\n\n## Fixes to Logic\n\n* Move the following **Botanics** locations (@CodeTriangle, #76):\n  * **Omega Puff Plant** now requires access to either **Gaia's Garden West** or **Gaia's Garden East**.\n  * **Alpha Virus Shroom** and **Beta Virus Shroom** now require access to **Gaia's Garden Infested**.\n* Remove the requirement on **Meteor Pass** for **Maroon Trailblazing** and add it to **Henry Trailblazing** (@CodeTriangle, #76)\n",
+                "body": "## Fixes to Mod\r\n\r\n* Fixed an issue where, in the Quest Menu in Records, if a non-randomized quest was displayed after a randomized quest, their rewards would overlap (#87, @CodeTriangle).\r\n* Fixed an issue where, on the Archipelago Game Info screen, when Quest Randomization and Shop Randomization were both turned off, Progressive Equipment would never display as enabled. (#86, @CodeTriangle).\r\n\r\n## Fixes to Logic\r\n\r\n* **Creator** goal has been moved to **Vermillion Wasteland** as it should have been (#82, @Gudf).\r\n* **Shock Pedestal** and **So'najiz Circuit Override** have swapped regions as their logic had previously been transposed (#84, @kumquat-ir).\r\n* **An Unfortunate Series of Features** now requires access to Maroon Valley (#85, @CodeTriangle).\r\n* **Botanics: Omega Open Baraleles** now requires grove or wave (#85, @CodeTriangle).\r\n* Shop Slots for **Cross Gear** in **Rhombus Weapons** now requires **Azure Archipelago Pass** (#85, @CodeTriangle).",
+                "version": "0.9.4",
+                "timestamp": 1784427764000,
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.9.4"
+            },
+            {
+                "body": "## Additions\r\n\r\n* Added a new **Tips** system to display useful information on the pause screen (@CodeTriangle, #77).\r\n  * These tips replace the Task HUD which is usually inaccurate in rando due to its overreliance on linear plot points.\r\n  * Got a tip idea? Submit it to CodeTriangle on Discord.\r\n\r\n## Changes to Dependencies\r\n\r\n* Added a new dependency on CodeTriangle's [`tips-and-tricks`](https://github.com/CodeTriangle/cc-tips-and-tricks).\r\n* Removed marquee functionality and added a new dependency on CodeTriangle's [`marquee`](https://github.com/CodeTriangle/cc-marquee/).\r\n\r\n## Fixes to Mod\r\n\r\n* Fixed an issue where locations would appear to be checked multiple times when acquiring items from pedestals (@CodeTriangle, #79).\r\n* Circumvent a visual issue that arises when floor 3 of Grand Krys'kajo is skipped by fighting Son of the East immediately (@CodeTriangle, #80).\r\n\r\n## Fixes to Logic\r\n\r\n* Move the following **Botanics** locations (@CodeTriangle, #76):\r\n  * **Omega Puff Plant** now requires access to either **Gaia's Garden West** or **Gaia's Garden East**.\r\n  * **Alpha Virus Shroom** and **Beta Virus Shroom** now require access to **Gaia's Garden Infested**.\r\n* Remove the requirement on **Meteor Pass** for **Maroon Trailblazing** and add it to **Henry Trailblazing** (@CodeTriangle, #76)\r\n",
                 "version": "0.9.3",
                 "timestamp": 1781503918000,
                 "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.9.3"
