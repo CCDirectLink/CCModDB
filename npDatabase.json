@@ -5781,7 +5781,7 @@
     "mw-rando": {
         "metadataCCMod": {
             "id": "mw-rando",
-            "version": "0.9.4",
+            "version": "0.9.5",
             "title": "Multiworld randomizer",
             "description": "Client for CrossCode Archipelago Integration",
             "repository": "https://github.com/CodeTriangle/CCMultiworldRandomizer",
@@ -5806,20 +5806,26 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.9.4/CCMultiworldRandomizer-0.9.4.ccmod",
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.9.5/CCMultiworldRandomizer-0.9.5.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "b0c94d9ed13f88b237e2a1c55b7c32f16b8e93c25929525f30592b769bc5c1dc"
+                    "sha256": "d54176671f52dbf805ea05bd5746dec3719c4d58b575fa8403d267746875bc3a"
                 }
             }
         ],
         "stars": 18,
-        "lastUpdateTimestamp": 1784427764000,
+        "lastUpdateTimestamp": 1785392002000,
         "releasePages": [
+            {
+                "body": "## Changes to Logic\r\n\r\n* Modified **Faj'ro Temple** and **Grand Krys'kajo** logic (#90, @Valkhiya).\r\n  * Both temples now have their initial doors leading to the middle of the temple unlocked by default.\r\n  * Now, completing the left and right branches of the first floor of each temple, instead of unlocking the next part of the dungeon, spawns a chest.\r\n  * This relaxes the number of required elements needed to finish these temples, leading to more possible logical permutations.\r\n  * **Note:** These patches are not applied conditionally. If you generated on 0.9.4 or before and you want to avoid going out of logic, you will have to enforce this on your own by only accessing the second floor of the dungeons only after completing both branches.\r\n* Removed Chest Lock Randomization from **Mine U2: Frozen Chamber 2 Right**, **Faj'ro 3F: Large Fire Chamber Right**, and **So'najiz U1: Trial of Persistence Lower Left** (#91, @CodeTriangle).\r\n  * These chests are the game's introduction to the concept of using **Thief's Key**, **Silver Key**, and **Radiant Key** respectively, meaning that they control barriers to progression.\r\n  * When **Chest Lock Randomization** was enabled, however, these chests would generate with a random level, causing a long-standing logic bug.\r\n  * Now, these chests will always generate with their default level, ensuring logical accuracy.\r\n\r\n## Fixes to Generation\r\n\r\n* Do not create regions that will not be used in the rando (CodeTriangle/Archipelago#26, #92, @CodeTriangle).\r\n  * This fixes a unit test failure.\r\n\r\n## Fixes to Logic\r\n\r\n* Move **Henry Trailblazing** to **Sapphire Ridge** region.",
+                "version": "0.9.5",
+                "timestamp": 1785392457000,
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.9.5"
+            },
             {
                 "body": "## Fixes to Mod\r\n\r\n* Fixed an issue where, in the Quest Menu in Records, if a non-randomized quest was displayed after a randomized quest, their rewards would overlap (#87, @CodeTriangle).\r\n* Fixed an issue where, on the Archipelago Game Info screen, when Quest Randomization and Shop Randomization were both turned off, Progressive Equipment would never display as enabled. (#86, @CodeTriangle).\r\n\r\n## Fixes to Logic\r\n\r\n* **Creator** goal has been moved to **Vermillion Wasteland** as it should have been (#82, @Gudf).\r\n* **Shock Pedestal** and **So'najiz Circuit Override** have swapped regions as their logic had previously been transposed (#84, @kumquat-ir).\r\n* **An Unfortunate Series of Features** now requires access to Maroon Valley (#85, @CodeTriangle).\r\n* **Botanics: Omega Open Baraleles** now requires grove or wave (#85, @CodeTriangle).\r\n* Shop Slots for **Cross Gear** in **Rhombus Weapons** now requires **Azure Archipelago Pass** (#85, @CodeTriangle).",
                 "version": "0.9.4",
-                "timestamp": 1784427764000,
+                "timestamp": 1784428480000,
                 "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.9.4"
             },
             {
