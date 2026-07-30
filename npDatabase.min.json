@@ -5781,7 +5781,7 @@
     "mw-rando": {
         "metadataCCMod": {
             "id": "mw-rando",
-            "version": "0.9.5",
+            "version": "0.9.6",
             "title": "Multiworld randomizer",
             "description": "Client for CrossCode Archipelago Integration",
             "repository": "https://github.com/CodeTriangle/CCMultiworldRandomizer",
@@ -5796,7 +5796,7 @@
             },
             "dependencies": {
                 "marquee": ">=0.1.0",
-                "open-world": ">=0.5.1-pre1",
+                "open-world": ">=0.5.6",
                 "nax-ccuilib": ">=1.5.1",
                 "tips-and-tricks": ">=0.1.0",
                 "ccmodmanager": ">=1.0.4",
@@ -5806,16 +5806,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.9.5/CCMultiworldRandomizer-0.9.5.ccmod",
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.9.6/CCMultiworldRandomizer-0.9.6.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "d54176671f52dbf805ea05bd5746dec3719c4d58b575fa8403d267746875bc3a"
+                    "sha256": "9e087160a275f239fb90d536cf054b5ad8058a6f49ffdcbab85aa714bda3ab23"
                 }
             }
         ],
         "stars": 18,
-        "lastUpdateTimestamp": 1785392002000,
+        "lastUpdateTimestamp": 1785401155000,
         "releasePages": [
+            {
+                "body": "## Fixes\r\n\r\n* Fixed a packaging error where an in-progress version of upcoming features were distributed with 0.9.5, causing several issues.",
+                "version": "0.9.6",
+                "timestamp": 1785401155000,
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.9.6"
+            },
             {
                 "body": "## Changes to Logic\r\n\r\n* Modified **Faj'ro Temple** and **Grand Krys'kajo** logic (#90, @Valkhiya).\r\n  * Both temples now have their initial doors leading to the middle of the temple unlocked by default.\r\n  * Now, completing the left and right branches of the first floor of each temple, instead of unlocking the next part of the dungeon, spawns a chest.\r\n  * This relaxes the number of required elements needed to finish these temples, leading to more possible logical permutations.\r\n  * **Note:** These patches are not applied conditionally. If you generated on 0.9.4 or before and you want to avoid going out of logic, you will have to enforce this on your own by only accessing the second floor of the dungeons only after completing both branches.\r\n* Removed Chest Lock Randomization from **Mine U2: Frozen Chamber 2 Right**, **Faj'ro 3F: Large Fire Chamber Right**, and **So'najiz U1: Trial of Persistence Lower Left** (#91, @CodeTriangle).\r\n  * These chests are the game's introduction to the concept of using **Thief's Key**, **Silver Key**, and **Radiant Key** respectively, meaning that they control barriers to progression.\r\n  * When **Chest Lock Randomization** was enabled, however, these chests would generate with a random level, causing a long-standing logic bug.\r\n  * Now, these chests will always generate with their default level, ensuring logical accuracy.\r\n\r\n## Fixes to Generation\r\n\r\n* Do not create regions that will not be used in the rando (CodeTriangle/Archipelago#26, #92, @CodeTriangle).\r\n  * This fixes a unit test failure.\r\n\r\n## Fixes to Logic\r\n\r\n* Move **Henry Trailblazing** to **Sapphire Ridge** region.",
                 "version": "0.9.5",
