@@ -1,6 +1,16 @@
 import { ValidTags, type PackageDB, type PkgCCMod } from '../src/types'
 import semver from 'semver'
 
+type TestFunc = (name: string, func: () => void) => void
+type ExpectFunc = (
+    value: any,
+    error?: string
+) => {
+    toBeTrue: () => void
+    toBeFalse: () => void
+    toBeTruthy: () => void
+}
+
 export class CCModChecker {
     /* see https://github.com/CCDirectLink/CCLoader3/issues/18 for details */
     ccmodIdValidationExceptions: string[] = [
@@ -43,8 +53,8 @@ export class CCModChecker {
 
     constructor(
         public databases: PackageDB[],
-        private test: (typeof import('bun:test'))['test'],
-        private expect: (typeof import('bun:test'))['expect']
+        private test: TestFunc,
+        private expect: ExpectFunc
     ) {}
 
     testMetadataCCMod(ccmod: PkgCCMod) {
