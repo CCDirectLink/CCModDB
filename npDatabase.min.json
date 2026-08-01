@@ -1385,7 +1385,7 @@
     "autumns-genesis": {
         "metadataCCMod": {
             "id": "autumns-genesis",
-            "version": "0.2.7",
+            "version": "0.2.8",
             "title": {
                 "en_US": "Autumn's Genesis",
                 "de_DE": "Autumn's Genesis",
@@ -1426,14 +1426,14 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/Hsifnus/autumns-genesis/archive/refs/tags/v0.2.7.zip",
-                "source": "autumns-genesis-0.2.7",
+                "url": "https://github.com/krypciak/autumns-genesis/archive/refs/tags/v0.2.8.zip",
+                "source": "autumns-genesis-0.2.8",
                 "hash": {
-                    "sha256": "a5e3cc92cddfabc2088d40dc02947ad86f6779be3c7c002bce7946e62ef7e572"
+                    "sha256": "b3670206f89425965d7abbd0c063f05389be90bd15466ebb3a397105bcf3b4c4"
                 }
             }
         ],
-        "stars": 19,
+        "stars": 22,
         "lastUpdateTimestamp": 1750858752000,
         "releasePages": [
             {
