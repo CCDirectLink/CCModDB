@@ -1,5 +1,4 @@
 import { expect, test, describe } from 'bun:test'
-import semver from 'semver'
 import crypto from 'crypto'
 import { download } from '../src/download'
 import {
@@ -8,18 +7,15 @@ import {
     type InstallMethodZip,
     type Package,
     type PackageDB,
-    type PkgCCMod,
-    ValidTags,
 } from '../src/types'
 import { getRepoBranches, gitReadFunc } from '../src/git'
+import { CCModChecker } from './ccmod-check'
 
 async function loadNpDatabases() {
     const branch = process.env['BRANCH']
     if (!branch) throw new Error('enviroment variable BRANCH is not set!')
 
-    const npDatabasePromise = gitReadFunc(branch, 'npDatabase.min.json').then(
-        data => JSON.parse(data!) as PackageDB
-    )
+    const npDatabasePromise = gitReadFunc(branch, 'npDatabase.min.json').then(data => JSON.parse(data!) as PackageDB)
 
     const parentNpDatabasesPromise = new Promise<PackageDB>(async resolve => {
         const dbInfo: DatabaseInfo = JSON.parse((await gitReadFunc(branch, 'db-info.json'))!)
@@ -38,10 +34,7 @@ async function loadNpDatabases() {
             try {
                 return (await fetch(name)).text()
             } catch (e) {
-                throw new Error(
-                    `Invalid parent repo npDatatabase.min.json url: "${name}"`,
-                    e as Error
-                )
+                throw new Error(`Invalid parent repo npDatatabase.min.json url: "${name}"`, e as Error)
             }
         }
 
@@ -54,6 +47,7 @@ async function loadNpDatabases() {
     return Promise.all([npDatabasePromise, parentNpDatabasesPromise])
 }
 const [npDatabase, parentNpDatabases] = await loadNpDatabases()
+const ccmodChecker = new CCModChecker([npDatabase, parentNpDatabases], test, expect)
 
 describe('NpDatabase', () => {
     test('json structure', async () => {
@@ -96,166 +90,18 @@ export function testPackage(mod: Package, name: string) {
         test('required elements', () => {
             expect(mod !== null, 'package must not be null').toBeTrue()
 
-            expect(
-                mod.metadataCCMod !== undefined,
-                'metadataCCMod (type: object) required'
-            ).toBeTrue()
+            expect(mod.metadataCCMod !== undefined, 'metadataCCMod (type: object) required').toBeTrue()
 
-            expect(
-                typeof mod.installation === 'object',
-                'installation (type: array) required'
-            ).toBeTrue()
-            expect(
-                Array.isArray(mod.installation),
-                'installation (type: array) required'
-            ).toBeTrue()
+            expect(typeof mod.installation === 'object', 'installation (type: array) required').toBeTrue()
+            expect(Array.isArray(mod.installation), 'installation (type: array) required').toBeTrue()
             expect(mod.installation !== null, 'installation (type: array) required').toBeTrue()
         })
 
         if (!mod) return
 
-        if (mod.metadataCCMod) testMetadataCCMod(mod.metadataCCMod)
+        if (mod.metadataCCMod) ccmodChecker.testMetadataCCMod(mod.metadataCCMod)
         if (mod.installation) testInstallation(mod)
     })
-}
-
-/**
- * Mod dependencies to skip while checking if a mod has all it's dependencies in the database
- */
-const skipTheseModDependencies = [
-    'crosscode',
-    'simplify',
-    // https://github.com/CCDirectLink/CCLoader3/blob/edb3481d9ea504e2c7f7fe46709ab2b4a7f2ce0b/src/game.ts#L9-L17
-    'fish-gear',
-    'flying-hedgehag',
-    'manlea',
-    'ninja-skin',
-    'post-game',
-    'scorpion-robo',
-    'snowman-tank',
-]
-/**
- * Searches databases for a dependency by it's id and title
- * @param {string} depName - Name of a dependency to look for
- */
-function findDependency(depName: string) {
-    for (const db of [npDatabase, parentNpDatabases].filter(Boolean)) {
-        if (db[depName]) return db[depName]
-
-        const dep = Object.values(db).find(mod => mod.metadataCCMod?.title == depName)
-        if (dep) return dep
-    }
-}
-
-/* see https://github.com/CCDirectLink/CCLoader3/issues/18 for details */
-const ccmodIdValidationExceptions: string[] = [
-    'CrossCode Map Editor',
-    "Azure's Adjustments",
-    'Boki Colors',
-    'CCLoader display version',
-    'CrossCode C Edition',
-    'New game++',
-]
-function testMetadataCCMod(ccmod: PkgCCMod) {
-    test('ccmod.json', () => {
-        expect(typeof ccmod.id === 'string', 'ccmod.id (type: string) required').toBeTrue()
-
-        expect(
-            ccmod.id.length > 0 &&
-                (/^[a-zA-Z0-9_-]+$/.test(ccmod.id) ||
-                    ccmodIdValidationExceptions.includes(ccmod.id)),
-            'ccmod.id (type: string) must consist only of one or more alphanumberic characters, hyphens or underscores'
-        ).toBeTrue()
-
-        expect(
-            typeof ccmod.version === 'string' && semver.valid(ccmod.version) !== null,
-            'ccmod.version (type: string) is missing or isnt valid semver'
-        ).toBeTrue()
-
-        expect(
-            typeof ccmod.title === 'string' || typeof ccmod.title === 'object',
-            'ccmod.title (type: string) is missing or has wrong type'
-        ).toBeTrue()
-        expect(
-            ccmod.description !== undefined &&
-                (typeof ccmod.description === 'string' || typeof ccmod.description === 'object'),
-            'ccmod.description (type: string) is missing or has wrong type'
-        ).toBeTrue()
-        expect(
-            ccmod.homepage === undefined || typeof ccmod.homepage === 'string',
-            'ccmod.homepage (type: string) has wrong type'
-        ).toBeTrue()
-
-        expect(
-            typeof ccmod.repository === 'string' && ccmod.repository.length > 0,
-            'ccmod.repository (type: string) is missing, is empty or has wrong type'
-        ).toBeTrue()
-
-        expect(
-            ccmod.tags !== undefined && Array.isArray(ccmod.tags),
-            'ccmod.tags (type: array) is missing or has wrong type'
-        ).toBeTrue()
-
-        const tags = (ccmod.tags ?? []).sort()
-        for (let i = 0; i < tags.length; i++) {
-            const tag = tags[i]
-            expect(
-                ValidTags.includes(tag),
-                `ccmod.tags (type: array) has an invalid tag: "${tag}"`
-            ).toBeTrue()
-            expect(
-                tags[i - 1] != tag,
-                `ccmod.tags (type: array) has a duplicate tag: "${tag}"`
-            ).toBeTrue()
-        }
-
-        expect(
-            ccmod.authors !== undefined && Array.isArray(ccmod.tags),
-            'ccmod.authors (type: array) is missing or has wrong type'
-        ).toBeTrue()
-    })
-
-    if (ccmod.dependencies) {
-        test('mod dependencies', () => {
-            expect(!ccmod.dependencies || typeof ccmod.dependencies == 'object').toBeTrue()
-
-            expect(
-                typeof ccmod.dependencies === 'object',
-                'ccmod.dependencies (type: object) must be an object'
-            ).toBeTrue()
-            expect(
-                Array.isArray(ccmod.dependencies),
-                'ccmod.dependencies (type: object) must be an object'
-            ).toBeFalse()
-            expect(
-                ccmod.dependencies !== null,
-                'ccmod.dependencies (type: object) must be an object'
-            ).toBeTrue()
-
-            for (const depId in ccmod.dependencies!) {
-                const requiredVersionRange = ccmod.dependencies![depId]
-                expect(
-                    semver.validRange(requiredVersionRange),
-                    `dependency ${depId} must be specify a valid range`
-                ).toBeTruthy()
-
-                if (skipTheseModDependencies.includes(depId.toLowerCase())) continue
-
-                const dep = findDependency(depId)
-                expect(dep, `dependency ${depId} must be registered in CCModDb`).toBeTruthy()
-
-                if (dep) {
-                    const depDatabaseVersion = dep.metadataCCMod!.version
-                    expect(
-                        semver.satisfies(depDatabaseVersion, requiredVersionRange, {
-                            includePrerelease: true,
-                        }),
-                        `the version of the dependency ${depId} (database version: ${depDatabaseVersion}) does not satisfy the required range: ${requiredVersionRange}`
-                    ).toBeTrue()
-                }
-            }
-        })
-    }
 }
 
 function testInstallation(mod: Package) {
@@ -264,14 +110,8 @@ function testInstallation(mod: Package) {
         test(
             `installation ${i}`,
             async () => {
-                expect(
-                    typeof inst === 'object',
-                    'installation (type: object) must be an object'
-                ).toBeTrue()
-                expect(
-                    Array.isArray(inst),
-                    'installation (type: object) must be an object'
-                ).toBeFalse()
+                expect(typeof inst === 'object', 'installation (type: object) must be an object').toBeTrue()
+                expect(Array.isArray(inst), 'installation (type: object) must be an object').toBeFalse()
                 expect(inst !== null, 'installation (type: object) must be an object').toBeTrue()
 
                 expect(
@@ -281,16 +121,9 @@ function testInstallation(mod: Package) {
 
                 expect(
                     inst.platform === undefined ||
-                        [
-                            'aix',
-                            'darwin',
-                            'freebsd',
-                            'linux',
-                            'openbsd',
-                            'sunos',
-                            'win32',
-                            'android',
-                        ].includes(inst.platform),
+                        ['aix', 'darwin', 'freebsd', 'linux', 'openbsd', 'sunos', 'win32', 'android'].includes(
+                            inst.platform
+                        ),
                     'installation.platform (type: string) must be a valid platform'
                 ).toBeTrue()
 
@@ -307,16 +140,10 @@ function testInstallation(mod: Package) {
 }
 
 async function testZip(modzip: InstallMethodZip) {
-    expect(
-        typeof modzip.hash === 'object',
-        'modzip.hash (type: object) must be an object'
-    ).toBeTrue()
+    expect(typeof modzip.hash === 'object', 'modzip.hash (type: object) must be an object').toBeTrue()
     expect(Array.isArray(modzip.hash), 'modzip.hash (type: object) must be an object').toBeFalse()
     expect(modzip.hash !== null, 'modzip.hash (type: object) must be an object').toBeTrue()
-    expect(
-        typeof modzip.hash.sha256 === 'string',
-        'modzip.hash.sha256 (type: string) must be a string'
-    ).toBeTrue()
+    expect(typeof modzip.hash.sha256 === 'string', 'modzip.hash.sha256 (type: string) must be a string').toBeTrue()
 
     expect(typeof modzip.url === 'string', 'modzip.url (type: string) must be a string').toBeTrue()
     expect(
