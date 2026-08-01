@@ -4368,7 +4368,7 @@
     "element-hair": {
         "metadataCCMod": {
             "id": "element-hair",
-            "version": "1.1.3",
+            "version": "1.1.4",
             "title": "Elemental Hair",
             "description": {
                 "en_US": "Changes Lea's hair color based on her element. (Check the repo for customization!)"
@@ -4382,22 +4382,19 @@
                 "24": "icon24.png"
             },
             "postload": "_postload.js",
-            "prestart": "_prestart.js",
-            "assets": [
-                "data/lang/sc/gui.en_US.json.patch"
-            ]
+            "prestart": "_prestart.js"
         },
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/Azure-Lazuline/elemental-hair/releases/download/1.1.3/elemental-hair.ccmod",
+                "url": "https://github.com/krypciak/elemental-hair/releases/download/1.1.4/elemental-hair.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "2ae6f461aec694b93ebdce2d5cfbdb901c8dfc84179112e44854beddf32242a3"
+                    "sha256": "2ed97b60b59df5c2b5cfa857327d9e1e479e06e39e1c8654601e7e157420935c"
                 }
             }
         ],
-        "stars": 4,
+        "stars": 5,
         "lastUpdateTimestamp": 1770958261000,
         "releasePages": [
             {
