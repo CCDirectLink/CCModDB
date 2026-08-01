@@ -6340,7 +6340,7 @@
     "nax-ccuilib": {
         "metadataCCMod": {
             "id": "nax-ccuilib",
-            "version": "1.5.6",
+            "version": "1.5.7",
             "title": "CCUILib",
             "description": "Library of additional UI elements as well as making existing ones configurable",
             "repository": "https://github.com/krypciak/nax-ccuilib",
@@ -6353,23 +6353,30 @@
                 "krypek"
             ],
             "dependencies": {
-                "ccmodmanager": ">=0.9.21"
+                "ccmodmanager": ">=0.9.21",
+                "crosscode": ">=1.4.0"
             },
             "plugin": "plugin.js"
         },
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/nax-ccuilib/releases/download/v1.5.6/nax-ccuilib-1.5.6.ccmod",
+                "url": "https://github.com/krypciak/nax-ccuilib/releases/download/v1.5.7/nax-ccuilib-1.5.7.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "57842df0d7c8f7170edca9f56e4318a7808d856b3ec25f960fb71ddaee230d77"
+                    "sha256": "791dd5d701b112fe801b73c96d480925e39d2e81db10b5fd5a58abc251baf875"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1778783362000,
+        "lastUpdateTimestamp": 1785611577000,
         "releasePages": [
+            {
+                "body": "\n### Added\n\n- Add crosscode version requirement",
+                "version": "1.5.7",
+                "timestamp": 1785611578000,
+                "url": "https://github.com/krypciak/nax-ccuilib/releases/tag/v1.5.7"
+            },
             {
                 "body": "### Fixed\n\n- Fix quick menu edit mode activating on right click analysis menu exit",
                 "version": "1.5.6",
