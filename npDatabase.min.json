@@ -6557,7 +6557,7 @@
     "open-world": {
         "metadataCCMod": {
             "id": "open-world",
-            "version": "0.5.6",
+            "version": "0.5.7",
             "title": "Open World patches",
             "description": "Open World map patches for randomizer",
             "repository": "https://github.com/buanjautista/cc-open-world",
@@ -6576,16 +6576,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/buanjautista/cc-open-world/releases/download/0.5.6/CC-Open-World-v0.5.6.ccmod",
+                "url": "https://github.com/buanjautista/cc-open-world/releases/download/0.5.7/CC-Open-World-v0.5.7.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "05ea8023da96dc70095324b3c56f1857b49935b034e724bee00b9efa6efa2e4d"
+                    "sha256": "41ad29610662fb4b6ee0c273eb58f4c35429784f421d9b72f521b8a3640fecf0"
                 }
             }
         ],
         "stars": 4,
-        "lastUpdateTimestamp": 1785393851000,
+        "lastUpdateTimestamp": 1785947289000,
         "releasePages": [
+            {
+                "body": "Changes: \r\n- Remove all key locks in Faj'ro Master Key puzzle room. Closed access to right side until top side is solved.\r\n\r\nRemoved (open world compats):\r\n- Open World variables moved to mw.option and removed from plugin.\r\n- Removed Open Faj'ro patches",
+                "version": "0.5.7",
+                "timestamp": 1785947289000,
+                "url": "https://github.com/buanjautista/cc-open-world/releases/tag/0.5.7"
+            },
             {
                 "body": "New: \r\n- Vermillion Tower boss has a checkpoint in between. \r\n- Vermillion Tower shade/boss lock has been moved right before Creator. This should allow free access of the entire tower. (Locations for randomizer not yet included)\r\n- So'najiz has Heat ball changers to remove Heat requirement from the dungeon. (thanks Valkhiya)\r\n- Middle Faj'ro is now open without Heat. Both side puzzles now have a chest reward instead.\r\n- Krys'kajo middle floor puzzle is active by default. Both sides completion now have a chest reward instead.\r\n\r\nFixes:\r\n- Party inviting should not get stuck when starting DLC content or other content. \r\n- Creator cutscene should play even if DLC content has already started.\r\n- Reworked the B3 East room in Ku'lero to not get stuck\r\n- Bergen barrier should not show anymore when rhombus hub unlock is active",
                 "version": "0.5.6",
