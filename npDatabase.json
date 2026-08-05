@@ -7648,7 +7648,7 @@
     "timer": {
         "metadataCCMod": {
             "id": "timer",
-            "version": "3.0.2",
+            "version": "3.0.3",
             "title": "CCTimer",
             "description": "A speedrun timer for CrossCode.",
             "repository": "https://github.com/CCDirectLink/CCTimer",
@@ -7671,16 +7671,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CCDirectLink/CCTimer/archive/refs/tags/v3.0.2.zip",
-                "source": "CCTimer-3.0.2",
+                "url": "https://github.com/CCDirectLink/CCTimer/releases/download/v3.0.3/CCTimer.zip",
+                "source": "",
                 "hash": {
-                    "sha256": "4ce4598a04a0a9582dcbc57f8c5753d033940f22e86d8c9a216c78dc41ed4b18"
+                    "sha256": "f27286c38b8f283d001d77844b4bea02e27920c9b10ac2b584b8514ee0ba376d"
                 }
             }
         ],
         "stars": 2,
-        "lastUpdateTimestamp": 1708512378000,
+        "lastUpdateTimestamp": 1785961088000,
         "releasePages": [
+            {
+                "body": "* This release makes sure that CCTimer works with the latest version of LiveSplit One. Contributed by @krypciak in #7 ",
+                "version": "3.0.3",
+                "timestamp": 1785961088000,
+                "url": "https://github.com/CCDirectLink/CCTimer/releases/tag/v3.0.3"
+            },
             {
                 "body": "* Added tags to the mod's description",
                 "version": "3.0.2",
