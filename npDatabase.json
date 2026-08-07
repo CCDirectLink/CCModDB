@@ -5778,7 +5778,7 @@
     "mw-rando": {
         "metadataCCMod": {
             "id": "mw-rando",
-            "version": "0.9.6",
+            "version": "0.9.7",
             "title": "Multiworld randomizer",
             "description": "Client for CrossCode Archipelago Integration",
             "repository": "https://github.com/CodeTriangle/CCMultiworldRandomizer",
@@ -5803,16 +5803,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.9.6/CCMultiworldRandomizer-0.9.6.ccmod",
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.9.7/CCMultiworldRandomizer-0.9.7.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "9e087160a275f239fb90d536cf054b5ad8058a6f49ffdcbab85aa714bda3ab23"
+                    "sha256": "45f74fb087f3ece8717a431f42d6898e4f07ce4b7789d080769c1f107a6d575e"
                 }
             }
         ],
         "stars": 18,
-        "lastUpdateTimestamp": 1785401155000,
+        "lastUpdateTimestamp": 1786085836000,
         "releasePages": [
+            {
+                "body": "## Changes to Logic\r\n\r\n* Changed logic in **Faj'ro Temple** and **So'najiz Temple** to be more in line with the open world mod (@Valkhiya, #95).\r\n* Changed chests that block chest key gates so that they once again require the key that opens them (@CodeTriangle, #96).\r\n* **Faj'ro 3F: Large Fire Chamber Left** no longer requires a silver key in addition to a bronze key (@CodeTriangle, #96).\r\n\r\n## Changes to Generation\r\n\r\n* Only 3 **Faj'ro Key** items are shuffled, in accordance with the recent changes to the open world mod (@CodeTriangle, #97).",
+                "version": "0.9.7",
+                "timestamp": 1786085836000,
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.9.7"
+            },
             {
                 "body": "## Fixes\r\n\r\n* Fixed a packaging error where an in-progress version of upcoming features were distributed with 0.9.5, causing several issues.",
                 "version": "0.9.6",
