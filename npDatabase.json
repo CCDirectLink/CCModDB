@@ -7027,7 +7027,7 @@
     "playable-shizuka": {
         "metadataCCMod": {
             "id": "playable-shizuka",
-            "version": "1.0.0",
+            "version": "1.1.0",
             "title": {
                 "en_US": "Playable Shizuka",
                 "de_DE": "Playable Shizuka",
@@ -7038,13 +7038,13 @@
                 "ko_KR": "Playable Shizuka"
             },
             "description": {
-                "en_US": "Adds support for all combat arts to Shizuka",
-                "de_DE": "Adds support for all combat arts to Shizuka",
-                "fr_FR": "Adds support for all combat arts to Shizuka",
-                "zh_CN": "Adds support for all combat arts to Shizuka",
-                "zh_TW": "Adds support for all combat arts to Shizuka",
-                "ja_JP": "Adds support for all combat arts to Shizuka",
-                "ko_KR": "Adds support for all combat arts to Shizuka"
+                "en_US": "Adds animations, combat arts, and menu sprites to player Shizuka",
+                "de_DE": "Adds animations, combat arts, and menu sprites to player Shizuka",
+                "fr_FR": "Adds animations, combat arts, and menu sprites to player Shizuka",
+                "zh_CN": "Adds animations, combat arts, and menu sprites to player Shizuka",
+                "zh_TW": "Adds animations, combat arts, and menu sprites to player Shizuka",
+                "ja_JP": "Adds animations, combat arts, and menu sprites to player Shizuka",
+                "ko_KR": "Adds animations, combat arts, and menu sprites to player Shizuka"
             },
             "icons": {
                 "24": "icon.png"
@@ -7055,23 +7055,32 @@
                 "party member"
             ],
             "authors": [
-                "XenonA7"
+                "XenonA7",
+                "rioreur"
             ],
-            "dependencies": {}
+            "dependencies": {
+                "menu-ui-replacer": ">=1.0.5"
+            }
         },
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/playable-shizuka/archive/refs/tags/1.0.0.zip",
-                "source": "playable-shizuka-1.0.0",
+                "url": "https://github.com/XenonA7/playable-shizuka/archive/refs/tags/1.1.0.zip",
+                "source": "playable-shizuka-1.1.0",
                 "hash": {
-                    "sha256": "207af77a16e1774257fc8a399dacffedf2f12158dfff8cffee09ca3ac19885a7"
+                    "sha256": "2ed22fbcb05743ab8f326fd99776e574eb776bb703124edf0062bca45b482878"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1785635790000,
+        "lastUpdateTimestamp": 1786175096000,
         "releasePages": [
+            {
+                "body": "## 1.1.0 (08/01/2026)\r\n- Added Shizuka menu artwork by Rioreur\r\n- Added Rioreur to author list\r\n- Updated mod description\r\n- Now requires dependency mod: menu-ui-replacer (https://github.com/CCDirectLink/cc-menu-ui-replacement)",
+                "version": "1.1.0",
+                "timestamp": 1786175096000,
+                "url": "https://github.com/XenonA7/playable-shizuka/releases/tag/1.1.0"
+            },
             {
                 "body": "## 1.0.0 (08/01/2026)\r\n- Initial release",
                 "version": "1.0.0",
