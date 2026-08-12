@@ -4,7 +4,7 @@
 
 `input-locations.json` specifies the source of mod archives for creating the database.  
 It's a JSON file containing a JSON array.  
-The TypeScript types for this file are under [`build/src/types.d.ts`](/build/src/types.d.ts) `InputLocations`.  
+The TypeScript types for this file are under [`build/src/types.ts`](/build/src/types.ts) `InputLocations`.  
 
 ### Example entries
 
@@ -27,7 +27,7 @@ It contains all information necessary to display the mods in a list and to autom
 
 The minified version of this file (`npDatabase.min.json`) is generated alongside this file as well.  
 
-The TypeScript types for this file are under [`build/src/types.d.ts`](/build/src/types.d.ts) `PackageDB`.  
+The TypeScript types for this file are under [`build/src/types.ts`](/build/src/types.ts) `PackageDB`.  
 
 ## Database workflow
 
