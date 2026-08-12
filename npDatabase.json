@@ -1539,6 +1539,52 @@
             }
         ]
     },
+    "carn": {
+        "metadataCCMod": {
+            "id": "carn",
+            "title": "Carnellio SBBF Crossover",
+            "version": "0.6.1",
+            "description": "Adds a series of optional, challenging bosses utilizing a unique combo system. Crossover with Skill Based Boss Fights!",
+            "icons": {
+                "24": "icon-24.png"
+            },
+            "authors": "fatetraitor",
+            "tags": [
+                "boss",
+                "arena",
+                "fun"
+            ],
+            "repository": "https://github.com/fatetrait/CrossCode-Carnellio-Boss-Mod",
+            "prestart": "prestart.js",
+            "poststart": "poststart.js"
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/fatetrait/CrossCode-Carnellio-Boss-Mod/releases/download/0.6.2/carnellio.ccmod",
+                "source": "",
+                "hash": {
+                    "sha256": "9fe34849c7b3fb8b826e3dca299ccb3c9c8562edaf25ddab71f9939e95a90f64"
+                }
+            }
+        ],
+        "stars": 0,
+        "lastUpdateTimestamp": 1786506814000,
+        "releasePages": [
+            {
+                "body": "",
+                "version": "0.6.2",
+                "timestamp": 1786506814000,
+                "url": "https://github.com/fatetrait/CrossCode-Carnellio-Boss-Mod/releases/tag/0.6.2"
+            },
+            {
+                "body": "Initial release of Carnollo",
+                "version": "0.6.1",
+                "timestamp": 1786506814000,
+                "url": "https://github.com/fatetrait/CrossCode-Carnellio-Boss-Mod/releases/tag/0.6.1"
+            }
+        ]
+    },
     "cc-alybox": {
         "metadataCCMod": {
             "id": "cc-alybox",
