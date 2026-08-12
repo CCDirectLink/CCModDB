@@ -1539,6 +1539,40 @@
             }
         ]
     },
+    "carn": {
+        "metadataCCMod": {
+            "id": "carn",
+            "title": "Carnellio SBBF Crossover",
+            "version": "0.6.1",
+            "description": "Adds a series of optional, challenging bosses utilizing a unique combo system. Crossover with Skill Based Boss Fights!",
+            "icons": {
+                "24": "icon-24.png"
+            },
+            "authors": "fatetraitor",
+            "tags": [
+                "suffering",
+                "boss",
+                "arena",
+                "fun"
+            ],
+            "repository": "https://github.com/fatetrait/CrossCode-Carnellio-Boss-Mod",
+            "prestart": "prestart.js",
+            "poststart": "poststart.js"
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/fatetrait/CrossCode-Carnellio-Boss-Mod/releases/download/0.6.1/carnellio.ccmod",
+                "source": "",
+                "hash": {
+                    "sha256": "25a0c513270ef21d0b4bdaa433905f7a5779b3e3ca1814592b5ceba42b3eaf0c"
+                }
+            }
+        ],
+        "stars": 0,
+        "lastUpdateTimestamp": 1786506814000,
+        "releasePages": []
+    },
     "cc-alybox": {
         "metadataCCMod": {
             "id": "cc-alybox",
