@@ -1539,6 +1539,63 @@
             }
         ]
     },
+    "carn": {
+        "metadataCCMod": {
+            "id": "carn",
+            "title": "Carnellio SBBF Crossover",
+            "version": "0.6.3",
+            "description": "Adds a series of optional, challenging bosses utilizing a unique combo system. Crossover with Skill Based Boss Fights!",
+            "icons": {
+                "24": "icon-24.png"
+            },
+            "authors": "fatetraitor",
+            "tags": [
+                "boss",
+                "arena",
+                "fun"
+            ],
+            "repository": "https://github.com/fatetrait/CrossCode-Carnellio-Boss-Mod",
+            "prestart": "prestart.js",
+            "poststart": "poststart.js",
+            "dependencies": {
+                "ccloader": ">=2.24.0",
+                "crosscode": ">=1.4.0",
+                "item-api": "^0.4.0"
+            }
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/fatetrait/CrossCode-Carnellio-Boss-Mod/releases/download/0.6.3/carnellio.ccmod",
+                "source": "",
+                "hash": {
+                    "sha256": "a21db3fd0d69711c99423d6d68979ef33334358d734fc6cf533a09a4cd138016"
+                }
+            }
+        ],
+        "stars": 0,
+        "lastUpdateTimestamp": 1786567902000,
+        "releasePages": [
+            {
+                "body": "ranged is a little stronger, melee is a little weaker. \r\nmelee is still stronger\r\nvioletviper is lesser damage",
+                "version": "0.6.3",
+                "timestamp": 1786567902000,
+                "url": "https://github.com/fatetrait/CrossCode-Carnellio-Boss-Mod/releases/tag/0.6.3"
+            },
+            {
+                "body": "",
+                "version": "0.6.2",
+                "timestamp": 1786506814000,
+                "url": "https://github.com/fatetrait/CrossCode-Carnellio-Boss-Mod/releases/tag/0.6.2"
+            },
+            {
+                "body": "Initial release of Carnollo",
+                "version": "0.6.1",
+                "timestamp": 1786506814000,
+                "url": "https://github.com/fatetrait/CrossCode-Carnellio-Boss-Mod/releases/tag/0.6.1"
+            }
+        ]
+    },
     "cc-alybox": {
         "metadataCCMod": {
             "id": "cc-alybox",
