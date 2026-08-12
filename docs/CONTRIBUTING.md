@@ -42,6 +42,8 @@ mymod.ccmod/
     icon.png
     plugin.js
 ```
+> [!TIP]
+> I recommend you check the mod structure and `ccmod.json` validity on https://crosscode-ccmod-check.krypek.cc/  
 
 ## How to add your mod with LeaBot
 
