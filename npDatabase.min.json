@@ -6626,7 +6626,7 @@
     "open-world": {
         "metadataCCMod": {
             "id": "open-world",
-            "version": "0.5.7",
+            "version": "0.5.8",
             "title": "Open World patches",
             "description": "Open World map patches for randomizer",
             "repository": "https://github.com/buanjautista/cc-open-world",
@@ -6645,16 +6645,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/buanjautista/cc-open-world/releases/download/0.5.7/CC-Open-World-v0.5.7.ccmod",
+                "url": "https://github.com/buanjautista/cc-open-world/releases/download/0.5.8/CC-Open-World-v0.5.8.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "41ad29610662fb4b6ee0c273eb58f4c35429784f421d9b72f521b8a3640fecf0"
+                    "sha256": "07e4b0cc9508d12aa417eab353179a4ccf3ebf5551bfb0e36d9a00e7145b230a"
                 }
             }
         ],
         "stars": 4,
-        "lastUpdateTimestamp": 1785947289000,
+        "lastUpdateTimestamp": 1786906188000,
         "releasePages": [
+            {
+                "body": "Fix: \r\n- Fixed issues with Shock Ball Changers at So'najiz.\r\n- Fixed missing DLC Active variables on most DLC quests.\r\n- Fixed Maroon Valley entrance not being affected by Rhombus Hub Unlock.\r\n\r\nChanges:\r\n- Added more info to the Son of the Beach quest tip.",
+                "version": "0.5.8",
+                "timestamp": 1786906188000,
+                "url": "https://github.com/buanjautista/cc-open-world/releases/tag/0.5.8"
+            },
             {
                 "body": "Changes: \r\n- Remove all key locks in Faj'ro Master Key puzzle room. Closed access to right side until top side is solved.\r\n\r\nRemoved (open world compats):\r\n- Open World variables moved to mw.option and removed from plugin.\r\n- Removed Open Faj'ro patches",
                 "version": "0.5.7",
