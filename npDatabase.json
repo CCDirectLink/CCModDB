@@ -5331,7 +5331,7 @@
     "lqm-joern-mod": {
         "metadataCCMod": {
             "id": "lqm-joern-mod",
-            "version": "0.6.2",
+            "version": "0.6.3",
             "title": {
                 "en_US": "Lubkuluk's Playable Classes \\i[class-quadro] \\c[1](WIP)"
             },
@@ -5372,16 +5372,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/lubkuluk/lubkuluks-joern-mod/releases/download/0.6.2/lubkuluks-playable-classes.zip",
+                "url": "https://github.com/lubkuluk/lubkuluks-joern-mod/releases/download/0.6.3/lubkuluks-playable-classes.zip",
                 "source": "lubkuluks-playable-classes",
                 "hash": {
-                    "sha256": "02b4774f75ae76a2dbc9d79be1468d9ddc70416769c132a32b513eca31af18bf"
+                    "sha256": "5088ddc24af98021190285a00b5ea5547a75c06086277fdeaa9597a4ee94262c"
                 }
             }
         ],
         "stars": 3,
         "lastUpdateTimestamp": 1740389979000,
         "releasePages": [
+            {
+                "body": "0.6.3\r\n\r\n## Important Change\r\n\r\n- Joern2's Melee charge mechanic discontinued, it was too niche, the hammer slam is now the ATTACK_FINISHER for the base form\r\n- Maroon Valley dual PvP received a minor overhaul with the ability to pick a teammate, balance changes, fixes, music and more dialougue, keep reading for more\r\n\r\n### Buffs\r\n\r\n- Maroon Valley Apollo attack frequency increased\r\n- Maroon Valley Apollo can now chain Saw Sphere into First Cut\r\n- Maroon Valley Apollo can charge cancel during ranged combat (throw charge shot -> dodge -> repeat)\r\n- Maroon Valley Apollo recovers half of lost SP when Recoil Trumpet fails to parry anything\r\n- Maroon Valley Joern base Attack stat increased (also applies to heat)\r\n- Maroon Valley Joern will engage in melee combat more (overall buff given he is stronger melee)\r\n- Maroon Valley Joern is now much more likely to protect Apollo\r\n- Maroon Valley Joern's Vanguard's Resolve's counter attack is now an area attack instead of a single target attack\r\n- Maroon Valley Emilie Hp and Defense slightly increased as compensation for the nerf\r\n- Maroon Valley Emilie, Joern, C'tron and Apollo all can swap ranged or close combat style mid-fight with varying probabilities\r\n\r\n### Nerfs\r\n\r\n- Maroon Valley Joern's SP regeneration modifier nerfed from %40 to %27.5\r\n- Maroon Valley Joern's probability to use Whirlwind again after using it once has been reduced from %100 to %75\r\n- Maroon Valley Emilie Attack stat reduced from 160/175 to 140/155 (neutral and heat respectively)\r\n- Maroon Valley Emilie Azure Strike damageFactor has been reduced by %20 (from 5 to 4)\r\n- Maroon Valley Emilie Rocket Fist damageFactor has been reduced by %25 (from 5 to 3.75)\r\n- Maroon Valley Emilie melee attack frequency has been slightly lowered\r\n- Maroon Valley Emilie basic melee attack damage slightly reduced (0.7 to 0.6 and 2 to 1.8 for normal attacks and finisher respectively)\r\n\r\n### Misc Changes\r\n\r\n- Joern2 no longer has a contact event (still gets added to the party but does it secretly)\r\n\r\n### Fixes\r\n\r\n- Maroon Valley Joern no longer gives his enemies Vanguard's Resolve shield by checking their party first (this stemmed from trying to make him work with other pvp enemies too in case he was used in my dev room)\r\n- Rookie Harbor C'tron now properly regens health after winning a round against Emilie, making the fight fairer\r\n- Rookie Harbor C'tron engages in melee combat less and ranged combat more (this was a remnant from Apollo's code)\r\n- Gaia's Garden WIP dialouge now inaccesible to players (will be implemented later)\r\n- Fixed some typos in enemy entries (thank you bug reporters)",
+                "version": "0.6.3",
+                "timestamp": 1740389979000,
+                "url": "https://github.com/lubkuluk/lubkuluks-joern-mod/releases/tag/0.6.3"
+            },
             {
                 "body": "0.6.2\r\n\r\n### Fixes\r\n\r\n- Lubkuluk's Summoner Frame is now a dependancy\r\n- Fixed many typos",
                 "version": "0.6.2",
