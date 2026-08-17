@@ -7949,6 +7949,23 @@
             }
         ]
     },
+    "undefined": {
+        "metadataCCMod": {
+            "name": "music-swap",
+            "ccmodHumanName": "Ultimate arrange music swap",
+            "version": "1.0.0"
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/thephantomtrickster/CrossCode-Ultimate-Arrange-Music-Swap/releases/download/latest/musicswap.ccmod",
+                "source": "",
+                "hash": {
+                    "sha256": "409cbe37bb9ce20288139d324f7d93678d8ad99298ce4b11f93927f42c06c691"
+                }
+            }
+        ]
+    },
     "uwuifier": {
         "metadataCCMod": {
             "id": "uwuifier",
