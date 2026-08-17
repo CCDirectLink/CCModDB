@@ -5844,6 +5844,41 @@
             }
         ]
     },
+    "music-swap": {
+        "metadataCCMod": {
+            "id": "music-swap",
+            "version": "1.0.0",
+            "title": "CrossCode Ultimate Arrange Music Swap",
+            "description": "Replaces all music in the game with their respective ultimate arrange remixes",
+            "repository": "https://github.com/thephantomtrickster/CrossCode-Ultimate-Arrange-Music-Swap",
+            "tags": [
+                "music"
+            ],
+            "authors": "thephantomtrickster",
+            "icons": "icon.png",
+            "dependencies": ""
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/thephantomtrickster/CrossCode-Ultimate-Arrange-Music-Swap/releases/download/latest/musicswap.ccmod",
+                "source": "",
+                "hash": {
+                    "sha256": "980c46e3fcea42a94782b236e02f31c89642ab7d3c53ed13c4b9e92ef5633fc2"
+                }
+            }
+        ],
+        "stars": 0,
+        "lastUpdateTimestamp": 1786969220000,
+        "releasePages": [
+            {
+                "body": "Initial release",
+                "version": "latest",
+                "timestamp": 1786969220000,
+                "url": "https://github.com/thephantomtrickster/CrossCode-Ultimate-Arrange-Music-Swap/releases/tag/latest"
+            }
+        ]
+    },
     "mw-rando": {
         "metadataCCMod": {
             "id": "mw-rando",
