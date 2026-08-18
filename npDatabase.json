@@ -2299,6 +2299,47 @@
             }
         ]
     },
+    "cc-map-screenshot": {
+        "metadataCCMod": {
+            "id": "cc-map-screenshot",
+            "version": "1.0.0",
+            "title": "Map screenshot",
+            "description": "Take a screenshot of a full map with one button!",
+            "repository": "https://github.com/krypciak/cc-map-screenshot",
+            "tags": [
+                "fun"
+            ],
+            "authors": "krypek",
+            "icons": {
+                "24": "icon/icon.png"
+            },
+            "dependencies": {
+                "crosscode": ">=1.4.0",
+                "ccmodmanager": ">=1.1.2"
+            },
+            "plugin": "plugin.js"
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/krypciak/cc-map-screenshot/releases/download/v1.0.0/cc-map-screenshot-1.0.0.ccmod",
+                "source": "",
+                "hash": {
+                    "sha256": "8e997c38520ff9d860e215549a082dd92e353b38ec45dd8c6eb3cbc75e27e0c6"
+                }
+            }
+        ],
+        "stars": 0,
+        "lastUpdateTimestamp": 1787048165000,
+        "releasePages": [
+            {
+                "body": "Initial release",
+                "version": "1.0.0",
+                "timestamp": 1787047949000,
+                "url": "https://github.com/krypciak/cc-map-screenshot/releases/tag/v1.0.0"
+            }
+        ]
+    },
     "cc-newgame-cheats": {
         "metadataCCMod": {
             "id": "cc-newgame-cheats",
