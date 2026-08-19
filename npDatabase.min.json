@@ -1543,7 +1543,7 @@
         "metadataCCMod": {
             "id": "carn",
             "title": "Carnellio SBBF Crossover",
-            "version": "0.6.4",
+            "version": "0.6.5",
             "description": "Adds a series of optional, challenging bosses utilizing a unique combo system. Crossover with Skill Based Boss Fights!",
             "icons": {
                 "24": "icon-24.png"
@@ -1566,16 +1566,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/fatetrait/CrossCode-Carnellio-Boss-Mod/releases/download/0.6.4/carnellio.ccmod",
+                "url": "https://github.com/fatetrait/CrossCode-Carnellio-Boss-Mod/releases/download/0.6.5/carnellio.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "aac6f6ddfe2773ca17351de9e6cd41b7d8f00a1d7b86bba05044aa91823a6969"
+                    "sha256": "f051ba021f757a34fcf4d8a79804513c3070927f043ce65f40efa957c2bc9b32"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1786683705000,
+        "lastUpdateTimestamp": 1787090148000,
         "releasePages": [
+            {
+                "body": "Carnellio takes knockback now. Boss DR increased. Add/Fix VFX for Wandering Flame, Sweeping Seize, Romeida, Violet Viper, Supernova.\r\nNerfed Shadow Flame, Sweeping Seize\r\nBuffed Shadow Viper (followups drop faster)",
+                "version": "0.6.5",
+                "timestamp": 1787090148000,
+                "url": "https://github.com/fatetrait/CrossCode-Carnellio-Boss-Mod/releases/tag/0.6.5"
+            },
             {
                 "body": " rebalanced player damage + heightfix so clegion shots actually hit + update mod icon",
                 "version": "0.6.4",
