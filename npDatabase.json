@@ -2308,7 +2308,7 @@
     "cc-map-screenshot": {
         "metadataCCMod": {
             "id": "cc-map-screenshot",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "title": "Map screenshot",
             "description": "Take a screenshot of a full map with one button!",
             "repository": "https://github.com/krypciak/cc-map-screenshot",
@@ -2328,16 +2328,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/cc-map-screenshot/releases/download/v1.0.0/cc-map-screenshot-1.0.0.ccmod",
+                "url": "https://github.com/krypciak/cc-map-screenshot/releases/download/v1.0.1/cc-map-screenshot-1.0.1.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "8e997c38520ff9d860e215549a082dd92e353b38ec45dd8c6eb3cbc75e27e0c6"
+                    "sha256": "d4157cdc5485176dfceec4c3ddda93875d04f5acf0e49df06fc31db953c27cb6"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1787048165000,
+        "lastUpdateTimestamp": 1787149831000,
         "releasePages": [
+            {
+                "body": "\n### Changed\n\n- Reset ig.AnimatedEntity animation timers on screeenshot\n\n### Fixed\n\n- Fix compatibility with cc-multibakery",
+                "version": "1.0.1",
+                "timestamp": 1787149832000,
+                "url": "https://github.com/krypciak/cc-map-screenshot/releases/tag/v1.0.1"
+            },
             {
                 "body": "Initial release",
                 "version": "1.0.0",
