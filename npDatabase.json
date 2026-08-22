@@ -1543,7 +1543,7 @@
         "metadataCCMod": {
             "id": "carn",
             "title": "Carnellio SBBF Crossover",
-            "version": "0.6.5",
+            "version": "0.7.0",
             "description": "Adds a series of optional, challenging bosses utilizing a unique combo system. Crossover with Skill Based Boss Fights!",
             "icons": {
                 "24": "icon-24.png"
@@ -1566,16 +1566,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/fatetrait/CrossCode-Carnellio-Boss-Mod/releases/download/0.6.5/carnellio.ccmod",
+                "url": "https://github.com/fatetrait/CrossCode-Carnellio-Boss-Mod/releases/download/0.7.0/carnellio.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "f051ba021f757a34fcf4d8a79804513c3070927f043ce65f40efa957c2bc9b32"
+                    "sha256": "0ab5a26a401897662fe6d90fb706d0da2f7f178a7afbc7d1bc0472dc2b4c55a8"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1787090148000,
+        "lastUpdateTimestamp": 1787377023000,
         "releasePages": [
+            {
+                "body": "5 Life system added, overkill system added. Attacks rebalanced/buffed.\r\n\r\nRegarding Carnellio...\r\n\r\nBad news:\r\nPlayer damage buff in boss 8x -> 6x.\r\nAll boss attacks buffed in damage slightly.\r\nNightmare Reign reworked to interact with lives system.\r\nBoss attacks can deal overkill damage.\r\n\r\nGood news:\r\nPlayer now has 5 lives in the fight.\r\nPlayer defense buff in boss 1x -> 2.19x\r\n\r\nExtra:\r\nWandering Flame VFX made a little more visible.\r\nDecapitate now shows the afterhit on the player correctly.",
+                "version": "0.7.0",
+                "timestamp": 1787377023000,
+                "url": "https://github.com/fatetrait/CrossCode-Carnellio-Boss-Mod/releases/tag/0.7.0"
+            },
             {
                 "body": "Carnellio takes knockback now. Boss DR increased. Add/Fix VFX for Wandering Flame, Sweeping Seize, Romeida, Violet Viper, Supernova.\r\nNerfed Shadow Flame, Sweeping Seize\r\nBuffed Shadow Viper (followups drop faster)",
                 "version": "0.6.5",
