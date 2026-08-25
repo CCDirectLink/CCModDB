@@ -204,16 +204,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.26.0/v2.14.2.zip",
-                "source": "CCLoader-2.26.0-v2.14.2/assets/mods/ccloader-version-display",
+                "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.26.1/v2.14.2.zip",
+                "source": "CCLoader-2.26.1-v2.14.2/assets/mods/ccloader-version-display",
                 "hash": {
-                    "sha256": "06c96dc4bc0d7f3df196862d5626d6a8e88e92a58eb59c6fe33c6aa117476292"
+                    "sha256": "68015df2778cbf9bbfa16a07100cf990eb67c060fbea3012c08f8e345ef45b89"
                 }
             }
         ],
         "stars": 63,
-        "lastUpdateTimestamp": 1787302013000,
+        "lastUpdateTimestamp": 1787668060000,
         "releasePages": [
+            {
+                "body": "- Update ccmodmanager.ccmod to v1.2.1",
+                "version": "v2.26.1/v2.14.2",
+                "timestamp": 1787668060000,
+                "url": "https://github.com/CCDirectLink/CCLoader/releases/tag/v2.26.1/v2.14.2"
+            },
             {
                 "body": "* CCLoader now supports [CrossAndroid](https://gitlab.com/rumpnisse/crossandroid/-/blob/master/SETUP.md). Contributed by @SiggeMcKvack.",
                 "version": "v2.26.0/v2.14.2",
@@ -1025,16 +1031,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.26.0/v2.14.2.zip",
-                "source": "CCLoader-2.26.0-v2.14.2/assets/mods/simplify",
+                "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.26.1/v2.14.2.zip",
+                "source": "CCLoader-2.26.1-v2.14.2/assets/mods/simplify",
                 "hash": {
-                    "sha256": "06c96dc4bc0d7f3df196862d5626d6a8e88e92a58eb59c6fe33c6aa117476292"
+                    "sha256": "68015df2778cbf9bbfa16a07100cf990eb67c060fbea3012c08f8e345ef45b89"
                 }
             }
         ],
         "stars": 63,
-        "lastUpdateTimestamp": 1787302013000,
+        "lastUpdateTimestamp": 1787668060000,
         "releasePages": [
+            {
+                "body": "- Update ccmodmanager.ccmod to v1.2.1",
+                "version": "v2.26.1/v2.14.2",
+                "timestamp": 1787668060000,
+                "url": "https://github.com/CCDirectLink/CCLoader/releases/tag/v2.26.1/v2.14.2"
+            },
             {
                 "body": "* CCLoader now supports [CrossAndroid](https://gitlab.com/rumpnisse/crossandroid/-/blob/master/SETUP.md). Contributed by @SiggeMcKvack.",
                 "version": "v2.26.0/v2.14.2",
@@ -2893,7 +2905,7 @@
     "ccloader": {
         "metadataCCMod": {
             "id": "ccloader",
-            "version": "2.26.0",
+            "version": "2.26.1",
             "title": "CCLoader",
             "description": "Modloader for CrossCode. This or a similar modloader is needed for most mods.",
             "repository": "https://github.com/CCDirectLink/CCLoader",
@@ -2917,16 +2929,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.26.0/v2.14.2.zip",
-                "source": "CCLoader-2.26.0-v2.14.2",
+                "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.26.1/v2.14.2.zip",
+                "source": "CCLoader-2.26.1-v2.14.2",
                 "hash": {
-                    "sha256": "06c96dc4bc0d7f3df196862d5626d6a8e88e92a58eb59c6fe33c6aa117476292"
+                    "sha256": "68015df2778cbf9bbfa16a07100cf990eb67c060fbea3012c08f8e345ef45b89"
                 }
             }
         ],
         "stars": 63,
-        "lastUpdateTimestamp": 1787302013000,
+        "lastUpdateTimestamp": 1787668060000,
         "releasePages": [
+            {
+                "body": "- Update ccmodmanager.ccmod to v1.2.1",
+                "version": "v2.26.1/v2.14.2",
+                "timestamp": 1787668060000,
+                "url": "https://github.com/CCDirectLink/CCLoader/releases/tag/v2.26.1/v2.14.2"
+            },
             {
                 "body": "* CCLoader now supports [CrossAndroid](https://gitlab.com/rumpnisse/crossandroid/-/blob/master/SETUP.md). Contributed by @SiggeMcKvack.",
                 "version": "v2.26.0/v2.14.2",
