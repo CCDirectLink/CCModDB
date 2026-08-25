@@ -3178,7 +3178,7 @@
     "ccmodmanager": {
         "metadataCCMod": {
             "id": "ccmodmanager",
-            "version": "1.2.0",
+            "version": "1.2.1",
             "title": "CCModManager",
             "description": "Mod manager for CrossCode!",
             "repository": "https://github.com/CCDirectLink/CCModManager",
@@ -3202,16 +3202,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CCDirectLink/CCModManager/releases/download/v1.2.0/ccmodmanager-1.2.0.ccmod",
+                "url": "https://github.com/CCDirectLink/CCModManager/releases/download/v1.2.1/ccmodmanager-1.2.1.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "f4557c74ea022861c11872dfee4ad619f305947bebc9c65ce85e69149d6ce167"
+                    "sha256": "9cd357c1ba61f0ec350299c36fe2f8a89524de4bae21461ec2a265f290c246e4"
                 }
             }
         ],
-        "stars": 12,
-        "lastUpdateTimestamp": 1779040781000,
+        "stars": 13,
+        "lastUpdateTimestamp": 1787667990000,
         "releasePages": [
+            {
+                "body": "\n### Added\n\n- Add CTRL+V keybinding to input field\n- Add CTRL+U (clear current text) keybinding to input field\n\n### Changed\n\n- Increase mod title weight in mod fuzzy search\n\n### Fixed\n\n- Fix title screen button poping up for a split second when entering title screen from game\n- Fix title screen button gamepad focus logic\n- Fix mod entries not showing at first when running a cc-multibakery server\n- Fix compatibility with speedrunner branch\n- Fix mod install error when extracting zip and mod has no subdirectories\n- Fix title screen button not hiding properly sometimes\n- Fix mod options menu items becoming unfocusable on menu reload",
+                "version": "1.2.1",
+                "timestamp": 1787667991000,
+                "url": "https://github.com/CCDirectLink/CCModManager/releases/tag/v1.2.1"
+            },
             {
                 "body": "### Added\n\n- Add title screen button for opening the mods menu\n- Add option for showing/hiding the title screen button\n\n### Changed\n\n- Decrease manual wait time before close button is active\n- Remove 'Please, read it' manual popup\n- Don't ask for restart on menu exit once declined\n\n### Fixed\n\n- Fix invalid new line spacing when reopening manuals\n- Fix crashes and improve stability on slow internet\n- Improve fetch failure handling\n- Improve database file corruption handling\n- Don't prompt for game restart after state change when entering mod options menu",
                 "version": "1.2.0",
