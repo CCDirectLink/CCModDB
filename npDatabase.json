@@ -1590,16 +1590,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/fatetrait/CrossCode-Carnellio-Boss-Mod/releases/download/0.7.0/carnellio.ccmod",
+                "url": "https://github.com/fatetrait/CrossCode-Carnellio-Boss-Mod/releases/download/0.7.1/carnellio.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "0ab5a26a401897662fe6d90fb706d0da2f7f178a7afbc7d1bc0472dc2b4c55a8"
+                    "sha256": "f258b671f10291048706c63efd1ea95e09d33640784f2ab682d8de9155c3f98c"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1787377023000,
+        "lastUpdateTimestamp": 1787684950000,
         "releasePages": [
+            {
+                "body": "the game used to crash when u died in the fight, it doesnt now\r\n\r\nalso sigils for the base spheromancer moves are added....",
+                "version": "0.7.1",
+                "timestamp": 1787684950000,
+                "url": "https://github.com/fatetrait/CrossCode-Carnellio-Boss-Mod/releases/tag/0.7.1"
+            },
             {
                 "body": "5 Life system added, overkill system added. Attacks rebalanced/buffed.\r\n\r\nRegarding Carnellio...\r\n\r\nBad news:\r\nPlayer damage buff in boss 8x -> 6x.\r\nAll boss attacks buffed in damage slightly.\r\nNightmare Reign reworked to interact with lives system.\r\nBoss attacks can deal overkill damage.\r\n\r\nGood news:\r\nPlayer now has 5 lives in the fight.\r\nPlayer defense buff in boss 1x -> 2.19x\r\n\r\nExtra:\r\nWandering Flame VFX made a little more visible.\r\nDecapitate now shows the afterhit on the player correctly.",
                 "version": "0.7.0",
