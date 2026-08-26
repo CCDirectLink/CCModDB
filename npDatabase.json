@@ -1567,7 +1567,7 @@
         "metadataCCMod": {
             "id": "carn",
             "title": "Carnellio SBBF Crossover",
-            "version": "0.7.3",
+            "version": "0.7.4",
             "description": "Adds a series of optional, challenging bosses utilizing a unique combo system. Crossover with Skill Based Boss Fights!",
             "icons": {
                 "24": "icon-24.png"
@@ -1590,16 +1590,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/fatetrait/CrossCode-Carnellio-Boss-Mod/releases/download/0.7.3/carnellio.ccmod",
+                "url": "https://github.com/fatetrait/CrossCode-Carnellio-Boss-Mod/releases/download/0.7.4/carnellio.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "37222bfc1cae251448ff8714df0677548ca33dc9c444931d1e94848e02793142"
+                    "sha256": "4757a39230298e20526f1e3aca772aa9433b268d643a4fd5886850672ada3677"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1787694186000,
+        "lastUpdateTimestamp": 1787732835000,
         "releasePages": [
+            {
+                "body": "fix atk decreases during initialization",
+                "version": "0.7.4",
+                "timestamp": 1787732835000,
+                "url": "https://github.com/fatetrait/CrossCode-Carnellio-Boss-Mod/releases/tag/0.7.4"
+            },
             {
                 "body": "version bump",
                 "version": "0.7.3",
