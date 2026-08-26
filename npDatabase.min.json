@@ -1567,7 +1567,7 @@
         "metadataCCMod": {
             "id": "carn",
             "title": "Carnellio SBBF Crossover",
-            "version": "0.7.0",
+            "version": "0.7.3",
             "description": "Adds a series of optional, challenging bosses utilizing a unique combo system. Crossover with Skill Based Boss Fights!",
             "icons": {
                 "24": "icon-24.png"
@@ -1590,16 +1590,34 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/fatetrait/CrossCode-Carnellio-Boss-Mod/releases/download/0.7.0/carnellio.ccmod",
+                "url": "https://github.com/fatetrait/CrossCode-Carnellio-Boss-Mod/releases/download/0.7.3/carnellio.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "0ab5a26a401897662fe6d90fb706d0da2f7f178a7afbc7d1bc0472dc2b4c55a8"
+                    "sha256": "37222bfc1cae251448ff8714df0677548ca33dc9c444931d1e94848e02793142"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1787377023000,
+        "lastUpdateTimestamp": 1787694186000,
         "releasePages": [
+            {
+                "body": "version bump",
+                "version": "0.7.3",
+                "timestamp": 1787694186000,
+                "url": "https://github.com/fatetrait/CrossCode-Carnellio-Boss-Mod/releases/tag/0.7.3"
+            },
+            {
+                "body": "qol rebalances mostly",
+                "version": "0.7.2",
+                "timestamp": 1787692510000,
+                "url": "https://github.com/fatetrait/CrossCode-Carnellio-Boss-Mod/releases/tag/0.7.2"
+            },
+            {
+                "body": "the game used to crash when u died in the fight, it doesnt now\r\n\r\nalso sigils for the base spheromancer moves are added....",
+                "version": "0.7.1",
+                "timestamp": 1787684950000,
+                "url": "https://github.com/fatetrait/CrossCode-Carnellio-Boss-Mod/releases/tag/0.7.1"
+            },
             {
                 "body": "5 Life system added, overkill system added. Attacks rebalanced/buffed.\r\n\r\nRegarding Carnellio...\r\n\r\nBad news:\r\nPlayer damage buff in boss 8x -> 6x.\r\nAll boss attacks buffed in damage slightly.\r\nNightmare Reign reworked to interact with lives system.\r\nBoss attacks can deal overkill damage.\r\n\r\nGood news:\r\nPlayer now has 5 lives in the fight.\r\nPlayer defense buff in boss 1x -> 2.19x\r\n\r\nExtra:\r\nWandering Flame VFX made a little more visible.\r\nDecapitate now shows the afterhit on the player correctly.",
                 "version": "0.7.0",
