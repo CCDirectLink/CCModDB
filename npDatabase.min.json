@@ -5298,6 +5298,46 @@
             }
         ]
     },
+    "lily-fallen-warrior": {
+        "metadataCCMod": {
+            "id": "lily-fallen-warrior",
+            "title": "Lily Fallen Warrior",
+            "version": "1.0.0",
+            "description": "(low effort warning) Makes the Lily PvP Arena Fight 'funnier'. Pair with the Get on my Level NG+ mod for best results.",
+            "authors": "fatetraitor",
+            "tags": [
+                "boss",
+                "arena",
+                "fun"
+            ],
+            "repository": "https://github.com/fatetrait/CrossCode-Lily-Fallen-Warrior-Mod",
+            "dependencies": {
+                "ccloader": ">=2.24.0",
+                "crosscode": ">=1.4.0",
+                "item-api": "^0.4.0"
+            }
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/fatetrait/CrossCode-Lily-Fallen-Warrior-Mod/releases/download/1.0.0/CrossCode-Lily-Fallen-Warrior-Mod.ccmod",
+                "source": "",
+                "hash": {
+                    "sha256": "d7af70bd8f676f0f03403e7359ad2c9c8ea9307561ac451b3ceb5a27d53cf0b6"
+                }
+            }
+        ],
+        "stars": 0,
+        "lastUpdateTimestamp": 1787740427000,
+        "releasePages": [
+            {
+                "body": "(low effort warning) Makes the Lily PvP Arena Fight 'funnier'. Pair with the Get on my Level NG+ mod for best results.",
+                "version": "1.0.0",
+                "timestamp": 1787740297000,
+                "url": "https://github.com/fatetrait/CrossCode-Lily-Fallen-Warrior-Mod/releases/tag/1.0.0"
+            }
+        ]
+    },
     "load-from-pause": {
         "metadataCCMod": {
             "id": "load-from-pause",
