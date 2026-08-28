@@ -6611,7 +6611,7 @@
     "nax-ccuilib": {
         "metadataCCMod": {
             "id": "nax-ccuilib",
-            "version": "1.5.7",
+            "version": "1.5.8",
             "title": "CCUILib",
             "description": "Library of additional UI elements as well as making existing ones configurable",
             "repository": "https://github.com/krypciak/nax-ccuilib",
@@ -6632,16 +6632,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/nax-ccuilib/releases/download/v1.5.7/nax-ccuilib-1.5.7.ccmod",
+                "url": "https://github.com/krypciak/nax-ccuilib/releases/download/v1.5.8/nax-ccuilib-1.5.8.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "791dd5d701b112fe801b73c96d480925e39d2e81db10b5fd5a58abc251baf875"
+                    "sha256": "f634a2c09c92cb7883a090cc5cc522f81e77f18654aca6e2b46fcc68b3bc06df"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1785611577000,
+        "lastUpdateTimestamp": 1787932577000,
         "releasePages": [
+            {
+                "body": "\n### Changed\n\n- Don't sort widget list to preserve add order",
+                "version": "1.5.8",
+                "timestamp": 1787932578000,
+                "url": "https://github.com/krypciak/nax-ccuilib/releases/tag/v1.5.8"
+            },
             {
                 "body": "\n### Added\n\n- Add crosscode version requirement",
                 "version": "1.5.7",
