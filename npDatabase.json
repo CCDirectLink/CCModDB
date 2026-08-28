@@ -2374,7 +2374,7 @@
     "cc-map-screenshot": {
         "metadataCCMod": {
             "id": "cc-map-screenshot",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "title": "Map screenshot",
             "description": "Take a screenshot of a full map with one button!",
             "repository": "https://github.com/krypciak/cc-map-screenshot",
@@ -2394,16 +2394,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/cc-map-screenshot/releases/download/v1.0.1/cc-map-screenshot-1.0.1.ccmod",
+                "url": "https://github.com/krypciak/cc-map-screenshot/releases/download/v1.0.2/cc-map-screenshot-1.0.2.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "d4157cdc5485176dfceec4c3ddda93875d04f5acf0e49df06fc31db953c27cb6"
+                    "sha256": "b61a12d11c822ad7f0e1bba0921d582caf984502b465f05c102b37abb48c7b38"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1787149831000,
+        "lastUpdateTimestamp": 1787932282000,
         "releasePages": [
+            {
+                "body": "\n### Fixed\n\n- Remove leftover injects that broke common events and the arena",
+                "version": "1.0.2",
+                "timestamp": 1787932283000,
+                "url": "https://github.com/krypciak/cc-map-screenshot/releases/tag/v1.0.2"
+            },
             {
                 "body": "\n### Changed\n\n- Reset ig.AnimatedEntity animation timers on screeenshot\n\n### Fixed\n\n- Fix compatibility with cc-multibakery",
                 "version": "1.0.1",
