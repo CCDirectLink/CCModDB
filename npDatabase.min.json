@@ -1567,7 +1567,7 @@
         "metadataCCMod": {
             "id": "carn",
             "title": "Carnellio SBBF Crossover",
-            "version": "0.7.4",
+            "version": "0.7.8",
             "description": "Adds a series of optional, challenging bosses utilizing a unique combo system. Crossover with Skill Based Boss Fights!",
             "icons": {
                 "24": "icon-24.png"
@@ -1590,16 +1590,28 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/fatetrait/CrossCode-Carnellio-Boss-Mod/releases/download/0.7.4/carnellio.ccmod",
+                "url": "https://github.com/fatetrait/CrossCode-Carnellio-Boss-Mod/releases/download/0.7.8/carnellio.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "4757a39230298e20526f1e3aca772aa9433b268d643a4fd5886850672ada3677"
+                    "sha256": "a9de4238bfc047ad420dc2abd309f52cdf25c4ab98c28d2466926f5ef1dc3103"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1787732835000,
+        "lastUpdateTimestamp": 1787871064000,
         "releasePages": [
+            {
+                "body": "animation improvements/fixes\r\n\r\nNerfs:\r\nsong of storms sigil reworked\r\nKnockup cancels current sigil (no more sweeping seize spam)",
+                "version": "0.7.8",
+                "timestamp": 1787870932000,
+                "url": "https://github.com/fatetrait/CrossCode-Carnellio-Boss-Mod/releases/tag/0.7.8"
+            },
+            {
+                "body": "NEW content:\r\nRelease of Fate Combos (Funeral only). Its the top left of the boss lobby. This will include sigils from combat arts, vastly expanding his moveset. For now, the fight is just a 2-3 minute endurance test.\r\n\r\nRegarding Carnollo:\r\nExpanded the map and made it less ugly\r\nFix adaptive scaling being too weak.\r\nExpanded indicator for Wandering Flame\r\n\r\nBUFFS:\r\nIncrease damage dealt by burn (~4000 -> ~7000 per tick)\r\nIncrease dmg mult applied by mark (10% -> 40%)\r\nIncrease overall player damage dealt by 10%\r\nIncrease player ranged damage by 20% (70% -> 90%)\r\nSlightly decreased damage of Sweeping Seize\r\n",
+                "version": "0.7.6",
+                "timestamp": 1787811053000,
+                "url": "https://github.com/fatetrait/CrossCode-Carnellio-Boss-Mod/releases/tag/0.7.6"
+            },
             {
                 "body": "fix atk decreases during initialization",
                 "version": "0.7.4",
