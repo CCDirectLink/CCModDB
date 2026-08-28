@@ -1977,7 +1977,7 @@
     "cc-character-widgets": {
         "metadataCCMod": {
             "id": "cc-character-widgets",
-            "version": "1.0.1",
+            "version": "1.1.0",
             "title": "Character swap widgets",
             "description": "Adds a character swap quick menu widgets",
             "repository": "https://github.com/krypciak/cc-character-widgets",
@@ -1996,16 +1996,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/cc-character-widgets/releases/download/v1.0.1/cc-character-widgets-1.0.1.ccmod",
+                "url": "https://github.com/krypciak/cc-character-widgets/releases/download/v1.1.0/cc-character-widgets-1.1.0.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "cce2328b84cc09ca9dba26decece10c86793b229a5b3448e51b39aa64e71ecd6"
+                    "sha256": "5b5ff07c8ea3d9a9ef24c224ddcec4eff901b59ed8dd226461a58cd85edd1a40"
                 }
             }
         ],
-        "stars": 0,
-        "lastUpdateTimestamp": 1727105757000,
+        "stars": 1,
+        "lastUpdateTimestamp": 1787248704000,
         "releasePages": [
+            {
+                "body": "\n### Added\n\n- Add option (enabled by default) to exclude unplayable vanilla characters\n- Sort characters by class",
+                "version": "1.1.0",
+                "timestamp": 1787248706000,
+                "url": "https://github.com/krypciak/cc-character-widgets/releases/tag/v1.1.0"
+            },
             {
                 "body": "### Fixed\n\n- Removed invalid mod tag from `ccmod.json`",
                 "version": "1.0.1",
