@@ -1,4 +1,4 @@
-import { ValidTags, type PackageDB, type PkgCCMod } from '../src/types'
+import { Package, ValidTags, type PackageDB, type PkgCCMod } from '../src/types'
 import semver from 'semver'
 
 type TestFunc = (name: string, func: () => void) => void
@@ -38,24 +38,46 @@ export class CCModChecker {
         'snowman-tank',
     ]
 
+    highestVersionMods: Record<string, Package>
+    modTitleToId: Record<string, string>
+
     /**
      * Searches databases for a dependency by it's id and title
      * @param {string} depName - Name of a dependency to look for
      */
-    findDependency(depName: string) {
-        for (const db of this.databases.filter(Boolean)) {
-            if (db[depName]) return db[depName]
-
-            const dep = Object.values(db).find(mod => mod.metadataCCMod?.title == depName)
-            if (dep) return dep
-        }
+    findDependency(depName: string): Package | undefined {
+        return this.highestVersionMods[depName] ?? this.modTitleToId[depName]
     }
 
     constructor(
         public databases: PackageDB[],
         private test: TestFunc,
         private expect: ExpectFunc
-    ) {}
+    ) {
+        this.highestVersionMods = {}
+        for (const db of databases) {
+            for (const modId in db) {
+                const pkg = db[modId]
+                const prevPkg = this.highestVersionMods[modId]
+                if (!prevPkg) {
+                    this.highestVersionMods[modId] = pkg
+                } else {
+                    const version = pkg.metadataCCMod?.version ?? '0.0.0'
+                    const prevVersion = prevPkg.metadataCCMod?.version ?? '0.0.0'
+                    if (semver.gt(version, prevVersion)) {
+                        this.highestVersionMods[modId] = pkg
+                    }
+                }
+            }
+        }
+
+        this.modTitleToId = Object.fromEntries(
+            Object.entries(this.highestVersionMods).map(([modId, pkg]) => [
+                pkg.metadataCCMod?.title ?? 'UNKNOWN',
+                modId,
+            ])
+        )
+    }
 
     testMetadataCCMod(ccmod: PkgCCMod) {
         const { test, expect } = this
