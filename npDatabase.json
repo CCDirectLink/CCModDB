@@ -6043,7 +6043,7 @@
     "mw-rando": {
         "metadataCCMod": {
             "id": "mw-rando",
-            "version": "0.9.7",
+            "version": "0.9.8-pre.1",
             "title": "Multiworld randomizer",
             "description": "Client for CrossCode Archipelago Integration",
             "repository": "https://github.com/CodeTriangle/CCMultiworldRandomizer",
@@ -6058,28 +6058,34 @@
             },
             "dependencies": {
                 "marquee": ">=0.1.0",
-                "open-world": ">=0.5.6",
+                "open-world": ">=0.5.8",
                 "nax-ccuilib": ">=1.5.1",
                 "tips-and-tricks": ">=0.1.0",
-                "ccmodmanager": ">=1.0.4",
+                "ccmodmanager": ">=1.2.1",
                 "font-utils": ">=1.2.0"
             }
         },
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.9.7/CCMultiworldRandomizer-0.9.7.ccmod",
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.9.8-pre.1/CCMultiworldRandomizer-0.9.8-pre.1.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "45f74fb087f3ece8717a431f42d6898e4f07ce4b7789d080769c1f107a6d575e"
+                    "sha256": "93c0da384e76c8f508651e8adb1d0d799110c74248359884c8d58dcd7cfa7e43"
                 }
             }
         ],
         "stars": 18,
-        "lastUpdateTimestamp": 1786085836000,
+        "lastUpdateTimestamp": 1787984111000,
         "releasePages": [
             {
-                "body": "## Changes to Logic\r\n\r\n* Changed logic in **Faj'ro Temple** and **So'najiz Temple** to be more in line with the open world mod (@Valkhiya, #95).\r\n* Changed chests that block chest key gates so that they once again require the key that opens them (@CodeTriangle, #96).\r\n* **Faj'ro 3F: Large Fire Chamber Left** no longer requires a silver key in addition to a bronze key (@CodeTriangle, #96).\r\n\r\n## Changes to Generation\r\n\r\n* Only 3 **Faj'ro Key** items are shuffled, in accordance with the recent changes to the open world mod (@CodeTriangle, #97).",
+                "body": "## Changes to Mod\r\n\r\n* Added more functionality to the Archipelago menus (@CodeTriangle, #98).\r\n  * Text boxes now accept CTRL-V to paste and CTRL-U to clear.\r\n  * Text client now automatically jumps to the bottom.\r\n  * Text client can be scrolled one page at a time using L2/R2, and scrolled faster by holding R1 and using the right stick.\r\n\r\n### Internal Changes\r\n\r\n* Reformatted a large amount of input data (@Valkhiya, #93)\r\n\r\n## Changes to APWorld\r\n\r\n* Fixed one more instance of non-determinism, this time in the `pre_fill` function (@Gudf, CodeTriangle/Archipelago#27).\r\n  * This should ensure that generations with the same seed produce the same output.\r\n* Replaced logic conditions with pre-optimized lambdas (@CodeTriangle, CodeTriangle/Archipelago#24).\r\n  * This should speed up generation on large scales.\r\n\r\n### Internal Changes\r\n\r\n* Remove `LogicDict`, a legacy class used in logic, and replace it with a reference to the world itself (@CodeTriangle, CodeTriangle/Archipelago#28).",
+                "version": "0.9.8-pre.1",
+                "timestamp": 1787984111000,
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.9.8-pre.1"
+            },
+            {
+                "body": "## Changes to Logic\r\n\r\n* Changed logic in **Faj'ro Temple** and **So'najiz Temple** to be more in line with the open world mod (@Valkhiya, #95).\r\n* Changed chests that block chest key gates so that they once again require the key that opens them (@CodeTriangle, #96).\r\n* **Faj'ro 3F: Large Fire Chamber Left** no longer requires a silver key in addition to a bronze key (@CodeTriangle, #96).\r\n\r\n## Changes to Generation\r\n\r\n* **Circuit Override** items are now classified as Useful instead of Progression after notable user feedback  (@CodeTriangle, #97).\r\n* Only 3 **Faj'ro Key** items are shuffled, in accordance with the recent changes to the open world mod (@CodeTriangle, #97).",
                 "version": "0.9.7",
                 "timestamp": 1786085836000,
                 "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.9.7"
