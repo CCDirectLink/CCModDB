@@ -5950,8 +5950,8 @@
     "menu-ui-replacer": {
         "metadataCCMod": {
             "id": "menu-ui-replacer",
-            "version": "1.0.5",
             "title": "menu-ui-replacer",
+            "version": "1.1.0",
             "description": "Replace Lea with the character of your choice in the menu!",
             "repository": "https://github.com/CCDirectLink/cc-menu-ui-replacement",
             "tags": [
@@ -5959,27 +5959,30 @@
             ],
             "authors": [
                 "hsifnus",
-                "ac2pic"
+                "ac2pic",
+                "krypek"
             ],
-            "plugin": "plugin.js",
-            "postload": "postload.js",
-            "assets": [
-                "assets/data/menu.json"
-            ]
+            "plugin": "plugin.js"
         },
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CCDirectLink/cc-menu-ui-replacement/archive/refs/tags/v1.0.5.zip",
-                "source": "cc-menu-ui-replacement-1.0.5/cc-menu-ui-replacement",
+                "url": "https://github.com/CCDirectLink/cc-menu-ui-replacement/releases/download/v1.1.0/menu-ui-replacer-1.1.0.ccmod",
+                "source": "",
                 "hash": {
-                    "sha256": "fa7b1ad6524e49c03716d51d036b887ab29868f43ca13a89268be792d083eac9"
+                    "sha256": "b9c12936722e4b2d1098d9051aa691f1e4588f950ba003e67d9a8536647b02a1"
                 }
             }
         ],
-        "stars": 1,
-        "lastUpdateTimestamp": 1722967706000,
+        "stars": 2,
+        "lastUpdateTimestamp": 1788021803000,
         "releasePages": [
+            {
+                "body": "\n### Added\n\n- Add support for partial configs\n\n### Chaned\n\n- Rewrite to Typescript\n\n### Fixed\n\n- Fix the player head in the map menu being positioned incorrectly",
+                "version": "1.1.0",
+                "timestamp": 1788021804000,
+                "url": "https://github.com/CCDirectLink/cc-menu-ui-replacement/releases/tag/v1.1.0"
+            },
             {
                 "body": "* Fix map floor buttons not reacting to area changes #3 ",
                 "version": "1.0.5",
