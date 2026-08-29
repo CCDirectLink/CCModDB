@@ -2,7 +2,7 @@
     "mw-rando": {
         "metadataCCMod": {
             "id": "mw-rando",
-            "version": "0.9.0-pre.3",
+            "version": "0.9.8-pre.1",
             "title": "Multiworld randomizer",
             "description": "Client for CrossCode Archipelago Integration",
             "repository": "https://github.com/CodeTriangle/CCMultiworldRandomizer",
@@ -16,29 +16,85 @@
                 "24": "icon-24.png"
             },
             "dependencies": {
-                "open-world": ">=0.5.1-pre1",
+                "marquee": ">=0.1.0",
+                "open-world": ">=0.5.8",
                 "nax-ccuilib": ">=1.5.1",
-                "ccmodmanager": ">=1.0.4",
+                "tips-and-tricks": ">=0.1.0",
+                "ccmodmanager": ">=1.2.1",
                 "font-utils": ">=1.2.0"
             }
         },
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.9.0-pre.3/CCMultiworldRandomizer-0.9.0-pre.3.ccmod",
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.9.8-pre.1/CCMultiworldRandomizer-0.9.8-pre.1.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "37a519165e2801ff967d04c43d0e6b0c9ac2c2b457d7c1cd95bc084c45cb1033"
+                    "sha256": "93c0da384e76c8f508651e8adb1d0d799110c74248359884c8d58dcd7cfa7e43"
                 }
             }
         ],
-        "stars": 17,
-        "lastUpdateTimestamp": 1779615190000,
+        "stars": 18,
+        "lastUpdateTimestamp": 1787984111000,
         "releasePages": [
+            {
+                "body": "## Changes to Mod\r\n\r\n* Added more functionality to the Archipelago menus (@CodeTriangle, #98).\r\n  * Text boxes now accept CTRL-V to paste and CTRL-U to clear.\r\n  * Text client now automatically jumps to the bottom.\r\n  * Text client can be scrolled one page at a time using L2/R2, and scrolled faster by holding R1 and using the right stick.\r\n\r\n### Internal Changes\r\n\r\n* Reformatted a large amount of input data (@Valkhiya, #93)\r\n\r\n## Changes to APWorld\r\n\r\n* Fixed one more instance of non-determinism, this time in the `pre_fill` function (@Gudf, CodeTriangle/Archipelago#27).\r\n  * This should ensure that generations with the same seed produce the same output.\r\n* Replaced logic conditions with pre-optimized lambdas (@CodeTriangle, CodeTriangle/Archipelago#24).\r\n  * This should speed up generation on large scales.\r\n\r\n### Internal Changes\r\n\r\n* Remove `LogicDict`, a legacy class used in logic, and replace it with a reference to the world itself (@CodeTriangle, CodeTriangle/Archipelago#28).",
+                "version": "0.9.8-pre.1",
+                "timestamp": 1787984111000,
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.9.8-pre.1"
+            },
+            {
+                "body": "## Changes to Logic\r\n\r\n* Changed logic in **Faj'ro Temple** and **So'najiz Temple** to be more in line with the open world mod (@Valkhiya, #95).\r\n* Changed chests that block chest key gates so that they once again require the key that opens them (@CodeTriangle, #96).\r\n* **Faj'ro 3F: Large Fire Chamber Left** no longer requires a silver key in addition to a bronze key (@CodeTriangle, #96).\r\n\r\n## Changes to Generation\r\n\r\n* **Circuit Override** items are now classified as Useful instead of Progression after notable user feedback  (@CodeTriangle, #97).\r\n* Only 3 **Faj'ro Key** items are shuffled, in accordance with the recent changes to the open world mod (@CodeTriangle, #97).",
+                "version": "0.9.7",
+                "timestamp": 1786085836000,
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.9.7"
+            },
+            {
+                "body": "## Fixes\r\n\r\n* Fixed a packaging error where an in-progress version of upcoming features were distributed with 0.9.5, causing several issues.",
+                "version": "0.9.6",
+                "timestamp": 1785401155000,
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.9.6"
+            },
+            {
+                "body": "## Changes to Logic\r\n\r\n* Modified **Faj'ro Temple** and **Grand Krys'kajo** logic (#90, @Valkhiya).\r\n  * Both temples now have their initial doors leading to the middle of the temple unlocked by default.\r\n  * Now, completing the left and right branches of the first floor of each temple, instead of unlocking the next part of the dungeon, spawns a chest.\r\n  * This relaxes the number of required elements needed to finish these temples, leading to more possible logical permutations.\r\n  * **Note:** These patches are not applied conditionally. If you generated on 0.9.4 or before and you want to avoid going out of logic, you will have to enforce this on your own by only accessing the second floor of the dungeons only after completing both branches.\r\n* Removed Chest Lock Randomization from **Mine U2: Frozen Chamber 2 Right**, **Faj'ro 3F: Large Fire Chamber Right**, and **So'najiz U1: Trial of Persistence Lower Left** (#91, @CodeTriangle).\r\n  * These chests are the game's introduction to the concept of using **Thief's Key**, **Silver Key**, and **Radiant Key** respectively, meaning that they control barriers to progression.\r\n  * When **Chest Lock Randomization** was enabled, however, these chests would generate with a random level, causing a long-standing logic bug.\r\n  * Now, these chests will always generate with their default level, ensuring logical accuracy.\r\n\r\n## Fixes to Generation\r\n\r\n* Do not create regions that will not be used in the rando (CodeTriangle/Archipelago#26, #92, @CodeTriangle).\r\n  * This fixes a unit test failure.\r\n\r\n## Fixes to Logic\r\n\r\n* Move **Henry Trailblazing** to **Sapphire Ridge** region.",
+                "version": "0.9.5",
+                "timestamp": 1785392457000,
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.9.5"
+            },
+            {
+                "body": "## Fixes to Mod\r\n\r\n* Fixed an issue where, in the Quest Menu in Records, if a non-randomized quest was displayed after a randomized quest, their rewards would overlap (#87, @CodeTriangle).\r\n* Fixed an issue where, on the Archipelago Game Info screen, when Quest Randomization and Shop Randomization were both turned off, Progressive Equipment would never display as enabled. (#86, @CodeTriangle).\r\n\r\n## Fixes to Logic\r\n\r\n* **Creator** goal has been moved to **Vermillion Wasteland** as it should have been (#82, @Gudf).\r\n* **Shock Pedestal** and **So'najiz Circuit Override** have swapped regions as their logic had previously been transposed (#84, @kumquat-ir).\r\n* **An Unfortunate Series of Features** now requires access to Maroon Valley (#85, @CodeTriangle).\r\n* **Botanics: Omega Open Baraleles** now requires grove or wave (#85, @CodeTriangle).\r\n* Shop Slots for **Cross Gear** in **Rhombus Weapons** now requires **Azure Archipelago Pass** (#85, @CodeTriangle).",
+                "version": "0.9.4",
+                "timestamp": 1784428480000,
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.9.4"
+            },
+            {
+                "body": "## Additions\r\n\r\n* Added a new **Tips** system to display useful information on the pause screen (@CodeTriangle, #77).\r\n  * These tips replace the Task HUD which is usually inaccurate in rando due to its overreliance on linear plot points.\r\n  * Got a tip idea? Submit it to CodeTriangle on Discord.\r\n\r\n## Changes to Dependencies\r\n\r\n* Added a new dependency on CodeTriangle's [`tips-and-tricks`](https://github.com/CodeTriangle/cc-tips-and-tricks).\r\n* Removed marquee functionality and added a new dependency on CodeTriangle's [`marquee`](https://github.com/CodeTriangle/cc-marquee/).\r\n\r\n## Fixes to Mod\r\n\r\n* Fixed an issue where locations would appear to be checked multiple times when acquiring items from pedestals (@CodeTriangle, #79).\r\n* Circumvent a visual issue that arises when floor 3 of Grand Krys'kajo is skipped by fighting Son of the East immediately (@CodeTriangle, #80).\r\n\r\n## Fixes to Logic\r\n\r\n* Move the following **Botanics** locations (@CodeTriangle, #76):\r\n  * **Omega Puff Plant** now requires access to either **Gaia's Garden West** or **Gaia's Garden East**.\r\n  * **Alpha Virus Shroom** and **Beta Virus Shroom** now require access to **Gaia's Garden Infested**.\r\n* Remove the requirement on **Meteor Pass** for **Maroon Trailblazing** and add it to **Henry Trailblazing** (@CodeTriangle, #76)\r\n",
+                "version": "0.9.3",
+                "timestamp": 1781503918000,
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.9.3"
+            },
+            {
+                "body": "## Fixes to Mod\r\n\r\n* Fixed an issue in bundling where certain files would not be found in the archive (@CodeTriangle, #75).\r\n",
+                "version": "0.9.2",
+                "timestamp": 1781118400000,
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.9.2"
+            },
+            {
+                "body": "## Changes to Options\r\n\r\n* Added the following new options (@Bluepinkdragon):\r\n  * **Chest Reveal**:  If enabled, shows the category of all chests without having to reach the room chests are in first.\r\n\r\n## Fixes to Logic\r\n\r\n* Fixed an issue where, when **Allow Booster Grinding** was enabled alongside **Enable DLC**, it would be impossible to grind certain areas because of a lack of **Everlasting Amber** (@CodeTriangle).\r\n* Fixed an issue where, when **Shop Receive Mode** was set to **per_shop** and **Enable DLC** was off, certain items in Rhombus Weapons would fail to place (@CodeTriangle).",
+                "version": "0.9.1",
+                "timestamp": 1780467324000,
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.9.1"
+            },
+            {
+                "body": "# Changes from 0.8.5\r\n\r\n## Additions\r\n\r\n* Added support for **Botanics** (@CodeTriangle):\r\n  * If enabled, acquiring all the information about each plant by collecting drops is a location.\r\n  * Enable the `botanity` option to use this feature.\r\n  * Along with this, you can also change how many plants are required to complete **Crocus Pocus** and the three intermediary locations.\r\n* Added support for the **A New Home** expansion (@kumquat-ir):\r\n  * Chests, quests, cutscenes, and shops added by the DLC are all now available as potential locations.\r\n  * Enable the `enable_dlc` option to use this feature.\r\n  * A new goal has been added (`diorbis`) that requires the player to descend Ku'lero Temple.\r\n\r\n# Changes from 0.9.0 Prerelease 3\r\n\r\n## Fixes to Logic\r\n\r\n* Added a requirement for **Azure Archipelago Pass** to **Trouble on the Highway**\r\n\r\n## Additions\r\n\r\n* Added **Cross Gear** shop slots to **Homestedt Weapons**.\r\n\r\n# Migration Guide\r\n\r\nThis is the new stable version. All players should update to 0.9.0, regardless of whether their worlds were generated on 0.8 or a 0.9 prerelease.",
+                "version": "0.9.0",
+                "timestamp": 1780258410000,
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.9.0"
+            },
             {
                 "body": "## Note\r\n\r\nThis release includes everything from 0.8.5 (@CodeTriangle)\r\n\r\n## Fixes to Logic\r\n\r\n* Changed the requirement of the quest **Salty Detox** from **Lakeside Escort** to **Rooting for Power**. (@CodeTriangle, #67)\r\n* Made **Beach Fight** require access to the first fight against Son of the East in Grand Krys'kajo. (@CodeTriangle, #67)\r\n* Added a requirement on **Azure Archipelago Pass** to: (@kumquat-ir, #62)\r\n  * **Beach Fight**\r\n  * **Trial of Ascension**\r\n  * **Spiritual Drinks**\r\n  * **Salty Detox**\r\n  * **Wrath of Goat**\r\n  * **In Cawhoofs**\r\n  * **Riches with Fridges**\r\n  * **Lost and On the Run**\r\n  * **Trouble on the Highway**\r\n  * **Tremors of the Past**\r\n  * **Wetter Work**",
                 "version": "0.9.0-pre.3",
-                "timestamp": 1779615190000,
+                "timestamp": 1779699702000,
                 "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.9.0-pre.3"
             },
             {
