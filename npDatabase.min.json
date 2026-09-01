@@ -1567,7 +1567,7 @@
         "metadataCCMod": {
             "id": "carn",
             "title": "Carnellio SBBF Crossover",
-            "version": "0.7.8",
+            "version": "0.7.10",
             "description": "Adds a series of optional, challenging bosses utilizing a unique combo system. Crossover with Skill Based Boss Fights!",
             "icons": {
                 "24": "icon-24.png"
@@ -1590,16 +1590,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/fatetrait/CrossCode-Carnellio-Boss-Mod/releases/download/0.7.8/carnellio.ccmod",
+                "url": "https://github.com/fatetrait/CrossCode-Carnellio-Boss-Mod/releases/download/0.7.10/carnellio.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "a9de4238bfc047ad420dc2abd309f52cdf25c4ab98c28d2466926f5ef1dc3103"
+                    "sha256": "662969c7ab72fd9ef9840397e2a8f72a6c02df9265b0882e5cc7d662b3d4f03c"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1787871064000,
+        "lastUpdateTimestamp": 1788252038000,
         "releasePages": [
+            {
+                "body": "made the sprites for carnollo more purple\r\nmade the timer more smooth on fate combos\r\n\r\nvarious rebalances that favor the player\r\nmawaru damage halved.\r\nfatal howl reworked. no longer does an awkward big hit that overkills the player. instead slows the player guaranteed and grants 15s -> 20s attack buff to the boss.",
+                "version": "0.7.10",
+                "timestamp": 1788251674000,
+                "url": "https://github.com/fatetrait/CrossCode-Carnellio-Boss-Mod/releases/tag/0.7.10"
+            },
             {
                 "body": "animation improvements/fixes\r\n\r\nNerfs:\r\nsong of storms sigil reworked\r\nKnockup cancels current sigil (no more sweeping seize spam)",
                 "version": "0.7.8",
