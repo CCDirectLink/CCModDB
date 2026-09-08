@@ -1567,7 +1567,7 @@
         "metadataCCMod": {
             "id": "carn",
             "title": "Carnellio SBBF Crossover",
-            "version": "0.8.1",
+            "version": "0.8.4",
             "description": "Adds a series of optional, challenging bosses utilizing a unique combo system. Crossover with Skill Based Boss Fights!",
             "icons": {
                 "24": "icon-24.png"
@@ -1590,16 +1590,28 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/fatetrait/CrossCode-Carnellio-Boss-Mod/releases/download/0.8.1/carnellio.ccmod",
+                "url": "https://github.com/fatetrait/CrossCode-Carnellio-Boss-Mod/releases/download/0.8.4/carnellio.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "8d213040f51f528bc298f8fa690a58b3e08b3716b7fbd2f0ff854ba75bacc4c5"
+                    "sha256": "a703c3d8b7140ddc8c0cd659b1b5d22e344ed26f3de35bb4b758c7120158e43e"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1788578006000,
+        "lastUpdateTimestamp": 1788848644000,
         "releasePages": [
+            {
+                "body": "rebalancing for fate combos. \r\nremoving a lot of unnecessary camera focuses,\r\nheavy nerf damage on hailstorm.\r\n",
+                "version": "0.8.4",
+                "timestamp": 1788848644000,
+                "url": "https://github.com/fatetrait/CrossCode-Carnellio-Boss-Mod/releases/tag/0.8.4"
+            },
+            {
+                "body": "fixes a lot of fate combo bugs. nothing much else to note",
+                "version": "0.8.2",
+                "timestamp": 1788592690000,
+                "url": "https://github.com/fatetrait/CrossCode-Carnellio-Boss-Mod/releases/tag/0.8.2"
+            },
             {
                 "body": "fix fate combos reactions causing a full combo restart",
                 "version": "0.8.1",
