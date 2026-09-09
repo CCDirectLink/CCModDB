@@ -1567,7 +1567,7 @@
         "metadataCCMod": {
             "id": "carn",
             "title": "Carnellio SBBF Crossover",
-            "version": "0.8.4",
+            "version": "0.9.0",
             "description": "Adds a series of optional, challenging bosses utilizing a unique combo system. Crossover with Skill Based Boss Fights!",
             "icons": {
                 "24": "icon-24.png"
@@ -1590,16 +1590,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/fatetrait/CrossCode-Carnellio-Boss-Mod/releases/download/0.8.4/carnellio.ccmod",
+                "url": "https://github.com/fatetrait/CrossCode-Carnellio-Boss-Mod/releases/download/0.9.0/carnellio.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "a703c3d8b7140ddc8c0cd659b1b5d22e344ed26f3de35bb4b758c7120158e43e"
+                    "sha256": "e6744b17d79716cc780ca0068fdb2e118d985d7f8c5e1635e9057d6415beb4f3"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1788848644000,
+        "lastUpdateTimestamp": 1788936616000,
         "releasePages": [
+            {
+                "body": "Adds the draconic class, which replaces your ball throw with summon mechanics. \r\nAlso, the entire shock tree is replaced with draconic moves. \r\nYou can always convert back at any of the boss lobby class change nodes.\r\nMore combos may be added at a later date (to the class t3 arts).\r\nPlease be warned I have done very little balance testing on this, the class may be very strong or very weak.\r\n\r\n",
+                "version": "0.9.0",
+                "timestamp": 1788936616000,
+                "url": "https://github.com/fatetrait/CrossCode-Carnellio-Boss-Mod/releases/tag/0.9.0"
+            },
             {
                 "body": "rebalancing for fate combos. \r\nremoving a lot of unnecessary camera focuses,\r\nheavy nerf damage on hailstorm.\r\n",
                 "version": "0.8.4",
