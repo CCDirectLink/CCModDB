@@ -1567,8 +1567,8 @@
         "metadataCCMod": {
             "id": "carn",
             "title": "Carnellio SBBF Crossover",
-            "version": "0.9.0",
-            "description": "Adds a series of optional, challenging bosses utilizing a unique combo system. Crossover with Skill Based Boss Fights!",
+            "version": "1.0.0",
+            "description": "Adds a series of optional, challenging bosses and a playable class as a reward (replaces shock circuit). Crossover with Skill Based Boss Fights!",
             "icons": {
                 "24": "icon-24.png"
             },
@@ -1576,7 +1576,9 @@
             "tags": [
                 "boss",
                 "arena",
-                "fun"
+                "pvp duel",
+                "player character",
+                "combat arts"
             ],
             "repository": "https://github.com/fatetrait/CrossCode-Carnellio-Boss-Mod",
             "prestart": "prestart.js",
@@ -1590,16 +1592,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/fatetrait/CrossCode-Carnellio-Boss-Mod/releases/download/0.9.0/carnellio.ccmod",
+                "url": "https://github.com/fatetrait/CrossCode-Carnellio-Boss-Mod/releases/download/1.0.0/carnellio.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "e6744b17d79716cc780ca0068fdb2e118d985d7f8c5e1635e9057d6415beb4f3"
+                    "sha256": "673bb4e698647164420f317bcee1a441703ea596c69aaa9ecfef127de54e1c12"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1788936616000,
+        "lastUpdateTimestamp": 1789028691000,
         "releasePages": [
+            {
+                "body": "Full Release!!! TESTED (mostly :p)\r\n\r\n3 fights modded in: Base Carnollo, Gwas Combos Carnollo, Fate Combos Carnollo\r\n1 class rewarded for winning any mode or collecting enough fragments: Draconic (replaces shock, toggleable)\r\n\r\nFind the fights at the npc in the Rookie Harbor Dock.\r\n\r\nChangelog:\r\n22 combos added to Draconic lea.\r\nSigil Draw SFX FINALLY added.",
+                "version": "1.0.0",
+                "timestamp": 1789028691000,
+                "url": "https://github.com/fatetrait/CrossCode-Carnellio-Boss-Mod/releases/tag/1.0.0"
+            },
             {
                 "body": "Adds the draconic class, which replaces your ball throw with summon mechanics. \r\nAlso, the entire shock tree is replaced with draconic moves. \r\nYou can always convert back at any of the boss lobby class change nodes.\r\nMore combos may be added at a later date (to the class t3 arts).\r\nPlease be warned I have done very little balance testing on this, the class may be very strong or very weak.\r\n\r\n",
                 "version": "0.9.0",
