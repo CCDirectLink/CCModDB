@@ -7557,13 +7557,14 @@
     "qt-refund-circuits": {
         "metadataCCMod": {
             "id": "qt-refund-circuits",
-            "version": "1.0.0",
+            "version": "1.1.0",
             "title": "Refund Circuits",
             "description": "Allows refunding cp and undoing circuit purchases (without the choice of fully editing trees), using code copied from EpicYoshiMaster's mod.",
             "repository": "https://github.com/quietype/qt-refund-circuits",
             "authors": [
                 "EpicYoshiMaster",
-                "QuieType"
+                "QuieType",
+                "buanjautista"
             ],
             "tags": [
                 "QoL"
@@ -7573,16 +7574,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/QuieType/qt-refund-circuits/releases/download/v1.0.0/qt-refund-circuits.ccmod",
+                "url": "https://github.com/QuieType/qt-refund-circuits/releases/download/v1.1.0/qt-refund-circuits.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "f9f31ddf2d6d73b869d85ff413d2b9d78b94f4a1234162ed58e3b79c093ec575"
+                    "sha256": "4846da489782a8853b3114433286130bc7ce61e1b5eac9414321aee57e5618b5"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1783398416000,
+        "lastUpdateTimestamp": 1789070179000,
         "releasePages": [
+            {
+                "body": "Isn't it nice when people do work _for_ you?\r\n\r\nRelease Notes:\r\n - The map file was made into a patch file, fixing some compatibility issues with other mods and reducing file size. I did none of the work. Thank you Buanjautista!",
+                "version": "1.1.0",
+                "timestamp": 1789070179000,
+                "url": "https://github.com/QuieType/qt-refund-circuits/releases/tag/v1.1.0"
+            },
             {
                 "body": "Well, the mod exists now, which is always good news.\r\n\r\nRelease Notes:\r\n - Most functionality copied from yoshi-open-circuits\r\n - In expo-space after the temple mine, added a line to that cutscene saying that circuit resets are now useless.\r\n - Wrote a README\r\n\r\nI don't know why I persist in making minified and not-minified versions. If anyone wants a dev copy, they can use the source code zip instead of the ccmod. And the difference is 3KB, because %98 of the space comes from the map file anyway.",
                 "version": "1.0.0",
