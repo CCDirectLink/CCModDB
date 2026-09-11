@@ -7363,7 +7363,7 @@
     "playable-shizuka": {
         "metadataCCMod": {
             "id": "playable-shizuka",
-            "version": "1.1.0",
+            "version": "1.1.2",
             "title": {
                 "en_US": "Playable Shizuka",
                 "de_DE": "Playable Shizuka",
@@ -7395,22 +7395,34 @@
                 "rioreur"
             ],
             "dependencies": {
-                "menu-ui-replacer": ">=1.0.5"
+                "menu-ui-replacer": ">=1.1.0"
             }
         },
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/playable-shizuka/archive/refs/tags/1.1.0.zip",
-                "source": "playable-shizuka-1.1.0",
+                "url": "https://github.com/XenonA7/playable-shizuka/archive/refs/tags/1.1.2.zip",
+                "source": "playable-shizuka-1.1.2",
                 "hash": {
-                    "sha256": "2ed22fbcb05743ab8f326fd99776e574eb776bb703124edf0062bca45b482878"
+                    "sha256": "abf1914fb4c9eb4bbaf39bb29c35360ab62aea9e923e7f409ed8b3274f56a79d"
                 }
             }
         ],
-        "stars": 0,
-        "lastUpdateTimestamp": 1786175096000,
+        "stars": 1,
+        "lastUpdateTimestamp": 1789105359000,
         "releasePages": [
+            {
+                "body": "## 1.1.2 (09/10/2026)\r\n- Fixed wrong TinyHead sizeY value",
+                "version": "1.1.2",
+                "timestamp": 1789105359000,
+                "url": "https://github.com/XenonA7/playable-shizuka/releases/tag/1.1.2"
+            },
+            {
+                "body": "## 1.1.2 (09/10/2026)\r\n- Now requires menu-ui-replacer 1.1.0 or higher\r\n- Implemented TinyHead menu sprite (for Multibakery)",
+                "version": "1.1.1",
+                "timestamp": 1789104922000,
+                "url": "https://github.com/XenonA7/playable-shizuka/releases/tag/1.1.1"
+            },
             {
                 "body": "## 1.1.0 (08/01/2026)\r\n- Added Shizuka menu artwork by Rioreur\r\n- Added Rioreur to author list\r\n- Updated mod description\r\n- Now requires dependency mod: menu-ui-replacer (https://github.com/CCDirectLink/cc-menu-ui-replacement)",
                 "version": "1.1.0",
