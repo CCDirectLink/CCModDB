@@ -7307,7 +7307,7 @@
     "playable-apollo": {
         "metadataCCMod": {
             "id": "playable-apollo",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "title": {
                 "en_US": "Playable Apollo",
                 "de_DE": "Playable Apollo",
@@ -7342,16 +7342,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/playable-apollo/archive/refs/tags/1.0.1.zip",
-                "source": "playable-apollo-1.0.1",
+                "url": "https://github.com/XenonA7/playable-apollo/archive/refs/tags/1.0.2.zip",
+                "source": "playable-apollo-1.0.2",
                 "hash": {
-                    "sha256": "e31801c71682ce9a331f1d3686f46def79f6863fcb206e293209b89c26513626"
+                    "sha256": "319763aae2c7cbf8ca5544541becee316293a7d95535a7e55747036ce757be96"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1784008746000,
+        "lastUpdateTimestamp": 1789105958000,
         "releasePages": [
+            {
+                "body": "## 1.0.2 (09/10/2026)\r\n- Implemented TinyHead menu sprite (for Multibakery)\r\n  * This only activates if menu-ui-replacer is installed (not a hard dependency)",
+                "version": "1.0.2",
+                "timestamp": 1789105958000,
+                "url": "https://github.com/XenonA7/playable-apollo/releases/tag/1.0.2"
+            },
             {
                 "body": "## 1.0.1 (07/13/2026)\r\n- Renamed animation file to fancyguy-custom for better compatibility",
                 "version": "1.0.1",
