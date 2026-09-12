@@ -7881,15 +7881,15 @@
     "starcaller-2": {
         "metadataCCMod": {
             "id": "starcaller-2",
-            "version": "0.6.1",
+            "version": "0.6.2",
             "title": {
-                "en_US": "Starcaller 2",
-                "de_DE": "Starcaller 2",
-                "fr_FR": "Starcaller 2",
-                "zh_CN": "Starcaller 2",
-                "zh_TW": "Starcaller 2",
-                "ja_JP": "Starcaller 2",
-                "ko_KR": "Starcaller 2"
+                "en_US": "Starcaller 2 \\i[class-star]",
+                "de_DE": "Starcaller 2 \\i[class-star]",
+                "fr_FR": "Starcaller 2 \\i[class-star]",
+                "zh_CN": "Starcaller 2 \\i[class-star]",
+                "zh_TW": "Starcaller 2 \\i[class-star]",
+                "ja_JP": "Starcaller 2 \\i[class-star]",
+                "ko_KR": "Starcaller 2 \\i[class-star]"
             },
             "description": {
                 "en_US": "XenonA7's take on HeartLychee's \\c[3]Starcaller\\c[0] character.",
@@ -7927,16 +7927,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/starcaller-2/archive/refs/tags/0.6.1.zip",
-                "source": "starcaller-2-0.6.1",
+                "url": "https://github.com/XenonA7/starcaller-2/archive/refs/tags/0.6.2.zip",
+                "source": "starcaller-2-0.6.2",
                 "hash": {
-                    "sha256": "8696f02ee9639fb19b4e03035b302820a7a75c0da0d79e154306b6ccc821a005"
+                    "sha256": "852c8c2944e3746201301e14bc2bbf1e42ca9461d09d4b6d3828276a19bd23a5"
                 }
             }
         ],
-        "stars": 0,
-        "lastUpdateTimestamp": 1753765527000,
+        "stars": 1,
+        "lastUpdateTimestamp": 1789167557000,
         "releasePages": [
+            {
+                "body": "## 0.6.2 (09/11/25)\r\n### General\r\n- Verified player file skillBonus integrity\r\n### New Content\r\n- Added TinyHead menu icon (for Multibakery)\r\n  * This only activates if menu-ui-replacer is installed (not a hard dependency)\r\n- Added dialogue in starcaller2-lobby with more info about the mod\r\n- Added a new star effect to the summoner lobby teleporter in hideout-southwest if XPC is installed\r\n### Changes\r\n- Added starcaller2 class logo font icon to mod title\r\n- Added light source to effect vengeancePulseAura\r\n- Minor tweak to icon.png\r\n- Added \"light\": \"S\" to all default uncharged projectiles (new XPC standard)\r\n- Frozen spike now always shoots both a frozenSpikeDormant and frozenSpikeBullet proxy\r\n- Updated CRATER particle/effects in specials.neutral-starcaller2 to use new XPC standard for Z_FLAT and gfxOffset\r\n- Added randFlip property to all dirt, debris, crater, flame2, etc particles\r\n- Added 1.15 CHANGE_SCALE to all non-neutral default charged projetiles (via ballTrail effects)\r\n- Effect heat-starcaller2.salvoMeteorTrail now uses particle EXPLOSION_BIG_FAST_NO_GUI\r\n- Added ground dust effets to Ritual Blade\r\n- Lowered audio playback speed of default melee sweep sound effects\r\n### Fixes\r\n- Deleted all inert \"maxBounds\" properties in starcaller2 player file proxies (artifact from vanilla Lea code)\r\n- Removed \"hitInvincible\" setting from Burning Updraft\r\n- Added the Z_FLAT shapeType to all CRATER particles\r\n- Disabled unfinished \"Static Cloud\" combat art\r\n- Fixed proxy salvoMeteor missing shadow by removing guiSprites property\r\n### Balance\r\n- Proxy frozenSpikeBullet damageFactor reduced from 3.0 to 2.4\r\n- Proxy frozenSpikeDormant now expires after 7 seconds instead of lasting forever\r\n- Flaming Salvo shoot duration reduced from 0.4 to 0.3 seconds\r\n- Flaming Salvo can now be dash-canceled after 0.5 seconds instead of 0.55 seconds\r\n- Seismic Slam and Starquake hitboxes now extend Z=-32 below the ground for a few niche interactions\r\n- Seismic Slam and Starquake hitboxes now standardized at height Z=8 above ground\r\n- Proxy starcannonBullet speed increased from 400 to 475\r\n- Proxy starcannonBullet knockback reduced from MEDIUM to LIGHT",
+                "version": "0.6.2",
+                "timestamp": 1789167557000,
+                "url": "https://github.com/XenonA7/starcaller-2/releases/tag/0.6.2"
+            },
             {
                 "body": "## 0.6.1 (07/28/25)\r\n### New Content\r\n- XPC's cheat code custom skills are now usable by Starcaller2 if both XPC and ArcaneLab are installed and the quest is complete\r\n- Added Starcaller1 cameo to summoner lobby if Lubkuluk's Playable Classes is installed (low chance to appear)\r\n### Changes\r\n- Stellar Blade now has the NO_PUZZLE property\r\n- Added audio pitch variance to effect beeTrail\r\n- Updated all PLAY_ANIM_RANGE effect steps in the mod to use `\"alongY\": true`\r\n### Fixes\r\n- All status conditions granted by Starcaller2 combat arts now have functional timers on the GUI (code by Azure Lazuline)\r\n- Fixed instances of file path space padding in effect data sheets\r\n- Fixed repeating 1-frame animations for all particle effects\r\n- Fixed repeating 1-frame animations for all player proxies\r\n- Fixed all instances of WAIT for time 0.01 in all files (increased to 0.02 minimum standard)\r\n- Set withElse value to false for Disarming Shield and Disintegration Shield\r\n- Fixed ENV_STAR2_DARK particles not rotating in effect vengeancePulsePulse\r\n### Balance\r\n- Stellar Blade healing increased from 0.0075 to 0.0175 per hit\r\n- Stellar Blade can no longer be used to target yourself when facing a wall (startDistCollide NONE)",
                 "version": "0.6.1",
