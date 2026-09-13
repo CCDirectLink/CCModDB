@@ -8505,7 +8505,7 @@
     "xenons-playable-classes": {
         "metadataCCMod": {
             "id": "xenons-playable-classes",
-            "version": "3.5.4",
+            "version": "3.5.5",
             "title": {
                 "en_US": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
                 "de_DE": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
@@ -8547,7 +8547,7 @@
                 "Simplify": ">=2.12.1",
                 "extendable-severed-heads": ">=1.1.0",
                 "cc-alybox": ">=1.1.0",
-                "menu-ui-replacer": ">=1.0.5",
+                "menu-ui-replacer": ">=1.1.0",
                 "extension-asset-preloader": ">=1.0.0",
                 "crosscode": ">=1.4.0",
                 "post-game": ">=1.4.0"
@@ -8556,16 +8556,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/3.5.4.zip",
-                "source": "xenons-playable-classes-3.5.4",
+                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/3.5.5.zip",
+                "source": "xenons-playable-classes-3.5.5",
                 "hash": {
-                    "sha256": "81c30842bbc31d7c736b1dd5a24992472bce9ede566a7a0f78928fa0db063cf6"
+                    "sha256": "1677b7349d583cf6505cbb2287c1ff08058e3a829d5b22ff7d97c4fe55254bc6"
                 }
             }
         ],
-        "stars": 34,
-        "lastUpdateTimestamp": 1786863487000,
+        "stars": 35,
+        "lastUpdateTimestamp": 1789312805000,
         "releasePages": [
+            {
+                "body": "## 3.5.5 (09/13/2026)\r\n### General\r\n- Now requires menu-ui-replacer 1.1.0 or higher\r\n### New Content\r\n- Added new Triblader-Lea menu portrait by Orco Pixelado\r\n- Implemented Hexacast AreaButton and MapFloorButtonContainer icons\r\n- Added TinyHead sprites for all non-Lea XPC characters (for Multibakery)\r\n### Changes\r\n- Updated Hexacast AreaButton sprites\r\n- Updated mod credits and README to include Orco new artwork\r\n### Fixes\r\n- Fixed Hexacast-Lea sprite color issue in levelUpJump",
+                "version": "3.5.5",
+                "timestamp": 1789312805000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/3.5.5"
+            },
             {
                 "body": "## 3.5.4 (08/15/2026)\r\n### New Content\r\n- Added \"Extra Settings\" options to art-testing and green-screen-room\r\n- Added a switch in art-testing to toggle tmp.xpcMultiplayerAdjustment\r\n### Changes\r\n- Renamed tmp.xpcDisableHoming to tmp.xpcMultiplayerAdjustment\r\n- Disabled saveMode for all maps accessible via the unused-content room\r\n- Disabled saveMode for legacy dev room\r\n- Calamity Beacon now always shoots proxy calamityFlare away from the player to avoid crossing the jump path\r\n- Reduced duration of Branding Blaze jump before final attack (increased gravity)\r\n- Added a screen shake when Rude Buster is launched\r\n- Added screen flash effect for the final hit of Triforce Slash\r\n### Fixes\r\n- Fixed post-duel crash in xpc/bonus/guild-war\r\n- Fixed Stasis Storm to use dashRevFast instead of dashFast during huge whirl segment\r\n### Balance\r\n- Tower of Tranquility ice platforms reduced HP factor from 25 to 12\r\n- Triblader pvp enemies now have HEAVY hit stability during the first part of Flaming Flurry (player still has MEDIUM)\r\n- During multiplayer pvp, Zir'vitar Strike's targeting phase moves faster, cannot be stopped, and has reduced turn speed\r\n- Hexacast THROW_NORMAL and THROW_CHARGED no longer disable homing during multiplayer pvp, they have reduced proxy turn speed now",
                 "version": "3.5.4",
