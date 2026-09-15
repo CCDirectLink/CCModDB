@@ -204,16 +204,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.26.1/v2.14.2.zip",
-                "source": "CCLoader-2.26.1-v2.14.2/assets/mods/ccloader-version-display",
+                "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.26.1/v2.14.4.zip",
+                "source": "CCLoader-2.26.1-v2.14.4/assets/mods/ccloader-version-display",
                 "hash": {
-                    "sha256": "68015df2778cbf9bbfa16a07100cf990eb67c060fbea3012c08f8e345ef45b89"
+                    "sha256": "ebbea8bb1fe74279babb9c99613acb702b4831c8a60f2094e699304d36170cb3"
                 }
             }
         ],
         "stars": 63,
-        "lastUpdateTimestamp": 1787668060000,
+        "lastUpdateTimestamp": 1789507350000,
         "releasePages": [
+            {
+                "body": "* Fixed a crash if invalid launch arguments were provided",
+                "version": "v2.26.1/v2.14.4",
+                "timestamp": 1789507350000,
+                "url": "https://github.com/CCDirectLink/CCLoader/releases/tag/v2.26.1/v2.14.4"
+            },
             {
                 "body": "- Update ccmodmanager.ccmod to v1.2.1",
                 "version": "v2.26.1/v2.14.2",
@@ -1002,7 +1008,7 @@
     "Simplify": {
         "metadataCCMod": {
             "id": "Simplify",
-            "version": "2.14.3",
+            "version": "2.14.4",
             "title": "Simplify",
             "description": "Library mod for CCLoader2.",
             "repository": "https://github.com/CCDirectLink/CCLoader",
@@ -1031,16 +1037,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.26.1/v2.14.2.zip",
-                "source": "CCLoader-2.26.1-v2.14.2/assets/mods/simplify",
+                "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.26.1/v2.14.4.zip",
+                "source": "CCLoader-2.26.1-v2.14.4/assets/mods/simplify",
                 "hash": {
-                    "sha256": "68015df2778cbf9bbfa16a07100cf990eb67c060fbea3012c08f8e345ef45b89"
+                    "sha256": "ebbea8bb1fe74279babb9c99613acb702b4831c8a60f2094e699304d36170cb3"
                 }
             }
         ],
         "stars": 63,
-        "lastUpdateTimestamp": 1787668060000,
+        "lastUpdateTimestamp": 1789507350000,
         "releasePages": [
+            {
+                "body": "* Fixed a crash if invalid launch arguments were provided",
+                "version": "v2.26.1/v2.14.4",
+                "timestamp": 1789507350000,
+                "url": "https://github.com/CCDirectLink/CCLoader/releases/tag/v2.26.1/v2.14.4"
+            },
             {
                 "body": "- Update ccmodmanager.ccmod to v1.2.1",
                 "version": "v2.26.1/v2.14.2",
@@ -3027,16 +3039,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.26.1/v2.14.2.zip",
-                "source": "CCLoader-2.26.1-v2.14.2",
+                "url": "https://github.com/CCDirectLink/CCLoader/archive/refs/tags/v2.26.1/v2.14.4.zip",
+                "source": "CCLoader-2.26.1-v2.14.4",
                 "hash": {
-                    "sha256": "68015df2778cbf9bbfa16a07100cf990eb67c060fbea3012c08f8e345ef45b89"
+                    "sha256": "ebbea8bb1fe74279babb9c99613acb702b4831c8a60f2094e699304d36170cb3"
                 }
             }
         ],
         "stars": 63,
-        "lastUpdateTimestamp": 1787668060000,
+        "lastUpdateTimestamp": 1789507350000,
         "releasePages": [
+            {
+                "body": "* Fixed a crash if invalid launch arguments were provided",
+                "version": "v2.26.1/v2.14.4",
+                "timestamp": 1789507350000,
+                "url": "https://github.com/CCDirectLink/CCLoader/releases/tag/v2.26.1/v2.14.4"
+            },
             {
                 "body": "- Update ccmodmanager.ccmod to v1.2.1",
                 "version": "v2.26.1/v2.14.2",
