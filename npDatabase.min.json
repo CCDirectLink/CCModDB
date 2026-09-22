@@ -1307,6 +1307,30 @@
             }
         ]
     },
+    "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa": {
+        "metadataCCMod": {
+            "id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "version": "0.1.0",
+            "title": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            "description": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            "repository": "",
+            "tags": [
+                "QoL"
+            ],
+            "authors": "CodeTriangle",
+            "prestart": "prestart.js"
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/CodeTriangle/crosscrap/releases/download/aaaa-0.1.0/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.ccmod",
+                "source": "",
+                "hash": {
+                    "sha256": "9fdcc8d3d4c43696975edd7db6f55f182c98293a52da8d060fef0fa30a150954"
+                }
+            }
+        ]
+    },
     "al-cs-hotkeys": {
         "metadataCCMod": {
             "id": "al-cs-hotkeys",
