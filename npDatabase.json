@@ -4740,6 +4740,58 @@
             }
         ]
     },
+    "enemy-level-anarchy": {
+        "metadataCCMod": {
+            "id": "enemy-level-anarchy",
+            "version": "0.1.0",
+            "title": "Enemy Level Anarchy",
+            "description": "Replace EVERY enemy's level randomly :)",
+            "repository": "https://github.com/CodeTriangle/crosscrap",
+            "tags": [
+                "fun"
+            ],
+            "authors": "CodeTriangle",
+            "prestart": "prestart.js"
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/CodeTriangle/crosscrap/releases/download/ela-0.1.0/enemy-level-anarchy.ccmod",
+                "source": "",
+                "hash": {
+                    "sha256": "e6f2ccc7e55fef78e04a4060874c759355a97beaa37e140fcd660ace1713a22d"
+                }
+            }
+        ],
+        "stars": 1,
+        "lastUpdateTimestamp": 1790029559000,
+        "releasePages": [
+            {
+                "body": "Initial release\r\n",
+                "version": "no-slot-limit-0.1.0",
+                "timestamp": 1790029559000,
+                "url": "https://github.com/CodeTriangle/crosscrap/releases/tag/no-slot-limit-0.1.0"
+            },
+            {
+                "body": "Initial release\r\n",
+                "version": "closegame-0.1.0",
+                "timestamp": 1785522042000,
+                "url": "https://github.com/CodeTriangle/crosscrap/releases/tag/closegame-0.1.0"
+            },
+            {
+                "body": "Initial release\r\n",
+                "version": "ela-0.1.0",
+                "timestamp": 1781467781000,
+                "url": "https://github.com/CodeTriangle/crosscrap/releases/tag/ela-0.1.0"
+            },
+            {
+                "body": "Initial release",
+                "version": "aaaa-0.1.0",
+                "timestamp": 1775604262000,
+                "url": "https://github.com/CodeTriangle/crosscrap/releases/tag/aaaa-0.1.0"
+            }
+        ]
+    },
     "extendable-severed-heads": {
         "metadataCCMod": {
             "id": "extendable-severed-heads",
