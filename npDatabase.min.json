@@ -6926,6 +6926,58 @@
             }
         ]
     },
+    "no-slot-limit": {
+        "metadataCCMod": {
+            "id": "no-slot-limit",
+            "version": "0.1.0",
+            "title": "Remove Slot Limit",
+            "description": "Remove limit on number of slots",
+            "repository": "https://github.com/CodeTriangle/crosscrap",
+            "tags": [
+                "QoL"
+            ],
+            "authors": "CodeTriangle",
+            "prestart": "prestart.js"
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/CodeTriangle/crosscrap/releases/download/no-slot-limit-0.1.0/no-slot-limit.ccmod",
+                "source": "",
+                "hash": {
+                    "sha256": "dbd99e2e92166cc1156a6a19946777435ee862694a57948c74891e3dd8fff71b"
+                }
+            }
+        ],
+        "stars": 1,
+        "lastUpdateTimestamp": 1790029559000,
+        "releasePages": [
+            {
+                "body": "Initial release\r\n",
+                "version": "no-slot-limit-0.1.0",
+                "timestamp": 1790029559000,
+                "url": "https://github.com/CodeTriangle/crosscrap/releases/tag/no-slot-limit-0.1.0"
+            },
+            {
+                "body": "Initial release\r\n",
+                "version": "closegame-0.1.0",
+                "timestamp": 1785522042000,
+                "url": "https://github.com/CodeTriangle/crosscrap/releases/tag/closegame-0.1.0"
+            },
+            {
+                "body": "Initial release\r\n",
+                "version": "ela-0.1.0",
+                "timestamp": 1781467781000,
+                "url": "https://github.com/CodeTriangle/crosscrap/releases/tag/ela-0.1.0"
+            },
+            {
+                "body": "Initial release",
+                "version": "aaaa-0.1.0",
+                "timestamp": 1775604262000,
+                "url": "https://github.com/CodeTriangle/crosscrap/releases/tag/aaaa-0.1.0"
+            }
+        ]
+    },
     "open-world": {
         "metadataCCMod": {
             "id": "open-world",
