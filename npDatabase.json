@@ -1579,7 +1579,7 @@
         "metadataCCMod": {
             "id": "carn",
             "title": "Carnellio SBBF Crossover",
-            "version": "1.1.0",
+            "version": "1.1.2",
             "description": "Adds a series of optional, challenging bosses and a playable class as a reward (replaces shock circuit). Crossover with Skill Based Boss Fights!",
             "icons": {
                 "24": "icon-24.png"
@@ -1604,16 +1604,28 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/fatetrait/CrossCode-Carnellio-Boss-Mod/releases/download/1.1.0/carnellio.ccmod",
+                "url": "https://github.com/fatetrait/CrossCode-Carnellio-Boss-Mod/releases/download/1.1.2/carnellio.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "1ca9edd851075b03a3d1bf82334f18a4484a6498e96f06eae4c36a38ec2512c9"
+                    "sha256": "bccbb60ebc15b767ff6c3892f6a0a8715a064fa9bbf39b2c9469d0b884a6fba4"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1790828611000,
+        "lastUpdateTimestamp": 1790862088000,
         "releasePages": [
+            {
+                "body": "v1.1.1 & v1.1.2\r\n= Fix for dash buff not being applied for modded classes\r\n\r\nv1.1.0\r\nMajor rebalances for Carnollo, some changes for Player Draconic Combat Arts\r\n\r\nBoss fight changes:\r\n\r\n\\+ Player passive regen during fight greatly increased (~4x regen, 2x regen speed)\r\n\\+ Player SP gain buffed slightly (-50% -> -30%)\r\n\\+ Boss takes even more elemental damage\r\n\\+ Wandering Flame indicator improved\r\n\\+ Shadow Flame reworked in favor of the player\r\n\\+ Mawaru nerfed heavily ( -50% damage )\r\n\r\n\\- Boss attack buffed 5%\r\n\\- Sigil Draw Time (punishment window) reduced significantly (~33% faster for standard combos, \\- WAY faster for initials/funeral)\r\nPlayer Draconic Class changes:\r\n\r\n\\+ Charged shot is now \"Command,\" which fires a weak charged projectile that triggers Mawaru -> Redirect on hit targets.\r\n\\+ Melee finisher is now \"Summon\" if one doesn't exist already, otherwise it is \"Retrieval\" which grabs enemies between you and your summon for your normal finisher, then dismisses your summon\r\n\\+ T2 Dash Art \"Shadowing Flame\" -> \"Shadowing Revolver\" gives it some movement, better single target damage, and dash iframes.\r\n\\+ T3 Near 11 SP combo buffed to be machine gun over normal bullet.\r\n= Dungeon keys work properly now lol\r\n\r\n\\- Dragon Bullet nerfed heavily in favor of dynamic combat ( from 2x damage over normal balls to 1.14x)\r\n\\- Redirect limit nerfed (10 -> 5)",
+                "version": "1.1.2",
+                "timestamp": 1790862088000,
+                "url": "https://github.com/fatetrait/CrossCode-Carnellio-Boss-Mod/releases/tag/1.1.2"
+            },
+            {
+                "body": "v1.1.1\r\n= Fix for dash buff not being applied for modded classes\r\n\r\nv1.1.0\r\nMajor rebalances for Carnollo, some changes for Player Draconic Combat Arts\r\n\r\nBoss fight changes:\r\n\r\nPlayer passive regen during fight greatly increased (~4x regen, 2x regen speed)\r\nPlayer SP gain buffed slightly (-50% -> -30%)\r\nBoss takes even more elemental damage\r\nWandering Flame indicator improved\r\nShadow Flame reworked in favor of the player\r\nMawaru nerfed heavily ( -50% damage )\r\nBoss attack buffed 5%\r\nSigil Draw Time (punishment window) reduced significantly (~33% faster for standard combos, WAY faster for initials/funeral)\r\nPlayer Draconic Class changes:\r\n\r\nCharged shot is now \"Command,\" which fires a weak charged projectile that triggers Mawaru -> Redirect on hit targets.\r\nMelee finisher is now \"Summon\" if one doesn't exist already, otherwise it is \"Retrieval\" which grabs enemies between you and your summon for your normal finisher, then dismisses your summon\r\nT2 Dash Art \"Shadowing Flame\" -> \"Shadowing Revolver\" gives it some movement, better single target damage, and dash iframes.\r\nT3 Near 11 SP combo buffed to be machine gun over normal bullet.\r\n= Dungeon keys work properly now lol\r\n\r\nDragon Bullet nerfed heavily in favor of dynamic combat ( from 2x damage over normal balls to 1.14x)\r\nRedirect limit nerfed (10 -> 5)",
+                "version": "1.1.1",
+                "timestamp": 1790832815000,
+                "url": "https://github.com/fatetrait/CrossCode-Carnellio-Boss-Mod/releases/tag/1.1.1"
+            },
             {
                 "body": "Major rebalances for Carnollo, some changes for Player Draconic Combat Arts\r\n\r\nBoss fight changes:\r\n+ Player passive regen during fight greatly increased (~4x regen, 2x regen speed)\r\n+ Player SP gain buffed slightly (-50% -> -30%)\r\n+ Boss takes even more elemental damage \r\n+ Wandering Flame indicator improved\r\n+ Shadow Flame reworked in favor of the player \r\n+ Mawaru nerfed heavily ( -50% damage )\r\n\r\n- Boss attack buffed 5%\r\n- Sigil Draw Time (punishment window) reduced significantly (~33% faster for standard combos, WAY faster for initials/funeral)\r\n\r\nPlayer Draconic Class changes:\r\n+ Charged shot is now \"Command,\" which fires a weak charged projectile that triggers Mawaru -> Redirect on hit targets. \r\n+ Melee finisher is now \"Summon\" if one doesn't exist already, otherwise it is \"Retrieval\" which grabs enemies between you and your summon for your normal finisher, then dismisses your summon\r\n+ T2 Dash Art \"Shadowing Flame\" -> \"Shadowing Revolver\" gives it some movement, better single target damage, and dash iframes.\r\n+ T3 Near 11 SP combo buffed to be machine gun over normal bullet.\r\n\r\n= Dungeon keys work properly now lol\r\n\r\n- Dragon Bullet nerfed heavily in favor of dynamic combat ( from 2x damage over normal balls to 1.14x)\r\n- Redirect limit nerfed (10 -> 5)",
                 "version": "1.1.0",
