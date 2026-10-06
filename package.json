@@ -28,7 +28,7 @@
     "@types/semver": "^7.8.0",
     "bun": "^1.4.2",
     "semver": "^7.8.5",
-    "simple-git": "^3.36.0",
+    "simple-git": "^4.0.2",
     "yauzl": "^3.4.0"
   }
 }
