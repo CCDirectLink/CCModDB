@@ -6119,7 +6119,7 @@
         "metadataCCMod": {
             "id": "menu-ui-replacer",
             "title": "menu-ui-replacer",
-            "version": "1.2.0",
+            "version": "1.3.0",
             "description": "Replace Lea with the character of your choice in the menu!",
             "repository": "https://github.com/CCDirectLink/cc-menu-ui-replacement",
             "tags": [
@@ -6135,16 +6135,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CCDirectLink/cc-menu-ui-replacement/releases/download/v1.2.0/menu-ui-replacer-1.2.0.ccmod",
+                "url": "https://github.com/CCDirectLink/cc-menu-ui-replacement/releases/download/v1.3.0/menu-ui-replacer-1.3.0.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "f1cd2c74a04bbd823e19cfdcaf75498ae08e27d103b6afd04ffe5eaa9a06e32d"
+                    "sha256": "a09e88db3b8dfb46b00ce35ce7427ee9bbd1aab3ab38b824e071d4adbf1418ce"
                 }
             }
         ],
         "stars": 2,
-        "lastUpdateTimestamp": 1789137329000,
+        "lastUpdateTimestamp": 1791389289000,
         "releasePages": [
+            {
+                "body": "\n### Added\n\n- Add support for drawing multiple player heads on the world view menu",
+                "version": "1.3.0",
+                "timestamp": 1791389290000,
+                "url": "https://github.com/CCDirectLink/cc-menu-ui-replacement/releases/tag/v1.3.0"
+            },
             {
                 "body": "\n### Added\n\n- Add player icon on map menu display from cc-multibakery\n- Add option to turn off main menu image replace\n- Add option to turn off inventory menu image replace\n- Add option to turn off map menu image replace",
                 "version": "1.2.0",
