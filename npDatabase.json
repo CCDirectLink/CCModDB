@@ -5181,7 +5181,7 @@
     "item-api": {
         "metadataCCMod": {
             "id": "item-api",
-            "version": "0.4.5",
+            "version": "0.4.6",
             "title": "Item API",
             "description": "Allows custom items to be prepared in such a way that they 'just work'.",
             "repository": "https://github.com/CCDirectLink/item-api",
@@ -5203,16 +5203,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CCDirectLink/item-api/releases/download/v0.4.5/item-api.ccmod",
+                "url": "https://github.com/CCDirectLink/item-api/releases/download/v0.4.6/item-api.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "f0e37b242aaea1375a837638d0b392e27129c7e82fda8ee31c6827bf91bf6880"
+                    "sha256": "ca93403a7b6817a1e01cf77e7290c8853c7260691b356fae83525f702c2ef343"
                 }
             }
         ],
         "stars": 1,
-        "lastUpdateTimestamp": 1708528670000,
+        "lastUpdateTimestamp": 1791764565000,
         "releasePages": [
+            {
+                "body": "- Fixed `item.ID.toggled` not working.",
+                "version": "0.4.6",
+                "timestamp": 1791764565000,
+                "url": "https://github.com/CCDirectLink/item-api/releases/tag/v0.4.6"
+            },
             {
                 "body": "- Fixed var accessor for `item.{id}.amount`.",
                 "version": "0.4.5",
