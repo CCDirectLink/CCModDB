@@ -2,7 +2,7 @@
     "mw-rando": {
         "metadataCCMod": {
             "id": "mw-rando",
-            "version": "0.10.0-pre.3",
+            "version": "0.10.0-pre.4",
             "title": "Multiworld randomizer",
             "description": "Client for CrossCode Archipelago Integration",
             "repository": "https://github.com/CodeTriangle/CCMultiworldRandomizer",
@@ -33,16 +33,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.10.0-pre.3/CCMultiworldRandomizer-0.10.0-pre.3.ccmod",
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.10.0-pre.4/CCMultiworldRandomizer-0.10.0-pre.4.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "029599f2fea3244dc00c0cd8f3c3befb977c3dcfefda99dfe257e1451dca7940"
+                    "sha256": "a3562eafd746f2e2ab1f80489b1a6aa09087a099c165b4d75c6ddae690fab37d"
                 }
             }
         ],
         "stars": 18,
-        "lastUpdateTimestamp": 1791187531000,
+        "lastUpdateTimestamp": 1791749166000,
         "releasePages": [
+            {
+                "body": "## Fixes to mod\r\n\r\n* Fixed a packaging error that caused several regressions.\r\n\r\n## Internal changes\r\n\r\n* Introduced an automation system to cut down on packaging issues.",
+                "version": "0.10.0-pre.4",
+                "timestamp": 1791749166000,
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.10.0-pre.4"
+            },
             {
                 "body": "## Changes to Locations\r\n\r\n* Renamed Maroon Valley locations to \"Valley\" to make it consistent with other region names (@Valkhiya, #112)\r\n\r\n## Fixes to Mod\r\n\r\n* Fixed crashes when receiving **Laser of Doom Trap** and **Bomb Trap** (@buanjautista, #109)\r\n\r\n## Fixes to Logic\r\n\r\n* Fixed some unexpected behavior with backtracking to regions when **Rhombus Hub Unlock** is on (@CodeTriangle, CodeTriangle/Archipelago#34)\r\n* Fixed some logic errors with botanics in Gaia's Garden causing occasional generation failures (@Valkhiya, #110, #111)\r\n",
                 "version": "0.10.0-pre.3",
