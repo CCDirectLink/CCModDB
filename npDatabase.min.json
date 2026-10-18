@@ -7981,6 +7981,46 @@
             }
         ]
     },
+    "shizuka-fallen-warrior": {
+        "metadataCCMod": {
+            "id": "shizuka-fallen-warrior",
+            "title": "Shizuka Fallen Warrior",
+            "version": "1.0.0",
+            "description": "(low effort warning) Makes the Shizuka PvP Arena Fight 'funnier'. Pair with the Get on my Level NG+ mod for best results. Requires DLC.",
+            "authors": "fatetraitor",
+            "tags": [
+                "boss",
+                "arena",
+                "fun"
+            ],
+            "repository": "https://github.com/fatetrait/CrossCode-Shizuka-Fallen-Warrior-Mod",
+            "dependencies": {
+                "ccloader": ">=2.24.0",
+                "crosscode": ">=1.4.0",
+                "item-api": "^0.4.0"
+            }
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/fatetrait/CrossCode-Shizuka-Fallen-Warrior-Mod/releases/download/1.0.0/CrossCode-Shizuka-Fallen-Warrior-Mod.ccmod",
+                "source": "",
+                "hash": {
+                    "sha256": "74c7461fa88a2ae1f0f02bbddc570d73ff301c65fbd176e238fee6a9ce95cad8"
+                }
+            }
+        ],
+        "stars": 0,
+        "lastUpdateTimestamp": 1792220756000,
+        "releasePages": [
+            {
+                "body": "Makes the Shizuka PvP Arena Fight 'funnier'. Pair with the Get on my Level NG+ mod for best results. Requires DLC.",
+                "version": "1.0.0",
+                "timestamp": 1792206335000,
+                "url": "https://github.com/fatetrait/CrossCode-Shizuka-Fallen-Warrior-Mod/releases/tag/1.0.0"
+            }
+        ]
+    },
     "spin-to-win": {
         "metadataCCMod": {
             "id": "spin-to-win",
