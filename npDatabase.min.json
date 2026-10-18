@@ -1368,6 +1368,46 @@
             }
         ]
     },
+    "apollo-fallen-warrior": {
+        "metadataCCMod": {
+            "id": "apollo-fallen-warrior",
+            "title": "Apollo Fallen Warrior",
+            "version": "1.0.0",
+            "description": "(low effort warning) Makes the Apollo PvP Arena Fight 'funnier'. Pair with the Get on my Level NG+ mod for best results. Requires DLC.",
+            "authors": "fatetraitor",
+            "tags": [
+                "boss",
+                "arena",
+                "fun"
+            ],
+            "repository": "https://github.com/fatetrait/CrossCode-Apollo-Fallen-Warrior-Mod",
+            "dependencies": {
+                "ccloader": ">=2.24.0",
+                "crosscode": ">=1.4.0",
+                "item-api": "^0.4.0"
+            }
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/fatetrait/CrossCode-Apollo-Fallen-Warrior-Mod/releases/download/1.0.0/CrossCode-Apollo-Fallen-Warrior-Mod.ccmod",
+                "source": "",
+                "hash": {
+                    "sha256": "ef2f9cc8f7e4d8b906f655199777dd4e9826cda56353b3556e006a34fd9f75ab"
+                }
+            }
+        ],
+        "stars": 0,
+        "lastUpdateTimestamp": 1792201097000,
+        "releasePages": [
+            {
+                "body": "Makes the Apollo PvP Arena Fight 'funnier'. Pair with the Get on my Level NG+ mod for best results. Requires DLC.",
+                "version": "1.0.0",
+                "timestamp": 1792201097000,
+                "url": "https://github.com/fatetrait/CrossCode-Apollo-Fallen-Warrior-Mod/releases/tag/1.0.0"
+            }
+        ]
+    },
     "arcane-lab": {
         "metadataCCMod": {
             "id": "arcane-lab",
