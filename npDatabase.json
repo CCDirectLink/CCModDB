@@ -9325,7 +9325,7 @@
     "xpc-litter": {
         "metadataCCMod": {
             "id": "xpc-litter",
-            "version": "2.1.8",
+            "version": "2.1.9",
             "title": {
                 "en_US": "XPC - Hexacast Litter"
             },
@@ -9342,22 +9342,28 @@
                 "24": "icon.png"
             },
             "dependencies": {
-                "xenons-playable-classes": ">=2.7.0"
+                "xenons-playable-classes": ">=3.6.0"
             }
         },
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/xpc-hexacast-litter/archive/refs/tags/2.1.8.zip",
-                "source": "xpc-hexacast-litter-2.1.8",
+                "url": "https://github.com/XenonA7/xpc-hexacast-litter/archive/refs/tags/2.1.9.zip",
+                "source": "xpc-hexacast-litter-2.1.9",
                 "hash": {
-                    "sha256": "fa75995e483a7ae342e0daab0f315fe280472431fad4d09a8a1a9d7568df89aa"
+                    "sha256": "c7301c8c6e5a11c5070e3f85bb2a4855d2ddd403c2331e843764f5c888a7cb0a"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1768845837000,
+        "lastUpdateTimestamp": 1792379089000,
         "releasePages": [
+            {
+                "body": "2.1.9 (10/18/2026)\r\n- Support for new Healing Volley effect (XPC 3.6.0)\r\n  * wave.healingVolleyCardFX",
+                "version": "2.1.9",
+                "timestamp": 1792379089000,
+                "url": "https://github.com/XenonA7/xpc-hexacast-litter/releases/tag/2.1.9"
+            },
             {
                 "body": "2.1.8 (01/17/2025)\r\n- Support for new dissonanceCard2 effects (XPC 3.0.1)\r\n  * ball-wave.dissonanceCard2AirDeath\r\n  * ball-wave.dissonanceCard2WallDeath",
                 "version": "2.1.8",
