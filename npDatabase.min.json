@@ -8647,7 +8647,7 @@
     "xenons-playable-classes": {
         "metadataCCMod": {
             "id": "xenons-playable-classes",
-            "version": "3.5.5",
+            "version": "3.6.0",
             "title": {
                 "en_US": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
                 "de_DE": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
@@ -8698,16 +8698,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/3.5.5.zip",
-                "source": "xenons-playable-classes-3.5.5",
+                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/3.6.0.zip",
+                "source": "xenons-playable-classes-3.6.0",
                 "hash": {
-                    "sha256": "1677b7349d583cf6505cbb2287c1ff08058e3a829d5b22ff7d97c4fe55254bc6"
+                    "sha256": "79b9a7831a248178a9f134935de5af0ca7f3f5a98b26ff412457c7e28a671f77"
                 }
             }
         ],
         "stars": 35,
-        "lastUpdateTimestamp": 1789312805000,
+        "lastUpdateTimestamp": 1792378735000,
         "releasePages": [
+            {
+                "body": "## 3.6.0 (10/18/2026)\r\n### New Content\r\n- New Hexacast custom skill: Healing Volley (Wave Throw Lv.1)\r\n- Added HEAL_SPARKLE effects to hexa-misc.png\r\n### Changes\r\n- Added cave floor texture to all \"crater\" particle sprites (Calamity Beacon, etc)\r\n- Updated description for Essence Steal\r\n- Replaced \"false\" conditions for Hexacast debug messages with \"tmp.xpcDebugMessages\" used by Pentafist, updated info-for-modders.md\r\n- Added dust effects to Triblader Ki Spin\r\n- Added pLight to Triblader chargedNeutral trial effects\r\n- All Triblader uncharged default proxies now use \"light\": \"S\" (new standard from Pentafist)\r\n- Temporal Miasma design rework: now applies an on/off monitor based on field distance to recipient rather than constantly re-applying the buff\r\n- Deleted \"posesSit\" sheet from hexacast-lea animation file, merged into \"crateChest\" sheet\r\n- Effects healMortarImpact, healingBurstFX, healBatteryInitialHealPulse, healBatteryHealPulse now use HEAL_SPARKLE effects instead of WAVE_SPARKLE\r\n### Fixes\r\n- Return teleporter to XPC hideout from Starcaller2 lobby now has spawnCondition quest.xpc-heat-penguins.solved\r\n- Fixed Temporal Miasma only being able to buff one player/ally/party member at a time\r\n- Fixed typo in Giga Drain description\r\n- Fixed incorrect sizeY value for triblader-lea small menu portrait\r\n- All instances of XPC effect dust.frontFlipped now correctly use \"flipLeftFace\": false\r\n- Removed leftover out-of-bounds props from maps xpc/bonus/training-apollo-5 and bergen/hideout-hexa\r\n- Fixed hexacast-lea \"sit\" animation used in vanilla cutscenes\r\n### Balance\r\n- Essence Steal card impact damageFactor increased from 2.75 to 3.25\r\n- Essence Steal now heals a guaranteed 5% HP plus additional absorption from the enemy\r\n- Essence Steal repeating damageFactor increased from 0.12 to 0.15, absorb factor decreased from 0.11 to 0.075\r\n  * This is a small damage increase and a slight reduction to overall healing to make it more in-line with other classes\r\n- Beam Blaster damageFactor increased from 3 to 4.15, status reduced from 0.7 to 0.6\r\n- Giga Drain guaranteed healing increased from 5% to 10% (total healing is still roughly half of Lea's Vital Pulse)\r\n- Healing from healBatteryInitialHealProxy increased from 5% to 7.5% (initial healing pulse when using Heal Battery)",
+                "version": "3.6.0",
+                "timestamp": 1792378735000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/3.6.0"
+            },
             {
                 "body": "## 3.5.5 (09/13/2026)\r\n### General\r\n- Now requires menu-ui-replacer 1.1.0 or higher\r\n### New Content\r\n- Added new Triblader-Lea menu portrait by Orco Pixelado\r\n- Implemented Hexacast AreaButton and MapFloorButtonContainer icons\r\n- Added TinyHead sprites for all non-Lea XPC characters (for Multibakery)\r\n### Changes\r\n- Updated Hexacast AreaButton sprites\r\n- Updated mod credits and README to include Orco new artwork\r\n### Fixes\r\n- Fixed Hexacast-Lea sprite color issue in levelUpJump",
                 "version": "3.5.5",
