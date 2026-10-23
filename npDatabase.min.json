@@ -1579,7 +1579,7 @@
         "metadataCCMod": {
             "id": "carn",
             "title": "Carnellio SBBF Crossover",
-            "version": "1.3.0",
+            "version": "1.4.0",
             "description": "Adds a series of optional, challenging bosses and a playable class as a reward (replaces shock circuit). Crossover with Skill Based Boss Fights!",
             "icons": {
                 "24": "icon-24.png"
@@ -1604,16 +1604,28 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/fatetrait/CrossCode-Carnellio-Boss-Mod/releases/download/1.3.0/carnellio.ccmod",
+                "url": "https://github.com/fatetrait/CrossCode-Carnellio-Boss-Mod/releases/download/1.4.0/carnellio.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "188fd9ccce6a1561407cd2f5be9a8a60e542e52e42d71eb91eeb2e836f0c922c"
+                    "sha256": "311901cd9433fe9bb87b3b5816f4f4115a5b982e23af690af7e27c50960a35f1"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1791616961000,
+        "lastUpdateTimestamp": 1792639946000,
         "releasePages": [
+            {
+                "body": "Mostly polishing changes, but they took a while\r\n\r\n= Fate Combos music replaced with copyright-friendly music from finalnoobboss, with permission\r\n= Arena tiles changed to the vermillion color. I think its uglier but the sigils are easier to read.\r\n= Sigils now glow to be more readable\r\n= Summon now faintly glows to be more detectable in the darkness\r\n= Difficulty ratings lazily added to the entrances\r\n\r\n\\+ Stunlock is cleared after each move so you dont get locked infinitely for no reason\r\n\\+ Aria/F6R1 has created some new sigils for the Spheromancer attacks so the T1, T2, T3s dont look the same. For now, only Gatling Arctillery has changed\r\n\r\n\\- \"Airsnipe\" move added to Fate Combos by request of onyxqx ",
+                "version": "1.4.0",
+                "timestamp": 1792639946000,
+                "url": "https://github.com/fatetrait/CrossCode-Carnellio-Boss-Mod/releases/tag/1.4.0"
+            },
+            {
+                "body": "remove the piano tracks avoiding copyright issues :(",
+                "version": "1.3.1",
+                "timestamp": 1791829182000,
+                "url": "https://github.com/fatetrait/CrossCode-Carnellio-Boss-Mod/releases/tag/1.3.1"
+            },
             {
                 "body": "v1.3.0\r\n= Fatal Howl vfx improved to more clearly show what it does\r\n= Sweeping Seize swapped to Wave damage matching its vfx\r\n= Decapitate swapped fully to Cold damage\r\n\r\nEven though combat arts were strong, the fight was still really slow. This should help a bit.\r\n\\+ Player slash damage buffed by 55%\r\n\\+ Player ball damage buffed by 45%\r\n\\+ Overload debuffs are weaker now\r\n\\+ Boss damage decreased again (~7%, not applicable to Fate Combos)\r\n\\+ Funeral threshold decreased and easier to skip now (1.2mil -> 1mil)\r\n\\+ Overkill damage is now calculated as half the extra damage being applied to your next life(s)\r\n\r\n\\- Fatal Howl's grab is now unblockable and bypasses iframes\r\n\\- Decapitate's afterhit now bypasses shield, it can still be dashed to avoid death\r\n\\- Sigil Draw times have been made more consistent. Most combos are drawn in shorter time now.\r\n\r\nDebated making nightmare reign bypass iframes to demand respect, but I don't think it would be fun to do\r\n\r\nFor the class (Draconic):\r\n= Dragon Bullet reworked entirely. No longer has CHARGED tag and is a spray of 3 bullets. I personally could not solve some of the Kulero puzzles without this (summon shots were really bad before)\r\n= All summon techs aim based on your cursor location RELATIVE to the summon (Dragon Bullet, Redirect). This felt more intuitive.\r\n= Retrieval/Mawaru do damage based on your current element. No visual for it though.",
                 "version": "1.3.0",
