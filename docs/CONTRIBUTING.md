@@ -59,13 +59,13 @@ Once the release is made and the mod archive is uploaded, copy it's link.
 Then type the following command in the designated channel for using LeaBot:  
 
 ```
-.cc publish-mod <mod-archive-url>
+/publish-mod <mod-archive-url>
 ```
 
 For example, here's how you would upload the `1.0.1` version of the mod [input-api](https://github.com/CCDirectLink/input-api/releases/tag/v1.0.1):  
 
 ```
-.cc publish-mod https://github.com/CCDirectLink/input-api/releases/download/v1.0.1/input-api.ccmod
+/publish-mod https://github.com/CCDirectLink/input-api/releases/download/v1.0.1/input-api.ccmod
 ```
 
 Now you need to wait for your mod to be approved by one of the database administrators.  
@@ -75,5 +75,5 @@ That branch is for pre-release mods, that you do not wish to force upon all user
 Just append `testing` to the end of the command:  
 
 ```
-.cc publish-mod <mod-archive-url> testing
+/publish-mod <mod-archive-url> testing
 ```
