@@ -784,7 +784,7 @@
     "New game++": {
         "metadataCCMod": {
             "id": "New game++",
-            "version": "1.4.0",
+            "version": "1.4.1",
             "title": "New game++",
             "description": "A small collection of addons to CrossCode's NG+.",
             "repository": "https://github.com/CCDirectLink/CCNewGamePP",
@@ -805,16 +805,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CCDirectLink/CCNewGamePP/archive/refs/tags/v1.4.0.zip",
-                "source": "CCNewGamePP-1.4.0",
+                "url": "https://github.com/CCDirectLink/CCNewGamePP/archive/refs/tags/v1.4.1.zip",
+                "source": "CCNewGamePP-1.4.1",
                 "hash": {
-                    "sha256": "4207c26c08b5062e63dcdecafa1f12322f5ee69203ca6a18bf9d5fdcd1e12bfb"
+                    "sha256": "23a46fda0482a319e925e198de4598595ac02dba6d49aabbb569388849adf63d"
                 }
             }
         ],
         "stars": 7,
-        "lastUpdateTimestamp": 1772656465000,
+        "lastUpdateTimestamp": 1792771144000,
         "releasePages": [
+            {
+                "body": "A small collection of addons to CrossCode's NG+.\r\n\r\n## Features\r\n| Name                 | Cost | Description                                            |\r\n|:--------------------:|:----:|:------------------------------------------------------ |\r\n| **Jetpack**          | 2000 | A jetpack that can be used with CTRL.                  |\r\n| **Invincible**       | 5000 | Attacks received do no damage at all.                  |\r\n| **Overdrive**        | 2000 | All actions are combat arts.                           |\r\n| **Perfect Clone**    | 2000 | Play as Shizuka.                                       |\r\n| **Truly Unbalanced** |  100 | Elements will overload after a single shot.            |\r\n| **Charged Only**     |  100 | It is imposible to shoot uncharged balls.              |\r\n| **Uncharged Only**     |  100 | It is imposible to shoot charged balls.              |\r\n| **No Melee**         |  100 | Close quarter combat is not possible.                  |\r\n| **No Shield**        |  100 | The shield is disabled.                                |\r\n| **No Dash**          |  100 | Lea is unable to dash. Cheating is not allowed.        |\r\n| **No Death**         |  100 | People die if you kill them.                           |\r\n| **No GUI**           |  100 | Like nature intended it to be.                         |\r\n| **Broken Watch**     |  100 | Randomly speeds up and slows down time.                |\r\n| **Tactician**        |  100 | Introduces a turn based combat mechanic.               |\r\n\r\nChanges in this version:\r\n* Changed some internal files to avoid collisions with other mods.",
+                "version": "1.4.1",
+                "timestamp": 1792771144000,
+                "url": "https://github.com/CCDirectLink/CCNewGamePP/releases/tag/v1.4.1"
+            },
             {
                 "body": "A small collection of addons to CrossCode's NG+.\r\n\r\n## Features\r\n| Name                 | Cost | Description                                            |\r\n|:--------------------:|:----:|:------------------------------------------------------ |\r\n| **Jetpack**          | 2000 | A jetpack that can be used with CTRL.                  |\r\n| **Invincible**       | 5000 | Attacks received do no damage at all.                  |\r\n| **Overdrive**        | 2000 | All actions are combat arts.                           |\r\n| **Perfect Clone**    | 2000 | Play as Shizuka.                                       |\r\n| **Truly Unbalanced** |  100 | Elements will overload after a single shot.            |\r\n| **Charged Only**     |  100 | It is imposible to shoot uncharged balls.              |\r\n| **Uncharged Only**     |  100 | It is imposible to shoot charged balls.              |\r\n| **No Melee**         |  100 | Close quarter combat is not possible.                  |\r\n| **No Shield**        |  100 | The shield is disabled.                                |\r\n| **No Dash**          |  100 | Lea is unable to dash. Cheating is not allowed.        |\r\n| **No Death**         |  100 | People die if you kill them.                           |\r\n| **No GUI**           |  100 | Like nature intended it to be.                         |\r\n| **Broken Watch**     |  100 | Randomly speeds up and slows down time.                |\r\n| **Tactician**        |  100 | Introduces a turn based combat mechanic.               |\r\n\r\nChanges in this version:\r\n* Added Uncharged Only",
                 "version": "1.4.0",
