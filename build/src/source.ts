@@ -11,7 +11,7 @@ import type {
     ZipInputLocation,
 } from './types'
 import { getRepositoryEntry } from './api'
-import { WriteFunc } from './main'
+import type { WriteFunc } from './main'
 import * as semver from 'semver'
 
 export type ModMetadatas = {
@@ -177,7 +177,7 @@ async function fetchGithub<T>(url: string): Promise<T> {
             },
         })
     ).json()
-    return data
+    return data as T
 }
 
 async function getStarsAndTimestamp(

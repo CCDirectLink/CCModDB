@@ -1,5 +1,5 @@
 import { expect, describe, test } from 'bun:test'
-import { InputLocations } from '../src/types'
+import type { InputLocations } from '../src/types'
 import { gitReadFunc } from '../src/git'
 
 const branch = process.env['BRANCH']

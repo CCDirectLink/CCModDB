@@ -1,14 +1,14 @@
 import semver from 'semver'
 import crypto from 'crypto'
-import { download, streamToBuffer } from './download'
+import { download, } from './download'
 import {
-    ModMetadatasInput,
-    ModMetadatas,
+    type ModMetadatasInput,
+    type ModMetadatas,
     addStarsAndTimestampsToResults,
     addReleasePages,
 } from './source'
 import type { PackageDB, InputLocation, InstallMethod, PkgCCMod, ValidPkgCCMod } from './types'
-import { WriteFunc } from './main'
+import type { WriteFunc } from './main'
 
 export async function build(packages: ModMetadatasInput[]): Promise<PackageDB> {
     const result: PackageDB = {}

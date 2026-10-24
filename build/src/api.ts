@@ -1,4 +1,4 @@
-import { LocalizedString, Page } from './types'
+import type { LocalizedString, Page } from './types'
 
 export function getRepositoryEntry(url?: string): Page[] {
     if (!url) {

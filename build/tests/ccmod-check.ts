@@ -1,4 +1,4 @@
-import { Package, ValidTags, type PackageDB, type PkgCCMod } from '../src/types'
+import { type Package, ValidTags, type PackageDB, type PkgCCMod } from '../src/types'
 import semver from 'semver'
 
 type TestFunc = (name: string, func: () => void) => void
