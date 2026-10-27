@@ -11,6 +11,15 @@ type ExpectFunc = (
     toBeTruthy: () => void
 }
 
+function isValidUrl(url: string): boolean {
+    try {
+        new URL(url)
+        return true
+    } catch {
+        return false
+    }
+}
+
 export class CCModChecker {
     /* see https://github.com/CCDirectLink/CCLoader3/issues/18 for details */
     ccmodIdValidationExceptions: string[] = [
@@ -105,13 +114,13 @@ export class CCModChecker {
                 'ccmod.description (type: string) is missing or has wrong type'
             ).toBeTrue()
             expect(
-                ccmod.homepage === undefined || typeof ccmod.homepage === 'string',
-                'ccmod.homepage (type: string) has wrong type'
+                ccmod.homepage === undefined || (typeof ccmod.homepage === 'string' && isValidUrl(ccmod.homepage)),
+                `ccmod.homepage (type: string) has wrong type or isn't a valid url`
             ).toBeTrue()
 
             expect(
-                typeof ccmod.repository === 'string' && ccmod.repository.length > 0,
-                'ccmod.repository (type: string) is missing, is empty or has wrong type'
+                typeof ccmod.repository === 'string' && ccmod.repository.length > 0 && isValidUrl(ccmod.repository),
+                `ccmod.repository (type: string) is missing, is empty, isn't an valid url or has wrong type`
             ).toBeTrue()
 
             expect(
