@@ -4947,6 +4947,75 @@
             }
         ]
     },
+    "fallen-warriors": {
+        "metadataCCMod": {
+            "id": "fallen-warriors",
+            "title": "PvP vs Fallen Warriors",
+            "version": "2.0.2",
+            "description": "Adds harder (and funnier) versions of all DLC PvP Arena Fights. Pair with the Get on my Level NG+ mod for best results.",
+            "icons": {
+                "24": "icon-24.png"
+            },
+            "authors": "fatetraitor",
+            "tags": [
+                "pvp duel",
+                "boss",
+                "arena",
+                "fun"
+            ],
+            "repository": "https://github.com/fatetrait/CrossCode-Lily-Fallen-Warrior-Mod",
+            "dependencies": {
+                "ccloader": ">=2.24.0",
+                "crosscode": ">=1.4.0",
+                "item-api": "^0.4.0"
+            },
+            "prestart": "prestart.js"
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/fatetrait/CrossCode-Lily-Fallen-Warrior-Mod/releases/download/2.0.2/fallen-warriors.ccmod",
+                "source": "",
+                "hash": {
+                    "sha256": "2ad4e017f11ce5d2d5781bf5acd43646ff5be3007b775b797690620a00d27071"
+                }
+            }
+        ],
+        "stars": 0,
+        "lastUpdateTimestamp": 1793343486000,
+        "releasePages": [
+            {
+                "body": "fix the previous fix only worked for the first round",
+                "version": "2.0.2",
+                "timestamp": 1793343115000,
+                "url": "https://github.com/fatetrait/CrossCode-Lily-Fallen-Warrior-Mod/releases/tag/2.0.2"
+            },
+            {
+                "body": "fix code being left in that made lily fw unfightable",
+                "version": "2.0.1",
+                "timestamp": 1793339048000,
+                "url": "https://github.com/fatetrait/CrossCode-Lily-Fallen-Warrior-Mod/releases/tag/2.0.1"
+            },
+            {
+                "body": "Adds harder (and funnier) versions of all DLC PvP Arena Fights. Pair with the Get on my Level NG+ mod for best results.\r\n\r\nMerged all fallen warriors into one mod and made them separate arena fights.",
+                "version": "2.0.0",
+                "timestamp": 1792806817000,
+                "url": "https://github.com/fatetrait/CrossCode-Lily-Fallen-Warrior-Mod/releases/tag/2.0.0"
+            },
+            {
+                "body": "fix the bug where the mod doesnt work at all",
+                "version": "1.0.1",
+                "timestamp": 1787818345000,
+                "url": "https://github.com/fatetrait/CrossCode-Lily-Fallen-Warrior-Mod/releases/tag/1.0.1"
+            },
+            {
+                "body": "(low effort warning) Makes the Lily PvP Arena Fight 'funnier'. Pair with the Get on my Level NG+ mod for best results.",
+                "version": "1.0.0",
+                "timestamp": 1787740297000,
+                "url": "https://github.com/fatetrait/CrossCode-Lily-Fallen-Warrior-Mod/releases/tag/1.0.0"
+            }
+        ]
+    },
     "font-utils": {
         "metadataCCMod": {
             "id": "font-utils",
@@ -5517,52 +5586,6 @@
                 "version": "1.0.0",
                 "timestamp": 1772393884000,
                 "url": "https://github.com/XenonA7/kit-mod/releases/tag/1.0.0"
-            }
-        ]
-    },
-    "lily-fallen-warrior": {
-        "metadataCCMod": {
-            "id": "lily-fallen-warrior",
-            "title": "Lily Fallen Warrior",
-            "version": "1.0.0",
-            "description": "(low effort warning) Makes the Lily PvP Arena Fight 'funnier'. Pair with the Get on my Level NG+ mod for best results.",
-            "authors": "fatetraitor",
-            "tags": [
-                "boss",
-                "arena",
-                "fun"
-            ],
-            "repository": "https://github.com/fatetrait/CrossCode-Lily-Fallen-Warrior-Mod",
-            "dependencies": {
-                "ccloader": ">=2.24.0",
-                "crosscode": ">=1.4.0",
-                "item-api": "^0.4.0"
-            }
-        },
-        "installation": [
-            {
-                "type": "zip",
-                "url": "https://github.com/fatetrait/CrossCode-Lily-Fallen-Warrior-Mod/releases/download/1.0.1/CrossCode-Lily-Fallen-Warrior-Mod.ccmod",
-                "source": "",
-                "hash": {
-                    "sha256": "e58e3d266ec151425079f4fd27523a1526c35c5f0a429d2dd79803c6cebad5f0"
-                }
-            }
-        ],
-        "stars": 0,
-        "lastUpdateTimestamp": 1787818345000,
-        "releasePages": [
-            {
-                "body": "fix the bug where the mod doesnt work at all",
-                "version": "1.0.1",
-                "timestamp": 1787818345000,
-                "url": "https://github.com/fatetrait/CrossCode-Lily-Fallen-Warrior-Mod/releases/tag/1.0.1"
-            },
-            {
-                "body": "(low effort warning) Makes the Lily PvP Arena Fight 'funnier'. Pair with the Get on my Level NG+ mod for best results.",
-                "version": "1.0.0",
-                "timestamp": 1787740297000,
-                "url": "https://github.com/fatetrait/CrossCode-Lily-Fallen-Warrior-Mod/releases/tag/1.0.0"
             }
         ]
     },
