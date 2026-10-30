@@ -1585,8 +1585,8 @@
         "metadataCCMod": {
             "id": "carn",
             "title": "Carnellio SBBF Crossover",
-            "version": "1.4.0",
-            "description": "Adds a series of optional, challenging bosses and a playable class as a reward (replaces shock circuit). Crossover with Skill Based Boss Fights!",
+            "version": "1.4.1",
+            "description": "Adds optional, challenging bosses and a playable class (replaces shock). Crossover with Skill Based Boss Fights!",
             "icons": {
                 "24": "icon-24.png"
             },
@@ -1610,16 +1610,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/fatetrait/CrossCode-Carnellio-Boss-Mod/releases/download/1.4.0/carnellio.ccmod",
+                "url": "https://github.com/fatetrait/CrossCode-Carnellio-Boss-Mod/releases/download/1.4.1/carnellio.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "311901cd9433fe9bb87b3b5816f4f4115a5b982e23af690af7e27c50960a35f1"
+                    "sha256": "749977256821602404ba020e30eba2e7e7f04c821ece3a7bc3858b698fefab6e"
                 }
             }
         ],
         "stars": 0,
-        "lastUpdateTimestamp": 1792639946000,
+        "lastUpdateTimestamp": 1793318664000,
         "releasePages": [
+            {
+                "body": "Fix nothing loads when you enter the fight due to old nwjs version\r\n\r\nAlso added random combos.\r\nAlso party support is better",
+                "version": "1.4.1",
+                "timestamp": 1793318664000,
+                "url": "https://github.com/fatetrait/CrossCode-Carnellio-Boss-Mod/releases/tag/1.4.1"
+            },
             {
                 "body": "Mostly polishing changes, but they took a while\r\n\r\n= Fate Combos music replaced with copyright-friendly music from finalnoobboss, with permission\r\n= Arena tiles changed to the vermillion color. I think its uglier but the sigils are easier to read.\r\n= Sigils now glow to be more readable\r\n= Summon now faintly glows to be more detectable in the darkness\r\n= Difficulty ratings lazily added to the entrances\r\n\r\n\\+ Stunlock is cleared after each move so you dont get locked infinitely for no reason\r\n\\+ Aria/F6R1 has created some new sigils for the Spheromancer attacks so the T1, T2, T3s dont look the same. For now, only Gatling Arctillery has changed\r\n\r\n\\- \"Airsnipe\" move added to Fate Combos by request of onyxqx ",
                 "version": "1.4.0",
