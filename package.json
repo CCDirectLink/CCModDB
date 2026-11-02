@@ -4,7 +4,6 @@
   "description": "A build script for ccmoddb",
   "scripts": {
     "start": "bun build/src/main.ts $BRANCH",
-    "startScratch": "bun build/src/main.ts $BRANCH scratch",
     "test": "bun test",
     "format": "prettier ./build/src -w"
   },

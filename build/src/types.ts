@@ -11,8 +11,6 @@ export type ZipInputLocation = {
     /** If provided, then the ccmod.json file is at this location in the archive, regardless of 'source'.
         This must pretty much only be used for base packages. */
     ccmodPath?: string
-    //* should the entry be updated on database update */
-    changed?: boolean
 }
 
 export type ExternalToolInputLocation = {

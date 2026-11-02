@@ -1,4 +1,4 @@
-import type { DatabaseInfo, InputLocation, InputLocations, PackageDB } from './types'
+import type { DatabaseInfo, InputLocations, PackageDB } from './types'
 
 export type ReadFunc = (path: string) => Promise<string | undefined>
 export type WriteFunc = (path: string, data: Buffer | string) => Promise<void>
@@ -21,19 +21,4 @@ export async function readDbInfo(read: ReadFunc): Promise<DatabaseInfo> {
     if (!data) throw new Error(`db-info.json doesn't exist on the target branch!`)
     const dbInfo: DatabaseInfo = JSON.parse(data)
     return dbInfo
-}
-
-function stringifyLocation(loc: InputLocation) {
-    const body = Object.entries(loc)
-        .map(([k, v]) => `${JSON.stringify(k)}: ${JSON.stringify(v)}`)
-        .join(', ')
-    return '{ ' + body + ' }'
-}
-
-export function stringifyInputLocations(locations: InputLocations) {
-    const pad = ' '.repeat(4)
-    const body = Object.entries(locations)
-        .map(([k, v]) => `${pad}${JSON.stringify(k)}: ${stringifyLocation(v)}`)
-        .join(',\n')
-    return `{\n${body}\n}`
 }

@@ -18,10 +18,8 @@ async function main() {
 
     const branch: string = process.argv[2]
 
-    let type: 'scratch' | undefined = process.argv[3] as any
-    if (type != 'scratch' && type !== undefined) {
-        throw new Error(`Invalid second arguemnt: "${type}"\n`)
-    }
+    const isFromScratch = process.argv[3] == 'scratch'
+    const changedModIds = process.argv[3]?.split(',') ?? []
 
     const repoBranches = await getRepoBranches()
     if (!repoBranches.includes(branch)) {
@@ -35,7 +33,8 @@ async function main() {
     }
 
     await createNpDatabase(
-        type == 'scratch',
+        isFromScratch,
+        changedModIds,
         (path: string) => gitReadFunc(branch, path),
         gitWriteFunc
     )
@@ -51,7 +50,12 @@ async function main() {
     )
 }
 
-async function createNpDatabase(fromScratch: boolean, read: ReadFunc, write: WriteFunc) {
+async function createNpDatabase(
+    fromScratch: boolean,
+    changedModIds: string[],
+    read: ReadFunc,
+    write: WriteFunc
+) {
     const locations = await readInputLocations(read)
 
     let dbToMerge: PackageDB = {}
@@ -67,15 +71,18 @@ async function createNpDatabase(fromScratch: boolean, read: ReadFunc, write: Wri
     if (fromScratch) {
         inputLocationsToFetch = Object.values(locations)
     } else {
-        for (const modId in locations) {
+        for (const modId of changedModIds) {
             const loc = locations[modId]
-            if (loc.type === undefined || loc.type == 'zip') {
-                if (loc.changed) inputLocationsToFetch.push(loc)
-            }
+            if (!loc) throw new Error(`mod: "${modId}" not found in input-locations.json`)
+            inputLocationsToFetch.push(loc)
         }
         for (const modId in oldDb) {
             if (!locations[modId]) delete oldDb[modId]
         }
+    }
+    if (inputLocationsToFetch.length == 0) {
+        console.log('no input locations specified')
+        process.exit(1)
     }
 
     const packages = await Promise.all(inputLocationsToFetch.map(loc => source.get(loc, write)))
