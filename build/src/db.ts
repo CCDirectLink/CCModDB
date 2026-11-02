@@ -1,6 +1,6 @@
 import semver from 'semver'
 import crypto from 'crypto'
-import { download, } from './download'
+import { download } from './download'
 import {
     type ModMetadatasInput,
     type ModMetadatas,
@@ -39,8 +39,7 @@ export async function write(db: PackageDB, write: WriteFunc): Promise<void> {
 }
 
 export async function writeMinified(db: PackageDB, write: WriteFunc): Promise<void> {
-    // don't actually minify since minification causes conflicts
-    return write('npDatabase.min.json', JSON.stringify(db, null, 4))
+    return write('npDatabase.min.json', JSON.stringify(db))
 }
 
 async function buildEntry(

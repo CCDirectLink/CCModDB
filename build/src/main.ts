@@ -1,6 +1,6 @@
 import * as source from './source'
 import * as db from './db'
-import type { InputLocations, PackageDB } from './types'
+import type { InputLocation, InputLocations, PackageDB } from './types'
 
 import * as fs from 'fs'
 import * as path from 'path'
@@ -53,38 +53,11 @@ async function main() {
     )
 }
 
-async function readInputLocations(
-    read: ReadFunc
-): Promise<{ locations: InputLocations; raw: string }> {
+async function readInputLocations(read: ReadFunc): Promise<InputLocations> {
     const path = 'input-locations.json'
     const data = await read(path)
     if (!data) throw new Error(`input-locations.json doesn't exist on the target branch!`)
-    return { locations: JSON.parse(data), raw: data }
-}
-async function readOldInputLocations(read: ReadFunc): Promise<InputLocations | undefined> {
-    const path = 'input-locations.old.json'
-    const data = await read(path)
-    if (!data) return undefined
     return JSON.parse(data)
-}
-
-function getInputLocationsDiff(
-    newl: InputLocations,
-    oldl: InputLocations
-): { toFetch: InputLocations; urlsToRemove: string[] } {
-    const diffl: InputLocations = []
-    const urls: Set<string> = new Set(oldl.map(e => e.url))
-    const urlsToRemove: Set<string> = new Set([...urls])
-
-    for (let i = 0; i < newl.length; i++) {
-        const newE = newl[i]
-        if (!urls.has(newE.url)) {
-            diffl.push(newE)
-        } else {
-            urlsToRemove.delete(newE.url)
-        }
-    }
-    return { toFetch: diffl, urlsToRemove: [...urlsToRemove] }
 }
 
 async function getPackageDb(read: ReadFunc): Promise<PackageDB | undefined> {
@@ -93,67 +66,39 @@ async function getPackageDb(read: ReadFunc): Promise<PackageDB | undefined> {
     return JSON.parse(data)
 }
 
-function databaseToUrlRecord(db: PackageDB): Record<string, string[]> {
-    const urlToDbKey: Record<string, string[]> = {}
-    for (const dbKey in db) {
-        const entry = db[dbKey]
-        for (const { url } of entry.installation) {
-            urlToDbKey[url] ??= []
-            urlToDbKey[url].push(dbKey)
-        }
-    }
-    return urlToDbKey
-}
-
 async function createNpDatabase(fromScratch: boolean, read: ReadFunc, write: WriteFunc) {
-    const { locations, raw: locationsStr } = await readInputLocations(read)
+    const locations = await readInputLocations(read)
 
     let dbToMerge: PackageDB = {}
-    let inputLocationsToFetch: InputLocations = []
+    let inputLocationsToFetch: InputLocation[] = []
 
-    nonFromScratchIf: if (!fromScratch) {
-        const oldLocations = await readOldInputLocations(read)
-        if (!oldLocations) {
-            fromScratch = true
-            break nonFromScratchIf
-        }
-        const oldDb = await getPackageDb(read)
-        if (!oldDb) {
-            fromScratch = true
-            break nonFromScratchIf
-        }
-
-        const { toFetch, urlsToRemove } = getInputLocationsDiff(locations, oldLocations)
-
-        inputLocationsToFetch = toFetch
+    const oldDb = await getPackageDb(read)
+    if (oldDb) {
         dbToMerge = oldDb
-
-        const urlToDbKey = databaseToUrlRecord(dbToMerge)
-        for (const url of urlsToRemove) {
-            for (const key of urlToDbKey[url] ??
-                [] /* <- this only happens when input-locations.old.json gets changed as a part of a ccbot commit*/) {
-                delete dbToMerge[key]
-            }
-        }
+    } else {
+        fromScratch = true
     }
 
     if (fromScratch) {
-        inputLocationsToFetch = locations
+        inputLocationsToFetch = Object.values(locations)
+    } else {
+        for (const modId in locations) {
+            const loc = locations[modId]
+            if (loc.type === undefined || loc.type == 'zip') {
+                if (loc.changed) inputLocationsToFetch.push(loc)
+            }
+        }
+        for (const modId in oldDb) {
+            if (!locations[modId]) delete oldDb[modId]
+        }
     }
-    const promises: Promise<source.ModMetadatasInput>[] = []
-    for (const loc of inputLocationsToFetch) {
-        promises.push(source.get(loc, write))
-    }
-    const packages = await Promise.all(promises)
+
+    const packages = await Promise.all(inputLocationsToFetch.map(loc => source.get(loc, write)))
 
     const pkgDb = await db.build(packages)
 
     const mergedDb = db.sort(Object.assign(dbToMerge, pkgDb))
-    await Promise.all([
-        db.write(mergedDb, write),
-        db.writeMinified(mergedDb, write),
-        write('input-locations.old.json', locationsStr),
-    ])
+    await Promise.all([db.write(mergedDb, write), db.writeMinified(mergedDb, write)])
 
     console.log(JSON.stringify(pkgDb, null, 4))
 }

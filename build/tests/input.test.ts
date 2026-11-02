@@ -12,15 +12,14 @@ const inputLocationsPromise: Promise<InputLocations> = await gitReadFunc(
 describe('InputLocations', () => {
     test('json structure', async () => {
         const inputLocations = await inputLocationsPromise
-        expect(typeof inputLocations === 'object', 'Json not valid: Not an array').toBe(true)
-        expect(Array.isArray(inputLocations), 'Json not valid: Not an array').toBe(true)
-        expect(inputLocations !== null, 'Json not valid: Not an array').toBe(true)
+        expect(typeof inputLocations === 'object', 'Json not valid: Not an object').toBe(true)
+        expect(inputLocations !== null, 'Json not valid: Not an object').toBe(true)
     })
 
     describe('mods', async () => {
         const inputLocations = await inputLocationsPromise
-        for (let i = 0; i < inputLocations.length; i++) {
-            const loc = inputLocations[i]
+        for (const modId in inputLocations) {
+            const loc = inputLocations[modId]
             test(loc.url, async () => {
                 expect(
                     [undefined, 'zip'],

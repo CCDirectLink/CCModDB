@@ -3,7 +3,7 @@
 ## input-locations.json
 
 `input-locations.json` specifies the source of mod archives for creating the database.  
-It's a JSON file containing a JSON array.  
+It's a JSON file containing an JSON record with the key being the mod id and the value being the `InputLocation` object.  
 The TypeScript types for this file are under [`build/src/types.ts`](/build/src/types.ts) `InputLocations`.  
 
 ### Example entries
@@ -11,13 +11,13 @@ The TypeScript types for this file are under [`build/src/types.ts`](/build/src/t
 An example `zip` mod entry would be:
 
 ```json
-    { "url": "https://github.com/CCDirectLink/input-api/archive/refs/tags/v1.0.2.zip" }
+    "input-api": { "url": "https://github.com/CCDirectLink/input-api/archive/refs/tags/v1.0.2.zip" }
 ```
 
 And an example `ccmod` entry would be:
 
 ```json
-    { "url": "https://github.com/krypciak/cc-fancy-crash/releases/download/v1.1.0/cc-fancy-crash-1.1.0.ccmod" }
+    "cc-fancy-crash": { "url": "https://github.com/krypciak/cc-fancy-crash/releases/download/v1.1.0/cc-fancy-crash-1.1.0.ccmod" }
 ```
 
 ## npDatabase.json
