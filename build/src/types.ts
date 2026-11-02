@@ -8,10 +8,8 @@ export type ZipInputLocation = {
         Note that GitHub archives have an additional enclosing directory, so you will usually need to use this.
         Only this subdirectory & subdirectories of it are extracted, and it is extracted at the target installation directory. */
     source?: string
-    /** If provided, then the package.json file is at this location in the archive, regardless of 'source'.
+    /** If provided, then the ccmod.json file is at this location in the archive, regardless of 'source'.
         This must pretty much only be used for base packages. */
-    packageJSONPath?: string
-    /** the same as packageJSONPath but for ccmod.json */
     ccmodPath?: string
     //* should the entry be updated on database update */
     changed?: boolean

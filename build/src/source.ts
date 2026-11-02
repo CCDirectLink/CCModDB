@@ -77,8 +77,6 @@ async function getModZipFile<T>(
 }
 
 function modZipPath(zip: ZipInputLocation, fileName: string): string {
-    if (fileName === 'package.json' && zip.packageJSONPath) return zip.packageJSONPath
-
     if (fileName === 'ccmod.json' && zip.ccmodPath) return zip.ccmodPath
 
     if (zip.source) {
