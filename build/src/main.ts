@@ -103,4 +103,4 @@ async function createNpDatabase(fromScratch: boolean, read: ReadFunc, write: Wri
     console.log(JSON.stringify(pkgDb, null, 4))
 }
 
-main().catch(err => console.error('error: ', err))
+main()
