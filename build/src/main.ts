@@ -1,13 +1,11 @@
 import * as source from './source'
 import * as db from './db'
-import type { InputLocation, InputLocations, PackageDB } from './types'
+import type { InputLocation, PackageDB } from './types'
 
 import * as fs from 'fs'
 import * as path from 'path'
 import { getRepoBranches, git, gitReadFunc } from './git'
-
-export type ReadFunc = (path: string) => Promise<string | undefined>
-export type WriteFunc = (path: string, data: Buffer | string) => Promise<void>
+import { readPackageDb, readInputLocations, type ReadFunc, type WriteFunc } from './fs-util'
 
 async function main() {
     const GITHUB_TOKEN = process.env['GITHUB_TOKEN']
@@ -53,26 +51,13 @@ async function main() {
     )
 }
 
-async function readInputLocations(read: ReadFunc): Promise<InputLocations> {
-    const path = 'input-locations.json'
-    const data = await read(path)
-    if (!data) throw new Error(`input-locations.json doesn't exist on the target branch!`)
-    return JSON.parse(data)
-}
-
-async function getPackageDb(read: ReadFunc): Promise<PackageDB | undefined> {
-    const data = await read('npDatabase.json')
-    if (!data) return undefined
-    return JSON.parse(data)
-}
-
 async function createNpDatabase(fromScratch: boolean, read: ReadFunc, write: WriteFunc) {
     const locations = await readInputLocations(read)
 
     let dbToMerge: PackageDB = {}
     let inputLocationsToFetch: InputLocation[] = []
 
-    const oldDb = await getPackageDb(read)
+    const oldDb = await readPackageDb(read)
     if (oldDb) {
         dbToMerge = oldDb
     } else {

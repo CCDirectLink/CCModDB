@@ -1,13 +1,10 @@
 import { expect, describe, test } from 'bun:test'
-import type { InputLocations } from '../src/types'
 import { gitReadFunc } from '../src/git'
+import { readInputLocations } from '../src/fs-util'
 
 const branch = process.env['BRANCH']
 if (!branch) throw new Error('enviroment variable BRANCH is not set!')
-const inputLocationsPromise: Promise<InputLocations> = await gitReadFunc(
-    branch,
-    'input-locations.json'
-).then(data => JSON.parse(data!))
+const inputLocationsPromise = readInputLocations(path => gitReadFunc(branch, path))
 
 describe('InputLocations', () => {
     test('json structure', async () => {

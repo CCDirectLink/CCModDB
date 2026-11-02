@@ -8,7 +8,7 @@ import {
     addReleasePages,
 } from './source'
 import type { PackageDB, InputLocation, InstallMethod, PkgCCMod, ValidPkgCCMod } from './types'
-import type { WriteFunc } from './main'
+import type { WriteFunc } from './fs-util'
 
 export async function build(packages: ModMetadatasInput[]): Promise<PackageDB> {
     const result: PackageDB = {}

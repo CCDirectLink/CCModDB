@@ -11,7 +11,7 @@ import type {
     ZipInputLocation,
 } from './types'
 import { getRepositoryEntry } from './api'
-import type { WriteFunc } from './main'
+import type { WriteFunc } from './fs-util'
 import * as semver from 'semver'
 
 export type ModMetadatas = {

@@ -2,7 +2,6 @@ import { expect, test, describe } from 'bun:test'
 import crypto from 'crypto'
 import { download } from '../src/download'
 import {
-    type DatabaseInfo,
     type InstallMethodExternalTool,
     type InstallMethodZip,
     type Package,
@@ -10,29 +9,31 @@ import {
 } from '../src/types'
 import { getRepoBranches, gitReadFunc } from '../src/git'
 import { CCModChecker } from './ccmod-check'
+import { readDbInfo, readPackageDb } from '../src/fs-util'
 
 async function loadNpDatabases() {
     const branch = process.env['BRANCH']
     if (!branch) throw new Error('enviroment variable BRANCH is not set!')
 
-    const npDatabasePromise = gitReadFunc(branch, 'npDatabase.min.json').then(data => JSON.parse(data!) as PackageDB)
+    const read = (path: string) => gitReadFunc(branch, path)
+    const npDatabasePromise = readPackageDb(read) as Promise<PackageDB>
 
     const parentNpDatabasesPromise = new Promise<PackageDB>(async resolve => {
-        const dbInfo: DatabaseInfo = JSON.parse((await gitReadFunc(branch, 'db-info.json'))!)
+        const dbInfo = await readDbInfo(read)
         const parentBranches = dbInfo.parentBranches
         if (!parentBranches) return resolve({})
 
         const repoBranches = await getRepoBranches()
 
-        async function getParentPackageDb(name: string): Promise<string> {
+        async function getParentPackageDb(name: string): Promise<PackageDB> {
             if (repoBranches.includes(name)) {
-                const data = await gitReadFunc(name, 'npDatabase.min.json')
+                const data = await readPackageDb(path => gitReadFunc(name, path))
                 if (!data) throw new Error(`npDatabase.min.json not found on branch "${name}"`)
                 return data
             }
 
             try {
-                return (await fetch(name)).text()
+                return (await fetch(name)).json() as Promise<PackageDB>
             } catch (e) {
                 throw new Error(`Invalid parent repo npDatatabase.min.json url: "${name}"`, e as Error)
             }
@@ -40,7 +41,7 @@ async function loadNpDatabases() {
 
         const parentDbs = await Promise.all(parentBranches.map(getParentPackageDb))
 
-        const merged = parentDbs.reduce((acc, v) => Object.assign(acc, JSON.parse(v)), {})
+        const merged = parentDbs.reduce((acc, v) => Object.assign(acc, v), {})
         resolve(merged)
     })
 
