@@ -48,13 +48,15 @@ mymod.ccmod/
 ## How to add your mod though 
 
 [https://crosscode-mods.krypek.cc/publish-mod](https://crosscode-mods.krypek.cc/publish-mod) is the preferred and easiest way to add and update your mod.  
-It can be accessed in the CrossCode Modding Server. Invite link below
-
-[![Discord Server](https://img.shields.io/discord/382339402338402315.svg?label=Discord%20Server)](https://discord.gg/3Xw69VjXfW)
 
 First follow the steps on how to pack your mod [here](https://wiki.c2dl.info/CrossCode_Modding_Tutorial#Share_your_mod).  
 You should make use of the GitHub releases to publish your packed mod archives there.  
 Once the release is made and the mod archive is uploaded, copy it's link.
+
+> [!WARNING]
+> You must be added to the authorized users list by an database administrator before you can publish.  
+> Ask for it in the CrossCode Modding Server (invite below).  
+> [![Discord Server](https://img.shields.io/discord/382339402338402315.svg?label=Discord%20Server)](https://discord.gg/3Xw69VjXfW)
 
 Then input the mod archive link into the "mod url".  
 Press "Check" and check the console at the bottom of the site for errors.  
