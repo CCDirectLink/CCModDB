@@ -43,11 +43,11 @@ mymod.ccmod/
     plugin.js
 ```
 > [!TIP]
-> I recommend you check the mod structure and `ccmod.json` validity on https://crosscode-ccmod-check.krypek.cc/  
+> I recommend you check the mod structure and `ccmod.json` validity on https://crosscode-mods.krypek.cc/check-mod  
 
-## How to add your mod with LeaBot
+## How to add your mod though 
 
-[LeaBot](https://github.com/CCDirectLink/ccbot) is the preferred and easiest way to add and update your mod.  
+[https://crosscode-mods.krypek.cc/publish-mod](https://crosscode-mods.krypek.cc/publish-mod) is the preferred and easiest way to add and update your mod.  
 It can be accessed in the CrossCode Modding Server. Invite link below
 
 [![Discord Server](https://img.shields.io/discord/382339402338402315.svg?label=Discord%20Server)](https://discord.gg/3Xw69VjXfW)
@@ -56,24 +56,11 @@ First follow the steps on how to pack your mod [here](https://wiki.c2dl.info/Cro
 You should make use of the GitHub releases to publish your packed mod archives there.  
 Once the release is made and the mod archive is uploaded, copy it's link.
 
-Then type the following command in the designated channel for using LeaBot:  
-
-```
-/publish-mod <mod-archive-url>
-```
-
-For example, here's how you would upload the `1.0.1` version of the mod [input-api](https://github.com/CCDirectLink/input-api/releases/tag/v1.0.1):  
-
-```
-/publish-mod https://github.com/CCDirectLink/input-api/releases/download/v1.0.1/input-api.ccmod
-```
-
+Then input the mod archive link into the "mod url".  
+Press "Check" and check the console at the bottom of the site for errors.  
+If all checks passed, the "Publish" button should be enabled, press it.  
 Now you need to wait for your mod to be approved by one of the database administrators.  
 
 You can also submit the mod to the `testing` branch.  
 That branch is for pre-release mods, that you do not wish to force upon all users.   
-Just append `testing` to the end of the command:  
-
-```
-/publish-mod <mod-archive-url> testing
-```
+Just change the branch in the dropdown menu.  
