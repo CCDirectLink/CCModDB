@@ -105,5 +105,6 @@
     "carn": { "url": "https://github.com/fatetrait/CrossCode-Carnellio-Boss-Mod/releases/download/1.4.1/carnellio.ccmod", "source": "" },
     "cc-map-screenshot": { "url": "https://github.com/krypciak/cc-map-screenshot/releases/download/v1.0.2/cc-map-screenshot-1.0.2.ccmod", "source": "" },
     "lily-fallen-warrior": { "url": "https://github.com/fatetrait/CrossCode-Lily-Fallen-Warrior-Mod/releases/download/1.0.1/CrossCode-Lily-Fallen-Warrior-Mod.ccmod", "source": "" },
-    "enemy-level-anarchy": { "url": "https://github.com/CodeTriangle/crosscrap/releases/download/ela-0.1.0/enemy-level-anarchy.ccmod", "source": "" }
+    "enemy-level-anarchy": { "url": "https://github.com/CodeTriangle/crosscrap/releases/download/ela-0.1.0/enemy-level-anarchy.ccmod", "source": "" },
+    "fallen-warriors": { "url": "https://github.com/fatetrait/CrossCode-Lily-Fallen-Warrior-Mod/releases/download/2.0.2/fallen-warriors.ccmod", "source": "" }
 }
