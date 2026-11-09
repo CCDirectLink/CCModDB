@@ -7652,7 +7652,7 @@
     "playable-shizuka": {
         "metadataCCMod": {
             "id": "playable-shizuka",
-            "version": "1.1.2",
+            "version": "1.1.3",
             "title": {
                 "en_US": "Playable Shizuka",
                 "de_DE": "Playable Shizuka",
@@ -7690,16 +7690,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/playable-shizuka/archive/refs/tags/1.1.2.zip",
-                "source": "playable-shizuka-1.1.2",
+                "url": "https://github.com/XenonA7/playable-shizuka/archive/refs/tags/1.1.3.zip",
+                "source": "playable-shizuka-1.1.3",
                 "hash": {
-                    "sha256": "abf1914fb4c9eb4bbaf39bb29c35360ab62aea9e923e7f409ed8b3274f56a79d"
+                    "sha256": "3e156f1e0b8e67e46ef7f81c63138dd90a3644255f78962f5283e1961c2614b8"
                 }
             }
         ],
         "stars": 1,
-        "lastUpdateTimestamp": 1789105359000,
+        "lastUpdateTimestamp": 1794230104000,
         "releasePages": [
+            {
+                "body": "## 1.1.3 (11/09/2026)\r\n- Added Shizuka sit animation",
+                "version": "1.1.3",
+                "timestamp": 1794230104000,
+                "url": "https://github.com/XenonA7/playable-shizuka/releases/tag/1.1.3"
+            },
             {
                 "body": "## 1.1.2 (09/10/2026)\r\n- Fixed wrong TinyHead sizeY value",
                 "version": "1.1.2",
