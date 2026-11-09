@@ -7088,6 +7088,62 @@
             }
         ]
     },
+    "nax-inventory-search": {
+        "metadataCCMod": {
+            "id": "nax-inventory-search",
+            "version": "2.0.2",
+            "title": "Inventory Search",
+            "description": "An inventory search mod for CrossCode.",
+            "repository": "https://github.com/conorlawton/CCInventorySearch",
+            "tags": [
+                "QoL"
+            ],
+            "authors": "nax",
+            "dependencies": {
+                "nax-ccuilib": ">=1.1.0",
+                "nax-module-cache": ">=1.0.0"
+            },
+            "plugin": "nax-inventory-search/plugin.js"
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/naxane/nax-inventory-search/releases/download/v2.0.2/nax-inventory-search.ccmod",
+                "source": "",
+                "hash": {
+                    "sha256": "524afc924d75f95f18a792e863512c8640ac4a62e5c6ea4007d02f45885d503e"
+                }
+            }
+        ],
+        "stars": 0,
+        "lastUpdateTimestamp": 1724950784000,
+        "releasePages": [
+            {
+                "body": "## What's Changed\r\n* Fix crash when the player has no toggleable items and clicking on an item on the search tab by @krypciak in https://github.com/conorlawton/CCInventorySearch/pull/6\r\n\r\n\r\n**Full Changelog**: https://github.com/conorlawton/CCInventorySearch/compare/v2.0.1...v2.0.2",
+                "version": "2.0.2",
+                "timestamp": 1720966964000,
+                "url": "https://github.com/naxane/nax-inventory-search/releases/tag/v2.0.2"
+            },
+            {
+                "body": "## What's Changed\r\n* Fix crash caused by a gap in tabArray by @krypciak in https://github.com/conorlawton/CCInventorySearch/pull/3\r\n* Update ccmod.json by @krypciak in https://github.com/conorlawton/CCInventorySearch/pull/5\r\n* Fix crash when addon tab is missing by @krypciak in https://github.com/conorlawton/CCInventorySearch/pull/4\r\n\r\n**Full Changelog**: https://github.com/conorlawton/CCInventorySearch/compare/v2.0.0...v2.0.1",
+                "version": "2.0.1",
+                "timestamp": 1720961632000,
+                "url": "https://github.com/naxane/nax-inventory-search/releases/tag/v2.0.1"
+            },
+            {
+                "body": "",
+                "version": "2.0.0",
+                "timestamp": 1678813806000,
+                "url": "https://github.com/naxane/nax-inventory-search/releases/tag/v2.0.0"
+            },
+            {
+                "body": "",
+                "version": "1.0.0",
+                "timestamp": 1616249281000,
+                "url": "https://github.com/naxane/nax-inventory-search/releases/tag/v1.0.0"
+            }
+        ]
+    },
     "nax-module-cache": {
         "metadataCCMod": {
             "id": "nax-module-cache",
