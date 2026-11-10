@@ -2931,7 +2931,7 @@
     "cc-vim": {
         "metadataCCMod": {
             "id": "cc-vim",
-            "version": "1.6.3",
+            "version": "1.7.0",
             "title": "Vim Command Mode",
             "description": "Adds a popup command prompt",
             "repository": "https://github.com/krypciak/cc-vim",
@@ -2952,16 +2952,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/cc-vim/releases/download/v1.6.3/cc-vim-1.6.3.ccmod",
+                "url": "https://github.com/krypciak/cc-vim/releases/download/v1.7.0/cc-vim-1.7.0.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "05f00fe2d73df649f583d8d845cb48d1c40813a8b3fbd5ed45c80802cab1f8ff"
+                    "sha256": "d98541f359aa5ebdb772ff43939a68dcc4e86bbfdf083fcbffe7366c57513f2b"
                 }
             }
         ],
         "stars": 2,
-        "lastUpdateTimestamp": 1775205399000,
+        "lastUpdateTimestamp": 1794251904000,
         "releasePages": [
+            {
+                "body": "\n### Added\n\n- Add `copy-map-name` alias\n- Add `modmanager-option` alias to change mod options registered in CCModManager\n\n### Fixed\n\n- Improve cc-instanceinator compatibility\n- Safeguard some code paths from exceptions",
+                "version": "1.7.0",
+                "timestamp": 1794251905000,
+                "url": "https://github.com/krypciak/cc-vim/releases/tag/v1.7.0"
+            },
             {
                 "body": "### Fixed\n\n- Add cc-instanceinator compatibility",
                 "version": "1.6.3",
