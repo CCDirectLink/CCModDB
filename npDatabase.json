@@ -6343,7 +6343,7 @@
     "mw-rando": {
         "metadataCCMod": {
             "id": "mw-rando",
-            "version": "0.10.1",
+            "version": "0.10.2",
             "title": "Multiworld randomizer",
             "description": "Client for CrossCode Archipelago Integration",
             "repository": "https://github.com/CodeTriangle/CCMultiworldRandomizer",
@@ -6374,16 +6374,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.10.1/CCMultiworldRandomizer-0.10.1.ccmod",
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/download/0.10.2/CCMultiworldRandomizer-0.10.2.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "dd792c864189691b821300cb2d8da35c79e221adeb55d4f5ef25a1ad58910ddd"
+                    "sha256": "8d196dc01cf5a5c7a662e15c6ae5887940370b2ad5b46cf0b265ac5da6819a72"
                 }
             }
         ],
         "stars": 19,
-        "lastUpdateTimestamp": 1794552770000,
+        "lastUpdateTimestamp": 1794816735000,
         "releasePages": [
+            {
+                "body": "## Changes to Mod\r\n\r\n* **Landmark Trap** now only clears one random landmark instead of clearing all of them (@CodeTriangle, @buanjautista, #122)\r\n\r\n## Fixes to Mod\r\n\r\n* Fixed an issue where the **Encrypted Key** locations associated with interacting with the terminals inside of the platform quest final rooms would not send (@CodeTriangle, #121)",
+                "version": "0.10.2",
+                "timestamp": 1794816735000,
+                "url": "https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/tag/0.10.2"
+            },
             {
                 "body": "## Fixes to Mod\r\n\r\n* Fixed an error where entering **Mine: Chamber of Fire** would fail to load the patch (@CodeTriangle, #117)\r\n* Fixed a visual issue where **Trail: Old Plateau**, after having its marker position overridden, would appear on the wrong side of the cave beneath it (@CodeTriangle, #119)\r\n* Fixed a visual issue where chests who had their marker positions overridden would appear to not require a key when **Chest Lock Randomization** was off  (@CodeTriangle, #119, CodeTriangle/Archipelago#39)\r\n\r\n## Fixes to Generation\r\n\r\n* Fixed an issue where the chests **Azure A.: Isle of Legend Left** and **Rhombus: Open PVP Fields** were considered to be gold but are silver (@CodeTriangle, #119)",
                 "version": "0.10.1",
