@@ -8196,6 +8196,98 @@
             }
         ]
     },
+    "smooth-stick-aim": {
+        "metadataCCMod": {
+            "id": "smooth-stick-aim",
+            "version": "1.3.4",
+            "title": "Smooth Stick Aim",
+            "description": "Analog stick aiming that keeps the direction you push: a round dead zone instead of a square one, the same reach in every direction, and no crosshair drag when you let go of the stick. Settings in Options > Gamepad: Far Crosshair (on: the crosshair stays at full distance and the camera looks ahead while you aim; off: like the base game), Stick Dead Zone (8%), Fine Aim (50%: slow stick turns move the aim half as far, for small adjustments) and Aim Speed (75%, a little smoother than the base game's 100%). Works with any controller.",
+            "repository": "https://github.com/catmona/crosscode-mods",
+            "tags": [
+                "QoL",
+                "accessibility"
+            ],
+            "authors": [
+                "catmona"
+            ],
+            "postload": "postload.js",
+            "poststart": "poststart.js"
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/catmona/crosscode-mods/releases/download/smooth-stick-aim-v1.3.4/smooth-stick-aim-1.3.4.ccmod",
+                "source": "",
+                "hash": {
+                    "sha256": "0a3d7736acbdbcbbc7fc44ed6f42910d5bf4160f86c3beb55d82777ca4dcad1e"
+                }
+            }
+        ],
+        "stars": 0,
+        "lastUpdateTimestamp": 1795194784000,
+        "releasePages": [
+            {
+                "body": "Adds a Switch choice to Options > Gamepad > Gamepad Icons, using the Nintendo button art from the game, with letters matching Xbox-labeled buttons (A bottom, B right, X left, Y top; -/+ for select/start).\n\nInstall: put `switch-button-icons-1.1.0.ccmod` in `CrossCode/assets/mods/` (needs CCLoader).\n\nUnofficial; not affiliated with Radical Fish Games. Mostly written with AI assistance (Anthropic's Claude), reviewed and tested by the maintainer. Use at your own risk.\n",
+                "version": "switch-button-icons-v1.1.0",
+                "timestamp": 1795191832000,
+                "url": "https://github.com/catmona/crosscode-mods/releases/tag/switch-button-icons-v1.1.0"
+            },
+            {
+                "body": "**Fix: diagonal stick input in menus works again.** The mod limited stick length to 1 everywhere, so a full diagonal push read as 0.71 on each axis, below the 0.8 the game's menus need. Now only placing the crosshair limits the length, and menus get the same diagonals as the base game. Aiming is unchanged.\n\nAlso: README rewritten.\n\nInstall: put `smooth-stick-aim-1.3.4.ccmod` in `CrossCode/assets/mods/` (needs CCLoader).\n\nUnofficial; not affiliated with Radical Fish Games. Mostly written with AI assistance (Anthropic's Claude), reviewed and tested by the maintainer. Use at your own risk.\n",
+                "version": "smooth-stick-aim-v1.3.4",
+                "timestamp": 1795194784000,
+                "url": "https://github.com/catmona/crosscode-mods/releases/tag/smooth-stick-aim-v1.3.4"
+            },
+            {
+                "body": "**Aim Speed now defaults to 75%**, a little smoother than the base game's 100%. It felt best in play.\n\nMany sticks send readings in bursts, and faster Aim Speed shows them as jumpy motion. Lag and jumpiness trade off directly:\n\n| Aim Speed | Crosshair lag behind the stick (average) | Unevenness while turning |\n|---|---|---|\n| 75% | 5.0° | 0.14 |\n| 100% (base game) | 3.3° | 0.18 |\n| 150% | 1.9° | 0.25 |\n| 200% | 0.9° | 0.31 |\n| 300% | 0.2° | 0.41 |\n\nPick what feels best in Options > Gamepad; no setting adds throw spread. If you set Aim Speed yourself before, your value is kept.\n\nInstall: put `smooth-stick-aim-1.3.3.ccmod` in `CrossCode/assets/mods/` and remove any older version. Needs CCLoader.\n\nUnofficial; not affiliated with Radical Fish Games. Mostly written with AI assistance (Anthropic's Claude), reviewed and tested by the maintainer. Use at your own risk.\n\n",
+                "version": "smooth-stick-aim-v1.3.3",
+                "timestamp": 1795194328000,
+                "url": "https://github.com/catmona/crosscode-mods/releases/tag/smooth-stick-aim-v1.3.3"
+            },
+            {
+                "body": "**Aim Speed is back to 100% (the base game) by default.** 300% was too jumpy in play.\n\nWhy: many sticks send readings in bursts, so some frames get no new reading and the next gets two. The base game's crosshair smoothing hides that; faster Aim Speed shows it. Lag and jumpiness trade off directly:\n\n| Aim Speed | Crosshair lag behind the stick (average) | Unevenness while turning |\n|---|---|---|\n| 100% (base game) | 3.3° | 0.18 |\n| 150% | 1.9° | 0.25 |\n| 200% | 0.9° | 0.31 |\n| 300% | 0.2° | 0.41 |\n\nPick what feels best in Options > Gamepad; faster settings don't add throw spread. If you set Aim Speed yourself before, your value is kept.\n\nInstall: put `smooth-stick-aim-1.3.2.ccmod` in `CrossCode/assets/mods/` and remove any older version. Needs CCLoader.\n\nUnofficial; not affiliated with Radical Fish Games. Mostly written with AI assistance (Anthropic's Claude), reviewed and tested by the maintainer. Use at your own risk.\n\n",
+                "version": "smooth-stick-aim-v1.3.2",
+                "timestamp": 1795194292000,
+                "url": "https://github.com/catmona/crosscode-mods/releases/tag/smooth-stick-aim-v1.3.2"
+            },
+            {
+                "body": "**Aim Speed now defaults to 300%.** The crosshair follows the stick almost at once instead of trailing it by about 0.1 s, which made small corrections overshoot.\n\nChosen from a replay of real stick aiming with the game's own spread rules:\n\n| Aim Speed | Crosshair lag behind the stick (average) | Average throw spread |\n|---|---|---|\n| 100% (base game) | 3.4° | 4.8° |\n| 200% | 0.9° | 3.8° |\n| 300% | 0.2° | 3.6° |\n\nCorrection: the 1.2.0 and 1.3.0 notes said faster Aim Speed and Fine Aim add a little throw spread. That came from a replay with the wrong spread numbers; with the game's real ones, neither adds spread.\n\nIf you changed or saved settings on an earlier version, the game may keep your old Aim Speed: set it in Options > Gamepad.\n\nInstall: put `smooth-stick-aim-1.3.1.ccmod` in `CrossCode/assets/mods/` and remove any older version. Needs CCLoader.\n\nUnofficial; not affiliated with Radical Fish Games. Mostly written with AI assistance (Anthropic's Claude), reviewed and tested by the maintainer. Use at your own risk.\n\n",
+                "version": "smooth-stick-aim-v1.3.1",
+                "timestamp": 1795193832000,
+                "url": "https://github.com/catmona/crosscode-mods/releases/tag/smooth-stick-aim-v1.3.1"
+            },
+            {
+                "body": "**Fine Aim** (Options > Gamepad, default 50%): makes small aim adjustments easier.\n\nWhile the right stick turns slowly (under 40°/s), the aim turns only part as far: at 50%, half, so small adjustments take twice the thumb movement. Faster turns are 1:1 and pull the aim back onto the stick (fully above 160°/s). The aim never strays more than 15° from the stick, and every new push starts exactly on it. 0% turns it off. The realign on fast turns adds a little throw spread (in a replay of real stick input, average spread went from 6.1° off to 6.4° at 50%).\n\nAlso since 1.2.0: Far Crosshair, Stick Dead Zone and Aim Speed settings, with hints that fit the help bar.\n\nInstall: put `smooth-stick-aim-1.3.0.ccmod` in `CrossCode/assets/mods/` and remove any older version. Needs CCLoader.\n\nUnofficial; not affiliated with Radical Fish Games. Mostly written with AI assistance (Anthropic's Claude), reviewed and tested by the maintainer. Use at your own risk.\n",
+                "version": "smooth-stick-aim-v1.3.0",
+                "timestamp": 1795193035000,
+                "url": "https://github.com/catmona/crosscode-mods/releases/tag/smooth-stick-aim-v1.3.0"
+            },
+            {
+                "body": "Fixes the setting hints in Options > Gamepad, which were too long for the one-line help bar and ran off the screen.\n\nSee [1.2.0](https://github.com/catmona/crosscode-mods/releases/tag/smooth-stick-aim-v1.2.0) for the settings themselves. Install: put `smooth-stick-aim-1.2.1.ccmod` in `CrossCode/assets/mods/` and remove any older version. Needs CCLoader.\n\nUnofficial; not affiliated with Radical Fish Games. Mostly written with AI assistance (Anthropic's Claude), reviewed and tested by the maintainer. Use at your own risk.\n",
+                "version": "smooth-stick-aim-v1.2.1",
+                "timestamp": 1795192767000,
+                "url": "https://github.com/catmona/crosscode-mods/releases/tag/smooth-stick-aim-v1.2.1"
+            },
+            {
+                "body": "**Settings.** Options > Gamepad now has a Smooth Stick Aim section:\n\n| Setting | Default | What it does |\n|---|---|---|\n| Far Crosshair | On | The crosshair stays at full distance in the direction you push, however lightly you push. Throws go the same way either way (they only use the direction). The game also uses the crosshair's distance to move the camera ahead of you, so with this on the camera always looks ahead while you aim. Off = the base game: a light push keeps the crosshair close and the camera still. |\n| Stick Dead Zone | 8% | How far a stick moves before it counts, the same in every direction (0-20%). Raise it if a worn stick drifts. |\n| Aim Speed | 100% | How fast the crosshair swings to where the stick points (50-300%; 100% = base game). Faster adds a little throw spread after quick turns: in a replay of real stick input, average spread went from 6.1° at 100% to 6.5° at 300%. |\n\nEverything else from 1.0.0 stays: round dead zone, same reach in every direction, \"stick pushed\" decided from the stick's length, and no crosshair drag when you let go.\n\nInstall: put `smooth-stick-aim-1.2.0.ccmod` in `CrossCode/assets/mods/` and remove any older version. Needs CCLoader.\n\nUnofficial; not affiliated with Radical Fish Games. Mostly written with AI assistance (Anthropic's Claude), reviewed and tested by the maintainer. Use at your own risk.\n",
+                "version": "smooth-stick-aim-v1.2.0",
+                "timestamp": 1795192639000,
+                "url": "https://github.com/catmona/crosscode-mods/releases/tag/smooth-stick-aim-v1.2.0"
+            },
+            {
+                "body": "**The crosshair stays at full distance in the direction you push.**\n\nIn the stock game the crosshair sits as far out as the stick is pushed, so a light push puts it right next to you, where it's hard to see which way it points. Throws only use its direction, so it now always sits at full distance; only how it looks changes, plus the camera looking ahead while you aim (as it does on a full push in the stock game).\n\nEverything from 1.0.0 stays: round dead zone, same reach in every direction, \"stick pushed\" decided from the stick's length, and no crosshair drag when you let go.\n\nInstall: put `smooth-stick-aim-1.1.0.ccmod` in `CrossCode/assets/mods/` (remove the 1.0.0 file or folder). Needs CCLoader.\n\nUnofficial; not affiliated with Radical Fish Games. Mostly written with AI assistance (Anthropic's Claude), reviewed and tested by the maintainer. Use at your own risk.\n",
+                "version": "smooth-stick-aim-v1.1.0",
+                "timestamp": 1795192160000,
+                "url": "https://github.com/catmona/crosscode-mods/releases/tag/smooth-stick-aim-v1.1.0"
+            },
+            {
+                "body": "Analog stick aiming that keeps the direction you push.\n\n- **Round dead zone.** Stock CrossCode checks each stick axis on its own (over ~0.25), so a diagonal push needs much more travel than a straight one before aiming starts. This uses the stick's length instead, with hysteresis, and rescales the rest to start at 0.\n- **Same reach in every direction.** Sticks that reach ~1.3 on the diagonals put the crosshair further out on diagonals; the length is now capped at 1.\n- **No drag on release.** While the right stick springs back to centre, the game pulls the crosshair toward you before aiming ends (24 px in a recorded release); the crosshair now holds still.\n- The left stick gets the same round dead zone, so slow diagonal walking no longer snaps to an axis.\n\nInstall: put `smooth-stick-aim-1.0.0.ccmod` in `CrossCode/assets/mods/` (needs CCLoader).\n\nUnofficial; not affiliated with Radical Fish Games. Mostly written with AI assistance (Anthropic's Claude), reviewed and tested by the maintainer. Use at your own risk.\n\n",
+                "version": "smooth-stick-aim-v1.0.0",
+                "timestamp": 1795191832000,
+                "url": "https://github.com/catmona/crosscode-mods/releases/tag/smooth-stick-aim-v1.0.0"
+            }
+        ]
+    },
     "spin-to-win": {
         "metadataCCMod": {
             "id": "spin-to-win",
@@ -8353,6 +8445,98 @@
                 "version": "0.1.0",
                 "timestamp": 1737953997000,
                 "url": "https://github.com/XenonA7/starcaller-2/releases/tag/0.1.0"
+            }
+        ]
+    },
+    "switch-button-icons": {
+        "metadataCCMod": {
+            "id": "switch-button-icons",
+            "version": "1.1.0",
+            "title": "Switch Button Icons",
+            "description": "Adds a Switch choice to Options > Gamepad > Gamepad Icons, using the Nintendo button art already in the game (letters match Xbox-labeled buttons: A bottom, B right, X left, Y top; -/+ for select/start).",
+            "repository": "https://github.com/catmona/crosscode-mods",
+            "tags": [
+                "QoL",
+                "cosmetic"
+            ],
+            "authors": [
+                "catmona"
+            ],
+            "postload": "postload.js",
+            "poststart": "poststart.js"
+        },
+        "installation": [
+            {
+                "type": "zip",
+                "url": "https://github.com/catmona/crosscode-mods/releases/download/switch-button-icons-v1.1.0/switch-button-icons-1.1.0.ccmod",
+                "source": "",
+                "hash": {
+                    "sha256": "b11d81fd0afad71101ecd38ade4a2ee829d8371ffaa76747e3dbd203f9f0a6fc"
+                }
+            }
+        ],
+        "stars": 0,
+        "lastUpdateTimestamp": 1795194784000,
+        "releasePages": [
+            {
+                "body": "Adds a Switch choice to Options > Gamepad > Gamepad Icons, using the Nintendo button art from the game, with letters matching Xbox-labeled buttons (A bottom, B right, X left, Y top; -/+ for select/start).\n\nInstall: put `switch-button-icons-1.1.0.ccmod` in `CrossCode/assets/mods/` (needs CCLoader).\n\nUnofficial; not affiliated with Radical Fish Games. Mostly written with AI assistance (Anthropic's Claude), reviewed and tested by the maintainer. Use at your own risk.\n",
+                "version": "switch-button-icons-v1.1.0",
+                "timestamp": 1795191832000,
+                "url": "https://github.com/catmona/crosscode-mods/releases/tag/switch-button-icons-v1.1.0"
+            },
+            {
+                "body": "**Fix: diagonal stick input in menus works again.** The mod limited stick length to 1 everywhere, so a full diagonal push read as 0.71 on each axis, below the 0.8 the game's menus need. Now only placing the crosshair limits the length, and menus get the same diagonals as the base game. Aiming is unchanged.\n\nAlso: README rewritten.\n\nInstall: put `smooth-stick-aim-1.3.4.ccmod` in `CrossCode/assets/mods/` (needs CCLoader).\n\nUnofficial; not affiliated with Radical Fish Games. Mostly written with AI assistance (Anthropic's Claude), reviewed and tested by the maintainer. Use at your own risk.\n",
+                "version": "smooth-stick-aim-v1.3.4",
+                "timestamp": 1795194784000,
+                "url": "https://github.com/catmona/crosscode-mods/releases/tag/smooth-stick-aim-v1.3.4"
+            },
+            {
+                "body": "**Aim Speed now defaults to 75%**, a little smoother than the base game's 100%. It felt best in play.\n\nMany sticks send readings in bursts, and faster Aim Speed shows them as jumpy motion. Lag and jumpiness trade off directly:\n\n| Aim Speed | Crosshair lag behind the stick (average) | Unevenness while turning |\n|---|---|---|\n| 75% | 5.0° | 0.14 |\n| 100% (base game) | 3.3° | 0.18 |\n| 150% | 1.9° | 0.25 |\n| 200% | 0.9° | 0.31 |\n| 300% | 0.2° | 0.41 |\n\nPick what feels best in Options > Gamepad; no setting adds throw spread. If you set Aim Speed yourself before, your value is kept.\n\nInstall: put `smooth-stick-aim-1.3.3.ccmod` in `CrossCode/assets/mods/` and remove any older version. Needs CCLoader.\n\nUnofficial; not affiliated with Radical Fish Games. Mostly written with AI assistance (Anthropic's Claude), reviewed and tested by the maintainer. Use at your own risk.\n\n",
+                "version": "smooth-stick-aim-v1.3.3",
+                "timestamp": 1795194328000,
+                "url": "https://github.com/catmona/crosscode-mods/releases/tag/smooth-stick-aim-v1.3.3"
+            },
+            {
+                "body": "**Aim Speed is back to 100% (the base game) by default.** 300% was too jumpy in play.\n\nWhy: many sticks send readings in bursts, so some frames get no new reading and the next gets two. The base game's crosshair smoothing hides that; faster Aim Speed shows it. Lag and jumpiness trade off directly:\n\n| Aim Speed | Crosshair lag behind the stick (average) | Unevenness while turning |\n|---|---|---|\n| 100% (base game) | 3.3° | 0.18 |\n| 150% | 1.9° | 0.25 |\n| 200% | 0.9° | 0.31 |\n| 300% | 0.2° | 0.41 |\n\nPick what feels best in Options > Gamepad; faster settings don't add throw spread. If you set Aim Speed yourself before, your value is kept.\n\nInstall: put `smooth-stick-aim-1.3.2.ccmod` in `CrossCode/assets/mods/` and remove any older version. Needs CCLoader.\n\nUnofficial; not affiliated with Radical Fish Games. Mostly written with AI assistance (Anthropic's Claude), reviewed and tested by the maintainer. Use at your own risk.\n\n",
+                "version": "smooth-stick-aim-v1.3.2",
+                "timestamp": 1795194292000,
+                "url": "https://github.com/catmona/crosscode-mods/releases/tag/smooth-stick-aim-v1.3.2"
+            },
+            {
+                "body": "**Aim Speed now defaults to 300%.** The crosshair follows the stick almost at once instead of trailing it by about 0.1 s, which made small corrections overshoot.\n\nChosen from a replay of real stick aiming with the game's own spread rules:\n\n| Aim Speed | Crosshair lag behind the stick (average) | Average throw spread |\n|---|---|---|\n| 100% (base game) | 3.4° | 4.8° |\n| 200% | 0.9° | 3.8° |\n| 300% | 0.2° | 3.6° |\n\nCorrection: the 1.2.0 and 1.3.0 notes said faster Aim Speed and Fine Aim add a little throw spread. That came from a replay with the wrong spread numbers; with the game's real ones, neither adds spread.\n\nIf you changed or saved settings on an earlier version, the game may keep your old Aim Speed: set it in Options > Gamepad.\n\nInstall: put `smooth-stick-aim-1.3.1.ccmod` in `CrossCode/assets/mods/` and remove any older version. Needs CCLoader.\n\nUnofficial; not affiliated with Radical Fish Games. Mostly written with AI assistance (Anthropic's Claude), reviewed and tested by the maintainer. Use at your own risk.\n\n",
+                "version": "smooth-stick-aim-v1.3.1",
+                "timestamp": 1795193832000,
+                "url": "https://github.com/catmona/crosscode-mods/releases/tag/smooth-stick-aim-v1.3.1"
+            },
+            {
+                "body": "**Fine Aim** (Options > Gamepad, default 50%): makes small aim adjustments easier.\n\nWhile the right stick turns slowly (under 40°/s), the aim turns only part as far: at 50%, half, so small adjustments take twice the thumb movement. Faster turns are 1:1 and pull the aim back onto the stick (fully above 160°/s). The aim never strays more than 15° from the stick, and every new push starts exactly on it. 0% turns it off. The realign on fast turns adds a little throw spread (in a replay of real stick input, average spread went from 6.1° off to 6.4° at 50%).\n\nAlso since 1.2.0: Far Crosshair, Stick Dead Zone and Aim Speed settings, with hints that fit the help bar.\n\nInstall: put `smooth-stick-aim-1.3.0.ccmod` in `CrossCode/assets/mods/` and remove any older version. Needs CCLoader.\n\nUnofficial; not affiliated with Radical Fish Games. Mostly written with AI assistance (Anthropic's Claude), reviewed and tested by the maintainer. Use at your own risk.\n",
+                "version": "smooth-stick-aim-v1.3.0",
+                "timestamp": 1795193035000,
+                "url": "https://github.com/catmona/crosscode-mods/releases/tag/smooth-stick-aim-v1.3.0"
+            },
+            {
+                "body": "Fixes the setting hints in Options > Gamepad, which were too long for the one-line help bar and ran off the screen.\n\nSee [1.2.0](https://github.com/catmona/crosscode-mods/releases/tag/smooth-stick-aim-v1.2.0) for the settings themselves. Install: put `smooth-stick-aim-1.2.1.ccmod` in `CrossCode/assets/mods/` and remove any older version. Needs CCLoader.\n\nUnofficial; not affiliated with Radical Fish Games. Mostly written with AI assistance (Anthropic's Claude), reviewed and tested by the maintainer. Use at your own risk.\n",
+                "version": "smooth-stick-aim-v1.2.1",
+                "timestamp": 1795192767000,
+                "url": "https://github.com/catmona/crosscode-mods/releases/tag/smooth-stick-aim-v1.2.1"
+            },
+            {
+                "body": "**Settings.** Options > Gamepad now has a Smooth Stick Aim section:\n\n| Setting | Default | What it does |\n|---|---|---|\n| Far Crosshair | On | The crosshair stays at full distance in the direction you push, however lightly you push. Throws go the same way either way (they only use the direction). The game also uses the crosshair's distance to move the camera ahead of you, so with this on the camera always looks ahead while you aim. Off = the base game: a light push keeps the crosshair close and the camera still. |\n| Stick Dead Zone | 8% | How far a stick moves before it counts, the same in every direction (0-20%). Raise it if a worn stick drifts. |\n| Aim Speed | 100% | How fast the crosshair swings to where the stick points (50-300%; 100% = base game). Faster adds a little throw spread after quick turns: in a replay of real stick input, average spread went from 6.1° at 100% to 6.5° at 300%. |\n\nEverything else from 1.0.0 stays: round dead zone, same reach in every direction, \"stick pushed\" decided from the stick's length, and no crosshair drag when you let go.\n\nInstall: put `smooth-stick-aim-1.2.0.ccmod` in `CrossCode/assets/mods/` and remove any older version. Needs CCLoader.\n\nUnofficial; not affiliated with Radical Fish Games. Mostly written with AI assistance (Anthropic's Claude), reviewed and tested by the maintainer. Use at your own risk.\n",
+                "version": "smooth-stick-aim-v1.2.0",
+                "timestamp": 1795192639000,
+                "url": "https://github.com/catmona/crosscode-mods/releases/tag/smooth-stick-aim-v1.2.0"
+            },
+            {
+                "body": "**The crosshair stays at full distance in the direction you push.**\n\nIn the stock game the crosshair sits as far out as the stick is pushed, so a light push puts it right next to you, where it's hard to see which way it points. Throws only use its direction, so it now always sits at full distance; only how it looks changes, plus the camera looking ahead while you aim (as it does on a full push in the stock game).\n\nEverything from 1.0.0 stays: round dead zone, same reach in every direction, \"stick pushed\" decided from the stick's length, and no crosshair drag when you let go.\n\nInstall: put `smooth-stick-aim-1.1.0.ccmod` in `CrossCode/assets/mods/` (remove the 1.0.0 file or folder). Needs CCLoader.\n\nUnofficial; not affiliated with Radical Fish Games. Mostly written with AI assistance (Anthropic's Claude), reviewed and tested by the maintainer. Use at your own risk.\n",
+                "version": "smooth-stick-aim-v1.1.0",
+                "timestamp": 1795192160000,
+                "url": "https://github.com/catmona/crosscode-mods/releases/tag/smooth-stick-aim-v1.1.0"
+            },
+            {
+                "body": "Analog stick aiming that keeps the direction you push.\n\n- **Round dead zone.** Stock CrossCode checks each stick axis on its own (over ~0.25), so a diagonal push needs much more travel than a straight one before aiming starts. This uses the stick's length instead, with hysteresis, and rescales the rest to start at 0.\n- **Same reach in every direction.** Sticks that reach ~1.3 on the diagonals put the crosshair further out on diagonals; the length is now capped at 1.\n- **No drag on release.** While the right stick springs back to centre, the game pulls the crosshair toward you before aiming ends (24 px in a recorded release); the crosshair now holds still.\n- The left stick gets the same round dead zone, so slow diagonal walking no longer snaps to an axis.\n\nInstall: put `smooth-stick-aim-1.0.0.ccmod` in `CrossCode/assets/mods/` (needs CCLoader).\n\nUnofficial; not affiliated with Radical Fish Games. Mostly written with AI assistance (Anthropic's Claude), reviewed and tested by the maintainer. Use at your own risk.\n\n",
+                "version": "smooth-stick-aim-v1.0.0",
+                "timestamp": 1795191832000,
+                "url": "https://github.com/catmona/crosscode-mods/releases/tag/smooth-stick-aim-v1.0.0"
             }
         ]
     },

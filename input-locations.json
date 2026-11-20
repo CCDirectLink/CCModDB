@@ -107,5 +107,7 @@
     "lily-fallen-warrior": { "url": "https://github.com/fatetrait/CrossCode-Lily-Fallen-Warrior-Mod/releases/download/1.0.1/CrossCode-Lily-Fallen-Warrior-Mod.ccmod", "source": "" },
     "enemy-level-anarchy": { "url": "https://github.com/CodeTriangle/crosscrap/releases/download/ela-0.1.0/enemy-level-anarchy.ccmod", "source": "" },
     "fallen-warriors": { "url": "https://github.com/fatetrait/CrossCode-Lily-Fallen-Warrior-Mod/releases/download/2.0.2/fallen-warriors.ccmod", "source": "" },
-    "nax-inventory-search": { "url": "https://github.com/naxane/nax-inventory-search/releases/download/v2.0.2/nax-inventory-search.ccmod", "source": "" }
+    "nax-inventory-search": { "url": "https://github.com/naxane/nax-inventory-search/releases/download/v2.0.2/nax-inventory-search.ccmod", "source": "" },
+    "smooth-stick-aim": { "url": "https://github.com/catmona/crosscode-mods/releases/download/smooth-stick-aim-v1.3.4/smooth-stick-aim-1.3.4.ccmod", "source": "" },
+    "switch-button-icons": { "url": "https://github.com/catmona/crosscode-mods/releases/download/switch-button-icons-v1.1.0/switch-button-icons-1.1.0.ccmod", "source": "" }
 }
