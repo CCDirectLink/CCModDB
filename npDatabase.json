@@ -8862,7 +8862,7 @@
     "xenons-playable-classes": {
         "metadataCCMod": {
             "id": "xenons-playable-classes",
-            "version": "3.6.2",
+            "version": "3.6.3",
             "title": {
                 "en_US": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
                 "de_DE": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
@@ -8913,16 +8913,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/3.6.2.zip",
-                "source": "xenons-playable-classes-3.6.2",
+                "url": "https://github.com/XenonA7/xenons-playable-classes/archive/refs/tags/3.6.3.zip",
+                "source": "xenons-playable-classes-3.6.3",
                 "hash": {
-                    "sha256": "2f819b23615e646e887fd365efefcded57548cebafb3ebe7681b31191a3f34fb"
+                    "sha256": "2b3bc8f8b270ef1e978c520ca20ba0b22fa904f2c2bfb9c6f8fefc9e227ebaee"
                 }
             }
         ],
         "stars": 35,
-        "lastUpdateTimestamp": 1794231229000,
+        "lastUpdateTimestamp": 1795480510000,
         "releasePages": [
+            {
+                "body": "## 3.6.3 (11/23/2026)\r\n### New Content\r\n- Added Schneider menu artwork by Rioreur\r\n- Added \"ignoreCutscenes\" bool property to XenoDialog, updated info-for-modders.md (feature by 2767mr)\r\n- You can now sit on all 9 tables in the XPC hideout maps if playing as Triblader2/3/4/5\r\n### Changes\r\n- Reformatted in-game mod credits, added Rioreur and 2767mr, and updated readme.md\r\n- Triblader2 bonus dialogue for sitEvent can now only show once per map entry in hideout-lobby\r\n- Effect gigaDrainHeal now uses HEAL_SPARKLE particles instead of WAVE_SPARKLE\r\n- Renamed effect meleeTrail to throttleHexPlayerAura\r\n- Removed light glow from effect throttleHexPlayerAura\r\n### Fixes\r\n- Krypek fix for pvp-gui-fix.js not checking that pvp is active before counting kills",
+                "version": "3.6.3",
+                "timestamp": 1795480510000,
+                "url": "https://github.com/XenonA7/xenons-playable-classes/releases/tag/3.6.3"
+            },
             {
                 "body": "## 3.6.2 (11/09/2026)\r\n### New Content\r\n- Added Hexacast-Lea support to elemental hair mod if installed (special thanks to QuieType)\r\n- Added interaction to sit on a couch in hideout-lobby (based on original concept by QuieType)\r\n### Fixes\r\n- Fixed \"sit\" animation definition for Tribalder2/3/4/5/Lea and Hexacast1/2/3/Lea",
                 "version": "3.6.2",
