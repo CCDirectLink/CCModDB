@@ -2937,7 +2937,7 @@
     "cc-vim": {
         "metadataCCMod": {
             "id": "cc-vim",
-            "version": "1.7.0",
+            "version": "1.7.1",
             "title": "Vim Command Mode",
             "description": "Adds a popup command prompt",
             "repository": "https://github.com/krypciak/cc-vim",
@@ -2958,16 +2958,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/krypciak/cc-vim/releases/download/v1.7.0/cc-vim-1.7.0.ccmod",
+                "url": "https://github.com/krypciak/cc-vim/releases/download/v1.7.1/cc-vim-1.7.1.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "d98541f359aa5ebdb772ff43939a68dcc4e86bbfdf083fcbffe7366c57513f2b"
+                    "sha256": "0ab2d7b0fbc57ccc16a6cca45e30a3edf37db2028c74e873aa972419d07fd140"
                 }
             }
         ],
         "stars": 2,
-        "lastUpdateTimestamp": 1794251904000,
+        "lastUpdateTimestamp": 1795716714000,
         "releasePages": [
+            {
+                "body": "\n### Changed\n\n- Replace history with suggestion selection \n\n### Removed\n\n- Remove reload map and reload game nax-ccuilib widgets\n\n### Fixed\n\n- Fix first menu open running on a wrong instanceinator instance",
+                "version": "1.7.1",
+                "timestamp": 1795716716000,
+                "url": "https://github.com/krypciak/cc-vim/releases/tag/v1.7.1"
+            },
             {
                 "body": "\n### Added\n\n- Add `copy-map-name` alias\n- Add `modmanager-option` alias to change mod options registered in CCModManager\n\n### Fixed\n\n- Improve cc-instanceinator compatibility\n- Safeguard some code paths from exceptions",
                 "version": "1.7.0",
