@@ -5292,7 +5292,7 @@
     "item-api": {
         "metadataCCMod": {
             "id": "item-api",
-            "version": "0.4.6",
+            "version": "0.4.7",
             "title": "Item API",
             "description": "Allows custom items to be prepared in such a way that they 'just work'.",
             "repository": "https://github.com/CCDirectLink/item-api",
@@ -5314,16 +5314,22 @@
         "installation": [
             {
                 "type": "zip",
-                "url": "https://github.com/CCDirectLink/item-api/releases/download/v0.4.6/item-api.ccmod",
+                "url": "https://github.com/CCDirectLink/item-api/releases/download/v0.4.7/item-api.ccmod",
                 "source": "",
                 "hash": {
-                    "sha256": "ca93403a7b6817a1e01cf77e7290c8853c7260691b356fae83525f702c2ef343"
+                    "sha256": "346f40e62f86fcdfe9538d4a356a0c3de36c08f38a136fb20e74972988f3154e"
                 }
             }
         ],
-        "stars": 1,
-        "lastUpdateTimestamp": 1791764565000,
+        "stars": 2,
+        "lastUpdateTimestamp": 1795796125000,
         "releasePages": [
+            {
+                "body": "- Added aliases for most vanilla items. See [vanilla-item-mappings.md](https://github.com/CCDirectLink/item-api/blob/master/vanilla-item-mappings.md) for a list.\r\n- Refactored how item ids are looked up, by using a helper function `itemAPI.getItemID(id)` rather than `itemAPI.customItemToID[id]` directly.",
+                "version": "0.4.7",
+                "timestamp": 1795796125000,
+                "url": "https://github.com/CCDirectLink/item-api/releases/tag/v0.4.7"
+            },
             {
                 "body": "- Fixed `item.ID.toggled` not working.",
                 "version": "0.4.6",
